@@ -21,6 +21,19 @@
     "source": "survey/library.json"
   },
   "year": 1962,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE Transactions on Information Theory",
+      "year": 1962,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Information Theory",
+      "year": 1962,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "channel_coding"
   ],
@@ -29,6 +42,7 @@
     "BSC"
   ],
   "transmission": "digital",
+  "joint_channel_training": false,
   "contributions": [
     "各列・各行の1の個数が少数に固定された疎なパリティ検査行列で定義される低密度パリティ検査（LDPC）符号を提案した",
     "通信路の事後確率から直接動作する簡易な復号法を示した"

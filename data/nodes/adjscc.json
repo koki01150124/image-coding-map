@@ -24,7 +24,20 @@
     "url": "https://doi.org/10.1109/tcsvt.2021.3082521",
     "source": "survey/library.json"
   },
-  "year": 2021,
+  "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2012.00533 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "year": 2021,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc"
   ],
@@ -33,6 +46,7 @@
     "AWGN"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "チャネル方向のソフト注意で SNR に応じて特徴をスケールし，1つのモデルで異なる SNR に対応する ADJSCC を提案した"
   ],
@@ -52,7 +66,7 @@
       "note": "[31] の JSCC 構造を基本の BDJSCC として用いた",
       "evidence": {
         "kind": "full_text",
-        "detail": "本文: JSCC architecture used in [31] as the basic DL based JSCC (BDJSCC) architecture（[31] は通信路出力を利用する方式）"
+        "detail": "本文: JSCC architecture used in [31] as the basic DL based JSCC (BDJSCC) architecture（参考文献 [31] = Deepjscc-f: Deep joint source-channel coding of images with feedback）"
       }
     },
     {
@@ -67,6 +81,6 @@
   ],
   "verification": {
     "read_level": "full_text_scan",
-    "notes": "要旨と本文を照合した．[31] の書誌は抽出できなかったため，本文の説明（channel output symbols を取り込む方式）から DeepJSCC-f と判断した．"
+    "notes": "要旨と本文を照合した．基本構造 BDJSCC の参照元 [31] は参考文献リストで DeepJSCC-f と確認した．"
   }
 }

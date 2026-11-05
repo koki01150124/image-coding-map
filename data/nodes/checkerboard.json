@@ -24,12 +24,26 @@
     "source": "survey/library.json"
   },
   "year": 2021,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2021,
+      "evidence": "arXiv:2103.15306 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+      "year": 2021,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "2パスのチェッカーボード順で復号する潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "並列化可能なチェッカーボード・コンテキストモデルを提案し，復号順序を再編成した"
   ],

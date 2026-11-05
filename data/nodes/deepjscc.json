@@ -21,7 +21,20 @@
     "url": "https://doi.org/10.1109/tccn.2019.2919300",
     "source": "survey/library.json"
   },
-  "year": 2019,
+  "year": 2018,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2018,
+      "evidence": "arXiv:1809.01733 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2019,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc"
   ],
@@ -31,6 +44,7 @@
     "Rayleigh"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "圧縮・誤り訂正の明示的な符号を用いず，画素値を複素数値の通信路入力シンボルへ直接写像する JSCC を提案した",
     "符号化器・復号器を2つの CNN とし，学習不可能な通信路層を挟んだ自己符号化器として共同学習した"

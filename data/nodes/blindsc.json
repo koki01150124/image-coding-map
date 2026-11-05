@@ -25,6 +25,19 @@
     "source": "survey/library.json"
   },
   "year": 2025,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2025,
+      "evidence": "arXiv:2501.02273 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Communications",
+      "year": 2025,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -36,6 +49,7 @@
     "BSC"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "BSC を一般のデジタル通信の普遍的な表現とし，並列 BSC で符号化器出力と復号器入力の関係をモデル化した",
     "BSC のビット反転確率を学習可能なパラメータとし，推論時は誤り率を学習値に合わせる電力・変調の選択を行う"

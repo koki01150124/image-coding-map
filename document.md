@@ -1,7 +1,7 @@
-# image-coding-map（Image Compression Map）
+# image-coding-map（Image Coding Map）
 
 画像圧縮・DeepJSCC・通信路符号の研究系譜を可視化する静的Webサイトと，その論文データ・検証ツールのプロジェクトである．
-公開用のリポジトリ名は `image-compression-map` を想定している．サイトの機能，データ形式，論文の追加手順は `README.md` に記載する．
+公開用のリポジトリ名は `image-coding-map` を想定している．サイトの機能，データ形式，論文の追加手順は `README.md` に記載する．
 
 ## ディレクトリとファイルの役割
 
@@ -10,13 +10,14 @@
 | `data/nodes/<id>.json` | 論文・手法ごとの一次データ（44件） |
 | `data/domains.json` | 研究分野の定義（ラベル，説明，ライト／ダークの色，列の順） |
 | `data/edge_types.json` | エッジ種別の定義（向き，系譜かどうか） |
-| `data/vocab.json` | 種別・通信路モデル・根拠・確認範囲の表示名 |
+| `data/vocab.json` | 種別・通信路モデル・根拠・確認範囲・年の基準の表示名 |
+| `data/classification_rules.json` | 分類の規則（DeepJSCC の条件，アナログ／デジタル，構成例，年の基準）．`validate_data.py` が用いる |
 | `data/schema/node.schema.json` | ノードの JSON スキーマ（Draft 2020-12） |
-| `survey/library.json` | OpenAlex・arXiv・Crossref から取得した書誌情報（39件）．`surveykit.py` のみが編集する |
+| `survey/library.json` | OpenAlex・arXiv・Crossref から取得した書誌情報（44件．採録39件，除外5件）．`surveykit.py` のみが編集する |
 | `survey/search_log.json`，`survey/plan.md` 等 | ai-survey-kit の `init` が作成した取得の記録と雛形 |
 | `tools/common.py` | JSON・ライブラリの読み込み，掲載先名の整理，書誌情報の変換 |
 | `tools/sync_bibliography.py` | `library.json` の書誌情報をノードの `bibliography` へ転記する．`--check` で照合のみ行う |
-| `tools/validate_data.py` | データ検証（スキーマ，ID，参照，エッジ種別，循環，書誌情報） |
+| `tools/validate_data.py` | データ検証（スキーマ，ID，参照，エッジ種別，循環，書誌情報，年，重複，分類の規則） |
 | `tools/build_graph.py` | `data/` を統合して `site/data/graph.json` を生成する |
 | `site/index.html`，`site/assets/*` | 配信するサイト（D3.js による描画と操作） |
 | `site/vendor/` | D3.js v7.9.0（ISC License）とそのライセンス |
@@ -36,7 +37,7 @@ flowchart LR
     SYNC -->|bibliography を転記| N
     N --> V["validate_data.py"]
     S[("data/schema/node.schema.json")] --> V
-    D[("domains.json / edge_types.json / vocab.json")] --> V
+    D[("domains.json / edge_types.json / vocab.json / classification_rules.json")] --> V
     LIB --> V
     N --> B["build_graph.py"]
     D --> B
@@ -49,7 +50,7 @@ flowchart LR
     B --> TV
 ```
 
-Python のツールは `common.py` を共有し，`validate_data.py` は `sync_bibliography.diff_bibliography` を用いて書誌情報を照合する．
+Python のツールは `common.py` を共有し，`validate_data.py` は `sync_bibliography.diff_bibliography` を用いて書誌情報を照合する．`app.js` は試験用に `window.ICM`（経路探索の関数と状態）を公開しており，`tests/test_site.py` が全ての論文の組の経路の検査に用いる．
 `build_graph.py` は検証を行わないため，CI では `validate_data.py` の後に実行する．
 
 サイト側の主要な関数の関係を以下に示す．`app.js` は `graph.json` のみを読み，論文の内容・分野・エッジ種別をデータから決めるため，論文を追加しても JavaScript の変更は不要である．
@@ -66,8 +67,14 @@ flowchart TD
     renderAll --> applyFocus["applyFocus<br/>選択・検索・経路の強調"]
     select --> renderPanel["renderPanel<br/>詳細パネル"]
     select --> zoomToNodes
-    renderCompare --> findLineagePath["findLineagePath<br/>bfs（直系 → 系譜の無向 → 全関係）"]
-    findLineagePath --> showPathOnMap
+    renderCompare --> pathBox["pathBox<br/>技術的系譜／関連経路の切り替え"]
+    pathBox --> findTechnicalLineage["findTechnicalLineage<br/>derived_from・builds_on のみ（直系 → 共通の派生元）"]
+    pathBox --> findRelatedPath["findRelatedPath<br/>4種類の関係（向きを無視）"]
+    findTechnicalLineage --> bfs
+    findRelatedPath --> bfs
+    pathBox --> showPathOnMap
+    setupPeriod --> setPeriod["setPeriod<br/>表示期間"]
+    renderPanel --> yearDetail["yearDetail<br/>年代軸の年・初出・正式掲載"]
     exportSvg --> serializableSvg
     exportPng --> serializableSvg
     readHash --> select
@@ -94,7 +101,7 @@ uv pip install -p .venv_tools -r requirements_tools.txt
 .venv_tools/bin/python tools/sync_bibliography.py          # 書誌情報の転記（--check で照合のみ）
 .venv_tools/bin/python tools/validate_data.py              # データ検証
 .venv_tools/bin/python tools/build_graph.py                # site/data/graph.json の生成
-.venv_tools/bin/python -m pytest -q tests                  # テスト（25件）
+.venv_tools/bin/python -m pytest -q tests                  # テスト（43件）
 python3 -m http.server 8000 -d site                        # http://localhost:8000/ で確認
 ```
 
@@ -114,6 +121,6 @@ python3 -m http.server 8000 -d site                        # http://localhost:80
 
 ## Git 管理上の注意
 
-- `.ai/` の各 kit はサブモジュールである．公開リポジトリ（`image-compression-map`）にサブモジュールを含めるかは公開時に判断する．CI はサブモジュールを必要としない．
+- `.ai/` の各 kit はサブモジュールである．公開リポジトリ（`image-coding-map`）にサブモジュールを含めるかは公開時に判断する．CI はサブモジュールを必要としない．
 - `survey/library.json` は検証で参照するため Git で管理する．
 - 参考にした `optimizer_map` にはライセンスの表示が無く，コードは流用していない．本リポジトリのライセンスは未設定である．

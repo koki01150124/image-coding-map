@@ -23,6 +23,19 @@
     "source": "survey/library.json"
   },
   "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2006.09965 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "Conference on Neural Information Processing Systems（NeurIPS）",
+      "year": 2020,
+      "evidence": "本文の脚注: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)，arXiv のコメント"
+    }
+  },
   "domains": [
     "generative",
     "lic"
@@ -30,6 +43,7 @@
   "source_representation": "ハイパープライアを持つ学習型圧縮の潜在表現（GAN で復号）",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "GAN と学習型圧縮を組み合わせ，正規化層・生成器・識別器・学習戦略・知覚損失を体系的に検討した",
     "レート・歪み・知覚のトレードオフの理論と実践を，知覚指標と被験者実験で結び付けた"

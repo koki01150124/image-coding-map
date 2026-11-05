@@ -1,74 +1,366 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/image-compression-map/node.schema.json",
+  "$id": "https://example.invalid/image-coding-map/node.schema.json",
   "title": "論文・手法ノード",
   "description": "data/nodes/<id>.json の形式．未確認の項目は推測で埋めず null とする．",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "id", "kind", "short_name", "bib_key", "bibliography", "year", "domains",
-    "source_representation", "channel_models", "transmission", "contributions",
-    "training", "metrics", "strengths", "limitations", "relations", "verification"
+    "id",
+    "kind",
+    "short_name",
+    "bib_key",
+    "bibliography",
+    "year",
+    "year_basis",
+    "publication",
+    "domains",
+    "source_representation",
+    "channel_models",
+    "transmission",
+    "joint_channel_training",
+    "contributions",
+    "training",
+    "metrics",
+    "strengths",
+    "limitations",
+    "relations",
+    "verification"
   ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z0-9_]+$", "description": "ファイル名と一致するID"},
-    "kind": {"enum": ["paper", "standard", "software", "scheme", "unpublished"]},
-    "short_name": {"type": "string", "minLength": 1, "maxLength": 40},
-    "aliases": {"type": "array", "items": {"type": "string"}, "description": "検索用の別名"},
-    "bib_key": {"type": ["string", "null"], "description": "survey/library.json の引用キー．書誌情報が API 由来の場合に必須"},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "ファイル名と一致するID"
+    },
+    "kind": {
+      "enum": [
+        "paper",
+        "standard",
+        "software",
+        "scheme",
+        "unpublished"
+      ]
+    },
+    "short_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "検索用の別名"
+    },
+    "bib_key": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "survey/library.json の引用キー．書誌情報が API 由来の場合に必須"
+    },
     "bibliography": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["title", "authors", "year", "venue", "doi", "arxiv", "url", "source"],
+      "required": [
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "doi",
+        "arxiv",
+        "url",
+        "source"
+      ],
       "properties": {
-        "title": {"type": ["string", "null"]},
-        "authors": {"type": ["array", "null"], "items": {"type": "string"}},
-        "year": {"type": ["integer", "null"]},
-        "venue": {"type": ["string", "null"]},
-        "doi": {"type": ["string", "null"]},
-        "arxiv": {"type": ["string", "null"]},
-        "url": {"type": ["string", "null"], "pattern": "^https?://"},
-        "source": {"type": "string", "description": "書誌情報の出典（library または確認した一次資料）"}
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authors": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "venue": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "arxiv": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://"
+        },
+        "source": {
+          "type": "string",
+          "description": "書誌情報の出典（library または確認した一次資料）"
+        }
       }
     },
-    "year": {"type": "integer", "minimum": 1900, "maximum": 2100, "description": "マップ上の発表年"},
-    "year_note": {"type": "string", "description": "year が bibliography.year と異なる場合の根拠"},
+    "year": {
+      "type": "integer",
+      "minimum": 1900,
+      "maximum": 2100,
+      "description": "年代軸の年．year_basis が定める基準による（論文は最初の公開年）"
+    },
+    "year_basis": {
+      "enum": [
+        "first_public",
+        "standard_overview",
+        "software_release",
+        "scheme_first_use",
+        "unpublished_placement"
+      ],
+      "description": "year の意味．first_public: 論文の最初の公開年（arXiv 初版と正式掲載の早い方），standard_overview: 標準規格の解説論文の最初の公開年，software_release: ソフトウェアの最初の公開年，scheme_first_use: 構成例を比較対象として最初に用いた収録論文の初出年，unpublished_placement: 未公開研究の配置の年（発表年ではない）"
+    },
+    "year_note": {
+      "type": "string",
+      "description": "year が bibliography.year と異なる場合の根拠"
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "first_public",
+        "formal"
+      ],
+      "description": "初出と正式掲載．プレプリントと正式掲載版は同じノードにまとめる",
+      "properties": {
+        "first_public": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "venue",
+            "year",
+            "evidence"
+          ],
+          "properties": {
+            "venue": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer"
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "formal": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "venue",
+            "year",
+            "evidence"
+          ],
+          "properties": {
+            "venue": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer"
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
     "domains": {
-      "type": "array", "minItems": 1, "uniqueItems": true,
-      "items": {"enum": ["traditional", "lic", "generative", "sscc", "analog_jscc", "digital_jscc", "channel_coding"]},
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "traditional",
+          "lic",
+          "generative",
+          "sscc",
+          "analog_jscc",
+          "digital_jscc",
+          "channel_coding"
+        ]
+      },
       "description": "研究分野．先頭が主分野"
     },
-    "tags": {"type": "array", "items": {"type": "string"}, "description": "研究課題などの自由なタグ"},
-    "source_representation": {"type": ["string", "null"], "description": "情報源表現・潜在表現"},
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "研究課題などの自由なタグ"
+    },
+    "source_representation": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "情報源表現・潜在表現"
+    },
     "channel_models": {
-      "type": ["array", "null"],
-      "items": {"enum": ["AWGN", "Rayleigh", "BSC", "BEC", "B-DMC", "feedback", "general"]},
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "enum": [
+          "AWGN",
+          "Rayleigh",
+          "BSC",
+          "BEC",
+          "B-DMC",
+          "feedback",
+          "general"
+        ]
+      },
       "description": "扱う通信路モデル．通信路を扱わない場合は空配列，未確認は null"
     },
-    "transmission": {"enum": ["analog", "digital", "not_applicable", null]},
-    "contributions": {"type": ["array", "null"], "items": {"type": "string"}},
-    "training": {"type": ["string", "null"], "description": "学習方法．学習を伴わない手法は「学習なし」と記す"},
-    "metrics": {"type": ["array", "null"], "items": {"type": "string"}},
-    "strengths": {"type": ["array", "null"], "items": {"type": "string"}},
-    "limitations": {"type": ["array", "null"], "items": {"type": "string"}},
-    "code_url": {"type": "string", "pattern": "^https?://"},
+    "transmission": {
+      "enum": [
+        "analog",
+        "digital",
+        "not_applicable",
+        null
+      ]
+    },
+    "joint_channel_training": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "通信路（雑音・ビット反転）を含めて符号化器・復号器を共同学習するか．DeepJSCC の分類の条件．未確認は null"
+    },
+    "contributions": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "training": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "学習方法．学習を伴わない手法は「学習なし」と記す"
+    },
+    "metrics": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "strengths": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "code_url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
     "relations": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["target", "type", "note", "evidence"],
+        "required": [
+          "target",
+          "type",
+          "note",
+          "evidence"
+        ],
         "properties": {
-          "target": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-          "type": {"type": "string"},
-          "note": {"type": "string", "minLength": 1},
+          "target": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "type": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
           "evidence": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["kind", "detail"],
+            "required": [
+              "kind",
+              "detail"
+            ],
             "properties": {
-              "kind": {"enum": ["abstract", "full_text", "official_page", "source_code", "project_doc"]},
-              "detail": {"type": "string", "minLength": 1}
+              "kind": {
+                "enum": [
+                  "abstract",
+                  "full_text",
+                  "official_page",
+                  "source_code",
+                  "project_doc"
+                ]
+              },
+              "detail": {
+                "type": "string",
+                "minLength": 1
+              }
             }
           }
         }
@@ -77,10 +369,22 @@
     "verification": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["read_level", "notes"],
+      "required": [
+        "read_level",
+        "notes"
+      ],
       "properties": {
-        "read_level": {"enum": ["abstract", "full_text_scan", "official_page", "project_doc"]},
-        "notes": {"type": "string"}
+        "read_level": {
+          "enum": [
+            "abstract",
+            "full_text_scan",
+            "official_page",
+            "project_doc"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
       }
     }
   }

@@ -19,7 +19,20 @@
     "url": "https://doi.org/10.1109/jsait.2020.2987203",
     "source": "survey/library.json"
   },
-  "year": 2020,
+  "year": 2019,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2019,
+      "evidence": "arXiv:1911.11174 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Journal on Selected Areas in Information Theory",
+      "year": 2020,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc"
   ],
@@ -30,6 +43,7 @@
     "feedback"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "通信路出力のフィードバックを利用する自己符号化器型の JSCC（DeepJSCC-f）を提案した"
   ],

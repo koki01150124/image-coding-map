@@ -23,12 +23,26 @@
     "source": "survey/library.json"
   },
   "year": 2023,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2023,
+      "evidence": "arXiv:2303.14978 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+      "year": 2023,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "Transformer と CNN の混合ブロックによる潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "CNN の局所性と Transformer の非局所性を組み合わせる並列の Transformer-CNN 混合（TCM）ブロックを提案した",
     "Swin Transformer に基づく注意機構（SWAtten）を持つチャネル方向のエントロピーモデルを提案した"

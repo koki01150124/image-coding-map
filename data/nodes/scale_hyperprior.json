@@ -13,7 +13,7 @@
     "authors": [
       "Johannes Ballé",
       "David C. Minnen",
-      "Singh, Saurabh",
+      "Saurabh Singh",
       "Sung Jin Hwang",
       "Nick Johnston"
     ],
@@ -25,12 +25,26 @@
     "source": "survey/library.json"
   },
   "year": 2018,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2018,
+      "evidence": "arXiv:1802.01436 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Learning Representations（ICLR）",
+      "year": 2018,
+      "evidence": "本文のヘッダ: Published as a conference paper at ICLR 2018"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "量子化した潜在表現と，そのスケールを表すハイパー潜在（サイド情報）",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "潜在表現の空間的な依存関係を捉えるハイパープライア（サイド情報）を導入した",
     "複雑な事前分布を自己符号化器と同時に学習する変分自己符号化器型の圧縮モデルを提案した"

@@ -1,4 +1,4 @@
-// Image Compression Map — 描画と操作（D3 v7）
+// Image Coding Map — 描画と操作（D3 v7）
 //
 // data/graph.json のみを読み込み，論文の内容・分野・エッジ種別は全てデータから決まる．
 // 論文を追加する場合に本ファイルを変更する必要は無い．
@@ -15,7 +15,9 @@ const state = {
   layout: null,
   hiddenDomains: new Set(),
   hiddenEdgeTypes: new Set(),
+  yearMin: -Infinity,
   yearMax: Infinity,
+  pathMode: "lineage",
   selected: null,
   compare: [],
   path: null,
@@ -63,6 +65,39 @@ const domainOf = (id) => state.graph.domains.find((d) => d.id === id);
 const edgeTypeOf = (id) => state.graph.edge_types.find((t) => t.id === id);
 /** 語彙のラベル．@param {string} kind @param {string} id @returns {string} */
 const vocabLabel = (kind, id) => state.graph.vocab[kind]?.[id] ?? id;
+/**
+ * 一覧・ツールチップ用の年の表示（未公開研究は発表年として表示しない）．
+ * @param {object} n - ノード．
+ * @returns {string}
+ */
+function yearLabel(n) {
+  if (n.year_basis === "unpublished_placement") return "未公開";
+  if (n.year_basis === "scheme_first_use") return `構成例・${n.year}〜`;
+  return String(n.year);
+}
+
+/**
+ * 詳細パネル・比較表用の年の説明（年代軸の基準，初出，正式掲載）．
+ * @param {object} n - ノード．
+ * @returns {HTMLElement}
+ */
+function yearDetail(n) {
+  const pub = n.publication || {};
+  const line = (label, p) => el("div", {}, `${label}: `, p ? `${p.year}（${p.venue}）` : unverified(),
+    p ? el("span", { class: "note" }, ` 根拠: ${p.evidence}`) : null);
+  const parts = [];
+  if (n.year_basis === "unpublished_placement") {
+    parts.push(el("div", {}, "発表年: 未公開"), el("div", { class: "note" }, `年代軸の位置: ${n.year}（${vocabLabel("year_basis", n.year_basis)}）`));
+  } else if (n.year_basis === "scheme_first_use") {
+    parts.push(el("div", {}, `年代軸の年: ${n.year}（${vocabLabel("year_basis", n.year_basis)}）`));
+  } else {
+    parts.push(el("div", {}, `年代軸の年: ${n.year}（${vocabLabel("year_basis", n.year_basis)}）`), line("初出", pub.first_public));
+    if (n.kind !== "software") parts.push(line("正式掲載", pub.formal));
+  }
+  if (n.year_note) parts.push(el("div", { class: "note" }, n.year_note));
+  return el("div", {}, parts);
+}
+
 /** 未確認の表示．@returns {HTMLElement} */
 const unverified = () => el("span", { class: "unverified" }, "未確認");
 
@@ -91,7 +126,7 @@ async function loadGraph() {
 }
 
 /** ノードが現在の絞り込みで表示されるか．@param {object} n @returns {boolean} */
-const isNodeVisible = (n) => n.year <= state.yearMax && n.domains.some((d) => !state.hiddenDomains.has(d));
+const isNodeVisible = (n) => n.year >= state.yearMin && n.year <= state.yearMax && n.domains.some((d) => !state.hiddenDomains.has(d));
 /** エッジが表示されるか．@param {object} e @returns {boolean} */
 const isEdgeVisible = (e) => !state.hiddenEdgeTypes.has(e.type) && isNodeVisible(state.byId.get(e.source)) && isNodeVisible(state.byId.get(e.target));
 
@@ -139,6 +174,9 @@ function setupSvg() {
   defs.append("marker").attr("id", "arrow-hl").attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
     .attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse")
     .append("path").attr("d", "M0,0L10,5L0,10z").style("fill", "var(--highlight)");
+  defs.append("marker").attr("id", "arrow-rel").attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5)
+    .attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse")
+    .append("path").attr("d", "M0,0L10,5L0,10z").style("fill", "var(--path-related)");
   root = svg.append("g").attr("class", "zoom-root");
   layers = {};
   for (const name of ["bands", "regions", "rows", "edges", "nodes", "labels"]) layers[name] = root.append("g").attr("class", `layer-${name}`);
@@ -241,7 +279,7 @@ function renderNodes() {
     return gg;
   });
   g.attr("class", (n) => `node ${n.kind}`).attr("data-id", (n) => n.id)
-    .attr("aria-label", (n) => `${n.short_name}（${n.year}）`)
+    .attr("aria-label", (n) => `${n.short_name}（${yearLabel(n)}）`)
     .attr("transform", (n) => `translate(${L.pos.get(n.id).x},${L.pos.get(n.id).y})`);
   layers.labels.selectAll("text.label").data(nodes, (n) => n.id).join("text")
     .attr("class", "label").attr("data-id", (n) => n.id)
@@ -286,16 +324,19 @@ function applyFocus() {
   layers.nodes.selectAll("g.node")
     .classed("dim", (n) => keepNodes != null && !keepNodes.has(n.id))
     .classed("selected", (n) => n.id === sel && !path)
-    .classed("path-on", (n) => path != null && keepNodes.has(n.id))
+    .classed("path-on", (n) => path != null && path.mode === "lineage" && keepNodes.has(n.id))
+    .classed("path-rel", (n) => path != null && path.mode === "related" && keepNodes.has(n.id))
     .classed("compare", (n) => state.compare.includes(n.id) && n.id !== sel)
     .classed("match", (n) => state.matches != null && state.matches.has(n.id));
   layers.labels.selectAll("text.label").classed("dim", (n) => keepNodes != null && !keepNodes.has(n.id));
   layers.edges.selectAll("path.edge")
     .classed("dim", function () { return keepEdges != null && !keepEdges.has(this.dataset.key); })
-    .classed("path-on", function () { return path != null && keepEdges.has(this.dataset.key); })
+    .classed("path-on", function () { return path != null && path.mode === "lineage" && keepEdges.has(this.dataset.key); })
+    .classed("path-rel", function () { return path != null && path.mode === "related" && keepEdges.has(this.dataset.key); })
     .attr("marker-end", function (e) {
       if (!edgeTypeOf(e.type).lineage) return null;
-      return path != null && keepEdges.has(this.dataset.key) ? "url(#arrow-hl)" : "url(#arrow)";
+      if (path == null || !keepEdges.has(this.dataset.key)) return "url(#arrow)";
+      return path.mode === "lineage" ? "url(#arrow-hl)" : "url(#arrow-rel)";
     });
   updateFocusNote();
 }
@@ -308,7 +349,7 @@ function updateFocusNote() {
   const note = els.focusNote;
   note.replaceChildren();
   let text = null;
-  if (state.path) text = `系譜の経路: ${state.path.label}`;
+  if (state.path) text = state.path.label;
   else if (state.selected) text = `選択中: ${state.byId.get(state.selected).short_name}（直接の関係のみ強調）`;
   else if (state.matches) text = `検索: ${state.matches.size} 件を強調`;
   note.hidden = !text;
@@ -403,7 +444,7 @@ function placeTooltip(ev) {
 /** ノードのツールチップ．@param {MouseEvent} ev @param {object} n @returns {void} */
 function showNodeTooltip(ev, n) {
   els.tooltip.replaceChildren(
-    el("div", { class: "tt-title" }, `${n.short_name}（${n.year}）`),
+    el("div", { class: "tt-title" }, `${n.short_name}（${yearLabel(n)}）`),
     el("div", {}, n.bibliography.title ?? vocabLabel("kind", n.kind)),
     el("div", { class: "tt-sub" }, n.domains.map((d) => domainOf(d).short).join(" ／ ")),
   );
@@ -505,14 +546,15 @@ function renderPanel() {
     linkButtons(n),
     el("dl", {},
       el("dt", {}, "種別"), el("dd", {}, vocabLabel("kind", n.kind)),
-      el("dt", {}, "発表年"), el("dd", {}, String(n.year), n.year_note ? el("div", { class: "note" }, n.year_note) : null),
+      el("dt", {}, "年"), el("dd", {}, yearDetail(n)),
       el("dt", {}, "著者"), el("dd", {}, orUnverified(b.authors, (a) => a.join(", "))),
-      el("dt", {}, "掲載先"), el("dd", {}, orUnverified(b.venue)),
+      el("dt", {}, "掲載先（登録した版）"), el("dd", {}, orUnverified(b.venue)),
       el("dt", {}, "DOI"), el("dd", {}, orUnverified(b.doi)),
       el("dt", {}, "arXiv"), el("dd", {}, orUnverified(b.arxiv)),
       el("dt", {}, "情報源表現"), el("dd", {}, orUnverified(n.source_representation)),
       el("dt", {}, "通信路モデル"), el("dd", {}, orUnverified(n.channel_models, (c) => c.map((x) => vocabLabel("channel_models", x)).join("，"))),
       el("dt", {}, "区分"), el("dd", {}, orUnverified(n.transmission, (t) => vocabLabel("transmission", t))),
+      el("dt", {}, "通信路を含む共同学習"), el("dd", {}, orUnverified(n.joint_channel_training, (b) => (b ? "あり" : "なし"))),
       el("dt", {}, "学習方法"), el("dd", {}, orUnverified(n.training)),
       el("dt", {}, "評価指標"), el("dd", {}, orUnverified(n.metrics, (m) => m.join("，"))),
     ),
@@ -596,7 +638,7 @@ function setupYearSlider() {
   els.year.step = "1";
   setYearMax(Infinity);
   els.year.addEventListener("input", () => { stopPlay(); setYearMax(Number(els.year.value)); renderAll(); });
-  els.play.addEventListener("click", () => (state.playTimer ? stopPlay() : startPlay(years)));
+  els.play.addEventListener("click", () => (state.playTimer ? stopPlay() : startPlay(years.filter((y) => y >= state.yearMin))));
 }
 
 /** 年を進めながら表示する．@param {number[]} years @returns {void} */
@@ -617,6 +659,38 @@ function stopPlay() {
   clearInterval(state.playTimer);
   state.playTimer = null;
   els.play.textContent = "▶ 再生";
+}
+
+/** 表示期間の選択肢（開始年）．データの年の範囲に含まれるものだけを用いる．@type {number[]} */
+const PERIOD_STARTS = [2015, 2020];
+
+/**
+ * 表示期間（指定した年以降）の選択を準備する．選択すると該当期間の論文が収まるように拡大する．
+ * @returns {void}
+ */
+function setupPeriod() {
+  const sel = $("period-select");
+  const years = state.layout.rows.map((r) => r.year);
+  const opts = [el("option", { value: "" }, "全期間")];
+  for (const y of PERIOD_STARTS) if (y > years[0] && y <= years[years.length - 1]) opts.push(el("option", { value: String(y) }, `${y}年以降`));
+  sel.replaceChildren(...opts);
+  sel.addEventListener("change", () => setPeriod(sel.value ? Number(sel.value) : -Infinity));
+}
+
+/**
+ * 表示期間の開始年を設定する．
+ * @param {number} y - 開始年（-Infinity は全期間）．
+ * @returns {void}
+ */
+function setPeriod(y) {
+  stopPlay();
+  state.yearMin = y;
+  $("period-select").value = Number.isFinite(y) ? String(y) : "";
+  if (state.yearMax < y) setYearMax(Infinity);
+  renderAll();
+  const ids = state.graph.nodes.filter(isNodeVisible).map((n) => n.id);
+  if (Number.isFinite(y)) zoomToNodes(ids, 1.2);
+  else zoomToNodes([], 1.2, false);
 }
 
 // ---------------------------------------------------------------- 検索
@@ -699,79 +773,138 @@ function bfs(from, to, neighbors) {
   return path;
 }
 
+/** 系譜（lineage）のエッジ種別の集合．@returns {Set<string>} */
+const lineageTypes = () => new Set(state.graph.edge_types.filter((t) => t.lineage).map((t) => t.id));
+
 /**
- * 2論文間の系譜の経路を求める．
- * 優先順位: (1) 系譜エッジを新しい手法から元の手法へたどる有向の経路，(2) 系譜エッジの向きを無視した経路，
- * (3) 全種類のエッジによる経路（系譜ではなく関係のつながりとして示す）．
+ * 技術的系譜の経路を求める（derived_from・builds_on のみ）．
+ * (1) 一方が他方の派生元・利用元である直系の経路（新しい手法 → 元の手法の向きにたどる），
+ * (2) 共通の派生元（祖先）を持つ場合の，祖先から両者への2本の経路，の順に探す．
  * @param {string} a - 論文A．
  * @param {string} b - 論文B．
- * @returns {{path: Array, kind: string}|null}
+ * @returns {{kind: "direct"|"common", steps: Array<{from: string, to: string, edge: object}>, ancestor?: string}|null}
+ *   steps の from は派生元（古い側），to は派生先（新しい側）．経路が無い場合は null．
  */
-function findLineagePath(a, b) {
-  const lineage = new Set(state.graph.edge_types.filter((t) => t.lineage).map((t) => t.id));
+function findTechnicalLineage(a, b) {
+  const lin = lineageTypes();
+  const edges = state.graph.edges.filter((e) => lin.has(e.type));
+  const up = (u) => edges.filter((e) => e.source === u).map((e) => ({ next: e.target, edge: e }));
+  const asSteps = (path) => path.slice(1).map((s, i) => ({ from: s.id, to: path[i].id, edge: s.edge }));
+  const direct = bfs(a, b, up) || bfs(b, a, up);
+  if (direct) return { kind: "direct", steps: asSteps(direct).reverse() };
+  // 共通の祖先: 両者から上へたどった距離の和が最小のもの
+  const dist = (start) => {
+    const d = new Map([[start, 0]]);
+    const q = [start];
+    while (q.length) {
+      const u = q.shift();
+      for (const { next } of up(u)) if (!d.has(next)) { d.set(next, d.get(u) + 1); q.push(next); }
+    }
+    return d;
+  };
+  const da = dist(a), db = dist(b);
+  const common = [...da.keys()].filter((x) => x !== a && x !== b && db.has(x)).sort((x, y) => da.get(x) + db.get(x) - da.get(y) - db.get(y) || x.localeCompare(y));
+  if (!common.length) return null;
+  const anc = common[0];
+  const pa = asSteps(bfs(a, anc, up)).reverse(), pb = asSteps(bfs(b, anc, up)).reverse();
+  return { kind: "common", ancestor: anc, steps: [...pa, ...pb], branches: [pa, pb] };
+}
+
+/**
+ * 関連経路を求める（4種類の関係を向きを無視してたどる最短経路）．
+ * @param {string} a - 論文A．
+ * @param {string} b - 論文B．
+ * @returns {{steps: Array<{from: string, to: string, edge: object}>}|null} steps は a から b への順．
+ */
+function findRelatedPath(a, b) {
   const edges = state.graph.edges;
-  const directed = (u) => edges.filter((e) => lineage.has(e.type) && e.source === u).map((e) => ({ next: e.target, edge: e }));
-  const undirected = (types) => (u) => edges.filter((e) => types(e.type) && (e.source === u || e.target === u)).map((e) => ({ next: e.source === u ? e.target : e.source, edge: e }));
-  const p1 = bfs(a, b, directed) || bfs(b, a, directed);
-  if (p1) return { path: p1, kind: "直系の系譜（派生・利用をたどる経路）" };
-  const p2 = bfs(a, b, undirected((t) => lineage.has(t)));
-  if (p2) return { path: p2, kind: "共通の祖先・子孫を経由する系譜" };
-  const p3 = bfs(a, b, undirected(() => true));
-  if (p3) return { path: p3, kind: "系譜ではない関係（共通課題・比較を含む）のつながり" };
-  return null;
+  const nb = (u) => edges.filter((e) => e.source === u || e.target === u).map((e) => ({ next: e.source === u ? e.target : e.source, edge: e }));
+  const path = bfs(a, b, nb);
+  if (!path) return null;
+  return { steps: path.slice(1).map((s, i) => ({ from: path[i].id, to: s.id, edge: s.edge })) };
+}
+
+/**
+ * 1段の関係を文で表す（向きのある関係は「派生元 → 派生先」を明示する）．
+ * @param {object} edge - エッジ．
+ * @returns {HTMLElement}
+ */
+function stepText(edge) {
+  const s = state.byId.get(edge.source).short_name, t = state.byId.get(edge.target).short_name;
+  const text = {
+    derived_from: `${t} → ${s}（${s} が ${t} を改良・発展）`,
+    builds_on: `${t} → ${s}（${s} が ${t} の技術・モデルを利用）`,
+    related: `${s} ― ${t}（共通研究課題．派生関係ではない）`,
+    compared_with: `${s} ― ${t}（${s} が ${t} を比較対象とした．派生関係ではない）`,
+  }[edge.type];
+  return el("li", { class: `step-${edge.type}` }, el("span", { class: "step-type" }, `［${edgeTypeOf(edge.type).label}］`), " ", text);
 }
 
 /**
  * 経路をマップ上で強調する．
- * @param {{path: Array, kind: string}} res - findLineagePath の結果．
+ * @param {Array<{from: string, to: string, edge: object}>} steps - 経路の各段．
+ * @param {"lineage"|"related"} mode - 経路の種類．
  * @param {string} label - 注記に表示する文．
  * @returns {void}
  */
-function showPathOnMap(res, label) {
-  for (const step of res.path) {
-    const n = state.byId.get(step.id);
+function showPathOnMap(steps, mode, label) {
+  const ids = [...new Set(steps.flatMap((s) => [s.from, s.to]))];
+  for (const id of ids) {
+    const n = state.byId.get(id);
     if (!isNodeVisible(n)) revealNode(n);
   }
-  for (const step of res.path) if (step.edge) state.hiddenEdgeTypes.delete(step.edge.type);
+  for (const s of steps) state.hiddenEdgeTypes.delete(s.edge.type);
   syncLegend();
   renderAll();
-  state.path = {
-    nodes: res.path.map((s) => s.id),
-    edges: res.path.filter((s) => s.edge).map((s) => `${s.edge.source}>${s.edge.target}>${s.edge.type}`),
-    label,
-  };
+  state.path = { mode, nodes: ids, edges: steps.map((s) => `${s.edge.source}>${s.edge.target}>${s.edge.type}`), label };
   state.selected = null;
   renderPanel();
   setView(null);
   applyFocus();
-  zoomToNodes(state.path.nodes, 1.3);
+  zoomToNodes(ids, 1.3);
 }
 
 /**
- * 経路の説明（A →[種別]→ B …）を作る．
- * @param {{path: Array, kind: string}} res - 経路．
+ * 2論文の経路の説明を作る（現在の経路の種類に応じる）．
+ * @param {object} a - 論文A．
+ * @param {object} b - 論文B．
  * @returns {HTMLElement}
  */
-function pathChain(res) {
-  const parts = [];
-  res.path.forEach((s, i) => {
-    if (i > 0) parts.push(el("span", { class: "via" }, ` ─[${edgeTypeOf(s.edge.type).label}]─ `));
-    parts.push(el("span", { class: "step" }, state.byId.get(s.id).short_name));
-  });
-  return el("div", { class: "path-chain" }, parts);
+function pathBox(a, b) {
+  const label = `${a.short_name} ⇔ ${b.short_name}`;
+  const box = (...children) => el("div", { class: `path-box path-${state.pathMode}`, "data-pair": `${a.id},${b.id}` }, el("strong", {}, label), " ", ...children);
+  if (state.pathMode === "lineage") {
+    const res = findTechnicalLineage(a.id, b.id);
+    if (!res) return box(el("p", { class: "note no-lineage" }, "技術的系譜は存在しない（改良・発展，技術・モデルの利用の関係で結ばれていない）．関連経路に切り替えると，比較対象・共通研究課題を含むつながりを確認できる．"));
+    const head = res.kind === "direct" ? "直系の技術的系譜（派生元 → 派生先）"
+      : `共通の派生元 ${state.byId.get(res.ancestor).short_name} から両者へ発展した技術的系譜`;
+    const lists = res.kind === "direct" ? [el("ol", { class: "path-chain" }, res.steps.map((s) => stepText(s.edge)))]
+      : res.branches.map((br) => el("ol", { class: "path-chain" }, br.map((s) => stepText(s.edge))));
+    return box(el("span", { class: "note" }, `（${head}）`), ...lists,
+      el("button", { type: "button", onclick: () => showPathOnMap(res.steps, "lineage", `技術的系譜: ${label}（${head}）`) }, "マップ上で表示"));
+  }
+  const res = findRelatedPath(a.id, b.id);
+  if (!res) return box(el("p", { class: "note" }, "登録された関係ではつながっていない．"));
+  const nonLineage = res.steps.filter((s) => !edgeTypeOf(s.edge.type).lineage).length;
+  const head = nonLineage
+    ? `関連経路（${res.steps.length} 段，うち比較対象・共通研究課題 ${nonLineage} 段．経路全体としては技術的な継承を意味しない）`
+    : `関連経路（${res.steps.length} 段．すべて改良・発展または技術・モデルの利用の関係であり，技術的系譜と同じつながり）`;
+  return box(el("span", { class: "note" }, `（${head}）`), el("ol", { class: "path-chain" }, res.steps.map((s) => stepText(s.edge))),
+    el("button", { type: "button", onclick: () => showPathOnMap(res.steps, "related", `関連経路: ${label}（比較対象・共通研究課題を含む）`) }, "マップ上で表示"));
 }
 
 /** 比較表の行の定義．@type {Array<[string, function(object): (Node|string)]>} */
 const COMPARE_ROWS = [
   ["タイトル", (n) => orUnverified(n.bibliography.title)],
   ["著者", (n) => orUnverified(n.bibliography.authors, (a) => a.join(", "))],
-  ["発表年", (n) => String(n.year)],
-  ["掲載先", (n) => orUnverified(n.bibliography.venue)],
+  ["年", (n) => yearDetail(n)],
+  ["掲載先（登録した版）", (n) => orUnverified(n.bibliography.venue)],
   ["種別", (n) => vocabLabel("kind", n.kind)],
   ["分野", (n) => n.domains.map((d) => domainOf(d).label).join("，")],
   ["情報源表現", (n) => orUnverified(n.source_representation)],
   ["通信路モデル", (n) => orUnverified(n.channel_models, (c) => c.join("，"))],
   ["区分", (n) => orUnverified(n.transmission, (t) => vocabLabel("transmission", t))],
+  ["通信路を含む共同学習", (n) => orUnverified(n.joint_channel_training, (b) => (b ? "あり" : "なし"))],
   ["主要な貢献", (n) => bulletList(n.contributions)],
   ["学習方法", (n) => orUnverified(n.training)],
   ["評価指標", (n) => orUnverified(n.metrics, (m) => m.join("，"))],
@@ -792,18 +925,13 @@ function renderCompare() {
       el("button", { type: "button", onclick: () => toggleCompare(n.id), title: "比較から外す" }, "×"))))),
     el("tbody", {}, COMPARE_ROWS.map(([label, f]) => el("tr", {}, el("th", { scope: "row" }, label), nodes.map((n) => el("td", {}, f(n)))))));
   const paths = [];
-  for (let i = 0; i < nodes.length; i++) {
-    for (let j = i + 1; j < nodes.length; j++) {
-      const a = nodes[i], b = nodes[j];
-      const res = findLineagePath(a.id, b.id);
-      const label = `${a.short_name} ⇔ ${b.short_name}`;
-      paths.push(el("div", { class: "path-box" }, el("strong", {}, label), " ",
-        res ? [el("span", { class: "note" }, `（${res.kind}）`), pathChain(res),
-          el("button", { type: "button", onclick: () => showPathOnMap(res, `${label}（${res.kind}）`) }, "マップ上で表示")]
-          : el("span", { class: "note" }, "登録された関係ではつながっていない．")));
-    }
-  }
-  els.compare.replaceChildren(head, table, el("h3", {}, "系譜の経路"), ...paths);
+  for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) paths.push(pathBox(nodes[i], nodes[j]));
+  const modeSwitch = el("div", { class: "path-mode", role: "radiogroup", "aria-label": "経路の種類" },
+    ...[["lineage", "技術的系譜", "改良・発展と技術・モデルの利用のみ（向きあり）"], ["related", "関連経路", "4種類すべての関係（比較対象・共通研究課題を含む）"]].map(([id, lab, desc]) =>
+      el("button", { type: "button", "data-mode": id, "aria-pressed": String(state.pathMode === id), title: desc,
+        onclick: () => { state.pathMode = id; renderCompare(); } }, lab)),
+    el("span", { class: "note" }, state.pathMode === "lineage" ? "派生元 → 派生先の向きで表示する．比較対象・共通研究課題は含めない．" : "比較対象・共通研究課題を含む．技術的な継承とは限らない．"));
+  els.compare.replaceChildren(head, table, el("h3", {}, "経路"), modeSwitch, ...(nodes.length > 1 ? paths : [el("p", { class: "note" }, "経路の表示には2件以上を選ぶ．")]));
 }
 /** 比較ボタンの件数表示を更新する．@returns {void} */
 function toggleCompareCount() { els.btnCompare.textContent = `比較（${state.compare.length}）`; }
@@ -816,9 +944,10 @@ function renderList() {
   els.list.replaceChildren(
     el("p", { class: "note" }, `表示中の ${nodes.length} 件（分野・年の絞り込みを反映）`),
     el("table", {},
-      el("thead", {}, el("tr", {}, ["年", "略称", "タイトル", "分野", "区分", "通信路モデル"].map((h) => el("th", {}, h)))),
+      el("thead", {}, el("tr", {}, ["初出年", "正式掲載", "略称", "タイトル", "分野", "区分", "通信路モデル"].map((h) => el("th", {}, h)))),
       el("tbody", {}, nodes.map((n) => el("tr", {},
-        el("td", {}, String(n.year)),
+        el("td", {}, yearLabel(n)),
+        el("td", {}, n.publication?.formal ? `${n.publication.formal.year}（${n.publication.formal.venue}）` : "－"),
         el("td", {}, el("a", { onclick: () => { setView(null); select(n.id, { zoomTo: true }); } }, n.short_name)),
         el("td", {}, n.bibliography.title ?? vocabLabel("kind", n.kind)),
         el("td", {}, n.domains.map((d) => domainOf(d).short).join("，")),
@@ -880,7 +1009,7 @@ function download(name, blob) {
 /** SVG を保存する．@returns {void} */
 function exportSvg() {
   const text = new XMLSerializer().serializeToString(serializableSvg());
-  download("image-compression-map.svg", new Blob([text], { type: "image/svg+xml" }));
+  download("image-coding-map.svg", new Blob([text], { type: "image/svg+xml" }));
   $("export-menu").open = false;
 }
 
@@ -897,7 +1026,7 @@ async function exportPng() {
   ctx.scale(scale, scale);
   ctx.drawImage(img, 0, 0);
   URL.revokeObjectURL(img.src);
-  canvas.toBlob((blob) => download("image-compression-map.png", blob), "image/png");
+  canvas.toBlob((blob) => download("image-coding-map.png", blob), "image/png");
   $("export-menu").open = false;
 }
 
@@ -966,11 +1095,14 @@ async function main() {
     return;
   }
   injectDomainColors(state.graph.domains);
+  state.hiddenEdgeTypes = new Set(state.graph.edge_types.filter((t) => t.default_visible === false).map((t) => t.id));
   state.layout = computeLayout(state.graph, measureLabel);
   setupSvg();
   renderFrame();
   buildLegend();
+  syncLegend();
   setupYearSlider();
+  setupPeriod();
   setupSearch();
   renderAll();
   $("btn-fit").addEventListener("click", () => zoomToNodes([]));
@@ -984,6 +1116,8 @@ async function main() {
   zoomToNodes([], 1.2, false);
   readHash();
   setStatus(`${state.graph.nodes.length} 件の論文・手法，${state.graph.edges.length} 本の関係（データ生成日 ${state.graph.generated}）`, 4000);
+  // テスト・デバッグ用の参照口（描画には影響しない）
+  window.ICM = { findTechnicalLineage, findRelatedPath, state };
   document.body.dataset.ready = "true";
 }
 

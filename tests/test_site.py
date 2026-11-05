@@ -1,6 +1,6 @@
 """site/ の表示テスト（Playwright，Chromium）．
 
-site/ を GitHub Pages と同じくサブパス（/image-compression-map/）の静的ファイルとして配信し，
+site/ を GitHub Pages と同じくサブパス（/image-coding-map/）の静的ファイルとして配信し，
 主要な機能が動作し，コンソールにエラーが出ないことを確認する．
 事前に python tools/build_graph.py で site/data/graph.json を生成しておく．
 """
@@ -16,7 +16,7 @@ playwright = pytest.importorskip("playwright.sync_api")
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
-PREFIX = "/image-compression-map/"
+PREFIX = "/image-coding-map/"
 
 
 class _Handler(http.server.SimpleHTTPRequestHandler):
@@ -100,7 +100,10 @@ def test_render_all_nodes_and_edges(page, base_url, graph):
     pg, errors = page
     open_map(pg, base_url)
     assert pg.locator("g.node").count() == len(graph["nodes"])
-    assert pg.locator("path.edge").count() == len(graph["edges"])
+    lineage = {e["id"] for e in graph["edge_types"] if e["lineage"]}
+    # 初期表示は技術的な発展関係（derived_from，builds_on）のみ
+    assert pg.locator("path.edge").count() == sum(1 for e in graph["edges"] if e["type"] in lineage)
+    assert pg.locator("path.edge.related, path.edge.compared_with").count() == 0
     assert pg.locator("g.col").count() == len(graph["domains"])
     assert pg.locator("g.row").count() == len({n["year"] for n in graph["nodes"]})
     assert pg.locator("path.region").count() == len(graph["domains"])
@@ -161,13 +164,15 @@ def test_domain_filter(page, base_url, graph):
 
 
 def test_edge_type_toggle(page, base_url, graph):
-    """エッジ種別のボタンで表示を切り替えられる．"""
+    """エッジ種別のボタンで表示を切り替えられる（初期は非表示の比較対象・共通研究課題を表示できる）．"""
     pg, _ = page
     open_map(pg, base_url)
-    n_cmp = sum(1 for e in graph["edges"] if e["type"] == "compared_with")
+    assert pg.get_attribute("button[data-edge-type=compared_with]", "aria-pressed") == "false"
     pg.click("button[data-edge-type=compared_with]")
-    assert pg.locator("path.edge.compared_with").count() == 0
-    assert pg.locator("path.edge").count() == len(graph["edges"]) - n_cmp
+    pg.click("button[data-edge-type=related]")
+    assert pg.locator("path.edge").count() == len(graph["edges"])
+    pg.click("button[data-edge-type=derived_from]")
+    assert pg.locator("path.edge.derived_from").count() == 0
 
 
 def test_year_slider(page, base_url, graph):
@@ -180,16 +185,134 @@ def test_year_slider(page, base_url, graph):
 
 
 def test_compare_and_lineage_path(page, base_url):
-    """URL で比較を指定し，比較表と系譜の経路を表示できる．"""
+    """URL で比較を指定し，比較表と技術的系譜（初期状態）を表示できる．"""
     pg, errors = page
     open_map(pg, base_url + "#compare=robust_turbo_ddcm,ddcm,bfr_cae")
     pg.wait_for_selector("#compare-view:not([hidden])")
     assert pg.locator(".compare-table thead th").count() == 4
-    text = pg.inner_text("#compare-view")
-    assert "直系の系譜" in text  # Robust Turbo-DDCM → Turbo-DDCM → DDCM
-    pg.locator(".path-box button").first.click()
+    assert pg.get_attribute(".path-mode button[data-mode=lineage]", "aria-pressed") == "true"
+    box = pg.locator(".path-box[data-pair='robust_turbo_ddcm,ddcm']")
+    assert "直系の技術的系譜" in box.inner_text()  # DDCM → Turbo-DDCM → Robust Turbo-DDCM
+    # BFR-CAE と Robust Turbo-DDCM は共通課題のみで，技術的系譜は存在しない
+    assert "技術的系譜は存在しない" in pg.locator(".path-box[data-pair='robust_turbo_ddcm,bfr_cae']").inner_text()
+    box.locator("button").click()
     assert pg.locator("path.edge.path-on").count() == 2
     assert pg.locator("g.node.path-on").count() == 3
+    assert pg.locator("path.edge.path-rel").count() == 0
+    assert errors == []
+
+
+def test_blindsc_deepjscc_lineage_vs_related(page, base_url):
+    """BlindSC と DeepJSCC（Bourtsoulatze）: 技術的系譜は無く，関連経路では比較対象を含むつながりとして示す．"""
+    pg, errors = page
+    open_map(pg, base_url + "#compare=blindsc,deepjscc")
+    pg.wait_for_selector("#compare-view:not([hidden])")
+    box = pg.locator(".path-box")
+    assert "技術的系譜は存在しない" in box.inner_text()
+    assert box.locator("button").count() == 0
+    pg.click(".path-mode button[data-mode=related]")
+    text = pg.locator(".path-box").inner_text()
+    assert "比較対象" in text and "派生関係ではない" in text
+    pg.locator(".path-box button").click()
+    assert pg.locator("path.edge.path-rel").count() >= 2
+    assert pg.locator("path.edge.path-on").count() == 0
+    assert "関連経路" in pg.inner_text("#focus-note")
+    assert errors == []
+
+
+def test_lineage_never_uses_non_lineage_edges(page, base_url, graph):
+    """全ての論文の組で，技術的系譜は derived_from・builds_on のみを用い，派生元 → 派生先の向きが年の順と矛盾しない．
+    関連経路は4種類の関係を探索できる．"""
+    pg, _ = page
+    open_map(pg, base_url)
+    res = pg.evaluate("""() => {
+      const ids = ICM.state.graph.nodes.map((n) => n.id);
+      const lin = new Set(), rel = new Set(), bad = [];
+      let pairs = 0, linFound = 0;
+      for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) {
+        pairs++;
+        const l = ICM.findTechnicalLineage(ids[i], ids[j]);
+        if (l) { linFound++; for (const s of l.steps) {
+          lin.add(s.edge.type);
+          const from = ICM.state.byId.get(s.from), to = ICM.state.byId.get(s.to);
+          if (s.edge.target !== s.from || s.edge.source !== s.to || from.year > to.year) bad.push([ids[i], ids[j], s.edge]);
+        } }
+        const r = ICM.findRelatedPath(ids[i], ids[j]);
+        if (r) for (const s of r.steps) rel.add(s.edge.type);
+      }
+      return { lin: [...lin], rel: [...rel], bad, pairs, linFound };
+    }""")
+    lineage = {e["id"] for e in graph["edge_types"] if e["lineage"]}
+    assert set(res["lin"]) <= lineage and res["linFound"] > 0
+    assert res["bad"] == []
+    assert set(res["rel"]) == {e["id"] for e in graph["edge_types"]}
+
+
+def test_publication_years_in_panel(page, base_url):
+    """初出年と正式掲載年を区別して表示する（NECST: arXiv 2018，ICML 2019）．"""
+    pg, _ = page
+    open_map(pg, base_url + "#necst")
+    pg.wait_for_selector("#panel:not([hidden])")
+    body = pg.inner_text("#panel-body")
+    assert "年代軸の年: 2018（最初の公開年）" in body
+    assert "初出: 2018（arXiv）" in body
+    assert "正式掲載: 2019（International Conference on Machine Learning（ICML））" in body
+
+
+def test_unpublished_has_no_publication_year(page, base_url):
+    """未公開の BFR-CAE は研究開発年を発表年として表示しない．"""
+    pg, _ = page
+    open_map(pg, base_url + "#bfr_cae")
+    pg.wait_for_selector("#panel:not([hidden])")
+    body = pg.inner_text("#panel-body")
+    assert "発表年: 未公開" in body and "発表年ではない" in body
+    assert "初出:" not in body
+    assert pg.get_attribute("g.node[data-id=bfr_cae]", "aria-label").endswith("（未公開）")
+
+
+def test_period_select(page, base_url, graph):
+    """表示期間「2015年以降」で該当する論文だけを表示し，年スライダーと併用できる．"""
+    pg, _ = page
+    open_map(pg, base_url)
+    pg.select_option("#period-select", "2015")
+    assert pg.locator("g.node").count() == sum(1 for n in graph["nodes"] if n["year"] >= 2015)
+    pg.eval_on_selector("#year-slider", "el => { el.value = '2020'; el.dispatchEvent(new Event('input')); }")
+    assert pg.locator("g.node").count() == sum(1 for n in graph["nodes"] if 2015 <= n["year"] <= 2020)
+    pg.select_option("#period-select", "")
+    assert pg.locator("g.node").count() == sum(1 for n in graph["nodes"] if n["year"] <= 2020)
+
+
+@pytest.mark.parametrize("scheme", ["light", "dark"])
+def test_no_overlap_and_contrast(page, base_url, scheme):
+    """ノードとラベルが互いに重ならず，ラベルの文字色と背景の対比が十分である（ライト・ダーク）．"""
+    pg, errors = page
+    pg.emulate_media(color_scheme=scheme)
+    open_map(pg, base_url)
+    res = pg.evaluate(r"""() => {
+      const boxes = [];
+      for (const g of document.querySelectorAll("g.node")) {
+        const id = g.dataset.id, p = ICM.state.layout.pos.get(id), r = 9;
+        boxes.push({ id, kind: "node", x0: p.x - r, y0: p.y - r, x1: p.x + r, y1: p.y + r });
+      }
+      for (const t of document.querySelectorAll("text.label")) {
+        const b = t.getBBox();
+        boxes.push({ id: t.dataset.id, kind: "label", x0: b.x, y0: b.y + 2, x1: b.x + b.width, y1: b.y + b.height - 2 });
+      }
+      const hits = [];
+      for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+        const a = boxes[i], b = boxes[j];
+        if (a.id === b.id) continue;
+        if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) hits.push([a.id, a.kind, b.id, b.kind]);
+      }
+      const lum = (c) => { const v = c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((x) => x / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
+        return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]; };
+      const fg = getComputedStyle(document.querySelector("text.label")).fill;
+      const bg = getComputedStyle(document.querySelector(".stage")).backgroundColor;
+      const [l1, l2] = [lum(fg), lum(bg)].sort((x, y) => y - x);
+      return { hits, contrast: (l1 + 0.05) / (l2 + 0.05) };
+    }""")
+    assert res["hits"] == []
+    assert res["contrast"] >= 4.5
     assert errors == []
 
 

@@ -22,12 +22,27 @@
     "source": "survey/library.json"
   },
   "year": 2001,
+  "year_basis": "standard_overview",
+  "year_note": "JPEG 2000 Part I の解説論文の掲載年である．標準規格の制定年ではない．",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE Signal Processing Magazine",
+      "year": 2001,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "IEEE Signal Processing Magazine",
+      "year": 2001,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "traditional"
   ],
   "source_representation": "離散ウェーブレット変換係数",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "JPEG 2000 Part I の構成（タイル分割，色成分変換，ウェーブレット変換，量子化，エントロピー符号化）を解説した",
     "関心領域符号化，スケーラビリティ，誤り耐性などの機能を紹介した"

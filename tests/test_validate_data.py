@@ -115,10 +115,94 @@ def test_bibliography_mismatch(base):
     assert any("一致しない" in e for e in errors)
 
 
-def test_year_note_required(base):
-    """書誌情報と異なる年に year_note が無い場合を検出する．"""
-    errors, _ = run(base, modified(base, "necst", lambda n: n.update(year=2010)))
-    assert any("year_note" in e for e in errors)
+def test_year_must_be_first_public(base):
+    """年代軸の年が初出年と異なる場合を検出する（NECST を正式掲載年 2019 にした場合）．"""
+    errors, _ = run(base, modified(base, "necst", lambda n: n.update(year=2019)))
+    assert any("初出年" in e for e in errors)
+
+
+def test_first_public_after_arxiv(base):
+    """初出年が arXiv 初版の年より後である場合を検出する．"""
+    def f(n):
+        n["publication"]["first_public"] = {"venue": "ICML", "year": 2019, "evidence": "x"}
+        n["year"] = 2019
+    errors, _ = run(base, modified(base, "necst", f))
+    assert any("arXiv 初版" in e for e in errors)
+
+
+def test_formal_before_first_public(base):
+    """正式掲載年が初出年より前である場合を検出する．"""
+    errors, _ = run(base, modified(base, "necst", lambda n: n["publication"]["formal"].update(year=2010)))
+    assert any("正式掲載年" in e for e in errors)
+
+
+def test_unpublished_must_not_have_publication(base):
+    """未公開研究に初出・正式掲載を書いた場合を検出する．"""
+    def f(n):
+        n["publication"]["first_public"] = {"venue": "arXiv", "year": 2026, "evidence": "x"}
+    errors, _ = run(base, modified(base, "bfr_cae", f))
+    assert any("初出・正式掲載を持たない" in e for e in errors)
+
+
+def test_scheme_year_follows_first_use(base):
+    """構成例の年が，比較対象として用いた論文の最小の年と異なる場合を検出する．"""
+    errors, _ = run(base, modified(base, "sscc_bpg_ldpc", lambda n: n.update(year=2023)))
+    assert any("構成例の year" in e for e in errors)
+
+
+def test_duplicate_preprint_and_formal(base):
+    """プレプリントと正式掲載版を別ノードにした場合（同じ arXiv ID）を検出する．"""
+    nodes = copy.deepcopy(base["nodes"])
+    path, node = next((p, n) for p, n in nodes if n["id"] == "necst")
+    dup = copy.deepcopy(node)
+    dup.update(id="necst_icml", bib_key=None, kind="unpublished")
+    nodes.append((path.with_name("necst_icml.json"), dup))
+    errors, _ = run(base, nodes)
+    assert any("重複" in e and "arXiv" in e for e in errors)
+
+
+def test_lineage_target_newer_is_error(base):
+    """系譜の元（派生元）が派生先より新しい場合を検出する．"""
+    rel = {"target": "robust_turbo_ddcm", "type": "builds_on", "note": "x", "evidence": {"kind": "abstract", "detail": "x"}}
+    errors, _ = run(base, modified(base, "necst", lambda n: n["relations"].append(rel)))
+    assert any("方が新しい" in e for e in errors)
+
+
+def test_rule_generative_not_jscc(base):
+    """通信路を含む共同学習を行わない Robust Turbo-DDCM を DeepJSCC に分類した場合を検出する．"""
+    errors, _ = run(base, modified(base, "robust_turbo_ddcm", lambda n: n["domains"].append("digital_jscc")))
+    assert any("jscc_requires_joint_training" in e for e in errors)
+
+
+def test_rule_analog_digital(base):
+    """アナログ型 DeepJSCC にデジタルの区分を付けた場合を検出する．"""
+    errors, _ = run(base, modified(base, "deepjscc", lambda n: n.update(transmission="digital")))
+    assert any("analog_jscc_is_analog" in e for e in errors)
+
+
+def test_rule_shannon_not_sscc(base):
+    """情報理論の基礎研究（Shannon 1948）を SSCC に分類した場合を検出する．"""
+    errors, _ = run(base, modified(base, "shannon1948", lambda n: n["domains"].append("sscc")))
+    assert any("sscc_needs_concrete_scheme" in e for e in errors)
+
+
+def test_rule_scheme_primary_sscc(base):
+    """構成例の主分野が SSCC でない場合を検出する．"""
+    errors, _ = run(base, modified(base, "sscc_jpeg_ldpc", lambda n: n.update(domains=["traditional", "sscc"])))
+    assert any("scheme_is_sscc" in e for e in errors)
+
+
+def test_no_old_project_name():
+    """旧名称（image-compression-map／Image Compression Map）に依存するファイルが残っていない（作業履歴を除く）．"""
+    skip = {".git", ".ai", ".orders", ".reports", ".logs", ".venv_tools", "__pycache__", ".pytest_cache", "vendor", "survey"}
+    hits = []
+    for p in ROOT.rglob("*"):
+        if p.is_dir() or set(p.relative_to(ROOT).parts) & skip or p.suffix in {".png", ".pdf"}:
+            continue
+        text = p.read_text(encoding="utf-8", errors="ignore")
+        if "image-compression-map" in text or "Image Compression Map" in text:
+            hits.append(str(p.relative_to(ROOT)))
+    assert hits == [str(Path(__file__).relative_to(ROOT))]
 
 
 def test_paper_requires_bib_key(base):
@@ -156,3 +240,10 @@ def test_academic_constraints(base):
     assert by_id["deepjscc"]["transmission"] == "analog" and by_id["necst"]["transmission"] == "digital"
     # LIC と DeepJSCC は排他的ではない（両方に属する論文がある）
     assert any({"lic", "analog_jscc"} <= set(n["domains"]) for n in by_id.values())
+    # Shannon 1948 は情報理論の基礎研究であり，SSCC の実装方式と混同しない
+    assert by_id["shannon1948"]["domains"] == ["channel_coding"]
+    assert not any(r["target"] == "shannon1948" for n in by_id.values() if n["kind"] == "scheme" for r in n["relations"])
+    # 構成例と個別の論文を区別する
+    assert all(n["bib_key"] is None for n in by_id.values() if n["kind"] == "scheme")
+    # 未公開研究は発表年を持たない
+    assert by_id["bfr_cae"]["year_basis"] == "unpublished_placement" and by_id["bfr_cae"]["publication"]["first_public"] is None

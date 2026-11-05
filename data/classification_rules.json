@@ -1,0 +1,83 @@
+[
+  {
+    "id": "jscc_requires_joint_training",
+    "description": "DeepJSCC（アナログ型・デジタル型）に属するノードは，通信路を含めた共同学習を行わないもの（false）であってはならない．未確認（null）は警告とする",
+    "when": {
+      "domains_any": [
+        "analog_jscc",
+        "digital_jscc"
+      ]
+    },
+    "field": "joint_channel_training",
+    "forbid": [
+      false
+    ],
+    "warn": [
+      null
+    ]
+  },
+  {
+    "id": "analog_jscc_is_analog",
+    "description": "アナログ型 DeepJSCC に属するノードの区分はアナログである",
+    "when": {
+      "domains_any": [
+        "analog_jscc"
+      ]
+    },
+    "field": "transmission",
+    "allow": [
+      "analog"
+    ]
+  },
+  {
+    "id": "digital_jscc_is_digital",
+    "description": "デジタル型 DeepJSCC に属するノードの区分はデジタルである",
+    "when": {
+      "domains_any": [
+        "digital_jscc"
+      ]
+    },
+    "field": "transmission",
+    "allow": [
+      "digital"
+    ]
+  },
+  {
+    "id": "scheme_is_sscc",
+    "description": "構成例（kind=scheme）の主分野は SSCC であり，書誌情報（bib_key）を持たない",
+    "when": {
+      "kinds": [
+        "scheme"
+      ]
+    },
+    "primary_domain": "sscc",
+    "field": "bib_key",
+    "allow": [
+      null
+    ]
+  },
+  {
+    "id": "sscc_needs_concrete_scheme",
+    "description": "SSCC に属する論文は，情報源符号と通信路符号の具体的な構成を扱う（通信路符号化・関連技術の基礎理論のみのノードを SSCC にしない）",
+    "when": {
+      "domains_any": [
+        "sscc"
+      ],
+      "tags_any": [
+        "情報理論（基礎）"
+      ]
+    },
+    "forbid_domain": "sscc"
+  },
+  {
+    "id": "kind_year_basis",
+    "description": "種別ごとに年の基準を定める",
+    "kind_year_basis": {
+      "paper": "first_public",
+      "standard": "standard_overview",
+      "software": "software_release",
+      "scheme": "scheme_first_use",
+      "unpublished": "unpublished_placement"
+    }
+  }
+]

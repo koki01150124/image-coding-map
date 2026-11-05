@@ -20,7 +20,20 @@
     "url": "https://doi.org/10.1109/tit.2009.2021379",
     "source": "survey/library.json"
   },
-  "year": 2009,
+  "year": 2008,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2008,
+      "evidence": "arXiv:0807.3917 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Information Theory",
+      "year": 2009,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "channel_coding"
   ],
@@ -31,6 +44,7 @@
     "BSC"
   ],
   "transmission": "digital",
+  "joint_channel_training": false,
   "contributions": [
     "二元入力離散無記憶通信路の対称容量を達成する符号系列を構成する通信路分極を提案した",
     "逐次除去復号におけるブロック誤り率の上界を示した"

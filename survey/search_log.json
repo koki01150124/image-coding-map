@@ -269,5 +269,17 @@
     "n_results": 1,
     "n_new": 1,
     "at": "2026-11-05 14:02:31"
+  },
+  {
+    "type": "search",
+    "source": "arxiv",
+    "query": "D2-JSCC digital deep joint source-channel coding semantic communications",
+    "from_year": null,
+    "to_year": null,
+    "sort": "relevance",
+    "limit": 5,
+    "n_results": 5,
+    "n_new": 5,
+    "at": "2026-11-05 15:07:57"
   }
 ]

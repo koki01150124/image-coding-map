@@ -20,7 +20,20 @@
     "url": "https://doi.org/10.52202/075280-2835",
     "source": "survey/library.json"
   },
-  "year": 2023,
+  "year": 2022,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2022,
+      "evidence": "arXiv:2209.06950 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "neural information processing systems",
+      "year": 2023,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "generative",
     "lic"
@@ -28,6 +41,7 @@
   "source_representation": "エントロピー符号化される content 潜在変数（復号は条件付き拡散モデル）",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "変換符号化の枠組みで，復号器を条件付き拡散モデルとするエンドツーエンドの非可逆圧縮を提案した",
     "X-パラメータ化により少数の復号ステップで高品質な再構成を可能にした"

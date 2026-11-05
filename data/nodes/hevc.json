@@ -23,12 +23,27 @@
     "source": "survey/library.json"
   },
   "year": 2012,
+  "year_basis": "standard_overview",
+  "year_note": "HEVC の解説論文の掲載年である．標準規格の制定年ではない．",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "year": 2012,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "year": 2012,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "traditional"
   ],
   "source_representation": "ブロック単位の予測残差の変換係数",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "映像符号化標準 HEVC の技術的特徴を概説した"
   ],

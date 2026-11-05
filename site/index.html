@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Image Compression Map</title>
+  <title>Image Coding Map</title>
   <meta name="description" content="従来型・学習型・生成型の画像圧縮，情報源・通信路分離符号化，アナログ型・デジタル型 DeepJSCC，通信路符号の研究系譜を可視化したマップ">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="app">
     <header class="toolbar" role="toolbar" aria-label="表示の操作">
-      <h1 class="title">Image Compression Map</h1>
+      <h1 class="title">Image Coding Map</h1>
       <div class="search">
         <label class="visually-hidden" for="search-input">論文・手法を検索</label>
         <input id="search-input" type="search" list="search-list" placeholder="論文・手法・著者・タグで検索（例: NECST）" autocomplete="off">
@@ -40,6 +40,10 @@
       <div class="legend-group">
         <span class="legend-title">関係</span>
         <ul id="edge-legend" class="chips"></ul>
+      </div>
+      <div class="legend-group">
+        <label class="legend-title" for="period-select">期間</label>
+        <select id="period-select" title="指定した年以降の論文に注目する"></select>
       </div>
       <div class="legend-group year-control">
         <label class="legend-title" for="year-slider">年</label>

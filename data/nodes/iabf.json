@@ -24,6 +24,19 @@
     "source": "survey/library.json"
   },
   "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2004.01454 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "year": 2020,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -36,6 +49,7 @@
     "BEC"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "符号語とデータの相互情報量の最大化と，敵対的なビット反転による復号器の正則化（IABF）で NECST の頑健性を改善した"
   ],

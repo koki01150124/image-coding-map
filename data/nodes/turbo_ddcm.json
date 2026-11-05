@@ -6,11 +6,11 @@
   "bibliography": {
     "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
     "authors": [
-      "Vaisman, Amit",
-      "Ohayon, Guy",
-      "Manor, Hila",
+      "Amit Vaisman",
+      "Guy Ohayon",
+      "Hila Manor",
       "Michael Elad",
-      "Michaeli, Tomer"
+      "Tomer Michaeli"
     ],
     "year": 2025,
     "venue": "arXiv (Cornell University)",
@@ -20,12 +20,26 @@
     "source": "survey/library.json"
   },
   "year": 2025,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2025,
+      "evidence": "arXiv:2511.06424 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Learning Representations（ICLR）",
+      "year": 2026,
+      "evidence": "本文のヘッダ: Published as a conference paper at ICLR 2026"
+    }
+  },
   "domains": [
     "generative"
   ],
   "source_representation": "各拡散ステップで多数の符号帳ベクトルを組み合わせる疎な表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "各雑音除去ステップで多数の雑音ベクトルを効率的に組み合わせ，必要な雑音除去の回数を大幅に削減した",
     "改良した符号化プロトコルと，優先領域・目標 PSNR を指定できる変種を提案した"

@@ -10,7 +10,7 @@
     "title": "Compressed Image Generation with Denoising Diffusion Codebook Models",
     "authors": [
       "Guy Ohayon",
-      "Manor, Hila",
+      "Hila Manor",
       "Tomer Michaeli",
       "Michael Elad"
     ],
@@ -22,12 +22,26 @@
     "source": "survey/library.json"
   },
   "year": 2025,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2025,
+      "evidence": "arXiv:2502.01189 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Machine Learning（ICML）",
+      "year": 2025,
+      "evidence": "arXiv のコメント: Published in the International Conference on Machine Learning (ICML) 2025"
+    }
+  },
   "domains": [
     "generative"
   ],
   "source_representation": "各拡散ステップで符号帳から選んだ雑音ベクトルのインデックス列",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "逆拡散の雑音を固定した i.i.d. ガウスベクトルの符号帳からの選択に置き換えた DDCM を提案した",
     "画像に最も合う雑音を選ぶことで，生成モデルをそのまま非可逆画像コーデックとして用いた"

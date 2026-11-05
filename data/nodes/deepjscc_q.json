@@ -21,7 +21,20 @@
     "url": "https://doi.org/10.1109/jsait.2022.3231042",
     "source": "survey/library.json"
   },
-  "year": 2022,
+  "year": 2021,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2021,
+      "evidence": "arXiv:2111.13042 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Journal on Selected Areas in Information Theory",
+      "year": 2022,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -30,6 +43,7 @@
     "AWGN"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "有限の通信路入力アルファベット（デジタル変調の信号点）を用いる DeepJSCC-Q を提案した"
   ],

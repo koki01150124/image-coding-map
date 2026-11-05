@@ -17,7 +17,12 @@
     "source": "研究プロジェクトの文書（autoencoder/README.md，bfr-cae-research/document.md）"
   },
   "year": 2026,
-  "year_note": "未公開のため発表年が無い．マップ上は研究基盤を整備した年（2026）に置いた．",
+  "year_basis": "unpublished_placement",
+  "year_note": "未公開であり発表年は無い．年代軸上の位置は研究基盤の整備年（2026）による配置であり，発表年ではない．",
+  "publication": {
+    "first_public": null,
+    "formal": null
+  },
   "domains": [
     "digital_jscc",
     "lic"
@@ -30,6 +35,7 @@
     "BSC"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "二値の潜在表現を BSC に通し，クリーンな復元とビット反転後の復元の両方に対する損失で符号化器・復号器を共同学習する"
   ],
@@ -75,6 +81,6 @@
   ],
   "verification": {
     "read_level": "project_doc",
-    "notes": "未公開の研究コード（../autoencoder/）．BSC を含めた共同学習を行う条件の下でデジタル型 DeepJSCC に位置付けた．Theis et al. の CAE との直接の関係は確認していない．"
+    "notes": "未公開の研究コード（../autoencoder/）．分類の根拠: 二値の潜在ビット列を BSC に通し，クリーンとビット反転後の復元の合成損失で符号化器・復号器を共同学習する（bfr-cae-research/document.md の計算仕様）ため，通信路を含む共同学習を条件にデジタル型 DeepJSCC とし，圧縮自己符号化器であることから LIC を副分野とした．Theis et al. の CAE との直接の関係は確認していない．"
   }
 }

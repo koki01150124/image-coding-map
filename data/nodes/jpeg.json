@@ -19,13 +19,28 @@
     "url": "https://doi.org/10.1109/30.125072",
     "source": "survey/library.json"
   },
-  "year": 1992,
+  "year": 1991,
+  "year_basis": "standard_overview",
+  "year_note": "収録した版は IEEE Transactions on Consumer Electronics（1992）である．同名・同著者の論文が Communications of the ACM（1991）に掲載されているため，初出年を 1991 とした．標準規格（ITU-T T.81 等）そのものの制定年ではない．",
+  "publication": {
+    "first_public": {
+      "venue": "Communications of the ACM",
+      "year": 1991,
+      "evidence": "Crossref: DOI 10.1145/103085.103089（Communications of the ACM, 1991年4月，同名・同著者）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Consumer Electronics",
+      "year": 1992,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "traditional"
   ],
   "source_representation": "8×8 ブロックの離散コサイン変換（DCT）係数",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "連続階調静止画像の国際標準 JPEG の概要と，DCT に基づく非可逆圧縮の Baseline 方式を解説した"
   ],

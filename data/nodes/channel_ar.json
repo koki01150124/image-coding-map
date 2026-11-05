@@ -22,12 +22,26 @@
     "source": "survey/library.json"
   },
   "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2007.08739 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "Proceedings - International Conference on Image Processing",
+      "year": 2020,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "チャネル方向のスライスに分割した潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "チャネル条件付けと潜在残差予測を導入し，逐次処理を抑えつつ性能を改善した"
   ],
@@ -47,8 +61,8 @@
       "type": "derived_from",
       "note": "コンテキスト適応型のベースライン（空間方向の逐次処理）を，チャネル方向の条件付けで置き換えた",
       "evidence": {
-        "kind": "abstract",
-        "detail": "要旨: compared to a context-adaptive baseline model（He et al. 2021 の本文も [26] の逐次処理を最小化する手法として紹介）"
+        "kind": "full_text",
+        "detail": "本文: 6.7% over the context-adaptive baseline [13]（参考文献 [13] = D. Minnen, J. Ballé, and G. Toderici, Joint autoregressive and hierarchical priors）"
       }
     },
     {

@@ -52,13 +52,14 @@ def load_vocab(data_dir=DATA):
     Args:
         data_dir (Path): data ディレクトリのパス．
     Returns:
-        dict: {"domains": list[dict], "edge_types": list[dict], "vocab": dict}
+        dict: {"domains": list[dict], "edge_types": list[dict], "vocab": dict, "rules": list[dict]}
     """
     data_dir = Path(data_dir)
     return {
         "domains": read_json(data_dir / "domains.json"),
         "edge_types": read_json(data_dir / "edge_types.json"),
         "vocab": read_json(data_dir / "vocab.json"),
+        "rules": read_json(data_dir / "classification_rules.json"),
     }
 
 
@@ -94,6 +95,18 @@ def clean_venue(venue):
     return parts[0] if parts else None
 
 
+def normalize_author(name):
+    """著者名の「姓, 名」の表記を「名 姓」にそろえる（OpenAlex の応答に両方の表記が混在するため）．
+
+    Args:
+        name (str): 著者名．
+    Returns:
+        str: 「名 姓」の表記．カンマが1つでない場合はそのまま返す．
+    """
+    parts = [p.strip() for p in name.split(",")]
+    return f"{parts[1]} {parts[0]}" if len(parts) == 2 and all(parts) else name
+
+
 def bibliography_from_library(entry):
     """library.json の1件から，ノードの bibliography を作る．
 
@@ -108,7 +121,7 @@ def bibliography_from_library(entry):
         url = "https://" + url[len("http://"):]
     return {
         "title": entry.get("title"),
-        "authors": list(entry.get("authors") or []),
+        "authors": [normalize_author(a) for a in entry.get("authors") or []],
         "year": int(year) if year else None,
         "venue": clean_venue(entry.get("venue")),
         "doi": entry.get("doi"),

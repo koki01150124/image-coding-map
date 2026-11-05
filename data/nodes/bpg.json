@@ -19,13 +19,23 @@
     "source": "公式ページ https://bellard.org/bpg/ と libbpg-0.9.8 のソース（2026-11-05 確認）"
   },
   "year": 2014,
-  "year_note": "論文が無いため，libbpg のソースの著作権表記（Copyright (c) 2014 Fabrice Bellard）の年とした．",
+  "year_basis": "software_release",
+  "year_note": "論文が無いため，最初の公開版の年とした（最初の版 0.9 の公開日は未確認）．",
+  "publication": {
+    "first_public": {
+      "venue": "Web（bellard.org）",
+      "year": 2014,
+      "evidence": "libbpg のソースの著作権表記（Copyright (c) 2014 Fabrice Bellard）．DeepJSCC-Q の参考文献 [8] も Better Portable Graphics, 2014 と記載"
+    },
+    "formal": null
+  },
   "domains": [
     "traditional"
   ],
   "source_representation": "HEVC のイントラ符号化（変換係数）",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "HEVC のサブセットに基づく静止画像形式を提供した"
   ],

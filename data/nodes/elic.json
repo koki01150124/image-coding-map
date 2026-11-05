@@ -24,12 +24,26 @@
     "source": "survey/library.json"
   },
   "year": 2022,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2022,
+      "evidence": "arXiv:2203.10886 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+      "year": 2022,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "不均一なチャネル群と空間コンテキストで条件付けた潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "エネルギー集中の観察に基づく不均一なチャネル条件付き適応符号化を提案した",
     "既存の空間コンテキストモデルと組み合わせた空間・チャネルのコンテキストモデルと，効率的な主変換を備えた ELIC を提案した"

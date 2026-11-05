@@ -1,4 +1,4 @@
-// Image Compression Map — 配置計算
+// Image Coding Map — 配置計算
 //
 // 縦方向: 発表年（古い年を上）．年ごとに1行とし，論文の無い年は詰める．
 // 横方向: 研究分野の列（domains.json の order 順）．複数分野の論文は，主分野の列と隣り合う副分野の列の間
@@ -142,5 +142,11 @@ export function edgePath(a, b, r) {
   const dirY = Math.sign(dy);
   const sy = a.y + dirY * r, ey = b.y - dirY * (r + 3);
   const my = (sy + ey) / 2;
+  if (Math.abs(dx) < 24 && Math.abs(dy) > 70) {
+    // ほぼ同じ列で間に他の論文を挟む縦のエッジは，途中のノードを通らないよう左へ膨らませる
+    const bow = Math.min(70, 22 + Math.abs(dy) * 0.08);
+    const sx = a.x - r * 0.7, ex = b.x - r * 0.7;
+    return `M${sx},${a.y + dirY * r * 0.7}C${sx - bow},${a.y + dy * 0.25} ${ex - bow},${a.y + dy * 0.75} ${ex},${b.y - dirY * (r * 0.7 + 3)}`;
+  }
   return `M${a.x},${sy}C${a.x},${my} ${b.x},${my} ${b.x},${ey}`;
 }

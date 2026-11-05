@@ -23,6 +23,19 @@
     "source": "survey/library.json"
   },
   "year": 2025,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2025,
+      "evidence": "arXiv:2504.11709 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Wireless Communications",
+      "year": 2025,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -33,6 +46,7 @@
     "Rayleigh"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "通信路を学習可能なビット反転確率を持つ並列 BSC としてモデル化し，複数の VQ 符号帳とビット反転確率を1組の符号化器・復号器で共同学習した",
     "符号帳の割り当て・適応変調・電力配分を共同最適化する通信戦略を示した"

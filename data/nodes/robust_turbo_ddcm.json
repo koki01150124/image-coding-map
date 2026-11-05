@@ -18,6 +18,19 @@
     "source": "survey/library.json"
   },
   "year": 2026,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2026,
+      "evidence": "arXiv:2604.05743 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops（CVPRW）",
+      "year": 2026,
+      "evidence": "CVF の Open Access 版 PDF: This CVPR Workshop paper is the Open Access version"
+    }
+  },
   "domains": [
     "generative"
   ],
@@ -29,6 +42,7 @@
     "BSC"
   ],
   "transmission": "digital",
+  "joint_channel_training": false,
   "contributions": [
     "Reverse Channel Coding（RCC）に基づく拡散型圧縮が，従来型・学習型のコーデックよりビット反転に頑健であることを示した",
     "レート・歪み・知覚への影響を抑えつつ頑健性を高めた Turbo-DDCM の変種を提案した"

@@ -21,6 +21,19 @@
     "source": "survey/library.json"
   },
   "year": 1999,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE Transactions on Information Theory",
+      "year": 1999,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Information Theory",
+      "year": 1999,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "channel_coding"
   ],
@@ -30,6 +43,7 @@
     "AWGN"
   ],
   "transmission": "digital",
+  "joint_channel_training": false,
   "contributions": [
     "Gallager 符号と MN 符号が最適復号の下でシャノン限界まで到達する符号系列を持つことを示した",
     "実用的な sum-product 復号で畳み込み符号・連接符号を大きく上回る性能を実験で示した"

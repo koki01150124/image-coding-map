@@ -32,5 +32,12 @@
     "full_text_scan": "本文の該当箇所を照合",
     "official_page": "公式ページ・ソースを確認",
     "project_doc": "研究プロジェクトの文書を確認"
+  },
+  "year_basis": {
+    "first_public": "最初の公開年",
+    "standard_overview": "解説論文の最初の公開年",
+    "software_release": "ソフトウェアの最初の公開年",
+    "scheme_first_use": "比較対象として最初に用いた論文の初出年",
+    "unpublished_placement": "研究開発年による配置（発表年ではない）"
   }
 }

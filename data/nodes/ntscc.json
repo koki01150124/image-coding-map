@@ -24,7 +24,20 @@
     "url": "https://doi.org/10.1109/jsac.2022.3180802",
     "source": "survey/library.json"
   },
-  "year": 2022,
+  "year": 2021,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2021,
+      "evidence": "arXiv:2112.10961 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Journal on Selected Areas in Communications",
+      "year": 2022,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc",
     "lic"
@@ -34,6 +47,7 @@
     "AWGN"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "非線形変換で得た潜在表現を DeepJSCC で送る NTSCC を提案した",
     "潜在表現のエントロピーモデルを学習し，適応レート伝送とハイパープライアを用いた符号の改良を導入した"

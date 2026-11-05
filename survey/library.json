@@ -986,6 +986,33 @@
       "W3104876213"
     ]
   },
+  "huang2024d2jscc": {
+    "status": "excluded",
+    "reason": "huang2025d2jscc（IEEE JSAC 2025）のプレプリント版（arXiv:2403.07338）であり同一論文．ノードは huang2025d2jscc に統合し，初出の根拠としてのみ参照する",
+    "tags": [],
+    "queries": [
+      "search:arxiv:D2-JSCC digital deep joint source-channel coding semantic communications"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 15:07:57",
+    "title": "D$^2$-JSCC: Digital Deep Joint Source-channel Coding for Semantic Communications",
+    "authors": [
+      "Jianhao Huang",
+      "Kai Yuan",
+      "Chuan Huang",
+      "Kaibin Huang"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2403.07338",
+    "arxiv": "2403.07338",
+    "url": "https://arxiv.org/abs/2403.07338",
+    "pdf_url": "https://arxiv.org/pdf/2403.07338",
+    "abstract": "Semantic communications (SemCom) have emerged as a new paradigm for supporting sixth-generation applications, where semantic features of data are transmitted using artificial intelligence algorithms to attain high communication efficiencies. Most existing SemCom techniques utilize deep neural networks (DNNs) to implement analog source-channel mappings, which are incompatible with existing digital communication architectures. To address this issue, this paper proposes a novel framework of digital deep joint source-channel coding (D$^2$-JSCC) targeting image transmission in SemCom. The framework features digital source and channel codings that are jointly optimized to reduce the end-to-end (E2E) distortion. First, deep source coding with an adaptive density model is designed to encode semantic features according to their distributions. Second, digital channel coding is employed to protect encoded features against channel distortion. To facilitate their joint design, the E2E distortion is characterized as a function of the source and channel rates via the analysis of the Bayesian model and Lipschitz assumption on the DNNs. Then to minimize the E2E distortion, a two-step algorithm is proposed to control the source-channel rates for a given channel signal-to-noise ratio. Simulation results reveal that the proposed framework outperforms classic deep JSCC and mitigates the cliff and leveling-off effects, which commonly exist for separation-based approaches.",
+    "type": "preprint"
+  },
   "huang2025d2jscc": {
     "status": "included",
     "reason": "",
@@ -1825,6 +1852,32 @@
     "type": "article",
     "referenced_works": []
   },
+  "shao2022theory": {
+    "status": "excluded",
+    "reason": "D²-JSCC の arXiv 版を検索した際に取得した候補．order_002 では論文の追加を行わないため収録範囲外",
+    "tags": [],
+    "queries": [
+      "search:arxiv:D2-JSCC digital deep joint source-channel coding semantic communications"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 15:07:57",
+    "title": "A Theory of Semantic Communication",
+    "authors": [
+      "Yulin Shao",
+      "Qi Cao",
+      "Deniz Gunduz"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2212.01485",
+    "arxiv": "2212.01485",
+    "url": "https://arxiv.org/abs/2212.01485",
+    "pdf_url": "https://arxiv.org/pdf/2212.01485",
+    "abstract": "Semantic communication is an emerging research area that has gained a wide range of attention recently. Despite this growing interest, there remains a notable absence of a comprehensive and widely-accepted framework for characterizing semantic communication. This paper introduces a new conceptualization of semantic communication and formulates two fundamental problems, which we term language exploitation and language design. Our contention is that the challenge of language design can be effectively situated within the broader framework of joint source-channel coding theory, underpinned by a comprehensive end-to-end distortion metric. To tackle the language exploitation problem, we put forth three approaches: semantic encoding, semantic decoding, and a synergistic combination of both in the form of combined semantic encoding and decoding. Furthermore, we establish the semantic distortion-cost region as a critical framework for assessing the language exploitation problem. For each of the three proposed approaches, the achievable distortion-cost region is characterized. Overall, this paper aims to shed light on the intricate dynamics of semantic communication, paving the way for a deeper understanding of this evolving field.",
+    "type": "preprint"
+  },
   "shin2025escmvq": {
     "status": "included",
     "reason": "",
@@ -2449,6 +2502,60 @@
       "W6787972765"
     ]
   },
+  "xu2022deep": {
+    "status": "excluded",
+    "reason": "D²-JSCC の arXiv 版を検索した際に取得した候補．order_002 では論文の追加を行わないため収録範囲外",
+    "tags": [],
+    "queries": [
+      "search:arxiv:D2-JSCC digital deep joint source-channel coding semantic communications"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 15:07:57",
+    "title": "Deep Joint Source-Channel Coding for Semantic Communications",
+    "authors": [
+      "Jialong Xu",
+      "Tze-Yang Tung",
+      "Bo Ai",
+      "Wei Chen",
+      "Yuxuan Sun",
+      "Deniz Gunduz"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2211.08747",
+    "arxiv": "2211.08747",
+    "url": "https://arxiv.org/abs/2211.08747",
+    "pdf_url": "https://arxiv.org/pdf/2211.08747",
+    "abstract": "Semantic communications is considered as a promising technology to increase the efficiency of next-generation communication systems, particularly targeting human-machine and machine-type communications. In contrast to the source-agnostic approach of conventional wireless communication systems, semantic communication seeks to ensure that only the relevant information for the underlying task is communicated to the receiver. Considering that most semantic communication applications have strict latency, bandwidth, and power constraints, a prominent approach is to model them as a joint source-channel coding (JSCC) problem. Although JSCC has been a long-standing open problem in communication and coding theory, remarkable performance gains have been shown recently over existing separate source and channel coding systems, particularly in low-latency and low-power scenarios. Recent progress is thanks to the adoption of deep learning techniques for joint source-channel code design that outperform the concatenation of state-of-the-art compression and channel coding schemes, which are results of decades-long research efforts. In this article, we present an adaptive deep learning based JSCC (DeepJSCC) architecture for semantic communications, introduce its design principles, highlight its benefits, and outline future research challenges that lie ahead.",
+    "type": "preprint"
+  },
+  "yaguchi2017finitelength": {
+    "status": "excluded",
+    "reason": "D²-JSCC の arXiv 版を検索した際に取得した候補．order_002 では論文の追加を行わないため収録範囲外",
+    "tags": [],
+    "queries": [
+      "search:arxiv:D2-JSCC digital deep joint source-channel coding semantic communications"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 15:07:57",
+    "title": "Finite-Length Bounds for Joint Source-Channel Coding with Markovian Source and Additive Channel Noise to Achieve Large and Moderate Deviation Bounds",
+    "authors": [
+      "Ryo Yaguchi",
+      "Masahito Hayashi"
+    ],
+    "year": 2017,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.1701.03305",
+    "arxiv": "1701.03305",
+    "url": "https://arxiv.org/abs/1701.03305",
+    "pdf_url": "https://arxiv.org/pdf/1701.03305",
+    "abstract": "We derive novel upper and lower finite-length bounds of the error probability in joint source-channel coding when the source obeys an ergodic Markov process and the channel is a Markovian additive channel or a Markovian conditional additive channel. These bounds are tight in the large and moderate deviation regimes.",
+    "type": "preprint"
+  },
   "yang2023lossy": {
     "status": "included",
     "reason": "",
@@ -2546,5 +2653,30 @@
       "W4392158764",
       "W6787972765"
     ]
+  },
+  "zheng2023pac": {
+    "status": "excluded",
+    "reason": "D²-JSCC の arXiv 版を検索した際に取得した候補．order_002 では論文の追加を行わないため収録範囲外",
+    "tags": [],
+    "queries": [
+      "search:arxiv:D2-JSCC digital deep joint source-channel coding semantic communications"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 15:07:57",
+    "title": "PAC Codes for Source and Joint Source-Channel Coding",
+    "authors": [
+      "Mengfan Zheng",
+      "Cong Ling"
+    ],
+    "year": 2023,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2308.05472",
+    "arxiv": "2308.05472",
+    "url": "https://arxiv.org/abs/2308.05472",
+    "pdf_url": "https://arxiv.org/pdf/2308.05472",
+    "abstract": "Polarization-adjusted convolutional (PAC) codes, as a concatenated coding scheme based on polar codes, is able to approach the finite-length bound of binary-input AWGN channel at short blocklengths. In this paper, we extend PAC codes to the fields of source coding and joint source-channel coding and show that they can also approach the corresponding finite-length bounds at short blocklengths.",
+    "type": "preprint"
   }
 }

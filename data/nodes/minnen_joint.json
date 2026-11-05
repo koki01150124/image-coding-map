@@ -23,12 +23,26 @@
     "source": "survey/library.json"
   },
   "year": 2018,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2018,
+      "evidence": "arXiv:1809.02736 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "Conference on Neural Information Processing Systems（NeurIPS）",
+      "year": 2018,
+      "evidence": "本文の脚注: 32nd Conference on Neural Information Processing Systems (NIPS 2018)，arXiv のコメント"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "ハイパー潜在と自己回帰コンテキストで条件付けた潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "自己回帰事前分布と階層的（ハイパープライア）事前分布を組み合わせたエントロピーモデルを提案した",
     "両者が相補的であることを示した"

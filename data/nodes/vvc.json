@@ -27,12 +27,27 @@
     "source": "survey/library.json"
   },
   "year": 2021,
+  "year_basis": "standard_overview",
+  "year_note": "VVC の解説論文の掲載年である．要旨によれば標準は 2020年7月に策定された．",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "year": 2021,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "year": 2021,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "traditional"
   ],
   "source_representation": "ブロック単位の予測残差の変換係数",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "2020年に策定された映像符号化標準 VVC の新機能と中核の圧縮技術を概説した"
   ],

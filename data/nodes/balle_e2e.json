@@ -24,13 +24,26 @@
     "source": "survey/library.json"
   },
   "year": 2016,
-  "year_note": "arXiv 初出（2016）を用いた．会議（ICLR 2017）の年とは異なる．",
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2016,
+      "evidence": "arXiv:1611.01704 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Learning Representations（ICLR）",
+      "year": 2017,
+      "evidence": "本文のヘッダ: Published as a conference paper at ICLR 2017"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "非線形解析変換（GDN）の出力を一様量子化した潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "非線形解析変換・一様量子化器・非線形合成変換からなる画像圧縮を提案した",
     "量子化の連続的な代理を導入し，モデル全体をレート・歪みで一括最適化した"

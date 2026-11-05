@@ -27,12 +27,26 @@
     "source": "survey/library.json"
   },
   "year": 2015,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2015,
+      "evidence": "arXiv:1511.06085 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Learning Representations（ICLR）",
+      "year": 2016,
+      "evidence": "本文のヘッダ: Published as a conference paper at ICLR 2016"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "畳み込み LSTM による反復的な二値符号",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "畳み込み・逆畳み込み LSTM に基づく可変レートの画像圧縮の枠組みを提案した",
     "画像サイズ・圧縮率によらず一度の学習で済み，送るビットが増えるほど再構成が改善する漸進的な符号を実現した"

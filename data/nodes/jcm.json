@@ -21,7 +21,20 @@
     "url": "https://doi.org/10.1109/tcomm.2024.3386577",
     "source": "survey/library.json"
   },
-  "year": 2024,
+  "year": 2023,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2023,
+      "evidence": "arXiv:2310.06690 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Communications",
+      "year": 2024,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -30,6 +43,7 @@
     "AWGN"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "情報源データから離散的な信号点への遷移確率を学習する VAE に基づく符号化・変調の共同設計（JCM）を提案した",
     "情報理論的な意味を持つ整合損失を導出した"

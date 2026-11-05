@@ -6,8 +6,10 @@
     3. 分野・エッジ種別が定義済みであること
     4. 関係の参照先の存在，自己参照，重複
     5. 系譜関係（lineage が true のエッジ種別）の循環
-    6. 発表年と書誌情報の年の整合（異なる場合は year_note が必要）
+    6. 年代軸の年（year）と year_basis・publication（初出・正式掲載）の整合
     7. 論文の書誌情報が survey/library.json と一致すること
+    8. プレプリントと正式掲載版などの重複（arXiv ID，DOI，タイトル）
+    9. 分類の規則（data/classification_rules.json）
 
 使い方:
     python tools/validate_data.py   # エラーがあれば終了コード1
@@ -96,7 +98,7 @@ def relation_errors(nodes, edge_types):
                     warnings.append(f"{nid}: '{tgt}' との {typ} が両方向に登録されている")
                 undirected_pairs.add(pair)
             if types[typ]["lineage"] and by_id[tgt]["year"] > node["year"]:
-                warnings.append(f"{nid}（{node['year']}）: 系譜の元 '{tgt}'（{by_id[tgt]['year']}）の方が新しい")
+                errors.append(f"{nid}（{node['year']}）: 系譜の元 '{tgt}'（{by_id[tgt]['year']}）の方が新しい（{typ}）")
     return errors, warnings
 
 
@@ -144,8 +146,21 @@ def find_lineage_cycles(nodes, edge_types):
     return cycles
 
 
+def arxiv_year(arxiv):
+    """新形式の arXiv ID（YYMM.NNNNN）から初版の年を求める．
+
+    Args:
+        arxiv (str | None): arXiv ID．
+    Returns:
+        int | None: 年．旧形式・無しの場合は None．
+    """
+    import re
+    m = re.match(r"^(\d{2})(\d{2})\.\d{4,5}$", arxiv or "")
+    return 2000 + int(m.group(1)) if m else None
+
+
 def bibliography_errors(nodes, library):
-    """発表年・書誌情報の整合を検査する．
+    """書誌情報と survey/library.json の一致，論文の bib_key の有無を検査する．
 
     Args:
         nodes (list[tuple[Path, dict]]): ノードのファイルと内容．
@@ -155,15 +170,134 @@ def bibliography_errors(nodes, library):
     """
     errors = []
     for path, node in nodes:
-        bib = node.get("bibliography", {})
-        if node.get("kind") == "paper" and not node.get("bib_key"):
-            errors.append(f"{path.name}: 論文（kind=paper）は survey/library.json の bib_key が必要")
-        if bib.get("year") != node.get("year") and not node.get("year_note"):
-            errors.append(f"{path.name}: year（{node.get('year')}）が書誌情報の年（{bib.get('year')}）と異なるが year_note が無い")
+        if node.get("kind") in ("paper", "standard") and not node.get("bib_key"):
+            errors.append(f"{path.name}: 論文・標準規格の解説論文（kind={node.get('kind')}）は survey/library.json の bib_key が必要")
     updates, sync_errors = diff_bibliography(nodes, library)
     errors += sync_errors
     errors += [f"{p.name}: bibliography が survey/library.json と一致しない" for p, _, _ in updates]
     return errors
+
+
+def year_errors(nodes, rules, edge_types):
+    """年代軸の年と，年の基準（year_basis）・初出・正式掲載の整合を検査する．
+
+    - 論文・標準: year = 初出年，初出年 ≤ 正式掲載年，初出年 ≤ arXiv 初版の年（初出が arXiv なら一致）
+    - ソフトウェア: year = 最初の公開年，正式掲載なし
+    - 構成例・未公開: 初出・正式掲載なし．構成例の year は比較対象として用いた論文の最小の年
+    - 書誌情報の年が初出年・正式掲載年のいずれとも一致しない場合は year_note が必要
+
+    Args:
+        nodes (list[tuple[Path, dict]]): ノードのファイルと内容．
+        rules (list[dict]): 分類の規則（kind_year_basis を含む）．
+        edge_types (list[dict]): エッジ種別の定義（未使用，互換のため）．
+    Returns:
+        list[str]: エラーのリスト．
+    """
+    errors = []
+    basis_of = next((r["kind_year_basis"] for r in rules if "kind_year_basis" in r), {})
+    by_id = {n["id"]: n for _, n in nodes}
+    users = {}
+    for _, n in nodes:
+        for r in n.get("relations", []):
+            if r["type"] == "compared_with":
+                users.setdefault(r["target"], []).append(n["id"])
+    for path, n in nodes:
+        name, kind, year = path.name, n["kind"], n["year"]
+        pub = n.get("publication") or {}
+        first, formal = pub.get("first_public"), pub.get("formal")
+        if basis_of.get(kind) and n.get("year_basis") != basis_of[kind]:
+            errors.append(f"{name}: kind={kind} の year_basis は '{basis_of[kind]}'（現在 '{n.get('year_basis')}'）")
+        if kind in ("paper", "standard", "software"):
+            if not first:
+                errors.append(f"{name}: publication.first_public（初出）が無い")
+                continue
+            if year != first["year"]:
+                errors.append(f"{name}: year（{year}）が初出年（{first['year']}）と一致しない")
+            if formal and formal["year"] < first["year"]:
+                errors.append(f"{name}: 正式掲載年（{formal['year']}）が初出年（{first['year']}）より前")
+            ay = arxiv_year(n["bibliography"].get("arxiv"))
+            if ay is not None and first["year"] > ay:
+                errors.append(f"{name}: 初出年（{first['year']}）が arXiv 初版の年（{ay}）より後")
+            if ay is not None and first["venue"] == "arXiv" and first["year"] != ay:
+                errors.append(f"{name}: 初出が arXiv であるが年（{first['year']}）が arXiv ID の年（{ay}）と異なる")
+        else:
+            if first or formal:
+                errors.append(f"{name}: kind={kind} は初出・正式掲載を持たない（publication の値は null とする）")
+            if not n.get("year_note"):
+                errors.append(f"{name}: kind={kind} の年の意味を year_note に書く")
+        if kind == "scheme":
+            used = [by_id[u]["year"] for u in users.get(n["id"], [])]
+            if not used:
+                errors.append(f"{name}: 構成例を比較対象として用いた論文（compared_with）が無い")
+            elif year != min(used):
+                errors.append(f"{name}: 構成例の year（{year}）が比較対象として用いた論文の最小の年（{min(used)}）と一致しない")
+        bib_year = n["bibliography"].get("year")
+        dated = {x["year"] for x in (first, formal) if x}
+        if bib_year is not None and dated and bib_year not in dated and not n.get("year_note"):
+            errors.append(f"{name}: 書誌情報の年（{bib_year}）が初出年・正式掲載年のいずれとも異なるが year_note が無い")
+    return errors
+
+
+def duplicate_errors(nodes):
+    """同じ論文（プレプリントと正式掲載版など）が複数のノードになっていないかを検査する．
+
+    Args:
+        nodes (list[tuple[Path, dict]]): ノードのファイルと内容．
+    Returns:
+        list[str]: エラーのリスト．
+    """
+    import re
+    errors, seen = [], {}
+    for path, n in nodes:
+        b = n["bibliography"]
+        keys = [("bib_key", n.get("bib_key")), ("arXiv", b.get("arxiv")), ("DOI", (b.get("doi") or "").lower() or None),
+                ("タイトル", re.sub(r"[^a-z0-9]", "", (b.get("title") or "").lower()) or None)]
+        for label, value in keys:
+            if value is None:
+                continue
+            if (label, value) in seen:
+                errors.append(f"{path.name}: {label} が {seen[(label, value)]} と重複（同じ論文を別のノードにしない）")
+            seen.setdefault((label, value), path.name)
+    return errors
+
+
+def rule_errors(nodes, rules):
+    """分類の規則（data/classification_rules.json）を検査する．
+
+    規則の when（domains_any，kinds，tags_any）に該当するノードについて，field の値の allow／forbid／warn，
+    primary_domain（主分野），forbid_domain（属してはならない分野）を検査する．
+
+    Args:
+        nodes (list[tuple[Path, dict]]): ノードのファイルと内容．
+        rules (list[dict]): 規則．
+    Returns:
+        tuple[list[str], list[str]]: (エラー, 警告)．
+    """
+    errors, warnings = [], []
+    for rule in rules:
+        when = rule.get("when")
+        if when is None:
+            continue
+        for path, n in nodes:
+            if "domains_any" in when and not set(when["domains_any"]) & set(n["domains"]):
+                continue
+            if "kinds" in when and n["kind"] not in when["kinds"]:
+                continue
+            if "tags_any" in when and not set(when["tags_any"]) & set(n.get("tags", [])):
+                continue
+            msg = f"{path.name}: 分類の規則 {rule['id']} に違反（{rule['description']}）"
+            value = n.get(rule["field"]) if "field" in rule else None
+            if "allow" in rule and value not in rule["allow"]:
+                errors.append(f"{msg}: {rule['field']}={value!r}")
+            if "forbid" in rule and value in rule["forbid"]:
+                errors.append(f"{msg}: {rule['field']}={value!r}")
+            if "warn" in rule and value in rule["warn"]:
+                warnings.append(f"{path.name}: {rule['field']} が未確認（{rule['id']}）")
+            if "primary_domain" in rule and n["domains"][0] != rule["primary_domain"]:
+                errors.append(f"{msg}: 主分野={n['domains'][0]}")
+            if "forbid_domain" in rule and rule["forbid_domain"] in n["domains"]:
+                errors.append(msg)
+    return errors, warnings
 
 
 def validate(nodes, vocab, schema, library):
@@ -189,7 +323,10 @@ def validate(nodes, vocab, schema, library):
     errors += rel_errors
     errors += ["系譜関係の循環: " + " -> ".join(c) for c in find_lineage_cycles(nodes, vocab["edge_types"])]
     errors += bibliography_errors(nodes, library)
-    return errors, warnings
+    errors += year_errors(nodes, vocab["rules"], vocab["edge_types"])
+    errors += duplicate_errors(nodes)
+    r_errors, r_warnings = rule_errors(nodes, vocab["rules"])
+    return errors + r_errors, warnings + r_warnings
 
 
 def main():

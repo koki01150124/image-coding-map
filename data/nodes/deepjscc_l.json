@@ -21,7 +21,20 @@
     "url": "https://doi.org/10.1109/twc.2021.3090048",
     "source": "survey/library.json"
   },
-  "year": 2021,
+  "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2009.12480 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Wireless Communications",
+      "year": 2021,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc"
   ],
@@ -31,6 +44,7 @@
     "Rayleigh"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "画像を層に分けて漸進的に送る適応帯域の伝送（逐次改良・多重記述）を扱う DeepJSCC-l を提案した"
   ],

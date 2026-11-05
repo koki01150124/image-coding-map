@@ -12,7 +12,7 @@
     "authors": [
       "Lucas Theis",
       "Wenzhe Shi",
-      "Cunningham, Andrew",
+      "Andrew Cunningham",
       "Ferenc Huszár"
     ],
     "year": 2017,
@@ -23,12 +23,26 @@
     "source": "survey/library.json"
   },
   "year": 2017,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2017,
+      "evidence": "arXiv:1703.00395 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Learning Representations（ICLR）",
+      "year": 2017,
+      "evidence": "本文のヘッダ: Published as a conference paper at ICLR 2017"
+    }
+  },
   "domains": [
     "lic"
   ],
   "source_representation": "量子化した潜在表現（サブピクセル構造の自己符号化器）",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "量子化による非微分性を損失の最小限の変更で扱い，深い自己符号化器を非可逆圧縮向けに最適化する方法を提案した",
     "サブピクセル構造により高解像度画像にも適用できる計算効率を実現した"

@@ -22,13 +22,27 @@
     "source": "survey/library.json"
   },
   "year": 1993,
-  "year_note": "OpenAlex の発行年は 2002 であるが，DOI（10.1109/icc.1993.397441）が ICC 1993 の論文を指すため 1993 とした．",
+  "year_basis": "first_public",
+  "year_note": "OpenAlex の発行年は 2002 であるが，DOI が ICC 1993 の論文を指すため 1993 とした．",
+  "publication": {
+    "first_public": {
+      "venue": "IEEE International Conference on Communications（ICC）",
+      "year": 1993,
+      "evidence": "DOI 10.1109/icc.1993.397441（ICC 1993）．OpenAlex の発行年 2002 は誤り"
+    },
+    "formal": {
+      "venue": "IEEE International Conference on Communications（ICC）",
+      "year": 1993,
+      "evidence": "DOI 10.1109/icc.1993.397441．OpenAlex の発行年 2002 は誤り"
+    }
+  },
   "domains": [
     "channel_coding"
   ],
   "source_representation": "2つの再帰的組織畳み込み符号の並列連接",
   "channel_models": null,
   "transmission": "digital",
+  "joint_channel_training": false,
   "contributions": [
     "2つの再帰的組織畳み込み符号を並列連接したターボ符号を提案した",
     "フィードバック型の復号規則による反復復号器を構成した"

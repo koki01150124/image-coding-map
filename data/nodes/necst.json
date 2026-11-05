@@ -23,6 +23,19 @@
     "source": "survey/library.json"
   },
   "year": 2018,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2018,
+      "evidence": "arXiv:1811.07557 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "International Conference on Machine Learning（ICML）",
+      "year": 2019,
+      "evidence": "ICML 版 PDF の脚注: Proceedings of the 36th International Conference on Machine Learning, PMLR 97, 2019"
+    }
+  },
   "domains": [
     "digital_jscc"
   ],
@@ -32,6 +45,7 @@
     "BEC"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "離散的な変分自己符号化器で符号化・復号を共同学習する NECST を提案した",
     "学習時に潜在符号へ雑音を加えて通信路を模擬し，圧縮と誤り訂正を同時に学習した"

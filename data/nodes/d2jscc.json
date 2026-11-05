@@ -22,37 +22,85 @@
     "url": "https://doi.org/10.1109/jsac.2025.3531546",
     "source": "survey/library.json"
   },
-  "year": 2025,
+  "year": 2024,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2024,
+      "evidence": "arXiv:2403.07338 の初版（survey/library.json: huang2024d2jscc，同一論文のプレプリントとして除外済み）"
+    },
+    "formal": {
+      "venue": "IEEE Journal on Selected Areas in Communications",
+      "year": 2025,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "digital_jscc",
     "sscc"
   ],
-  "source_representation": "適応的な事前分布を持つ深層情報源符号化の出力を通信路符号で保護",
-  "channel_models": null,
+  "source_representation": "ハイパープライアモデル [25] による深層情報源符号化のビット列を，ブロック符号（実験では Polar 符号）で保護",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh"
+  ],
   "transmission": "digital",
+  "joint_channel_training": null,
   "contributions": [
     "デジタルの情報源符号化と通信路符号化を共同で最適化する D²-JSCC を提案した",
-    "エンドツーエンドの歪みを情報源・通信路のレートの関数として特徴付け，SNR に応じてレートを制御する2段階のアルゴリズムを示した"
+    "エンドツーエンドの歪みを情報源・通信路のレートの関数として特徴付け，SNR に応じてレートを制御する2段階のアルゴリズム（学習済みモデルの表からの選択と，情報源符号化器の再学習）を示した"
   ],
-  "training": null,
-  "metrics": null,
+  "training": "学習済みの情報源符号化モデルの表からレートに合うモデルを選び，チャネル SNR に適応するよう情報源符号化器を再学習する",
+  "metrics": [
+    "PSNR"
+  ],
   "strengths": [
     "従来の deep JSCC を上回り，崖効果と頭打ちを緩和（要旨）"
   ],
-  "limitations": null,
+  "limitations": [
+    "通信路の誤りを学習の順伝播に含めるかは本文の照合では確認できていない"
+  ],
   "relations": [
     {
-      "target": "deepjscc",
-      "type": "related",
-      "note": "アナログの DeepJSCC が既存のデジタル通信と互換でない点を課題とし，従来の deep JSCC と比較した",
+      "target": "scale_hyperprior",
+      "type": "builds_on",
+      "note": "情報源符号化の構造に Ballé et al. のハイパープライアモデル [25] を用いた",
       "evidence": {
-        "kind": "abstract",
-        "detail": "要旨: outperforms classic deep JSCC（どの手法かは要旨で特定できない）"
+        "kind": "full_text",
+        "detail": "本文: We adopt the classical hyperprior model in [25] as the source-encoding architecture（[25] = Variational image compression with a scale hyperprior）"
+      }
+    },
+    {
+      "target": "polar",
+      "type": "builds_on",
+      "note": "実験の通信路符号に Polar 符号（aff3ct）を用いた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: a (⌈4096/b⌉, 4096) polar code can be constructed for transmission via the aff3ct toolbox"
+      }
+    },
+    {
+      "target": "deepjscc",
+      "type": "compared_with",
+      "note": "古典的な deep JSCC（DJSCC）[18] と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: the classic deep JSCC [18], namely, DJSCC（[18] = Bourtsoulatze et al.）"
+      }
+    },
+    {
+      "target": "ntscc",
+      "type": "compared_with",
+      "note": "NTSCC [17] と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: the nonlinear transform source-channel coding (NTSCC) [17]"
       }
     }
   ],
   "verification": {
-    "read_level": "abstract",
-    "notes": "要旨のみ確認（arXiv 版を特定していない）．用いた通信路符号・通信路モデルは未確認．"
+    "read_level": "full_text_scan",
+    "notes": "arXiv:2403.07338 の本文を照合した．BPG＋Polar 符号の分離設計とも比較しているが，該当する構成例のノードは未登録である．OpenAlex の著者名 Chuan Zhen Huang は arXiv 版では Chuan Huang と表記されている．"
   }
 }

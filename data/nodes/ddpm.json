@@ -11,7 +11,7 @@
     "title": "Denoising Diffusion Probabilistic Models",
     "authors": [
       "Jonathan Ho",
-      "Jain, Ajay",
+      "Ajay Jain",
       "Pieter Abbeel"
     ],
     "year": 2020,
@@ -22,12 +22,26 @@
     "source": "survey/library.json"
   },
   "year": 2020,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2020,
+      "evidence": "arXiv:2006.11239 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "Conference on Neural Information Processing Systems（NeurIPS）",
+      "year": 2020,
+      "evidence": "本文の脚注: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)"
+    }
+  },
   "domains": [
     "generative"
   ],
   "source_representation": "（画像生成モデル）ガウス雑音から段階的に除去する潜在変数モデル",
   "channel_models": [],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
     "拡散確率モデルによる高品質な画像生成を示した",
     "雑音除去スコアマッチングとの関係に基づく重み付き変分下界で学習した",

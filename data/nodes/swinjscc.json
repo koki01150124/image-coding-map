@@ -23,7 +23,20 @@
     "url": "https://doi.org/10.1109/tccn.2024.3424842",
     "source": "survey/library.json"
   },
-  "year": 2024,
+  "year": 2023,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2023,
+      "evidence": "arXiv:2308.09361 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2024,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "analog_jscc"
   ],
@@ -33,6 +46,7 @@
     "Rayleigh"
   ],
   "transmission": "analog",
+  "joint_channel_training": true,
   "contributions": [
     "Swin Transformer を骨格とする neural JSCC を構築した",
     "通信路状態と目標レートに応じて潜在表現をスケールする2つの空間変調モジュールで，1つのモデルを多様な条件に適応させた"

@@ -21,6 +21,19 @@
     "source": "survey/library.json"
   },
   "year": 2017,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "arXiv",
+      "year": 2017,
+      "evidence": "arXiv:1702.00832 の初版（ID の年月）"
+    },
+    "formal": {
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2017,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
     "channel_coding"
   ],
@@ -33,6 +46,7 @@
     "Rayleigh"
   ],
   "transmission": "digital",
+  "joint_channel_training": true,
   "contributions": [
     "通信システムを自己符号化器として解釈し，送信機と受信機を一括して最適化する設計の考え方を示した",
     "radio transformer network と，IQ サンプルを用いた CNN による変調方式の分類を示した"

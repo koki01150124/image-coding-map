@@ -21,28 +21,49 @@
     "source": "survey/library.json"
   },
   "year": 1948,
+  "year_basis": "first_public",
+  "publication": {
+    "first_public": {
+      "venue": "Bell System Technical Journal",
+      "year": 1948,
+      "evidence": "survey/library.json（OpenAlex）"
+    },
+    "formal": {
+      "venue": "Bell System Technical Journal",
+      "year": 1948,
+      "evidence": "survey/library.json（OpenAlex）"
+    }
+  },
   "domains": [
-    "channel_coding",
-    "sscc"
+    "channel_coding"
   ],
   "tags": [
-    "情報理論"
+    "情報理論（基礎）"
   ],
   "source_representation": null,
   "channel_models": [
-    "general"
+    "general",
+    "AWGN"
   ],
   "transmission": "not_applicable",
+  "joint_channel_training": false,
   "contributions": [
-    "雑音のある通信路の影響と，情報源の統計的構造による節約を含む一般的な通信理論を構築した"
+    "情報源のエントロピーを情報の量の尺度として定義した（Part I）",
+    "雑音のない通信路の基本定理（Theorem 9）と，雑音のある離散通信路の基本定理（Theorem 11: 情報源のエントロピーが通信路容量以下であれば誤りを任意に小さくできる符号化が存在する）を示した",
+    "帯域幅 W・平均電力 P・白色熱雑音の電力 N の通信路の容量 C = W log((P+N)/N) を示した（Theorem 17）"
   ],
   "training": "学習なし（理論）",
-  "metrics": null,
+  "metrics": [
+    "エントロピー",
+    "通信路容量"
+  ],
   "strengths": null,
-  "limitations": null,
+  "limitations": [
+    "Theorem 11 の証明は純粋な存在証明ではないが，理想的な符号化に近づく具体的な方法を与えない点で存在証明と同様の欠点を持つ（本文 Sec. 14）"
+  ],
   "relations": [],
   "verification": {
-    "read_level": "abstract",
-    "notes": "要旨（OpenAlex）のみ確認．情報源・通信路の分離に関する定理の詳細は要旨に記載が無いため記入していない．"
+    "read_level": "full_text_scan",
+    "notes": "Bell System Technical Journal 1948 の訂正付き再録版（55ページ）の本文で Theorem 9，11，17 を照合した．情報理論の基礎研究であり，特定の SSCC の実装方式ではないため SSCC の分野には含めない．"
   }
 }
