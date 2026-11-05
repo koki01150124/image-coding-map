@@ -1,0 +1,899 @@
+[
+ {
+  "title": "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation",
+  "authors": [
+   "Yi Luo",
+   "Nima Mesgarani"
+  ],
+  "year": 2019,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2019.2915167",
+  "arxiv": "1809.07454",
+  "openalex": "W2952218014",
+  "cited_by": 2072,
+  "abstract": "Single-channel, speaker-independent speech separation methods have recently seen great progress. However, the accuracy, latency, and computational cost of such methods remain insufficient. The majority of the previous methods have formulated the separation problem through the time-frequency representation of the mixed signal, which has several drawbacks, including the decoupling of the phase and magnitude of the signal, the suboptimality of time-frequency representation for speech separation, and the long latency of the entire system. To address these shortcomings, we propose a fully-convolutional time-domain audio separation network (Conv-TasNet), a deep learning framework for end-to-end time-domain speech separation. Conv-TasNet uses a linear encoder to generate a representation of the speech waveform optimized for separating individual speakers. Speaker separation is achieved by applying a set of weighting functions (masks) to the encoder output. The modified encoder representations are then inverted back to the waveforms using a linear decoder. The masks are found using a temporal convolutional network (TCN) consisting of stacked 1-D dilated convolutional blocks, which allows the network to model the long-term dependencies of the speech signal while maintaining a small model size. The proposed Conv-TasNet system significantly outperforms previous time-frequency masking methods in separating two- and three-speaker mixtures. Additionally, Conv-TasNet surpasses several ideal time-frequency magnitude masks in two-speaker speech separation as evaluated by both objective distortion measures and subjective quality assessment by human listeners. Finally, Conv-TasNet has a significantly smaller model size and a much shorter minimum latency, making it a suitable solution for both offline and real-time speech separation applications. This study therefore represents a major step toward the realization of speech separation systems for real-world speech processing technologies.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+  "authors": [
+   "Sangmin Park",
+   "Young‐Gab Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2021.3140175",
+  "arxiv": null,
+  "openalex": "W4206484811",
+  "cited_by": 1925,
+  "abstract": "Unlike previous studies on the Metaverse based on Second Life, the current Metaverse is based on the social value of Generation Z that online and offline selves are not different. With the technological development of deep learning-based high-precision recognition models and natural generation models, Metaverse is being strengthened with various factors, from mobile-based always-on access to connectivity with reality using virtual currency. The integration of enhanced social activities and neural-net methods requires a new definition of Metaverse suitable for the present, different from the previous Metaverse. This paper divides the concepts and essential techniques necessary for realizing the Metaverse into three components (i.e., hardware, software, and contents) and three approaches (i.e., user interaction, implementation, and application) rather than marketing or hardware approach to conduct a comprehensive analysis. Furthermore, we describe essential methods based on three components and techniques to Metaverse’s representative Ready Player One, Roblox, and Facebook research in the domain of films, games, and studies. Finally, we summarize the limitations and directions for implementing the immersive Metaverse as social influences, constraints, and open challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Overview of the Versatile Video Coding (VVC) Standard and its Applications",
+  "authors": [
+   "Benjamin Bross",
+   "Ye-Kui Wang",
+   "Yan Ye",
+   "Shan Liu",
+   "Jianle Chen",
+   "Gary J. Sullivan",
+   "Jens-Rainer Ohm"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3101953",
+  "arxiv": null,
+  "openalex": "W3202918664",
+  "cited_by": 1858,
+  "abstract": "Versatile Video Coding (VVC) was finalized in July 2020 as the most recent international video coding standard. It was developed by the Joint Video Experts Team (JVET) of the ITU-T Video Coding Experts Group (VCEG) and the ISO/IEC Moving Picture Experts Group (MPEG) to serve an ever-growing need for improved video compression as well as to support a wider variety of today’s media content and emerging applications. This paper provides an overview of the novel technical features for new applications and the core compression technologies for achieving significant bit rate reductions in the neighborhood of 50% over its predecessor for equal video quality, the High Efficiency Video Coding (HEVC) standard, and 75% over the currently most-used format, the Advanced Video Coding (AVC) standard. It is explained how these new features in VVC provide greater versatility for applications. Highlighted applications include video with resolutions beyond standard- and high-definition, video with high dynamic range and wide color gamut, adaptive streaming with resolution changes, computer-generated and screen-captured video, ultralow-delay streaming, 360° immersive video, and multilayer coding e.g., for scalability. Furthermore, early implementations are presented to show that the new VVC standard is implementable and ready for real-world deployment.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning Enabled Semantic Communication Systems",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Geoffrey Ye Li",
+   "Biing-Hwang Fred Juang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Signal Processing",
+  "doi": "10.1109/tsp.2021.3071210",
+  "arxiv": "2006.10685",
+  "openalex": "W3036851434",
+  "cited_by": 1627,
+  "abstract": "Recently, deep learned enabled end-to-end communication systems have been developed to merge all physical layer blocks in the traditional communication systems, which make joint transceiver optimization possible. Powered by deep learning, natural language processing has achieved great success in analyzing and understanding a large amount of language texts. Inspired by research results in both areas, we aim to provide a new view on communication systems from the semantic level. Particularly, we propose a deep learning based semantic communication system, named DeepSC, for text transmission. Based on the Transformer, the DeepSC aims at maximizing the system capacity and minimizing the semantic errors by recovering the meaning of sentences, rather than bit- or symbol-errors in traditional communications. Moreover, transfer learning is used to ensure the DeepSC applicable to different communication environments and to accelerate the model training process. To justify the performance of semantic communications accurately, we also initialize a new metric, named sentence similarity. Compared with the traditional communication system without considering semantic information exchange, the proposed DeepSC is more robust to channel variation and is able to achieve better performance, especially in the low signal-to-noise (SNR) regime, as demonstrated by the extensive simulation results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variational image compression with a scale hyperprior",
+  "authors": [
+   "Johannes Ballé",
+   "David C. Minnen",
+   "Singh, Saurabh",
+   "Sung Jin Hwang",
+   "Nick Johnston"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1802.01436",
+  "arxiv": "1802.01436",
+  "openalex": "W2785562966",
+  "cited_by": 1555,
+  "abstract": "We describe an end-to-end trainable model for image compression based on variational autoencoders. The model incorporates a hyperprior to effectively capture spatial dependencies in the latent representation. This hyperprior relates to side information, a concept universal to virtually all modern image codecs, but largely unexplored in image compression using artificial neural networks (ANNs). Unlike existing autoencoder compression methods, our model trains a complex prior jointly with the underlying autoencoder. We demonstrate that this model leads to state-of-the-art image compression when measuring visual quality using the popular MS-SSIM index, and yields rate-distortion performance surpassing published ANN-based methods when evaluated using a more traditional metric based on squared error (PSNR). Furthermore, we provide a qualitative comparison of models trained for different distortion metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Supervised Speech Separation Based on Deep Learning: An Overview",
+  "authors": [
+   "DeLiang Wang",
+   "Jitong Chen"
+  ],
+  "year": 2018,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2018.2842159",
+  "arxiv": "1708.07524",
+  "openalex": "W2962866211",
+  "cited_by": 1529,
+  "abstract": "Speech separation is the task of separating target speech from background interference. Traditionally, speech separation is studied as a signal processing problem. A more recent approach formulates speech separation as a supervised learning problem, where the discriminative patterns of speech, speakers, and background noise are learned from training data. Over the past decade, many supervised separation algorithms have been put forward. In particular, the recent introduction of deep learning to supervised speech separation has dramatically accelerated progress and boosted separation performance. This paper provides a comprehensive overview of the research on deep learning based supervised speech separation in the last several years. We first introduce the background of speech separation and the formulation of supervised separation. Then, we discuss three main components of supervised separation: learning machines, training targets, and acoustic features. Much of the overview is on separation algorithms where we review monaural methods, including speech enhancement (speech-nonspeech separation), speaker separation (multitalker separation), and speech dereverberation, as well as multimicrophone techniques. The important issue of generalization, unique to supervised learning, is discussed. This overview provides a historical perspective on how advances are made. In addition, we discuss a number of conceptual issues, including what constitutes the target source.",
+  "source": "openalex"
+ },
+ {
+  "title": "SEGAN: Speech Enhancement Generative Adversarial Network",
+  "authors": [
+   "Santiago Pascual",
+   "Antonio Bonafonte",
+   "Joan Serrà"
+  ],
+  "year": 2017,
+  "venue": "Interspeech (USB)",
+  "doi": "10.21437/interspeech.2017-1428",
+  "arxiv": "1703.09452",
+  "openalex": "W2600556233",
+  "cited_by": 1366,
+  "abstract": "Current speech enhancement techniques operate on the spectral domain and/or exploit some higher-level feature. The majority of them tackle a limited number of noise conditions and rely on first-order statistics. To circumvent these issues, deep networks are being increasingly used, thanks to their ability to learn complex functions from large example sets. In this work, we propose the use of generative adversarial networks for speech enhancement. In contrast to current techniques, we operate at the waveform level, training the model end-to-end, and incorporate 28 speakers and 40 different noise conditions into the same model, such that model parameters are shared across them. We evaluate the proposed model using an independent, unseen test set with two speakers and 20 alternative noise conditions. The enhanced samples confirm the viability of the proposed model, and both objective and subjective evaluations confirm the effectiveness of it. With that, we open the exploration of generative architectures for speech enhancement, which may progressively incorporate further speech-centric design choices to improve their performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Neural Networks for No-Reference and Full-Reference Image Quality Assessment",
+  "authors": [
+   "Sebastian Bosse",
+   "Dominique Maniry",
+   "Klaus-Robert Muller",
+   "Thomas Wiegand",
+   "Wojciech Samek"
+  ],
+  "year": 2017,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2017.2760518",
+  "arxiv": "1612.01697",
+  "openalex": "W2563786098",
+  "cited_by": 1263,
+  "abstract": "We present a deep neural network-based approach to image quality assessment (IQA). The network is trained end-to-end and comprises ten convolutional layers and five pooling layers for feature extraction, and two fully connected layers for regression, which makes it significantly deeper than related IQA models. Unique features of the proposed architecture are that: 1) with slight adaptations it can be used in a no-reference (NR) as well as in a full-reference (FR) IQA setting and 2) it allows for joint learning of local quality and local weights, i.e., relative importance of local quality to the global quality estimate, in an unified framework. Our approach is purely data-driven and does not rely on hand-crafted features or other types of prior domain knowledge about the human visual system or image statistics. We evaluate the proposed approach on the LIVE, CISQ, and TID2013 databases as well as the LIVE In the wild image quality challenge database and show superior performance to state-of-the-art NR and FR IQA methods. Finally, cross-database evaluation shows a high ability to generalize between different databases, indicating a high robustness of the learned features.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+  "authors": [
+   "Zhengxue Cheng",
+   "Heming Sun",
+   "Masaru Takeuchi",
+   "Jiro Katto"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00796",
+  "arxiv": "2001.01568",
+  "openalex": "W3034469748",
+  "cited_by": 1205,
+  "abstract": "Image compression is a fundamental research field and many well-known compression standards have been developed for many decades. Recently, learned compression methods exhibit a fast development trend with promising results. However, there is still a performance gap between learned compression algorithms and reigning compression standards, especially in terms of widely used PSNR metric. In this paper, we explore the remaining redundancy of recent learned compression algorithms. We have found accurate entropy models for rate estimation largely affect the optimization of network parameters and thus affect the rate-distortion performance. Therefore, in this paper, we propose to use discretized Gaussian Mixture Likelihoods to parameterize the distributions of latent codes, which can achieve a more accurate and flexible entropy model. Besides, we take advantage of recent attention modules and incorporate them into network architecture to enhance the performance. Experimental results demonstrate our proposed method achieves a state-of-the-art performance compared to existing learned compression methods on both Kodak and high-resolution datasets. To our knowledge our approach is the first work to achieve comparable performance with latest compression standard Versatile Video Coding (VVC) regarding PSNR. More importantly, our approach generates more visually pleasant results when optimized by MS-SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "Artificial intelligence in the creative industries: a review",
+  "authors": [
+   "Nantheera Anantrasirichai",
+   "David Bull"
+  ],
+  "year": 2021,
+  "venue": "Artificial Intelligence Review",
+  "doi": "10.1007/s10462-021-10039-7",
+  "arxiv": "2007.12391",
+  "openalex": "W3044960932",
+  "cited_by": 940,
+  "abstract": "Abstract This paper reviews the current state of the art in artificial intelligence (AI) technologies and applications in the context of the creative industries. A brief background of AI, and specifically machine learning (ML) algorithms, is provided including convolutional neural networks (CNNs), generative adversarial networks (GANs), recurrent neural networks (RNNs) and deep Reinforcement Learning (DRL). We categorize creative applications into five groups, related to how AI technologies are used: (i) content creation, (ii) information analysis, (iii) content enhancement and post production workflows, (iv) information extraction and enhancement, and (v) data compression. We critically examine the successes and limitations of this rapidly advancing technology in each of these areas. We further differentiate between the use of AI as a creative tool and its potential as a creator in its own right. We foresee that, in the near future, ML-based AI will be adopted widely as a tool or collaborative assistant for creativity. In contrast, we observe that the successes of ML in domains with fewer constraints, where AI is the ‘creator’, remain modest. The potential of AI (or its developers) to win awards for its original creations in competition with human creatives is also limited, based on contemporary technologies. We therefore conclude that, in the context of creative industries, maximum benefit from AI will be derived where its focus is human-centric—where it is designed to augment, rather than replace, human creativity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Full Resolution Image Compression with Recurrent Neural Networks",
+  "authors": [
+   "George D. Toderici",
+   "Damien Vincent",
+   "Nick Johnston",
+   "Sung Jin Hwang",
+   "David C. Minnen",
+   "Joel Shor",
+   "Michele Covell"
+  ],
+  "year": 2017,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2017.577",
+  "arxiv": "1608.05148",
+  "openalex": "W2516038988",
+  "cited_by": 919,
+  "abstract": "This paper presents a set of full-resolution lossy image compression methods based on neural networks. Each of the architectures we describe can provide variable compression rates during deployment without requiring retraining of the network: each network need only be trained once. All of our architectures consist of a recurrent neural network (RNN)-based encoder and decoder, a binarizer, and a neural network for entropy coding. We compare RNN types (LSTM, associative LSTM) and introduce a new hybrid of GRU and ResNet. We also study “one-shot” versus additive reconstruction architectures and introduce a new scaled-additive framework. We compare to previous work, showing improvements of 4.3%-8.8% AUC (area under the rate-distortion curve), depending on the perceptual metric used. As far as we know, this is the first neural network architecture that is able to outperform JPEG at image compression across most bitrates on the rate-distortion curve on the Kodak dataset images, with and without the aid of entropy coding.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+  "authors": [
+   "Stefania Sardellitti",
+   "Gesualdo Scutari",
+   "Sergio Barbarossa"
+  ],
+  "year": 2015,
+  "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+  "doi": "10.1109/tsipn.2015.2448520",
+  "arxiv": "1412.8416",
+  "openalex": "W1904504745",
+  "cited_by": 889,
+  "abstract": "Migrating computational intensive tasks from mobile devices to more resourceful cloud servers is a promising technique to increase the computational capacity of mobile devices while saving their battery energy. In this paper, we consider a MIMO multicell system where multiple mobile users (MUs) ask for computation offloading to a common cloud server. We formulate the offloading problem as the joint optimization of the radio resources-the transmit precoding matrices of the MUs-and the computational resources-the CPU cycles/second assigned by the cloud to each MU-in order to minimize the overall users' energy consumption, while meeting latency constraints. The resulting optimization problem is nonconvex (in the objective function and constraints). Nevertheless, in the single-user case, we are able to express the global optimal solution in closed form. In the more challenging multiuser scenario, we propose an iterative algorithm, based on a novel successive convex approximation technique, converging to a local optimal solution of the original nonconvex problem. Then, we reformulate the algorithm in a distributed and parallel implementation across the radio access points, requiring only a limited coordination/signaling with the cloud. Numerical results show that the proposed schemes outperform disjoint optimization algorithms.",
+  "source": "openalex"
+ },
+ {
+  "title": "A curated mammography data set for use in computer-aided detection and diagnosis research",
+  "authors": [
+   "Rebecca Sawyer Lee",
+   "Francisco Gimenez",
+   "Assaf Hoogi",
+   "Kanae Kawai Miyake",
+   "Mia Gorovoy",
+   "Daniel L. Rubin"
+  ],
+  "year": 2017,
+  "venue": "Scientific Data",
+  "doi": "10.1038/sdata.2017.177",
+  "arxiv": null,
+  "openalex": "W2776937175",
+  "cited_by": 879,
+  "abstract": "Published research results are difficult to replicate due to the lack of a standard evaluation data set in the area of decision support systems in mammography; most computer-aided diagnosis (CADx) and detection (CADe) algorithms for breast cancer in mammography are evaluated on private data sets or on unspecified subsets of public databases. This causes an inability to directly compare the performance of methods or to replicate prior results. We seek to resolve this substantial challenge by releasing an updated and standardized version of the Digital Database for Screening Mammography (DDSM) for evaluation of future CADx and CADe systems (sometimes referred to generally as CAD) research in mammography. Our data set, the CBIS-DDSM (Curated Breast Imaging Subset of DDSM), includes decompressed images, data selection and curation by trained mammographers, updated mass segmentation and bounding boxes, and pathologic diagnosis for training data, formatted similarly to modern computer vision data sets. The data set contains 753 calcification cases and 891 mass cases, providing a data-set size capable of analyzing decision support systems in mammography.",
+  "source": "openalex"
+ },
+ {
+  "title": "Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications",
+  "authors": [
+   "Denız Gündüz",
+   "Zhijin Qin",
+   "Iñaki Estella Aguerri",
+   "Harpreet S. Dhillon",
+   "Zhaohui Yang",
+   "Aylin Yener",
+   "Kai‐Kit Wong",
+   "Chan‐Byoung Chae"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3223408",
+  "arxiv": "2207.09353",
+  "openalex": "W4313455370",
+  "cited_by": 801,
+  "abstract": "Communication systems to date primarily aim at reliably communicating bit sequences. Such an approach provides efficient engineering designs that are agnostic to the meanings of the messages or to the goal that the message exchange aims to achieve. Next generation systems, however, can be potentially enriched by folding message semantics and goals of communication into their design. Further, these systems can be made cognizant of the context in which communication exchange takes place, thereby providing avenues for novel design insights. This tutorial summarizes the efforts to date, starting from its early adaptations, semantic-aware and task-oriented communications, covering the foundations, algorithms and potential implementations. The focus is on approaches that utilize information theory to provide the foundations, as well as the significant role of learning in semantics and task-aware communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "DVC: An End-To-End Deep Video Compression Framework",
+  "authors": [
+   "Guo Sheng Lu",
+   "Wanli Ouyang",
+   "Dong Xu",
+   "Xiaoyun Zhang",
+   "Chunlei Cai",
+   "Zhiyong Gao"
+  ],
+  "year": 2019,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2019.01126",
+  "arxiv": "1812.00101",
+  "openalex": "W2969260367",
+  "cited_by": 765,
+  "abstract": "Conventional video compression approaches use the predictive coding architecture and encode the corresponding motion information and residual information. In this paper, taking advantage of both classical architecture in the conventional video compression method and the powerful non-linear representation ability of neural networks, we propose the first end-to-end video compression deep model that jointly optimizes all the components for video compression. Specifically, learning based optical flow estimation is utilized to obtain the motion information and reconstruct the current frames. Then we employ two auto-encoder style neural networks to compress the corresponding motion and residual information. All the modules are jointly learned through a single loss function, in which they collaborate with each other by considering the trade-off between reducing the number of compression bits and improving quality of the decoded video. Experimental results show that the proposed approach can outperform the widely used video coding standard H.264 in terms of PSNR and be even on par with the latest standard H.265 in terms of MS-SSIM. Code is released at https://github.com/GuoLusjtu/DVC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lossy Image Compression with Compressive Autoencoders",
+  "authors": [
+   "Lucas Theis",
+   "Wenzhe Shi",
+   "Cunningham, Andrew",
+   "Ferenc Huszár"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1703.00395",
+  "arxiv": "1703.00395",
+  "openalex": "W2950237263",
+  "cited_by": 722,
+  "abstract": "We propose a new approach to the problem of optimizing autoencoders for lossy image compression. New media formats, changing hardware technology, as well as diverse requirements and content types create a need for compression algorithms which are more flexible than existing codecs. Autoencoders have the potential to address this need, but are difficult to optimize directly due to the inherent non-differentiabilty of the compression loss. We here show that minimal changes to the loss are sufficient to train deep autoencoders competitive with JPEG 2000 and outperforming recently proposed approaches based on RNNs. Our network is furthermore computationally efficient thanks to a sub-pixel architecture, which makes it suitable for high-resolution images. This is in contrast to previous work on autoencoders for compression using coarser approximations, shallower architectures, computationally expensive methods, or focusing on small images.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication Systems for Speech Transmission",
+  "authors": [
+   "Zhenzi Weng",
+   "Zhijin Qin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3087240",
+  "arxiv": "2102.12605",
+  "openalex": "W3166791908",
+  "cited_by": 677,
+  "abstract": "Semantic communications could improve the transmission efficiency significantly by exploring the semantic information. In this paper, we make an effort to recover the transmitted speech signals in the semantic communication systems, which minimizes the error at the semantic level rather than the bit or symbol level. Particularly, we design a deep learning (DL)-enabled semantic communication system for speech signals, named DeepSC-S. In order to improve the recovery accuracy of speech signals, especially for the essential information, DeepSC-S is developed based on an attention mechanism by utilizing a squeeze-and-excitation (SE) network. The motivation behind the attention mechanism is to identify the essential speech information by providing higher weights to them when training the neural network. Moreover, in order to facilitate the proposed DeepSC-S for dynamic channel environments, we find a general model to cope with various channel conditions without retraining. Furthermore, we investigate DeepSC-S in telephone systems as well as multimedia transmission systems to verify the model adaptation in practice. The simulation results demonstrate that our proposed DeepSC-S outperforms the traditional communications in both cases in terms of the speech signals metrics, such as signal-to-distortion ration and perceptual evaluation of speech distortion. Besides, DeepSC-S is more robust to channel variations, especially in the low signal-to-noise (SNR) regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "SoundStream: An End-to-End Neural Audio Codec",
+  "authors": [
+   "Neil Zeghidour",
+   "Alejandro Luebs",
+   "Ahmed Omran",
+   "Jan Skoglund",
+   "Marco Tagliasacchi"
+  ],
+  "year": 2021,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2021.3129994",
+  "arxiv": "2107.03312",
+  "openalex": "W3178321840",
+  "cited_by": 654,
+  "abstract": "We presentSoundStream, a novel neural audio codec that can efficiently compress speech, music and general audio at bitrates normally targeted by speech-tailored codecs.SoundStreamrelies on a model architecture composed by a fully convolutional encoder/decoder network and a residual vector quantizer, which are trained jointly end-to-end. Training leverages recent advances in text-to-speech and speech enhancement, which combine adversarial and reconstruction losses to allow the generation of high-quality audio content from quantized embeddings. By training with structured dropout applied to quantizer layers, a single model can operate across variable bitrates from 3 kbps to 18 kbps, with a negligible quality loss when compared with models trained at fixed bitrates. In addition, the model is amenable to a low latency implementation, which supports streamable inference and runs in real time on a smartphone CPU. In subjective evaluations using audio at 24 kHz sampling rate,SoundStreamat 3 kbps outperforms Opus at 12 kbps and approaches EVS at 9.6 kbps. Moreover, we are able to perform joint compression and enhancement either at the encoder or at the decoder side with no additional latency, which we demonstrate through background noise suppression for speech.",
+  "source": "openalex"
+ },
+ {
+  "title": "Looking to listen at the cocktail party",
+  "authors": [
+   "Ariel Ephrat",
+   "Inbar Mosseri",
+   "Oran Lang",
+   "Tali Dekel",
+   "Kirk Wilson",
+   "Avinatan Hassidim",
+   "William T. Freeman",
+   "Michael Rubinstein"
+  ],
+  "year": 2018,
+  "venue": "ACM Transactions on Graphics",
+  "doi": "10.1145/3197517.3201357",
+  "arxiv": "1804.03619",
+  "openalex": "W4289665794",
+  "cited_by": 647,
+  "abstract": "We present a joint audio-visual model for isolating a single speech signal from a mixture of sounds such as other speakers and background noise. Solving this task using only audio as input is extremely challenging and does not provide an association of the separated speech signals with speakers in the video. In this paper, we present a deep network-based model that incorporates both visual and auditory signals to solve this task. The visual features are used to \"focus\" the audio on desired speakers in a scene and to improve the speech separation quality. To train our joint audio-visual model, we introduce AVS peech , a new dataset comprised of thousands of hours of video segments from the Web. We demonstrate the applicability of our method to classic speech separation tasks, as well as real-world scenarios involving heated interviews, noisy bars, and screaming children, only requiring the user to specify the face of the person in the video whose speech they want to isolate. Our method shows clear advantage over state-of-the-art audio-only speech separation in cases of mixed speech. In addition, our model, which is speaker-independent (trained once, applicable to any speaker), produces better results than recent audio-visual speech separation methods that are speaker-dependent (require training a separate model for each speaker of interest).",
+  "source": "openalex"
+ },
+ {
+  "title": "Jukebox: A Generative Model for Music",
+  "authors": [
+   "Prafulla Dhariwal",
+   "Heewoo Jun",
+   "Payne, Christine",
+   "Jong Wook Kim",
+   "Alec Radford",
+   "Ilya Sutskever"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2005.00341",
+  "arxiv": "2005.00341",
+  "openalex": "W3021164770",
+  "cited_by": 602,
+  "abstract": "We introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable. We are releasing thousands of non cherry-picked samples at https://jukebox.openai.com, along with model weights and code at https://github.com/openai/jukebox",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Adversarial Networks for Extreme Learned Image Compression",
+  "authors": [
+   "Eirikur Agustsson",
+   "Michael Tschannen",
+   "Fabian Mentzer",
+   "Radu Timofte",
+   "Luc Van Gool"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00031",
+  "arxiv": "1804.02958",
+  "openalex": "W2795709826",
+  "cited_by": 597,
+  "abstract": "We present a learned image compression system based on GANs, operating at extremely low bitrates. Our proposed framework combines an encoder, decoder/generator and a multi-scale discriminator, which we train jointly for a generative learned compression objective. The model synthesizes details it cannot afford to store, obtaining visually pleasing results at bitrates where previous methods fail and show strong artifacts. Furthermore, if a semantic label map of the original image is available, our method can fully synthesize unimportant regions in the decoded image such as streets and trees from the label map, proportionally reducing the storage cost. A user study confirms that for low bitrates, our approach is preferred to state-of-the-art methods, even when they use more than double the bits.",
+  "source": "openalex"
+ },
+ {
+  "title": "Real Time Speech Enhancement in the Waveform Domain",
+  "authors": [
+   "Alexandre Défossez",
+   "Gabriel Synnaeve",
+   "Yossi Adi"
+  ],
+  "year": 2020,
+  "venue": "Interspeech (USB)",
+  "doi": "10.21437/interspeech.2020-2409",
+  "arxiv": "2006.12847",
+  "openalex": "W3036367741",
+  "cited_by": 551,
+  "abstract": "We present a causal speech enhancement model working on the raw waveform that runs in real-time on a laptop CPU. The proposed model is based on an encoder-decoder architecture with skip-connections. It is optimized on both time and frequency domains, using multiple loss functions. Empirical evidence shows that it is capable of removing various kinds of background noise including stationary and non-stationary noises, as well as room reverb. Additionally, we suggest a set of data augmentation techniques applied directly on the raw waveform which further improve model performance and its generalization abilities. We perform evaluations on several standard benchmarks, both using objective metrics and human judgements. The proposed model matches state-of-the-art performance of both causal and non causal methods while working directly on the raw waveform.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lips Don't Lie: A Generalisable and Robust Approach to Face Forgery Detection",
+  "authors": [
+   "Alexandros Haliassos",
+   "Konstantinos Vougioukas",
+   "Stavros Petridis",
+   "Maja Pantić"
+  ],
+  "year": 2021,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr46437.2021.00500",
+  "arxiv": "2012.07657",
+  "openalex": "W3110828520",
+  "cited_by": 547,
+  "abstract": "Although current deep learning-based face forgery detectors achieve impressive performance in constrained scenarios, they are vulnerable to samples created by unseen manipulation methods. Some recent works show improvements in generalisation but rely on cues that are easily corrupted by common post-processing operations such as compression. In this paper, we propose LipForensics, a detection approach capable of both generalising to novel manipulations and withstanding various distortions. LipForensics targets high-level semantic irregularities in mouth movements, which are common in many generated videos. It consists in first pretraining a spatio-temporal network to perform visual speech recognition (lipreading), thus learning rich internal representations related to natural mouth motion. A temporal network is subsequently finetuned on fixed mouth embeddings of real and forged data in order to detect fake videos based on mouth movements without overfitting to low-level, manipulation-specific artefacts. Extensive experiments show that this simple approach significantly surpasses the state-of-the-art in terms of generalisation to unseen manipulations and robustness to perturbations, as well as shed light on the factors responsible for its performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes",
+  "authors": [
+   "Angela Dai",
+   "Chang, Angel X.",
+   "Manolis Savva",
+   "Maciej Halber",
+   "Thomas A. Funkhouser",
+   "Matthias Nießner"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1702.04405",
+  "arxiv": "1702.04405",
+  "openalex": "W2950493473",
+  "cited_by": 537,
+  "abstract": "A key requirement for leveraging supervised deep learning methods is the availability of large, labeled datasets. Unfortunately, in the context of RGB-D scene understanding, very little data is available -- current datasets cover a small range of scene views and have limited semantic annotations. To address this issue, we introduce ScanNet, an RGB-D video dataset containing 2.5M views in 1513 scenes annotated with 3D camera poses, surface reconstructions, and semantic segmentations. To collect this data, we designed an easy-to-use and scalable RGB-D capture system that includes automated surface reconstruction and crowdsourced semantic annotation. We show that using this data helps achieve state-of-the-art performance on several 3D scene understanding tasks, including 3D object classification, semantic voxel labeling, and CAD model retrieval. The dataset is freely available at http://www.scan-net.org.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Fields in Visual Computing and Beyond",
+  "authors": [
+   "Yiheng Xie",
+   "Towaki Takikawa",
+   "Shunsuke Saito",
+   "Or Litany",
+   "Shiqin Yan",
+   "Numair Khan",
+   "Federico Tombari",
+   "James Tompkin",
+   "Vincent Sitzmann",
+   "Srinath Sridhar"
+  ],
+  "year": 2022,
+  "venue": "Computer Graphics Forum",
+  "doi": "10.1111/cgf.14505",
+  "arxiv": "2111.11426",
+  "openalex": "W4297846303",
+  "cited_by": 536,
+  "abstract": "Abstract Recent advances in machine learning have led to increased interest in solving visual computing problems using methods that employ coordinate‐based neural networks. These methods, which we call neural fields , parameterize physical properties of scenes or objects across space and time. They have seen widespread success in problems such as 3D shape and image synthesis, animation of human bodies, 3D reconstruction, and pose estimation. Rapid progress has led to numerous papers, but a consolidation of the discovered knowledge has not yet emerged. We provide context, mathematical grounding, and a review of over 250 papers in the literature on neural fields. In Part I , we focus on neural field techniques by identifying common components of neural field methods, including different conditioning, representation, forward map, architecture, and manipulation methods. In Part II , we focus on applications of neural fields to different problems in visual computing, and beyond (e.g., robotics, audio). Our review shows the breadth of topics already covered in visual computing, both historically and in current incarnations, and highlights the improved quality, flexibility, and capability brought by neural field methods. Finally, we present a companion website that acts as a living database that can be continually updated by the community.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variable Rate Image Compression with Recurrent Neural Networks",
+  "authors": [
+   "George D. Toderici",
+   "Sean M. O’Malley",
+   "Sung Jin Hwang",
+   "Damien Vincent",
+   "David C. Minnen",
+   "Shumeet Baluja",
+   "Michele Covell",
+   "Rahul Sukthankar"
+  ],
+  "year": 2015,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1511.06085",
+  "arxiv": "1511.06085",
+  "openalex": "W2276024283",
+  "cited_by": 535,
+  "abstract": "A large fraction of Internet traffic is now driven by requests from mobile devices with relatively small screens and often stringent bandwidth requirements. Due to these factors, it has become the norm for modern graphics-heavy websites to transmit low-resolution, low-bytecount image previews (thumbnails) as part of the initial page load process to improve apparent page responsiveness. Increasing thumbnail compression beyond the capabilities of existing codecs is therefore a current research focus, as any byte savings will significantly enhance the experience of mobile device users. Toward this end, we propose a general framework for variable-rate image compression and a novel architecture based on convolutional and deconvolutional LSTM recurrent networks. Our models address the main issues that have prevented autoencoder neural networks from competing with existing image compression algorithms: (1) our networks only need to be trained once (not per-image), regardless of input image dimensions and the desired compression rate; (2) our networks are progressive, meaning that the more bits are sent, the more accurate the image reconstruction; and (3) the proposed architecture is at least as efficient as a standard purpose-trained autoencoder for a given number of bits. On a large-scale benchmark of 32$\\times$32 thumbnails, our LSTM-based approaches provide better visual quality than (headerless) JPEG, JPEG2000 and WebP, with a storage size that is reduced by 10% or more.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2020.2987203",
+  "arxiv": "1911.11174",
+  "openalex": "W3016715915",
+  "cited_by": 491,
+  "abstract": "We consider wireless transmission of images in the presence of channel output feedback. From a Shannon theoretic perspective feedback does not improve the asymptotic end-to-end performance, and separate source coding followed by capacity-achieving channel coding, which ignores the feedback signal, achieves the optimal performance. It is well known that separation is not optimal in the practical finite blocklength regime; however, there are no known practical joint source-channel coding (JSCC) schemes that can exploit the feedback signal and surpass the performance of separation-based schemes. Inspired by the recent success of deep learning methods for JSCC, we investigate how noiseless or noisy channel output feedback can be incorporated into the transmission system to improve the reconstruction quality at the receiver. We introduce an autoencoder-based JSCC scheme, which we call DeepJSCC-f , that exploits the channel output feedback, and provides considerable improvements in terms of the end-to-end reconstruction quality for fixed-length transmission, or in terms of the average delay for variable-length transmission. To the best of our knowledge, this is the first practical JSCC scheme that can fully exploit channel output feedback, demonstrating yet another setting in which modern machine learning techniques can enable the design of new and efficient communication methods that surpass the performance of traditional structured coding-based designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "Saurabh Singh"
+  ],
+  "year": 2020,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip40778.2020.9190935",
+  "arxiv": "2007.08739",
+  "openalex": "W3042579794",
+  "cited_by": 483,
+  "abstract": "In learning-based approaches to image compression, codecs are developed by optimizing a computational model to minimize a rate-distortion objective. Currently, the most effective learned image codecs take the form of an entropy-constrained autoencoder with an entropy model that uses both forward and backward adaptation. Forward adaptation makes use of side information and can be efficiently integrated into a deep neural network. In contrast, backward adaptation typically makes predictions based on the causal context of each symbol, which requires serial processing that prevents efficient GPU / TPU utilization. We introduce two enhancements, channel-conditioning and latent residual prediction, that lead to network architectures with better rate-distortion performance than existing context-adaptive models while minimizing serial processing. Empirically, we see an average rate savings of 6.7% on the Kodak image set and 11.4% on the Tecnick image set compared to a context-adaptive baseline model. At low bit rates, where the improvements are most effective, our model saves up to 18% over the baseline and outperforms hand-engineered codecs like BPG by up to 25%.",
+  "source": "openalex"
+ },
+ {
+  "title": "MusicLM: Generating Music From Text",
+  "authors": [
+   "Agostinelli, Andrea",
+   "Denk, Timo I.",
+   "Borsos, Zalán",
+   "Engel, Jesse",
+   "Verzetti, Mauro",
+   "Caillon, Antoine",
+   "Huang, Qingqing",
+   "Aren Jansen",
+   "Roberts, Adam",
+   "Marco Tagliasacchi",
+   "Matt Sharifi",
+   "Neil Zeghidour",
+   "Christian Frank"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2301.11325",
+  "arxiv": "2301.11325",
+  "openalex": "W4318351475",
+  "cited_by": 474,
+  "abstract": "We introduce MusicLM, a model generating high-fidelity music from text descriptions such as \"a calming violin melody backed by a distorted guitar riff\". MusicLM casts the process of conditional music generation as a hierarchical sequence-to-sequence modeling task, and it generates music at 24 kHz that remains consistent over several minutes. Our experiments show that MusicLM outperforms previous systems both in audio quality and adherence to the text description. Moreover, we demonstrate that MusicLM can be conditioned on both text and a melody in that it can transform whistled and hummed melodies according to the style described in a text caption. To support future research, we publicly release MusicCaps, a dataset composed of 5.5k music-text pairs, with rich text descriptions provided by human experts.",
+  "source": "openalex"
+ },
+ {
+  "title": "Real-Time Adaptive Image Compression",
+  "authors": [
+   "Oren Rippel",
+   "Lubomir D. Bourdev"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1705.05823",
+  "arxiv": "1705.05823",
+  "openalex": "W2616159609",
+  "cited_by": 473,
+  "abstract": "We present a machine learning-based approach to lossy image compression which outperforms all existing codecs, while running in real-time. Our algorithm typically produces files 2.5 times smaller than JPEG and JPEG 2000, 2 times smaller than WebP, and 1.7 times smaller than BPG on datasets of generic images across all quality levels. At the same time, our codec is designed to be lightweight and deployable: for example, it can encode or decode the Kodak dataset in around 10ms per image on GPU. Our architecture is an autoencoder featuring pyramidal analysis, an adaptive coding module, and regularization of the expected codelength. We also supplement our approach with adversarial training specialized towards use in a compression setting: this enables us to produce visually pleasing reconstructions for very low bitrates.",
+  "source": "openalex"
+ },
+ {
+  "title": "ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding",
+  "authors": [
+   "Dailan He",
+   "Ziming Yang",
+   "Weikun Peng",
+   "Rui Ma",
+   "Hongwei Qin",
+   "Yan Wang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.00563",
+  "arxiv": "2203.10886",
+  "openalex": "W4312806968",
+  "cited_by": 469,
+  "abstract": "Recently, learned image compression techniques have achieved remarkable performance, even surpassing the best manually designed lossy image coders. They are promising to be large-scale adopted. For the sake of practicality, a thorough investigation of the architecture design of learned image compression, regarding both compression performance and running speed, is essential. In this paper, we first propose uneven channel-conditional adaptive coding, motivated by the observation of energy compaction in learned image compression. Combining the proposed uneven grouping model with existing context models, we obtain a spatial-channel contextual adaptive model to improve the coding performance without damage to running speed. Then we study the structure of the main transform and propose an efficient model, ELIC, to achieve state-of-the-art speed and compression ability. With superior performance, the proposed model also supports extremely fast preview decoding and progressive decoding, which makes the coming application of learning-based image compression more promising.",
+  "source": "openalex"
+ },
+ {
+  "title": "Task-Oriented Multi-User Semantic Communications",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Xiaoming Tao",
+   "Khaled B. Letaief"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3191326",
+  "arxiv": "2112.10255",
+  "openalex": "W4226115138",
+  "cited_by": 467,
+  "abstract": "While semantic communications have shown the potential in the case of single-modal single-users, its applications to the multi-user scenario remain limited. In this paper, we investigate deep learning (DL) based multi-user semantic communication systems for transmitting single-modal data and multimodal data, respectively. We adopt three intelligent tasks, including, image retrieval, machine translation, and visual question answering (VQA) as the transmission goal of semantic communication systems. We propose a Transformer based framework to unify the structure of transmitters for different tasks. For the single-modal multi-user system, we propose two Transformer based models, named, DeepSC-IR and DeepSC-MT, to perform image retrieval and machine translation, respectively. In this case, DeepSC-IR is trained to optimize the distance in embedding space between images and DeepSC-MT is trained to minimize the semantic errors by recovering the semantic meaning of sentences. For the multimodal multi-user system, we develop a Transformer enabled model, named, DeepSC-VQA, for the VQA task by extracting text-image information at the transmitters and fusing it at the receiver. In particular, a novel layer-wise Transformer is designed to help fuse multimodal data by adding connection between each of the encoder and decoder layers. Numerical results show that the proposed models are superior to traditional communications in terms of the robustness to channels, computational complexity, transmission delay, and the task-execution performance at various task-specific metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "One-Shot Free-View Neural Talking-Head Synthesis for Video Conferencing",
+  "authors": [
+   "Ting-Chun Wang",
+   "Arun Mallya",
+   "Ming-Yu Liu"
+  ],
+  "year": 2021,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr46437.2021.00991",
+  "arxiv": "2011.15126",
+  "openalex": "W3180770160",
+  "cited_by": 466,
+  "abstract": "We propose a neural talking-head video synthesis model and demonstrate its application to video conferencing. Our model learns to synthesize a talking-head video using a source image containing the target person’s appearance and a driving video that dictates the motion in the output. Our motion is encoded based on a novel keypoint representation, where the identity-specific and motion-related information is decomposed unsupervisedly. Extensive experimental validation shows that our model outperforms competing methods on benchmark datasets. Moreover, our compact keypoint representation enables a video conferencing system that achieves the same visual quality as the commercial H.264 standard while only using one-tenth of the bandwidth. Besides, we show our keypoint representation allows the user to rotate the head during synthesis, which is useful for simulating face-to-face video conferencing experiences.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image and Video Compression With Neural Networks: A Review",
+  "authors": [
+   "Siwei Ma",
+   "Xinfeng Zhang",
+   "Chuanmin Jia",
+   "Zhenghui Zhao",
+   "Shiqi Wang",
+   "Shanshe Wang"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2019.2910119",
+  "arxiv": "1904.03567",
+  "openalex": "W2935381027",
+  "cited_by": 466,
+  "abstract": "In recent years, the image and video coding technologies have advanced by leaps and bounds. However, due to the popularization of image and video acquisition devices, the growth rate of image and video data is far beyond the improvement of the compression ratio. In particular, it has been widely recognized that there are increasing challenges of pursuing further coding performance improvement within the traditional hybrid coding framework. Deep convolution neural network which makes the neural network resurge in recent years and has achieved great success in both artificial intelligent and signal processing fields, also provides a novel and promising solution for image and video compression. In this paper, we provide a systematic, comprehensive and up-to-date review of neural network-based image and video compression techniques. The evolution and development of neural network-based compression methodologies are introduced for images and video respectively. More specifically, the cutting-edge video coding techniques by leveraging deep learning and HEVC framework are presented and discussed, which promote the state-of-the-art video coding performance substantially. Moreover, the end-to-end image and video coding frameworks based on neural networks are also reviewed, revealing interesting explorations on next generation image and video coding frameworks/standards. The most significant research works on the image and video coding related topics using neural networks are highlighted, and future trends are also envisioned. In particular, the joint compression on semantic and visual information is tentatively explored to formulate high efficiency signal representation structure for both human vision and machine vision, which are the two dominant signal receptors in the age of artificial intelligence.",
+  "source": "openalex"
+ },
+ {
+  "title": "High Fidelity Neural Audio Compression",
+  "authors": [
+   "Défossez, Alexandre",
+   "Jade Copet",
+   "Gabriel Synnaeve",
+   "Yossi Adi"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2210.13438",
+  "arxiv": "2210.13438",
+  "openalex": "W4307323391",
+  "cited_by": 443,
+  "abstract": "We introduce a state-of-the-art real-time, high-fidelity, audio codec leveraging neural networks. It consists in a streaming encoder-decoder architecture with quantized latent space trained in an end-to-end fashion. We simplify and speed-up the training by using a single multiscale spectrogram adversary that efficiently reduces artifacts and produce high-quality samples. We introduce a novel loss balancer mechanism to stabilize training: the weight of a loss now defines the fraction of the overall gradient it should represent, thus decoupling the choice of this hyper-parameter from the typical scale of the loss. Finally, we study how lightweight Transformer models can be used to further compress the obtained representation by up to 40%, while staying faster than real time. We provide a detailed description of the key design choices of the proposed model including: training objective, architectural changes and a study of various perceptual loss functions. We present an extensive subjective evaluation (MUSHRA tests) together with an ablation study for a range of bandwidths and audio domains, including speech, noisy-reverberant speech, and music. Our approach is superior to the baselines methods across all evaluated settings, considering both 24 kHz monophonic and 48 kHz stereophonic audio. Code and models are available at github.com/facebookresearch/encodec.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Massive Machine Type Communications in Ultra-Dense Cellular IoT Networks: Current Issues and Machine Learning-Assisted Solutions",
+  "authors": [
+   "Shree Krishna Sharma",
+   "Xianbin Wang"
+  ],
+  "year": 2019,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2019.2916177",
+  "arxiv": "1808.02924",
+  "openalex": "W2887019724",
+  "cited_by": 440,
+  "abstract": "The ever-increasing number of resource-constrained machine-type communication (MTC) devices is leading to the critical challenge of fulfilling diverse communication requirements in dynamic and ultra-dense wireless environments. Among different application scenarios that the upcoming 5G and beyond cellular networks are expected to support, such as enhanced mobile broadband (eMBB), massive machine type communications (mMTCs), and ultra-reliable and low latency communications (URLLCs), the mMTC brings the unique technical challenge of supporting a huge number of MTC devices in cellular networks, which is the main focus of this paper. The related challenges include quality of service (QoS) provisioning, handling highly dynamic and sporadic MTC traffic, huge signalling overhead, and radio access network (RAN) congestion. In this regard, this paper aims to identify and analyze the involved technical issues, to review recent advances, to highlight potential solutions and to propose new research directions. First, starting with an overview of mMTC features and QoS provisioning issues, we present the key enablers for mMTC in cellular networks. Along with the highlights on the inefficiency of the legacy random access (RA) procedure in the mMTC scenario, we then present the key features and channel access mechanisms in the emerging cellular IoT standards, namely, LTE-M and narrowband IoT (NB-IoT). Subsequently, we present a framework for the performance analysis of transmission scheduling with the QoS support along with the issues involved in short data packet transmission. Next, we provide a detailed overview of the existing and emerging solutions toward addressing RAN congestion problem, and then identify potential advantages, challenges, and use cases for the applications of emerging machine learning (ML) techniques in ultra-dense cellular networks. Out of several ML techniques, we focus on the application of low-complexity Q-learning approach in the mMTC scenario along with the recent advances toward enhancing its learning performance and convergence. Finally, we discuss some open research challenges and promising future research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Fully Convolutional Neural Network for Speech Enhancement",
+  "authors": [
+   "Se Rim Park",
+   "Jinwon Lee"
+  ],
+  "year": 2017,
+  "venue": "Interspeech (USB)",
+  "doi": "10.21437/interspeech.2017-1465",
+  "arxiv": "1609.07132",
+  "openalex": "W2526733715",
+  "cited_by": 431,
+  "abstract": "In hearing aids, the presence of babble noise degrades hearing intelligibility of human speech greatly. However, removing the babble without creating artifacts in human speech is a challenging task in a low SNR environment. Here, we sought to solve the problem by finding a `mapping' between noisy speech spectra and clean speech spectra via supervised learning. Specifically, we propose using fully Convolutional Neural Networks, which consist of lesser number of parameters than fully connected networks. The proposed network, Redundant Convolutional Encoder Decoder (R-CED), demonstrates that a convolutional network can be 12 times smaller than a recurrent network and yet achieves better performance, which shows its applicability for an embedded system: the hearing aids.",
+  "source": "openalex"
+ },
+ {
+  "title": "5G-Advanced Toward 6G: Past, Present, and Future",
+  "authors": [
+   "Wanshi Chen",
+   "Xingqin Lin",
+   "Juho Lee",
+   "Antti Toskala",
+   "Shu Dong Sun",
+   "Carla Fabiana Chiasserini",
+   "Lingjia Liu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3274037",
+  "arxiv": "2303.07456",
+  "openalex": "W4381331133",
+  "cited_by": 429,
+  "abstract": "Since the start of 5G work in 3GPP in early 2016, tremendous progress has been made in both standardization and commercial deployments. 3GPP is now entering the second phase of 5G standardization, known as5G-Advanced, built on the 5G baseline in 3GPP Releases 15, 16, and 17. 3GPP Release 18, the start of 5G-Advanced, includes a diverse set of features that cover both device and network evolutions, providing balanced mobile broadband evolution and further vertical domain expansion and accommodating both immediate and long-term commercial needs. 5G-Advanced will significantly expand 5G capabilities, address many new use cases, transform connectivity experiences, and serve as an essential step in developing mobile communications towards 6G. This paper provides a comprehensive overview of the 3GPP 5G-Advanced development, introducing the prominent state-of-the-art technologies investigated in 3GPP and identifying key evolution directions for future research and standardization.",
+  "source": "openalex"
+ },
+ {
+  "title": "Developments in International Video Coding Standardization After AVC, With an Overview of Versatile Video Coding (VVC)",
+  "authors": [
+   "Benjamin Bross",
+   "Jianle Chen",
+   "Jens-Rainer Ohm",
+   "Gary J. Sullivan",
+   "Ye-Kui Wang"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2020.3043399",
+  "arxiv": null,
+  "openalex": "W3135530072",
+  "cited_by": 417,
+  "abstract": "In the last 17 years, since the finalization of the first version of the now-dominant H.264/Moving Picture Experts Group-4 (MPEG-4) Advanced Video Coding (AVC) standard in 2003, two major new generations of video coding standards have been developed. These include the standards known as High Efficiency Video Coding (HEVC) and Versatile Video Coding (VVC). HEVC was finalized in 2013, repeating the ten-year cycle time set by its predecessor and providing about 50% bit-rate reduction over AVC. The cycle was shortened by three years for the VVC project, which was finalized in July 2020, yet again achieving about a 50% bit-rate reduction over its predecessor (HEVC). This article summarizes these developments in video coding standardization after AVC. It especially focuses on providing an overview of the first version of VVC, including comparisons against HEVC. Besides further advances in hybrid video compression, as in previous development cycles, the broad versatility of the application domain that is highlighted in the title of VVC is explained. Included in VVC is the support for a wide range of applications beyond the typical standard- and high-definition camera-captured content codings, including features to support computer-generated/screen content, high dynamic range content, multilayer and multiview coding, and support for immersive media such as 360° video.",
+  "source": "openalex"
+ },
+ {
+  "title": "Methods for image denoising using convolutional neural network: a review",
+  "authors": [
+   "Ademola Enitan Ilesanmi",
+   "Taiwo O. Ilesanmi"
+  ],
+  "year": 2021,
+  "venue": "Complex & Intelligent Systems",
+  "doi": "10.1007/s40747-021-00428-4",
+  "arxiv": null,
+  "openalex": "W3169893408",
+  "cited_by": 410,
+  "abstract": "Abstract Image denoising faces significant challenges, arising from the sources of noise. Specifically, Gaussian, impulse, salt, pepper, and speckle noise are complicated sources of noise in imaging. Convolutional neural network (CNN) has increasingly received attention in image denoising task. Several CNN methods for denoising images have been studied. These methods used different datasets for evaluation. In this paper, we offer an elaborate study on different CNN techniques used in image denoising. Different CNN methods for image denoising were categorized and analyzed. Popular datasets used for evaluating CNN image denoising methods were investigated. Several CNN image denoising papers were selected for review and analysis. Motivations and principles of CNN methods were outlined. Some state-of-the-arts CNN image denoising methods were depicted in graphical forms, while other methods were elaborately explained. We proposed a review of image denoising with CNN. Previous and recent papers on image denoising with CNN were selected. Potential challenges and directions for future research were equally fully explicated.",
+  "source": "openalex"
+ },
+ {
+  "title": "From Patches to Pictures (PaQ-2-PiQ): Mapping the Perceptual Space of Picture Quality",
+  "authors": [
+   "Zhenqiang Ying",
+   "Haoran Niu",
+   "Praful Gupta",
+   "Dhruv Kumar Mahajan",
+   "Deepti Ghadiyaram",
+   "Alan Conrad Bovik"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00363",
+  "arxiv": "1912.10088",
+  "openalex": "W3035712445",
+  "cited_by": 407,
+  "abstract": "Blind or no-reference (NR) perceptual picture quality prediction is a difficult, unsolved problem of great consequence to the social and streaming media industries that impacts billions of viewers daily. Unfortunately, popular NR prediction models perform poorly on real-world distorted pictures. To advance progress on this problem, we introduce the largest (by far) subjective picture quality database, containing about 40, 000 real-world distorted pictures and 120, 000 patches, on which we collected about 4M human judgments of picture quality. Using these picture and patch quality labels, we built deep region-based architectures that learn to produce state-of-the-art global picture quality predictions as well as useful local picture quality maps. Our innovations include picture quality prediction architectures that produce global-to-local inferences as well as local-to-global inferences (via feedback). The dataset and source code are available at https: //live.ece.utexas.edu/research.php.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning Convolutional Networks for Content-Weighted Image Compression",
+  "authors": [
+   "Mu Li",
+   "Wangmeng Zuo",
+   "Shuhang Gu",
+   "Debin Zhao",
+   "David D. Zhang"
+  ],
+  "year": 2018,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2018.00339",
+  "arxiv": "1703.10553",
+  "openalex": "W2604392022",
+  "cited_by": 407,
+  "abstract": "Lossy image compression is generally formulated as a joint rate-distortion optimization problem to learn encoder, quantizer, and decoder. Due to the non-differentiable quantizer and discrete entropy estimation, it is very challenging to develop a convolutional network (CNN)-based image compression system. In this paper, motivated by that the local information content is spatially variant in an image, we suggest that: (i) the bit rate of the different parts of the image is adapted to local content, and (ii) the content-aware bit rate is allocated under the guidance of a content-weighted importance map. The sum of the importance map can thus serve as a continuous alternative of discrete entropy estimation to control compression rate. The binarizer is adopted to quantize the output of encoder and a proxy function is introduced for approximating binary operation in backward propagation to make it differentiable. The encoder, decoder, binarizer and importance map can be jointly optimized in an end-to-end manner. And a convolutional entropy encoder is further presented for lossless compression of importance map and binary codes. In low bit rate image compression, experiments show that our system significantly outperforms JPEG and JPEG 2000 by structural similarity (SSIM) index, and can produce the much better visual result with sharp edges, rich textures, and fewer artifacts.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural 3D Video Synthesis from Multi-view Video",
+  "authors": [
+   "Tianye Li",
+   "Mira Slavcheva",
+   "Michael Zollhöfer",
+   "Simon Green",
+   "Christoph Lassner",
+   "Changil Kim",
+   "Tanner Schmidt",
+   "Steven J. Lovegrove",
+   "Michael Goesele",
+   "Richard Newcombe",
+   "Zhaoyang Lv"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.00544",
+  "arxiv": "2103.02597",
+  "openalex": "W4313165271",
+  "cited_by": 406,
+  "abstract": "We propose a novel approach for 3D video synthesis that is able to represent multi-view video recordings of a dynamic real-world scene in a compact, yet expressive representation that enables high-quality view synthesis and motion interpolation. Our approach takes the high quality and compactness of static neural radiance fields in a new direction: to a model-free, dynamic setting. At the core of our approach is a novel time-conditioned neural radiance field that represents scene dynamics using a set of compact latent codes. We are able to significantly boost the training speed and perceptual quality of the generated imagery by a novel hierarchical training scheme in combination with ray importance sampling. Our learned representation is highly compact and able to represent a 10 second 30 FPS multi-view video recording by 18 cameras with a model size of only 28MB. We demonstrate that our method can render high-fidelity wide-angle novel views at over 1K resolution, even for complex and dynamic scenes. We perform an extensive qualitative and quantitative evaluation that shows that our approach outperforms the state of the art. Project website: https://neural-3d-video.github.io/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications: Principles and Challenges",
+  "authors": [
+   "Zhijin Qin",
+   "Xiaoming Tao",
+   "Jianhua Lü",
+   "Tong, Wen",
+   "Li, Geoffrey Ye"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2201.01389",
+  "arxiv": "2201.01389",
+  "openalex": "W4226150551",
+  "cited_by": 403,
+  "abstract": "Semantic communication, regarded as the breakthrough beyond the Shannon paradigm, aims at the successful transmission of semantic information conveyed by the source rather than the accurate reception of each single symbol or bit regardless of its meaning. This article provides an overview on semantic communications. After a brief review of Shannon information theory, we discuss semantic communications with theory, framework, and system design enabled by deep learning. Different from the symbol/bit error rate used for measuring conventional communication systems, performance metrics for semantic communications are also discussed. The article concludes with several open questions in semantic communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Ultrareliable and Low-Latency Communications in 6G: Integrating Domain Knowledge Into Deep Learning",
+  "authors": [
+   "Changyang She",
+   "Chengjian Sun",
+   "Zhouyou Gu",
+   "Yonghui Li",
+   "Chenyang Yang",
+   "H. Vincent Poor",
+   "Branka S. Vucetic"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3053601",
+  "arxiv": "2009.06010",
+  "openalex": "W3135089279",
+  "cited_by": 401,
+  "abstract": "As one of the key communication scenarios in the fifth-generation and also the sixth-generation (6G) mobile communication networks, ultrareliable and low-latency communications (URLLCs) will be central for the development of various emerging mission-critical applications. State-of-the-art mobile communication systems do not fulfill the end-to-end delay and overall reliability requirements of URLLCs. In particular, a holistic framework that takes into account latency, reliability, availability, scalability, and decision-making under uncertainty is lacking. Driven by recent breakthroughs in deep neural networks, deep learning algorithms have been considered as promising ways of developing enabling technologies for URLLCs in future 6G networks. This tutorial illustrates how domain knowledge (models, analytical tools, and optimization frameworks) of communications and networking can be integrated into different kinds of deep learning algorithms for URLLCs. We first provide some background of URLLCs and review promising network architectures and deep learning frameworks for 6G. To better illustrate how to improve learning algorithms with domain knowledge, we revisit model-based analytical tools and cross-layer optimization frameworks for URLLCs. Following this, we examine the potential of applying supervised/unsupervised deep learning and deep reinforcement learning in URLLCs and summarize related open problems. Finally, we provide simulation and experimental results to validate the effectiveness of different learning algorithms and discuss future directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quality Assessment of In-the-Wild Videos",
+  "authors": [
+   "Dingquan Li",
+   "Tingting Jiang",
+   "Ming Jiang"
+  ],
+  "year": 2019,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3343031.3351028",
+  "arxiv": "1908.00375",
+  "openalex": "W2965644659",
+  "cited_by": 386,
+  "abstract": "Quality assessment of in-the-wild videos is a challenging problem because of the absence of reference videos and shooting distortions. Knowledge of the human visual system can help establish methods for objective quality assessment of in-the-wild videos. In this work, we show two eminent effects of the human visual system, namely, content-dependency and temporal-memory effects, could be used for this purpose. We propose an objective no-reference video quality assessment method by integrating both effects into a deep neural network. For content-dependency, we extract features from a pre-trained image classification neural network for its inherent content-aware property. For temporal-memory effects, long-term dependencies, especially the temporal hysteresis, are integrated into the network with a gated recurrent unit and a subjectively-inspired temporal pooling layer. To validate the performance of our method, experiments are conducted on three publicly available in-the-wild video quality assessment databases: KoNViD-1k, CVD2014, and LIVE-Qualcomm, respectively. Experimental results demonstrate that our proposed method outperforms five state-of-the-art methods by a large margin, specifically, 12.39%, 15.71%, 15.45%, and 18.09% overall performance improvements over the second-best method VBLIINDS, in terms of SROCC, KROCC, PLCC and RMSE, respectively. Moreover, the ablation study verifies the crucial role of both the content-aware features and the modeling of temporal-memory effects. The PyTorch implementation of our method is released at https://github.com/lidq92/VSFA.",
+  "source": "openalex"
+ },
+ {
+  "title": "CompressAI: a PyTorch library and evaluation platform for end-to-end compression research",
+  "authors": [
+   "Jean Bégaint",
+   "Fabien Racapé",
+   "Simon Feltman",
+   "Akshay Pushparaja"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2011.03029",
+  "arxiv": "2011.03029",
+  "openalex": "W3097448661",
+  "cited_by": 379,
+  "abstract": "This paper presents CompressAI, a platform that provides custom operations, layers, models and tools to research, develop and evaluate end-to-end image and video compression codecs. In particular, CompressAI includes pre-trained models and evaluation tools to compare learned methods with traditional codecs. Multiple models from the state-of-the-art on learned end-to-end compression have thus been reimplemented in PyTorch and trained from scratch. We also report objective comparison results using PSNR and MS-SSIM metrics vs. bit-rate, using the Kodak image dataset as test set. Although this framework currently implements models for still-picture compression, it is intended to be soon extended to the video compression domain.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Overview of Voice Conversion and Its Challenges: From Statistical Modeling to Deep Learning",
+  "authors": [
+   "Berrak Şişman",
+   "Junichi Yamagishi",
+   "Simon King",
+   "Haizhou Li"
+  ],
+  "year": 2020,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2020.3038524",
+  "arxiv": "2008.03648",
+  "openalex": "W3098557217",
+  "cited_by": 374,
+  "abstract": "Speaker identity is one of the important characteristics of human speech. In voice conversion, we change the speaker identity from one to another, while keeping the linguistic content unchanged. Voice conversion involves multiple speech processing techniques, such as speech analysis, spectral conversion, prosody conversion, speaker characterization, and vocoding. With the recent advances in theory and practice, we are now able to produce human-like voice quality with high speaker similarity. In this article, we provide a comprehensive overview of the state-of-the-art of voice conversion techniques and their performance evaluation methods from the statistical approaches to deep learning, and discuss their promise and limitations. We will also report the recent Voice Conversion Challenges (VCC), the performance of the current state of technology, and provide a summary of the available resources for voice conversion research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Improved Lossy Image Compression with Priming and Spatially Adaptive Bit Rates for Recurrent Networks",
+  "authors": [
+   "Nick Johnston",
+   "Damien Vincent",
+   "David C. Minnen",
+   "Michele Covell",
+   "Saurabh Singh",
+   "Troy T. Chinen",
+   "Sung Jin Hwang",
+   "Joel Shor",
+   "George D. Toderici"
+  ],
+  "year": 2018,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2018.00461",
+  "arxiv": "1703.10114",
+  "openalex": "W2597747080",
+  "cited_by": 373,
+  "abstract": "We propose a method for lossy image compression based on recurrent, convolutional neural networks that outperforms BPG (4:2:0), WebP, JPEG2000, and JPEG as measured by MS-SSIM. We introduce three improvements over previous research that lead to this state-of-the-art result using a single model. First, we modify the recurrent architecture to improve spatial diffusion, which allows the network to more effectively capture and propagate image information through the network's hidden state. Second, in addition to lossless entropy coding, we use a spatially adaptive bit allocation algorithm to more efficiently use the limited number of bits to encode visually complex image regions. Finally, we show that training with a pixel-wise loss weighted by SSIM increases reconstruction quality according to multiple metrics. We evaluate our method on the Kodak and Tecnick image sets and compare against standard codecs as well as recently published methods based on deep neural networks.",
+  "source": "openalex"
+ }
+]

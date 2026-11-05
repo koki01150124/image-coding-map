@@ -1,0 +1,710 @@
+[
+ {
+  "title": "CaliSplat: Sparse Gaussian Fitting and Calibrated Rate Allocation for Image Compression",
+  "authors": [
+   "Zhenbang Zhang",
+   "Zhengquan Luo",
+   "Kai Zhao",
+   "Zhiqiang Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04413",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "2D Gaussian representations provide an explicit and lightweight alternative for image representation, enabling fast deterministic decoding without a heavy neural synthesis network. However, existing per-image Gaussian codecs still require costly image-specific optimization to determine how limited Gaussian capacity should be distributed across heterogeneous regions. We introduce CaliSplat, an optimization-efficient Gaussian image codec that selectively explores candidate representations and globally allocates a constrained Gaussian budget. We exploit the closed-form reconstruction error of the single-Gaussian case as an inexpensive measure of local difficulty, fitting higher-capacity candidates only in regions where additional Gaussians are likely to be useful. To reduce selection errors caused by mismatched convergence rates across candidate sizes, a small set of longer-horizon fits is used to calibrate short-horizon distortion estimates before global budget-aware selection. The selected representation is then compressed into a bitstream. Across standard and large image datasets, CaliSplat achieves competitive or superior rate--distortion performance while reducing per-image fitting time by $3.0\\times$--$15.7\\times$ compared with representative Gaussian codecs. It further maintains high-throughput deterministic decoding at $175.9$--$478.2$~MP/s. These results demonstrate that content-adaptive Gaussian compression can substantially reduce per-image optimization cost while preserving strong reconstruction quality and efficient explicit decoding.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HEALPix-Based Implicit Neural Compression of Omnidirectional Images",
+  "authors": [
+   "Yulong Cheng",
+   "Youneng Bao",
+   "Junfeng Zhou",
+   "Mu Li",
+   "Jie Wen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.32561",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Real-time decoding of omnidirectional images is essential for immersive virtual reality (VR) experiences. Compared with conventional transform-based learned image compression (LIC), overfitted codecs offer lower decoding complexity by representing each image with a lightweight implicit neural representation (INR). However, existing approaches typically operate on the equirectangular projection (ERP), which introduces nonuniform spherical sampling and spatial distortion, leading to redundant sampling near the poles and latitude-dependent receptive fields. To address these limitations, we propose a spherical overfitted codec based on a multi-scale Hierarchical Equal Area isoLatitude Pixelization (HEALPix) representation, which enables equal-area sampling and efficient hierarchical modeling of spherical signals. Building on this representation, we develop a Spherical Inter-Scale Conditional entropy model that exploits spatial dependencies and cross-scale correlations among HEALPix latents to improve coding efficiency. We further introduce a Multi-Ring Spherical Convolution that aggregates neighboring pixels over a nearly uniform spherical receptive field across latitudes. Experiments on a public omnidirectional image dataset demonstrate BD-rate reductions of 16.3%, 26.5%, and 19.5% over VVC in terms of V-PSNR, V-MS-SSIM, and V-LPIPS, respectively. Our method also achieves a 13.1% BD-rate reduction over ERP-based Cool-Chic 5.0 in terms of V-PSNR, while providing 2.6-3.6x faster decoding than the evaluated learned autoencoder codecs.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PerQ: Inverse Generative Modeling for Neural Image Compression via Quantization Error Compensation",
+  "authors": [
+   "Tianhao Peng",
+   "Ho Man Kwan",
+   "Fan Zhang",
+   "Shan Liu",
+   "Dave Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27374",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Neural image codecs face a fundamental trade-off between pixel fidelity and perceptual quality. Distortion-optimized codecs preserve pixel-wise fidelity but produce blurred reconstructions at low bitrates, whereas generative codecs leverage learned priors to improve perceptual quality but tend to exhibit saturating PSNR at higher bitrates and require separate models for different bitrate targets. We propose PerQ, which reframes perceptual reconstruction as inverse generative modeling with bounded support. Specifically, we define the quantization cell as the set of latents that yield the same transmitted symbols and derive a transport bound showing that reconstructions from this cell remain within a rate-determined radius of the codec output. This motivates performing generative reconstruction within the codec-induced quantization cell, rather than sampling from an unconstrained image prior. PerQ implements this principle by attaching a rate-conditioned flow-matching compensator to a frozen, multi-rate distortion-optimized backbone, enabling perceptual enhancement while preserving the backbone's coding performance. Experiments on Kodak and CLIC2020 show that PerQ achieves perceptual performance comparable to generative codecs such as MS-ILLM in LPIPS and FID, while maintaining competitive PSNR relative to distortion-optimized codecs such as ELIC. A single model checkpoint supports a wide bitrate range with fast decoding, and the compensator provides consistent gains across three different backbones. The implementation is available at https://jasminepp.github.io/PerQ/.",
+  "source": "arxiv"
+ },
+ {
+  "title": "End-to-End Learned Image Coding: From Rate-Distortion Optimization to Practical Deployment",
+  "authors": [
+   "Ming Lu",
+   "Junqi Shi",
+   "Zhan Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.22421",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "End-to-end learned image coding (LIC) has achieved substantial improvements in rate--distortion (R--D) performance, yet practical deployment requires addressing a broader set of system-level constraints. This article provides a deployment-oriented review of LIC, with particular attention to the transition from high-performance neural compression models to practical codecs. We first summarize the basic end-to-end coding framework, including learned transforms, quantization, entropy modeling, and R--D optimization. We then review practical extensions that are increasingly important for deployment, including variable-rate coding and rate control, integer-precision inference and cross-platform consistency, robustness and communication resilience, lightweight and hardware-aware implementation, and standardization and interoperability. To study these issues under a common setting, we further introduce TinyLIC as an open benchmark and reproducible case study for rate--distortion--complexity analysis. Experimental results illustrate the trade-offs among compression efficiency, computational complexity, numerical consistency, and robustness. In particular, TinyLIC with approximately 10 KMACs/pixel decoding complexity substantially outperforms the H.265/HEVC image-profile anchor on Kodak, while the 50 KMACs/pixel configuration achieves performance comparable to the H.266/VVC image-profile anchor on several test sets. The review highlights practical constraints and design trade-offs that remain central to the deployment and interoperability of learned image codecs. Materials are accessible at https://njuvision.github.io/TinyLIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "VQ-LIC: Shared Vector-Quantized Learned Image Compression on a Resource-Constrained FPGA",
+  "authors": [
+   "Muhammad Fahd Ibrahim Bhatti",
+   "Abdullah Bin Faisal",
+   "Ahsan Usman",
+   "Naveed Anwar Bhatti",
+   "Muhammad Ali Siddiqi"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.29727",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned image compression (LIC) is hard to deploy on severely resource-constrained FPGAs, since how fast it actually runs depends not just on arithmetic count, but also on memory traffic, imbalance between different operations, and how the hardware batches its work. We present VQ-LIC, an asymmetric edge-cloud codec in which a compact INT8 depthwise (DW)-pointwise (PW) analysis transform and multi-codebook vector quantization (VQ) run at the edge on a reusable DW/PW engine pair, while reconstruction is handled by a larger cloud decoder. Since VQ codeword matching is expressible as a dot product, it is mapped directly onto the same PW engine, removing the need for a separate VQ compute array, to our knowledge a first for FPGA LIC. A novel latency model, derived from deterministic RTL cycle counts of an FPGA's read, DW, PW, and write costs, predicts an analysis transform's per-block latency; since VQ shares the same PW datapath, the model applies to VQ as well. Validated directly against silicon, the model predicts deployed analysis and VQ latency within 0.26\\% and 0.05\\%, and guides the selection of a three-block $16$-$48$-$64$ transform. Post-training codebook reduction then cuts VQ arithmetic and codebook storage by $4\\times$ and shrinks the fixed-width latent representation. On a 220-DSP Zynq-7020, VQ-LIC's mid-rate preset reaches 0.1398 bits per pixel at 28.69 dB PSNR and 13.06 dB MS-SSIM on CLIC~2017, outperforming a similarly sized neural encoder and reaching a rate-distortion range comparable to a codec three orders of magnitude larger. The complete 0.1945-kMAC/pixel analysis-VQ pipeline runs at 47.98 frames per second and 42.84 mJ per frame on silicon, using an order of magnitude fewer DSPs than comparable FPGA LIC accelerators while achieving lower bitrate, higher throughput, and lower energy per frame at a modest PSNR tradeoff.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Beyond UV Mapping: Mesh Texture Compression via Surface-Aligned Texture Fields",
+  "authors": [
+   "Jianqiang Wang",
+   "Junhui Hou",
+   "Siyu Ren",
+   "Weiyao Lin",
+   "Wenping Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.23606",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Mesh texture compression typically relies on 2D UV atlases, whose chart discontinuities and mapping overhead can limit coding efficiency. To tackle this challenge, we introduce TexF, a surface-aligned texture field that organizes texture attributes in sparse voxels derived from the mesh surface. This representation supports high-resolution textures while preserving local 3D correlations for compression and enabling direct surface queries. For bitstream compression, TexF reuses established 3D attribute codecs, with voxel locations reconstructed from the decoded mesh without separate transmission. For GPU-resident compression, we develop 3DNTC, which combines quantized hash features with a lightweight decoder for random-access reconstruction at surface positions. Differentiable rendering enables image-space refinement of both voxel attributes and compressed neural fields. Experiments on the MPEG and AOM mesh compression benchmarks demonstrate improved average rate-distortion performance over representative UV-based methods for both bitstream and GPU-resident compression. 3DNTC also supports real-time rendering.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PIC: Revisiting INR for Image Coding with Fast Encoding and Sub-Millisecond Decoding",
+  "authors": [
+   "Xiang Liu",
+   "Jinxiang Wang",
+   "Bin Chen",
+   "Zimo Liu",
+   "Mingyao Hong",
+   "Jiawei Li",
+   "Yaowei Wang",
+   "Shu-tao Xia"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.09020",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Implicit neural representation (INR) has achieved remarkable progress in novel view synthesis and image/video coding in recent years.Compared to conventional end-to-end image codecs, INR-based compressors demonstrate significant advantages in decoding complexity. However, their practical application has been hindered by the inferior encoding speed and underutilized decoding efficiency.In this work, we propose a feedforward INR image coding architecture, Practical INR Image Codec (PIC), that computes all the necessary information for INR network in a single forward pass, achieving an encoding speed of 20 FPS. Additionally, we implement a highly optimized decoder that reaches 2000 FPS decoding speed, significantly surpassing JPEG's performance at comparable rate-distortion (RD) performance. To the best of our knowledge, this work presents the first learning-based image codec that simultaneously outperforms or is comparable with JPEG in both RD performance and decoding speed while maintaining practical encoding speed. Code is available at https://github.com/actcwlf/PIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Multi-scale Image Representation Compression",
+  "authors": [
+   "Tianhao Peng",
+   "Ho Man Kwan",
+   "Fan Zhang",
+   "Shan Liu",
+   "David Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.04274",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Overfitted codecs have demonstrated promising performance for image and video compression. In particular, for image compression, the Cool-chic family of models has shown competitive performance against scene-agnostic models, with orders of magnitude lower decoding complexity at the cost of a longer overfitting process. However, these overfitted image codecs are not fully optimized toward the rate-distortion objective: their network weights remain in full precision during training, and the associated quantization parameters are selected in a separate post-training stage. Furthermore, their synthesis operates at a single scale, which overlooks cross-scale redundancy. In this paper, we propose MIRC, an overfitted image codec in which every coded component, including the latents, the synthesis network, and the entropy models, is quantized and entropy coded under a single rate-distortion objective, adopting the end-to-end compression pipeline of the neural video representation codec NVRC. We further introduce a multi-scale representation with cross-stage parameter sharing, which improves coding efficiency at a small transmitted overhead. On the CLIC2020 professional validation set, MIRC achieves a 10.5% BD-rate saving against VVC (VTM 22.0). Moreover, MIRC offers a family of configurations spanning 1.2 to 2.9 kMAC per pixel, so the decoding budget can be selected to match the deployment target.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compressing AI Traffic: Standardized Neural Network Coding of Visual-Token Representations in Split Vision-Language Inference",
+  "authors": [
+   "Reza Heidari",
+   "Hamed R. Tavakoli",
+   "Juho Kannala"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.01200",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "When the visual encoder and the language decoder of a vision-language model (VLM) run on different compute nodes, the intermediate visual-token embeddings become a communicated payload rather than an internal activation. We call such machine-consumed intermediate tensors AI traffic and ask how far they can be compressed with a standardized, training-free codec. We insert ISO/IEC 15938-17 Neural Network Coding (NNC) round trips on the complete visual interface of a Qwen3-VL-8B-Instruct video question answering pipeline, comprising the main visual-token representation and the DeepStack feature streams, while leaving weights, prompts, and generation untouched, and sweep the quantization parameter (QP) over a wide rate range. Closed-ended Video-MME accuracy remains close to the uncompressed reference up to a 98% reduction of the transmitted BF16 tensor and only then collapses; open-ended MLVU generation shows the same plateau-and-collapse profile under an LLM judge. This robustness is not due to near-lossless reconstruction: the decoded tensor is heavily discretized, carries substantial row-wise relative L2 error, and has a visibly steeper singular-value decay than its source. Downstream reasoning therefore depends on coarse structure and relative geometry rather than exact floating-point values, which argues for rate-task rather than rate-distortion optimization of AI traffic codecs.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Fast Test-Time Refinement for Robust Learned Image Compression",
+  "authors": [
+   "Jiaming Liang",
+   "Chi-Man Pun",
+   "Weisi Lin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.15113",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned image compression (LIC) has demonstrated remarkable rate-distortion (RD) performance in benign settings. However, the high representational capacity endowed by deep neural networks (DNNs) comes at the expense of increased adversarial vulnerability. This hinders their adoption as trusted standardized codecs. Recent work has sketched test-time refinement (TTR) as a defense in gray-box scenarios, despite its original purpose of improving benign RD performance. Unfortunately, extensive iterations of TTR incur prohibitive overhead, while the robustness mechanism lacks theoretical understanding. Moreover, TTR has not been evaluated in white-box settings or against attacks beyond $\\ell_2$-bounded rate and untargeted distortion objectives. To bridge these gaps, we present a systematic study. Our study reveals an Asymmetric Adversarial Trajectory (AAT) property in LIC systems: transitioning from adversarial to benign regions is significantly easier than the reverse process, where adversarial examples can often be roughly recovered within only 1-2 steps. We provide a two-dimensional Tube Model to explain this phenomenon. Based on AAT, we propose a Fast Test-Time Refinement (FTTR) framework for practical and robust LIC systems. We establish that the robustness arises from the contraction of adversarial regions induced by the Input-as-Label property of LIC systems, rather than from obfuscated gradients. Extensive evaluations with diverse strong adaptive attacks across multiple LIC systems demonstrate the promise of the proposed FTTR framework. The code is available at https://github.com/chinaliangjiaming/FTTR.git.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+  "authors": [
+   "Xueqin Niu",
+   "Mufan Liu",
+   "Yifan Wang",
+   "Le Yang",
+   "Jun Sun",
+   "Yiling Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.11845",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Bit Allocation Transfer for Perceptual Quality Enhancement of Traditional Video Codecs",
+  "authors": [
+   "Runyu Yang",
+   "Ivan V. Bajić"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.07799",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Traditional block-based video codecs, such as H.264/AVC, H.265/HEVC and H.266/VVC, rely on hand-crafted Rate-Distortion Optimization (RDO) processes that primarily minimize Mean Squared Error (MSE), which correlates poorly with human perceptual quality. While neural video compression methods can easily optimize perceptually aligned metrics like MS-SSIM, their high computational complexity limits practical deployment. This paper proposes a novel bit allocation transfer framework that bridges these two paradigms to enhance the perceptual quality of conventional video codecs. Specifically, we train a quantization step generation model using a perceptual loss within a neural video compression framework (DCVC-FM). The model takes the original frame and a motion-compensated prediction as input and outputs a quantization step map. We then derive a block-wise bit ratio from this map and convert it into a Quantization Parameter (QP) map for a traditional video codec. Experimental results on the HEVC B$\\sim$D dataset demonstrate that our method achieves 20.20\\%, 8.25\\%, and 8.37\\% bitrate savings in terms of MS-SSIM compared with the standard reference software JM-19.0, HM-16.20, and VTM-23.0, respectively, with additional gains when utilizing predicted frames. Our approach effectively transfers the implicit perceptual importance learned by neural video compression models to guide block-level bit allocation in traditional video codecs without modifying their core decoding syntax.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Streamable Neural Video Compression: A Mixed Precision Approach for Cross-Platform Deployment",
+  "authors": [
+   "Kasidis Arunruangsirilert",
+   "Heming Sun",
+   "Jiro Katto"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.00483",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Neural Video Codecs (NVCs) offer unprecedented rate-distortion performance, making them highly attractive for bandwidth-constrained environments like 5G cellular networks and emerging satellite direct-to-cell (D2C) links. However, deploying NVCs in real-world streaming applications is severely hindered by cross-platform floating-point non-determinism, which causes arithmetic entropy coders to desynchronize and crash across different GPU architectures. While recent integer-based quantization methods address this, they incur either massive degradation in compression efficiency (INT8) or severe computational bottlenecks by bypassing hardware acceleration (INT16). In this paper, we propose a streamable, client-server NVC architecture featuring a novel Mixed Precision (FP16/FP32) strategy. By strategically executing P-frames in hardware-accelerated FP16 for real-time throughput, while forcing I-frames and periodic feature-adapter resets to IEEE-754 compliant FP32, we guarantee deterministic synchronization at critical boundaries. Through extensive cross-encode/decode evaluations across 12 GPUs spanning four architectural generations, we demonstrate that our approach successfully eliminates intra-generation fragmentation and substantially broadens cross-die interoperability, achieving seamless cross-generation decodability for recent architectures at 1080p. Crucially, this is achieved with a negligible impact on compression efficiency. Furthermore, we evaluate the system's end-to-end latency across diverse real-world networks, including Wi-Fi 6, 5G NR (FDD/TDD), and Starlink D2C, proving the practical viability of streamable learned video compression while highlighting unique challenges in Non-Terrestrial Networks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compact Representation of Mipmapped SVBRDFs via Shared Gaussians",
+  "authors": [
+   "Fengdi Zhang",
+   "Haocheng Ren",
+   "Qing Luo",
+   "Yaqing Li",
+   "Jibing Lou",
+   "Hongwei Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.27943",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Spatially-varying BRDFs (SVBRDFs) are central to material representation in computer graphics, but their high-resolution, multi-channel, mipmapped textures impose a substantial storage burden. Existing compression methods face a fundamental trade-off: block-based compression provides random access and hardware-friendly decoding but exploits redundancy only within local blocks; image codecs offer strong rate-distortion performance but are not designed for direct real-time texture access; and neural texture compression achieves high compression ratios but requires neural inference during decoding, which introduces additional runtime overhead, especially on mobile platforms. We present Gaussian Texture Compression (GTC), a compact 2D Gaussian-based representation for mipmapped SVBRDF texture stacks that delivers high-quality compression with flexible rate-distortion trade-offs. Our method is based on a key observation that there are two dominant sources of redundancy in such data: across mip levels and across material maps. Both share a common underlying structure: the same spatial support is reused, with only level- or map-specific information attached. This property naturally suits 2D Gaussians, since each Gaussian explicitly separates its spatial footprint from the values it carries, allowing the footprint to be shared while the values vary per level and per map. Building on this property, GTC shares Gaussians along both redundancy dimensions and is trained via a progressive optimization pipeline. Experiments show that GTC achieves higher reconstruction quality and lower memory usage than ASTC, the industry-standard GPU texture compression format, while supporting random-access, non-neural decoding suitable for real-time rendering.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Enhanced Neural Video Representation Compression Across Extreme Complexity and Quality Scales",
+  "authors": [
+   "Ho Man Kwan",
+   "Tianhao Peng",
+   "Fan Zhang",
+   "Mike Nilsson",
+   "Andrew Gower",
+   "David Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.28163",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Implicit neural representations (INRs) have recently emerged as a promising approach to video compression, delivering competitive rate-distortion performance alongside rapid decoding. However, existing neural video codecs struggle to balance complexity and scalability. Lightweight models often suffer from degraded compression performance when scaled to different bitrate/quality levels, whereas high-performance models exhibit limited scalability, as their model complexity typically increases with quality. This lack of a unified architecture capable of maintaining consistent complexity across a wide range of bitrates severely limits their diverse real-world deployment. To address these challenges, we introduce NVRC++, a novel INR-based video codec that utilizes a lightweight INR with multiple high-resolution feature grids, providing high scalability at any given complexity level. This is paired with an optimization framework that enables efficient overfitting on high-resolution grids for long video sequences, thereby exploiting spatio-temporal redundancies without prohibitive computational or memory overhead. Additionally, an advanced entropy model is designed for efficiently compressing the high-dimensional grid parameters. As a result, NVRC++ provides four complexity levels (from 7kMACs/pixel to 360kMACs/pixel), each spanning wide bitrate and quality ranges while supporting real-time decoding. The experimental results show that NVRC++ offers a much faster decoding speed (up to 8.5x) compared to the SOTA INR-based video codec, NVRC, while delivering comparable performance.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PaaF: Raising the perceived quality of INR-Based Image Compression",
+  "authors": [
+   "Lorenzo Catania",
+   "Dario Allegra"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.21655",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Implicit Neural Representations (INRs) have recently emerged as a promising paradigm for image compression, offering a fundamentally different approach from traditional and learned codecs. Nevertheless, INR-based methods for image compression suffer from long encoding times and a consistent performance gap in classic quality metrics such as PSNR. In this work, we explore the potential of purely INR-based compression methods and we propose PaaF (Picture as a Function), a novel INR-based image codec that introduces improved architectural design, adaptive quantization, and an efficient entropy coding scheme. These components are designed to enhance rate-distortion performance while preserving the simplicity and parallelizability of INR-based decoding. Experimental results demonstrate consistent improvements over existing INR-based methods in both quantitative metrics and perceptual quality. These findings highlight the potential of INR-based approaches and contribute to narrowing the gap between functional representations and more established compression paradigms.",
+  "source": "arxiv"
+ },
+ {
+  "title": "High-Fidelity Video Compression based on Invertible Neural Transform and Implicit Conditioning",
+  "authors": [
+   "Siyue Teng",
+   "Ho Man Kwan",
+   "Yuxuan Jiang",
+   "Fan Zhang",
+   "David Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.13957",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learning-based video compression has recently achieved competitive rate-distortion performance compared to conventional video codecs. However, most existing methods rely on non-invertible analysis-synthesis transforms, with reconstruction quality subject to both quantization and transform approximation errors. This limitation becomes particularly restrictive at higher quality points, where quantization errors are small and transform-induced distortion dominates. To address this, we propose InnVC, an Invertible neural network based Video Codec for wide-range and high-fidelity compression. The core idea is to preserve an invertible main transform path prior to quantization, while injecting content-adaptive context through a compact implicit conditioning field. This decouples strongly correlated video content from harder-to-model fine details, allowing different components to specialize in complementary reconstruction tasks for more efficient compression. To further improve compressibility, we introduce a scheduled masking strategy that progressively concentrates informative content into fewer latent channels for more effective entropy coding. Experiments on the UVG and MCL-JCV benchmarks show that InnVC achieves strong compression performance over a broad quality range, being particularly effective in the high-quality regime, yielding BD-rate reductions of 21.66% in PSNR and 46.06% in MS-SSIM relative to x265 on UVG. To the best of our knowledge, InnVC is the first neural video codec covers operating poins from low bitrate to high fidelity within a single architecture scale, spanning more than 20 dB in PSNR.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Dual-Constrained Diffusion Image Compression for Operational Rate-Distortion-Perception Optimization",
+  "authors": [
+   "Sanxin Jiang",
+   "Jiro Katto",
+   "Heming Sun"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.13366",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The rate-distortion-perception (RDP) trade-off extends classical rate--distortion theory by imposing a distributional constraint on reconstructions, providing a unified framework for neural image compression that jointly governs fidelity and perceptual realism. While prior work achieves near-optimal rate--perception trade-offs, practical frameworks explicitly realizing the full RDP surface remain scarce, primarily due to the difficulty of introducing common randomness at the decoder. We propose DCIC (Dual-Constrained Diffusion Image Compression), which integrates a learned codec with a diffusion-based decoder governed by joint distortion and idempotence constraints. The distortion constraint bounds reconstruction fidelity relative to the base codec output; the idempotence constraint -- requiring that re-encoding the restored image recovers the base codec reconstruction -- serves as a tractable surrogate for the distributional perception requirement. Together, they steer the reverse denoising process via iterative optimization with consistent noise injection, realizing common randomness without additional rate overhead. At fixed rate, dual attenuation factors $(K_D, K_P)$ jointly navigate the Pareto frontier of the distortion-perception plane, enabling continuously adjustable fidelity-realism trade-offs from a single bitstream. DCIC$_{RD}$ ($K_P{=}0$) and DCIC$_{RP}$ ($K_D{=}0$) arise as boundary curves, with DCIC$_{RDP}$ ($K_D = K_P=1$) realizing the optimal interior operating point. Experiments on CelebA-HQ, CLIC2020, and ImageNet-1K across CNN, Transformer, and hybrid architectures confirm that DCIC$_{RDP}$ achieves superior BD-PSNR over all perceptual codecs, while DCIC$_{RP}$ matches dedicated perception-oriented methods in BD-FID, validating the practical value of full RDP surface navigation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "JOMP: Jointly-Optimized Mixed-Precision Quantization Across Neural Video Coding Frameworks and Buffering Strategies",
+  "authors": [
+   "Yu-Hsiang Lin",
+   "Ruhan Conceição",
+   "Chun-Hung Wu",
+   "Huu-Tai Phung",
+   "Tzu-Hsiang Chou",
+   "Marcelo Porto",
+   "Luciano Volcan Agostini",
+   "Wen-Hsiao Peng"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.13110",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Variational autoencoder-based neural video coding has demonstrated impressive rate-distortion performance. However, its adoption in real-world applications remains hindered by challenges, such as prohibitively high computational complexity and limited cross-platform interoperability. These issues are often overlooked, as most neural video codecs rely on floating-point arithmetic to fully explore their rate-distortion potential. Practical deployment, however, requires integer-based implementations. Converting floating-point implementations into integer-based networks is non-trivial, since it involves quantizing inter-dependent coding components, whose sensitivity to precision may vary across codec designs. This paper introduces a Jointly-Optimized Mixed-Precision (JOMP) framework, in which both quantization parameters and bit widths are treated as learnable variables during training. This enables different codec modules to operate at varying precision levels, thereby jointly optimizing the rate-distortion-complexity trade-off. To the best of our knowledge, JOMP is the first mixed-precision quantization framework for neural video codecs. Its effectiveness is validated through a systematic investigation of quantization across different coding frameworks and temporal buffering strategies. Our study marks the first attempt to a unified understanding of the combined effects of modern coding frameworks and temporal buffering strategies, with the aim of informing future development of neural video codecs from a practicality perspective. In addition, we develop a complete integerization pipeline to achieve deterministic decoding. Overall, when applied to our best-performing model, JOMP enables end-to-end mixed-precision learning for integer neural video codecs, achieving rate-distortion performance comparable to that of the state-of-the-art DCVC-FM while reducing bit operations by 87.6%.",
+  "source": "arxiv"
+ },
+ {
+  "title": "KD-NVC: A Search-and-Distill Framework to Accelerate Neural Video Coding",
+  "authors": [
+   "Yuxiao Sun",
+   "Meiqin Liu",
+   "Chao Yao",
+   "Hui Xiang",
+   "Jingran Wu",
+   "Xianguo Zhang",
+   "Jian Jin",
+   "Weisi Lin",
+   "Yao Zhao"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.04595",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "While neural video coding (NVC) has achieved remarkable rate-distortion performance, real-time decoding on edge devices has become an important demand but remains limited by high complexity. Knowledge distillation (KD) is widely used for model acceleration, yet its application to NVC faces critical challenges. Specifically, the heterogeneity of NVC sub-modules renders uniform architectural reduction suboptimal, necessitating a per-module design for better rate-distortion-speed trade-off. However, searching for diverse architectures via existing neural architecture search (NAS) algorithms is unaffordable due to the expensive training cost of neural video codecs. Moreover, after the lightweight architecture is determined, existing distillation methods overlook the feature-energy sparsity induced by the rate-constraint, which is essential for maintaining compression performance. To address these issues, we propose a two-stage distillation framework KD-NVC. In the first stage, we introduce an acceleration-efficiency-based neural architecture search (AE-NAS) algorithm. It explores the module-wise Pareto frontier to adaptively allocate the acceleration budget across heterogeneous modules. Also, it introduces the acceleration-efficiency metric to determine the final student architecture without practically training all architecture-level candidates. In the second stage, we design an energy-aware feature distillation (EFD) loss that aligns the spatially-aggregated feature-energy signatures between the teacher and student codecs, transferring the rate-induced sparsity patterns for better compression efficiency. Experimental results demonstrate that the proposed framework consistently outperforms existing codec-oriented distillation methods, and achieves 69 FPS decoding at 1080p on RTX 5060 while maintaining comparable RD performance to VTM-LDB.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Spatial Competition for Low-Complexity Learned Image Compression",
+  "authors": [
+   "Théophile Blard",
+   "Pierrick Philippe",
+   "Théo Ladune",
+   "Xiaoran Jiang",
+   "Olivier Déforges"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.13243",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Autoencoder-based image codecs achieve state-of-the-art compression performance but often incur high computational complexity, particularly at decoding time. This work introduces a low-complexity learned image compression framework based on spatial competition between multiple specialized neural codecs. For each image region, the encoder selects the codec that best matches the local content according to a rate-distortion cost. A mode map is transmitted as side information to indicate the per-region codec selection. At decoding time, this mode map-based selection guides reconstruction while preserving the complexity of a single codec. This design enables per-image adaptation with low decoding complexity and fast encoding. On the CLIC 2020 dataset, our method achieves up to -14.5% rate reduction compared to a single codec and reaches HEVC-level performance with a decoding complexity of 1433 MACs per pixel.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Kelvin v1.0: A Neural Pre-Encoder for H.264: A standards-compliant learned preprocessor with -27.62% BD-VMAF on UVG",
+  "authors": [
+   "Marco Graziano"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.16376",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Kelvin is a lightweight learned pre-encoder that sits in front of an unmodified libx264 encoder. It applies content-adaptive pixel adjustments, bounded at +/-1/255 per channel, so that the encoder allocates bits where they matter most perceptually, while emitting a standard H.264 bitstream compatible with every existing decoder, player, and CDN. On the seven-sequence 1080p UVG benchmark, Kelvin v1.0 achieves a mean BD-VMAF of -27.62% (7 of 7 wins) and BD-VMAF-NEG of -5.18% (6 of 7 wins) relative to baseline libx264 at preset medium. On the 30-sequence MCL-JCV public set (28 unseen by training), the same checkpoint wins on 28 of 30 clips by BD-VMAF; with the two diagnosable failures removed the mean is -27.70% BD-VMAF and -5.37% BD-VMAF-NEG, consistent with UVG to within one percentage point. A central engineering challenge is the non-differentiability of H.264: we describe a hybrid codec proxy that combines a calibrated differentiable rate estimator (Spearman rho = 0.986 vs. real libx264 bits-per-pixel) with a U-Net distortion proxy trained on real encoder outputs. We publish full per-sequence rate-distortion data, a named failure-mode taxonomy on MCL-JCV (rate-floor violation, distribution shift, metric saturation), a five-baseline sanity panel (hqdn3d, unsharp, -tune psnr, -tune ssim, x265 medium), and honest positioning: x265 medium beats Kelvin on every metric on the same corpus. Kelvin is therefore designed for workloads where remaining on H.264 is a constraint rather than a choice.",
+  "source": "arxiv"
+ },
+ {
+  "title": "LiVeAction: a Lightweight, Versatile, and Asymmetric Neural Codec Design for Real-time Operation",
+  "authors": [
+   "Dan Jacobellis",
+   "Neeraja J. Yadwadkar"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.06628",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Modern sensors generate rich, high-fidelity data, yet applications operating on wearable or remote sensing devices remain constrained by bandwidth and power budgets. Standardized codecs such as JPEG and MPEG achieve efficient trade-offs between bitrate and perceptual quality but are designed for human perception, limiting their applicability to machine-perception tasks and non-traditional modalities such as spatial audio arrays, hyperspectral images, and 3D medical images. General-purpose compression schemes based on scalar quantization or resolution reduction are broadly applicable but fail to exploit inherent signal redundancies, resulting in suboptimal rate-distortion performance. Recent generative neural codecs, or tokenizers, model complex signal dependencies but are often over-parameterized, data-hungry, and modality-specific, making them impractical for resource-constrained environments. We introduce a Lightweight, Versatile, and Asymmetric neural codec architecture (LiVeAction), that addresses these limitations through two key ideas. (1) To reduce the complexity of the encoder to meet the resource constraints of the execution environments, we impose an FFT-like structure and reduce the overall size and depth of the neural-network-based analysis transform. (2) To allow arbitrary signal modalities and simplify training, we replace adversarial and perceptual losses with a variance-based rate penalty. Our design produces codecs that deliver superior rate-distortion performance compared to state-of-the-art generative tokenizers, while remaining practical for deployment on low-power sensors. We release our code, experiments, and python library at https://github.com/UT-SysML/liveaction .",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Mamba-based Perceptual Loss Function for Learning-based UGC Transcoding",
+  "authors": [
+   "Zihao Qi",
+   "Chen Feng",
+   "Fan Zhang",
+   "Xiaozhong Xu",
+   "Shan Liu",
+   "David Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2603.25566",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In user-generated content (UGC) transcoding, source videos typically suffer various degradations due to prior compression, editing, or suboptimal capture conditions. Consequently, existing video compression paradigms that solely optimize for fidelity relative to the reference become suboptimal, as they force the codec to replicate the inherent artifacts of the non-pristine source. To address this, we propose a novel perceptually inspired loss function for learning-based UGC video transcoding that redefines the role of the reference video, shifting it from a ground-truth pixel anchor to an informative contextual guide. Specifically, we train a lightweight neural quality model based on a Selective Structured State-Space Model (Mamba) optimized using a weakly-supervised Siamese ranking strategy. The proposed model is then integrated into the rate-distortion optimization (RDO) process of two neural video codecs (DCVC and HiNeRV) as a loss function, aiming to generate reconstructed content with improved perceptual quality. Our experiments demonstrate that this framework achieves substantial coding gains over both autoencoder and implicit neural representation-based baselines, with 8.46% and 12.89% BD-rate savings, respectively.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Rate-Distortion Optimization for Ensembles of Non-Reference Metrics",
+  "authors": [
+   "Xin Xiong",
+   "Samuel Fernández-Menduiña",
+   "Eduardo Pavez",
+   "Antonio Ortega",
+   "Neil Birkbeck",
+   "Balu Adsumilli"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2602.15779",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Non-reference metrics (NRMs) can assess the visual quality of images and videos without a reference, making them well-suited for the evaluation of user-generated content. Nonetheless, rate-distortion optimization (RDO) in video coding is still mainly driven by full-reference metrics, such as the sum of squared errors, which treat the input as an ideal target. A way to incorporate NRMs into RDO is through linearization (LNRM), where the gradient of the NRM with respect to the input guides bit allocation. While this strategy improves the quality predicted by some metrics, we show that it can yield limited gains or degradations when evaluated with other NRMs. We argue that NRMs are highly non-linear predictors with locally unstable gradients that can compromise the quality of the linearization; furthermore, optimizing a single metric may exploit model-specific biases that do not generalize across quality estimators. Motivated by this observation, we extend the LNRM framework to optimize ensembles of NRMs and, to further improve robustness, we introduce a smoothing-based formulation that stabilizes NRM gradients prior to linearization. Our framework is well-suited to hybrid codecs, and we advocate for its use with overfitted codecs, where it avoids iterative evaluations and backpropagation of neural network-based NRMs, reducing encoder complexity relative to direct NRM optimization. We validate the proposed approach on AVC and Cool-chic, using the YouTube UGC dataset. Experiments demonstrate consistent bitrate savings across multiple NRMs with no decoder complexity overhead and, for Cool-chic, a substantial reduction in encoding runtime compared to direct NRM optimization.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Dual-Representation Image Compression at Ultra-Low Bitrates via Explicit Semantics and Implicit Textures",
+  "authors": [
+   "Chuqin Zhou",
+   "Xiaoyue Ling",
+   "Yunuo Chen",
+   "Jincheng Dai",
+   "Guo Lu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2602.05213",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "While recent neural codecs achieve strong performance at low bitrates when optimized for perceptual quality, their effectiveness deteriorates significantly under ultra-low bitrate conditions. To mitigate this, generative compression methods leveraging semantic priors from pretrained models have emerged as a promising paradigm. However, existing approaches are fundamentally constrained by a tradeoff between semantic faithfulness and perceptual realism. Methods based on explicit representations preserve content structure but often lack fine-grained textures, whereas implicit methods can synthesize visually plausible details at the cost of semantic drift. In this work, we propose a unified framework that bridges this gap by coherently integrating explicit and implicit representations in a training-free manner. Specifically, We condition a diffusion model on explicit high-level semantics while employing reverse-channel coding to implicitly convey fine-grained details. Moreover, we introduce a plug-in encoder that enables flexible control of the distortion-perception tradeoff by modulating the implicit information. Extensive experiments demonstrate that the proposed framework achieves state-of-the-art rate-perception performance, outperforming existing methods and surpassing DiffC by 29.92%, 19.33%, and 20.89% in DISTS BD-Rate on the Kodak, DIV2K, and CLIC2020 datasets, respectively.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SCALED : Surrogate-gradient for Codec-Aware Learning of Downsampling in ABR Streaming",
+  "authors": [
+   "Esteban Pesnel",
+   "Julien Le Tanou",
+   "Michael Ropert",
+   "Thomas Maugey",
+   "Aline Roumy"
+  ],
+  "year": 2026,
+  "venue": "PCS 2025 - Picture Coding Symposium, IEEE Signal Processing Society, Dec 2025, Aachen (Aix la Chapelle), Germany",
+  "doi": null,
+  "arxiv": "2602.00198",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The rapid growth in video consumption has introduced significant challenges to modern streaming architectures. Over-the-Top (OTT) video delivery now predominantly relies on Adaptive Bitrate (ABR) streaming, which dynamically adjusts bitrate and resolution based on client-side constraints such as display capabilities and network bandwidth. This pipeline typically involves downsampling the original high-resolution content, encoding and transmitting it, followed by decoding and upsampling on the client side. Traditionally, these processing stages have been optimized in isolation, leading to suboptimal end-to-end rate-distortion (R-D) performance. The advent of deep learning has spurred interest in jointly optimizing the ABR pipeline using learned resampling methods. However, training such systems end-to-end remains challenging due to the non-differentiable nature of standard video codecs, which obstructs gradient-based optimization. Recent works have addressed this issue using differentiable proxy models, based either on deep neural networks or hybrid coding schemes with differentiable components such as soft quantization, to approximate the codec behavior. While differentiable proxy codecs have enabled progress in compression-aware learning, they remain approximations that may not fully capture the behavior of standard, non-differentiable codecs. To our knowledge, there is no prior evidence demonstrating the inefficiencies of using standard codecs during training. In this work, we introduce a novel framework that enables end-to-end training with real, non-differentiable codecs by leveraging data-driven surrogate gradients derived from actual compression errors. It facilitates the alignment between training objectives and deployment performance. Experimental results show a 5.19\\% improvement in BD-BR (PSNR) compared to codec-agnostic training approaches, consistently across the entire rate-distortion convex hull spanning multiple downsampling ratios.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Wrapper-Aware Rate-Distortion Optimization in Feature Coding for Machines",
+  "authors": [
+   "Samuel Fernández-Menduiña",
+   "Hyomin Choi",
+   "Fabien Racapé",
+   "Eduardo Pavez",
+   "Antonio Ortega"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2601.22070",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Feature coding for machines (FCM) is a lossy compression paradigm for split-inference. The transmitter encodes the outputs of the first part of a neural network before sending them to the receiver for completing the inference. Practical FCM methods ``sandwich'' a traditional codec between pre- and post-processing neural networks, called wrappers, to make features easier to compress using video codecs. Since traditional codecs are non-differentiable, the wrappers are trained using a proxy codec, which is later replaced by a standard codec after training. These codecs perform rate-distortion optimization (RDO) based on the sum of squared errors (SSE). Because the RDO does not consider the post-processing wrapper, the inner codec can invest bits in preserving information that the post-processing later discards. In this paper, we modify the bit-allocation in the inner codec via a wrapper-aware weighted SSE metric. To make wrapper-aware RDO (WA-RDO) practical for FCM, we propose: 1) temporal reuse of weights across a group of pictures and 2) fixed, architecture- and task-dependent weights trained offline. Under MPEG test conditions, our methods implemented on HEVC match the VVC-based FCM state-of-the-art, effectively bridging a codec generation gap with minimal runtime overhead relative to SSE-RDO HEVC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Theoretical Framework for Rate-Distortion Limits in Learned Image Compression",
+  "authors": [
+   "Changshuo Wang",
+   "Zijian Liang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2601.09254",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We present a novel systematic theoretical framework to analyze the rate-distortion (R-D) limits of learned image compression. While recent neural codecs have achieved remarkable empirical results, their distance from the information-theoretic limit remains unclear. Our work addresses this gap by decomposing the R-D performance loss into three key components: variance estimation, quantization strategy, and context modeling. First, we derive the optimal latent variance as the second moment under a Gaussian assumption, providing a principled alternative to hyperprior-based estimation. Second, we quantify the gap between uniform quantization and the Gaussian test channel derived from the reverse water-filling theorem. Third, we extend our framework to include context modeling, and demonstrate that accurate mean prediction yields substantial entropy reduction. Unlike prior R-D estimators, our method provides a structurally interpretable perspective that aligns with real compression modules and enables fine-grained analysis. Through joint simulation and end-to-end training, we derive a tight and actionable approximation of the theoretical R-D limits, offering new insights into the design of more efficient learned compression systems.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Neural Compression of 360-Degree Equirectangular Videos using Quality Parameter Adaptation",
+  "authors": [
+   "Daichi Arai",
+   "Yuichi Kondo",
+   "Kyohei Unno",
+   "Yasuko Sugito",
+   "Yuichi Kusakabe"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2512.20093",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This study proposes a practical approach for compressing 360-degree equirectangular videos using pretrained neural video compression (NVC) models. Without requiring additional training or changes in the model architectures, the proposed method extends quantization parameter adaptation techniques from traditional video codecs to NVC, utilizing the spatially varying sampling density in equirectangular projections. We introduce latitude-based adaptive quality parameters through rate-distortion optimization for NVC. The proposed method utilizes vector bank interpolation for latent modulation, enabling flexible adaptation with arbitrary quality parameters and mitigating the limitations caused by rounding errors in the adaptive quantization parameters. Experimental results demonstrate that applying this method to the DCVC-RT framework yields BD-Rate savings of 5.2% in terms of the weighted spherical peak signal-to-noise ratio for JVET class S1 test sequences, with only a 0.3% increase in processing time.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Neural B-Frame Coding: Tackling Domain Shift Issues with Lightweight Online Motion Resolution Adaptation",
+  "authors": [
+   "Sang NguyenQuang",
+   "Xiem HoangVan",
+   "Wen-Hsiao Peng"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2511.18724",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned B-frame codecs with hierarchical temporal prediction often encounter the domain-shift issue due to mismatches between the Group-of-Pictures (GOP) sizes for training and testing, leading to inaccurate motion estimates, particularly for large motion. A common solution is to turn large motion into small motion by downsampling video frames during motion estimation. However, determining the optimal downsampling factor typically requires costly rate-distortion optimization. This work introduces lightweight classifiers to predict downsampling factors. These classifiers leverage simple state signals from current and reference frames to balance rate-distortion performance with computational cost. Three variants are proposed: (1) a binary classifier (Bi-Class) trained with Focal Loss to choose between high and low resolutions, (2) a multi-class classifier (Mu-Class) trained with novel soft labels based on rate-distortion costs, and (3) a co-class approach (Co-Class) that combines the predictive capability of the multi-class classifier with the selective search of the binary classifier. All classifier methods can work seamlessly with existing B-frame codecs without requiring codec retraining. Experimental results show that they achieve coding performance comparable to exhaustive search methods while significantly reducing computational complexity. The code is available at: https://github.com/NYCU-MAPL/Fast-OMRA.git.",
+  "source": "arxiv"
+ },
+ {
+  "title": "From Noise to Latent: Generating Gaussian Latents for INR-Based Image Compression",
+  "authors": [
+   "Chaoyi Lin",
+   "Yaojun Wu",
+   "Yue Li",
+   "Junru Li",
+   "Kai Zhang",
+   "Li Zhang"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2511.08009",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent implicit neural representation (INR)-based image compression methods have shown competitive performance by overfitting image-specific latent codes. However, they remain inferior to end-to-end (E2E) compression approaches due to the absence of expressive latent representations. On the other hand, E2E methods rely on transmitting latent codes and requiring complex entropy models, leading to increased decoding complexity. Inspired by the normalization strategy in E2E codecs where latents are transformed into Gaussian noise to demonstrate the removal of spatial redundancy, we explore the inverse direction: generating latents directly from Gaussian noise. In this paper, we propose a novel image compression paradigm that reconstructs image-specific latents from a multi-scale Gaussian noise tensor, deterministically generated using a shared random seed. A Gaussian Parameter Prediction (GPP) module estimates the distribution parameters, enabling one-shot latent generation via reparameterization trick. The predicted latent is then passed through a synthesis network to reconstruct the image. Our method eliminates the need to transmit latent codes while preserving latent-based benefits, achieving competitive rate-distortion performance on Kodak and CLIC dataset. To the best of our knowledge, this is the first work to explore Gaussian latent generation for learned image compression.",
+  "source": "arxiv"
+ },
+ {
+  "title": "TerraCodec: Compressing Optical Earth Observation Data",
+  "authors": [
+   "Julen Costa-Watanabe",
+   "Isabelle Wittmann",
+   "Benedikt Blumenstiel",
+   "Konrad Schindler"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2510.12670",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Earth observation (EO) satellites produce massive streams of multispectral image time series, posing pressing challenges for storage and transmission. Yet, learned EO compression remains fragmented and lacks publicly available, large-scale pretrained codecs. Moreover, prior work has largely focused on image compression, leaving temporal redundancy and EO video codecs underexplored. To address these gaps, we introduce TerraCodec (TEC), a family of learned codecs pretrained on Sentinel-2 EO data. TEC includes efficient multispectral image variants and a Temporal Transformer model (TEC-TT) that leverages dependencies across time. To overcome the fixed-rate setting of today's neural codecs, we present Latent Repacking, a novel method for training flexible-rate transformer models that operate on varying rate-distortion settings. TerraCodec outperforms classical codecs, achieving 3-10x higher compression at equivalent image quality. Beyond compression, TEC-TT enables zero-shot cloud inpainting, surpassing state-of-the-art methods on the AllClear benchmark. Our results establish neural codecs as a promising direction for Earth observation. Our code and models are publically available at https://github.com/IBM/TerraCodec.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Generative Latent Video Compression",
+  "authors": [
+   "Zongyu Guo",
+   "Zhaoyang Jia",
+   "Jiahao Li",
+   "Xiaoyi Zhang",
+   "Bin Li",
+   "Yan Lu"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2510.09987",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Perceptual optimization is widely recognized as essential for neural compression, yet balancing the rate-distortion-perception tradeoff remains challenging. This difficulty is especially pronounced in video compression, where frame-wise quality fluctuations often cause perceptually optimized neural video codecs to suffer from flickering artifacts. In this paper, inspired by the success of latent generative models, we present Generative Latent Video Compression (GLVC), an effective framework for perceptual video compression. GLVC employs a pretrained continuous tokenizer to project video frames into a perceptually aligned latent space, thereby offloading perceptual constraints from the rate-distortion optimization. We redesign the codec architecture explicitly for the latent domain, drawing on extensive insights from prior neural video codecs, and further equip it with innovations such as unified intra/inter coding and a recurrent memory mechanism. Experimental results across multiple benchmarks show that GLVC achieves state-of-the-art performance in terms of DISTS and LPIPS metrics. Notably, our user study confirms GLVC rivals the latest neural video codecs at nearly half their rate while maintaining stable temporal coherence, marking a step toward practical perceptual video compression.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Application Space and the Rate-Distortion-Complexity Analysis of Neural Video CODECs",
+  "authors": [
+   "Ricardo L. de Queiroz",
+   "Diogo C. Garcia",
+   "Yi-Hsin Chen",
+   "Ruhan Conceição",
+   "Wen-Hsiao Peng",
+   "Luciano V. Agostini"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2509.05929",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We study the decision-making process for choosing video compression systems through a rate-distortion-complexity (RDC) analysis. We discuss the 2D Bjontegaard delta (BD) metric and formulate generalizations in an attempt to extend its notions to the 3D RDC volume. We follow that discussion with another one on the computation of metrics in the RDC volume, and on how to define and measure the cost of a coder-decoder (codec) pair, where the codec is characterized by a cloud of points in the RDC space. We use a Lagrangian cost $D+λR + γC$, such that choosing the best video codec among a number of candidates for an application demands selecting appropriate $(λ, γ)$ values. Thus, we argue that an application may be associated with a $(λ, γ)$ point in the application space. An example streaming application was given as a case study to set a particular point in the $(λ, γ)$ plane. The result is that we can compare Lagrangian costs in an RDC volume for different codecs for a given application. Furthermore, we can span the plane and compare codecs for the entire application space filled with different $(λ, γ)$ choices. We then compared several state-of-the-art neural video codecs using the proposed metrics. Results are informative and surprising. We found that, within our RDC computation constraints, only four neural video codecs came out as the best suited for any application, depending on where its desirable $(λ, γ)$ lies.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HyTIP: Hybrid Temporal Information Propagation for Masked Conditional Residual Video Coding",
+  "authors": [
+   "Yi-Hsin Chen",
+   "Yi-Chen Yao",
+   "Kuan-Wei Ho",
+   "Chun-Hung Wu",
+   "Huu-Tai Phung",
+   "Martin Benjak",
+   "Jörn Ostermann",
+   "Wen-Hsiao Peng"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2508.02072",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Most frame-based learned video codecs can be interpreted as recurrent neural networks (RNNs) propagating reference information along the temporal dimension. This work revisits the limitations of the current approaches from an RNN perspective. The output-recurrence methods, which propagate decoded frames, are intuitive but impose dual constraints on the output decoded frames, leading to suboptimal rate-distortion performance. In contrast, the hidden-to-hidden connection approaches, which propagate latent features within the RNN, offer greater flexibility but require large buffer sizes. To address these issues, we propose HyTIP, a learned video coding framework that combines both mechanisms. Our hybrid buffering strategy uses explicit decoded frames and a small number of implicit latent features to achieve competitive coding performance. Experimental results show that our HyTIP outperforms the sole use of either output-recurrence or hidden-to-hidden approaches. Furthermore, it achieves comparable performance to state-of-the-art methods but with a much smaller buffer size, and outperforms VTM 17.0 (Low-delay B) in terms of PSNR-RGB and MS-SSIM-RGB. The source code of HyTIP is available at https://github.com/NYCU-MAPL/HyTIP.",
+  "source": "arxiv"
+ },
+ {
+  "title": "NIC-RobustBench: A Comprehensive Open-Source Toolkit for Neural Image Compression and Robustness Analysis",
+  "authors": [
+   "Georgii Bychkov",
+   "Khaled Abud",
+   "Egor Kovalev",
+   "Alexander Gushchin",
+   "Sergey Lavrushkin",
+   "Dmitriy Vatolin",
+   "Anastasia Antsiferova"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2506.19051",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Neural image compression (NIC) is increasingly used in computer vision pipelines, as learning-based models are able to surpass traditional algorithms in compression efficiency. However, learned codecs can be unstable and vulnerable to adversarial attacks: small perturbations may cause severe reconstruction artifacts or indirectly break downstream models. Despite these risks, most NIC benchmarks only emphasize rate-distortion (RD) performance, focusing on model efficiency in safe, non-adversarial scenarios, while NIC robustness studies cover only specific codecs and attacks. To fill this gap, we introduce \\textbf{NIC-RobustBench}, an open-source benchmark and evaluation framework for adversarial robustness of NIC methods. The benchmark integrates 8 attacks, 9 defense strategies, standard RD metrics, a large and extensible set of codecs, and tools for assessing both the robustness of the compression model and impact on downstream tasks. Using NIC-RobustBench, we provide a broad empirical study of modern NICs and defenses in adversarial scenarios, highlighting failure modes, least and most resilient architectures, and other insights into NIC robustness. Our code is available online at https://github.com/msu-video-group/NIC-RobustBench.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Audio-Visual Driven Compression for Low-Bitrate Talking Head Videos",
+  "authors": [
+   "Riku Takahashi",
+   "Ryugo Morita",
+   "Jinjia Zhou"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2506.13419",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Talking head video compression has advanced with neural rendering and keypoint-based methods, but challenges remain, especially at low bit rates, including handling large head movements, suboptimal lip synchronization, and distorted facial reconstructions. To address these problems, we propose a novel audio-visual driven video codec that integrates compact 3D motion features and audio signals. This approach robustly models significant head rotations and aligns lip movements with speech, improving both compression efficiency and reconstruction quality. Experiments on the CelebV-HQ dataset show that our method reduces bitrate by 22% compared to VVC and by 8.5% over state-of-the-art learning-based codec. Furthermore, it provides superior lip-sync accuracy and visual fidelity at comparable bitrates, highlighting its effectiveness in bandwidth-constrained scenarios.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Flexible Mixed Precision Quantization for Learned Image Compression",
+  "authors": [
+   "Md Adnan Faisal Hossain",
+   "Zhihao Duan",
+   "Fengqing Zhu"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2506.01221",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Despite its improvements in coding performance compared to traditional codecs, Learned Image Compression (LIC) suffers from large computational costs for storage and deployment. Model quantization offers an effective solution to reduce the computational complexity of LIC models. However, most existing works perform fixed-precision quantization which suffers from sub-optimal utilization of resources due to the varying sensitivity to quantization of different layers of a neural network. In this paper, we propose a Flexible Mixed Precision Quantization (FMPQ) method that assigns different bit-widths to different layers of the quantized network using the fractional change in rate-distortion loss as the bit-assignment criterion. We also introduce an adaptive search algorithm which reduces the time-complexity of searching for the desired distribution of quantization bit-widths given a fixed model size. Evaluation of our method shows improved BD-Rate performance under similar model size constraints compared to other works on quantization of LIC models. We have made the source code available at gitlab.com/viper-purdue/fmpq.",
+  "source": "arxiv"
+ },
+ {
+  "title": "GANCompress: GAN-Enhanced Neural Image Compression with Binary Spherical Quantization",
+  "authors": [
+   "Karthik Sivakoti"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2505.13542",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The exponential growth of visual data in digital communications has intensified the need for efficient compression techniques that balance rate-distortion performance with computational feasibility. While recent neural compression approaches have shown promise, they still struggle with fundamental challenges: preserving perceptual quality at high compression ratios, computational efficiency, and adaptability to diverse visual content. This paper introduces GANCompress, a novel neural compression framework that synergistically combines Binary Spherical Quantization (BSQ) with Generative Adversarial Networks (GANs) to address these challenges. Our approach employs a transformer-based autoencoder with an enhanced BSQ bottleneck that projects latent representations onto a hypersphere, enabling efficient discretization with bounded quantization error. This is followed by a specialized GAN architecture incorporating frequency-domain attention and color consistency optimization. Experimental results demonstrate that GANCompress achieves substantial improvement in compression efficiency -- reducing file sizes by up to 100x with minimal visual distortion. Our method outperforms traditional codecs like H.264 by 12-15% in perceptual metrics while maintaining comparable PSNR/SSIM values, with 2.4x faster encoding and decoding speeds. On standard benchmarks including ImageNet-1k and COCO2017, GANCompress sets a new state-of-the-art, reducing FID from 0.72 to 0.41 (43% improvement) compared to previous methods while maintaining higher throughput. This work presents a significant advancement in neural compression technology with promising applications for real-time visual communication systems.",
+  "source": "arxiv"
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "title": "Trajectory-Consistent Denoising Diffusion Codebook Models for Zero-Shot High-Fidelity Image Compression at Ultra-Low Bitrates",
+  "authors": [
+   "Fang Zhang",
+   "Linli Xu"
+  ],
+  "year": 2026,
+  "venue": "International Joint Conference on Artificial Intelligence",
+  "doi": "10.24963/ijcai.2026/230",
+  "arxiv": null,
+  "openalex": "W7213431530",
+  "cited_by": 0,
+  "abstract": "Denoising Diffusion Codebook Models (DDCM) have emerged as a promising framework for zero-shot image compression by replacing stochastic sampling with discrete selection from a reproducible Gaussian codebook. By greedily picking noise vectors that best match the target image, DDCM encodes the generative trajectory into a compact sequence of indices for image compression. However, the target-guided noise selection provides only coarse guidance as the discrepancy between the denoiser's output and the target image is substantial. This discrepancy inevitably results in trajectory drift, necessitating massive codebooks to span the enlarged search space and extensive inference steps to gradually compensate for the deviation. In this paper, we propose the Trajectory-Consistent Diffusion Codebook Model (TC-DDCM) to address these inefficiencies. Rather than approximating the distant target, TC-DDCM navigates the generative process by strictly tracking a pre-computed inversion trajectory. This paradigm shift yields two critical advantages: 1) By minimizing the deviation to the proximal reference state along the trajectory, the search space is drastically shrunk, resulting in significantly smaller codebooks. 2) By aligning the generative steps with inversion methods, TC-DDCM achieves optimal reconstruction in a few inference steps. Extensive experiments demonstrate that TC-DDCM significantly outperforms state-of-the-art zero-shot methods in rate-distortion-perception performance at ultra-low bitrates, making zero-shot diffusion-based compression practical.",
+  "source": "openalex",
+  "relation": "citation"
+ },
+ {
+  "title": "DiSCoQR: Diffusion-Driven Semantic Compression for Robust Image Steganography in Standard QR Codes",
+  "authors": [
+   "Lijing Ren",
+   "Denghui Zhang"
+  ],
+  "year": 2026,
+  "venue": "International World Wide Web Conference (WWW)",
+  "doi": "10.1145/3774904.3792153",
+  "arxiv": null,
+  "openalex": "W7155965456",
+  "cited_by": 0,
+  "abstract": "Secure and undetectable transmission of visual intelligence through open networks presents a critical technological challenge in today's heavily monitored digital world. Text-based encryption is insufficient for massive, multimodal data from ubiquitous devices. The fundamental dilemma lies in transmitting large-scale visual data through noisy, adversarial channels while ensuring seamless concealment and robust recovery. In this paper, we bridge the gap by combining diffusion models with the universal presence and robustness of Quick Response (QR) codes for covert communication. Grounding steganographic security in the normative patterns of machine-readable symbols decouples it from the statistical properties of natural images. The reconstructions reside on the same semantic manifold as the originals, ensuring their functional equivalence in downstream tasks and maintaining robustness against quality degradation that would cripple pixel-based methods. Our training-free model compresses complex visual information into binary representations that integrate seamlessly into the data region of standard-compliant QR codes. This approach facilitates covert data transmission while preserving the full functionality and readability of the QR container. We achieve a compression ratio exceeding 400:1 while retaining semantic information for high-quality reconstruction. The preservation of all functional QR code components ensures complete compatibility with standard readers while concealing substantial visual content. Experimental results show a superior balance of security and performance compared to existing methods, all of which require no extra training.",
+  "source": "openalex",
+  "relation": "citation"
+ }
+]

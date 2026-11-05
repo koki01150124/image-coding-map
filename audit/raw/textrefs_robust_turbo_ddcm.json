@@ -1,0 +1,88 @@
+[
+ {
+  "title": "Lossy Image Compression with Foundation Diffusion Models",
+  "authors": [
+   "Lucas Relic",
+   "Roberto Gerson de Albuquerque Azevedo",
+   "Markus H. Groß",
+   "Christopher Schroers"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-73030-6_17",
+  "arxiv": "2404.08580",
+  "openalex": "W4404707745",
+  "cited_by": 20,
+  "abstract": "Abstract Incorporating diffusion models in the image compression domain has the potential to produce realistic and detailed reconstructions, especially at extremely low bitrates. Previous methods focus on using diffusion models as expressive decoders robust to quantization errors in the conditioning signals. However, achieving competitive results in this manner requires costly training of the diffusion model and long inference times due to the iterative generative process. In this work we formulate the removal of quantization error as a denoising task, using diffusion to recover lost information in the transmitted image latent. Our approach allows us to perform less than 10% of the full diffusion generative process and requires no architectural changes to the diffusion model, enabling the use of foundation models as a strong prior without additional fine tuning of the backbone. Our proposed codec outperforms previous methods in quantitative realism metrics, and we verify that our reconstructions are qualitatively preferred by end users, even when other methods use twice the bitrate.",
+  "source": "openalex",
+  "relation": "reference"
+ },
+ {
+  "title": "Algorithms for the Communication of Samples",
+  "authors": [
+   "Lucas Theis",
+   "Noureldin Yosri"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2110.12805",
+  "arxiv": "2110.12805",
+  "openalex": "W3208975473",
+  "cited_by": 15,
+  "abstract": "The efficient communication of noisy data has applications in several areas of machine learning, such as neural compression or differential privacy, and is also known as reverse channel coding or the channel simulation problem. Here we propose two new coding schemes with practical advantages over existing approaches. First, we introduce ordered random coding (ORC) which uses a simple trick to reduce the coding cost of previous approaches. This scheme further illuminates a connection between schemes based on importance sampling and the so-called Poisson functional representation. Second, we describe a hybrid coding scheme which uses dithered quantization to more efficiently communicate samples from distributions with bounded support.",
+  "source": "openalex",
+  "relation": "reference"
+ },
+ {
+  "title": "Lossy Compression with Gaussian Diffusion",
+  "authors": [
+   "Lucas Theis",
+   "Tim Salimans",
+   "Matthew D. Hoffman",
+   "Fabian Mentzer"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2206.08889",
+  "arxiv": "2206.08889",
+  "openalex": "W4283220513",
+  "cited_by": 37,
+  "abstract": "We consider a novel lossy compression approach based on unconditional diffusion generative models, which we call DiffC. Unlike modern compression schemes which rely on transform coding and quantization to restrict the transmitted information, DiffC relies on the efficient communication of pixels corrupted by Gaussian noise. We implement a proof of concept and find that it works surprisingly well despite the lack of an encoder transform, outperforming the state-of-the-art generative compression method HiFiC on ImageNet 64x64. DiffC only uses a single model to encode and denoise corrupted pixels at arbitrary bitrates. The approach further provides support for progressive coding, that is, decoding from partial bit streams. We perform a rate-distortion analysis to gain a deeper understanding of its performance, providing analytical results for multivariate Gaussian data as well as theoretic bounds for general distributions. Furthermore, we prove that a flow-based reconstruction achieves a 3 dB gain over ancestral sampling at high bitrates.",
+  "source": "openalex",
+  "relation": "reference"
+ },
+ {
+  "title": "Lossy Compression with Pretrained Diffusion Models",
+  "authors": [
+   "Jeremy Vonderfecht",
+   "Liu, Feng"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2501.09815",
+  "arxiv": "2501.09815",
+  "openalex": "W4406603636",
+  "cited_by": 1,
+  "abstract": "We apply the DiffC algorithm (Theis et al. 2022) to Stable Diffusion 1.5, 2.1, XL, and Flux-dev, and demonstrate that these pretrained models are remarkably capable lossy image compressors. A principled algorithm for lossy compression using pretrained diffusion models has been understood since at least Ho et al. 2020, but challenges in reverse-channel coding have prevented such algorithms from ever being fully implemented. We introduce simple workarounds that lead to the first complete implementation of DiffC, which is capable of compressing and decompressing images using Stable Diffusion in under 10 seconds. Despite requiring no additional training, our method is competitive with other state-of-the-art generative compression methods at low ultra-low bitrates.",
+  "source": "openalex",
+  "relation": "reference"
+ },
+ {
+  "title": "StableCodec: Taming One-Step Diffusion for Extreme Image Compression",
+  "authors": [
+   "Tianyu Zhang",
+   "Xin Luo",
+   "Li Li",
+   "Dong Liu"
+  ],
+  "year": 2025,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51701.2025.01614",
+  "arxiv": "2506.21977",
+  "openalex": "W7160159949",
+  "cited_by": 11,
+  "abstract": "Diffusion-based image compression has shown remarkable potential for achieving ultra-low bitrate coding (less than 0.05 bits per pixel) with high realism, by leveraging the generative priors of large pre-trained text-to-image diffusion models. However, current approaches require a large number of denoising steps at the decoder to generate realistic results under extreme bitrate constraints, limiting their application in real-time compression scenarios. Additionally, these methods often sacrifice reconstruction fidelity, as diffusion models typically fail to guarantee pixel-level consistency. To address these challenges, we introduce StableCodec, which enables one-step diffusion for high-fidelity and high-realism extreme image compression with improved coding efficiency. To achieve ultra-low bitrates, we first develop an efficient Deep Compression Latent Codec to transmit a noisy latent representation for a single-step denoising process. We then propose a Dual-Branch Coding Structure, consisting of a pair of auxiliary encoder and decoder, to enhance reconstruction fidelity. Furthermore, we adopt end-to-end optimization with joint bitrate and pixel-level constraints. Extensive experiments on the CLIC 2020, DIV2K, and Kodak dataset demonstrate that StableCodec outperforms existing methods in terms of FID, KID and DISTS by a significant margin, even at bitrates as low as 0.005 bits per pixel, while maintaining strong fidelity. Additionally, StableCodec achieves inference speeds comparable to mainstream transform coding schemes. All source code are available at https://github.com/LuizScarlet/StableCodec.",
+  "source": "openalex",
+  "relation": "reference"
+ }
+]

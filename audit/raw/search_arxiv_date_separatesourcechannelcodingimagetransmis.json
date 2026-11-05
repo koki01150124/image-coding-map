@@ -1,0 +1,144 @@
+[
+ {
+  "title": "Joint Semantic-Channel Coding and Modulation for Generative Image Transmission",
+  "authors": [
+   "Hao Cao",
+   "Jingkai Ying",
+   "Yinhuan Huang",
+   "Zhijin Qin",
+   "Yuan Shen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29643",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Digital image transmission typically optimizes source coding, channel coding, and modulation separately, limiting how source representations adapt to channel impairments. We propose SemQAM, a joint semantic-channel coding and modulation scheme for generative image transmission converting source to modulated symbols, such as standard QAM symbols. Channel impairments create two challenges: they can corrupt the latent representation at the receiver, and this corruption can compound through autoregressive coding, degrading reconstruction quality. First, SemQAM represents latent features with vector quantization (VQ), maps each VQ index to a QAM symbol, and updates the codeword corresponding to the detected symbol so that channel impairments directly affect codebook learning. Moreover, SemQAM uses the conditional expectation of received codewords to approximate the receiver reconstruction and reduce error propagation during autoregressive coding. SemQAM supports multiple SNRs and CBRs in a unified model, while also supporting conventional source coding through SemQAM-C. Experiments show that (i) under the same LDPC and QAM settings, SemQAM-C outperforms OneDC in LPIPS and DISTS with substantially lower complexity, showing that the unified model retains competitive capability for source coding. (ii) Compared with this separated counterpart, SemQAM reduces channel uses by 18.57% at matched LPIPS and outperforms the compared JSCC methods, demonstrating the benefit of joint coding.",
+  "source": "arxiv"
+ },
+ {
+  "title": "LiteSC: Lightweight Semantic Communication for Robust Wireless Telesurgical Video Transmission",
+  "authors": [
+   "Zexin Deng",
+   "Zhenhui Yuan",
+   "Xiang Ji",
+   "Yi Han",
+   "Gaofeng Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.23661",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Reliable laparoscopic video is essential for telesurgery, yet fixed-rate digital transmission can degrade abruptly under poor channel conditions. We propose LiteSC, a lightweight semantic communication framework combining a frozen pretrained extractor, a compact joint source--channel coding pair, and a receiver-adapted surgical renderer. The extractor produces a latent with approximately 97.9\\% fewer scalar values than the red--green--blue (RGB) input, while inference requires neither segmentation masks nor temporal reference frames. Using separate CholecSeg8k source videos for training and testing, we evaluate LiteSC over an additive white Gaussian noise (AWGN) channel at symbol signal-to-noise ratios $E_s/N_0$ from 0 to 25 dB. At a channel bandwidth ratio of $ρ=0.0208$, equivalent to 0.0208 complex channel symbols per RGB source value, peak signal-to-noise ratio (PSNR) rises from 28.7 to 31.9 dB, structural similarity index measure (SSIM) from 0.869 to 0.919, and learned perceptual image patch similarity (LPIPS) falls from 0.102 to 0.048. Against H.265 transmission protected by low-density parity-check (LDPC) coding under the same channel-symbol budget, LiteSC achieves higher SSIM and lower LPIPS, although H.265+LDPC attains a higher peak PSNR. These results show graceful laparoscopic frame reconstruction under the evaluated AWGN conditions.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FlowSem: Flow Matching for Adaptive Wireless Image Transmission in Semantic Communication",
+  "authors": [
+   "Arnab Emon",
+   "Eslam Eldeeb"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.21651",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Wireless image transmission becomes challenging under poor channel conditions and stringent bandwidth constraints, as the receiver needs to preserve both pixel-level fidelity and meaningful visual structure. Classical separation-based systems, such as better portable graphics with low-density parity-check coding (BPG+LDPC), may suffer from cliff-effect behavior. While deep joint source-channel coding (DeepJSCC) provides graceful degradation as channel conditions worsen, its reconstructions may lose fine details under strong compression and severe channel distortion. To address this limitation, this paper proposes a two-stage flow matching-based semantic communication framework, termed FlowSem. In the first stage, a signal-to-noise ratio (SNR)-adaptive DeepJSCC model maps the source image into channel symbols and produces a coarse reconstruction at the receiver. In the second stage, a conditional flow matching model generates the final image from Gaussian noise conditioned on the DeepJSCC reconstruction and channel SNR. The proposed framework is evaluated on the Cityscapes dataset under additive white Gaussian noise (AWGN) and Rayleigh fading channels using a fixed channel-symbol budget. The baselines include a rate-matched BPG+LDPC system, DeepJSCC, a denoising diffusion probabilistic model (DDPM), and a denoising diffusion implicit model (DDIM). Results show that FlowSem achieves competitive pixel-level fidelity and improved structural and perceptual reconstruction quality over the considered generative baselines across different channel conditions. FlowSem provides up to 60% lower Fréchet Inception Distance (FID) than the diffusion baselines at low SNRs. Moreover, FlowSem reaches high reconstruction quality using only a few ODE integration steps, providing a favorable quality-latency tradeoff compared with standard DDPM and accelerated DDIM sampling.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Perception-Aware Video Semantic Communication",
+  "authors": [
+   "Yinhuan Huang",
+   "Zhijin Qin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.19397",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Ultra-high-resolution streaming and emerging immersive services are driving rapidly increasing wireless video traffic. However, perceptually pleasing video transmission over bandwidth-limited and latency-constrained wireless links remains challenging for conventional separated source-channel systems, which primarily target bit-level reliability and often suffer performance degradation under short-blocklength transmission. In addition, pixel-level distortion optimization does not necessarily align with human perception, while existing learned video codecs may incur high complexity and raise deployment issues. This paper proposes PVSC, a perception-aware video semantic communication framework for real-time wireless video transmission. PVSC eliminates explicit motion-vector transmission and exploits spatio-temporal feature coding to generate compact and channel-robust symbol streams. It also specifies side-information formatting, reference-buffer management, and lightweight rate control, enabling stable receiver-side reconstruction and bandwidth-adaptive inference with a single model. Extensive experiments demonstrate that PVSC achieves superior performance across diverse datasets, resolutions, GOP configurations, and channel conditions. Compared with the engineered ``VTM + 5G LDPC'' baseline, PVSC saves up to about 75% and 87% bandwidth at comparable LPIPS and DISTS, respectively, while enabling real-time inference on a single NVIDIA RTX 4090 GPU.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Survey on Source-coding technique",
+  "authors": [
+   "Weida Wang"
+  ],
+  "year": 2022,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2211.00230",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Shannon separation theorem lays the foundation for traditional image compression and transmission schemes, which consist of JPEG type image compression methods and the usual channel coding schemes such as Turbo and LDPC codes. One of the advantages of the separate design is that each of the two components, channel coding and source coding can be handled independently without considering the other, which is the base of decades-long technologies.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Deep Joint Source-Channel and Encryption Coding: Secure Semantic Communications",
+  "authors": [
+   "Tze-Yang Tung",
+   "Deniz Gunduz"
+  ],
+  "year": 2022,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2208.09245",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Deep learning driven joint source-channel coding (JSCC) for wireless image or video transmission, also called DeepJSCC, has been a topic of interest recently with very promising results. The idea is to map similar source samples to nearby points in the channel input space such that, despite the noise introduced by the channel, the input can be recovered with minimal distortion. In DeepJSCC, this is achieved by an autoencoder architecture with a non-trainable channel layer between the encoder and decoder. DeepJSCC has many favorable properties, such as better end-to-end distortion performance than its separate source and channel coding counterpart as well as graceful degradation with respect to channel quality. However, due to the inherent correlation between the source sample and channel input, DeepJSCC is vulnerable to eavesdropping attacks. In this paper, we propose the first DeepJSCC scheme for wireless image transmission that is secure against eavesdroppers, called DeepJSCEC. DeepJSCEC not only preserves the favorable properties of DeepJSCC, it also provides security against chosen-plaintext attacks from the eavesdropper, without the need to make assumptions about the eavesdropper's channel condition, or its intended use of the intercepted signal. Numerical results show that DeepJSCEC achieves similar or better image quality than separate source coding using BPG compression, AES encryption, and LDPC codes for channel coding, while preserving the graceful degradation of image quality with respect to channel quality. We also show that the proposed encryption method is problem agnostic, meaning it can be applied to other end-to-end JSCC problems, such as remote classification, without modification. Given the importance of security in modern wireless communication systems, we believe this work brings DeepJSCC schemes much closer to adoption in practice.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DeepWiVe: Deep-Learning-Aided Wireless Video Transmission",
+  "authors": [
+   "Tze-Yang Tung",
+   "Deniz Gündüz"
+  ],
+  "year": 2021,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2111.13034",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We present DeepWiVe, the first-ever end-to-end joint source-channel coding (JSCC) video transmission scheme that leverages the power of deep neural networks (DNNs) to directly map video signals to channel symbols, combining video compression, channel coding, and modulation steps into a single neural transform. Our DNN decoder predicts residuals without distortion feedback, which improves video quality by accounting for occlusion/disocclusion and camera movements. We simultaneously train different bandwidth allocation networks for the frames to allow variable bandwidth transmission. Then, we train a bandwidth allocation network using reinforcement learning (RL) that optimizes the allocation of limited available channel bandwidth among video frames to maximize overall visual quality. Our results show that DeepWiVe can overcome the cliff-effect, which is prevalent in conventional separation-based digital communication schemes, and achieve graceful degradation with the mismatch between the estimated and actual channel qualities. DeepWiVe outperforms H.264 video compression followed by low-density parity check (LDPC) codes in all channel conditions by up to 0.0462 on average in terms of the multi-scale structural similarity index measure (MS-SSIM), while beating H.265 + LDPC by up to 0.0058 on average. We also illustrate the importance of optimizing bandwidth allocation in JSCC video transmission by showing that our optimal bandwidth allocation policy is superior to the naïve uniform allocation. We believe this is an important step towards fulfilling the potential of an end-to-end optimized JSCC wireless video transmission system that is superior to the current separation-based designs.",
+  "source": "arxiv"
+ },
+ {
+  "title": "OFDM-guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+  "authors": [
+   "Mingyu Yang",
+   "Chenghong Bian",
+   "Hun-Seok Kim"
+  ],
+  "year": 2021,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2109.05194",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We investigate joint source channel coding (JSCC) for wireless image transmission over multipath fading channels. Inspired by recent works on deep learning based JSCC and model-based learning methods, we combine an autoencoder with orthogonal frequency division multiplexing (OFDM) to cope with multipath fading. The proposed encoder and decoder use convolutional neural networks (CNNs) and directly map the source images to complex-valued baseband samples for OFDM transmission. The multipath channel and OFDM are represented by non-trainable (deterministic) but differentiable layers so that the system can be trained end-to-end. Furthermore, our JSCC decoder further incorporates explicit channel estimation, equalization, and additional subnets to enhance the performance. The proposed method exhibits 2.5 -- 4 dB SNR gain for the equivalent image quality compared to conventional schemes that employ state-of-the-art but separate source and channel coding such as BPG and LDPC. The performance further improves when the system incorporates the channel state information (CSI) feedback. The proposed scheme is robust against OFDM signal clipping and parameter mismatch for the channel model used in training and evaluation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Deep Joint Source Channel Coding for WirelessImage Transmission with OFDM",
+  "authors": [
+   "Mingyu Yang",
+   "Chenghong Bian",
+   "Hun-Seok Kim"
+  ],
+  "year": 2021,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2101.03909",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We present a deep learning based joint source channel coding (JSCC) scheme for wireless image transmission over multipath fading channels with non-linear signal clipping. The proposed encoder and decoder use convolutional neural networks (CNN) and directly map the source images to complex-valued baseband samples for orthogonal frequency division multiplexing (OFDM) transmission. The proposed model-driven machine learning approach eliminates the need for separate source and channel coding while integrating an OFDM datapath to cope with multipath fading channels. The end-to-end JSCC communication system combines trainable CNN layers with non-trainable but differentiable layers representing the multipath channel model and OFDM signal processing blocks. Our results show that injecting domain expert knowledge by incorporating OFDM baseband processing blocks into the machine learning framework significantly enhances the overall performance compared to an unstructured CNN. Our method outperforms conventional schemes that employ state-of-the-art but separate source and channel coding such as BPG and LDPC with OFDM. Moreover, our method is shown to be robust against non-linear signal clipping in OFDM for various channel conditions that do not match the model parameter used during the training.",
+  "source": "arxiv"
+ }
+]

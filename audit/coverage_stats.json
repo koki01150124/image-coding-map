@@ -1,0 +1,52 @@
+{
+ "by_priority": {
+  "A": 100,
+  "B": 626,
+  "C": 136
+ },
+ "by_topic": {
+  "lic": 208,
+  "sscc": 323,
+  "analog_jscc": 415,
+  "digital_jscc": 210,
+  "bit_error": 246,
+  "generative": 244,
+  "packet_loss": 34
+ },
+ "by_topic_A": {
+  "lic": 14,
+  "sscc": 80,
+  "analog_jscc": 83,
+  "digital_jscc": 29,
+  "bit_error": 50,
+  "generative": 27,
+  "packet_loss": 11
+ },
+ "by_year": {
+  "1998": 1,
+  "2001": 1,
+  "2005": 2,
+  "2007": 2,
+  "2013": 1,
+  "2015": 2,
+  "2016": 3,
+  "2017": 14,
+  "2018": 16,
+  "2019": 25,
+  "2020": 46,
+  "2021": 58,
+  "2022": 83,
+  "2023": 85,
+  "2024": 138,
+  "2025": 159,
+  "2026": 226
+ },
+ "by_decision": {
+  "recommend_add": 18,
+  "unreviewed": 817,
+  "reference_only": 6,
+  "consider": 14,
+  "out_of_scope": 5,
+  "conference_version": 2
+ }
+}

@@ -1,0 +1,924 @@
+[
+ {
+  "title": "Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder",
+  "authors": [
+   "Yufei Bo",
+   "Yiheng Duan",
+   "Shuo Shao",
+   "Meixia Tao"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3386577",
+  "arxiv": "2310.06690",
+  "openalex": "W4394627253",
+  "cited_by": 141,
+  "abstract": "Semantic communications have emerged as a new paradigm for improving communication efficiency by transmitting the semantic information of a source message that is most relevant to a desired task at the receiver. Most existing approaches typically utilize neural networks (NNs) to design end-to-end semantic communication systems, where NN-based semantic encoders output continuously distributed signals to be sent directly to the channel in an analog fashion. In this work, we propose a joint coding-modulation (JCM) framework for digital semantic communications by using variational autoencoder (VAE). Our approach learns the transition probability from source data to discrete constellation symbols, thereby avoiding the non-differentiability problem of digital modulation. Meanwhile, by jointly designing the coding and modulation process together, we can match the obtained modulation strategy with the operating channel condition. We also derive a matching loss function with information-theoretic meaning for end-to-end training. Experiments on image semantic communication validate the superiority of our proposed JCM framework over the state-of-the-art quantization-based digital semantic coding-modulation methods across a wide range of channel conditions, transmission rates, and modulation orders. Furthermore, its performance gap to analog semantic communication reduces as the modulation order increases while enjoying the hardware implementation convenience.",
+  "source": "openalex"
+ },
+ {
+  "title": "Vector Quantized Semantic Communication System",
+  "authors": [
+   "Qifan Fu",
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Greg Slabaugh",
+   "Xiaoming Tao"
+  ],
+  "year": 2023,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2023.3255221",
+  "arxiv": "2209.11519",
+  "openalex": "W4323896648",
+  "cited_by": 129,
+  "abstract": "Although analog semantic communication systems have received considerable attention in the literature, there is less work on digital semantic communication systems. In this letter, we develop a deep learning (DL)-enabled vector quantized (VQ) semantic communication system for image transmission, named VQ-DeepSC. Specifically, we propose a convolutional neural network (CNN)-based transceiver to extract multi-scale semantic features of images and introduce multi-scale semantic embedding spaces to perform semantic feature quantization, rendering the data compatible with digital communication systems. Furthermore, we employ adversarial training to improve the quality of received images by introducing a PatchGAN discriminator. Experimental results demonstrate that the proposed VQ-DeepSC is more robustness than BPG in digital communication systems and has comparable MS-SSIM performance to the DeepJSCC method.",
+  "source": "openalex"
+ },
+ {
+  "title": "From Analog to Digital: Multi-Order Digital Joint Coding-Modulation for Semantic Communication",
+  "authors": [
+   "Guangyi Zhang",
+   "Pujing Yang",
+   "Yunlong Cai",
+   "Qiyu Hu",
+   "Guanding Yu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3511949",
+  "arxiv": "2406.05437",
+  "openalex": "W4405056254",
+  "cited_by": 32,
+  "abstract": "Recent studies in joint source-channel coding (JSCC) have fostered a fresh paradigm in end-to-end semantic communication. Despite notable performance achievements, present initiatives in building semantic communication systems primarily hinge on the transmission of continuous channel symbols, thus presenting challenges in compatibility with established digital systems. In this paper, we introduce a novel approach to address this challenge by developing a multi-order digital joint coding-modulation (MDJCM) scheme for semantic communications. Initially, we construct a digital semantic communication system by integrating a multi-order modulation/demodulation module into a nonlinear transform source-channel coding (NTSCC) framework. Recognizing the non-differentiable nature of modulation/demodulation, we propose a novel substitution training strategy. Herein, we treat modulation/demodulation as a constrained quantization process and introduce scaling operations alongside manually crafted noise to approximate this process. As a result, employing this approximation in training semantic communication systems can be deployed in practical modulation/demodulation scenarios with superior performance. Additionally, we demonstrate the equivalence by analyzing the involved probability distribution. Moreover, to further upgrade the performance, we develop a hierarchical dimension-reduction strategy to provide a gradual information extraction process. Extensive experimental evaluations demonstrate the superiority of our proposed method over existing digital and non-digital JSCC techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Digital Semantic Communication with Channel Adaptation and Vector Quantization",
+  "authors": [
+   "Yuyang Zheng",
+   "Wenjun Lin"
+  ],
+  "year": 2026,
+  "venue": "International Conference on Neural Networks, Information and Communication Engineering (NNICE)",
+  "doi": "10.1109/nnice68970.2026.11466175",
+  "arxiv": null,
+  "openalex": "W7151388981",
+  "cited_by": 0,
+  "abstract": "Semantic communication has demonstrated the potential to surpass the Shannon limit through joint source-channel coding. However, existing systems suffer from two critical limitations: the lack of adaptability to dynamic channels and insufficient compatibility with digital communication systems due to reliance on analog modulation. This paper proposes a signal-to-noise ratio (SNR) adaptive digital semantic communication framework that achieves high-quality transmission under dynamic channels and compatibility with digital systems by integrating a channel-aware semantic codec with a learnable semantic feature quantization module. The system employs lightweight residual convolutional modules to extract semantic features, enables a single model to adapt to a wide SNR range through an SNR-adaptive attention mechanism, and utilizes a learnable codebook to map continuous features to discrete binary sequences. A three-stage progressive training strategy is adopted to optimize system performance. Experimental results on the test set demonstrate that the proposed system outperforms the traditional JPEG+LDPC scheme, validating the effectiveness and practical value of this framework.",
+  "source": "openalex"
+ },
+ {
+  "title": "PRVQ for Digital Semantic Communication: A Quantization-Robustness Trade-Off Study",
+  "authors": [
+   "Yewei Long",
+   "Jie Cao",
+   "Xunyang Zhan",
+   "Zhihao Dong",
+   "Xu Zhu",
+   "Xin Xie"
+  ],
+  "year": 2026,
+  "venue": "International Symposium on Wireless Communication Systems",
+  "doi": "10.1109/iswcs69382.2026.11714126",
+  "arxiv": null,
+  "openalex": "W7220982102",
+  "cited_by": 0,
+  "abstract": "Digital semantic communication requires converting continuous semantic representations into explicit bitstreams compatible with conventional modulation schemes. Vector quantization provides a natural solution, but different quantization structures exhibit different trade-offs between representation precision and channel robustness. In this paper, we propose Product Residual Vector Quantization (PRVQ), a structured quantization framework that combines product grouping and residual refinement for digital semantic communication. PRVQ generalizes single-stage VQ, product quantization, and residual vector quantization under a unified parameterization over grouping granularity, residual depth, and codebook size. Experiments on CIFAR-10 over AWGN channels show clear SNR-dependent behavior: product quantization remains more robust under lowto-medium SNR, while PRVQ achieves a higher quantization ceiling and better perceptual reconstruction quality when the channel becomes reliable. These results reveal a quantizationrobustness trade-off in residual quantization and provide guidance for future channel-adaptive digital semantic communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel-Aware Vector Quantization for Robust Semantic Communication on Discrete Channels",
+  "authors": [
+   "Zian Meng",
+   "Qiang Li",
+   "Tang, Wenqian",
+   "Yan, Mingdie",
+   "Xiaohu Ge"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2510.18604",
+  "arxiv": "2510.18604",
+  "openalex": "W4416056744",
+  "cited_by": 0,
+  "abstract": "Deep learning-based semantic communication has largely relied on analog or semi-digital transmission, which limits compatibility with modern digital communication infrastructures. Recent studies have employed vector quantization (VQ) to enable discrete semantic transmission, yet existing methods neglect channel state information during codebook optimization, leading to suboptimal robustness. To bridge this gap, we propose a channel-aware vector quantization (CAVQ) algorithm within a joint source-channel coding (JSCC) framework, termed VQJSCC, established on a discrete memoryless channel. In this framework, semantic features are discretized and directly mapped to modulation constellation symbols, while CAVQ integrates channel transition probabilities into the quantization process, aligning easily confused symbols with semantically similar codewords. A multi-codebook alignment mechanism is further introduced to handle mismatches between codebook order and modulation order by decomposing the transmission stream into multiple independently optimized subchannels. Experimental results demonstrate that VQJSCC effectively mitigates the digital cliff effect, achieves superior reconstruction quality across various modulation schemes, and outperforms state-of-the-art digital semantic communication baselines in both robustness and efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "sDAC—Semantic Digital Analog Converter for Semantic Communications",
+  "authors": [
+   "Zhicheng Bao",
+   "Haotai Liang",
+   "Xiaoyi Liu",
+   "Cong Li",
+   "Chen Dong",
+   "Xiaodong Xu",
+   "Cheng Guo",
+   "Hao Chen",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2025.3566976",
+  "arxiv": "2405.02335",
+  "openalex": "W4410087185",
+  "cited_by": 20,
+  "abstract": "In this paper, we propose a novel semantic digital analog converter (sDAC) for the compatibility between semantic and digital communications. Most of the current semantic communication systems rely primarily on analog modulation, limiting their integration with digital communication systems, which are more common in practice. In fact, traditional quantization methods are unsuitable for semantic communication because they do not account for semantic information within symbols. These factors block the wide application of the semantic communication. To address these challenges, sDAC is proposed. It is a simple yet efficient and generative module used to realize digital and analog bi-directional conversion. The entire process is independent of any specific semantic model, modulation methods, or channel conditions. In the experiment section, the performance of sDAC is tested across different semantic models, semantic tasks, modulation methods, channel conditions and quantization orders. Test results show that the proposed sDAC has great generative properties and channel robustness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Taming Learnable Codebook Design and Modulation for Digital Semantic Image Communication",
+  "authors": [
+   "Yingbin Zhou",
+   "Yaping Sun",
+   "Hongyang Du",
+   "Guanying Chen",
+   "Xiaodong Xu",
+   "Hao Chen",
+   "Ping Zhang",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2025,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "10.1109/jiot.2025.3619193",
+  "arxiv": null,
+  "openalex": "W4414956244",
+  "cited_by": 8,
+  "abstract": "Semantic communication employs deep learning to transmit semantically meaningful information rather than raw data, thereby improving communication efficiency. To facilitate the adaptation of continuous semantic features to digital transmission systems, vector quantization (VQ) serves as an effective approach for discretizing high-dimensional features into compact codebook indices. However, existing VQ-based systems face a critical dilemma: conventional VQ codebooks demand large index ranges to preserve fidelity, contradicting digital modulation’s need for limited discrete states to ensure noise robustness. To bridge this gap, we design a 2K image transmission framework that jointly considers codebook compactness and transmission robustness. The framework operates in two stages: In Stage 1, we devise MOC-RVQ, a multi-head ordered codebook (MOC) with residual vector quantization (RVQ) to reduce the index range while maintaining image fidelity. In Stage 2, a Swin Transformer-based noise reduction block (NRB) is integrated with feature requantization for further robust restoration. Experiments on 2K-resolution datasets demonstrate that the proposed MOC-RVQ surpasses traditional codecs like BPG, JPEG, and learnable baselines, while maintaining low transmission overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "ESC-MVQ: End-to-End Semantic Communication With Multi-Codebook Vector Quantization",
+  "authors": [
+   "Junyong Shin",
+   "Yongjeong Oh",
+   "Jinsung Park",
+   "Joohyuk Park",
+   "Yo–Seb Jeon"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3605838",
+  "arxiv": "2504.11709",
+  "openalex": "W4414110446",
+  "cited_by": 17,
+  "abstract": "This paper proposes a novel end-to-end digital semantic communication framework based on multi-codebook vector quantization (VQ), referred to as ESC-MVQ. Unlike prior approaches that rely on end-to-end training with a specific power or modulation scheme, often under a particular channel condition, ESC-MVQ models a channel transfer function as parallel binary symmetric channels (BSCs) with trainable bit-flip probabilities. Building on this model, ESC-MVQ jointly trains multiple VQ codebooks and their associated bit-flip probabilities with a single encoder-decoder pair. To maximize inference performance when deploying ESC-MVQ in digital communication systems, we devise an optimal communication strategy that jointly optimizes codebook assignment, adaptive modulation, and power allocation. To this end, we develop an iterative algorithm that selects the most suitable VQ codebook for semantic features and flexibly allocates power and modulation schemes across the transmitted symbols. Simulation results demonstrate that ESC-MVQ, using a single encoder-decoder pair, outperforms existing digital semantic communication methods in both performance and memory efficiency, offering a scalable and adaptive solution for realizing digital semantic communication in diverse channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "On the Quantization-Aware Training for Digital Semantic Speech Communications",
+  "authors": [
+   "Münif Zeybek",
+   "Bilge Kartal Çetin",
+   "Erkan Zeki Engın"
+  ],
+  "year": 2026,
+  "venue": "Global Power, Energy and Communication Conference",
+  "doi": "10.1109/gpecom70462.2026.11578564",
+  "arxiv": null,
+  "openalex": "W7167040761",
+  "cited_by": 0,
+  "abstract": "Semantic speech communication has recently emerged as a promising paradigm for bandwidth-efficient wireless transmission by prioritizing the semantic information. However, bridging neural semantic representations with practical digital transceivers remains an open challenge, as most existing approaches operate on continuous latent features incompatible with discrete modulation schemes. This work introduces a quantization-aware digital semantic speech communication approach that bridges neural semantic representation learning with digital signal processing pipelines. The proposed architecture integrates a neural semantic encoder-decoder with latent feature quantization, channel coding and digital modulator for transmission over wireless channels. During training, quantization-aware perturbations are incorporated to emulate discretization effects and improve robustness to digital implementation constraints. System performance is evaluated under Rayleigh and Rician fading channels across signal-to-noise ratios (SNR) ranging from 0 to 20 dB using perceptual speech quality and intelligibility metrics. Experimental results demonstrate consistent improvements in perceptual quality and intelligibility compared with non-quantization-aware semantic baselines, particularly in low-to-moderate SNR regimes. Moreover, the proposed model exhibits stable performance across multiple quantization depths, indicating that quantization-aware training (QAT) enables robust and flexible deployment of semantic communication systems in practical digital wireless environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Universal Joint Source-Channel Coding for Modulation-Agnostic Semantic Communication",
+  "authors": [
+   "Yoon Huh",
+   "Hyowoon Seo",
+   "Wan Choi"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3559138",
+  "arxiv": "2405.10749",
+  "openalex": "W4409327566",
+  "cited_by": 13,
+  "abstract": "From the perspective of joint source-channel coding (JSCC), there has been significant research on utilizing semantic communication, which inherently possesses analog characteristics, within digital device environments. However, a single-model approach that operates modulation-agnostically across various digital modulation orders has not yet been established. This article presents the first attempt at such an approach by proposing a universal joint source-channel coding (uJSCC) system that utilizes a single-model encoder-decoder pair and trained vector quantization (VQ) codebooks. To support various modulation orders within a single model, the operation of every neural network (NN)-based module in the uJSCC system requires the selection of modulation orders according to signal-to-noise ratio (SNR) boundaries. To address the challenge of unequal output statistics from shared parameters across NN layers, we integrate multiple batch normalization (BN) layers, selected based on modulation order, after each NN layer. This integration occurs with minimal impact on the overall model size. Through a comprehensive series of experiments, we validate that the modulation-agnostic semantic communication framework demonstrates superiority over existing digital semantic communication approaches in terms of model complexity, communication efficiency, and task effectiveness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Compatible Semantic Communication: A Perspective on Digital Coding and Modulation",
+  "authors": [
+   "Guangyi Zhang",
+   "Kequan Zhou",
+   "Yunlong Cai",
+   "Qiyu Hu",
+   "Guanding Yu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.001.2400640",
+  "arxiv": "2412.18876",
+  "openalex": "W4413267739",
+  "cited_by": 8,
+  "abstract": "Semantic communication (SC) is emerging as a pivotal innovation within the 6G framework, aimed at enabling more intelligent transmission. This development has led to numerous studies focused on designing advanced systems through powerful deep learning techniques. Nevertheless, many of these approaches envision an analog transmission manner by formulating the transmit-ted signals as continuous-valued semantic repre-sentation vectors, limiting their compatibility with existing digital systems. To enhance compatibility, it is essential to explore digitized SC systems. This article systematically identifies two promising par-adigms for designing digital SC: probabilistic and deterministic approaches, according to the modulation strategies. For both, we first provide a comprehensive analysis of the methodologies. Then, we put forward the principles of designing digital SC systems with a specific focus on informative-ness and robustness of semantic representations to enhance performance, along with constellation design. Additionally, we present a case study to demonstrate the effectiveness of these methods. Moreover, this article also explores the intrinsic advantages and opportunities provided by digital SC systems, and then outlines several potential research directions for future investigation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Spatial Semantic Communication: When Semantic Transmission Meets Index Modulation",
+  "authors": [
+   "Xinghao Guo",
+   "Yin Xu",
+   "Dazhi He",
+   "Hanjiang Hong",
+   "Zhiyong Chen",
+   "Cixiao Zhang",
+   "Yiyan Wu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2026.3720492",
+  "arxiv": "2607.19934",
+  "openalex": "W7196990134",
+  "cited_by": 0,
+  "abstract": "Current digital semantic communication systems have primarily focused on maintaining compatibility with conventional constellation-based modulation. In contrast, index modulation (IM) represents a more spectrally and energy-efficient alternative by exploiting additional dimensions for information conveyance. Recognizing this potential, this paper bridges the gap between IM and semantic communications by proposing a novel spatial semantic communication (SSC) system leveraging cutting-edge fluid antenna-IM (FA-IM) technology. Compatible with existing joint source-channel coding (JSCC) architectures, the proposed SSC system employs the residual quantization (RQ) approach to discretize analog semantic features for subsequent digital IM transmission. Notably, the proposed SSC system synergizes RQ and IM via a semantic-aware stream splitting scheme, which ensures that critical semantic information undergoes less severe channel fading, thereby further optimizing semantic transmission performance. Simulation results validate that the proposed SSC system effectively integrates the high fidelity of RQ, the reliability of semantic-aware splitting, and the spatial efficiency of FA-IM, thereby providing a robust solution for future digital semantic transmission.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Hierarchical Error Protection Framework for Learnable Residual Vector Quantization in Digital Semantic Communication Systems",
+  "authors": [
+   "Wonjung Kim",
+   "Jaein Lee",
+   "Wonjae Shin",
+   "Jongho Lee"
+  ],
+  "year": 2025,
+  "venue": "Globecom",
+  "doi": "10.1109/globecom59602.2025.11432246",
+  "arxiv": null,
+  "openalex": "W7138871344",
+  "cited_by": 0,
+  "abstract": "Vector Quantization (VQ)-based digital semantic communication is gaining prominence due to its compatibility with existing digital systems. However, it faces a critical trade-off between computational efficiency and the risk of codeword overfitting. To address this challenge, we propose ResUME, a novel digital semantic communication framework designed for both rate-controllability and computational efficiency. ResUME integrates residual vector quantization (RVQ) with unequal modulation to achieve robust and flexible encoding of latent representations. Our framework leverages the hierarchical structure of RVQ, where layers encode information of varying significance. We analyze this property from an information-theoretic perspective to optimize the modulation order. This optimization provides a form of unequal error protection, maximizing mutual information under spectral efficiency constraints. Furthermore, to mitigate the risk of overfitting, we introduce a variational loss function inspired by the information bottleneck principle. Experimental results demonstrate that ResUME significantly outperforms conventional modulation-assisted methods across various AWGN channel conditions. An ablation study further validates the contribution of each component in our proposed loss function.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning Based Joint Coding-Modulation for Digital Semantic Communication Systems",
+  "authors": [
+   "Yufei Bo",
+   "Yiheng Duan",
+   "Shuo Shao",
+   "Meixia Tao"
+  ],
+  "year": 2022,
+  "venue": "International Conference on Wireless Communications and Signal Processing (WCSP)",
+  "doi": "10.1109/wcsp55476.2022.10039447",
+  "arxiv": "2208.05704",
+  "openalex": "W4321064272",
+  "cited_by": 32,
+  "abstract": "In learning-based semantic communications, neural networks have replaced different building blocks in traditional communication systems. However, the digital modulation still remains a challenge for neural networks. The intrinsic mech-anism of neural network based digital modulation is mapping continuous output of the neural network encoder into discrete constellation symbols, which is a non-differentiable function that cannot be trained with existing gradient descend algorithms. To overcome this challenge, in this paper we develop a joint coding-modulation scheme for digital semantic communications with BPSK modulation. In our method, the neural network outputs the likelihood of each constellation point, instead of having a concrete mapping. A random code rather than a deterministic code is hence used, which preserves more information for the symbols with a close likelihood on each constellation point. The joint coding-modulation design can match the modulation process with channel states, and hence improve the performance of digital semantic communications. Experiment results show that our method outperforms existing digital modulation methods in semantic communications over a wide range of SNR, and outperforms neural network based analog modulation method in low SNR regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Semantic Communication via Multi-Codebook Vector Quantization",
+  "authors": [
+   "Junyong Shin",
+   "Yongjeong Oh",
+   "Jinsung Park",
+   "J C Park",
+   "Yo–Seb Jeon"
+  ],
+  "year": 2025,
+  "venue": "IEEE Globecom Workshops (GC Wkshps)",
+  "doi": "10.1109/gcwkshps68340.2025.11591197",
+  "arxiv": null,
+  "openalex": "W7167594570",
+  "cited_by": 1,
+  "abstract": "This paper proposes a novel end-to-end digital semantic communication framework based on multi-codebook vector quantization (VQ), referred to as ESC-MVQ. Unlike prior approaches that rely on end-to-end training with a specific power or modulation scheme, often under a particular channel condition, ESC-MVQ models a channel transfer function as parallel binary symmetric channels (BSCs) with trainable bit-flip probabilities. Building on this model, ESC-MVQ jointly trains multiple VQ codebooks and their associated bit-flip probabilities with a single encoder-decoder pair. At inference, we employ the most appropriate codebook for the given SNR and allocate the symbol power based on trained codebooks and bit-flip probabilities. Simulation results demonstrate that ESC-MVQ significantly outperforms existing methods while improving memory efficiency, offering a scalable and robust solution for practical semantic communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "MOC-RVQ: Multilevel Codebook-Assisted Digital Generative Semantic Communication",
+  "authors": [
+   "Yingbin Zhou",
+   "Yaping Sun",
+   "Guanying Chen",
+   "Xiaodong Xu",
+   "Hao Chen",
+   "Binhong Huang",
+   "Shuguang Robert Cui",
+   "Ping Zhang"
+  ],
+  "year": 2024,
+  "venue": "Globecom",
+  "doi": "10.1109/globecom52923.2024.10901060",
+  "arxiv": "2401.01272",
+  "openalex": "W4408324402",
+  "cited_by": 23,
+  "abstract": "Vector quantization-based image semantic communication systems have successfully boosted transmission efficiency, but face challenges with conflicting requirements between code-book design and digital constellation modulation. Traditional codebooks need wide index ranges, while modulation favors few discrete states. To address this, we propose a multilevel generative semantic communication system with a two-stage training framework. In the first stage, we train a high-quality codebook, using a multi-head octonary codebook (MOC) to compress the index range. In addition, a residual vector quantization (RVQ) mechanism is also integrated for effective multilevel communication. In the second stage, a noise reduction block (NRB) based on Swin Transformer is introduced, coupled with the multilevel codebook from the first stage, serving as a high-quality semantic knowledge base (SKB) for generative feature restoration. Finally, to simulate modern image transmission scenarios, we employ a diverse collection of high-resolution 2K images as the test set. The experimental results consistently demonstrate the superior performance of MOC-RVQ over conventional methods such as BPG or JPEG. Additionally, MOC-RVQ achieves comparable performance to an analog JSCC scheme, while needing only one-sixth of the channel bandwidth ratio (CBR) and being directly compatible with digital transmission systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "LiteSC: A Lightweight Semantic Communication System with Hessian-Aware Pruning and Nonuniform-to-Uniform Quantization",
+  "authors": [
+   "Jiewen Deng",
+   "Haitao Zhao",
+   "Nan Li",
+   "Li Zhou",
+   "Yichi Zhang",
+   "Yuyuan Zhang",
+   "Jibo Wei"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3745429",
+  "arxiv": null,
+  "openalex": "W7223044701",
+  "cited_by": 0,
+  "abstract": "Emerging edge-intelligence applications, such as virtual/augmented reality and the Internet of Things, require the reliable delivery of high-volume data under stringent latency and resource constraints. Semantic communication (SC), which transmits task-relevant meaning rather than raw bits, offers a promising route to improve bandwidth efficiency. However, existing SC transceivers rely heavily on deep neural networks (DNNs), incurring substantial computation and memory overhead that hinders deployment on resource-constrained edge devices. In addition, continuous-valued semantic features are not directly compatible with conventional digital communication hardware that operates on discrete constellations. To address these challenges, we propose LiteSC, a lightweight and digital-friendly SC system that jointly reduces computational and communication overhead while enabling practical digital modulation. We first introduce a SC framework with a learnable nonuniform-to-uniform quantization (N2UQ) module to convert continuous semantic representations into uniformly spaced discrete levels suitable for constellation mapping. Then, we develop a Hessian-pruned transceiver by removing redundant neurons based on second-order loss sensitivity, substantially reducing parameters and FLOPs. Finally, we apply N2UQ to both the pruned model parameters and the semantic features, achieving further compression with minimal fidelity loss. Experimental result demonstrate that LiteSC maintains high performance while drastically reducing resource requirements. Under Rician fading channels, LiteSC preserves 98.83% BLEU score and 97.90% semantic similarity score of the state-of-the-art DeepSC model, using only 6.26% of the model size. Under AWGN channels, LiteSC outperforms magnitude-based pruning and uniform quantization baselines by 7.67% and 23.58% in BLEU score, respectively.",
+  "source": "openalex"
+ },
+ {
+  "title": "OFDM-Based Digital Semantic Communication With Importance Awareness",
+  "authors": [
+   "Chuanhong Liu",
+   "Caili Guo",
+   "Yang Yang",
+   "Wanli Ni",
+   "Tony Q. S. Quek"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3397862",
+  "arxiv": "2401.02178",
+  "openalex": "W4396712624",
+  "cited_by": 70,
+  "abstract": "Semantic communication (SemCom) has received considerable attention for its ability to reduce data transmission size while maintaining task performance. However, existing works mainly focus on analog SemCom with simple channel models, which may limit its practical application. To reduce this gap, we propose an orthogonal frequency division multiplexing (OFDM)-based SemCom system that is compatible with existing digital communication infrastructures. In the considered system, the extracted semantics is quantized by scalar quantizers, transformed into OFDM signal, and then transmitted over the frequency-selective channel. Moreover, we propose a semantic importance measurement method to build the relationship between target task and semantic features. Based on semantic importance, we formulate a sub-carrier and bit allocation problem to maximize communication performance. However, the optimization objective function cannot be accurately characterized using a mathematical expression due to the neural network-based semantic codec. Given the complex nature of the problem, we first propose a low-complexity sub-carrier allocation method that assigns sub-carriers with better channel conditions to more critical semantics. Then, we propose a deep reinforcement learning-based bit allocation algorithm with dynamic action space. Simulation results demonstrate that the proposed system achieves 9.7% and 28.7% performance gains compared to analog SemCom and conventional bit-based communication systems, respectively.",
+  "source": "openalex"
+ },
+ {
+  "title": "Digital Semantic Communication in ISAC: A Framework for Enhanced Sensing and Communication",
+  "authors": [
+   "Ouwen Huan",
+   "Chuanhong Liu",
+   "Nuocheng Yang",
+   "Zhilong Zhang",
+   "Tao Luo"
+  ],
+  "year": 2025,
+  "venue": "Globecom",
+  "doi": "10.1109/globecom59602.2025.11431688",
+  "arxiv": null,
+  "openalex": "W7138860792",
+  "cited_by": 0,
+  "abstract": "This paper proposes a novel integrated sensing and communication (ISAC) framework incorporating digital semantic communication (SemCom) to resolve the tradeoff between sensing and communication performance. In particular, to accomplish task-oriented semCom, the base station (BS) extracts semantic symbols and transmits each dimension over different orthogonal frequency division multiplex (OFDM) subcarriers. To achieve sensing objective, the BS broadcasts OFDM signals and receives echoes via a uniform linear array (ULA) to estimate echo channel state information (CSI) and obtain target parameters. Given the varying task-related importance of each dimension, the framework allocates quantization bits, modulation order, and transmission power accordingly to meet SemCom requirements. On the other hand, sensing performance is evaluated using the Cramér-Rao Bound (CRB) of echo CSI, with transmission power allocation optimized to enhance sensing. The problem is formulated to minimize the sensing CRB while satisfying SemCom task loss, total resources, and transmission efficiency constraints. To solve this problem, we introduce a Hybrid Action Space Proximal Policy Optimization (H-PPO) algorithm, which can simultaneously determine the power allocated for each dimension from a continuous action space, and select a proper number of quantization bits and modulation order from discrete action spaces. Simulations show that the proposed method enhances SemCom task performance by up to 77% and reduces sensing error by up to 58% compared to conventional digital systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication on Digital Wireless Communication Systems",
+  "authors": [
+   "Binhong Huang",
+   "Hao Chen",
+   "Cheng Guo",
+   "Xiaodong Xu",
+   "Nan Ma",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics14050956",
+  "arxiv": null,
+  "openalex": "W4408051768",
+  "cited_by": 7,
+  "abstract": "Semantic communication has become a hot research topic in recent years. However, it faces an urgent and crucial issue that how semantic communication can be compatible with current wireless systems. To address this issue, we propose a bit-conversion-based transmission framework to make the balance between the modifications of the existing wireless systems and the advantages of semantic communication. Specifically, a specific physical layer procedure including binary conversion coding, rate matching, packet tail detection, and demodulation hard decision is designed to make the end-to-end (E2E) transmission work. Furthermore, a semantic communication simulator is developed to implement this framework. In order to optimize the performance of this framework, a novel physical layer metric, integer error rate (IER), is proposed as a physical layer metric for semantic information transmission. We also prove that IER is more suitable than bit error rate (BER) for the evaluation of semantic communication by simulations. On the basis of IER, a minimum Manhattan distance constellation mapping scheme is proposed, which can improve the transmission quality of semantic communication under the same BER condition. To release the limitation of this constellation mapping scheme that the semantic quantization output has to be bound with the modulation order, we proposed a hybrid JSCC/SSCC transmission scheme, which can separate the semantic quantization output from the modulation order by segmenting the bits to be transmitted. At the same time, the simulation results verified that the hybrid JSCC/SSCC transmission scheme can improve the transmission quality of semantic communication at the low SNR range while saving the bandwidth 50% compared to the benchmark schemes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel Denoising in Digital Semantic Communication Systems via Discrete Diffusion",
+  "authors": [
+   "Wenqian Tang",
+   "Zian Meng",
+   "Qiang Li",
+   "Mingdie Yan",
+   "Xiaohu Ge"
+  ],
+  "year": 2025,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2025.3646169",
+  "arxiv": null,
+  "openalex": "W4417508547",
+  "cited_by": 1,
+  "abstract": "Existing denoising models of semantic communication (SemCom) rely on continuous diffusion, requiring analog signal reconstruction at the receiver. To be compatible with the prevailing digital systems, a fully digital generative SemCom framework is proposed by designing a Channel Discrete Denoising Diffusion Model (CD3M). To capture symbol transitions under digital channel distortions, a discrete Markov chain model is first constructed, which guides CD3M to learn robust denoising dynamics over digital constellations. On this basis, a unified generative digital SemCom architecture is established by integrating CD3M with Vector Quantized Variational Autoencoder (VQVAE), i.e. CD3M-VQVAE, which enables channel-adaptive denoising with a single codec pair. Simulation results demonstrate that CD3M-VQVAE outperforms other single-codec and classical coded-modulation schemes, and can reach the performance of multi-codec methods at moderate SNRs under certain compression rates.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication Systems for Speech Transmission",
+  "authors": [
+   "Zhenzi Weng",
+   "Zhijin Qin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3087240",
+  "arxiv": "2102.12605",
+  "openalex": "W3166791908",
+  "cited_by": 677,
+  "abstract": "Semantic communications could improve the transmission efficiency significantly by exploring the semantic information. In this paper, we make an effort to recover the transmitted speech signals in the semantic communication systems, which minimizes the error at the semantic level rather than the bit or symbol level. Particularly, we design a deep learning (DL)-enabled semantic communication system for speech signals, named DeepSC-S. In order to improve the recovery accuracy of speech signals, especially for the essential information, DeepSC-S is developed based on an attention mechanism by utilizing a squeeze-and-excitation (SE) network. The motivation behind the attention mechanism is to identify the essential speech information by providing higher weights to them when training the neural network. Moreover, in order to facilitate the proposed DeepSC-S for dynamic channel environments, we find a general model to cope with various channel conditions without retraining. Furthermore, we investigate DeepSC-S in telephone systems as well as multimedia transmission systems to verify the model adaptation in practice. The simulation results demonstrate that our proposed DeepSC-S outperforms the traditional communications in both cases in terms of the speech signals metrics, such as signal-to-distortion ration and perceptual evaluation of speech distortion. Besides, DeepSC-S is more robust to channel variations, especially in the low signal-to-noise (SNR) regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Optimization of Digital Semantic Communication and Radar Sensing for Enhanced ISAC",
+  "authors": [
+   "Ouwen Huan",
+   "Chuanhong Liu",
+   "Nuocheng Yang",
+   "Zhilong Zhang",
+   "Tao Luo",
+   "Mingzhe Chen"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2026.3690165",
+  "arxiv": null,
+  "openalex": "W7160821625",
+  "cited_by": 0,
+  "abstract": "In this work, we propose a novel integrated sensing and communication (ISAC) framework for connected and autonomous vehicles (CAVs), which incorporates digital semantic communication (SemCom) to achieve both reliable communication and accurate sensing. Within this framework, the transmitting vehicle extracts semantic symbols from the source data and transmits them over orthogonal frequency division multiplexing (OFDM) sub-carriers, while simultaneously utilizing echo signals for radar-based environmental sensing. To achieve reliable SemCom, the transmitter must jointly optimize the quantization bitwidth for semantic symbols, the modulation order, the power allocation across semantic symbol dimensions, and the transmit beamforming strategy. These optimizations must also consider sensing performance, leading to a tradeoff between radar sensing and task-oriented SemCom. To address this joint optimization problem, we decompose it into three subproblems and develop corresponding solutions: 1) a hierarchical constrained proximal policy optimization (H-CPPO) algorithm to determine the quantization bitwidth, modulation order, and power allocation under frequency-flat channels, 2) a joint beamforming strategy to optimize the dual-function radar-SemCom transmit beamforming vector, and 3) a semantic importance-based signal-to-noise ratio (SNR) matching strategy that effectively adapts the optimal power allocation obtained under frequency-flat conditions to fading channels with random gains. Simulation results on a road image segmentation task show that, the proposed SemCom scheme achieves near-optimal segmentation accuracy while reducing radar beamforming error by up to 82% compared to the conventional digital system using the same quadrature phase shift keying (QPSK) modulation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Dual-Branch Vector-Quantization-Aided Satellite Digital Semantic Communication with Index Compression for High-Resolution RSI Over AFDM",
+  "authors": [
+   "Jianqiao Chen",
+   "Nan Ma",
+   "Xiaodong Xu",
+   "Tingting Zhu",
+   "Huishi Song",
+   "Chen Dong",
+   "Rui Meng",
+   "Wenkai Liu",
+   "Ke Peng",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.35906",
+  "arxiv": "2609.35906",
+  "openalex": "W7214913006",
+  "cited_by": 0,
+  "abstract": "High-resolution remote sensing imagery (RSI) transmission is constrained by satellite-ground bandwidth and channel impairments, yet existing methods struggle to simultaneously achieve extreme compression and robust transmission. To address this, we propose a dual-branch vector-quantization aided satellite digital semantic communication (DVQ-SDSC) framework for RSI transmission over affine frequency division multiplexing (AFDM), whose bandwidth savings arise from two interrelated aspects. First, at the source-coding level, a dual-branch framework is developed to unify deep joint semantic coding, VQ-aided index transmission, channel estimation and adaption in an end-to-end architecture; departing from symmetric encoder designs, the codec is recast as an asymmetric dual-branch architecture that separately processes the high-frequency residuals and the low-frequency structural semantics, with gated fusion and channel-adaptive reconstruction jointly restoring the semantic content. Second, at the index-coding level, we develop a principal component analysis (PCA)-aided codebook reordering to align index topology with latent correlations, and devise group differential pulse-code modulation (G-DPCM) to encode prediction residuals rather than absolute indices, lowering the index bitrate while locally isolating clipping and channel errors. A two-stage training strategy further decouples channel impairments from the semantic codec. FAIR1M experiments over 3GPP NTN-TDL-D demonstrate that DVQ-SDSC with G-DPCM index coding outperforms the conventional JPEG-LDPC scheme at the base rate of 0.0625 bits per pixel (BPP), and that G-DPCM applies directly to the trained codec without retraining, yielding additional index compression at no extra cost.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multi-User Semantic Communication on Hybrid NOMA",
+  "authors": [
+   "Zian Meng",
+   "Likun Huang",
+   "Qiang Li",
+   "Wensheng Zhang",
+   "Bing Tao Tang",
+   "Chen Wang",
+   "Xiaohu Ge"
+  ],
+  "year": 2023,
+  "venue": "Asia-Pacific Conference on Communications (APCC)",
+  "doi": "10.1109/apcc60132.2023.10460651",
+  "arxiv": null,
+  "openalex": "W4392796975",
+  "cited_by": 6,
+  "abstract": "In traditional non-orthogonal multiple access (NOMA) systems, the secondary user often encounters decoding challenges caused by a lower signal-to-noise ratio (SNR) as it is assigned less power to prevent the primary user from decoding errors. One way to address this issue is by employing semantic communication, which is known for its robustness in low SNR conditions. In this paper, multi-user semantic communication is investigated in a traditional-semantic hybrid NOMA (TSH-NOMA) system, enabling simultaneous transmissions from both the bit user and the semantic user at the same frequency. However, the compatibility between continuous semantic signals and discrete bit signals remains an open problem. Quantization of semantic features has been attempted to address this problem, but it often results in noticeable performance degradation. To tackle this issue, a novel digital semantic constellation design that allows the encoder to generate a semantic constellation similar to typical digital modulation is proposed. This enables the semantic user’s signal to be readily transmitted over the digital channel without affecting the traditional bit user. Simulation results demonstrate that the proposed method allows for the transmission of the semantic user’s signal on the digital channel with negligible performance degradation. Furthermore, the secondary user in the proposed TSH-NOMA system exhibits considerable performance improvement over its counterpart in traditional NOMA, particularly at low-to-medium SNR, without compromising the performance of the primary user.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Semantic-Channel Coding and Modulation for Token Communications",
+  "authors": [
+   "Jingkai Ying",
+   "Zhijin Qin",
+   "Yulong Feng",
+   "Liejun Wang",
+   "Xiaoming Tao"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3636174",
+  "arxiv": "2511.15699",
+  "openalex": "W4416965747",
+  "cited_by": 4,
+  "abstract": "In recent years, the Transformer architecture has achieved outstanding performance across a wide range of tasks and modalities. Token is the unified input and output representation in Transformer-based models, which has become a fundamental information unit. In this work, we consider the problem of token communication, studying how to transmit tokens efficiently and reliably. Point cloud, a prevailing three-dimensional format which exhibits a more complex spatial structure compared to image or video, is chosen to be the information source. We utilize the set abstraction method to obtain point tokens. Subsequently, to get a more informative and transmission-friendly representation based on tokens, we propose a joint semantic-channel and modulation (JSCCM) scheme for the token encoder, mapping point tokens to standard digital constellation points (modulated tokens). Specifically, the JSCCM consists of two parallel Point Transformer-based encoders and a differential modulator which combines the Gumel-softmax and soft quantization methods. Besides, the rate allocator and channel adapter are developed, facilitating adaptive generation of high-quality modulated tokens conditioned on both semantic information and channel conditions. Extensive simulations demonstrate that the proposed method outperforms both joint semantic-channel coding and traditional separate coding, achieving over 1dB gain in reconstruction and more than 6× compression ratio in modulated symbols.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Adaptive Semantic Communication via Multi-Stage Vector Quantization",
+  "authors": [
+   "Jinsung Park",
+   "Junyong Shin",
+   "Yongjeong Oh",
+   "Jihun Park",
+   "Yo–Seb Jeon"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2510.02646",
+  "arxiv": "2510.02646",
+  "openalex": "W4416369211",
+  "cited_by": 0,
+  "abstract": "This paper proposes a novel framework for rate-adaptive semantic communication based on multi-stage vector quantization (VQ), termed \\textit{MSVQ-SC}. Unlike conventional single-stage VQ approaches, which require exponentially larger codebooks to achieve higher fidelity, the proposed framework decomposes the quantization process into multiple stages and dynamically activates both stages and individual VQ modules. This design enables fine-grained rate adaptation under varying bit constraints while mitigating computational complexity and the codebook collapse problem. To optimize performance, we formulate a module selection problem that minimizes task loss subject to a rate constraint and solve it using an incremental allocation algorithm. Furthermore, we extend the framework by incorporating entropy coding to exploit non-uniform codeword distributions, further reducing communication overhead. Simulation results on the CIFAR-10 dataset demonstrate that the proposed framework outperforms existing digital semantic communication methods, achieving superior semantic fidelity with lower complexity while providing flexible and fine-grained rate control.",
+  "source": "openalex"
+ },
+ {
+  "title": "VQ-DSC-R: Robust Vector Quantized-Enabled Digital Semantic Communication With OFDM Transmission",
+  "authors": [
+   "Jianqiao Chen",
+   "Nan Ma",
+   "Xiaodong Xu",
+   "Tingting Zhu",
+   "Huishi Song",
+   "Chen Dong",
+   "Wenkai Liu",
+   "Rui Meng",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2026.3712380",
+  "arxiv": "2602.15045",
+  "openalex": "W7168183616",
+  "cited_by": 0,
+  "abstract": "Digital semantic communication promises seamless integration with existing infrastructure, yet faces critical challenges in reconciling continuous semantic features with discrete transmission constraints over multipath fading channels. Existing vector quantization (VQ) schemes suffer from codebook collapse and gradient mismatch, while channel estimation errors induce catastrophic decoding failures. To address these, we propose VQ-DSC-R, a robust digital semantic communication framework built upon orthogonal frequency division multiplexing (OFDM). First, we design a hierarchical semantic codec utilizing a Swin Transformer backbone, coupled with a novel differentiable VQ with adaptive noise-variance (ANDVQ) scheme. ANDVQ dynamically calibrates quantization boundaries using K-nearest neighbor statistics and stabilizes training via exponential moving average, resolving the long-standing codebook under-utilization issue. Second, we develop a conditional diffusion model (CDM) for channel state information (CSI) refinement. By incorporating SNR-adaptive noise scheduling and a gated fusion mechanism, the CDM accurately recovers CSI from sparse pilots within five sampling steps, effectively mitigating multipath distortion. Third, a three-stage training strategy is introduced to decouple semantic quantization, channel adaptation, and joint optimization, ensuring stable convergence. Extensive experiments on the 3GPP EPA channel demonstrate that VQ-DSC-R achieves superior performance, attaining a 29.22dB peak signal-to-noise ratio (PSNR) and 0.959 multiscale structural similarity (MS-SSIM) at a 0.02 bit compression ratio (BCR). Compared to conventional JPEG+LDPC schemes, our framework reduces bandwidth consumption by 80% while avoiding thecliff effect.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptive Resource Allocation for Semantic Communication Networks",
+  "authors": [
+   "Lingyi Wang",
+   "Wei Qiang Wu",
+   "Fuhui Zhou",
+   "Zhaohui Yang",
+   "Zhijin Qin",
+   "Qihui Wu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3405355",
+  "arxiv": "2312.01081",
+  "openalex": "W4398775154",
+  "cited_by": 111,
+  "abstract": "In this paper, we propose an adaptive semantic resource allocation paradigm with semantic-bit quantization (SBQ) compatible with existing wireless communications, where the inaccurate environment perception introduced by the additional mapping relationship between semantic metrics and transmission metrics is solved. Specifically, SBQ is a hybrid uniform-non-uniform quantization method, which aims to facilitate the coding between semantics and bits. In order to investigate the performance of semantic communication networks, the quality of service for semantic communication (SC-QoS), including the semantic quantization efficiency (SQE) and transmission latency, is proposed for the first time. A problem of maximizing the overall effective SC-QoS is formulated by jointly optimizing the transmit beamforming of the base station, the bits for semantic representation, the subchannel assignment, and the bandwidth resource allocation. To address the non-convex formulated problem, an intelligent resource allocation scheme is proposed based on a hybrid deep reinforcement learning (DRL) algorithm, where the intelligent agent can perceive both semantic tasks and dynamic wireless environments. Simulation results demonstrate that our design can effectively combat semantic noise and achieve superior performance in wireless communications compared to several benchmark schemes. Furthermore, compared to mapping-guided paradigm based resource allocation schemes, our proposed adaptive scheme can achieve up to 13% performance improvement in terms of SC-QoS.",
+  "source": "openalex"
+ },
+ {
+  "title": "Robust Information Bottleneck for Task-Oriented Communication With Digital Modulation",
+  "authors": [
+   "Songjie Xie",
+   "Shuai Ma",
+   "Ming Ding",
+   "Yuanming Shi",
+   "MingJian Tang",
+   "Youlong Wu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3288252",
+  "arxiv": "2209.10382",
+  "openalex": "W4381785911",
+  "cited_by": 124,
+  "abstract": "Task-oriented communications, mostly using learning-based joint source-channel coding (JSCC), aim to design a communication-efficient edge inference system by transmitting task-relevant information to the receiver. However, only transmitting task-relevant information without introducing any redundancy may cause robustness issues in learning due to the channel variations, and the JSCC which directly maps the source data into continuous channel input symbols poses compatibility issues on existing digital communication systems. In this paper, we address these two issues by first investigating the inherent tradeoff between the informativeness of the encoded representations and the robustness to information distortion in the received representations, and then propose a task-oriented communication scheme with digital modulation, named discrete task-oriented JSCC (DT-JSCC), where the transmitter encodes the features into a discrete representation and transmits it to the receiver with the digital modulation scheme. In the DT-JSCC scheme, we develop a robust encoding framework, named robust information bottleneck (RIB), to improve the communication robustness to the channel variations, and derive a tractable variational upper bound of the RIB objective function using the variational approximation to overcome the computational intractability of mutual information. The experimental results demonstrate that the proposed DT-JSCC achieves better inference performance than the baseline methods with low communication latency, and exhibits robustness to channel variations due to the applied RIB framework.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight low-SNR-robust semantic communication system for autonomous driving",
+  "authors": [
+   "Ruixing Ren",
+   "Minjie Wei",
+   "Junhui Zhao"
+  ],
+  "year": 2026,
+  "venue": "Ad Hoc Networks",
+  "doi": "10.1016/j.adhoc.2026.104414",
+  "arxiv": "2604.20278",
+  "openalex": "W7155392948",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Vision Transformer-Based Semantic Communications With Importance-Aware Quantization",
+  "authors": [
+   "Joohyuk Park",
+   "Yongjeong Oh",
+   "Yongjune Kim",
+   "Yo–Seb Jeon"
+  ],
+  "year": 2025,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "10.1109/jiot.2025.3580597",
+  "arxiv": "2412.06038",
+  "openalex": "W4411358807",
+  "cited_by": 18,
+  "abstract": "Semantic communications provide significant performance gains over traditional communications by transmitting task-relevant semantic features through wireless channels. However, most existing studies rely on end-to-end (E2E) training of neural-type encoders and decoders to ensure effective transmission of these semantic features. To enable semantic communications without relying on E2E training, this paper presents a vision transformer (ViT)-based semantic communication system with importance-aware quantization (IAQ) for wireless image transmission. The core idea of the presented system is to leverage the attention scores of a pretrained ViT model to quantify the importance levels of image patches. Based on this idea, our IAQ framework assigns different quantization bits to image patches based on their importance levels. This is achieved by formulating a weighted quantization error minimization problem, where the weight is set to be an increasing function of the attention score. Then, an optimal incremental allocation method and a low-complexity water-filling method are devised to solve the formulated problem. Our framework is further extended for realistic digital communication systems by modifying the bit allocation problem and the corresponding allocation methods based on an equivalent binary symmetric channel (BSC) model. Simulations on single-view image classification, multi-view image classification, and single-object detection tasks demonstrate that our IAQ framework outperforms conventional image compression methods under both error-free and realistic communication scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptive Semantic Communication with Residual Quantization for Resilient Vehicular Networks",
+  "authors": [
+   "Xuanhao Luo",
+   "Ruichen Gao",
+   "Sandeep Sreenivasan",
+   "Zhizhen Li",
+   "Yuchen Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.10886",
+  "arxiv": "2610.10886",
+  "openalex": "W7221070474",
+  "cited_by": 0,
+  "abstract": "Vehicular networks require timely visual information exchange to support safety-critical applications such as cooperative perception and hazard awareness, yet transmitting high-dimensional camera data over bandwidth-limited and dynamic wireless links remains challenging. In this paper, we propose an adaptive semantic communication architecture for vehicular multicast that adjusts the amount of visual information transmitted according to current channel conditions, available communication resources, and latency requirements. Specifically, the visual encoder uses residual quantization to represent each image at multiple bitrate and reconstruction-quality levels. At runtime, the system selects an appropriate level based on the communication conditions, enabling it to trade visual fidelity for lower transmission overhead when network resources are limited. Context-adaptive entropy coding further compresses the quantized representations using offline-learned statistics, without requiring retraining for different channel conditions. This design allows the visual representation to be learned offline while the communication strategy is adapted online. Experimental results demonstrate competitive rate-distortion performance at ultra-low bitrates, improved delivery reliability and deadline satisfaction across diverse vehicular scenarios, and strong downstream perception performance, achieving up to 0.88 mAP50 while dynamically adapting to changing communication conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight Low-SNR-Robust Semantic Communication System for Autonomous Driving",
+  "authors": [
+   "Ruixing Ren",
+   "Junhui Zhao",
+   "Minjie Wei"
+  ],
+  "year": 2026,
+  "venue": "SSRN Electronic Journal",
+  "doi": "10.2139/ssrn.6734298",
+  "arxiv": null,
+  "openalex": "W7160632286",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "VQ-DeepVSC: A Dual-Stage Vector Quantization System for Video Semantic Communication",
+  "authors": [
+   "Yongyi Miao",
+   "Zhongdang Li",
+   "Yang Wang",
+   "Die Hu",
+   "Jun Yan",
+   "Youfang Wang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3641237",
+  "arxiv": "2409.03393",
+  "openalex": "W4417337177",
+  "cited_by": 2,
+  "abstract": "In response to the rapid growth of global video traffic and the limitations of traditional wireless transmission systems, we propose a novel dual-stage vector quantization system, VQ-DeepVSC, tailored to enhance video transmission over wireless channels. In the first stage, we design the adaptive key-frame extractor and interpolator, deployed respectively at the transmitter and receiver, which intelligently select key frames to minimize inter-frame redundancy and mitigate thecliff-effectunder challenging channel conditions. In the second stage, we propose the semantic vector quantization encoder and decoder, placed respectively at the transmitter and receiver, which efficiently compress key frames using advanced indexing and spatial normalization modules to reduce redundancy. Additionally, we propose adjustable index selection and recovery modules, enhancing compression efficiency and enabling flexible compression ratio adjustment. Compared to the existing methods based on joint source-channel coding (JSCC) framework, the proposed method exhibits superior compatibility with current digital communication systems. Experimental results demonstrate that VQ-DeepVSC achieves substantial improvements in both Multi-Scale Structural Similarity (MS-SSIM) and Learned Perceptual Image Patch Similarity (LPIPS) metrics than the H.265 standard, particularly under low channel signal-to-noise ratio (SNR) or multi-path channels, highlighting the significantly enhanced transmission capabilities of our approach.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI-Based Vector Quantized End-to-End Semantic Communication System for Wireless Image Transmission",
+  "authors": [
+   "Maheshi Lokumarambage",
+   "Thushan Sivalingam",
+   "Feng Dong",
+   "Nandana Rajatheva",
+   "Anil Fernando"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Machine Learning in Communications and Networking",
+  "doi": "10.1109/tmlcn.2025.3607891",
+  "arxiv": null,
+  "openalex": "W4414165644",
+  "cited_by": 6,
+  "abstract": "Semantic communication (SemCom) systems enhance transmission efficiency by conveying semantic information in lieu of raw data. However, challenges arise when designing these systems due to the need for robust semantic source coding for information representation extending beyond the training dataset, maintaining channel-agnostic performance, and ensuring robustness to channel and semantic noise. We propose a novel generative artificial intelligence (AI) based SemCom architecture conditioned on quantized latent. The system reduces the communication overhead of the wireless channel by transmitting the index of the quantized latent over the communication channel by mapping the quantized vector to the learned codebook vectors. The learned codebook is the shared knowledge base. The encoder is designed with a novel spatial attention mechanism based on image energy, focusing on object edges. The critic assesses the realism of generated data relative to the original distribution, with the Wasserstein distance-enhancing training stability. We trained the model on a novel dataset consisting of images from Flickr8K, DIV2K, and CelebA-HQ, with data augmentation applied to enhance generalization across diverse distributions. The proposed SemCom system outperforms the traditional scheme with low-density parity-check (LDPC) channel coding across various channel coding rates and noise levels. Notably, at low Signal-to-noise ratio (SNR) levels (<5 dB) SemCom system outperforms better portable graphics (BPG). Additionally, it shows comparable performance with joint source-channel coding (JSCC). The model effectively transmits high-resolution images without additional error correction at the receiver and achieves superior performance in human-face image transmission. We propose a novel semantic-based matrix to evaluate the robustness to noise and task-specific semantic distortion, as traditional matrices lack meaningful evaluation for SemCom systems, which the novel SemCom system outperforms conventional methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Personalized Digital Semantic Communication for Image Transmission with Vision-Language Models",
+  "authors": [
+   "Nan Li",
+   "Li Zhou",
+   "Haijun Wang",
+   "Jun Xiong",
+   "Haitao Zhao",
+   "Jibo Wei"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.14260",
+  "arxiv": "2608.14260",
+  "openalex": "W7203604007",
+  "cited_by": 0,
+  "abstract": "Semantic communication (SC) enables bandwidth-efficient wireless image transmission, but most existing SC schemes are user-agnostic and ignore receiver-dependent semantics. To address this issue, we propose a personalized digital semantic communication (PDSC) framework that integrates a vision-language model (VLM)-based semantic encoder with a latent diffusion model (LDM)-based semantic decoder. Specifically, the semantic encoder extracts source-aware personalized semantic tokens from both the source image and the receiver's historical interactions. These tokens are vector-quantized into discrete semantic indices and further encoded into a compact fixed-length bitstream, enabling compatibility with digital transmission. At the receiver, the semantic decoder reconstructs a personalized image conditioned on the recovered semantic tokens. Furthermore, we formulate a capacity-constrained personalized semantic rate-distortion problem and introduce a semantic distortion metric that jointly characterizes source-semantic fidelity and user-preference alignment. Experiments show that PDSC achieves superior source-semantic consistency and personalization over state-of-the-art SC baselines, including CDDM and MoS, under bandwidth-limited wireless transmission.",
+  "source": "openalex"
+ },
+ {
+  "title": "What is Semantic Communication? A View on Conveying Meaning in the Era of Machine Intelligence",
+  "authors": [
+   "Qiao Lan",
+   "Dingzhu Wen",
+   "Zezhong Zhang",
+   "Qunsong Zeng",
+   "Xu Chen",
+   "Petar Popovski",
+   "Kaibin Huang"
+  ],
+  "year": 2021,
+  "venue": "Journal of Communications and Information Networks",
+  "doi": "10.23919/jcin.2021.9663101",
+  "arxiv": "2110.00196",
+  "openalex": "W3202895480",
+  "cited_by": 258,
+  "abstract": "In the 1940s, Claude Shannon developed the information theory focusing on quantifying the maximum data rate that can be supported by a communication channel. Guided by this fundamental work, the main theme of wireless system design up until the fifth generation (5G) was the data rate maximization. In Shannon's theory, the semantic aspect and meaning of messages were treated as largely irrelevant to communication. The classic theory started to reveal its limitations in the modern era of machine intelligence, consisting of the synergy between Internet-of-things (IoT) and artificial intelligence (AI). By broadening the scope of the classic communication-theoretic framework, in this article, we present a view of semantic communication (SemCom) and conveying meaning through the communication systems. We address three communication modalities: human-to-human (H2H), human-to-machine (H2M), and machine-to-machine (M2M) communications. The latter two represent the paradigm shift in communication and computing, and define the main theme of this article. H2M SemCom refers to semantic techniques for conveying meanings understandable not only by humans but also by machines so that they can have interaction and \"dialogue\". On the other hand, M2M SemCom refers to effective techniques for efficiently connecting multiple machines such that they can effectively execute a specific computation task in a wireless network. The first part of this article focuses on introducing the SemCom principles including encoding, layered system architecture, and two design approaches: 1) layer-coupling design; and 2) end-to-end design using a neural network. The second part focuses on the discussion of specific techniques for different application areas of H2M SemCom [including human and AI symbiosis, recommendation, human sensing and care, and virtual reality (VR)/augmented reality (AR)] and M2M SemCom (including distributed learning, split inference, distributed consensus, and machine-vision cameras). Finally, we discuss the approach for designing SemCom systems based on knowledge graphs. We believe that this comprehensive introduction will provide a useful guide into the emerging area of SemCom that is expected to play an important role in sixth generation (6G) featuring connected intelligence and integrated sensing, computing, communication, and control.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptive Wireless Image Semantic Transmission and Over-The-Air Testing",
+  "authors": [
+   "Jiarun Ding",
+   "Peiwen Jiang",
+   "Chao-Kai Wen",
+   "Shi Jin"
+  ],
+  "year": 2024,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC)",
+  "doi": "10.1109/iccc62479.2024.10681697",
+  "arxiv": "2405.13403",
+  "openalex": "W4402811500",
+  "cited_by": 10,
+  "abstract": "Semantic communications have undergone considerable evolution due to rapid development of artificial intelligence (AI), significantly enhancing both communication robustness and efficiency. However, most current semantic communications for image transmission pay little attention to differing importance of objects and backgrounds in images. To address this issue, we propose a novel scheme named ASCViT-JSCC, which utilizes vision transformers (ViTs) integrated with an orthogonal frequency division multiplexing (OFDM) system. This scheme adaptively allocates bandwidth for objects and backgrounds in images according to the importance order of different parts determined by object detection of you only look once version 5 (YOLOv5) and feature points detection of scale invariant feature transform (SIFT). Furthermore, the proposed scheme adheres to digital modulation standards by incorporating quantization modules. We validate this approach through an over-the-air (OTA) testbed named intelligent communication prototype validation platform (ICP) based on a software-defined radio (SDR) and NVIDIA embedded kits. Our findings from both simulations and practical measurements show that ASCViT-JSCC significantly preserves objects in images and enhances reconstruction quality compared to existing methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Unified Multi-Task Semantic Communication System for Multimodal Data",
+  "authors": [
+   "Guangyi Zhang",
+   "Qiyu Hu",
+   "Zhijin Qin",
+   "Yunlong Cai",
+   "Guanding Yu",
+   "Xiaoming Tao"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3364990",
+  "arxiv": "2209.07689",
+  "openalex": "W4391677749",
+  "cited_by": 233,
+  "abstract": "Task-oriented semantic communications have achieved significant performance gains. However, the employed deep neural networks in semantic communications have to be updated when the task is changed or multiple models need to be stored for performing different tasks. To address this issue, we develop a unified deep learning-enabled semantic communication system (U-DeepSC), where a unified end-to-end framework can serve many different tasks with multiple modalities of data. As the number of required features varies from task to task, we propose a vector-wise dynamic scheme that can adjust the number of transmitted symbols for different tasks. Moreover, our dynamic scheme can also adaptively adjust the number of transmitted features under different channel conditions to optimize the transmission efficiency. Particularly, we devise a lightweight feature selection module (FSM) to evaluate the importance of feature vectors, which can hierarchically drop redundant feature vectors and significantly accelerate the inference. To reduce the transmission overhead, we then design a unified codebook for feature representation to serve multiple tasks, where only the indices of these task-specific features in the codebook are transmitted. According to the simulation results, the proposed U-DeepSC achieves comparable performance to the task-oriented semantic communication system designed for a specific task but with significant reduction in both transmission overhead and model size.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extended Universal Joint Source-Channel Coding for Digital Semantic Communications: Improving Channel-Adaptability",
+  "authors": [
+   "Eunsoo Kim",
+   "Yoon Huh",
+   "Wan Choi"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2602.14018",
+  "arxiv": "2602.14018",
+  "openalex": "W7129468177",
+  "cited_by": 0,
+  "abstract": "Deep learning (DL)-based joint source--channel coding (JSCC), particularly vector quantization (VQ)-based JSCC, enables efficient semantic communication by mapping high-dimensional feature vectors into compact codeword indices for digital modulation. However, existing methods, including universal JSCC (uJSCC), rely on fixed, modulation-specific encoders, decoders, and codebooks, limiting adaptation to fine-grained channel variations. We propose an extended universal JSCC (euJSCC) framework that enables adaptive transmission across both modulation orders and fine-grained channel conditions within a single model using hypernetwork-based normalization and a dynamic codebook generation (DCG) network that refines modulation-specific base codebooks according to channel quality indicator (CQI) feedback. To support time-varying channels with periodic CQI feedback, euJSCC employs an inner--outer encoder--decoder architecture, where the outer modules capture long-term channel statistics and the inner modules refine feature vectors to align with block-wise codebooks. A two-phase training strategy first pretrains the outer modules and DCG network over additive white Gaussian noise (AWGN) channels to establish stable feature--codebook alignment and then fine-tunes the full model over time-varying channels. Experiments demonstrate that euJSCC consistently outperforms state-of-the-art channel-adaptive digital JSCC schemes in image transmission, while additional evaluations under practical channel and feedback conditions and on a downstream task further validate its effectiveness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Successive Refinement: A Generative AI-Aided Semantic Communication Framework",
+  "authors": [
+   "Kexin X. Zhang",
+   "Lixin Li",
+   "Wensheng Lin",
+   "Yuna Yan",
+   "Rui Li",
+   "Wenchi Cheng",
+   "Zhu Han"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2025.3526839",
+  "arxiv": "2408.05112",
+  "openalex": "W4406137664",
+  "cited_by": 39,
+  "abstract": "Semantic Communication (SC) is an emerging technology aiming to surpass the Shannon limit. Traditional SC strategies often minimize signal distortion between the original and reconstructed data, neglecting perceptual quality, especially in low Signal-to-Noise Ratio (SNR) environments. To address this issue, we introduce a novel Generative AI Semantic Communication (GSC) system for single-user scenarios. This system leverages deep generative models to establish a new paradigm in SC. Specifically, At the transmitter end, it employs a joint source-channel coding mechanism based on the Swin Transformer for efficient semantic feature extraction and compression. At the receiver end, an advanced Diffusion Model (DM) reconstructs high-quality images from degraded signals, enhancing perceptual details.Additionally, we present a Multi-User Generative Semantic Communication (MU-GSC) system utilizing an asynchronous processing model. This model effectively manages multiple user requests and optimally utilizes system resources for parallel processing. Simulation results on public datasets demonstrate that our generative AI semantic communication systems achieve superior transmission efficiency and enhanced communication content quality across various channel conditions. Compared to CNN-based DeepJSCC, our methods improve the Peak Signal-to-Noise Ratio (PSNR) by 17.75% in Additive White Gaussian Noise (AWGN) channels and by 20.84% in Rayleigh channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "SCAN: Semantic Communication With Adaptive Channel Feedback",
+  "authors": [
+   "Guangyi Zhang",
+   "Qiyu Hu",
+   "Yunlong Cai",
+   "Guanding Yu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3394867",
+  "arxiv": "2306.15534",
+  "openalex": "W4396240934",
+  "cited_by": 65,
+  "abstract": "In existing semantic communication systems for image transmission, some images are generally reconstructed with considerably low quality. As a result, the reliable transmission of each image cannot be guaranteed, bringing significant uncertainty to semantic communication systems. To address this issue, we propose a novel performance metric to characterize the reliability of semantic communication systems termed semantic distortion outage probability (SDOP), which is defined as the probability of the instantaneous distortion larger than a given target threshold. Then, since the images with lower reconstruction quality are generally less robust and need to be allocated with more communication resources, we propose a novel framework of Semantic Communication with Adaptive chaNnel feedback (SCAN). It can reduce SDOP by adaptively adjusting the overhead of channel feedback for images with different reconstruction qualities, thereby enhancing transmission reliability. To realize SCAN, we first develop a deep learning-enabled semantic communication system for multiple-input multiple-output (MIMO) channels (DeepSC-MIMO) by leveraging the channel state information (CSI) and noise variance in the model design. We then develop a performance evaluator to predict the reconstruction quality of each image at the transmitter by distilling knowledge from DeepSC-MIMO. In this way, images with lower predicted reconstruction quality will be allocated with a longer CSI codeword to guarantee the reconstruction quality. We perform extensive experiments to demonstrate that the proposed scheme can significantly improve the reliability of image transmission while greatly reducing the feedback overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Non-Orthogonal Multiple Access Enhanced Multi-User Semantic Communication",
+  "authors": [
+   "Weizhi Li",
+   "Haotai Liang",
+   "Chen Dong",
+   "Xiaodong Xu",
+   "Ping Zhang",
+   "Kaijun Liu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2023.3306852",
+  "arxiv": "2303.06597",
+  "openalex": "W4386025812",
+  "cited_by": 80,
+  "abstract": "Semantic communication has served as a novel paradigm and attracted a broad interest from researchers. One critical aspect of it is the multi-user semantic communication theory, which can further enhance its application for the practical network environment. While most existing works have focused on the design of end-to-end single-user semantic transmission, a novel non-orthogonal multiple access (NOMA)-based multi-user semantic communication system named NOMASC is proposed in this study. The proposed system can support semantic transmission of multiple users with diverse modalities of source information. To avoid high demand for the hardware, an asymmetric quantizer is employed at the end of the semantic encoder for discretizing the continuous full-resolution semantic feature. In addition, a neural network model is used for mapping the discrete feature into self-learned symbols and accomplishing intelligent multi-user detection (MUD) at the receiver side. Simulation results demonstrate that the proposed system attains sound performance in non-orthogonal transmission of multiple user signals and outperforms the other methods, particularly with low-to-medium signal-to-noise ratios (SNRs). Moreover, it has shown high robustness under various simulation settings and mismatched testing scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "Energy Efficient Semantic Communication Over Wireless Networks With Rate Splitting",
+  "authors": [
+   "Zhaohui Yang",
+   "Mingzhe Chen",
+   "Zhaoyang Zhang",
+   "Chongwen Huang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3240713",
+  "arxiv": "2301.01987",
+  "openalex": "W4318586293",
+  "cited_by": 177,
+  "abstract": "In this paper, the problem of wireless resource allocation and semantic information extraction for energy efficient semantic communications over wireless networks with rate splitting is investigated. In the considered model, a base station (BS) first extracts semantic information from its large-scale data, and then transmits the small-sized semantic information to each user which recovers the original data based on its local common knowledge. At the BS side, the probability graph is used to extract multi-level semantic information. In the downlink transmission, a rate splitting scheme is adopted, while the private small-sized semantic information is transmitted through private message and the common knowledge is transmitted through common message. Due to limited wireless resource, both computation energy and transmission energy are considered. This joint computation and communication problem is formulated as an optimization problem aiming to minimize the total communication and computation energy consumption of the network under computation, latency, and transmit power constraints. To solve this problem, an alternating algorithm is proposed where the closed-form solutions for semantic information extraction ratio and computation frequency are obtained at each step. Numerical results verify the effectiveness of the proposed algorithm.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Theoretically-Grounded Codebook for Digital Semantic Communications",
+  "authors": [
+   "Lingyi Wang",
+   "Rashed Shelim",
+   "Walid Saad",
+   "Naren Ramakrishnan"
+  ],
+  "year": 2026,
+  "venue": "IEEE Consumer Communications and Networking Conference",
+  "doi": "10.1109/ccnc65079.2026.11366555",
+  "arxiv": "2510.07108",
+  "openalex": "W7127627913",
+  "cited_by": 2,
+  "abstract": "The use of a learnable codebook provides an efficient way for semantic communications to map vector-based high-dimensional semantic features onto discrete symbol representations required in digital communication systems. In this paper, the problem of codebook-enabled quantization mapping for digital semantic communications is studied from the perspective of information theory. Particularly, a novel theoretically-grounded codebook design is proposed for jointly optimizing quantization efficiency, transmission efficiency, and robust performance. First, a formal equivalence is established between the one-to-many synonymous mapping defined in semantic information theory and the many-to-one quantization mapping based on the codebook’s Voronoi partitions. Then, the mutual information between semantic features and their quantized indices is derived in order to maximize semantic information carried by discrete indices. To realize the semantic maximum in practice, an entropy-regularized quantization loss based on empirical estimation is introduced for end-to-end codebook training. Next, the physical channel-induced semantic distortion and the optimal codebook size for semantic communications are characterized under bit-flip errors and semantic distortion. To mitigate the semantic distortion caused by physical channel noise, a novel channel-aware semantic distortion loss is proposed. Simulation results on image reconstruction tasks demonstrate the superior performance of the proposed theoretically-grounded codebook that achieves a 24.1% improvement in peak signal-to-noise ratio (PSNR) and a 46.5% improvement in learned perceptual image patch similarity (LPIPS) compared to the existing codebook designs when the signal-to-noise ratio (SNR) is 10 dB.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Wisdom-Evolutionary and Primitive-Concise 6G: A New Paradigm of Semantic Communication Networks",
+  "authors": [
+   "Ping Zhang",
+   "Wenjun Xu",
+   "Hui Gao",
+   "Kai Niu",
+   "Xiaodong Xu",
+   "Xiaoqi Qin",
+   "Caixia Yuan",
+   "Zhijin Qin",
+   "Haitao Zhao",
+   "Jibo Wei",
+   "Fangwei Zhang"
+  ],
+  "year": 2021,
+  "venue": "Engineering",
+  "doi": "10.1016/j.eng.2021.11.003",
+  "arxiv": null,
+  "openalex": "W3213872105",
+  "cited_by": 318,
+  "abstract": "The sixth generation (6G) mobile networks will reshape the world by offering instant, efficient, and intelligent hyper-connectivity, as envisioned by the previously proposed Ubiquitous-X 6G networks. Such hyper-massive and global connectivity will introduce tremendous challenges into the operation and management of 6G networks, calling for revolutionary theories and technological innovations. To this end, we propose a new route to boost network capabilities toward a wisdom-evolutionary and primitive-concise network (WePCN) vision for the Ubiquitous-X 6G network. In particular, we aim to concretize the evolution path toward the WePCN by first conceiving a new semantic representation framework, namely semantic base, and then establishing an intelligent and efficient semantic communication (IE-SC) network architecture. In the IE-SC architecture, a semantic intelligence plane is employed to interconnect the semantic-empowered physical-bearing layer, network protocol layer, and application-intent layer via semantic information flows. The proposed architecture integrates artificial intelligence and network technologies to enable intelligent interactions among various communication objects in 6G. It features a lower bandwidth requirement, less redundancy, and more accurate intent identification. We also present a brief review of recent advances in semantic communications and highlight potential use cases, complemented by a range of open challenges for 6G.",
+  "source": "openalex"
+ },
+ {
+  "title": "Hybrid Digital-Analog Semantic Communications",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Zhu Han",
+   "Khaled B. Letaief"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3559149",
+  "arxiv": "2405.12580",
+  "openalex": "W4409326508",
+  "cited_by": 9,
+  "abstract": "Digital and analog semantic communications (SemCom) face inherent limitations such as data security concerns in analog SemCom, as well as leveling-off and cliff-edge effects in digital SemCom. In order to overcome these challenges, we propose a novel SemCom framework and a corresponding system called HDA-DeepSC, which leverages a hybrid digital-analog approach for multimedia transmission. This is achieved through the introduction of digital-analog allocation and fusion modules. To strike a balance between data rate and distortion, we design new loss functions that take into account long-distance dependencies in the semantic distortion constraint, essential information recovery in the channel distortion constraint, and optimal bit stream generation in the rate constraint. Additionally, we propose denoising diffusion-based signal detection techniques, which involve carefully designed variance schedules and sampling algorithms to refine transmitted signals. Through extensive numerical experiments, we will demonstrate that HDA-DeepSC exhibits robustness to channel variations and is capable of supporting various communication scenarios. Our proposed framework outperforms existing benchmarks in terms of peak signal-to-noise ratio and multi-scale structural similarity, showcasing its superiority in semantic communication quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI-Driven Semantic Communication Networks: Architecture, Technologies, and Applications",
+  "authors": [
+   "Chengsi Liang",
+   "Hongyang Du",
+   "Yao Sun",
+   "Dusit Tao Niyato",
+   "Jiawen Kang",
+   "Dezong Zhao",
+   "Muhammad Ali Imran"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3435524",
+  "arxiv": "2401.00124",
+  "openalex": "W4401070271",
+  "cited_by": 170,
+  "abstract": "Generative artificial intelligence (GAI) has emerged as a rapidly burgeoning field demonstrating significant potential in creating diverse content intelligently and automatically. To support such artificial intelligence-generated content (AIGC) services, future communication systems must fulfill stringent requirements, including high data rates, throughput, and low latency, while efficiently utilizing limited spectrum resources. Semantic communication (SemCom) has been deemed as a revolutionary communication scheme to tackle this challenge by conveying the meaning of messages instead of bit reproduction. GAI algorithms serve as the foundation for enabling intelligent and efficient SemCom systems in terms of model pre-training and fine-tuning, knowledge base construction, and resource allocation. Conversely, SemCom can provide AIGC services with low latency and high reliability due to its ability to perform semantic-aware encoding and compression of data, as well as knowledge- and context-based reasoning. In this survey, we break new ground by investigating the architecture, wireless communication schemes, and network management of GAI-driven SemCom networks. We first introduce a novel architecture for GAI-driven SemCom networks, comprising the data plane, physical infrastructure, and network control plane. In turn, we provide an in-depth analysis of the transceiver design and semantic effectiveness calculation of end-to-end GAI-driven SemCom systems. Subsequently, we present innovative generation level and knowledge management strategies in the proposed networks, including knowledge construction, update, and sharing, ensuring accurate and timely knowledge-based reasoning. Finally, we explore several promising use cases, i.e., autonomous driving, smart cities, and the Metaverse, to provide a comprehensive understanding and future direction of GAI-driven SemCom networks.",
+  "source": "openalex"
+ }
+]

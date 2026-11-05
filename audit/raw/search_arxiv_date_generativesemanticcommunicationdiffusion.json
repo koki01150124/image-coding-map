@@ -1,0 +1,702 @@
+[
+ {
+  "title": "Semantic Communications: Principles, Architectures and Applications",
+  "authors": [
+   "Sasa Maric"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27544",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Conventional communication systems are designed to transmit data reliably, focusing on metrics such as bit error rate, throughput, and channel capacity. However, these traditional measures do not evaluate whether the received information is actually useful for a specific downstream task. To address this limitation, semantic communication has emerged as a promising paradigm that prioritizes the meaning, context, and task relevance of transmitted information rather than raw bit level reconstruction. This paper presents a comprehensive review of the theoretical foundations, system architectures, learning techniques, and evaluation practices in semantic communications. We classify existing state-of-the-art algorithms ranging from deep joint source-channel coding (Deep JSCC) and task-oriented feature transmission to generative diffusion models and contrast their operational trade offs against conventional baselines. Furthermore, we examine key application domains, including remote sensing, autonomous vehicles, and healthcare IoT, while addressing open challenges in security, privacy, robustness, and standardized evaluation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SemVideoSte: Agentic AI for Cross-Modal Semantic Video Steganography Communication",
+  "authors": [
+   "Rui Meng",
+   "Song Gao",
+   "Tingting Zhu",
+   "Zixun Tang",
+   "Jinke Ren",
+   "Xiaodong Xu",
+   "Pei Xiao",
+   "Shuguang Cui",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25257",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We propose an agentic artificial intelligence (AI)-driven cross-modal semantic video steganography communication (SemVideoSte) scheme for secure cross-modal information transmission. Agentic AI interprets the service context to determine a semantically matched public prompt and coordinates video generation, message embedding, semantic transmission, and message recovery process. A multi-mask mechanism combines variational autoencoder (VAE) reconstruction robustness, semantic transmission robustness, and latent separability to select reliable embedding positions. Meanwhile, a private digital token controls the random seed and guidance offset to construct positive and negative terminal latent states, enabling coverless message embedding during the final diffusion sampling step. Simulation results on open-source datasets demonstrate that SemVideoSte achieves high embedding capacity, reliable message recovery, and strong semantic consistency under different channel conditions. In addition, eavesdroppers without the correct digital token cannot reliably recover the secret message, and the generated stego videos effectively resist the steganalysis detection. We further establish a prototype testbed to verify the practical feasibility of SemVideoSte.",
+  "source": "arxiv"
+ },
+ {
+  "title": "LayerCanvas: Infographic Generation in AI Learning Assistants via Hybrid Layer-Set Diffusion",
+  "authors": [
+   "Keshav Gupta",
+   "Jeremy Owen",
+   "Christopher Lloyd",
+   "Shaunak Mishra",
+   "Manav Sharma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.18763",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Online learning platforms are increasingly deploying AI assistants to provide personalized, on-demand tutoring. These can leverage infographics to communicate complex information and improve the learning experience. However, automating effective infographic generation remains a challenging task, requiring a combination of visual richness with precise typography, structured layouts, and continued editability. Existing representation methods satisfy these goals only in part: Scalable Vector Graphics (SVG) representations preserve geometry, hierarchy, and text but provide limited aesthetic flexibility, while raster diffusion models produce richer appearances by flattening content and layout into a single image. Conditioning a diffusion model on a rasterized SVG does not resolve this conflict because the raster preserves approximate placement but discards element ownership, occlusion relationships, and the structure needed to modify and recompose the result. We introduce LayerCanvas, a hybrid approach that retains SVG as the semantic, structural, and typographic program while using diffusion to aestheticize non-text content. Rather than generating one flattened raster, LayerCanvas partitions SVG elements into z-ordered sets of mutually non-overlapping elements and processes them through communicating parallel RGB generation streams. The resulting layers are independently editable and deterministically recomposed, while text is rendered from preserved vector metadata. Our approach combines rich visual synthesis with accurate typography and localized editing. LayerCanvas substantially improves text fidelity over state-of-the-art raster image generators while achieving the highest overall aesthetic quality. We further demonstrate non-destructive content editing, localization, asset reuse, and animation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE",
+  "authors": [
+   "Yu Xu",
+   "Yuxin Zhang",
+   "Xiao Yang",
+   "Haotian Yang",
+   "Yizhi Wang",
+   "Xinwei Huang",
+   "Minxuan Lin",
+   "Angtian Wang",
+   "Chongyang Ma",
+   "Fan Tang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.38140",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Mixture-of-Experts (MoE), popularized by large language models, is a promising paradigm for scaling visual generative models. However, conventional token-wise MoE routes tokens independently within a homogeneous expert pool and regularizes expert usage toward uniformity, making it poorly matched to video data that is spatiotemporally redundant and semantically long-tailed. We show that existing visual MoEs fall into a uniformity trap: semantically under-organized routing, compounded by uniform expert-usage regularization, scatters coherent patches across disparate experts, causing routing fragmentation and structural distortion. To address this, we propose SplitMoE, a split-role sparse architecture that breaks the shackles of uniformity. To accommodate the inherent semantic imbalance, we explicitly bifurcate the expert pool into semantic experts and generic experts, with semantic experts capturing high-level semantic abstraction and generic experts preserving residual visual information and flexible generative capacity. Leveraging prototype-guided routing and pull-push regularization, SplitMoE enables tokens to cluster naturally by semantic attributes rather than arbitrary balancing constraints. Extensive results show that under an equivalent activated-parameter budget, SplitMoE outperforms traditional load-balanced MoEs in convergence speed, routing coherence, and video generation quality across standard benchmarks. By revealing an emergent coarse-to-fine denoising logic, SplitMoE provides the community with a modality-aware scaling path, serving as a critical reference for building large-scale video world models.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Purlin: Separating Orchestration from the Datapath of Collectives",
+  "authors": [
+   "Osayamen Jonathan Aimuyo",
+   "Swapnil Gandhi",
+   "Christos Kozyrakis"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.36954",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Distributed inference depends on GPU collective communication that must keep pace with evolving hardware and specialized workloads. However, existing works often couple the semantics, orchestration (where and when data moves), and datapath (how data moves) of collective communication. This coupling makes it costly to adopt new hardware mechanisms and customize communication for applications. We present Purlin, a scale-up communication framework that separates these concerns. At the top of Purlin, we specify collectives as a naming of an input and output layout and a copy or reduction operation. In the middle, we introduce a shared orchestration protocol, Stage, Notify, And Consume (SNAC), which derives coordination from these specifications. Below SNAC sits a hardware-specific datapath we call Atom, which implements two key data movement primitives for collectives: copy and reduce. This separation lets us customize collectives and adopt new hardware mechanisms while reusing orchestration via SNAC. We evaluate Purlin on A100, H200, and B200 GPUs. Across seven collectives, Purlin achieves latency speedups of up to 5.14x and bandwidth improvements of up to 4.50x over baselines. Integrated into SGLang, Purlin improves offline LLM serving throughput and interactivity by 1.13x on average and up to 1.37x over baselines. For online LLM inference, Purlin improves interactivity by 1.26x on average and up to 2.85x, with the largest gain occurring under overload. For diffusion image generation, Purlin reduces end-to-end latency by up to 1.13x.",
+  "source": "arxiv"
+ },
+ {
+  "title": "An End-to-End Latent-Rollout Approach for Pushing Few-Step ImageNet-$256$ Generation to FID $1.11$ without Fréchet Losses",
+  "authors": [
+   "Xiaoran Xu",
+   "Yujing Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.32376",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Iterative generation poses a joint optimization problem across steps, as intermediate predictions shape subsequent computations and ultimately determine the final output distribution. Few-step generators distilled from pretrained diffusion and flow-matching models make such optimization computationally practical end to end. We build on this opportunity with a distill-then-refine approach that uses teacher imitation to establish a strong initialization for a few-step rollout in latent space, then shifts to end-to-end refinement of the complete latent rollout against real data. We introduce FiST (Flow-in-Stage Transformer), an architecture that composes learned latent-state transitions in a few stages using a shared Transformer, with optional cross-stage hidden communication. Distillation applies teacher-forced regression to selected states along teacher trajectories; refinement replaces this supervision with adversarial and auxiliary classification objectives on the final latent output. A trainable discriminator module operates on semantically rich features extracted from clean real and generated latents by a frozen SiT backbone pretrained with REPA. All training takes place in latent space, without image decoding. During refinement, FiST consumes its own intermediate predictions, and endpoint gradients pass through every generation stage. For class-conditional generation on ImageNet at $256\\times256$, our approach achieves FID 1.11 (IS 282) with three stages and FID 1.15 (IS 280) with two. These results demonstrate competitive few-step generation through learned distribution-level supervision, without explicit Fréchet-distance minimization. Ablations characterize how distillation, pretrained checkpoint choices, refinement supervision, and cross-stage hidden communication affect generation quality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Open-Qwen-Music: An Auditable Framework for LLM-Based Music Composition and Diffusion Rendering",
+  "authors": [
+   "Yangbin Yu",
+   "Mingyu Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.31652",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We present Open-Qwen-Music, an open reconstruction of Qwen-Music and a fully specified research system for text-to-music generation that couples LLM-based semantic composition with diffusion-based acoustic rendering. The system comprises a 25 Hz single-codebook music tokenizer, a 3B-parameter autoregressive Music LLM, and a diffusion renderer producing 48 kHz stereo audio, following the cross-module interfaces reported by Qwen-Music. The strongest systems of this design remain closed, and prominent open music-generation projects release weights and inference code without their training corpora or end-to-end training implementations. This limits independent and controlled study of how information loss and prediction errors propagate from semantic representation through autoregressive planning to acoustic rendering. To our knowledge, Open-Qwen-Music is the first fully open release of an LLM-composition-plus-diffusion-rendering text-to-music system. Beyond model weights and inference code, the release includes the training datasets and provenance manifests, complete data-processing, annotation, training, inference, and evaluation pipelines, configurations, and pretrained weights for every learned module. Artifact manifests bind the identities of these artifacts across the complete workflow. Together, these artifacts establish a reproducible implementation of the modular architecture and provide an empirical basis for component-level analysis and future evaluation. We present the system as a transparent, executable research baseline and a starting point for the community, not as evidence of quality parity with Qwen-Music. Open-Qwen-Music is an ongoing effort, and we will continue to improve its generation quality, controllability, and robustness. All release artifacts are available at https://github.com/biang15343100-source/Open-Qwen-Music.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Foundation Models for Generalizable Semantic and Goal-Oriented Communication",
+  "authors": [
+   "Boliang Liu",
+   "Wint Yi Poe",
+   "Riccardo Trivisonno",
+   "Giuseppe Caire"
+  ],
+  "year": 2026,
+  "venue": "2026 IEEE International Conference on Communications (ICC), pp. 1-6, 2026",
+  "doi": "10.1109/icc59461.2026.11588119",
+  "arxiv": "2609.07853",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic and goal-oriented communication is increasingly studied for 6G, but generalization beyond seen data remains a key weakness under tight rate budgets. Many existing systems overfit their training data and degrade sharply at very low bit rates because they attempt to compress the entire signal. We introduce Foundation Model-Guided Semantic and Goal-Oriented Communication (FMSGOC), a framework that uses broad visual-linguistic Foundation Model priors to mitigate overfitting. It further improves rate efficiency by concentrating bits on sparse, goal-aligned anchors and relying on generative foundation-model priors to reconstruct the masked regions. By decoupling what to send from how to reconstruct, a vision-language foundation model selects and transmits a sparse set of semantic anchors, while a pretrained diffusion model, fine-tuned for masked completion, reconstructs the image at the receiver. In our experiments, FMSGOC reaches 0.039 bits per pixel (BPP), maintains high semantic fidelity (cosine similarity 0.87-0.90 on CIFAR-10), remains robust on previously unseen inputs (0.83-0.86 on ImageNet), and shows good perceptual similarity (0.1278/0.1558, CIFAR-10/ImageNet), outperforming strong end-to-end baselines at lower bit rates.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Space Generative AI with Solar Energy Harvesting",
+  "authors": [
+   "Jierui Zhang",
+   "Jianhao Huang",
+   "Zhanwei Wang",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.01062",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Satellites are emerging as promising platforms to extend generative \\emph{artificial intelligence} (AI) services to remote areas lacking terrestrial infrastructure. However, deploying space generative AI is fundamentally constrained by the limited, time-varying onboard energy supplied by solar \\emph{energy harvesting} (EH). This paper presents a framework for solar-powered space generative AI in which a satellite receives a user prompt, executes a diffusion-based image-generation model, and downlinks the compressed result within a strict time window. We identify the fundamental \\emph{computation--communication} (C$^2$) trade-offs governed by the shared harvested-energy budgets. Specifically, increasing the number of generation steps improves intrinsic image quality but depletes energy and time available for downlink transmission, whereas prioritizing communication guarantees reliable delivery but sacrifices semantic quality. To balance these trade-offs and maximize \\emph{end-to-end} (E2E) generative performance, we exploit the predictable solar-EH dynamics induced by deterministic orbital motion and develop a joint C$^2$ resource-optimization framework using a tractable two-step approach. First, we characterize the maximum downlink throughput for a fixed generation depth under continuous solar EH. This establishes a separation principle that decouples waiting-time selection from optimal transmit-power control. Next, we formulate a joint C$^2$ utility-maximization problem and derive a closed-form, low-complexity step-selection policy in the dominant constant-power regime. Extensive experiments under realistic orbital dynamics demonstrate that the proposed policy dynamically balances generation quality and transmission reliability. This yields significant E2E performance gains over static computation- and communication-centric baselines across diverse solar-EH states.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Less Is More: Balancing Positive and Negative Space in Visual Concept Blending",
+  "authors": [
+   "Shishi Xiao",
+   "Adam J. Coscia",
+   "David H. Laidlaw"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.00476",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Graphic designers often blend visual concepts to communicate multiple ideas within a single image, leveraging positive and negative space to create balance, emphasis, and aesthetic appeal. While computational methods have begun to support automatic concept blending, they largely overlook the role of spatial composition in the design. To address this gap, we present an automatic pipeline that explicitly applies positive and negative space throughout the blending process. Our approach first identifies plausible regions for concept integration by combining semantic reasoning from vision-language models with geometric constraints derived from real-world examples. Conditioned on these regions, the system generates blended compositions using a hybrid pixel-vector pipeline: diffusion-based inpainting produces a fast, coarse initialization, which is then refined through vector-based optimization at the point level to ensure structural coherence and balanced semantic expression. A multimodal agent orchestrates this process as a planner and evaluator, enabling iterative improvement and interpretable control. Through an evaluation using both baseline comparisons and a user study, we demonstrate greater expressiveness, creativity, and concept recognizability by effectively leveraging positive and negative space. We further demonstrate the generalizability of our approach across diverse applications, including controllable image and infographic generation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FlowSem: Flow Matching for Adaptive Wireless Image Transmission in Semantic Communication",
+  "authors": [
+   "Arnab Emon",
+   "Eslam Eldeeb"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.21651",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Wireless image transmission becomes challenging under poor channel conditions and stringent bandwidth constraints, as the receiver needs to preserve both pixel-level fidelity and meaningful visual structure. Classical separation-based systems, such as better portable graphics with low-density parity-check coding (BPG+LDPC), may suffer from cliff-effect behavior. While deep joint source-channel coding (DeepJSCC) provides graceful degradation as channel conditions worsen, its reconstructions may lose fine details under strong compression and severe channel distortion. To address this limitation, this paper proposes a two-stage flow matching-based semantic communication framework, termed FlowSem. In the first stage, a signal-to-noise ratio (SNR)-adaptive DeepJSCC model maps the source image into channel symbols and produces a coarse reconstruction at the receiver. In the second stage, a conditional flow matching model generates the final image from Gaussian noise conditioned on the DeepJSCC reconstruction and channel SNR. The proposed framework is evaluated on the Cityscapes dataset under additive white Gaussian noise (AWGN) and Rayleigh fading channels using a fixed channel-symbol budget. The baselines include a rate-matched BPG+LDPC system, DeepJSCC, a denoising diffusion probabilistic model (DDPM), and a denoising diffusion implicit model (DDIM). Results show that FlowSem achieves competitive pixel-level fidelity and improved structural and perceptual reconstruction quality over the considered generative baselines across different channel conditions. FlowSem provides up to 60% lower Fréchet Inception Distance (FID) than the diffusion baselines at low SNRs. Moreover, FlowSem reaches high reconstruction quality using only a few ODE integration steps, providing a favorable quality-latency tradeoff compared with standard DDPM and accelerated DDIM sampling.",
+  "source": "arxiv"
+ },
+ {
+  "title": "RadioVIL: Anomaly-Aware Diffusion Models for Radio Map Inpainting and Zero-Shot Vehicle Localization",
+  "authors": [
+   "Ruixin Zhao",
+   "Xiucheng Wang",
+   "Qiming Zhang",
+   "Nan Cheng",
+   "Ruijin Sun",
+   "Conghao Zhou"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.16167",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "High-precision radio map construction is essential for emerging 6G Integrated Sensing and Communication (ISAC) applications, including digital twins and intelligent transportation. However, existing deep learning methods predominantly treat this as a pure image completion task, resulting in over-smoothed reconstructions that fundamentally erase high-frequency scattering signatures of dynamic physical entities such as hidden vehicles. To overcome this, we propose RadioVIL, an efficient two-stage framework that reformulates joint radio map inpainting and zero-shot vehicle localization as a prior-guided physical inverse problem. Specifically, we first train a Denoising Diffusion Probabilistic Model (DDPM) to capture the structural generative prior of the environment. During inference from highly sparse measurements, we employ a Diffusion-based Mediating Intermediate Layer Optimization (DMILO) algorithm. By optimizing an L1-regularized sparse deviation term, DMILO mathematically isolates vehicle scattering anomalies layer-by-layer without unfolding the entire denoising chain. Extensive experiments demonstrate that while conventional reconstruction baselines fail to detect hidden vehicles, and the zero-shot diffusion baseline achieves only limited detection ability due to forced semantic harmonization, RadioVIL preserves authentic physical textures, yielding the best LPIPS of 0.0587 in our evaluation. Uniquely, it unlocks accurate zero-shot vehicle localization directly from sparse radio maps, securing a 75.20% Recall and a 3.31-meter average error, paving a robust way for ISAC at the 6G edge.",
+  "source": "arxiv"
+ },
+ {
+  "title": "TISC: A Text-Driven Image Semantic Communication System for Faithful Reconstruction",
+  "authors": [
+   "Feifan Zhang",
+   "Yuyang Du",
+   "Xiaoyan Liu",
+   "Soung Chang Liew"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.16100",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative image semantic communication converts an image into a text description and then performs text-to-image reconstruction at the receiver via diffusion-based generative models. This paradigm has attracted broad attention due to its extremely low bandwidth cost. However, existing methods still face two critical bottlenecks across image-to-text (I2T) semantic extraction at the transmitter and text-to-image (T2I) semantic reconstruction at the receiver: (i) semantic loss and distortion in I2T, where holistic image descriptions may omit fine-grained object attributes and spatial-position information, causing the generated text to deviate from the original image semantics; and (ii) insufficient semantic faithfulness in T2I, where even with the same semantically faithful text description, different initial noise settings may lead diffusion-based reconstruction to produce images with different levels of semantic consistency with the original image. These issues jointly limit the semantic faithfulness of image reconstruction. To address them, we propose TISC, a text-driven image semantic communication framework tailored for faithful reconstruction. TISC incorporates two key designs: (1) Tree-Structured Attribute Semantic Extraction (TSASE), which decomposes semantic extraction into global scene, background, and object-level attribute descriptions, covering spatial position, shape/pose, color, material, and other physical attributes for each detected object; and (2) an Initial Noise Optimization (INO) mechanism, which selects an initial noise seed at the transmitter according to a comprehensive similarity score that jointly considers visual and semantic consistency. Experiments on multiple datasets show that TSASE improves object-position recovery and semantic description faithfulness, while the INO parameter study supports the adopted configuration for noise selection.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ControlRadio: Prompt-Driven Controllable Diffusion for Cross-Modal Radio Map Generation",
+  "authors": [
+   "Kangjun Liu",
+   "Xiying Pan",
+   "Shuhang Zhang",
+   "Xiang Xiang",
+   "Ke Chen",
+   "Yaowei Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.09357",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Radio maps describe how wireless signals propagate across space and are essential for wireless communication, sensing, and network planning. However, constructing accurate radio maps traditionally requires either dense measurements or computationally expensive physical simulations, which limits scalability and real-time deployment. Recent advances in generative artificial intelligence offer a promising alternative, but existing approaches lack fine-grained control and physical consistency when applied to real-world wireless environments. Here we present \\textbf{ControlRadio}, a controllable generative framework that produces radio maps from natural-language descriptions and environmental layouts, including building structures and transmitter locations. Joint semantic and spatial conditioning enables interpretable, propagation-plausible generation, while a controlled latent prior and layout-aware conditioning improve stability and structural consistency. Extensive experiments demonstrate that ControlRadio achieves state-of-the-art accuracy and strong generalization across diverse urban scenarios, while reducing computation time by more than four orders of magnitude compared with conventional simulation-based methods. Such results suggest a new paradigm for scalable and controllable wireless environment modeling, with broad implications for next-generation communication systems and data-driven radio sensing.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Low-Latency Generative Semantic Communication via Channel-Realization Flow Matching",
+  "authors": [
+   "Fan Gao",
+   "Youzheng Wang",
+   "Zhijin Qin",
+   "Feifei Gao"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.24876",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative semantic communication receivers deliver high perceptual quality but suffer from prohibitive decoding latency. This bottleneck arises because diffusion receivers rely on stochastic iterative decoding, while existing flow matching receivers employ independent endpoint coupling that ignores the physical source--channel link, yielding unnecessarily long and curved sampling trajectories. In this paper, we reformulate receiver-side recovery as a realization-coupled bridge flow matching problem under explicit bandwidth and power constraints. Specifically, we propose Realization-Coupled Bridge Flow Matching (RC-BFM), where the decoder initializes from a channel-induced semantic state rather than isotropic noise. Crucially, training pairs are linked via a realization-coupled entropic optimal transport (RC-OT) plan that preserves the physical channel realization of each transmission while maintaining robustness to stochastic fading. Furthermore, we identify independent coupling as the fundamental source of a conditional train--test distribution shift in conditional flow matching-based receivers, and derive an end-to-end distortion bound whose discretization error decays as \\(O(K^{-2})\\). Experiments on CIFAR-10 and FFHQ-64\\(\\times\\)64 over AWGN and Rayleigh fading channels demonstrate that RC-BFM achieves a superior fidelity--perception trade-off, reducing decoding latency by over 10\\(\\times\\) compared to diffusion-based receivers.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Restoration Flow Matching-Based Channel Refinement and Equalization Correction for MIMO Semantic Communications",
+  "authors": [
+   "Wenkai Liu",
+   "Nan Ma",
+   "Jianqiao Chen",
+   "Xiaodong Xu",
+   "Meixia Tao",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.23615",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In multiple-input multiple-output (MIMO) semantic communication, imperfect channel state information (CSI) and equalization mismatch can seriously degrade semantic reconstruction quality. To address this issue, we propose a unified restoration flow matching (RFM)-based framework for channel refinement and equalization correction. Specifically, the channel RFM (CRFM) module is developed to refine the coarse channel, thereby improving channel estimation accuracy. Based on the refined channel, the developed semantic RFM (SRFM) module is employed to correct the residual distortions in the post-equalization latent space. The key idea is to formulate the two cascaded inverse problems of channel estimation and equalization as the unified conditional restoration task, in which the learned conditional velocity field guides the perturbed distribution towards the target distribution. To enhance the robustness of these two modules under various distortion conditions, we develop a dual-anchor perturbation training strategy that jointly learns near-manifold refinement and large-error correction, and implement inference through a few-step deterministic ordinary differential equation (ODE) solver. Extensive experiments on MIMO channels and visual semantic transmission tasks demonstrate that the proposed scheme improves key metrics for channel estimation and semantic reconstruction quality. Moreover, compared with representative diffusion-based generative baselines, the proposed method requires fewer sampling steps.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FlashDiff: Efficient Regional Execution and Scheduling for Diffusion Model Serving",
+  "authors": [
+   "Yaqi Qiao",
+   "Ping He",
+   "Songrun Xie",
+   "Ayush Barik",
+   "Chensong Zhang",
+   "Zhengzhong Tu",
+   "Fan Lai"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.12121",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have become the central backbone for modern image, video, and audio generation, but their efficient service remains a challenge. Unlike autoregressive decoding, diffusion inference repeatedly updates high-dimensional spatial or temporal latents over many denoising steps. This all-region execution pattern makes generation latency high and limits serving throughput. Existing multi-GPU parallelization methods can reduce per-step computation, but often introduce substantial activation exchange overhead, causing communication to offset or even outweigh the benefits of parallel execution. This paper presents FlashDiff, a diffusion serving system that improves inference efficiency through adaptive regional execution and scheduling. FlashDiff is based on the observation that diffusion refinement is not uniform across latent regions or denoising steps: different regions often stabilize at different rates, while neighboring steps exhibit strong temporal correlation. FlashDiff leverages these properties to selectively execute only regions that require further refinement and to reallocate the resulting compute slack across concurrent serving requests. FlashDiff consists of three mechanisms. First, it decomposes the latent representation into coherent execution regions using early-stage attention signals, preserving semantic structure while exposing fine-grained parallelism. Second, it uses a lightweight runtime controller to estimate region activity and bypass low-impact updates when further refinement is unlikely to affect output quality. Third, it applies an affinity-aware online scheduler that co-locates dependent regions, balances residual load across GPUs, and reuses reclaimed compute capacity to improve serving efficiency. Across real-world image, video, and audio workloads, FlashDiff reduces end-to-end serving latency by 30-97% and improves throughput by 1.2-2.2x.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BDFlow-3DRM: Height-Coherent 3D Radio Map Construction via Bi-Dynamical Flow Matching",
+  "authors": [
+   "Jun Yu",
+   "Meixia Tao",
+   "Shu Sun"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.09778",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Three-dimensional (3D) radio map (RM) is a key enabler for environment-aware communications in low-altitude wireless scenarios by providing site-specific channel priors indexed by spatial locations. However, existing 3D RM construction methods lack effective modeling of the height dimension, which limits their generalization to unseen height configurations and degrades construction coherence across height layers. In this paper, we propose BDFlow-3DRM, a bi-dynamical flow matching framework for 3D RM construction. Specifically, the 3D RM construction problem is formulated as a deterministic probability flow in a semantic latent space. BDFlow-3DRM learns continuous height-aware representations from flexible transceiver height inputs, enhancing geometric awareness. Meanwhile, its bi-dynamical design explicitly models bidirectional dependencies across neighboring height layers, so that RMs at different height layers can be constructed jointly. Extensive experiments on multiple datasets, covering diverse simplified and realistic urban scenarios, validate the effectiveness of BDFlow-3DRM. Compared with diffusion-based baselines, it reduces the normalized mean square error (NMSE) by 28.6% and attains a 180-fold reduction in inference complexity. More importantly, with only 20 training receiver-height layers, BDFlow-3DRM maintains accurate prediction over a wide continuous receiver-height range from 1 to 120 m under variable transmitter heights, highlighting its practical potential for large-scale 3D RM construction.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Towards a Joint Task-Oriented and Generative Semantic Communication Framework for 6G Networks",
+  "authors": [
+   "Soheyb Ribouh",
+   "Phil Polo Ditsia Di Ngoma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.31426",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic Communication (SC) has emerged as a key enabler for 6G wireless systems by transmitting task-relevant meaning rather than raw data, thereby significantly reducing bandwidth consumption while preserving communication intent. In this work, we propose an end-to-end OFDM-based semantic communication framework that integrates a semantic encoder-decoder pipeline with a neural receiver operating over a 3GPP vehicular channel. The semantic encoder extracts the underlying meaning of a visual scene by transforming it into a graph-based representation consisting of object-level features and relational structure. At the receiver, the reconstructed scene graph is processed by a spatio-temporal graph neural network (ST-GNN)-based module for collision-risk estimation, enabling task-oriented inference. In parallel, a diffusion-based semantic decoder reconstructs the visual scene from the recovered semantics, providing dual functionality: safety prediction and image reconstruction. The proposed framework is evaluated in a MIMO configuration under varying SNR conditions. Experimental results show that it achieves up to 99.1% data compression relative to pixel-domain transmission, outperforming conventional compression-based methods (JPEG and HEVC) while preserving downstream inference performance. Furthermore, the diffusion-based reconstruction attains significantly lower frechet inception distance (FID) scores than existing semantic communication approaches, reflecting superior semantic and perceptual fidelity.",
+  "source": "arxiv"
+ },
+ {
+  "title": "LEOSTP: A Spatio-Temporal Traffic Prediction Framework for LEO Satellite Networks",
+  "authors": [
+   "Shaoyou Ao",
+   "Yong Niu",
+   "Zhu Han",
+   "Cheng Li",
+   "Bo Ai"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.29856",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "With the evolution of next-generation mobile communication networks and the commercial boom of Low Earth Orbit (LEO) satellites, globally covered satellite networks are gradually becoming a crucial infrastructure for massive user access and seamless connectivity. Accurate traffic prediction is crucial for maintaining the quality of service (QoS) and resource allocation efficiency in satellite networks. However, existing methods struggle to effectively address the three major challenges of LEO networks: highly complex temporal dynamics caused by satellite cross-regional movement, multivariate dependencies in multi-satellite collaboration, and strong spatial heterogeneity driven by user distribution, human activity intensity, and local geographic environments. In this article, we propose a LEO Satellite Traffic Predictor (LEOSTP) framework, a diffusion model-based end-to-end model that forecasts future satellite traffic by jointly leveraging historical traffic patterns and contextual characteristics of the corresponding service regions. The framework consists of two core modules: 1) The general traffic feature extractor module combines the diffusion process with a Transformer architecture to model the multi-scale temporal features of the traffic itself. 2) The external condition encoder module integrates geographic semantic information such as population distribution, point-of-interest (POI) distribution, and local time into the prediction process through a Transformer-based encoder. In this way, the model captures the deep correlation between the external environment and traffic dynamics. Experimental results based on large-scale simulated constellation data show that LEOSTP significantly outperforms traditional statistical models such as ARIMA and SVR, and classical sequence models including LSTM and Transformer, in prediction accuracy.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SeFi-Image: A Text-to-Image Foundation Model with Semantic-First Diffusion",
+  "authors": [
+   "Ruoyu Feng",
+   "Jinming Liu",
+   "Yuqi Wang",
+   "Xin Cheng",
+   "Boyuan Liu",
+   "Shanglin Li",
+   "Hanshen Zhu",
+   "Wenfeng Lin",
+   "Mingyu Guo",
+   "Xin Jin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.22568",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Training image generation foundation models consumes substantial resources. Previous methods have attempted to leverage semantic guidance to accelerate the training process, yet their experiments were only conducted on simple datasets such as ImageNet, at low resolutions, and with small-scale models. In this paper, we propose SeFi-Image, a text-to-image foundation model built upon semantic-first diffusion, a novel latent diffusion modeling paradigm. We instantiate SeFi-Image at three model scales, 1B, 2B, and 5B parameters, enabling systematic study of scaling behavior and flexible deployment under varying compute budgets. Notably, our largest 5B model was trained with merely 125K A800 GPU hours, corresponding to roughly 10-20% of the training compute used by Z-Image. However, it achieves results comparable to or even superior to Qwen-Image and Z-Image. Despite this modest training compute, SeFi-Image achieves strong performance on a wide range of benchmarks, including GenEval, DPG, LongTextBench, OneIG, and CVTG-2K. Moreover, we provide DMD2-distilled few-step turbo variants for each model scale to accommodate diverse hardware constraints and latency requirements. We publicly release our code, weights and hope this work offers the community useful insights into semantic-guided diffusion modeling for T2I generation, while also providing practical and readily deployable model options.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SACE: Concept Erasure at the Semantic Singularity in Visual Autoregressive Models",
+  "authors": [
+   "Siya Yang",
+   "Nanxiang Jiang",
+   "Zhaoxin Fan",
+   "Yunfeng Diao"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.15819",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The rapid progress of visual autoregressive (VAR) models has unlocked a transformative frontier for high-fidelity text-to-image synthesis, while heightening concerns over the safety alignment of generated content. Naive application of existing erasure techniques to VAR models causes catastrophic semantic collapse and visual artifacts, since they are predominantly designed for the homogeneous denoising steps of diffusion models. To address this foundational challenge, we first propose the Semantic Singularity Axiom, which posits that any target semantic concept embedded within a prompt is definitively locked at Scale-0. Then rigorously validate this axiom through our proposed Incremental Semantic Saliency Analysis (ISSA),which also enable the community to transparently inspect the coarse-to-fine semantic injection process. Guided by this insight, we introduce the first scale-aware concept erasure framework (SACE) for VAR models. By strictly confining interventions to the first scale, our approach couples an Entropy-Regularized Erasure Objective to prevent high-entropy sampling degeneration, alongside a restorative preservation loss to safely anchor the integrity of entangled benign priors. Extensive experiments demonstrate that our method achieves surgical concept erasure performance across various domains with minimal training overhead, timely and elegently resolute the critical safety vulnerabilities inherent in emerging VAR architectures. Code is available at: https://github.com/limerenceysy/SACE}{https://github.com/limerenceysy/SACE.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Adapting Diffusion Language Models for Lossless Pixel-Level Image Transmission",
+  "authors": [
+   "Tianqi Ren",
+   "Rongpeng Li",
+   "Xianfu Chen",
+   "Yingyu Li",
+   "Zhifeng Zhao"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.06273",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Lossless pixel-level image transmission is a fundamental regime beyond semantic communications, because exact recovery requires both accurate symbol probability modeling and reliable delivery over noisy channels. This paper proposes DDM-SSCC, a discrete-diffusion-model-based separate source-channel coding framework for lossless image transmission. Different from raster-order autoregressive coding, the proposed source codec adapts a diffusion language model to pixel-token restoration and performs synchronized reverse arithmetic coding under bidirectional attention, allowing multiple masked tokens to be coded within one reverse denoising step. This progressive restoration process also yields a more favorable source representation for noisy transmission, since newly restored tokens can serve as bidirectional context in subsequent denoising steps. To bridge the gap between generation-oriented masked denoising and lossless arithmetic coding, we further introduce a Halton-guided denoising order, a mask-ratio-aware cosine schedule, and a lightweight temperature calibration module. These designs respectively improve spatial coverage, adapt the denoising pace to context reliability, and calibrate the probability tables used by arithmetic coding. Experiments on CIFAR10, DIV2K-LR-X4, and Kodak over additive white Gaussian noise and Rayleigh fading channels show that DDM-SSCC achieves better exact-recovery performance than representative lossless and semantic communication baselines, while ablation studies verify the effectiveness of the proposed denoising order, schedule, and calibration modules.",
+  "source": "arxiv"
+ },
+ {
+  "title": "IP-Adapter Is All You Need: Towards Fine-Tuning-Free Diffusion-Based Talking Face Generation",
+  "authors": [
+   "Hao Wu",
+   "Xiangyang Luo",
+   "Hao Wang",
+   "Jiawei Zhang",
+   "Yi Zhang",
+   "Jinwei Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.30230",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "With the rapid advancement of diffusion models, talking face generation has made remarkable progress. However, existing diffusion-based methods still require task-specific fine-tuning and large-scale audiovisual datasets, resulting in high computational costs that hinder scalability and accessibility of diffusion-based approaches across the research community. To address this, we propose a finetuning-free paradigm that directly performs talking face generation using the pretrained weights of Stable Diffusion and IP-Adapter. This backbone leverages the visual embedding capability of IP-Adapter to mine lip-related semantics from the pretrained Stable Diffusion. To address the challenges of identity drift, synchronization errors, and temporal instability, we also design three trainable-parameterfree components: (1) the Structurist, which explicitly disentangles and reassembles lip and appearance features to mitigate identity drift and appearance distortion; (2) the Structure Controller, which adaptively refines embeddings based on quasi-monotonic motion trends for precise lip synchronization; and (3) the Noise Sensor, which introduces Gaussian prior to detect and suppress flicker and jitter artifacts and enhance temporal consistency. Experimental results show that our method outperforms existing SOTA approaches in both lip-sync accuracy (at least 0.16 gain in PCLD) and visual fidelity (at least 0.7 improvement in FID), establishing a novel fine-tuning-free diffusion framework for talking face generation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "LoRA-Key: User-Centric LoRA Watermarking for Text-to-Image Diffusion Models",
+  "authors": [
+   "Yaopeng Wang",
+   "Qingliang Wang",
+   "Zhibo Wang",
+   "Huiyu Xu",
+   "Jiacheng Du",
+   "Qiu Wang",
+   "Jia-Li Yin",
+   "Kui Ren"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.29569",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Low-Rank Adaptation (LoRA) has become a widely used mechanism for customizing text-to-image diffusion models, enabling lightweight modules that are shared, reused, and commercialized as independent assets. This LoRA-centric ecosystem shifts copyright protection from foundation models to distributed LoRA modules, which are easy to copy, redistribute, or reuse without authorization. Existing watermarking methods either protect the base diffusion model or require watermark-aware retraining for each target LoRA, limiting their practicality in open community settings. To address this limitation, we propose LoRA-Key, a user-centric LoRA watermarking framework that treats copyright protection as a reusable ownership key. LoRA-Key encapsulates a recoverable secret message into a standalone user-specific Watermark LoRA, which can be attached to different target LoRAs through training-free linear superposition without per-LoRA retraining or structural modification. To train such a reusable key, we first establish a latent watermark prior in the frozen VAE latent space for robust message embedding and recovery, and then optimize the Watermark LoRA with message-conditioned watermark supervision and semantic consistency constraints. We further introduce Gradient Orthogonal Projection (GOP) to suppress watermark updates that conflict with semantic-preserving directions, reducing interference with generation fidelity and downstream style adaptation. Extensive experiments show that LoRA-Key provides lightweight plug-and-play copyright protection while preserving generation quality and style fidelity, and maintains robust ownership verification under image-level distortions, downstream fine-tuning, and multi-LoRA composition.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Sketch2Motion: Text-driven 2D Sketch to 3D Animation via Diffusion-guided Skeleton Optimization",
+  "authors": [
+   "Gaurav Rai",
+   "Ojaswa Sharma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.28394",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Animation of 2D hand-drawn sketches provides an effective medium for visual communication. However, these sketches pose challenges, particularly in handling occlusions and accurately mapping motion. While 3D animation naturally addresses these challenges, estimating 3D motion remains a very complex task. Recent approaches to converting 2D sketches to 3D animations have mainly focused on specific types of motion, such as bipedal movements and facial expressions. We propose Sketch2Motion, a diffusion-guided framework for skeleton-based motion synthesis that combines classical character animation pipelines with deep generative priors. Our method represents motion using skeletal transformations, which are propagated to mesh deformations via linear blend skinning. To guide the resulting animation toward realistic and semantically meaningful motion, we integrate a text-to-video diffusion model via motion-aware score-distillation sampling (MoSDS), enabling optimization without paired motion data. Additionally, we apply physics-inspired smoothness, topological, and contact constraints to stabilize optimization and preserve motion plausibility. Further, we integrate a spring-mass simulator to introduce secondary motion effects. The proposed framework is generalized, fully differentiable, modular, and compatible with biped, quadruped, and non-living articulated characters. Experiments demonstrate that our approach produces temporally coherent, text-aligned animations that outperform baseline motion transfer methods that lack generative priors or explicit physical constraints. We will make our code and dataset publicly available.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DSRDM: Digital Signal Recovery Diffusion Model for Semantic Communications",
+  "authors": [
+   "Zhigang Yan",
+   "Dong Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.27730",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion model (DM) has recently appeared as a promising type of generative model for AI-generated content, which has been widely used for image reconstruction, generation, and channel denoising in semantic communication (SemCom) due to its strong generation capacity. However, most of existing works regarding SemCom remain confined to the image or text transmission, and neglect the commonly adopted digital signals in wireless systems. In this letter, in order to address this gap, we propose and investigate a digital signal recovery diffusion model (DSRDM) for SemCom. Specifically, DSRDM encodes digital signals by gradually adding Gaussian signals to images in the forward diffusion process of DM. After the encoded Gaussian signals embedded in the carrier image are sent to the receiver, it recovers the digital signals by predicting the added Gaussian signals iteratively in the reverse diffusion process. Moreover, to reduce the computation complexity of DSRDM, a signal adding approach is designed to avoid the retraining latency. In particular, we use the latent representation of images instead of themselves as the carrier for digital signals in DSRDM to reduce the inference latency.",
+  "source": "arxiv"
+ },
+ {
+  "title": "AnimeAdapter: A Modular Adapter for Appearance-Consistent Anime Character Generation",
+  "authors": [
+   "Yixuan Han"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.20237",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We present a lightweight appearance adapter for Stable Diffusion that enables controllable and consistent anime character generation under diverse editing conditions. Instead of relying on large-scale vision-language models or per-subject fine-tuning, our method injects fine-grained visual features from a single reference image into the diffusion process. Based on CLIP emergent local spatialization, we develop semantic-selective local attention. To further disentangle character appearance from spatial layout, we incorporate pose-aware conditioning during adapter training. The resulting pretrained adapter remains compact, modular, and fully compatible with Stable Diffusion community workflows, while requiring no additional fine-tuning at deployment time. Furthermore, we present a high-quality anime character dataset based on curated and restructured Danbooru prompts, and evaluate our method across several practical character editing scenarios. Our code, model weights, and dataset will be publicly released upon acceptance.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ScribbleEdit: Synthetic Data for Image Editing with Scribbles and Text",
+  "authors": [
+   "Anya Ji",
+   "George Ma",
+   "Téa Wright",
+   "Yiming Zhang",
+   "David M. Chan",
+   "Alane Suhr",
+   "Somayeh Sojoudi"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.01135",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent progress in generative models has significantly advanced image editing capabilities, yet precise and intuitive user control remains difficult. Specifically, users often struggle to communicate both exact spatial layouts and specific semantic details simultaneously. While natural language instructions effectively convey high-level semantics like texture and color, they lack spatial specificity. Conversely, freehand scribbles provide rough spatial boundaries but cannot express detailed visual attributes. Consequently, achieving precise control requires combining both modalities. However, existing models struggle to jointly interpret abstract scribbles alongside text due to a lack of specialized training data. In this work, we introduce ScribbleEdit, a large-scale synthetic dataset designed to bridge this gap by combining natural language instructions with freehand scribble inputs for more accurate, controllable edits. We construct this dataset through a synthetic pipeline that automatically generates source-target image pairs via inpainting, which are then paired with human-drawn scribbles and VLM-generated text instructions. Using ScribbleEdit, we evaluate and finetune both diffusion-based and autoregressive unified multimodal image editing models. Our experiments reveal that while off-the-shelf models struggle with abstract scribble inputs, finetuning on our synthetic dataset significantly improves their ability to generate spatially aligned and semantically consistent edits.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Structure-Guided Diffusion Model for EEG-Based Visual Cognition Reconstruction",
+  "authors": [
+   "Yongxiang Lian",
+   "Yueyang Cang",
+   "Pingge Hu",
+   "Yuchen He",
+   "Li Shi"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.22649",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Objective: Decoding visual information from electroencephalography (EEG) is an important problem in neuroscience and brain-computer interface (BCI) research. Existing methods are largely restricted to natural images and categorical representations, with limited capacity to capture structural features and to differentiate objective perception from subjective cognition. We propose a Structure-Guided Diffusion Model (SGDM) that incorporates explicit structural information for EEG-based visual reconstruction. Approach: SGDM is evaluated on the Kilogram abstract visual object dataset and the THINGS natural image dataset using a two-stage generative mechanism. The framework combines a structurally supervised variational autoencoder with a spatiotemporal EEG encoder aligned to a visual embedding space via contrastive learning. Structural information is integrated into a diffusion model through ControlNet to guide image generation from EEG features. Results: SGDM outperforms existing methods on both abstract and natural image datasets. Reconstructed images achieve higher fidelity in low-level visual features and semantic representations, indicating improved decoding accuracy and strong generalization across diverse visual domains. Spatiotemporal analysis of EEG signals further reveals hierarchical structural encoding patterns, consistent with the neural dynamics of visual cognition. Significance: These findings validate the effectiveness of SGDM in capturing explicit structural geometry and generating images with high fidelity to individual cognitive representations. By enabling decoding of complex visual content from EEG signals, the framework extends neural decoding beyond low-dimensional or categorical outputs. This supports BCIs with increased degrees of freedom for intention decoding and more flexible brain-to-machine communication.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Query-Aware Flow Diffusion for Graph-Based RAG with Retrieval Guarantees",
+  "authors": [
+   "Zhuoping Zhou",
+   "Davoud Ataee Tarzanagh",
+   "Sima Didari",
+   "Wenjun Hu",
+   "Baruch Gutow",
+   "Oxana Verkholyak",
+   "Masoud Faraki",
+   "Heng Hao",
+   "Hankyu Moon",
+   "Seungjai Min"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.18775",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Graph-based Retrieval-Augmented Generation (RAG) systems leverage interconnected knowledge structures to capture complex relationships that flat retrieval struggles with, enabling multi-hop reasoning. Yet most existing graph-based methods suffer from (i) heuristic designs lacking theoretical guarantees for subgraph quality or relevance and/or (ii) the use of static exploration strategies that ignore the query's holistic meaning, retrieving neighborhoods or communities regardless of intent. We propose Query-Aware Flow Diffusion RAG (QAFD-RAG), a training-free framework that dynamically adapts graph traversal to each query's holistic semantics. The central innovation is query-aware traversal: during graph exploration, edges are dynamically weighted by how well their endpoints align with the query's embedding, guiding flow along semantically relevant paths while avoiding structurally connected but irrelevant regions. These query-specific reasoning subgraphs enable the first statistical guarantees for query-aware graph retrieval, showing that QAFD-RAG recovers relevant subgraphs with high probability under mild signal-to-noise conditions. The algorithm converges exponentially fast, with complexity scaling with the retrieved subgraph size rather than the full graph. Experiments on question answering and text-to-SQL tasks demonstrate consistent improvements over state-of-the-art graph-based RAG methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Optimally Bridging Semantics and Data: Generative Semantic Communication via Schrödinger Bridge",
+  "authors": [
+   "Dahua Gao",
+   "Ruichao Liu",
+   "Minxi Yang",
+   "Shuai Ma",
+   "Youlong Wu",
+   "Guangming Shi"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.17802",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative Semantic Communication (GSC) is a promising solution for image transmission over narrow-band and high-noise channels. However, existing GSC methods rely on long, indirect transport trajectories from a Gaussian to an image distribution guided by semantics, causing severe hallucination and high computational cost. To address this, we propose a general framework named Schrödinger Bridge-based GSC (SBGSC). By leveraging the Schrödinger Bridge (SB) to construct optimal transport trajectories between arbitrary distributions, SBGSC breaks Gaussian limitations and enables direct generative decoding from semantics to images. Within this framework, we design Diffusion SB-based GSC (DSBGSC). DSBGSC reconstructs the nonlinear drift term of diffusion models using Schrödinger potentials, achieving direct optimal distribution transport to reduce hallucinations and computational overhead. To further accelerate generation, we propose a self-consistency-based objective guiding the model to learn a nonlinear velocity field pointing directly toward the image, bypassing Markovian noise prediction to significantly reduce sampling steps. Simulation results demonstrate that DSBGSC outperforms state-of-the-art GSC methods, improving FID by at least 38% and SSIM by 49.3%, while accelerating inference speed by over 8 times.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Generative Semantic Communication via Alternating Dual-Domain Posterior Sampling",
+  "authors": [
+   "Shunpu Tang",
+   "Qianqian Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.16796",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative semantic communication (SemCom) harnesses pretrained generative priors to improve the perceptual quality of wireless image transmission. Existing generative SemCom receivers, however, rely on maximum a posteriori (MAP) estimation, which fundamentally cannot preserve the data distribution and thus limits achievable perceptual quality. Moreover, current diffusion-based approaches using single-domain guidance face significant limitations: latent-domain guidance is sensitive to channel noise, while image-domain guidance inherits decoder bias. Simply combining both domains simultaneously yields an overconfident pseudo-posterior. In this paper, we formulate semantic decoding as a Bayesian inverse problem and prove that posterior sampling achieves optimal perceptual quality by preserving the data distribution. Building on this insight, we propose alternating dual-domain posterior sampling (ADDPS), a diffusion-based SemCom receiver that alternately enforces latent-domain and image-domain consistency during the sampling process. This alternating strategy decomposes joint posterior sampling into simpler subproblems, avoiding gradient conflicts while retaining the complementary strengths of both domains. Experiments on FFHQ demonstrate that the proposed ADDPS achieves superior perceptual quality compared with existing methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Inclusive Kitchen Design for Older Adults: Generative AI Visualizations to Support Mild Cognitive Impairment",
+  "authors": [
+   "Ibrahim Bilau",
+   "Nicole Li",
+   "Terrence Malayvong",
+   "Eunhwa Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.13203",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Mild Cognitive Impairment (MCI) affects 15-20% of adults aged 65 and older, often making kitchen navigation and independent living difficult, particularly in lower-income communities with limited access to professional design help. This study created an AI system that converts standard kitchen photos into MCI-friendly designs using the Home Design Guidelines (HDG). Stable Diffusion models, enhanced with DreamBooth LoRA and ControlNet, were trained on 100 kitchen images to produce realistic visualizations with open layouts, transparent cabinetry, better lighting, non-slip flooring, and less clutter. The models achieved moderate to high semantic alignment (normalized CLIP scores 0.69-0.79) and improved visual realism (GIQA scores 0.45-0.65). In a survey of 33 participants (51.5% caregivers, 36.4% older adults with MCI), the AI-modified kitchens were strongly preferred as more cognitively friendly (87.4% of 198 choices, p < .001). Participants reported high confidence in their kitchen choice selections (M = 5.92/7) and found the visualizations very helpful for home modifications (M = 6.27/7). Thematic analysis emphasized improved visibility, lower cognitive load, and greater independence. Overall, this AI tool provides a low-cost, scalable way for older adults and caregivers to visualize and implement DIY kitchen changes, supporting aging in place and resilience for those with MCI.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Efficient Semantic Image Communication for Traffic Monitoring at the Edge",
+  "authors": [
+   "Damir Assylbek",
+   "Nurmukhammed Aitymbetov",
+   "Marko Ristin",
+   "Dimitrios Zorbas"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.12622",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Many visual monitoring systems operate under strict communication constraints, where transmitting full-resolution images is impractical and often unnecessary. In such settings, visual data is often used for object presence, spatial relationships, and scene context rather than exact pixel fidelity. This paper presents two semantic image communication pipelines for traffic monitoring, MMSD and SAMR, that reduce transmission cost while preserving meaningful visual information. MMSD (Multi-Modal Semantic Decomposition) targets very high compression together with data confidentiality, since sensitive pixel content is not transmitted. It replaces the original image with compact semantic representations, namely segmentation maps, edge maps, and textual descriptions, and reconstructs the scene at the receiver using a diffusion-based generative model. SAMR (Semantic-Aware Masking Reconstruction) targets higher visual quality while maintaining strong compression. It selectively suppresses non-critical image regions according to semantic importance before standard JPEG encoding and restores the missing content at the receiver through generative inpainting. Both designs follow an asymmetric sender-receiver architecture, where lightweight processing is performed at the edge and computationally intensive reconstruction is offloaded to the server. On a Raspberry Pi~5, the edge-side processing time is about 15s for MMSD and 9s for SAMR. Experimental results show average transmitted-data reductions of 99% for MMSD and 99.1% for SAMR. In addition, MMSD achieves lower payload size than the recent SPIC baseline while preserving strong semantic consistency, whereas SAMR provides a better quality-compression trade-off than standard JPEG and SQ-GAN under comparable operating conditions.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Channel-Aware Preemptive Scheduling for Semantic Communication with Truncated Diffusion and Path Compensation",
+  "authors": [
+   "Chengyang Liang",
+   "Dong Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.11849",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic communication (SemCom) presents a transformative paradigm for alleviating bandwidth limitations in mobile networks by transmitting task-relevant semantic features instead of raw data bits. While SemCom systems utilizing diffusion models achieve superior generation quality, existing research treats semantic generation and wireless transmission as temporally independent processes. This separation neglects the intrinsic conflict between the multi-step iterative delays inherent in diffusion models and the time-varying fading characteristics of wireless channels. To address this discrepancy, this paper proposes a channel-aware preemptive scheduling with truncated diffusion and path compensation (CAPS-TDPC) framework. Contrary to conventional methods that require completion of the generation phase prior to transmission, the proposed framework implements a channel-driven scheduling mechanism: each user maintains a countdown inversely proportional to its instantaneous channel gain, and the user with the shortest countdown transmits immediately, regardless of whether its diffusion process has completed. This design permits the interruption of the forward diffusion process to enable early transmission under favorable channel conditions. In addition, a receiver-side compensation mechanism grounded in path dynamics is developed to mitigate the semantic loss resulting from such interruptions. A path deficit metric is proposed at the receiver to quantify the recovery difficulty of distinct image blocks by incorporating the velocity field of the inverse dynamics model, which allows for adaptive weighted inverse sampling. Experimental evaluations demonstrate that the proposed framework substantially reduces the end-to-end latency while maintaining the high-fidelity semantic reconstruction, thereby enhancing the system robustness in fast fading channel environments.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Coordinate-Based Dual-Constrained Autoregressive Motion Generation",
+  "authors": [
+   "Kang Ding",
+   "Hongsong Wang",
+   "Jie Gui",
+   "Liang Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.08088",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Text-to-motion generation has attracted increasing attention in the research community recently, with potential applications in animation, virtual reality, robotics, and human-computer interaction. Diffusion and autoregressive models are two popular and parallel research directions for text-to-motion generation. However, diffusion models often suffer from error amplification during noise prediction, while autoregressive models exhibit mode collapse due to motion discretization. To address these limitations, we propose a flexible, high-fidelity, and semantically faithful text-to-motion framework, named Coordinate-based Dual-constrained Autoregressive Motion Generation (CDAMD). With motion coordinates as input, CDAMD follows the autoregressive paradigm and leverages diffusion-inspired multi-layer perceptrons to enhance the fidelity of predicted motions. Furthermore, a Dual-Constrained Causal Mask is introduced to guide autoregressive generation, where motion tokens act as priors and are concatenated with textual encodings. Since there is limited work on coordinate-based motion synthesis, we establish new benchmarks for both text-to-motion generation and motion editing. Experimental results demonstrate that our approach achieves state-of-the-art performance in terms of both fidelity and semantic consistency on these benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CTD-Diff: Cooperative Time-Division Diffusion for Multi-User Semantic Communication Systems",
+  "authors": [
+   "Chengyang Liang",
+   "Dong Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.04057",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic communication (SemCom) has emerged as a transformative paradigm for efficient information transmission by emphasizing the exchange of task-relevant meaning rather than raw data. While diffusion-based SemCom models have demonstrated remarkable generative capabilities, existing studies predominantly focus on point-to-point links, overlooking the potential of multi-user (MU) cooperation in MU wireless environments. To address this limitation, we propose a Cooperative Time-Division Diffusion (CTD-Diff) framework. Unlike traditional approaches that view channel noise solely as a detriment, our framework innovatively integrates the noisy wireless transmission process directly into the forward diffusion chain. Specifically, we design a multi-user cooperation mechanism based on Time-Division Multiple Access (TDMA), where idle users overhearing the active transmitter act as semantic collaborators. To maximize the signal fidelity, the receiver employs direct signal aggregation to fuse the direct signal with cooperative copies. This aggregated noisy semantic representation serves as the condition for the reverse diffusion process, allowing the receiver to reconstruct high-fidelity data by mitigating the cumulative channel distortions. By effectively converting physical channel noise into diffusion noise, the proposed method significantly enhances the transmission reliability. Extensive experiments demonstrate that CTD-Diff outperforms various baselines regarding the reconstruction accuracy and the perceptual quality, particularly under challenging low signal-to-noise ratio (SNR) conditions.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Diff-KD: Diffusion-based Knowledge Distillation for Collaborative Perception under Corruptions",
+  "authors": [
+   "Pengcheng Lyu",
+   "Chaokun Zhang",
+   "Gong Chen",
+   "Tao Tang",
+   "Zhaoxiang Luo"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.02061",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Multi-agent collaborative perception enables autonomous systems to overcome individual sensing limits through collective intelligence. However, real-world sensor and communication corruptions severely undermine this advantage. Crucially, existing approaches treat corruptions as static perturbations or passively conform to corrupted inputs, failing to actively recover the underlying clean semantics. To address this limitation, we introduce Diff-KD, a framework that integrates diffusion-based generative refinement into teacher-student knowledge distillation for robust collaborative perception. Diff-KD features two core components: (i) Progressive Knowledge Distillation (PKD), which treats local feature restoration as a conditional diffusion process to recover global semantics from corrupted observations; and (ii) Adaptive Gated Fusion (AGF), which dynamically weights neighbors based on ego reliability during fusion. Evaluated on OPV2V and DAIR-V2X under seven corruption types, Diff-KD achieves state-of-the-art performance in both detection accuracy and calibration robustness.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Gaussian Shannon: High-Precision Diffusion Model Watermarking Based on Communication",
+  "authors": [
+   "Yi Zhang",
+   "Hongbo Huang",
+   "Liang-Jie Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2603.26167",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models generate high-quality images but pose serious risks like copyright violation and disinformation. Watermarking is a key defense for tracing and authenticating AI-generated content. However, existing methods rely on threshold-based detection, which only supports fuzzy matching and cannot recover structured watermark data bit-exactly, making them unsuitable for offline verification or applications requiring lossless metadata (e.g., licensing instructions). To address this problem, in this paper, we propose Gaussian Shannon, a watermarking framework that treats the diffusion process as a noisy communication channel and enables both robust tracing and exact bit recovery. Our method embeds watermarks in the initial Gaussian noise without fine-tuning or quality loss. We identify two types of channel interference, namely local bit flips and global stochastic distortions, and design a cascaded defense combining error-correcting codes and majority voting. This ensures reliable end-to-end transmission of semantic payloads. Experiments across three Stable Diffusion variants and seven perturbation types show that Gaussian Shannon achieves state-of-the-art bit-level accuracy while maintaining a high true positive rate, enabling trustworthy rights attribution in real-world deployment. The source code have been made available at: https://github.com/Rambo-Yi/Gaussian-Shannon",
+  "source": "arxiv"
+ }
+]

@@ -1,0 +1,873 @@
+[
+ {
+  "title": "High-Fidelity Generative Image Compression",
+  "authors": [
+   "Fabian Mentzer",
+   "George D. Toderici",
+   "Michael Tschannen",
+   "Eirikur Agustsson"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2006.09965",
+  "arxiv": "2006.09965",
+  "openalex": "W3036682213",
+  "cited_by": 325,
+  "abstract": "We extensively study how to combine Generative Adversarial Networks and learned compression to obtain a state-of-the-art generative lossy compression system. In particular, we investigate normalization layers, generator and discriminator architectures, training strategies, as well as perceptual losses. In contrast to previous work, i) we obtain visually pleasing reconstructions that are perceptually similar to the input, ii) we operate in a broad range of bitrates, and iii) our approach can be applied to high-resolution images. We bridge the gap between rate-distortion-perception theory and practice by evaluating our approach both quantitatively with various perceptual metrics, and with a user study. The study shows that our method is preferred to previous approaches even if they use more than 2x the bitrate.",
+  "source": "openalex"
+ },
+ {
+  "title": "Idempotence and Perceptual Image Compression",
+  "authors": [
+   "Tongda Xu",
+   "Ziran Zhu",
+   "Dailan He",
+   "Yanghao Li",
+   "Lina Guo",
+   "Yuanyuan Wang",
+   "Zhe Wang",
+   "Hongwei Qin",
+   "Yan Wang",
+   "Jingjing Liu",
+   "Ya-Qin Zhang"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2401.08920",
+  "arxiv": "2401.08920",
+  "openalex": "W4391013152",
+  "cited_by": 9,
+  "abstract": "Idempotence is the stability of image codec to re-compression. At the first glance, it is unrelated to perceptual image compression. However, we find that theoretically: 1) Conditional generative model-based perceptual codec satisfies idempotence; 2) Unconditional generative model with idempotence constraint is equivalent to conditional generative codec. Based on this newfound equivalence, we propose a new paradigm of perceptual image codec by inverting unconditional generative model with idempotence constraints. Our codec is theoretically equivalent to conditional generative codec, and it does not require training new models. Instead, it only requires a pre-trained mean-square-error codec and unconditional generative model. Empirically, we show that our proposed approach outperforms state-of-the-art methods such as HiFiC and ILLM, in terms of Fréchet Inception Distance (FID). The source code is provided in https://github.com/tongdaxu/Idempotence-and-Perceptual-Image-Compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "High-Fidelity Generative Image Compression",
+  "authors": [
+   "Fabian Mentzer"
+  ],
+  "year": 2024,
+  "venue": "TIB Data Manager",
+  "doi": "10.57702/ibvxyvoe",
+  "arxiv": null,
+  "openalex": "W3103781353",
+  "cited_by": 41,
+  "abstract": "We extensively study how to combine Generative Adversarial Networks and learned compression to obtain a state-of-the-art generative lossy compression system. In particular, we investigate normalization layers, generator and discriminator architectures, training strategies, as well as perceptual losses. In contrast to previous work, i) we obtain visually pleasing reconstructions that are perceptually similar to the input, ii) we operate in a broad range of bitrates, and iii) our approach can be applied to high-resolution images. We bridge the gap between rate-distortion-perception theory and practice by evaluating our approach both quantitatively with various perceptual metrics, and with a user study. The study shows that our method is preferred to previous approaches even if they use more than 2x the bitrate.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Adversarial Networks for Extreme Learned Image Compression",
+  "authors": [
+   "Eirikur Agustsson",
+   "Michael Tschannen",
+   "Fabian Mentzer",
+   "Radu Timofte",
+   "Luc Van Gool"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00031",
+  "arxiv": "1804.02958",
+  "openalex": "W2795709826",
+  "cited_by": 597,
+  "abstract": "We present a learned image compression system based on GANs, operating at extremely low bitrates. Our proposed framework combines an encoder, decoder/generator and a multi-scale discriminator, which we train jointly for a generative learned compression objective. The model synthesizes details it cannot afford to store, obtaining visually pleasing results at bitrates where previous methods fail and show strong artifacts. Furthermore, if a semantic label map of the original image is available, our method can fully synthesize unimportant regions in the decoded image such as streets and trees from the label map, proportionally reducing the storage cost. A user study confirms that for low bitrates, our approach is preferred to state-of-the-art methods, even when they use more than double the bits.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantics-Guided Generative Image Compression",
+  "authors": [
+   "Chenglin Wu",
+   "Hyomin Choi",
+   "Ivan V. Bajić"
+  ],
+  "year": 2025,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip55913.2025.11084711",
+  "arxiv": "2505.24015",
+  "openalex": "W4413278284",
+  "cited_by": 1,
+  "abstract": "Advancements in text-to-image generative AI with large multimodal models are spreading into the field of image compression, creating high-quality representation of images at extremely low bit rates. This work introduces novel components to the existing multimodal image semantic compression (MISC) approach, enhancing the quality of the generated images in terms of PSNR and perceptual metrics. The new components include semantic segmentation guidance for the generative decoder, as well as content-adaptive diffusion, which controls the number of diffusion steps based on image characteristics. The results show that our newly introduced methods significantly improve the baseline MISC model while also decreasing the complexity. As a result, both the encoding and decoding time are reduced by more than 36%. Moreover, the proposed compression framework outperforms mainstream codecs in terms of perceptual similarity and quality. The code and visual examples are available.1",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Image Compression With Conditional Diffusion Transformers",
+  "authors": [
+   "Rui Mao",
+   "Xinmin Feng",
+   "Changsheng Gao",
+   "Li Li",
+   "Dong Liu",
+   "Xiaoyan Sun"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+  "doi": "10.1109/vcip63160.2024.10849862",
+  "arxiv": null,
+  "openalex": "W4406859033",
+  "cited_by": 0,
+  "abstract": "Generative models have significantly advanced generative AI, particularly in image and video generation. Recognizing their potential, researchers have begun exploring their application in image compression. However, existing methods face two primary challenges: limited performance improvement and high model complexity. In this paper, to address these two challenges, we propose a perceptual image compression solution by introducing a conditional diffusion model. Given that compression performance heavily depends on the decoder’s generative capability, we base our decoder on the diffusion transformer architecture. To address the model complexity problem, we implement the diffusion transformer architecture with Swin transformer. Equipped with enhanced generative capability, we further augment the decoder with informative features using a multi-scale feature fusion module. Experimental results demonstrate that our approach surpasses existing perceptual image compression methods while achieving lower model complexity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Perceptual Image Compression With a Laplacian Pyramid of Convolutional Networks",
+  "authors": [
+   "Juan Wang",
+   "Yiping Duan",
+   "Xiaoming Tao",
+   "Mai Xu",
+   "Jianhua Lü"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2021.3065244",
+  "arxiv": null,
+  "openalex": "W3139281747",
+  "cited_by": 35,
+  "abstract": "The existing image compression methods usually choose or optimize low-level representation manually. Actually, these methods struggle for the texture restoration at low bit rates. Recently, deep neural network (DNN)-based image compression methods have achieved impressive results. To achieve better perceptual quality, generative models are widely used, especially generative adversarial networks (GAN). However, training GAN is intractable, especially for high-resolution images, with the challenges of unconvincing reconstructions and unstable training. To overcome these problems, we propose a novel DNN-based image compression framework in this paper. The key point is decomposing an image into multi-scale sub-images using the proposed Laplacian pyramid based multi-scale networks. For each pyramid scale, we train a specific DNN to exploit the compressive representation. Meanwhile, each scale is optimized with different aspects, including pixel, semantics, distribution and entropy, for a good \"rate-distortion-perception\" trade-off. By independently optimizing each pyramid scale, we make each stage manageable and make each sub-image plausible. Experimental results demonstrate that our method achieves state-of-the-art performance, with advantages over existing methods in providing improved visual quality. Additionally, a better performance in the down-stream visual analysis tasks which are conducted on the reconstructed images, validates the excellent semantics-preserving ability of the proposed method.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual image compression with textual side information",
+  "authors": [
+   "Shiyu Qin",
+   "Bin Chen",
+   "Yujun Huang",
+   "Bao-Yi An",
+   "Tao Dai",
+   "Shu‐Tao Xia"
+  ],
+  "year": 2025,
+  "venue": "Pattern Recognition",
+  "doi": "10.1016/j.patcog.2025.111848",
+  "arxiv": "2311.13847",
+  "openalex": "W4410775374",
+  "cited_by": 7,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "High-Fidelity Image Compression with Score-based Generative Models",
+  "authors": [
+   "Emiel Hoogeboom",
+   "Eirikur Agustsson",
+   "Fabian Mentzer",
+   "Luca Versari",
+   "George D. Toderici",
+   "Lucas Theis"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.18231",
+  "arxiv": "2305.18231",
+  "openalex": "W4378771614",
+  "cited_by": 27,
+  "abstract": "Despite the tremendous success of diffusion generative models in text-to-image generation, replicating this success in the domain of image compression has proven difficult. In this paper, we demonstrate that diffusion can significantly improve perceptual quality at a given bit-rate, outperforming state-of-the-art approaches PO-ELIC and HiFiC as measured by FID score. This is achieved using a simple but theoretically motivated two-stage approach combining an autoencoder targeting MSE followed by a further score-based decoder. However, as we will show, implementation details matter and the optimal design decisions can differ greatly from typical text-to-image models.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perception-Based Image Denoising via Generative Compression",
+  "authors": [
+   "Nam Nguyen",
+   "Thinh Nguyen",
+   "Bella Bose"
+  ],
+  "year": 2026,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip61757.2026.11630252",
+  "arxiv": "2602.11553",
+  "openalex": "W7128778788",
+  "cited_by": 1,
+  "abstract": "Image denoising aims to remove noise while preserving structural details and perceptual realism, yet distortion-driven methods often produce over-smoothed reconstructions, especially under strong noise and distribution shift. This paper proposes a generative compression framework for perception-based denoising, where restoration is achieved by reconstructing from entropy-coded latent representations that enforce low-complexity structure, while generative decoders recover realistic textures via perceptual measures such as learned perceptual image patch similarity (LPIPS) loss and Wasserstein distance. Two complementary instantiations are introduced: (i) a conditional Wasserstein GAN (WGAN)-based compression denoiser that explicitly controls the rate-distortion-perception (RDP) trade-off, and (ii) a conditional diffusion-based reconstruction strategy that performs iterative denoising guided by compressed latents. We further establish non-asymptotic guarantees for the compression-based maximum-likelihood denoiser under additive Gaussian noise, including bounds on reconstruction error and decoding error probability. Experiments on synthetic and real-noise benchmarks demonstrate consistent perceptual improvements while maintaining competitive distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Content-aware Deep Perceptual Image Compression",
+  "authors": [
+   "Yiping Duan",
+   "Yaqiang Zhang",
+   "Xiaoming Tao",
+   "Chaoyi Han",
+   "Mai Xu",
+   "Cheng Hong Yang",
+   "Jianhua Lü"
+  ],
+  "year": 2019,
+  "venue": "International Conference on Wireless Communications and Signal Processing (WCSP)",
+  "doi": "10.1109/wcsp.2019.8927935",
+  "arxiv": null,
+  "openalex": "W2994874593",
+  "cited_by": 3,
+  "abstract": "Currently, multimedia data grow in a explosive manner, whereas the effective bandwidth is quite limited in the wireless communications, such as high definition image/video communication, satellite communication and so on. Generative adversarial network (GAN) based image compression goes beyond the traditional image encoding standards under a obviously low bitrate. However, the most existing methods do not consider the importance of different image contents, where the regions with complex and saliency structures generally are more essential to users' quality of experience (QoE). In this paper, we propose a content-aware deep perceptual image compression method (CDPIC). The proposed approach involves a saliency subnet to produce content saliency map for adaptive bit allocation. Moreover, using QoE as the ultimate goal, our approach designs different compression objectives for different image contents, where it tends to preserve more details for the regions with complex and saliency structures, and improves the perceptual quality of the background region. Our experiments show that the proposed approach outperforms the state-of-the-art methods, and produces advanced performance in preserving details and semantics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Saliency Driven Perceptual Image Compression",
+  "authors": [
+   "Yash Patel",
+   "Srikar Appalaraju",
+   "Raghaven Manmatha"
+  ],
+  "year": 2021,
+  "venue": "IEEE Winter Conference on Applications of Computer Vision",
+  "doi": "10.1109/wacv48630.2021.00027",
+  "arxiv": "2002.04988",
+  "openalex": "W3120432545",
+  "cited_by": 47,
+  "abstract": "This paper proposes a new end-to-end trainable model for lossy image compression, which includes several novel components. The method incorporates 1) an adequate perceptual similarity metric; 2) saliency in the images; 3) a hierarchical auto-regressive model. This paper demonstrates that the popularly used evaluations metrics such as MS-SSIM and PSNR are inadequate for judging the performance of image compression techniques as they do not align with the human perception of similarity. Alternatively, a new metric is proposed, which is learned on perceptual similarity data specific to image compression. The proposed compression model incorporates the salient regions and optimizes on the proposed perceptual similarity metric. The model not only generates images which are visually better but also gives superior performance for subsequent computer vision tasks such as object detection and segmentation when compared to existing engineered or learned compression techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual in-Loop Filter for Image and Video Compression",
+  "authors": [
+   "Huairui Wang",
+   "Guangjie Ren",
+   "Tong Ouyang",
+   "Junxi Zhang",
+   "Wenwei Han",
+   "Zizheng Liu",
+   "Zhenzhong Chen"
+  ],
+  "year": 2022,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "doi": "10.1109/cvprw56347.2022.00188",
+  "arxiv": null,
+  "openalex": "W4292828953",
+  "cited_by": 2,
+  "abstract": "In this paper, we introduce our hybrid image and video compression scheme enhanced by CNN-optimized in-loop filter. Specifically, a Structure Preserving in-Loop Filter (SPiLF) is incorporated in the hybrid video codec Enhanced Compression Model (ECM), where two branches, i.e., gradient branch and pixel branch, are developed based on the dense residual unit (DRU). To provide pleasant visual quality, the Generative adversarial networks (GAN) loss and LPIPS loss are further considered. Therefore, the proposal is mainly focusing on perceptual-friendly image compression for human vision, whilst video compression could be further investigated. The experiments show that the proposed method achieves advanced visual quality when compared to the traditional methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "View synthesis-based light field image compression using a generative adversarial network",
+  "authors": [
+   "Deyang Liu",
+   "Xinpeng Huang",
+   "Wenfa Zhan",
+   "Liefu Ai",
+   "Xin Zheng",
+   "Shulin Cheng"
+  ],
+  "year": 2020,
+  "venue": "Information Sciences",
+  "doi": "10.1016/j.ins.2020.07.073",
+  "arxiv": null,
+  "openalex": "W3047269670",
+  "cited_by": 62,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Rethinking Image Compression on the Web with Generative AI",
+  "authors": [
+   "Shayan Ali Hassan",
+   "Danish Humair",
+   "Ihsan Ayyub Qazi",
+   "Zafar Ayyub Qazi"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2407.04542",
+  "arxiv": "2407.04542",
+  "openalex": "W4400434886",
+  "cited_by": 2,
+  "abstract": "The rapid growth of the Internet, driven by social media, web browsing, and video streaming, has made images central to the Web experience, resulting in significant data transfer and increased webpage sizes. Traditional image compression methods, while reducing bandwidth, often degrade image quality. This paper explores a novel approach using generative AI to reconstruct images at the edge or client-side. We develop a framework that leverages text prompts and provides additional conditioning inputs like Canny edges and color palettes to a text-to-image model, achieving up to 99.8% bandwidth savings in the best cases and 92.6% on average, while maintaining high perceptual similarity. Empirical analysis and a user study show that our method preserves image meaning and structure more effectively than traditional compression methods, offering a promising solution for reducing bandwidth usage and improving Internet affordability with minimal degradation in image quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rectified Wasserstein Generative Adversarial Networks for Perceptual Image Restoration",
+  "authors": [
+   "Haichuan Ma",
+   "Dong Liu",
+   "Feng Wu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2022.3185316",
+  "arxiv": null,
+  "openalex": "W4283330395",
+  "cited_by": 24,
+  "abstract": "Wasserstein generative adversarial network (WGAN) has attracted great attention due to its solid mathematical background, i.e., to minimize the Wasserstein distance between the generated distribution and the distribution of interest. In WGAN, the Wasserstein distance is quantitatively evaluated by the discriminator, also known as the critic. The vanilla WGAN trained the critic with the simple Lipschitz condition, which was later shown less effective for modeling complex distributions, like the distribution of natural images. We try to improve the WGAN training by introducing pairwise constraint on the critic, oriented to image restoration tasks. In principle, pairwise constraint is to suggest the critic assign a higher rating to the original (real) image than to the restored (generated) image, as long as such a pair of images are available. We show that such pairwise constraint may be implemented by rectifying the gradients in WGAN training, which leads to the proposed rectified Wasserstein generative adversarial network (ReWaGAN). In addition, we build interesting connections between ReWaGAN and the perception-distortion tradeoff. We verify ReWaGAN on two representative image restoration tasks: single image super-resolution (4× and 8×) and compression artifact reduction, where our ReWaGAN not only beats the vanilla WGAN consistently, but also outperforms the state-of-the-art perceptual quality-oriented methods significantly. Our code and models are publicly available at https://github.com/mahaichuan/ReWaGAN.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Images Compression Based on a System of Receptive Fields",
+  "authors": [
+   "Viacheslav E. Antsiperov"
+  ],
+  "year": 2022,
+  "venue": "Pattern Recognition and Image Analysis",
+  "doi": "10.1134/s105466182203004x",
+  "arxiv": null,
+  "openalex": "W4306745656",
+  "cited_by": 5,
+  "abstract": "Abstract The paper is devoted to issues of perceptual quality of images after compression/recovery processing. In contrast to the known approaches, our investigation has a fundamentally different background. We propose the perceptual coding synthesis based on image representations most adequate for human perception, but not on the most appropriate perceptual metrics. Namely, we base our approach on the previously developed biologically motivated representation of images by samples of counts (sampling representations). The paper gives a short overview of this concept. Since the sampling representations are essentially random, the approach proposed differs from the others in its fundamentally statistical orientation. In this respect, it is very close to the generative model-based approaches currently popular in machine learning. The basic scheme of the approach proposed is focused on generative models in the form of sampling representations, discussed in detail in the paper. Since within the framework of generative models the main instruments are the probability distributions of input/output data, the focus of our approach is also on the probability distributions of counts of sampling representations. As the specific feature of sampling representations is the fact that their complete statistical description has the form of a product of the distribution densities of individual counts, the goal of the approach proposed is, in essence, to estimate these densities. Within the scheme of the approach proposed such estimates concern the parameters of the densities chosen from a certain parametric family of probability distributions. In this regard, the choice of the model of the parametric family that is adequate to the visual perception is extremely important. So, the paper discusses in detail the choice of a parametric family in the form of a system of receptive fields. The theoretical aspects of the approach proposed are supplemented by the results of computer simulation. In conclusion, a summary of the paper discussion is given.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent Variables Coding for Perceptual Image Compression",
+  "authors": [
+   "Yingkai He",
+   "Zhen Zhang",
+   "Liang Liao",
+   "Jing Xiao"
+  ],
+  "year": 2024,
+  "venue": "ACM International Conference on Multimedia in Asia (MMAsia)",
+  "doi": "10.1145/3696409.3700252",
+  "arxiv": null,
+  "openalex": "W4405868676",
+  "cited_by": 1,
+  "abstract": "The primary objective of image compression is to reduce the re- quired bitrate for transmission while maintaining the fidelity of the reconstructed images. As bitrate decreases, theoretical results show that the visual quality of images reconstructed using only distortion-optimized compression significantly declines, causing blurriness or artifacts. Prior research used a two-stage training method, with a conditional generative adversarial discriminator fine-tuning the decoder in the second stage to enhance the per- ceptual quality of compressed images. However, these approaches can make the decoder overly dependent on the first-stage encoder, potentially producing unrealistic textures and structures due to the semantic information dropping in latent feature. To address this problem, we propose to extract and compress the informative latent feature to ensure the perceptual quality of the reconstructed images. In this article, we propose using the compression module to compress the latent variables of the latent diffusion model’s image encoder, thereby avoiding the semantic information drop- ping. We introduce a latent variables enhancement block during the transformation stage to improve feature expression capabilities. Additionally, we implement an auxiliary latent variables fusion module at low code rates to mitigate reconstruction issues caused by feature expression distortion, maintaining image consistency. Experimental results demonstrate that our Latent Variables Codec (LVC) maintains high visual quality and achieves excellent results in perceptual evaluation metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Joint Source-Channel Coding for Semantic Image Transmission",
+  "authors": [
+   "Ecenaz Erdemir",
+   "Tze-Yang Tung",
+   "Pier Luigi Dragotti",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3288243",
+  "arxiv": "2211.13772",
+  "openalex": "W4381785967",
+  "cited_by": 194,
+  "abstract": "Recent works have shown that joint source-channel coding (JSCC) schemes using deep neural networks (DNNs), called DeepJSCC, provide promising results in wireless image transmission. However, these methods mostly focus on the distortion of the reconstructed signals with respect to the input image, rather than their perception by humans. However, focusing on traditional distortion metrics alone does not necessarily result in high perceptual quality, especially in extreme physical conditions, such as very low bandwidth compression ratio (BCR) and low signal-to-noise ratio (SNR) regimes. In this work, we propose two novel JSCC schemes that leverage the perceptual quality of deep generative models (DGMs) for wireless image transmission, namely InverseJSCC and GenerativeJSCC. While the former is an inverse problem approach to DeepJSCC, the latter is an end-to-end optimized JSCC scheme. In both, we optimize a weighted sum of mean squared error (MSE) and learned perceptual image patch similarity (LPIPS) losses, which capture more semantic similarities than other distortion metrics. InverseJSCC performs denoising on the distorted reconstructions of a DeepJSCC model by solving an inverse optimization problem using the pre-trained style-based generative adversarial network (StyleGAN). Our simulation results show that InverseJSCC significantly improves the state-of-the-art DeepJSCC in terms of perceptual quality in edge cases. In GenerativeJSCC, we carry out end-to-end training of an encoder and a StyleGAN-based decoder, and show that GenerativeJSCC significantly outperforms DeepJSCC both in terms of distortion and perceptual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Image Compression via Stable Diffusion at Low Bitrate",
+  "authors": [
+   "Luoxu Jin",
+   "Hiroshi Watanabe"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR)",
+  "doi": "10.1109/mipr62202.2024.00107",
+  "arxiv": null,
+  "openalex": "W4403421981",
+  "cited_by": 2,
+  "abstract": "With the development of text-to-image model in the field of image generation, it is possible to generate high fidelity images using only short text. We investigate the ability to use these pre-trained text-to-image models applying to image compression tasks without any fine-tuning. We extract caption, spatial structure sketch, and a special embedding information from the image. The bit rate of these components can be reduced using difference compression techniques. We can reconstruct them back to the image using the pre-trained generative models at decoding process. We show this compression algorithm outperforms the learned image compression method in perceptual metrics FID and KID at very low bit rate.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Video Compression: Achieving High Perceptual Quality at Low Bitrates",
+  "authors": [
+   "Du, Pengli"
+  ],
+  "year": 2024,
+  "venue": "Scholar Commons (Santa Clara University)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7110523635",
+  "cited_by": 0,
+  "abstract": "Video data now fills people’s daily routines, both in their professional endeavors and leisure pursuits. These activities impose significant pressure on the Internet bandwidth. It is essential to develop efficient video coding techniques that compress video data at a low bit rate, while decoding visually appealing frames and saving transmission bandwidth. In traditional video codecs, like Advanced Video Coding (AVC), High Efficiency Video Coding (HEVC), and Versatile Video Coding (VVC), techniques rooted in signal processing and information theory have long been dominant. Recent years have witnessed a surge in deep learning-based approaches for image and video compression. Among these methods, Generative Adversarial Network (GAN) has shown remarkable efficiency in compressing images at low bit rates while preserving high perceptual quality. This characteristic renders GAN an excellent choice for applications requiring low bit rates, such as video conferencing. The decoded images produced by GAN-based methods typically exhibit finer details, compared to non-GAN-based methods. Furthermore, through adversarial training, GAN-based approaches yield decoded frames that better align with the characteristics of the Human Visual System (HVS) compared to methods focused solely on minimizing pixel-wise differences between raw and decompressed frames. Currently, GAN-based techniques are being successfully deployed in video compression to enhance perceptual quality at low bit rates. This research devised three GAN-based frameworks for video compression: The residue frame contains redundant energy of videos and truly little research directly applied GAN to residue-frame coding. To significantly reduce the signal energies of the videos, our first work developed a novel approach for inter-frame residue-coding-based video compression by leveraging GAN. It utilizes GAN to compress the I-frame and the residue of the P-frame. Empirical evaluations conducted on standard test sequences underscore the remarkable efficacy of our algorithm. Our methods reduced the average bpp by 30.58%, 47.63%, and 34.98% while increasing the average PSNR by 1.29 dB, 1.92 dB, and 1.44 dB when compared to GAN-Intra [6], CAE [84], and End-to-End [10] methods. Crucially, the adversarial training we adopted ensured that the decoded target frames are not only well-preserved in high perceptual quality but also consistent with HVS. Most existing video coding work adopts CNN or RNN in the framework. Though effective in catching local features, it doesn’t model long-distance dependencies and extract non-local features thoroughly. To explore global correlations among sequences and inspired by the potential of GAN to compress frames at extremely low bit rates, our second work introduced a novel generative video compression (GVC) model with a transformer-based discriminator (TD) for P-frame, operating on a residue-coding-based paradigm. This model captures non-local correlations within video frames,",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Encryption and Compression Based on a VAE Generative Model",
+  "authors": [
+   "Xintao Duan",
+   "Jingjing Liu",
+   "En Zhang",
+   "Haoxian Song",
+   "Kai Jia"
+  ],
+  "year": 2018,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-030-00012-7_8",
+  "arxiv": null,
+  "openalex": "W2889949621",
+  "cited_by": 1,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "UniMIC: Towards Universal Multi-modality Perceptual Image Compression",
+  "authors": [
+   "Yixin Gao",
+   "Xin Shane Li",
+   "Xiaohan Pan",
+   "Runsen Feng",
+   "Zongyu Guo",
+   "Yiting Lu",
+   "Ren, Yulin",
+   "Zhibo Chen"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2412.04912",
+  "arxiv": "2412.04912",
+  "openalex": "W4405173723",
+  "cited_by": 2,
+  "abstract": "We present UniMIC, a universal multi-modality image compression framework, intending to unify the rate-distortion-perception (RDP) optimization for multiple image codecs simultaneously through excavating cross-modality generative priors. Unlike most existing works that need to design and optimize image codecs from scratch, our UniMIC introduces the visual codec repository, which incorporates amounts of representative image codecs and directly uses them as the basic codecs for various practical applications. Moreover, we propose multi-grained textual coding, where variable-length content prompt and compression prompt are designed and encoded to assist the perceptual reconstruction through the multi-modality conditional generation. In particular, a universal perception compensator is proposed to improve the perception quality of decoded images from all basic codecs at the decoder side by reusing text-assisted diffusion priors from stable diffusion. With the cooperation of the above three strategies, our UniMIC achieves a significant improvement of RDP optimization for different compression codecs, e.g., traditional and learnable codecs, and different compression costs, e.g., ultra-low bitrates. The code will be available in https://github.com/Amygyx/UniMIC .",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comprehensive Framework for Perceptual Quality Assessment in AI-Based Image Compression",
+  "authors": [
+   "Mahesh Boddu",
+   "Soumitra Kumar Mandal"
+  ],
+  "year": 2025,
+  "venue": "Ci-STEM Journal of Digital Technologies and Expert Systems",
+  "doi": "10.55306/cjdtes.2025.020201",
+  "arxiv": null,
+  "openalex": "W7222405236",
+  "cited_by": 0,
+  "abstract": "Perceptual quality assessment has become the central bottleneck in the design, evaluation, and deployment of artificial-intelligence-based image compression systems. Classical signal-fidelity measures such as mean squared error (MSE) and peak signal-to-noise ratio (PSNR) correlate poorly with human judgment. Learned codecs, meanwhile, increasingly optimize directly for structural, perceptual, and generative objectives. How those objectives behave under the rate–distortion–perception trade-off is still not well understood. This paper presents a critical review of the field spanning 1970 to 2023, drawing on 75 peerreviewed and archival sources selected through a PRISMA-informed screening protocol. We trace how image compression and quality assessment evolved together, from Shannon's rate-distortion theory through DCT- and wavelet-based standards to learned nonlinear transform coding and generative codecs. The mathematical foundations of rate–distortion theory, structural similarity, information fidelity, and the rate–distortion–perception function are then formalized, and a taxonomy is presented covering classical, structural, perceptual, no-reference, and AI-based quality metrics. Learned and generative compression architectures are examined in detail, hyperprior, autoregressive, transformer, and diffusion-based designs among them. Building on this synthesis, we propose a unified evaluation framework that folds pixel, structural, perceptual, semantic, and task-fidelity dimensions into a single adaptively weighted assessment protocol suited to modern AI-based codecs. The paper also catalogues the subjective datasets and protocols that underlie the field and presents comparative tables of representative metrics and codecs. It closes by identifying six research gaps, nine future research questions, and a short-, medium-, and long-term roadmap. The review is meant to serve as both a technical reference and an agenda-setting document for researchers, standards bodies, and practitioners working where learned compression meets perceptual quality science",
+  "source": "openalex"
+ },
+ {
+  "title": "SAMIC: A Lightweight Semantic-Aware Mamba for Efficient Perceptual Image Compression",
+  "authors": [
+   "Jiaqian Zhang",
+   "Hao Wei",
+   "Chenyang Ge",
+   "Yanhui Zhou"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2605.04560",
+  "arxiv": "2605.04560",
+  "openalex": "W7160526122",
+  "cited_by": 0,
+  "abstract": "Perceptual image compression focuses on preserving high visual quality under low-bitrate constraints. Most existing approaches to perceptual compression leverage the strong generative capabilities of generative adversarial networks or diffusion models, at the cost of substantial model complexity. To this end, we present an efficient perceptual image compression method that exploits the long-range modeling capability and linear computational complexity of state space models, with a particular focus on Mamba. Unlike existing methods that rely on an inherently fixed scanning order and consequently impair semantic continuity and spatial correlation, we develop a semantic-aware Mamba block (SAMB) to enable scanning guided by dynamically clustered semantic features, thereby alleviating the strict causality constraints and long-range information decay inherent to Mamba. Inspired by singular value decomposition, we design an SVD-inspired redundancy reduction module (SVD-RRM) that performs a low-rank approximation on the latent features by introducing a learnable soft threshold, leading to channel-wise redundancy information reduction. The proposed SAMB is integrated into both the encoder and decoder of the compression framework, whereas the SVD-RRM is incorporated only in the encoder. Extensive experiments demonstrate that our method performs favorably against state-of-the-art approaches in terms of rate-distortion-perception tradeoff and model complexity. The source code and pretrained models will be available at https://github.com/Jasmine-aiq/SAMIC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient Generative Image Compression with Quantized Latents Refinement",
+  "authors": [
+   "Hao Cao",
+   "Yinhuan Huang",
+   "Wenqi Guo",
+   "Zhijin Qin",
+   "Jungong Han"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.29691",
+  "arxiv": "2610.29691",
+  "openalex": "W7223196179",
+  "cited_by": 0,
+  "abstract": "Generative image compression (GIC) delivers strong perceptual quality at low bitrates. However, GIC methods with strong perceptual quality often rely on pretrained diffusion models with high latency, while recent lightweight GIC methods reduce latency but deliver lower perceptual quality. We observe that, for lightweight GIC methods at low bitrates, coarse deterministic quantization can collapse nearby encoder latents corresponding to different fine details to the same point, making these details difficult to recover. Motivated by this, we propose GR-GIC, an efficient GIC that delivers competitive reconstruction performance with fast inference. For better performance, we introduce Guided Refinement (GR), which combines latent refinement guided by entropy context with adaptive perturbations for training regularization, jointly improving reconstruction at low bitrates. For fast inference, we introduce reorganized projected residual vector quantization (P-RVQ), which equivalently reorganizes residual updates into low-dimensional lookups to expose greater parallelism and reduce sequential computation. Experiments on Kodak show that for performance, compared with OneDC, GR-GIC achieves BD-rate savings of 23.19%, 37.71%, 22.30%, and 22.14% for LPIPS, DISTS, PSNR, and FID, respectively. For fast inference, the highly optimized implementation of GR-GIC encodes and decodes in 4.60 and 5.98 ms on an NVIDIA A100. Specifically, the reorganized P-RVQ implementation achieves a $3.14\\times$ average speedup over the original implementation under the same FP32 setting. On an NVIDIA Jetson Orin NX, GR-GIC achieves latency comparable to lightweight GIC methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Image Compression by Estimating Gradients of the Rate-variable Feature Distribution",
+  "authors": [
+   "Minghao Han",
+   "Weiyi You",
+   "Jinhua Zhang",
+   "Leheng Zhang",
+   "Ce Zhu",
+   "Shuhang Gu"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2505.20984",
+  "arxiv": "2505.20984",
+  "openalex": "W4415036574",
+  "cited_by": 0,
+  "abstract": "While learned image compression (LIC) focuses on efficient data transmission, generative image compression (GIC) extends this framework by integrating generative modeling to produce photo-realistic reconstructed images. In this paper, we propose a novel diffusion-based generative modeling framework tailored for generative image compression. Unlike prior diffusion-based approaches that indirectly exploit diffusion modeling, we reinterpret the compression process itself as a forward diffusion path governed by stochastic differential equations (SDEs). A reverse neural network is trained to reconstruct images by reversing the compression process directly, without requiring Gaussian noise initialization. This approach achieves smooth rate adjustment and photo-realistic reconstructions with only a minimal number of sampling steps. Extensive experiments on benchmark datasets demonstrate that our method outperforms existing generative image compression approaches across a range of metrics, including perceptual distortion, statistical fidelity, and no-reference quality assessments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Importance-Based Deep Image Compression Using a Generative Approach",
+  "authors": [
+   "Xi Gu",
+   "Yuanyuan Xu",
+   "Kun Zhu"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-53308-2_6",
+  "arxiv": null,
+  "openalex": "W4391274694",
+  "cited_by": 1,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Image Compression with Text-guided Encoding for both Pixel-level and Perceptual Fidelity",
+  "authors": [
+   "Hagyeong Lee",
+   "Minkyu Kim",
+   "Junhyuk Kim",
+   "Seungeon Kim",
+   "Dokwan Oh",
+   "Jae-Ho Lee"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2403.02944",
+  "arxiv": "2403.02944",
+  "openalex": "W4392538495",
+  "cited_by": 4,
+  "abstract": "Recent advances in text-guided image compression have shown great potential to enhance the perceptual quality of reconstructed images. These methods, however, tend to have significantly degraded pixel-wise fidelity, limiting their practicality. To fill this gap, we develop a new text-guided image compression algorithm that achieves both high perceptual and pixel-wise fidelity. In particular, we propose a compression framework that leverages text information mainly by text-adaptive encoding and training with joint image-text loss. By doing so, we avoid decoding based on text-guided generative models -- known for high generative diversity -- and effectively utilize the semantic information of text at a global level. Experimental results on various datasets show that our method can achieve high pixel-level and perceptual quality, with either human- or machine-generated captions. In particular, our method outperforms all baselines in terms of LPIPS, with some room for even more improvements when we use more carefully generated captions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extreme Generative Image Compression by Learning Text Embedding from Diffusion Models",
+  "authors": [
+   "Zhihong Pan",
+   "Xin Zhou",
+   "Hao Tian"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2211.07793",
+  "arxiv": "2211.07793",
+  "openalex": "W4320352141",
+  "cited_by": 9,
+  "abstract": "Transferring large amount of high resolution images over limited bandwidth is an important but very challenging task. Compressing images using extremely low bitrates (<0.1 bpp) has been studied but it often results in low quality images of heavy artifacts due to the strong constraint in the number of bits available for the compressed data. It is often said that a picture is worth a thousand words but on the other hand, language is very powerful in capturing the essence of an image using short descriptions. With the recent success of diffusion models for text-to-image generation, we propose a generative image compression method that demonstrates the potential of saving an image as a short text embedding which in turn can be used to generate high-fidelity images which is equivalent to the original one perceptually. For a given image, its corresponding text embedding is learned using the same optimization process as the text-to-image diffusion model itself, using a learnable text embedding as input after bypassing the original transformer. The optimization is applied together with a learning compression model to achieve extreme compression of low bitrates <0.1 bpp. Based on our experiments measured by a comprehensive set of image quality metrics, our method outperforms the other state-of-the-art deep learning methods in terms of both perceptual quality and diversity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptually Optimizing Deep Image Compression",
+  "authors": [
+   "Li–Heng Chen",
+   "Christos G. Bampis",
+   "Zhi Li",
+   "Andrey Norkin A",
+   "Alan Conrad Bovik"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2007.02711",
+  "arxiv": "2007.02711",
+  "openalex": "W3039750716",
+  "cited_by": 10,
+  "abstract": "Mean squared error (MSE) and $\\ell_p$ norms have largely dominated the measurement of loss in neural networks due to their simplicity and analytical properties. However, when used to assess visual information loss, these simple norms are not highly consistent with human perception. Here, we propose a different proxy approach to optimize image analysis networks against quantitative perceptual models. Specifically, we construct a proxy network, which mimics the perceptual model while serving as a loss layer of the network.We experimentally demonstrate how this optimization framework can be applied to train an end-to-end optimized image compression network. By building on top of a modern deep image compression models, we are able to demonstrate an averaged bitrate reduction of $28.7\\%$ over MSE optimization, given a specified perceptual quality (VMAF) level.",
+  "source": "openalex"
+ },
+ {
+  "title": "Ultra-Low Bitrate Perceptual Image Compression with Shallow Encoder",
+  "authors": [
+   "Zhang, Tianyu",
+   "Dong Liu",
+   "Chang Wen Chen"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2512.12229",
+  "arxiv": "2512.12229",
+  "openalex": "W4417448410",
+  "cited_by": 0,
+  "abstract": "Ultra-low bitrate image compression (below 0.05 bits per pixel) is increasingly critical for bandwidth-constrained and computation-limited encoding scenarios such as edge devices. Existing frameworks typically rely on large pretrained encoders (e.g., VAEs or tokenizer-based models) and perform transform coding within their generative latent space. While these approaches achieve impressive perceptual fidelity, their reliance on heavy encoder networks makes them unsuitable for deployment on weak sender devices. In this work, we explore the feasibility of applying shallow encoders for ultra-low bitrate compression and propose a novel Asymmetric Extreme Image Compression (AEIC) framework that pursues simultaneously encoding simplicity and decoding quality. Specifically, AEIC employs moderate or even shallow encoder networks, while leveraging an one-step diffusion decoder to maintain high-fidelity and high-realism reconstructions under extreme bitrates. To further enhance the efficiency of shallow encoders, we design a dual-side feature distillation scheme that transfers knowledge from AEIC with moderate encoders to its shallow encoder variants. Experiments show that AEIC not only outperforms existing methods on rate-distortion-perception performance at ultra-low bitrates, but also delivers exceptional encoding efficiency for 35.8 FPS on 1080P images, while maintaining competitive decoding speed compared to existing methods. Code is available at https://github.com/LuizScarlet/AEIC.",
+  "source": "openalex"
+ },
+ {
+  "title": "ProxIQA: A Proxy Approach to Perceptual Optimization of Learned Image Compression",
+  "authors": [
+   "Li-Heng Chen",
+   "Christos G. Bampis",
+   "Zhi Li",
+   "Andrey Norkin",
+   "Alan C. Bovik"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2020.3036752",
+  "arxiv": "1910.08845",
+  "openalex": "W2980441643",
+  "cited_by": 71,
+  "abstract": "(p = 1,2) norms has largely dominated the measurement of loss in neural networks due to their simplicity and analytical properties. However, when used to assess the loss of visual information, these simple norms are not very consistent with human perception. Here, we describe a different \"proximal\" approach to optimize image analysis networks against quantitative perceptual models. Specifically, we construct a proxy network, broadly termed ProxIQA, which mimics the perceptual model while serving as a loss layer of the network. We experimentally demonstrate how this optimization framework can be applied to train an end-to-end optimized image compression network. By building on top of an existing deep image compression model, we are able to demonstrate a bitrate reduction of as much as 31% over MSE optimization, given a specified perceptual quality (VMAF) level.",
+  "source": "openalex"
+ },
+ {
+  "title": "DLF: Extreme Image Compression with Dual-Generative Latent Fusion",
+  "authors": [
+   "Naifu Xue",
+   "Zhaoyang Jia",
+   "Jiahao Li",
+   "Bin Li",
+   "Yuan Zhang",
+   "Yan Lu"
+  ],
+  "year": 2025,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51701.2025.01787",
+  "arxiv": "2503.01428",
+  "openalex": "W7160146213",
+  "cited_by": 4,
+  "abstract": "Recent studies in extreme image compression have achieved remarkable performance by compressing the tokens from generative tokenizers. However, these methods often prioritize clustering common semantics within the dataset, while overlooking the diverse details of individual objects. Consequently, this results in suboptimal reconstruction fidelity, especially at low bitrates. To address this issue, we introduce a Dual-generative Latent Fusion (DLF) paradigm. DLF decomposes the latent into semantic and detail elements, compressing them through two distinct branches. The semantic branch clusters high-level information into compact tokens, while the detail branch encodes perceptually critical details to enhance the overall fidelity. Additionally, we propose a cross-branch interactive design to reduce redundancy between the two branches, thereby minimizing the overall bit cost. Experimental results demonstrate the impressive reconstruction quality of DLF even below 0.01 bits per pixel (bpp). On the CLIC2020 test set, our method achieves bitrate savings of up to 27.93% on LPIPS and 53.55% on DISTS compared to MS-ILLM. Furthermore, DLF surpasses recent diffusion-based codecs in visual fidelity while maintaining a comparable level of generative realism. Project: https://dlfcodec.github.io/",
+  "source": "openalex"
+ },
+ {
+  "title": "ProGIC: Progressive and Lightweight Generative Image Compression with Residual Vector Quantization",
+  "authors": [
+   "Hao Cao",
+   "Chengbin Liang",
+   "Wenqi Guo",
+   "Zhijin Qin",
+   "Jungong Han"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.02897",
+  "arxiv": "2603.02897",
+  "openalex": "W7133550582",
+  "cited_by": 0,
+  "abstract": "Recent advances in generative image compression (GIC) have delivered remarkable improvements in perceptual quality. However, many GICs rely on large-scale and rigid models, which severely constrain their utility for flexible transmission and practical deployment in low-bitrate scenarios. To address these issues, we propose Progressive Generative Image Compression (ProGIC), a compact codec built on residual vector quantization (RVQ). In RVQ, a sequence of vector quantizers encodes the residuals stage by stage, each with its own codebook. The resulting codewords sum to a coarse-to-fine reconstruction and a progressive bitstream, enabling previews from partial data. We pair this with a lightweight backbone based on depthwise-separable convolutions and small attention blocks, enabling practical deployment on both GPUs and CPU-only devices. Experimental results show that ProGIC attains comparable compression performance compared with previous methods. It achieves bitrate savings of up to 57.57% on DISTS and 58.83% on LPIPS compared to MS-ILLM on the Kodak dataset. Beyond perceptual quality, ProGIC enables progressive transmission for flexibility, and also delivers over 10 times faster encoding and decoding compared with MS-ILLM on GPUs for efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Perception-Driven Facial Image Compression: A Layered Generative Approach",
+  "authors": [
+   "Yuefeng Zhang",
+   "Chuanmin Jia",
+   "Jianhui Chang",
+   "Siwei Ma"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2024.3418493",
+  "arxiv": "2304.06896",
+  "openalex": "W4399939189",
+  "cited_by": 9,
+  "abstract": "In this age of information, images are a critical medium for storing and transmitting information. With the rapid growth of image data amount, visual compression and visual data perception are two important research topics attracting a lot of attention. However, those two topics are rarely discussed together and follow separate research paths. Due to the compact compressed domain representation offered by learning-based image compression methods, there exists possibility to have one stream targeting both efficient data storage and compression, and machine perception tasks. In this paper, we propose a layered generative facial image compression model achieving high human vision-oriented image reconstructed quality, even at extreme compression ratios. To obtain analysis efficiency and flexibility, a task-agnostic learning-based compression model is proposed, which effectively supports various compressed domain-based analytical tasks while preserving outstanding reconstructed perceptual quality, compared with traditional and learning-based codecs. In addition, joint optimization schedule is adopted to acquire best balance point among compression ratio, reconstructed image quality, and downstream perception performance. Experimental results verify that our proposed compressed domain-based multi-task analysis method can achieve comparable analysis results against the RGB image-based methods with up to 99.6% bit rate saving (i.e., compared with taking original RGB image as the analysis model input). The practical ability of our model is further justified from model size and information fidelity aspects.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quality Prediction on Deep Generative Images",
+  "authors": [
+   "Hyunsuk Ko",
+   "Dae Yeol Lee",
+   "Seunghyun Cho",
+   "Alan C. Bovik"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2020.2987180",
+  "arxiv": "2004.08245",
+  "openalex": "W3017310261",
+  "cited_by": 29,
+  "abstract": "In recent years, deep neural networks have been utilized in a wide variety of applications including image generation. In particular, generative adversarial networks (GANs) are able to produce highly realistic pictures as part of tasks such as image compression. As with standard compression, it is desirable to be able to automatically assess the perceptual quality of generative images to monitor and control the encode process. However, existing image quality algorithms are ineffective on GAN generated content, especially on textured regions and at high compressions. Here we propose a new \"naturalness\"-based image quality predictor for generative images. Our new GAN picture quality predictor is built using a multi-stage parallel boosting system based on structural similarity features and measurements of statistical similarity. To enable model development and testing, we also constructed a subjective GAN image quality database containing (distorted) GAN images and collected human opinions of them. Our experimental results indicate that our proposed GAN IQA model delivers superior quality predictions on the generative image datasets, as well as on traditional image quality datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Generative Adversarial Compression Artifact Removal",
+  "authors": [
+   "Leonardo Galteri",
+   "Lorenzo Seidenari",
+   "Marco Bertini",
+   "Alberto Del Bimbo"
+  ],
+  "year": 2017,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2017.517",
+  "arxiv": "1704.02518",
+  "openalex": "W2607903451",
+  "cited_by": 219,
+  "abstract": "Compression artifacts arise in images whenever a lossy compression algorithm is applied. These artifacts eliminate details present in the original image, or add noise and small structures; because of these effects they make images less pleasant for the human eye, and may also lead to decreased performance of computer vision algorithms such as object detectors. To eliminate such artifacts, when decompressing an image, it is required to recover the original image from a disturbed version. To this end, we present a feed-forward fully convolutional residual network model trained using a generative adversarial framework. To provide a baseline, we show that our model can be also trained optimizing the Structural Similarity (SSIM), which is a better loss with respect to the simpler Mean Squared Error (MSE). Our GAN is able to produce images with more photorealistic details than MSE or SSIM based networks. Moreover we show that our approach can be used as a pre-processing step for object detection in case images are degraded by compression to a point that state-of-the art detectors fail. In this task, our GAN method obtains better performance than MSE or SSIM trained networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Compression and reconstruction of flotation foam images based on generative adversarial networks",
+  "authors": [
+   "Runda Jia",
+   "Yi Yan",
+   "Du Lang",
+   "Dakuo He",
+   "Kang Li"
+  ],
+  "year": 2023,
+  "venue": "Minerals Engineering",
+  "doi": "10.1016/j.mineng.2023.108299",
+  "arxiv": null,
+  "openalex": "W4385718540",
+  "cited_by": 11,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Diff-ICMH: Harmonizing Machine and Human Vision in Image Compression with Generative Prior",
+  "authors": [
+   "Ruoyu Feng",
+   "Yunpeng Qi",
+   "Jinming Liu",
+   "Yixin Gao",
+   "Xin Li",
+   "Xin Jin",
+   "Zhibo Chen"
+  ],
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/085713-2141",
+  "arxiv": "2511.22549",
+  "openalex": "W4416946759",
+  "cited_by": 0,
+  "abstract": "Image compression methods are usually optimized isolatedly for human perception or machine analysis tasks. We reveal fundamental commonalities between these objectives: preserving accurate semantic information is paramount, as it directly dictates the integrity of critical information for intelligent tasks and aids human understanding. Concurrently, enhanced perceptual quality not only improves visual appeal but also, by ensuring realistic image distributions, benefits semantic feature extraction for machine tasks. Based on this insight, we propose Diff-ICMH, a generative image compression framework aiming for harmonizing machine and human vision in image compression. It ensures perceptual realism by leveraging generative priors and simultaneously guarantees semantic fidelity through the incorporation of Semantic Consistency loss (SC loss) during training. Additionally, we introduce the Tag Guidance Module (TGM) that leverages highly semantic image-level tags to stimulate the pre-trained diffusion model's generative capabilities, requiring minimal additional bit rates. Consequently, Diff-ICMH supports multiple intelligent tasks through a single codec and bitstream without any task-specific adaptation, while preserving high-quality visual experience for human perception. Extensive experimental results demonstrate Diff-ICMH's superiority and generalizability across diverse tasks, while maintaining visual appeal for human perception. Code is available at: https://github.com/RuoyuFeng/Diff-ICMH.",
+  "source": "openalex"
+ },
+ {
+  "title": "H-DDCM: Hadamard Codebooks for Fast Generative Image and Video Compression",
+  "authors": [
+   "Or Ronai",
+   "Vladimir Kulikov",
+   "Tomer Michaeli"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.18125",
+  "arxiv": "2610.18125",
+  "openalex": "W7221769084",
+  "cited_by": 0,
+  "abstract": "Training-free diffusion-based compression methods repurpose the generative priors of a diffusion or a flow model to compress data without retraining them as task-specific codecs. Recent codebook-based approaches such as Turbo-DDCM achieve strong perceptual quality at ultra-low bitrates, but their reliance on dense Gaussian codebooks remains costly in both memory and computation, and scales poorly with the large latent dimensions of modern image and video generators. Their combinatorial bitstream encoding further becomes computationally heavy at this scale. We introduce H-DDCM, a scalable generative compression framework that replaces Gaussian codebooks with implicit randomized Hadamard dictionaries. The fast Walsh-Hadamard transform allows for implicitly synthesizing full-dimensional dictionaries with $O(d \\log d)$ compute for projection and reconstruction and $O(d)$ memory, without materializing the full-dimensional dictionary. We further introduce an efficient table-free lexicographic coding scheme that makes combinatorial encoding practical at larger dimensions. Beyond images, we adapt the framework to an autoregressive video flow model and develop a streaming compression scheme that periodically re-encodes recently reconstructed frames into a fresh KV-cache prefix, preserving temporal context across segments at no additional transmitted bits. This enables long-form, close to real-time generative video compression on a single GPU. Across image and video benchmarks, H-DDCM achieves competitive rate-distortion-perception performance while substantially reducing the memory and computational overhead of codebook-based training-free generative compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "ProGIC: Progressive and Lightweight Generative Image Compression with Residual Vector Quantization",
+  "authors": [
+   "Hao Cao",
+   "Chengbin Liang",
+   "Wenqi Guo",
+   "Zhijin Qin",
+   "Jungong Han"
+  ],
+  "year": 2026,
+  "venue": null,
+  "doi": "10.1109/cvprf71909.2026.00284",
+  "arxiv": null,
+  "openalex": "W7221047424",
+  "cited_by": 0,
+  "abstract": "Recent advances in generative image compression (GIC) have delivered remarkable improvements in perceptual quality. However, many GICs rely on large-scale and rigid models, which severely constrain their utility for flexible transmission and practical deployment in low-bitrate scenarios. To address these issues, we propose Progressive Generative Image Compression (ProGIC), a compact codec built on residual vector quantization (RVQ). In RVQ, a sequence of vector quantizers encodes the residuals stage by stage, each with its own codebook. The resulting codewords sum to a coarse-to-fine reconstruction and a progressive bitstream, enabling previews from partial data. We pair this with a lightweight backbone based on depthwise-separable convolutions and small attention blocks, enabling practical deployment on both GPUs and CPU-only devices. Experimental results show that ProGIC attains comparable compression performance compared with previous methods. It achieves bitrate savings of up to 57.57% on DISTS and 58.83% on LPIPS compared to MS-ILLM on the Kodak dataset. Beyond perceptual quality, ProGIC enables progressive transmission for flexibility, and also delivers over$10 \\times$faster encoding and decoding compared with MS-ILLM on GPUs for efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Video Compression with a Transformer-Based Discriminator",
+  "authors": [
+   "Pengli Du",
+   "Ying Liu",
+   "Nam Ling",
+   "Yongxiong Ren",
+   "Lingzhi Liu"
+  ],
+  "year": 2022,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs56426.2022.10018030",
+  "arxiv": null,
+  "openalex": "W4317555285",
+  "cited_by": 3,
+  "abstract": "Deep learning has been successfully applied to image and video compression. Specifically, generative adversarial network (GAN) can compress images at low bit rates with sharp details and high perceptual quality. In this work, we propose a novel generative video compression (GVC) model with a transformer-based discriminator (TD), which learns non-local correlations within video frames to improve adversarial training. Besides, our GVC model incorporates a new loss to train the generator, which combines a base loss, a discriminator-dependent feature loss, and a perceptual loss. Experiments on HEVC test sequences demonstrate that the proposed GVC model provides superior performance at extremely low bit rates, compared to existing learned and traditional video coding schemes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image and Video Compression using Generative Sparse Representation with Fidelity Controls",
+  "authors": [
+   "Wei Jiang",
+   "Wei Wang"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2404.06076",
+  "arxiv": "2404.06076",
+  "openalex": "W4394709046",
+  "cited_by": 0,
+  "abstract": "We propose a framework for learned image and video compression using the generative sparse visual representation (SVR) guided by fidelity-preserving controls. By embedding inputs into a discrete latent space spanned by learned visual codebooks, SVR-based compression transmits integer codeword indices, which is efficient and cross-platform robust. However, high-quality (HQ) reconstruction in the decoder relies on intermediate feature inputs from the encoder via direct connections. Due to the prohibitively high transmission costs, previous SVR-based compression methods remove such feature links, resulting in largely degraded reconstruction quality. In this work, we treat the intermediate features as fidelity-preserving control signals that guide the conditioned generative reconstruction in the decoder. Instead of discarding or directly transferring such signals, we draw them from a low-quality (LQ) fidelity-preserving alternative input that is sent to the decoder with very low bitrate. These control signals provide complementary fidelity cues to improve reconstruction, and their quality is determined by the compression rate of the LQ alternative, which can be tuned to trade off bitrate, fidelity and perceptual quality. Our framework can be conveniently used for both learned image compression (LIC) and learned video compression (LVC). Since SVR is robust against input perturbations, a large portion of codeword indices between adjacent frames can be the same. By only transferring different indices, SVR-based LIC and LVC can share a similar processing pipeline. Experiments over standard image and video compression benchmarks demonstrate the effectiveness of our approach.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Adversarial Networks for Image-to-Image Transformation",
+  "authors": [
+   "Chaoyue Wang",
+   "Chang Xu",
+   "Chaohui Wang",
+   "Dacheng Tao"
+  ],
+  "year": 2018,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2018.2836316",
+  "arxiv": "1706.09138",
+  "openalex": "W2731516742",
+  "cited_by": 384,
+  "abstract": "In this paper, we propose Perceptual Adversarial Networks (PAN) for image-to-image transformations. Different from existing application driven algorithms, PAN provides a generic framework of learning to map from input images to desired images (Fig. 1), such as a rainy image to its de-rained counterpart, object edges to photos, semantic labels to a scenes image, etc. The proposed PAN consists of two feed-forward convolutional neural networks (CNNs): the image transformation network T and the discriminative network D. Besides the generative adversarial loss widely used in GANs, we propose the perceptual adversarial loss, which undergoes an adversarial training process between the image transformation network T and the hidden layers of the discriminative network D. The hidden layers and the output of the discriminative network D are upgraded to constantly and automatically discover the discrepancy between the transformed image and the corresponding ground-truth, while the image transformation network T is trained to minimize the discrepancy explored by the discriminative network D. Through integrating the generative adversarial loss and the perceptual adversarial loss, D and T can be trained alternately to solve image-to-image transformation tasks. Experiments evaluated on several image-to-image transformation tasks (e.g., image de-raining, image inpainting, etc) demonstrate the effectiveness of the proposed PAN and its advantages over many existing works.",
+  "source": "openalex"
+ },
+ {
+  "title": "Fast Training-free Perceptual Image Compression",
+  "authors": [
+   "Zhu, Ziran",
+   "Xu, Tongda",
+   "Huang, Minye",
+   "He, Dailan",
+   "Ge, Xingtong",
+   "Xinjie Zhang",
+   "Li, Ling",
+   "Wang, Yan"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2506.16102",
+  "arxiv": "2506.16102",
+  "openalex": "W4417537623",
+  "cited_by": 0,
+  "abstract": "Training-free perceptual image codec adopt pre-trained unconditional generative model during decoding to avoid training new conditional generative model. However, they heavily rely on diffusion inversion or sample communication, which take 1 min to intractable amount of time to decode a single image. In this paper, we propose a training-free algorithm that improves the perceptual quality of any existing codec with theoretical guarantee. We further propose different implementations for optimal perceptual quality when decoding time budget is $\\approx 0.1$s, $0.1-10$s and $\\ge 10$s. Our approach: 1). improves the decoding time of training-free codec from 1 min to $0.1-10$s with comparable perceptual quality. 2). can be applied to non-differentiable codec such as VTM. 3). can be used to improve previous perceptual codecs, such as MS-ILLM. 4). can easily achieve perception-distortion trade-off. Empirically, we show that our approach successfully improves the perceptual quality of ELIC, VTM and MS-ILLM with fast decoding. Our approach achieves comparable FID to previous training-free codec with significantly less decoding time. And our approach still outperforms previous conditional generative model based codecs such as HiFiC and MS-ILLM in terms of FID. The source code is provided in the supplementary material.",
+  "source": "openalex"
+ },
+ {
+  "title": "Higher Fidelity Perceptual Image and Video Compression with a Latent Conditioned Residual Denoising Diffusion Model",
+  "authors": [
+   "Jonas Brenig",
+   "Radu Timofte"
+  ],
+  "year": 2025,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-91838-4_12",
+  "arxiv": "2505.13152",
+  "openalex": "W4410719657",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Compression",
+  "authors": [
+   "Shibani Santurkar",
+   "David Mark Budden",
+   "Nir Shavit"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1703.01467",
+  "arxiv": "1703.01467",
+  "openalex": "W3037197620",
+  "cited_by": 14,
+  "abstract": "Traditional image and video compression algorithms rely on hand-crafted encoder/decoder pairs (codecs) that lack adaptability and are agnostic to the data being compressed. Here we describe the concept of generative compression, the compression of data using generative models, and suggest that it is a direction worth pursuing to produce more accurate and visually pleasing reconstructions at much deeper compression levels for both image and video data. We also demonstrate that generative compression is orders-of-magnitude more resilient to bit error rates (e.g. from noisy wireless channels) than traditional variable-length coding schemes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Perceptual Compression",
+  "authors": [
+   "Yash Patel",
+   "Srikar Appalaraju",
+   "Raghaven Manmatha"
+  ],
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1907.08310",
+  "arxiv": "1907.08310",
+  "openalex": "W2963737915",
+  "cited_by": 20,
+  "abstract": "Several deep learned lossy compression techniques have been proposed in the recent literature. Most of these are optimized by using either MS-SSIM (multi-scale structural similarity) or MSE (mean squared error) as a loss function. Unfortunately, neither of these correlate well with human perception and this is clearly visible from the resulting compressed images. In several cases, the MS-SSIM for deep learned techniques is higher than say a conventional, non-deep learned codec such as JPEG-2000 or BPG. However, the images produced by these deep learned techniques are in many cases clearly worse to human eyes than those produced by JPEG-2000 or BPG. We propose the use of an alternative, deep perceptual metric, which has been shown to align better with human perceptual similarity. We then propose Deep Perceptual Compression (DPC) which makes use of an encoder-decoder based image compression model to jointly optimize on the deep perceptual metric and MS-SSIM. Via extensive human evaluations, we show that the proposed method generates visually better results than previous learning based compression methods and JPEG-2000, and is comparable to BPG. Furthermore, we demonstrate that for tasks like object-detection, images compressed with DPC give better accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Classifiers: Detecting Generative Images Using Perceptual Features",
+  "authors": [
+   "Krishna Srikar Durbha",
+   "Asvin Kumar Venkataramanan",
+   "Rajesh Sureddi",
+   "Alan Conrad Bovik"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Conference on Computer Vision Workshops",
+  "doi": "10.1109/iccvw69036.2025.00357",
+  "arxiv": "2507.17240",
+  "openalex": "W7131073188",
+  "cited_by": 0,
+  "abstract": "Image Quality Assessment (IQA) models are employed in many practical image and video processing pipelines to reduce storage, minimize transmission costs, and improve the Quality of Experience (QoE) of millions of viewers. These models are sensitive to a diverse range of image distortions and can accurately predict image quality as judged by hu-man viewers. Recent advancements in generative models have resulted in a significant influx of “Gen/AI” content on the internet. Existing methods for detecting GenAI content have progressed significantly with improved generalization performance on images from unseen generative models. Here, we leverage the capabilities of existing IQA models, which effectively capture the manifold of real images within a bandpass statistical space, to distinguish between real and AI-generated images. We investigate the generalization ability of these perceptual classifiers to the task of GenAI image detection and evaluate their robustness against vari-ous image degradations. Our results show that a two-layer network trained on the feature space of IQA models demonstrates state-of-the-art performance in detecting fake images across generative models, while maintaining significant robustness against image degradations.",
+  "source": "openalex"
+ }
+]

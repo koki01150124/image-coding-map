@@ -1,4 +1,32 @@
 {
+  "agustsson2018generative": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:1804.02958"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:53",
+    "title": "Generative Adversarial Networks for Extreme Learned Image Compression",
+    "authors": [
+      "Eirikur Agustsson",
+      "Michael Tschannen",
+      "Fabian Mentzer",
+      "Radu Timofte",
+      "Luc Van Gool"
+    ],
+    "year": 2018,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.1804.02958",
+    "arxiv": "1804.02958",
+    "url": "https://arxiv.org/abs/1804.02958",
+    "pdf_url": "https://arxiv.org/pdf/1804.02958",
+    "abstract": "We present a learned image compression system based on GANs, operating at extremely low bitrates. Our proposed framework combines an encoder, decoder/generator and a multi-scale discriminator, which we train jointly for a generative learned compression objective. The model synthesizes details it cannot afford to store, obtaining visually pleasing results at bitrates where previous methods fail and show strong artifacts. Furthermore, if a semantic label map of the original image is available, our method can fully synthesize unimportant regions in the decoded image such as streets and trees from the label map, proportionally reducing the storage cost. A user study confirms that for low bitrates, our approach is preferred to state-of-the-art methods, even when they use more than double the bits.",
+    "type": "preprint"
+  },
   "amit2025turboddcm": {
     "status": "included",
     "reason": "",
@@ -689,6 +717,92 @@
       "W6787972765"
     ]
   },
+  "deng2026bitflat": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2610.25682"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:16:47",
+    "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+    "authors": [
+      "Xinfeng Deng",
+      "Li Zhou",
+      "Haitao Chen",
+      "Shengjie Wu",
+      "Lingjin Kong",
+      "Nan Li",
+      "Haitao Zhao",
+      "Dongtang Ma"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2610.25682",
+    "arxiv": "2610.25682",
+    "url": "https://arxiv.org/abs/2610.25682",
+    "pdf_url": "https://arxiv.org/pdf/2610.25682",
+    "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+    "type": "preprint"
+  },
+  "erdemir2022generative": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2211.13772"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:35",
+    "title": "Generative Joint Source-Channel Coding for Semantic Image Transmission",
+    "authors": [
+      "Ecenaz Erdemir",
+      "Tze-Yang Tung",
+      "Pier Luigi Dragotti",
+      "Deniz Gunduz"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2211.13772",
+    "arxiv": "2211.13772",
+    "url": "https://arxiv.org/abs/2211.13772",
+    "pdf_url": "https://arxiv.org/pdf/2211.13772",
+    "abstract": "Recent works have shown that joint source-channel coding (JSCC) schemes using deep neural networks (DNNs), called DeepJSCC, provide promising results in wireless image transmission. However, these methods mostly focus on the distortion of the reconstructed signals with respect to the input image, rather than their perception by humans. However, focusing on traditional distortion metrics alone does not necessarily result in high perceptual quality, especially in extreme physical conditions, such as very low bandwidth compression ratio (BCR) and low signal-to-noise ratio (SNR) regimes. In this work, we propose two novel JSCC schemes that leverage the perceptual quality of deep generative models (DGMs) for wireless image transmission, namely InverseJSCC and GenerativeJSCC. While the former is an inverse problem approach to DeepJSCC, the latter is an end-to-end optimized JSCC scheme. In both, we optimize a weighted sum of mean squared error (MSE) and learned perceptual image patch similarity (LPIPS) losses, which capture more semantic similarities than other distortion metrics. InverseJSCC performs denoising on the distorted reconstructions of a DeepJSCC model by solving an inverse optimization problem using style-based generative adversarial network (StyleGAN). Our simulation results show that InverseJSCC significantly improves the state-of-the-art (SotA) DeepJSCC in terms of perceptual quality in edge cases. In GenerativeJSCC, we carry out end-to-end training of an encoder and a StyleGAN-based decoder, and show that GenerativeJSCC significantly outperforms DeepJSCC both in terms of distortion and perceptual quality.",
+    "type": "preprint"
+  },
+  "fu2022vector": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2209.11519"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:39",
+    "title": "Vector Quantized Semantic Communication System",
+    "authors": [
+      "Qifan Fu",
+      "Huiqiang Xie",
+      "Zhijin Qin",
+      "Gregory Slabaugh",
+      "Xiaoming Tao"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.1109/lwc.2023.3255221",
+    "arxiv": "2209.11519",
+    "url": "https://arxiv.org/abs/2209.11519",
+    "pdf_url": "https://arxiv.org/pdf/2209.11519",
+    "abstract": "Although analog semantic communication systems have received considerable attention in the literature, there is less work on digital semantic communication systems. In this paper, we develop a deep learning (DL)-enabled vector quantized (VQ) semantic communication system for image transmission, named VQ-DeepSC. Specifically, we propose a convolutional neural network (CNN)-based transceiver to extract multi-scale semantic features of images and introduce multi-scale semantic embedding spaces to perform semantic feature quantization, rendering the data compatible with digital communication systems. Furthermore, we employ adversarial training to improve the quality of received images by introducing a PatchGAN discriminator. Experimental results demonstrate that the proposed VQ-DeepSC is more robustness than BPG in digital communication systems and has comparable MS-SSIM performance to the DeepJSCC method.",
+    "type": "preprint"
+  },
   "gallager1962lowdensity": {
     "status": "included",
     "reason": "",
@@ -1248,6 +1362,32 @@
       "W6787972765"
     ]
   },
+  "lee2018contextadaptive": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:1809.10452"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:48",
+    "title": "Context-adaptive Entropy Model for End-to-end Optimized Image Compression",
+    "authors": [
+      "Jooyoung Lee",
+      "Seunghyun Cho",
+      "Seung-Kwon Beack"
+    ],
+    "year": 2018,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.1809.10452",
+    "arxiv": "1809.10452",
+    "url": "https://arxiv.org/abs/1809.10452",
+    "pdf_url": "https://arxiv.org/pdf/1809.10452",
+    "abstract": "We propose a context-adaptive entropy model for use in end-to-end optimized image compression. Our model exploits two types of contexts, bit-consuming contexts and bit-free contexts, distinguished based upon whether additional bit allocation is required. Based on these contexts, we allow the model to more accurately estimate the distribution of each latent representation with a more generalized form of the approximation models, which accordingly leads to an enhanced compression performance. Based on the experimental results, the proposed method outperforms the traditional image codecs, such as BPG and JPEG2000, as well as other previous artificial-neural-network (ANN) based approaches, in terms of the peak signal-to-noise ratio (PSNR) and multi-scale structural similarity (MS-SSIM) index.",
+    "type": "preprint"
+  },
   "liu2023learned": {
     "status": "included",
     "reason": "",
@@ -1620,6 +1760,35 @@
       "W6758307712"
     ]
   },
+  "naseri2024deep": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2411.10650"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:57",
+    "title": "Deep Learning-Based Image Compression for Wireless Communications: Impacts on Reliability,Throughput, and Latency",
+    "authors": [
+      "Mostafa Naseri",
+      "Pooya Ashtari",
+      "Mohamed Seif",
+      "Eli De Poorter",
+      "H. Vincent Poor",
+      "Adnan Shahid"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2411.10650",
+    "arxiv": "2411.10650",
+    "url": "https://arxiv.org/abs/2411.10650",
+    "pdf_url": "https://arxiv.org/pdf/2411.10650",
+    "abstract": "In wireless communications, efficient image transmission must balance reliability, throughput, and latency, especially under dynamic channel conditions. This paper presents an adaptive and progressive pipeline for learned image compression (LIC)-based architectures tailored to such environments. We investigate two state-of-the-art learning-based models: the hyperprior model and Vector Quantized Generative Adversarial Network (VQGAN). The hyperprior model achieves superior compression performance through lossless compression in the bottleneck but is susceptible to bit errors, necessitating the use of error correction or retransmission mechanisms. In contrast, the VQGAN decoder demonstrates robust image reconstruction capabilities even in the absence of channel coding, enhancing reliability in challenging transmission scenarios. We propose progressive versions of both models, enabling partial image transmission and decoding under imperfect channel conditions. This progressive approach not only maintains image integrity under poor channel conditions but also significantly reduces latency by allowing immediate partial image availability. We evaluate our pipeline using the Kodak high-resolution image dataset under a Rayleigh fading wireless channel model simulating dynamic conditions. The results indicate that the progressive transmission framework enhances reliability and latency while maintaining or improving throughput compared to non-progressive counterparts across various Signal-to-Noise Ratio (SNR) levels. Specifically, the progressive-hyperprior model consistently outperforms others in latency metrics, particularly in the 99.9th percentile waiting time-a measure indicating the maximum waiting time experienced by 99.9% of transmission instances-across all SNRs, and achieves higher throughput in low SNR scenarios. where Adaptive WebP fails.",
+    "type": "preprint"
+  },
   "oh2025blind": {
     "status": "included",
     "reason": "",
@@ -1824,6 +1993,62 @@
       "W6622239757",
       "W7098642242"
     ]
+  },
+  "park2023joint": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2311.08146"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:44",
+    "title": "Joint Source-Channel Coding for Channel-Adaptive Digital Semantic Communications",
+    "authors": [
+      "Joohyuk Park",
+      "Yongjeong Oh",
+      "Seonjung Kim",
+      "Yo-Seb Jeon"
+    ],
+    "year": 2023,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2311.08146",
+    "arxiv": "2311.08146",
+    "url": "https://arxiv.org/abs/2311.08146",
+    "pdf_url": "https://arxiv.org/pdf/2311.08146",
+    "abstract": "In this paper, we propose a novel joint source-channel coding (JSCC) approach for channel-adaptive digital semantic communications. In semantic communication systems with digital modulation and demodulation, robust design of JSCC encoder and decoder becomes challenging not only due to the unpredictable dynamics of channel conditions but also due to diverse modulation orders. To address this challenge, we first develop a new demodulation method which assesses the uncertainty of the demodulation output to improve the robustness of the digital semantic communication system. We then devise a robust training strategy which enhances the robustness and flexibility of the JSCC encoder and decoder against diverse channel conditions and modulation orders. To this end, we model the relationship between the encoder's output and decoder's input using binary symmetric erasure channels and then sample the parameters of these channels from diverse distributions. We also develop a channel-adaptive modulation technique for an inference phase, in order to reduce the communication latency while maintaining task performance. In this technique, we adaptively determine modulation orders for the latent variables based on channel conditions. Using simulations, we demonstrate the superior performance of the proposed JSCC approach for image classification, reconstruction, and retrieval tasks compared to existing JSCC approaches.",
+    "type": "preprint"
+  },
+  "sha2025lossresilient": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2501.11263"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:11",
+    "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+    "authors": [
+      "Hongwei Sha",
+      "Muchen Dong",
+      "Quanyou Luo",
+      "Ming Lu",
+      "Hao Chen",
+      "Zhan Ma"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2501.11263",
+    "arxiv": "2501.11263",
+    "url": "https://arxiv.org/abs/2501.11263",
+    "pdf_url": "https://arxiv.org/pdf/2501.11263",
+    "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments. Code is available at https://github.com/NJUVISION/LossResilientLIC.",
+    "type": "preprint"
   },
   "shannon1948mathematical": {
     "status": "included",
@@ -2209,6 +2434,33 @@
       "W2964121744"
     ]
   },
+  "theis2022lossy": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2206.08889"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:18:03",
+    "title": "Lossy Compression with Gaussian Diffusion",
+    "authors": [
+      "Lucas Theis",
+      "Tim Salimans",
+      "Matthew D. Hoffman",
+      "Fabian Mentzer"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2206.08889",
+    "arxiv": "2206.08889",
+    "url": "https://arxiv.org/abs/2206.08889",
+    "pdf_url": "https://arxiv.org/pdf/2206.08889",
+    "abstract": "We consider a novel lossy compression approach based on unconditional diffusion generative models, which we call DiffC. Unlike modern compression schemes which rely on transform coding and quantization to restrict the transmitted information, DiffC relies on the efficient communication of pixels corrupted by Gaussian noise. We implement a proof of concept and find that it works surprisingly well despite the lack of an encoder transform, outperforming the state-of-the-art generative compression method HiFiC on ImageNet 64x64. DiffC only uses a single model to encode and denoise corrupted pixels at arbitrary bitrates. The approach further provides support for progressive coding, that is, decoding from partial bit streams. We perform a rate-distortion analysis to gain a deeper understanding of its performance, providing analytical results for multivariate Gaussian data as well as theoretic bounds for general distributions. Furthermore, we prove that a flow-based reconstruction achieves a 3 dB gain over ancestral sampling at high bitrates.",
+    "type": "preprint"
+  },
   "toderici2015variable": {
     "status": "included",
     "reason": "",
@@ -2365,6 +2617,31 @@
     "type": "preprint",
     "referenced_works": []
   },
+  "vonderfecht2025lossy": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2501.09815"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:18:08",
+    "title": "Lossy Compression with Pretrained Diffusion Models",
+    "authors": [
+      "Jeremy Vonderfecht",
+      "Feng Liu"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2501.09815",
+    "arxiv": "2501.09815",
+    "url": "https://arxiv.org/abs/2501.09815",
+    "pdf_url": "https://arxiv.org/pdf/2501.09815",
+    "abstract": "We apply the DiffC algorithm (Theis et al. 2022) to Stable Diffusion 1.5, 2.1, XL, and Flux-dev, and demonstrate that these pretrained models are remarkably capable lossy image compressors. A principled algorithm for lossy compression using pretrained diffusion models has been understood since at least Ho et al. 2020, but challenges in reverse-channel coding have prevented such algorithms from ever being fully implemented. We introduce simple workarounds that lead to the first complete implementation of DiffC, which is capable of compressing and decompressing images using Stable Diffusion in under 10 seconds. Despite requiring no additional training, our method is competitive with other state-of-the-art generative compression methods at low ultra-low bitrates.",
+    "type": "preprint"
+  },
   "wallace1992jpeg": {
     "status": "included",
     "reason": "",
@@ -2402,6 +2679,93 @@
       "W2150013946",
       "W2162168771"
     ]
+  },
+  "wang2025resicomp": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2502.10812"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:07",
+    "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+    "authors": [
+      "Sixian Wang",
+      "Jincheng Dai",
+      "Xiaoqi Qin",
+      "Ke Yang",
+      "Kai Niu",
+      "Ping Zhang"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2502.10812",
+    "arxiv": "2502.10812",
+    "url": "https://arxiv.org/abs/2502.10812",
+    "pdf_url": "https://arxiv.org/pdf/2502.10812",
+    "abstract": "Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC's resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience.",
+    "type": "preprint"
+  },
+  "wu2023cddm": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2309.08895"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:02",
+    "title": "CDDM: Channel Denoising Diffusion Models for Wireless Semantic Communications",
+    "authors": [
+      "Tong Wu",
+      "Zhiyong Chen",
+      "Dazhi He",
+      "Liang Qian",
+      "Yin Xu",
+      "Meixia Tao",
+      "Wenjun Zhang"
+    ],
+    "year": 2023,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2309.08895",
+    "arxiv": "2309.08895",
+    "url": "https://arxiv.org/abs/2309.08895",
+    "pdf_url": "https://arxiv.org/pdf/2309.08895",
+    "abstract": "Diffusion models (DM) can gradually learn to remove noise, which have been widely used in artificial intelligence generated content (AIGC) in recent years. The property of DM for eliminating noise leads us to wonder whether DM can be applied to wireless communications to help the receiver mitigate the channel noise. To address this, we propose channel denoising diffusion models (CDDM) for semantic communications over wireless channels in this paper. CDDM can be applied as a new physical layer module after the channel equalization to learn the distribution of the channel input signal, and then utilizes this learned knowledge to remove the channel noise. We derive corresponding training and sampling algorithms of CDDM according to the forward diffusion process specially designed to adapt the channel models and theoretically prove that the well-trained CDDM can effectively reduce the conditional entropy of the received signal under small sampling steps. Moreover, we apply CDDM to a semantic communications system based on joint source-channel coding (JSCC) for image transmission. Extensive experimental results demonstrate that CDDM can further reduce the mean square error (MSE) after minimum mean square error (MMSE) equalizer, and the joint CDDM and JSCC system achieves better performance than the JSCC system and the traditional JPEG2000 with low-density parity-check (LDPC) code approach.",
+    "type": "preprint"
+  },
+  "wu2023deep": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2309.00470"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:24",
+    "title": "Deep Joint Source-Channel Coding for Adaptive Image Transmission over MIMO Channels",
+    "authors": [
+      "Haotian Wu",
+      "Yulin Shao",
+      "Chenghong Bian",
+      "Krystian Mikolajczyk",
+      "Deniz Gündüz"
+    ],
+    "year": 2023,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2309.00470",
+    "arxiv": "2309.00470",
+    "url": "https://arxiv.org/abs/2309.00470",
+    "pdf_url": "https://arxiv.org/pdf/2309.00470",
+    "abstract": "This paper introduces a vision transformer (ViT)-based deep joint source and channel coding (DeepJSCC) scheme for wireless image transmission over multiple-input multiple-output (MIMO) channels, denoted as DeepJSCC-MIMO. We consider DeepJSCC-MIMO for adaptive image transmission in both open-loop and closed-loop MIMO systems. The novel DeepJSCC-MIMO architecture surpasses the classical separation-based benchmarks with robustness to channel estimation errors and showcases remarkable flexibility in adapting to diverse channel conditions and antenna numbers without requiring retraining. Specifically, by harnessing the self-attention mechanism of ViT, DeepJSCC-MIMO intelligently learns feature mapping and power allocation strategies tailored to the unique characteristics of the source image and prevailing channel conditions. Extensive numerical experiments validate the significant improvements in transmission quality achieved by DeepJSCC-MIMO for both open-loop and closed-loop MIMO systems across a wide range of scenarios. Moreover, DeepJSCC-MIMO exhibits robustness to varying channel conditions, channel estimation errors, and different antenna numbers, making it an appealing solution for emerging semantic communication systems.",
+    "type": "preprint"
   },
   "xu2021wireless": {
     "status": "included",
@@ -2556,6 +2920,86 @@
     "abstract": "We derive novel upper and lower finite-length bounds of the error probability in joint source-channel coding when the source obeys an ergodic Markov process and the channel is a Markovian additive channel or a Markovian conditional additive channel. These bounds are tight in the large and moderate deviation regimes.",
     "type": "preprint"
   },
+  "yang2021deep": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2110.04456"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:31",
+    "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Adaptive Rate Control",
+    "authors": [
+      "Mingyu Yang",
+      "Hun-Seok Kim"
+    ],
+    "year": 2021,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2110.04456",
+    "arxiv": "2110.04456",
+    "url": "https://arxiv.org/abs/2110.04456",
+    "pdf_url": "https://arxiv.org/pdf/2110.04456",
+    "abstract": "We present a novel adaptive deep joint source-channel coding (JSCC) scheme for wireless image transmission. The proposed scheme supports multiple rates using a single deep neural network (DNN) model and learns to dynamically control the rate based on the channel condition and image contents. Specifically, a policy network is introduced to exploit the tradeoff space between the rate and signal quality. To train the policy network, the Gumbel-Softmax trick is adopted to make the policy network differentiable and hence the whole JSCC scheme can be trained end-to-end. To the best of our knowledge, this is the first deep JSCC scheme that can automatically adjust its rate using a single network model. Experiments show that our scheme successfully learns a reasonable policy that decreases channel bandwidth utilization for high SNR scenarios or simple image contents. For an arbitrary target rate, our rate-adaptive scheme using a single model achieves similar performance compared to an optimized model specifically trained for that fixed target rate. To reproduce our results, we make the source code publicly available at https://github.com/mingyuyng/Dynamic_JSCC.",
+    "type": "preprint"
+  },
+  "yang2021ofdmguided": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2109.05194"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:20",
+    "title": "OFDM-guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+    "authors": [
+      "Mingyu Yang",
+      "Chenghong Bian",
+      "Hun-Seok Kim"
+    ],
+    "year": 2021,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2109.05194",
+    "arxiv": "2109.05194",
+    "url": "https://arxiv.org/abs/2109.05194",
+    "pdf_url": "https://arxiv.org/pdf/2109.05194",
+    "abstract": "We investigate joint source channel coding (JSCC) for wireless image transmission over multipath fading channels. Inspired by recent works on deep learning based JSCC and model-based learning methods, we combine an autoencoder with orthogonal frequency division multiplexing (OFDM) to cope with multipath fading. The proposed encoder and decoder use convolutional neural networks (CNNs) and directly map the source images to complex-valued baseband samples for OFDM transmission. The multipath channel and OFDM are represented by non-trainable (deterministic) but differentiable layers so that the system can be trained end-to-end. Furthermore, our JSCC decoder further incorporates explicit channel estimation, equalization, and additional subnets to enhance the performance. The proposed method exhibits 2.5 -- 4 dB SNR gain for the equivalent image quality compared to conventional schemes that employ state-of-the-art but separate source and channel coding such as BPG and LDPC. The performance further improves when the system incorporates the channel state information (CSI) feedback. The proposed scheme is robust against OFDM signal clipping and parameter mismatch for the channel model used in training and evaluation.",
+    "type": "preprint"
+  },
+  "yang2022witt": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2211.00937"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:17:15",
+    "title": "WITT: A Wireless Image Transmission Transformer for Semantic Communications",
+    "authors": [
+      "Ke Yang",
+      "Sixian Wang",
+      "Jincheng Dai",
+      "Kailin Tan",
+      "Kai Niu",
+      "Ping Zhang"
+    ],
+    "year": 2022,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2211.00937",
+    "arxiv": "2211.00937",
+    "url": "https://arxiv.org/abs/2211.00937",
+    "pdf_url": "https://arxiv.org/pdf/2211.00937",
+    "abstract": "In this paper, we aim to redesign the vision Transformer (ViT) as a new backbone to realize semantic image transmission, termed wireless image transmission transformer (WITT). Previous works build upon convolutional neural networks (CNNs), which are inefficient in capturing global dependencies, resulting in degraded end-to-end transmission performance especially for high-resolution images. To tackle this, the proposed WITT employs Swin Transformers as a more capable backbone to extract long-range information. Different from ViTs in image classification tasks, WITT is highly optimized for image transmission while considering the effect of the wireless channel. Specifically, we propose a spatial modulation module to scale the latent representations according to channel state information, which enhances the ability of a single model to deal with various channel conditions. As a result, extensive experiments verify that our WITT attains better performance for different image resolutions, distortion metrics, and channel conditions. The code is available at https://github.com/KeYang8/WITT.",
+    "type": "preprint"
+  },
   "yang2023lossy": {
     "status": "included",
     "reason": "",
@@ -2583,6 +3027,33 @@
     "cited_by": 82,
     "type": "conference-paper",
     "referenced_works": []
+  },
+  "yang2024diffusionaided": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2404.17736"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:16:54",
+    "title": "Diffusion-Aided Joint Source Channel Coding For High Realism Wireless Image Transmission",
+    "authors": [
+      "Mingyu Yang",
+      "Bowen Liu",
+      "Boyang Wang",
+      "Hun-Seok Kim"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2404.17736",
+    "arxiv": "2404.17736",
+    "url": "https://arxiv.org/abs/2404.17736",
+    "pdf_url": "https://arxiv.org/pdf/2404.17736",
+    "abstract": "Deep learning-based joint source-channel coding (deep JSCC) has been demonstrated to be an effective approach for wireless image transmission. Nevertheless, most existing work adopts an autoencoder framework to optimize conventional criteria such as Mean Squared Error (MSE) and Structural Similarity Index (SSIM) which do not suffice to maintain the perceptual quality of reconstructed images. Such an issue is more prominent under stringent bandwidth constraints or low signal-to-noise ratio (SNR) conditions. To tackle this challenge, we propose DiffJSCC, a novel framework that leverages the prior knowledge of the pre-trained Statble Diffusion model to produce high-realism images via the conditional diffusion denoising process. Our DiffJSCC first extracts multimodal spatial and textual features from the noisy channel symbols in the generation phase. Then, it produces an initial reconstructed image as an intermediate representation to aid robust feature extraction and a stable training process. In the following diffusion step, DiffJSCC uses the derived multimodal features, together with channel state information such as the signal-to-noise ratio (SNR), as conditions to guide the denoising diffusion process, which converts the initial random noise to the final reconstruction. DiffJSCC employs a novel control module to fine-tune the Stable Diffusion model and adjust it to the multimodal conditions. Extensive experiments on diverse datasets reveal that our method significantly surpasses prior deep JSCC approaches on both perceptual metrics and downstream task performance, showcasing its ability to preserve the semantics of the original transmitted images. Notably, DiffJSCC can achieve highly realistic reconstructions for 768x512 pixel Kodak images with only 3072 symbols (<0.008 symbols per pixel) under 1dB SNR channels.",
+    "type": "preprint"
   },
   "yang2024swinjscc": {
     "status": "included",
@@ -2653,6 +3124,35 @@
       "W4392158764",
       "W6787972765"
     ]
+  },
+  "zhang2025semanticsguided": {
+    "status": "candidate",
+    "reason": "",
+    "tags": [],
+    "queries": [
+      "add:arxiv:2501.01138"
+    ],
+    "sources": [
+      "arxiv"
+    ],
+    "added_at": "2026-11-05 17:16:58",
+    "title": "Semantics-Guided Diffusion for Deep Joint Source-Channel Coding in Wireless Image Transmission",
+    "authors": [
+      "Maojun Zhang",
+      "Haotian Wu",
+      "Guangxu Zhu",
+      "Richeng Jin",
+      "Xiaoming Chen",
+      "Deniz Gündüz"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": "10.48550/arxiv.2501.01138",
+    "arxiv": "2501.01138",
+    "url": "https://arxiv.org/abs/2501.01138",
+    "pdf_url": "https://arxiv.org/pdf/2501.01138",
+    "abstract": "Joint source-channel coding (JSCC) offers a promising avenue for enhancing transmission efficiency by jointly incorporating source and channel statistics into the system design. A key advancement in this area is the deep joint source and channel coding (DeepJSCC) technique that designs a direct mapping of input signals to channel symbols parameterized by a neural network, which can be trained for arbitrary channel models and semantic quality metrics. This paper advances the DeepJSCC framework toward a semantics-aligned, high-fidelity transmission approach, called semantics-guided diffusion DeepJSCC (SGD-JSCC). Existing schemes that integrate diffusion models (DMs) with JSCC face challenges in transforming random generation into accurate reconstruction and adapting to varying channel conditions. SGD-JSCC incorporates two key innovations: (1) utilizing some inherent information that contributes to the semantics of an image, such as text description or edge map, to guide the diffusion denoising process; and (2) enabling seamless adaptability to varying channel conditions with the help of a semantics-guided DM for channel denoising. The DM is guided by diverse semantic information and integrates seamlessly with DeepJSCC. In a slow fading channel, SGD-JSCC dynamically adapts to the instantaneous signal-to-noise ratio (SNR) directly estimated from the channel output, thereby eliminating the need for additional pilot transmissions for channel estimation. In a fast fading channel, we introduce a training-free denoising strategy, allowing SGD-JSCC to effectively adjust to fluctuations in channel gains. Numerical results demonstrate that, guided by semantic information and leveraging the powerful DM, our method outperforms existing DeepJSCC schemes, delivering satisfactory reconstruction performance even at extremely poor channel conditions.",
+    "type": "preprint"
   },
   "zheng2023pac": {
     "status": "excluded",

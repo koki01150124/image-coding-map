@@ -1,0 +1,988 @@
+[
+ {
+  "title": "A survey on deep learning in medical image analysis",
+  "authors": [
+   "Geert J. S. Litjens",
+   "Thijs Kooi",
+   "Babak Ehteshami Bejnordi",
+   "Arnaud A. A. Setio",
+   "Francesco Ciompi",
+   "Mohsen Ghafoorian",
+   "Jeroen A. W. M. van der Laak",
+   "Bram van Ginneken",
+   "Clara I. Sá‎nchez"
+  ],
+  "year": 2017,
+  "venue": "Medical Image Analysis",
+  "doi": "10.1016/j.media.2017.07.005",
+  "arxiv": "1702.05747",
+  "openalex": "W2592929672",
+  "cited_by": 15750,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Advances and Open Problems in Federated Learning",
+  "authors": [
+   "Peter Kairouz",
+   "H. Brendan McMahan",
+   "Brendan Avent",
+   "Aurélien Bellet",
+   "Mehdi Bennis",
+   "Arjun Nitin Bhagoji",
+   "Kallista Bonawitz",
+   "Zachary Charles",
+   "Graham Cormode",
+   "Rachel Cummings",
+   "Rafael G. L. D’Oliveira",
+   "Hubert Eichner",
+   "Salim El Rouayheb",
+   "David Evans",
+   "Joshua Gardner",
+   "Zachary Garrett",
+   "Adrià Gascón",
+   "Badih Ghazi",
+   "Phillip B. Gibbons",
+   "Marco Gruteser",
+   "Zaïd Harchaoui",
+   "Chaoyang He",
+   "Lie He",
+   "Zhouyuan Huo",
+   "Ben Hutchinson",
+   "Justin Hsu",
+   "Martin Jaggi",
+   "Tara Javidi",
+   "Gauri Joshi",
+   "Mikhail Khodak",
+   "Jakub Konečný",
+   "Aleksandra Korolova",
+   "Farinaz Koushanfar",
+   "Sanmi Koyejo",
+   "Tancrède Lepoint",
+   "Yang Liu",
+   "Prateek Mittal",
+   "Mehryar Mohri",
+   "Richard Nock",
+   "Ayfer Özgür",
+   "Rasmus Pagh",
+   "Hang Qi",
+   "Daniel Ramage",
+   "Ramesh Raskar",
+   "Mariana Raykova",
+   "Dawn Xiaodong Song",
+   "Weikang Song",
+   "Sebastian U. Stich",
+   "Ziteng Sun",
+   "Ananda Theertha Suresh",
+   "Florian Tramèr",
+   "Praneeth Vepakomma",
+   "Jianyu Wang",
+   "Li Xiong",
+   "Zheng Xu",
+   "Qiang Yang",
+   "Felix X. Yu",
+   "Han Yu",
+   "Sen Zhao"
+  ],
+  "year": 2020,
+  "venue": "Foundations and Trends® in Machine Learning",
+  "doi": "10.1561/2200000083",
+  "arxiv": "1912.04977",
+  "openalex": "W2995022099",
+  "cited_by": 8554,
+  "abstract": "Federated learning (FL) is a machine learning setting where many clients (e.g., mobile devices or whole organizations) collaboratively train a model under the orchestration of a central server (e.g., service provider), while keeping the training data decentralized. FL embodies the principles of focused data collection and minimization, and can mitigate many of the systemic privacy risks and costs resulting from traditional, centralized machine learning and data science approaches. Motivated by the explosive growth in FL research, this monograph discusses recent advances and presents an extensive collection of open problems and challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Dictionary learning for integrative, multimodal and scalable single-cell analysis",
+  "authors": [
+   "Yuhan Hao",
+   "Tim Stuart",
+   "Madeline H. Kowalski",
+   "Saket Choudhary",
+   "Paul Hoffman",
+   "Austin Hartman",
+   "Avi Srivastava",
+   "Gesmira Molla",
+   "Shaista Madad",
+   "Carlos Fernandez‐Granda",
+   "Rahul Satija"
+  ],
+  "year": 2023,
+  "venue": "Nature Biotechnology",
+  "doi": "10.1038/s41587-023-01767-y",
+  "arxiv": null,
+  "openalex": "W4378212544",
+  "cited_by": 5617,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey",
+  "authors": [
+   "Vivienne Sze",
+   "Yu‐Hsin Chen",
+   "Tien-Ju Yang",
+   "Joel Emer"
+  ],
+  "year": 2017,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2017.2761740",
+  "arxiv": "1703.09039",
+  "openalex": "W2604319603",
+  "cited_by": 4312,
+  "abstract": "Deep neural networks (DNNs) are currently widely used for many artificial intelligence (AI) applications including computer vision, speech recognition, and robotics. While DNNs deliver state-of-the-art accuracy on many AI tasks, it comes at the cost of high computational complexity. Accordingly, techniques that enable efficient processing of DNNs to improve energy efficiency and throughput without sacrificing application accuracy or increasing hardware cost are critical to the wide deployment of DNNs in AI systems. This article aims to provide a comprehensive tutorial and survey about the recent advances toward the goal of enabling efficient processing of DNNs. Specifically, it will provide an overview of DNNs, discuss various hardware platforms and architectures that support DNNs, and highlight key trends in reducing the computation cost of DNNs either solely via hardware design changes or via joint hardware design and DNN algorithm changes. It will also summarize various development resources that enable researchers and practitioners to quickly get started in this field, and highlight important benchmarking metrics and design considerations that should be used for evaluating the rapidly growing number of DNN hardware designs, optionally including algorithmic codesigns, being proposed in academia and industry. The reader will take away the following concepts from this article: understand the key design considerations for DNNs; be able to evaluate different DNN hardware implementations with benchmarks and comparison metrics; understand the tradeoffs between various hardware architectures and platforms; be able to evaluate the utility of various DNN design techniques for efficient processing; and understand recent implementation trends and opportunities.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variational Inference: A Review for Statisticians",
+  "authors": [
+   "David M. Blei",
+   "Alp Kucukelbir",
+   "Jon D. McAuliffe"
+  ],
+  "year": 2017,
+  "venue": "Journal of the American Statistical Association",
+  "doi": "10.1080/01621459.2017.1285773",
+  "arxiv": "1601.00670",
+  "openalex": "W2225156818",
+  "cited_by": 3974,
+  "abstract": "One of the core problems of modern statistics is to approximate difficult-to-compute probability densities. This problem is especially important in Bayesian statistics, which frames all inference about unknown quantities as a calculation involving the posterior density. In this article, we review variational inference (VI), a method from machine learning that approximates probability densities through optimization. VI has been used in many applications and tends to be faster than classical methods, such as Markov chain Monte Carlo sampling. The idea behind VI is to first posit a family of densities and then to find a member of that family which is close to the target density. Closeness is measured by Kullback–Leibler divergence. We review the ideas behind mean-field variational inference, discuss the special case of VI applied to exponential family models, present a full example with a Bayesian mixture of Gaussians, and derive a variant that uses stochastic optimization to scale up to massive data. We discuss modern research in VI and highlight important open problems. VI is powerful, but it is not yet well understood. Our hope in writing this article is to catalyze statistical research on this class of algorithms. Supplementary materials for this article are available online.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Segmentation Using Deep Learning: A Survey",
+  "authors": [
+   "Shervin Minaee",
+   "Yuri Y. Boykov",
+   "Fatih Porikli",
+   "Antonio Plaza",
+   "Nasser Kehtarnavaz",
+   "Demetri Terzopoulos"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2021.3059968",
+  "arxiv": "2001.05566",
+  "openalex": "W2999607073",
+  "cited_by": 3888,
+  "abstract": "Image segmentation is a key task in computer vision and image processing with important applications such as scene understanding, medical image analysis, robotic perception, video surveillance, augmented reality, and image compression, among others, and numerous segmentation algorithms are found in the literature. Against this backdrop, the broad success of deep learning (DL) has prompted the development of new image segmentation approaches leveraging DL models. We provide a comprehensive review of this recent literature, covering the spectrum of pioneering efforts in semantic and instance segmentation, including convolutional pixel-labeling networks, encoder-decoder architectures, multiscale and pyramid-based approaches, recurrent networks, visual attention models, and generative models in adversarial settings. We investigate the relationships, strengths, and challenges of these DL-based segmentation models, examine the widely used datasets, compare performances, and discuss promising research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation",
+  "authors": [
+   "Konstantinos Kamnitsas",
+   "Christian Ledig",
+   "Virginia Newcombe",
+   "Joanna P. Simpson",
+   "Andrew D. Kane",
+   "David Krishna Menon",
+   "Daniel Rueckert",
+   "Ben Glocker"
+  ],
+  "year": 2016,
+  "venue": "Medical Image Analysis",
+  "doi": "10.1016/j.media.2016.10.004",
+  "arxiv": "1603.05959",
+  "openalex": "W2301358467",
+  "cited_by": 3508,
+  "abstract": "We propose a dual pathway, 11-layers deep, three-dimensional Convolutional Neural Network for the challenging task of brain lesion segmentation. The devised architecture is the result of an in-depth analysis of the limitations of current networks proposed for similar applications. To overcome the computational burden of processing 3D medical scans, we have devised an efficient and effective dense training scheme which joins the processing of adjacent image patches into one pass through the network while automatically adapting to the inherent class imbalance present in the data. Further, we analyze the development of deeper, thus more discriminative 3D CNNs. In order to incorporate both local and larger contextual information, we employ a dual pathway architecture that processes the input images at multiple scales simultaneously. For post-processing of the network's soft segmentation, we use a 3D fully connected Conditional Random Field which effectively removes false positives. Our pipeline is extensively evaluated on three challenging tasks of lesion segmentation in multi-channel MRI patient data with traumatic brain injuries, brain tumours, and ischemic stroke. We improve on the state-of-the-art for all three applications, with top ranking performance on the public benchmarks BRATS 2015 and ISLES 2015. Our method is computationally efficient, which allows its adoption in a variety of research and clinical settings. The source code of our implementation is made publicly available.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources",
+  "authors": [
+   "Xiao Xiang Zhu",
+   "Devis Tuia",
+   "Lichao Mou",
+   "Gui-Song Xia",
+   "Liangpei Zhang",
+   "Feng Xu",
+   "Friedrich Fraundorfer"
+  ],
+  "year": 2017,
+  "venue": "IEEE Geoscience and Remote Sensing Magazine",
+  "doi": "10.1109/mgrs.2017.2762307",
+  "arxiv": "1710.03959",
+  "openalex": "W2764034829",
+  "cited_by": 3507,
+  "abstract": "Central to the looming paradigm shift toward data-intensive science, machine-learning techniques are becoming increasingly important. In particular, deep learning has proven to be both a major breakthrough and an extremely powerful tool in many fields. Shall we embrace deep learning as the key to everything? Or should we resist a black-box solution? These are controversial issues within the remote-sensing community. In this article, we analyze the challenges of using deep learning for remote-sensing data analysis, review recent advances, and provide resources we hope will make deep learning in remote sensing seem ridiculously simple. More importantly, we encourage remote-sensing scientists to bring their expertise into deep learning and use it as an implicit general model to tackle unprecedented, large-scale, influential challenges, such as climate change and urbanization.",
+  "source": "openalex"
+ },
+ {
+  "title": "A survey of the recent architectures of deep convolutional neural networks",
+  "authors": [
+   "Asifullah Khan",
+   "Anabia Sohail",
+   "Umme Zahoora",
+   "Aqsa Saeed Qureshi"
+  ],
+  "year": 2020,
+  "venue": "Artificial Intelligence Review",
+  "doi": "10.1007/s10462-020-09825-6",
+  "arxiv": "1901.06032",
+  "openalex": "W2910121883",
+  "cited_by": 3207,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications",
+  "authors": [
+   "Shaoxiong Ji",
+   "Shirui Pan",
+   "Erik Cambria",
+   "Pekka Marttinen",
+   "Philip S. Yu"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "doi": "10.1109/tnnls.2021.3070843",
+  "arxiv": "2002.00388",
+  "openalex": "W3003265726",
+  "cited_by": 3035,
+  "abstract": "Human knowledge provides a formal understanding of the world. Knowledge graphs that represent structural relations between entities have become an increasingly popular research direction toward cognition and human-level intelligence. In this survey, we provide a comprehensive review of the knowledge graph covering overall research topics about: 1) knowledge graph representation learning; 2) knowledge acquisition and completion; 3) temporal knowledge graph; and 4) knowledge-aware applications and summarize recent breakthroughs and perspective directions to facilitate future research. We propose a full-view categorization and new taxonomies on these topics. Knowledge graph embedding is organized from four aspects of representation space, scoring function, encoding models, and auxiliary information. For knowledge acquisition, especially knowledge graph completion, embedding methods, path inference, and logical rule reasoning are reviewed. We further explore several emerging topics, including metarelational learning, commonsense reasoning, and temporal knowledge graphs. To facilitate future research on knowledge graphs, we also provide a curated collection of data sets and open-source libraries on different tasks. In the end, we have a thorough outlook on several promising research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next",
+  "authors": [
+   "Salvatore Cuomo",
+   "Vincenzo Schiano Di Cola",
+   "Fabio Giampaolo",
+   "Gianluigi Rozza",
+   "Maziar Raissi",
+   "Francesco Piccialli"
+  ],
+  "year": 2022,
+  "venue": "Journal of Scientific Computing",
+  "doi": "10.1007/s10915-022-01939-z",
+  "arxiv": "2201.05624",
+  "openalex": "W4288039037",
+  "cited_by": 2974,
+  "abstract": "Abstract Physics-Informed Neural Networks (PINN) are neural networks (NNs) that encode model equations, like Partial Differential Equations (PDE), as a component of the neural network itself. PINNs are nowadays used to solve PDEs, fractional equations, integral-differential equations, and stochastic PDEs. This novel methodology has arisen as a multi-task learning framework in which a NN must fit observed data while reducing a PDE residual. This article provides a comprehensive review of the literature on PINNs: while the primary goal of the study was to characterize these networks and their related advantages and disadvantages. The review also attempts to incorporate publications on a broader range of collocation-based physics informed neural networks, which stars form the vanilla PINN, as well as many other variants, such as physics-constrained neural networks (PCNN), variational hp-VPINN, and conservative PINN (CPINN). The study indicates that most research has focused on customizing the PINN through different activation functions, gradient optimization techniques, neural network structures, and loss function structures. Despite the wide range of applications for which PINNs have been used, by demonstrating their ability to be more feasible in some contexts than classical numerical techniques like Finite Element Method (FEM), advancements are still possible, most notably theoretical issues that remain unresolved.",
+  "source": "openalex"
+ },
+ {
+  "title": "Relational inductive biases, deep learning, and graph networks",
+  "authors": [
+   "Peter Battaglia",
+   "Hamrick, Jessica B.",
+   "Victor Bapst",
+   "Álvaro Sánchez‐González",
+   "Vinícius Zambaldi",
+   "Mateusz Malinowski",
+   "Andrea Tacchetti",
+   "David Chillón Raposo",
+   "Adam Santoro",
+   "Ryan Faulkner",
+   "Çağlar Gülçehre",
+   "H. Francis Song",
+   "Andrew J. Ballard",
+   "Justin Gilmer",
+   "George E. Dahl",
+   "Ashish Vaswani",
+   "Kelsey Rebecca Allen",
+   "Nash, Charles",
+   "Langston, Victoria",
+   "Chris Dyer",
+   "Nicolas Heess",
+   "Daan Wierstra",
+   "Pushmeet Kohli",
+   "Matthew Botvinick",
+   "Oriol Vinyals",
+   "Yujia Li",
+   "Razvan Pascanu"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1806.01261",
+  "arxiv": "1806.01261",
+  "openalex": "W2805516822",
+  "cited_by": 2971,
+  "abstract": "Artificial intelligence (AI) has undergone a renaissance recently, making major progress in key domains such as vision, language, control, and decision-making. This has been due, in part, to cheap data and cheap compute resources, which have fit the natural strengths of deep learning. However, many defining characteristics of human intelligence, which developed under much different pressures, remain out of reach for current approaches. In particular, generalizing beyond one's experiences--a hallmark of human intelligence from infancy--remains a formidable challenge for modern AI. The following is part position paper, part review, and part unification. We argue that combinatorial generalization must be a top priority for AI to achieve human-like abilities, and that structured representations and computations are key to realizing this objective. Just as biology uses nature and nurture cooperatively, we reject the false choice between \"hand-engineering\" and \"end-to-end\" learning, and instead advocate for an approach which benefits from their complementary strengths. We explore how using relational inductive biases within deep learning architectures can facilitate learning about entities, relations, and rules for composing them. We present a new building block for the AI toolkit with a strong relational inductive bias--the graph network--which generalizes and extends various approaches for neural networks that operate on graphs, and provides a straightforward interface for manipulating structured knowledge and producing structured behaviors. We discuss how graph networks can support relational reasoning and combinatorial generalization, laying the foundation for more sophisticated, interpretable, and flexible patterns of reasoning. As a companion to this paper, we have released an open-source software library for building graph networks, with demonstrations of how to use them in practice.",
+  "source": "openalex"
+ },
+ {
+  "title": "Remote Sensing Image Scene Classification: Benchmark and State of the Art",
+  "authors": [
+   "Gong Cheng",
+   "Junwei Han",
+   "Xiaoqiang Lu"
+  ],
+  "year": 2017,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2017.2675998",
+  "arxiv": "1703.00121",
+  "openalex": "W2592962403",
+  "cited_by": 2947,
+  "abstract": "Remote sensing image scene classification plays an important role in a wide range of applications and hence has been receiving remarkable attention. During the past years, significant efforts have been made to develop various data sets or present a variety of approaches for scene classification from remote sensing images. However, a systematic review of the literature concerning data sets and methods for scene classification is still lacking. In addition, almost all existing data sets have a number of limitations, including the small scale of scene classes and the image numbers, the lack of image variations and diversity, and the saturation of accuracy. These limitations severely limit the development of new approaches especially deep learning-based methods. This paper first provides a comprehensive review of the recent progress. Then, we propose a large-scale data set, termed “NWPU-RESISC45,” which is a publicly available benchmark for REmote Sensing Image Scene Classification (RESISC), created by Northwestern Polytechnical University (NWPU). This data set contains 31 500 images, covering 45 scene classes with 700 images in each class. The proposed NWPU-RESISC45 1) is large-scale on the scene classes and the total image number; 2) holds big variations in translation, spatial resolution, viewpoint, object pose, illumination, background, and occlusion; and 3) has high within-class diversity and between-class similarity. The creation of this data set will enable the community to develop and evaluate various data-driven algorithms. Finally, several representative methods are evaluated using the proposed data set, and the results are reported as a useful baseline for future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI",
+  "authors": [
+   "Erico Tjoa",
+   "Cuntai Guan"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "doi": "10.1109/tnnls.2020.3027314",
+  "arxiv": "1907.07374",
+  "openalex": "W2958089299",
+  "cited_by": 2691,
+  "abstract": "Recently, artificial intelligence and machine learning in general have demonstrated remarkable performances in many tasks, from image processing to natural language processing, especially with the advent of deep learning (DL). Along with research progress, they have encroached upon many different fields and disciplines. Some of them require high level of accountability and thus transparency, for example, the medical sector. Explanations for machine decisions and predictions are thus needed to justify their reliability. This requires greater interpretability, which often means we need to understand the mechanism underlying the algorithms. Unfortunately, the blackbox nature of the DL is still unresolved, and many machine decisions are still poorly understood. We provide a review on interpretabilities suggested by different research works and categorize them. The different categories show different dimensions in interpretability research, from approaches that provide \"obviously\" interpretable information to the studies of complex patterns. By applying the same categorization to interpretability in medical research, it is hoped that: 1) clinicians and practitioners can subsequently approach these methods with caution; 2) insight into interpretability will be born with more considerations for medical practices; and 3) initiatives to push forward data-based, mathematically grounded, and technically grounded medical education are encouraged.",
+  "source": "openalex"
+ },
+ {
+  "title": "Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges",
+  "authors": [
+   "Hazim Shakhatreh",
+   "Ahmad Sawalmeh",
+   "Ala Al‐Fuqaha",
+   "Zuochao Dou",
+   "Eyad K. Almaita",
+   "Issa M. Khalil",
+   "Noor Shamsiah Othman",
+   "Abdallah A. Khreishah",
+   "Mohsen Guizani"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2909530",
+  "arxiv": "1805.00881",
+  "openalex": "W4213147678",
+  "cited_by": 2578,
+  "abstract": "The use of unmanned aerial vehicles (UAVs) is growing rapidly across many civil application domains, including real-time monitoring, providing wireless coverage, remote sensing, search and rescue, delivery of goods, security and surveillance, precision agriculture, and civil infrastructure inspection. Smart UAVs are the next big revolution in the UAV technology promising to provide new opportunities in different applications, especially in civil infrastructure in terms of reduced risks and lower cost. Civil infrastructure is expected to dominate more than $45 Billion market value of UAV usage. In this paper, we present UAV civil applications and their challenges. We also discuss the current research trends and provide future insights for potential UAV uses. Furthermore, we present the key challenges for UAV civil applications, including charging challenges, collision avoidance and swarming challenges, and networking and security-related challenges. Based on our review of the recent literature, we discuss open research challenges and draw high-level insights on how these challenges might be approached.",
+  "source": "openalex"
+ },
+ {
+  "title": "U2-Net: Going deeper with nested U-structure for salient object detection",
+  "authors": [
+   "Xuebin Qin",
+   "Zichen Zhang",
+   "Chenyang Huang",
+   "Masood Dehghan",
+   "Osmar R. Zai͏̈ane",
+   "Martin Jägersand"
+  ],
+  "year": 2020,
+  "venue": "Pattern Recognition",
+  "doi": "10.1016/j.patcog.2020.107404",
+  "arxiv": "2005.09007",
+  "openalex": "W3025800305",
+  "cited_by": 2452,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A comprehensive survey on support vector machine classification: Applications, challenges and trends",
+  "authors": [
+   "Jair Cervantes",
+   "Farid García‐Lamont",
+   "Lisbeth Rodríguez-Mazahua",
+   "Asdrúbal López‐Chau"
+  ],
+  "year": 2020,
+  "venue": "Neurocomputing",
+  "doi": "10.1016/j.neucom.2019.10.118",
+  "arxiv": null,
+  "openalex": "W3023211159",
+  "cited_by": 2451,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update",
+  "authors": [
+   "Fabien Lotte",
+   "Laurent Bougrain",
+   "Andrzej S Cichocki",
+   "Maureen Clerc",
+   "Marco Congedo",
+   "Alain Rakotomamonjy",
+   "Florian Yger"
+  ],
+  "year": 2018,
+  "venue": "Journal of Neural Engineering",
+  "doi": "10.1088/1741-2552/aab2f2",
+  "arxiv": null,
+  "openalex": "W2794345050",
+  "cited_by": 2266,
+  "abstract": "OBJECTIVE: Most current electroencephalography (EEG)-based brain-computer interfaces (BCIs) are based on machine learning algorithms. There is a large diversity of classifier types that are used in this field, as described in our 2007 review paper. Now, approximately ten years after this review publication, many new algorithms have been developed and tested to classify EEG signals in BCIs. The time is therefore ripe for an updated review of EEG classification algorithms for BCIs. APPROACH: We surveyed the BCI and machine learning literature from 2007 to 2017 to identify the new classification approaches that have been investigated to design BCIs. We synthesize these studies in order to present such algorithms, to report how they were used for BCIs, what were the outcomes, and to identify their pros and cons. MAIN RESULTS: We found that the recently designed classification algorithms for EEG-based BCIs can be divided into four main categories: adaptive classifiers, matrix and tensor classifiers, transfer learning and deep learning, plus a few other miscellaneous classifiers. Among these, adaptive classifiers were demonstrated to be generally superior to static ones, even with unsupervised adaptation. Transfer learning can also prove useful although the benefits of transfer learning remain unpredictable. Riemannian geometry-based methods have reached state-of-the-art performances on multiple BCI problems and deserve to be explored more thoroughly, along with tensor-based methods. Shrinkage linear discriminant analysis and random forests also appear particularly useful for small training samples settings. On the other hand, deep learning methods have not yet shown convincing improvement over state-of-the-art BCI methods. SIGNIFICANCE: This paper provides a comprehensive overview of the modern classification algorithms used in EEG-based BCIs, presents the principles of these methods and guidelines on when and how to use them. It also identifies a number of challenges to further advance EEG classification in BCI.",
+  "source": "openalex"
+ },
+ {
+  "title": "VoxelMorph: A Learning Framework for Deformable Medical Image Registration",
+  "authors": [
+   "Guha Balakrishnan",
+   "Amy Zhao",
+   "Mert Rory Sabuncu",
+   "John V. Guttag",
+   "Adrian Vasile Dalca"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Medical Imaging",
+  "doi": "10.1109/tmi.2019.2897538",
+  "arxiv": "1809.05231",
+  "openalex": "W2891631795",
+  "cited_by": 2211,
+  "abstract": "We present VoxelMorph, a fast learning-based framework for deformable, pairwise medical image registration. Traditional registration methods optimize an objective function for each pair of images, which can be time-consuming for large datasets or rich deformation models. In contrast to this approach, and building on recent learning-based methods, we formulate registration as a function that maps an input image pair to a deformation field that aligns these images. We parameterize the function via a convolutional neural network (CNN), and optimize the parameters of the neural network on a set of images. Given a new pair of scans, VoxelMorph rapidly computes a deformation field by directly evaluating the function. In this work, we explore two different training strategies. In the first (unsupervised) setting, we train the model to maximize standard image matching objective functions that are based on the image intensities. In the second setting, we leverage auxiliary segmentations available in the training data. We demonstrate that the unsupervised model's accuracy is comparable to state-of-the-art methods, while operating orders of magnitude faster. We also show that VoxelMorph trained with auxiliary data improves registration accuracy at test time, and evaluate the effect of training set size on registration. Our method promises to speed up medical image analysis and processing pipelines, while facilitating novel directions in learning-based registration and its applications. Our code is freely available at https://github.com/voxelmorph/voxelmorph.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResUNet-a: A deep learning framework for semantic segmentation of remotely sensed data",
+  "authors": [
+   "Foivos I. Diakogiannis",
+   "François Waldner",
+   "Peter A. Caccetta",
+   "Chen Wu"
+  ],
+  "year": 2020,
+  "venue": "ISPRS Journal of Photogrammetry and Remote Sensing",
+  "doi": "10.1016/j.isprsjprs.2020.01.013",
+  "arxiv": "1904.00592",
+  "openalex": "W3007268491",
+  "cited_by": 2210,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation",
+  "authors": [
+   "Yi Luo",
+   "Nima Mesgarani"
+  ],
+  "year": 2019,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2019.2915167",
+  "arxiv": "1809.07454",
+  "openalex": "W2952218014",
+  "cited_by": 2072,
+  "abstract": "Single-channel, speaker-independent speech separation methods have recently seen great progress. However, the accuracy, latency, and computational cost of such methods remain insufficient. The majority of the previous methods have formulated the separation problem through the time-frequency representation of the mixed signal, which has several drawbacks, including the decoupling of the phase and magnitude of the signal, the suboptimality of time-frequency representation for speech separation, and the long latency of the entire system. To address these shortcomings, we propose a fully-convolutional time-domain audio separation network (Conv-TasNet), a deep learning framework for end-to-end time-domain speech separation. Conv-TasNet uses a linear encoder to generate a representation of the speech waveform optimized for separating individual speakers. Speaker separation is achieved by applying a set of weighting functions (masks) to the encoder output. The modified encoder representations are then inverted back to the waveforms using a linear decoder. The masks are found using a temporal convolutional network (TCN) consisting of stacked 1-D dilated convolutional blocks, which allows the network to model the long-term dependencies of the speech signal while maintaining a small model size. The proposed Conv-TasNet system significantly outperforms previous time-frequency masking methods in separating two- and three-speaker mixtures. Additionally, Conv-TasNet surpasses several ideal time-frequency magnitude masks in two-speaker speech separation as evaluated by both objective distortion measures and subjective quality assessment by human listeners. Finally, Conv-TasNet has a significantly smaller model size and a much shorter minimum latency, making it a suitable solution for both offline and real-time speech separation applications. This study therefore represents a major step toward the realization of speech separation systems for real-world speech processing technologies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Facial Expression Recognition: A Survey",
+  "authors": [
+   "Shan Li",
+   "Weihong Deng"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Affective Computing",
+  "doi": "10.1109/taffc.2020.2981446",
+  "arxiv": "1804.08348",
+  "openalex": "W2799041689",
+  "cited_by": 2038,
+  "abstract": "With the transition of facial expression recognition (FER) from laboratory-controlled to challenging in-the-wild conditions and the recent success of deep learning techniques in various fields, deep neural networks have increasingly been leveraged to learn discriminative representations for automatic FER. Recent deep FER systems generally focus on two important issues: overfitting caused by a lack of sufficient training data and expression-unrelated variations, such as illumination, head pose, and identity bias. In this survey, we provide a comprehensive review of deep FER, including datasets and algorithms that provide insights into these intrinsic problems. First, we introduce the available datasets that are widely used in the literature and provide accepted data selection and evaluation principles for these datasets. We then describe the standard pipeline of a deep FER system with the related background knowledge and suggestions for applicable implementations for each stage. For the state-of-the-art in deep FER, we introduce existing novel deep neural networks and related training strategies that are designed for FER based on both static images and dynamic image sequences and discuss their advantages and limitations. Competitive performances and experimental comparisons on widely used benchmarks are also summarized. We then extend our survey to additional related issues and application scenarios. Finally, we review the remaining challenges and corresponding opportunities in this field as well as future directions for the design of robust deep FER systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning for Image Super-Resolution: A Survey",
+  "authors": [
+   "Zhihao Wang",
+   "Jian Chen",
+   "Steven C. H. Hoi"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2020.2982166",
+  "arxiv": "1902.06068",
+  "openalex": "W3013529009",
+  "cited_by": 2032,
+  "abstract": "Image Super-Resolution (SR) is an important class of image processing techniqueso enhance the resolution of images and videos in computer vision. Recent years have witnessed remarkable progress of image super-resolution using deep learning techniques. This article aims to provide a comprehensive survey on recent advances of image super-resolution using deep learning approaches. In general, we can roughly group the existing studies of SR techniques into three major categories: supervised SR, unsupervised SR, and domain-specific SR. In addition, we also cover some other important issues, such as publicly available benchmark datasets and performance evaluation metrics. Finally, we conclude this survey by highlighting several future directions and open issues which should be further addressed by the community in the future.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+  "authors": [
+   "Sangmin Park",
+   "Young‐Gab Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2021.3140175",
+  "arxiv": null,
+  "openalex": "W4206484811",
+  "cited_by": 1925,
+  "abstract": "Unlike previous studies on the Metaverse based on Second Life, the current Metaverse is based on the social value of Generation Z that online and offline selves are not different. With the technological development of deep learning-based high-precision recognition models and natural generation models, Metaverse is being strengthened with various factors, from mobile-based always-on access to connectivity with reality using virtual currency. The integration of enhanced social activities and neural-net methods requires a new definition of Metaverse suitable for the present, different from the previous Metaverse. This paper divides the concepts and essential techniques necessary for realizing the Metaverse into three components (i.e., hardware, software, and contents) and three approaches (i.e., user interaction, implementation, and application) rather than marketing or hardware approach to conduct a comprehensive analysis. Furthermore, we describe essential methods based on three components and techniques to Metaverse’s representative Ready Player One, Roblox, and Facebook research in the domain of films, games, and studies. Finally, we summarize the limitations and directions for implementing the immersive Metaverse as social influences, constraints, and open challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reconfigurable Intelligent Surfaces: Principles and Opportunities",
+  "authors": [
+   "Yuanwei Liu",
+   "Xiao Liu",
+   "Xidong Mu",
+   "Tianwei Hou",
+   "Jiaqi Xu",
+   "Marco Di Renzo",
+   "Naofal Al‐Dhahir"
+  ],
+  "year": 2021,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2021.3077737",
+  "arxiv": "2007.03435",
+  "openalex": "W3159402647",
+  "cited_by": 1892,
+  "abstract": "Reconfigurable intelligent surfaces (RISs), also known as intelligent reflecting surfaces (IRSs), or large intelligent surfaces (LISs),1have received significant attention for their potential to enhance the capacity and coverage of wireless networks by smartly reconfiguring the wireless propagation environment. Therefore, RISs are considered a promising technology for the sixth-generation (6G) of communication networks. In this context, we provide a comprehensive overview of the state-of-the-art on RISs, with focus on their operating principles, performance evaluation, beamforming design and resource management, applications of machine learning to RIS-enhanced wireless networks, as well as the integration of RISs with other emerging technologies. We describe the basic principles of RISs both from physics and communications perspectives, based on which we present performance evaluation of multiantenna assisted RIS systems. In addition, we systematically survey existing designs for RIS-enhanced wireless networks encompassing performance analysis, information theory, and performance optimization perspectives. Furthermore, we survey existing research contributions that apply machine learning for tackling challenges in dynamic scenarios, such as random fluctuations of wireless channels and user mobility in RIS-enhanced wireless networks. Last but not least, we identify major issues and research opportunities associated with the integration of RISs and other emerging technologies for applications to next-generation networks.1Without loss of generality, we use the name of RIS in the remainder of this paper.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extended tight‐binding quantum chemistry methods",
+  "authors": [
+   "Christoph Bannwarth",
+   "Eike Caldeweyher",
+   "Sebastian Ehlert",
+   "Andreas Hansen",
+   "Philipp Pracht",
+   "Jakob Seibert",
+   "Sebastian Spicher",
+   "Stefan Grimme"
+  ],
+  "year": 2020,
+  "venue": "Wiley Interdisciplinary Reviews Computational Molecular Science",
+  "doi": "10.1002/wcms.1493",
+  "arxiv": null,
+  "openalex": "W3048565185",
+  "cited_by": 1711,
+  "abstract": "Abstract This review covers a family of atomistic, mostly quantum chemistry (QC) based semiempirical methods for the fast and reasonably accurate description of large molecules in gas and condensed phase. The theory is derived from a density functional (DFT) perturbation expansion of the electron density in fluctuation terms to various orders similar to the original density functional tight binding model. The term “eXtended” in their name (xTB) emphasizes the parameter availability for almost the entire periodic table of elements ( Z ≤ 86) and improvements of the underlying theory regarding, for example, the atomic orbital basis set, the level of multipole approximation and the treatment of the important electrostatic and dispersion interactions. A common feature of most members is their consistent parameterization on accurate gas phase theoretical reference data for geometries, vibrational frequencies and noncovalent interactions, which are the primary properties of interest in typical applications to systems composed of up to a few thousand atoms. Further specialized versions were developed for the description of electronic spectra and corresponding response properties. Besides a provided common theoretical background with some important implementation details in the efficient and free xtb program, various benchmarks for structural and thermochemical properties including (transition‐)metal systems are discussed. The review is completed by recent extensions of the model to the force‐field (FF) level as well as its application to solids under periodic boundary conditions. The general applicability together with the excellent cost‐accuracy ratio and the high robustness make the xTB family of methods very attractive for various fields of computer‐aided chemical research. This article is categorized under: Electronic Structure Theory > Ab Initio Electronic Structure Methods Electronic Structure Theory > Semiempirical Electronic Structure Methods Software > Quantum Chemistry",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning Enabled Semantic Communication Systems",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Geoffrey Ye Li",
+   "Biing-Hwang Fred Juang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Signal Processing",
+  "doi": "10.1109/tsp.2021.3071210",
+  "arxiv": "2006.10685",
+  "openalex": "W3036851434",
+  "cited_by": 1627,
+  "abstract": "Recently, deep learned enabled end-to-end communication systems have been developed to merge all physical layer blocks in the traditional communication systems, which make joint transceiver optimization possible. Powered by deep learning, natural language processing has achieved great success in analyzing and understanding a large amount of language texts. Inspired by research results in both areas, we aim to provide a new view on communication systems from the semantic level. Particularly, we propose a deep learning based semantic communication system, named DeepSC, for text transmission. Based on the Transformer, the DeepSC aims at maximizing the system capacity and minimizing the semantic errors by recovering the meaning of sentences, rather than bit- or symbol-errors in traditional communications. Moreover, transfer learning is used to ensure the DeepSC applicable to different communication environments and to accelerate the model training process. To justify the performance of semantic communications accurately, we also initialize a new metric, named sentence similarity. Compared with the traditional communication system without considering semantic information exchange, the proposed DeepSC is more robust to channel variation and is able to achieve better performance, especially in the low signal-to-noise (SNR) regime, as demonstrated by the extensive simulation results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep learning-based electroencephalography analysis: a systematic review",
+  "authors": [
+   "Yannick Roy",
+   "Hubert J. Banville",
+   "Isabela Albuquerque",
+   "Alexandre Gramfort",
+   "Tiago Henrique Falk",
+   "Jocelyn Faubert"
+  ],
+  "year": 2019,
+  "venue": "Journal of Neural Engineering",
+  "doi": "10.1088/1741-2552/ab260c",
+  "arxiv": "1901.05498",
+  "openalex": "W2909338255",
+  "cited_by": 1586,
+  "abstract": "CONTEXT: Electroencephalography (EEG) is a complex signal and can require several years of training, as well as advanced signal processing and feature extraction methodologies to be correctly interpreted. Recently, deep learning (DL) has shown great promise in helping make sense of EEG signals due to its capacity to learn good feature representations from raw data. Whether DL truly presents advantages as compared to more traditional EEG processing approaches, however, remains an open question. OBJECTIVE: In this work, we review 154 papers that apply DL to EEG, published between January 2010 and July 2018, and spanning different application domains such as epilepsy, sleep, brain-computer interfacing, and cognitive and affective monitoring. We extract trends and highlight interesting approaches from this large body of literature in order to inform future research and formulate recommendations. METHODS: Major databases spanning the fields of science and engineering were queried to identify relevant studies published in scientific journals, conferences, and electronic preprint repositories. Various data items were extracted for each study pertaining to (1) the data, (2) the preprocessing methodology, (3) the DL design choices, (4) the results, and (5) the reproducibility of the experiments. These items were then analyzed one by one to uncover trends. RESULTS: Our analysis reveals that the amount of EEG data used across studies varies from less than ten minutes to thousands of hours, while the number of samples seen during training by a network varies from a few dozens to several millions, depending on how epochs are extracted. Interestingly, we saw that more than half the studies used publicly available data and that there has also been a clear shift from intra-subject to inter-subject approaches over the last few years. About [Formula: see text] of the studies used convolutional neural networks (CNNs), while [Formula: see text] used recurrent neural networks (RNNs), most often with a total of 3-10 layers. Moreover, almost one-half of the studies trained their models on raw or preprocessed EEG time series. Finally, the median gain in accuracy of DL approaches over traditional baselines was [Formula: see text] across all relevant studies. More importantly, however, we noticed studies often suffer from poor reproducibility: a majority of papers would be hard or impossible to reproduce given the unavailability of their data and code. SIGNIFICANCE: To help the community progress and share work more effectively, we provide a list of recommendations for future studies and emphasize the need for more reproducible research. We also make our summary table of DL and EEG papers available and invite authors of published work to contribute to it directly. A planned follow-up to this work will be an online public benchmarking portal listing reproducible results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Conformal Prediction: A Gentle Introduction",
+  "authors": [
+   "Anastasios N. Angelopoulos",
+   "Stephen Bates"
+  ],
+  "year": 2023,
+  "venue": "Foundations and Trends® in Machine Learning",
+  "doi": "10.1561/2200000101",
+  "arxiv": "2107.07511",
+  "openalex": "W4361012985",
+  "cited_by": 1578,
+  "abstract": "Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal prediction (a.k.a. conformal inference) is a user-friendly paradigm for creating statistically rigorous uncertainty sets/intervals for the predictions of such models. Critically, the sets are valid in a distribution-free sense: they possess explicit, non-asymptotic guarantees even without distributional assumptions or model assumptions. One can use conformal prediction with any pre-trained model, such as a neural network, to produce sets that are guaranteed to contain the ground truth with a user-specified probability, such as 90%. It is easy-to-understand, easy-to-use, and general, applying naturally to problems arising in the fields of computer vision, natural language processing, deep reinforcement learning, and so on. This hands-on introduction is aimed to provide the reader a working understanding of conformal prediction and related distribution-free uncertainty quantification techniques with one self-contained document. We lead the reader through practical theory for and examples of conformal prediction and describe its extensions to complex machine learning tasks involving structured outputs, distribution shift, timeseries, outliers, models that abstain, and more. Throughout, there are many explanatory illustrations, examples, and code samples in Python. With each code sample comes a Jupyter notebook implementing the method on a real-data example; the notebooks can be accessed and easily run by following the code footnotes.</>",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient Learning Machines",
+  "authors": [
+   "Mariette Awad",
+   "Rahul Khanna"
+  ],
+  "year": 2015,
+  "venue": "Apress eBooks",
+  "doi": "10.1007/978-1-4302-5990-9",
+  "arxiv": null,
+  "openalex": "W4213113494",
+  "cited_by": 1568,
+  "abstract": "Machine learning techniques provide cost-effective alternatives to traditional methods for extracting underlying relationships between information and data and for predicting future events by processi",
+  "source": "openalex"
+ },
+ {
+  "title": "Supervised Speech Separation Based on Deep Learning: An Overview",
+  "authors": [
+   "DeLiang Wang",
+   "Jitong Chen"
+  ],
+  "year": 2018,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2018.2842159",
+  "arxiv": "1708.07524",
+  "openalex": "W2962866211",
+  "cited_by": 1529,
+  "abstract": "Speech separation is the task of separating target speech from background interference. Traditionally, speech separation is studied as a signal processing problem. A more recent approach formulates speech separation as a supervised learning problem, where the discriminative patterns of speech, speakers, and background noise are learned from training data. Over the past decade, many supervised separation algorithms have been put forward. In particular, the recent introduction of deep learning to supervised speech separation has dramatically accelerated progress and boosted separation performance. This paper provides a comprehensive overview of the research on deep learning based supervised speech separation in the last several years. We first introduce the background of speech separation and the formulation of supervised separation. Then, we discuss three main components of supervised separation: learning machines, training targets, and acoustic features. Much of the overview is on separation algorithms where we review monaural methods, including speech enhancement (speech-nonspeech separation), speaker separation (multitalker separation), and speech dereverberation, as well as multimicrophone techniques. The important issue of generalization, unique to supervised learning, is discussed. This overview provides a historical perspective on how advances are made. In addition, we discuss a number of conceptual issues, including what constitutes the target source.",
+  "source": "openalex"
+ },
+ {
+  "title": "A survey of uncertainty in deep neural networks",
+  "authors": [
+   "Jakob Gawlikowski",
+   "Cedrique Rovile Njieutcheu Tassi",
+   "Mohsin Ali",
+   "Jong‐Seok Lee",
+   "Matthias Humt",
+   "Jianxiang Feng",
+   "Anna Kruspe",
+   "Rudolph Triebel",
+   "Peter Jung",
+   "Ribana Roscher",
+   "Muhammad Shahzad",
+   "Wen Yang",
+   "Richard Bamler",
+   "Xiao Xiang Zhu"
+  ],
+  "year": 2023,
+  "venue": "Artificial Intelligence Review",
+  "doi": "10.1007/s10462-023-10562-9",
+  "arxiv": null,
+  "openalex": "W3183048323",
+  "cited_by": 1519,
+  "abstract": "Abstract Over the last decade, neural networks have reached almost every field of science and become a crucial part of various real world applications. Due to the increasing spread, confidence in neural network predictions has become more and more important. However, basic neural networks do not deliver certainty estimates or suffer from over- or under-confidence, i.e. are badly calibrated. To overcome this, many researchers have been working on understanding and quantifying uncertainty in a neural network’s prediction. As a result, different types and sources of uncertainty have been identified and various approaches to measure and quantify uncertainty in neural networks have been proposed. This work gives a comprehensive overview of uncertainty estimation in neural networks, reviews recent advances in the field, highlights current challenges, and identifies potential research opportunities. It is intended to give anyone interested in uncertainty estimation in neural networks a broad overview and introduction, without presupposing prior knowledge in this field. For that, a comprehensive introduction to the most crucial sources of uncertainty is given and their separation into reducible model uncertainty and irreducible data uncertainty is presented. The modeling of these uncertainties based on deterministic neural networks, Bayesian neural networks (BNNs), ensemble of neural networks, and test-time data augmentation approaches is introduced and different branches of these fields as well as the latest developments are discussed. For a practical application, we discuss different measures of uncertainty, approaches for calibrating neural networks, and give an overview of existing baselines and available implementations. Different examples from the wide spectrum of challenges in the fields of medical image analysis, robotics, and earth observation give an idea of the needs and challenges regarding uncertainties in the practical applications of neural networks. Additionally, the practical limitations of uncertainty quantification methods in neural networks for mission- and safety-critical real world applications are discussed and an outlook on the next steps towards a broader usage of such methods is given.",
+  "source": "openalex"
+ },
+ {
+  "title": "Particle Swarm Optimization: A Comprehensive Survey",
+  "authors": [
+   "Tareq M. Shami",
+   "Ayman A. El‐Saleh",
+   "Mohammed Alswaitti",
+   "Qasem Al-Tashi",
+   "Mhd Amen Summakieh",
+   "Seyedali Mirjalili"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2022.3142859",
+  "arxiv": null,
+  "openalex": "W4205129187",
+  "cited_by": 1505,
+  "abstract": "Particle swarm optimization (PSO) is one of the most well-regarded swarm-based algorithms in the literature. Although the original PSO has shown good optimization performance, it still severely suffers from premature convergence. As a result, many researchers have been modifying it resulting in a large number of PSO variants with either slightly or significantly better performance. Mainly, the standard PSO has been modified by four main strategies: modification of the PSO controlling parameters, hybridizing PSO with other well-known meta-heuristic algorithms such as genetic algorithm (GA) and differential evolution (DE), cooperation and multi-swarm techniques. This paper attempts to provide a comprehensive review of PSO, including the basic concepts of PSO, binary PSO, neighborhood topologies in PSO, recent and historical PSO variants, remarkable engineering applications of PSO, and its drawbacks. Moreover, this paper reviews recent studies that utilize PSO to solve feature selection problems. Finally, eight potential research directions that can help researchers further enhance the performance of PSO are provided.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-end Optimized Image Compression",
+  "authors": [
+   "Johannes Ballé",
+   "Valero Laparra",
+   "Eero P. Simoncelli"
+  ],
+  "year": 2016,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1611.01704",
+  "arxiv": "1611.01704",
+  "openalex": "W2552465432",
+  "cited_by": 1475,
+  "abstract": "We describe an image compression method, consisting of a nonlinear analysis transformation, a uniform quantizer, and a nonlinear synthesis transformation. The transforms are constructed in three successive stages of convolutional linear filters and nonlinear activation functions. Unlike most convolutional neural networks, the joint nonlinearity is chosen to implement a form of local gain control, inspired by those used to model biological neurons. Using a variant of stochastic gradient descent, we jointly optimize the entire model for rate-distortion performance over a database of training images, introducing a continuous proxy for the discontinuous loss function arising from the quantizer. Under certain conditions, the relaxed loss function may be interpreted as the log likelihood of a generative model, as implemented by a variational autoencoder. Unlike these models, however, the compression model must operate at any given point along the rate-distortion curve, as specified by a trade-off parameter. Across an independent set of test images, we find that the optimized method generally exhibits better rate-distortion performance than the standard JPEG and JPEG 2000 compression methods. More importantly, we observe a dramatic improvement in visual quality for all images at all bit rates, which is supported by objective quality estimates using MS-SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Review on Generative Adversarial Networks: Algorithms, Theory, and Applications",
+  "authors": [
+   "Jie Gui",
+   "Zhenan Sun",
+   "Yonggang Wen",
+   "Dacheng Tao",
+   "Jieping Ye"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Knowledge and Data Engineering",
+  "doi": "10.1109/tkde.2021.3130191",
+  "arxiv": "2001.06937",
+  "openalex": "W3216759837",
+  "cited_by": 1455,
+  "abstract": "Generative adversarial networks (GANs) have recently become a hot research topic; however, they have been studied since 2014, and a large number of algorithms have been proposed. Nevertheless, few comprehensive studies explain the connections among different GAN variants and how they have evolved. In this paper, we attempt to provide a review of the various GAN methods from the perspectives of algorithms, theory, and applications. First, the motivations, mathematical representations, and structures of most GAN algorithms are introduced in detail, and we compare their commonalities and differences. Second, theoretical issues related to GANs are investigated. Finally, typical applications of GANs in image processing and computer vision, natural language processing, music, speech and audio, the medical field, and data science are discussed.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on IoT Security: Application Areas, Security Threats, and Solution Architectures",
+  "authors": [
+   "Vikas Hassija",
+   "Vinay Chamola",
+   "Vikas Saxena",
+   "Divyansh Jain",
+   "Pranav Goyal",
+   "Biplab Sikdar"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2924045",
+  "arxiv": null,
+  "openalex": "W2951694401",
+  "cited_by": 1444,
+  "abstract": "The Internet of Things (IoT) is the next era of communication. Using the IoT, physical objects can be empowered to create, receive, and exchange data in a seamless manner. Various IoT applications focus on automating different tasks and are trying to empower the inanimate physical objects to act without any human intervention. The existing and upcoming IoT applications are highly promising to increase the level of comfort, efficiency, and automation for the users. To be able to implement such a world in an ever-growing fashion requires high security, privacy, authentication, and recovery from attacks. In this regard, it is imperative to make the required changes in the architecture of the IoT applications for achieving end-to-end secure IoT environments. In this paper, a detailed review of the security-related challenges and sources of threat in the IoT applications is presented. After discussing the security issues, various emerging and existing technologies focused on achieving a high degree of trust in the IoT applications are discussed. Four different technologies, blockchain, fog computing, edge computing, and machine learning, to increase the level of security in IoT are discussed.",
+  "source": "openalex"
+ },
+ {
+  "title": "Proceedings of the 28th International Conference on Computational Linguistics",
+  "authors": [],
+  "year": 2020,
+  "venue": null,
+  "doi": "10.18653/v1/2020.coling-main",
+  "arxiv": null,
+  "openalex": "W4365799947",
+  "cited_by": 1436,
+  "abstract": "Only eighteen months ago, I joined Leo, Horacio, Mónica, and Nuria on a tour of the delights that the Barcelona venue would be offering us in September 2020.Together with Chengqing, we made great plans for a fantastic intellectual and social gathering with our colleagues from far and wide, Catalanstyle.We held on to this plan for as long as we could but the second wave of the COVID-19 pandemic eventually put paid to that idea, and the conference is now a virtual one.We also received a record 2195 submissions -eclipsing by double the already record-breaking number at our last COLING in 2018 in Santa Fe.For these reasons, COLING2020 will be remembered for the conference that forced us to innovate and do things differently.Transforming our well-made plans to become a virtual conference has obviously involved introducing a de facto disruptive innovation, one that has taken us far out of our comfort zone of experience.The Organising Committee thoroughly embraced this challenge, doing everything that they could and more; I am in awe of them and of the exciting offering that they have created for COLING2020.We now have before us a rich programme of over 653 papers, 7 tutorials, and 22 workshops.I want to take this opportunity to thank the entire Organising Committee for their extraordinary effort in helping to make this virtual COLING2020 possible.The PC Chairs (Núria Bel, Chengqing Zong) and Local Organisation Chairs (Leo Wanner, Horacio Saggion, Mónica Domínguez) bore the brunt of the organisational burden and worked tirelessly despite the other unexpected demands to their professional and personal lives.Enormous efforts were made by Workshop Chairs (",
+  "source": "openalex"
+ },
+ {
+  "title": "Transformers in medical imaging: A survey",
+  "authors": [
+   "Fahad Shamshad",
+   "Salman Khan",
+   "Syed Waqas Zamir",
+   "Muhammad Haris Khan",
+   "Munawar Hayat",
+   "Fahad Shahbaz Khan",
+   "Huazhu Fu"
+  ],
+  "year": 2023,
+  "venue": "Medical Image Analysis",
+  "doi": "10.1016/j.media.2023.102802",
+  "arxiv": "2201.09873",
+  "openalex": "W4362603432",
+  "cited_by": 1412,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Tensor Decompositions for Signal Processing Applications: From two-way to multiway component analysis",
+  "authors": [
+   "Andrzej S Cichocki",
+   "Danilo P. Mandic",
+   "Lieven De Lathauwer",
+   "Guoxu Zhou",
+   "Qibin Zhao",
+   "Cesar Federico Caiafa",
+   "Anh Huy Phan"
+  ],
+  "year": 2015,
+  "venue": "IEEE Signal Processing Magazine",
+  "doi": "10.1109/msp.2013.2297439",
+  "arxiv": "1403.4462",
+  "openalex": "W2119412403",
+  "cited_by": 1388,
+  "abstract": "The widespread use of multisensor technology and the emergence of big data sets have highlighted the limitations of standard flat-view matrix models and the necessity to move toward more versatile data analysis tools. We show that higher-order tensors (i.e., multiway arrays) enable such a fundamental paradigm shift toward models that are essentially polynomial, the uniqueness of which, unlike the matrix methods, is guaranteed under very mild and natural conditions. Benefiting from the power of multilinear algebra as their mathematical backbone, data analysis techniques using tensor decompositions are shown to have great flexibility in the choice of constraints which match data properties and extract more general latent components in the data than matrix-based methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Non-Orthogonal Multiple Access for 5G",
+  "authors": [
+   "Linglong Dai",
+   "Bichai Wang",
+   "Zhiguo Ding",
+   "Zhaocheng Wang",
+   "Sheng Chen",
+   "Lajos Hanzo"
+  ],
+  "year": 2018,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2018.2835558",
+  "arxiv": null,
+  "openalex": "W2802495557",
+  "cited_by": 1323,
+  "abstract": "In the fifth generation (5G) of wireless communication systems, hitherto unprecedented requirements are expected to be satisfied. As one of the promising techniques of addressing these challenges, non-orthogonal multiple access (NOMA) has been actively investigated in recent years. In contrast to the family of conventional orthogonal multiple access (OMA) schemes, the key distinguishing feature of NOMA is to support a higher number of users than the number of orthogonal resource slots with the aid of non-orthogonal resource allocation. This may be realized by the sophisticated inter-user interference cancellation at the cost of an increased receiver complexity. In this paper, we provide a comprehensive survey of the original birth, the most recent development and the future research directions of NOMA. Specifically, the basic principle of NOMA will be introduced at first, with the comparison between NOMA and OMA especially from the perspective of information theory. Then, the prominent NOMA schemes are discussed by dividing them into two categories, namely, power-domain and code-domain NOMA. Their design principles and key features will be discussed in detail, and a systematic comparison of these NOMA schemes will be summarized in terms of their spectral efficiency, system performance, receiver complexity, etc. Finally, we will highlight a range of challenging open problems that should be solved for NOMA, along with corresponding opportunities and future research trends to address these challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "A computational atlas of the hippocampal formation using ex vivo, ultra-high resolution MRI: Application to adaptive segmentation of in vivo MRI",
+  "authors": [
+   "Juan Eugenio Iglesias",
+   "Jean C. Augustinack",
+   "Khoa Nguyen",
+   "Christopher M. Player",
+   "Allison Player",
+   "Michelle Wright",
+   "Nicole Roy",
+   "Matthew P. Frosch",
+   "Ann Carolyn McKee",
+   "Lawrence L. Wald",
+   "Bruce R. Fischl",
+   "Koen Van Leemput"
+  ],
+  "year": 2015,
+  "venue": "NeuroImage",
+  "doi": "10.1016/j.neuroimage.2015.04.042",
+  "arxiv": null,
+  "openalex": "W2084443965",
+  "cited_by": 1267,
+  "abstract": "Automated analysis of MRI data of the subregions of the hippocampus requires computational atlases built at a higher resolution than those that are typically used in current neuroimaging studies. Here we describe the construction of a statistical atlas of the hippocampal formation at the subregion level using ultra-high resolution, ex vivo MRI. Fifteen autopsy samples were scanned at 0.13 mm isotropic resolution (on average) using customized hardware. The images were manually segmented into 13 different hippocampal substructures using a protocol specifically designed for this study; precise delineations were made possible by the extraordinary resolution of the scans. In addition to the subregions, manual annotations for neighboring structures (e.g., amygdala, cortex) were obtained from a separate dataset of in vivo, T1-weighted MRI scans of the whole brain (1mm resolution). The manual labels from the in vivo and ex vivo data were combined into a single computational atlas of the hippocampal formation with a novel atlas building algorithm based on Bayesian inference. The resulting atlas can be used to automatically segment the hippocampal subregions in structural MRI images, using an algorithm that can analyze multimodal data and adapt to variations in MRI contrast due to differences in acquisition hardware or pulse sequences. The applicability of the atlas, which we are releasing as part of FreeSurfer (version 6.0), is demonstrated with experiments on three different publicly available datasets with different types of MRI contrast. The results show that the atlas and companion segmentation method: 1) can segment T1 and T2 images, as well as their combination, 2) replicate findings on mild cognitive impairment based on high-resolution T2 data, and 3) can discriminate between Alzheimer's disease subjects and elderly controls with 88% accuracy in standard resolution (1mm) T1 data, significantly outperforming the atlas in FreeSurfer version 5.3 (86% accuracy) and classification based on whole hippocampal volume (82% accuracy).",
+  "source": "openalex"
+ },
+ {
+  "title": "A Primer on Neural Network Models for Natural Language Processing",
+  "authors": [
+   "Yoav Goldberg"
+  ],
+  "year": 2016,
+  "venue": "Journal of Artificial Intelligence Research",
+  "doi": "10.1613/jair.4992",
+  "arxiv": "1510.00726",
+  "openalex": "W1888026739",
+  "cited_by": 1259,
+  "abstract": "Over the past few years, neural networks have re-emerged as powerful machine-learning models, yielding state-of-the-art results in fields such as image recognition and speech processing. More recently, neural network models started to be applied also to textual natural language signals, again with very promising results. This tutorial surveys neural network models from the perspective of natural language processing research, in an attempt to bring natural-language researchers up to speed with the neural techniques. The tutorial covers input encoding for natural language tasks, feed-forward networks, convolutional networks, recurrent networks and recursive networks, as well as the computation graph abstraction for automatic gradient computation.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+  "authors": [
+   "Amir Gholami",
+   "Sehoon Kim",
+   "Zhen Dong",
+   "Zhewei Yao",
+   "Michael W. Mahoney",
+   "Kurt Keutzer"
+  ],
+  "year": 2022,
+  "venue": "Chapman & Hall/CRC eBooks",
+  "doi": "10.1201/9781003162810-13",
+  "arxiv": null,
+  "openalex": "W3137147200",
+  "cited_by": 1237,
+  "abstract": "This chapter provides approaches to the problem of quantizing the numerical values in deep Neural Network computations, covering the advantages/disadvantages of current methods. Over the past decade, people have observed significant improvements in the accuracy of Neural Networks (NNs) for a wide range of problems, often achieved by highly over-parameterized models. Achieving efficient, real-time NNs with optimal accuracy requires rethinking the design, training, and deployment of NN models. Model distillation involves training a large model and then using it as a teacher to train a more compact model. Loosely related to NN quantization is work in neuroscience that suggests that the human brain stores information in a discrete/quantized form, rather than in a continuous form. Gray and Neuhoff have written a very nice survey of the history of quantization up to 1998.",
+  "source": "openalex"
+ },
+ {
+  "title": "The steady-state visual evoked potential in vision research: A review",
+  "authors": [
+   "Anthony M. Norcia",
+   "Lawrence G. Appelbaum",
+   "Justin M. Ales",
+   "Benoit R. Cottereau",
+   "Bruno Rossion"
+  ],
+  "year": 2015,
+  "venue": "Journal of Vision",
+  "doi": "10.1167/15.6.4",
+  "arxiv": null,
+  "openalex": "W2141031554",
+  "cited_by": 1225,
+  "abstract": "Periodic visual stimulation and analysis of the resulting steady-state visual evoked potentials were first introduced over 80 years ago as a means to study visual sensation and perception. From the first single-channel recording of responses to modulated light to the present use of sophisticated digital displays composed of complex visual stimuli and high-density recording arrays, steady-state methods have been applied in a broad range of scientific and applied settings.The purpose of this article is to describe the fundamental stimulation paradigms for steady-state visual evoked potentials and to illustrate these principles through research findings across a range of applications in vision science.",
+  "source": "openalex"
+ },
+ {
+  "title": "HiDDeN: Hiding Data With Deep Networks",
+  "authors": [
+   "Jiren Zhu",
+   "Russell Kaplan",
+   "Justin Johnson",
+   "Li Fei-Fei"
+  ],
+  "year": 2018,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-030-01267-0_40",
+  "arxiv": "1807.09937",
+  "openalex": "W2883233582",
+  "cited_by": 1219,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+  "authors": [
+   "Zhengxue Cheng",
+   "Heming Sun",
+   "Masaru Takeuchi",
+   "Jiro Katto"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00796",
+  "arxiv": "2001.01568",
+  "openalex": "W3034469748",
+  "cited_by": 1205,
+  "abstract": "Image compression is a fundamental research field and many well-known compression standards have been developed for many decades. Recently, learned compression methods exhibit a fast development trend with promising results. However, there is still a performance gap between learned compression algorithms and reigning compression standards, especially in terms of widely used PSNR metric. In this paper, we explore the remaining redundancy of recent learned compression algorithms. We have found accurate entropy models for rate estimation largely affect the optimization of network parameters and thus affect the rate-distortion performance. Therefore, in this paper, we propose to use discretized Gaussian Mixture Likelihoods to parameterize the distributions of latent codes, which can achieve a more accurate and flexible entropy model. Besides, we take advantage of recent attention modules and incorporate them into network architecture to enhance the performance. Experimental results demonstrate our proposed method achieves a state-of-the-art performance compared to existing learned compression methods on both Kodak and high-resolution datasets. To our knowledge our approach is the first work to achieve comparable performance with latest compression standard Versatile Video Coding (VVC) regarding PSNR. More importantly, our approach generates more visually pleasant results when optimized by MS-SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning and Deep Learning Methods for Intrusion Detection Systems: A Survey",
+  "authors": [
+   "Hongyu Liu",
+   "Bo Lang"
+  ],
+  "year": 2019,
+  "venue": "Applied Sciences",
+  "doi": "10.3390/app9204396",
+  "arxiv": null,
+  "openalex": "W2980576170",
+  "cited_by": 1192,
+  "abstract": "Networks play important roles in modern life, and cyber security has become a vital research area. An intrusion detection system (IDS) which is an important cyber security technique, monitors the state of software and hardware running in the network. Despite decades of development, existing IDSs still face challenges in improving the detection accuracy, reducing the false alarm rate and detecting unknown attacks. To solve the above problems, many researchers have focused on developing IDSs that capitalize on machine learning methods. Machine learning methods can automatically discover the essential differences between normal data and abnormal data with high accuracy. In addition, machine learning methods have strong generalizability, so they are also able to detect unknown attacks. Deep learning is a branch of machine learning, whose performance is remarkable and has become a research hotspot. This survey proposes a taxonomy of IDS that takes data objects as the main dimension to classify and summarize machine learning-based and deep learning-based IDS literature. We believe that this type of taxonomy framework is fit for cyber security researchers. The survey first clarifies the concept and taxonomy of IDSs. Then, the machine learning algorithms frequently used in IDSs, metrics, and benchmark datasets are introduced. Next, combined with the representative literature, we take the proposed taxonomic system as a baseline and explain how to solve key IDS issues with machine learning and deep learning techniques. Finally, challenges and future developments are discussed by reviewing recent representative studies.",
+  "source": "openalex"
+ },
+ {
+  "title": "The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches",
+  "authors": [
+   "Md Zahangir Alom",
+   "Tarek M. Taha",
+   "Chris Yakopcic",
+   "Stefan K.E. Westberg",
+   "Paheding Sidike",
+   "Mst Shamima Nasrin",
+   "Brian C. Van Essen",
+   "Abdul Ahad S. Awwal",
+   "Vijayan K. Asari"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1803.01164",
+  "arxiv": "1803.01164",
+  "openalex": "W2793022090",
+  "cited_by": 1189,
+  "abstract": "Deep learning has demonstrated tremendous success in variety of application domains in the past few years. This new field of machine learning has been growing rapidly and applied in most of the application domains with some new modalities of applications, which helps to open new opportunity. There are different methods have been proposed on different category of learning approaches, which includes supervised, semi-supervised and un-supervised learning. The experimental results show state-of-the-art performance of deep learning over traditional machine learning approaches in the field of Image Processing, Computer Vision, Speech Recognition, Machine Translation, Art, Medical imaging, Medical information processing, Robotics and control, Bio-informatics, Natural Language Processing (NLP), Cyber security, and many more. This report presents a brief survey on development of DL approaches, including Deep Neural Network (DNN), Convolutional Neural Network (CNN), Recurrent Neural Network (RNN) including Long Short Term Memory (LSTM) and Gated Recurrent Units (GRU), Auto-Encoder (AE), Deep Belief Network (DBN), Generative Adversarial Network (GAN), and Deep Reinforcement Learning (DRL). In addition, we have included recent development of proposed advanced variant DL techniques based on the mentioned DL approaches. Furthermore, DL approaches have explored and evaluated in different application domains are also included in this survey. We have also comprised recently developed frameworks, SDKs, and benchmark datasets that are used for implementing and evaluating deep learning approaches. There are some surveys have published on Deep Learning in Neural Networks [1, 38] and a survey on RL [234]. However, those papers have not discussed the individual advanced techniques for training large scale deep learning models and the recently developed method of generative models [1].",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep learning modelling techniques: current progress, applications, advantages, and challenges",
+  "authors": [
+   "Shams Forruque Ahmed",
+   "Md. Sakib Bin Alam",
+   "Maruf Hassan",
+   "Mahtabin Rodela Rozbu",
+   "Taoseef Ishtiak",
+   "Nazifa Rafa",
+   "M. Mofijur",
+   "A. B. M. Shawkat Ali",
+   "Amir H. Gandomi"
+  ],
+  "year": 2023,
+  "venue": "Artificial Intelligence Review",
+  "doi": "10.1007/s10462-023-10466-8",
+  "arxiv": null,
+  "openalex": "W4366091323",
+  "cited_by": 1182,
+  "abstract": "Abstract Deep learning (DL) is revolutionizing evidence-based decision-making techniques that can be applied across various sectors. Specifically, it possesses the ability to utilize two or more levels of non-linear feature transformation of the given data via representation learning in order to overcome limitations posed by large datasets. As a multidisciplinary field that is still in its nascent phase, articles that survey DL architectures encompassing the full scope of the field are rather limited. Thus, this paper comprehensively reviews the state-of-art DL modelling techniques and provides insights into their advantages and challenges. It was found that many of the models exhibit a highly domain-specific efficiency and could be trained by two or more methods. However, training DL models can be very time-consuming, expensive, and requires huge samples for better accuracy. Since DL is also susceptible to deception and misclassification and tends to get stuck on local minima, improved optimization of parameters is required to create more robust models. Regardless, DL has already been leading to groundbreaking results in the healthcare, education, security, commercial, industrial, as well as government sectors. Some models, like the convolutional neural network (CNN), generative adversarial networks (GAN), recurrent neural network (RNN), recursive neural networks, and autoencoders, are frequently used, while the potential of other models remains widely unexplored. Pertinently, hybrid conventional DL architectures have the capacity to overcome the challenges experienced by conventional models. Considering that capsule architectures may dominate future DL models, this work aimed to compile information for stakeholders involved in the development and use of DL models in the contemporary world.",
+  "source": "openalex"
+ },
+ {
+  "title": "Similarity-Preserving Knowledge Distillation",
+  "authors": [
+   "Frederick Tung",
+   "Greg Mori"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00145",
+  "arxiv": "1907.09682",
+  "openalex": "W2964161024",
+  "cited_by": 1178,
+  "abstract": "Knowledge distillation is a widely applicable technique for training a student neural network under the guidance of a trained teacher network. For example, in neural network compression, a high-capacity teacher is distilled to train a compact student; in privileged learning, a teacher trained with privileged data is distilled to train a student without access to that data. The distillation loss determines how a teacher's knowledge is captured and transferred to the student. In this paper, we propose a new form of knowledge distillation loss that is inspired by the observation that semantically similar inputs tend to elicit similar activation patterns in a trained network. Similarity-preserving knowledge distillation guides the training of a student network such that input pairs that produce similar (dissimilar) activations in the teacher network produce similar (dissimilar) activations in the student network. In contrast to previous distillation methods, the student is not required to mimic the representation space of the teacher, but rather to preserve the pairwise similarities in its own representation space. Experiments on three public datasets demonstrate the potential of our approach.",
+  "source": "openalex"
+ }
+]

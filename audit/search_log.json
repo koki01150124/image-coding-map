@@ -1,0 +1,1328 @@
+[
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "arxiv": "2610.25682"
+  },
+  "n_results": 2,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "arxiv": "2404.17736"
+  },
+  "n_results": 2,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "arxiv": "2501.01138"
+  },
+  "n_results": 2,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "doi": "10.1109/twc.2024.3379244"
+  },
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "doi": "10.1109/tcsvt.2025.3539747"
+  },
+  "n_results": 2,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks"
+  },
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "priority_check",
+  "target": "arxiv/crossref/openalex",
+  "query": {
+   "arxiv": "2604.04413"
+  },
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "lic",
+  "query": "learned image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "lic",
+  "query": "learned image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "lic",
+  "query": "learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "lic",
+  "query": "learned image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "lic",
+  "query": "neural image codec rate-distortion",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "lic",
+  "query": "neural image codec rate-distortion",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "generative",
+  "query": "diffusion model image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "generative",
+  "query": "generative image compression perceptual",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "generative",
+  "query": "zero-shot diffusion image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "sscc",
+  "query": "separate source channel coding image transmission LDPC",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "sscc",
+  "query": "image transmission channel coding learned compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "analog_jscc",
+  "query": "deep joint source-channel coding image",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "analog_jscc",
+  "query": "deep JSCC wireless image transmission",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "analog_jscc",
+  "query": "semantic communication image transmission joint source channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "digital_jscc",
+  "query": "digital deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "digital_jscc",
+  "query": "digital semantic communication modulation quantization",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "digital_jscc",
+  "query": "neural joint source channel coding binary symmetric channel",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "diffusion_jscc",
+  "query": "diffusion model joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "diffusion_jscc",
+  "query": "generative semantic communication diffusion",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "bit_error",
+  "query": "bit error robustness learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "bit_error",
+  "query": "bit flip error resilient image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "bit_error",
+  "query": "robust deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "packet_loss",
+  "query": "packet loss resilient image coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "packet_loss",
+  "query": "loss-resilient learned image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "packet_loss",
+  "query": "erasure resilient neural image codec",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "generative",
+  "query": "diffusion model image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "generative",
+  "query": "generative image compression perceptual",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "generative",
+  "query": "zero-shot diffusion image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "sscc",
+  "query": "separate source channel coding image transmission LDPC",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "sscc",
+  "query": "image transmission channel coding learned compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "analog_jscc",
+  "query": "deep joint source-channel coding image",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "analog_jscc",
+  "query": "deep JSCC wireless image transmission",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "analog_jscc",
+  "query": "semantic communication image transmission joint source channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "digital_jscc",
+  "query": "digital deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "digital_jscc",
+  "query": "digital semantic communication modulation quantization",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "digital_jscc",
+  "query": "neural joint source channel coding binary symmetric channel",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "diffusion_jscc",
+  "query": "diffusion model joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "diffusion_jscc",
+  "query": "generative semantic communication diffusion",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "bit_error",
+  "query": "bit error robustness learned image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "bit_error",
+  "query": "bit flip error resilient image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "bit_error",
+  "query": "robust deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "packet_loss",
+  "query": "packet loss resilient image coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "packet_loss",
+  "query": "loss-resilient learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "packet_loss",
+  "query": "erasure resilient neural image codec",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "lic",
+  "query": "neural image codec rate-distortion",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "generative",
+  "query": "diffusion model image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "generative",
+  "query": "generative image compression perceptual",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "generative",
+  "query": "zero-shot diffusion image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 31,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "sscc",
+  "query": "separate source channel coding image transmission LDPC",
+  "period": "新しい順の上位40件",
+  "n_results": 9,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "sscc",
+  "query": "image transmission channel coding learned compression",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "analog_jscc",
+  "query": "deep joint source-channel coding image",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "analog_jscc",
+  "query": "deep JSCC wireless image transmission",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "analog_jscc",
+  "query": "semantic communication image transmission joint source channel coding",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "digital_jscc",
+  "query": "digital deep joint source-channel coding",
+  "period": "新しい順の上位40件",
+  "n_results": 32,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "digital_jscc",
+  "query": "digital semantic communication modulation quantization",
+  "period": "新しい順の上位40件",
+  "n_results": 18,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "digital_jscc",
+  "query": "neural joint source channel coding binary symmetric channel",
+  "period": "新しい順の上位40件",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "diffusion_jscc",
+  "query": "diffusion model joint source-channel coding",
+  "period": "新しい順の上位40件",
+  "n_results": 28,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "diffusion_jscc",
+  "query": "generative semantic communication diffusion",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "bit_error",
+  "query": "bit error robustness learned image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 6,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "bit_error",
+  "query": "bit flip error resilient image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "bit_error",
+  "query": "robust deep joint source-channel coding",
+  "period": "新しい順の上位40件",
+  "n_results": 40,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "packet_loss",
+  "query": "packet loss resilient image coding",
+  "period": "新しい順の上位40件",
+  "n_results": 11,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "packet_loss",
+  "query": "loss-resilient learned image compression",
+  "period": "新しい順の上位40件",
+  "n_results": 9,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "arxiv_date",
+  "topic": "packet_loss",
+  "query": "erasure resilient neural image codec",
+  "period": "新しい順の上位40件",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "deepjscc",
+  "seed_openalex": "W2946889564",
+  "n_references": 43,
+  "n_citations": 200,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "necst",
+  "seed_openalex": "W2936697624",
+  "n_references": 71,
+  "n_citations": 103,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "scale_hyperprior",
+  "seed_openalex": "W2785562966",
+  "n_references": 13,
+  "n_citations": 200,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "ddcm",
+  "seed_openalex": "W4407131706",
+  "n_references": 0,
+  "n_citations": 2,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "seed_openalex": "W7151818635",
+  "n_references": 0,
+  "n_citations": 0,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "blindsc",
+  "seed_openalex": "W4411983362",
+  "n_references": 31,
+  "n_citations": 15,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "ntscc",
+  "seed_openalex": "W4226042246",
+  "n_references": 40,
+  "n_citations": 200,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "lic",
+  "query": "learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "lic",
+  "query": "end-to-end optimized image compression entropy model",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "lic",
+  "query": "neural image codec rate-distortion",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "generative",
+  "query": "diffusion model image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "generative",
+  "query": "generative image compression perceptual",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "generative",
+  "query": "zero-shot diffusion image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "sscc",
+  "query": "separate source channel coding image transmission LDPC",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "sscc",
+  "query": "image transmission channel coding learned compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "analog_jscc",
+  "query": "deep joint source-channel coding image",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "analog_jscc",
+  "query": "deep JSCC wireless image transmission",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "analog_jscc",
+  "query": "semantic communication image transmission joint source channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "digital_jscc",
+  "query": "digital deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "digital_jscc",
+  "query": "digital semantic communication modulation quantization",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "digital_jscc",
+  "query": "neural joint source channel coding binary symmetric channel",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "diffusion_jscc",
+  "query": "diffusion model joint source-channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "diffusion_jscc",
+  "query": "generative semantic communication diffusion",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "bit_error",
+  "query": "bit error robustness learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "bit_error",
+  "query": "bit flip error resilient image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "bit_error",
+  "query": "robust deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "packet_loss",
+  "query": "packet loss resilient image coding",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "packet_loss",
+  "query": "loss-resilient learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "semanticscholar",
+  "topic": "packet_loss",
+  "query": "erasure resilient neural image codec",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "digital_jscc",
+  "query": "digital semantic communication modulation quantization",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_relevance",
+  "topic": "bit_error",
+  "query": "bit error robustness learned image compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "generative",
+  "query": "diffusion model image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "generative",
+  "query": "generative image compression perceptual",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "sscc",
+  "query": "image transmission channel coding learned compression",
+  "period": "2015-",
+  "n_results": null,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "analog_jscc",
+  "query": "deep JSCC wireless image transmission",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "analog_jscc",
+  "query": "semantic communication image transmission joint source channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "digital_jscc",
+  "query": "digital deep joint source-channel coding",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "diffusion_jscc",
+  "query": "generative semantic communication diffusion",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "bit_error",
+  "query": "bit flip error resilient image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "packet_loss",
+  "query": "loss-resilient learned image compression",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "search",
+  "target": "openalex_cited",
+  "topic": "packet_loss",
+  "query": "erasure resilient neural image codec",
+  "period": "2015-",
+  "n_results": 50,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "deepjscc",
+  "seed_openalex": "W2946889564",
+  "n_references": 43,
+  "n_citations": 200,
+  "n_citations_total": 1492,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "necst",
+  "seed_openalex": "W2936697624",
+  "n_references": 71,
+  "n_citations": 103,
+  "n_citations_total": 103,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "scale_hyperprior",
+  "seed_openalex": "W2785562966",
+  "n_references": 13,
+  "n_citations": 200,
+  "n_citations_total": 1555,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "ddcm",
+  "seed_openalex": "W4407131706",
+  "n_references": 0,
+  "n_citations": 2,
+  "n_citations_total": 2,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "seed_openalex": "W7151818635",
+  "n_references": 0,
+  "n_citations": 0,
+  "n_citations_total": 0,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "blindsc",
+  "seed_openalex": "W4411983362",
+  "n_references": 31,
+  "n_citations": 15,
+  "n_citations_total": 15,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "snowball",
+  "target": "openalex",
+  "seed": "ntscc",
+  "seed_openalex": "W4226042246",
+  "n_references": 40,
+  "n_citations": 200,
+  "n_citations_total": 365,
+  "citation_policy": "被引用数の多い順に上位200件",
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Generative adversarial networks for extreme learned image compression",
+  "n_results": 0,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Improving statistical fidelity for neural image compression with implicit local likelihood models",
+  "n_results": 0,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Deep learning-based image compression for wireless communications: impacts on reliability, throughput, and latency",
+  "n_results": 0,
+  "status": "failed"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Lossy image compression with foundation diffusion models",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Algorithms for the communication of samples",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Lossy compression with gaussian diffusion",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Lossy compression with pretrained diffusion models",
+  "n_results": 1,
+  "status": "ok"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "text_reference",
+  "target": "openalex",
+  "seed": "robust_turbo_ddcm",
+  "query": "Stablecodec: Taming one-step diffusion for extreme image compression",
+  "n_results": 1,
+  "status": "ok"
+ }
+]

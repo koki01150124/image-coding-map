@@ -1,0 +1,203 @@
+[
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Semantic-Aware Neural Video Codec for Error-Resilient Low-Latency Transmission",
+  "authors": [
+   "Matin Mortaheb",
+   "Homa Esfahanizadeh",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.16279",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Emerging physical AI systems require low-latency, task-oriented video communication over unreliable channels. We propose a semantic-aware multi-level neural video coding method for robust low-latency video transmission over unreliable channels that are abstracted as multi-level packet erasure channels. Built upon the real-time DCVC-RT neural video codec, the proposed framework introduces a semantic- and feature-aware coding strategy that partitions encoded representations into packets carrying different levels of semantic and latent-feature importance and assigns these packets to different streams, each associated with a priority level when transmitted over unreliable communication channels. We also developed an error-resilient entropy model that removes inter-packet dependencies, allowing each packet to be decoded independently under packet losses. The complete system is trained end-to-end over the abstracted multi-level packet erasure channels, enabling learning of channel-aware representations together with importance-aware packet assignment while facilitating the network for differentiated packet prioritization. Experiments show that the proposed framework significantly improves robustness over baseline DCVC-RT under packet erasures, achieving graceful degradation in less important regions while better preserving task-relevant visual content.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ReLViC: Loss-Resilient Learned Video Coding with Dispersed Packetization and Controllable Packet Dependencies",
+  "authors": [
+   "Xuyang Chen",
+   "Daquan Feng",
+   "Xianfu Chen",
+   "Xiang-Gen Xia"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.30202",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Packet loss can severely impair learned video coding because missing latent tokens compromise both spatial reconstruction and temporal prediction. We present ReLViC, a loss-resilient learned video coding framework that jointly addresses latent coding and packet-loss recovery. ReLViC disperses spatially adjacent latent tokens across packets and employs a dual-purpose Transformer to estimate entropy-model parameters during coding and reconstruct missing latent tokens at the receiver. It controls packet dependencies through a periodic-reset packet-context topology parameterized by the segment length, thereby tuning the trade-off between compression efficiency and error-propagation range without retraining. A three-stage progressive training procedure establishes single-frame coding, learns temporal context for entropy modeling, and then optimizes the recovery of masked latent tokens under simulated packet loss. Experiments using burst-loss traces evaluate ReLViC against H.265 protected by Reed--Solomon forward error correction (FEC) and GRACE, a loss-resilient learned video codec. ReLViC delivers more stable reconstruction and outperforms both baselines under severe packet loss.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Guo Lu",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.19590",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+  "authors": [
+   "Xueqin Niu",
+   "Mufan Liu",
+   "Yifan Wang",
+   "Le Yang",
+   "Jun Sun",
+   "Yiling Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.11845",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Every Packet Counts: Dispersing Information for Loss-Resilient Learned Image Compression",
+  "authors": [
+   "Yuhang Wei",
+   "Chuqin Zhou",
+   "Yibo Shi",
+   "Jing Wang",
+   "Guo Lu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": "10.1145/3767308.3836205",
+  "arxiv": "2608.11096",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned image compression (LIC) has achieved impressive rate-distortion performance. However, existing methods remain highly vulnerable to packet loss, a common challenge in satellite and emergency communications. This vulnerability stems from non-uniform information distribution at the packetization stage and sequential decoding dependencies at the entropy coding stage. We propose an end-to-end loss-resilient image compression scheme that addresses both. Before packetization, we introduce an Inter-Channel Redistribution (ICR) mechanism to redistribute channel energy, preventing critical information concentrating in a small subset of channels. Then, an Interleaved Channel Grouping (ICG) strategy partitions latent channels in a strided manner to disperse information across packets, with each packet kept within constrained sizes. To limit cascading errors from lost packets, we adopt a two-layer dual-branch autoregressive structure to shorten the dependency chain. Extensive experiments demonstrate that our method consistently outperforms existing approaches in both reconstruction quality and stability. At 20% packet loss, it achieves an average PSNR gain of 1.84 dB over LossResilientLIC while reducing PSNR variance by an order of magnitude. Notably, trained under uniform random loss only, our model generalizes to bursty loss modeled by the Gilbert-Elliott channel, outperforming methods explicitly trained for such conditions.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Generative Feature Imputing -- A Technique for Error-resilient Semantic Communication",
+  "authors": [
+   "Jianhao Huang",
+   "Qunsong Zeng",
+   "Hongyang Du",
+   "Kaibin Huang"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2508.17957",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic communication (SemCom) has emerged as a promising paradigm for achieving unprecedented communication efficiency in sixth-generation (6G) networks by leveraging artificial intelligence (AI) to extract and transmit the underlying meanings of source data. However, deploying SemCom over digital systems presents new challenges, particularly in ensuring robustness against transmission errors that may distort semantically critical content. To address this issue, this paper proposes a novel framework, termed generative feature imputing, which comprises three key techniques. First, we introduce a spatial error concentration packetization strategy that spatially concentrates feature distortions by encoding feature elements based on their channel mappings, a property crucial for both the effectiveness and reduced complexity of the subsequent techniques. Second, building on this strategy, we propose a generative feature imputing method that utilizes a diffusion model to efficiently reconstruct missing features caused by packet losses. Finally, we develop a semantic-aware power allocation scheme that enables unequal error protection by allocating transmission power according to the semantic importance of each packet. Experimental results demonstrate that the proposed framework outperforms conventional approaches, such as Deep Joint Source-Channel Coding (DJSCC) and JPEG2000, under block fading conditions, achieving higher semantic accuracy and lower Learned Perceptual Image Patch Similarity (LPIPS) scores.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+  "authors": [
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Ke Yang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2502.10812",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC's resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+  "authors": [
+   "Hongwei Sha",
+   "Muchen Dong",
+   "Quanyou Luo",
+   "Ming Lu",
+   "Hao Chen",
+   "Zhan Ma"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2501.11263",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments. Code is available at https://github.com/NJUVISION/LossResilientLIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Grad-FEC: Unequal Loss Protection of Deep Features in Collaborative Intelligence",
+  "authors": [
+   "Korcan Uyanik",
+   "S. Faegheh Yeganli",
+   "Ivan V. Bajić"
+  ],
+  "year": 2023,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2307.01846",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Collaborative intelligence (CI) involves dividing an artificial intelligence (AI) model into two parts: front-end, to be deployed on an edge device, and back-end, to be deployed in the cloud. The deep feature tensors produced by the front-end are transmitted to the cloud through a communication channel, which may be subject to packet loss. To address this issue, in this paper, we propose a novel approach to enhance the resilience of the CI system in the presence of packet loss through Unequal Loss Protection (ULP). The proposed ULP approach involves a feature importance estimator, which estimates the importance of feature packets produced by the front-end, and then selectively applies Forward Error Correction (FEC) codes to protect important packets. Experimental results demonstrate that the proposed approach can significantly improve the reliability and robustness of the CI system in the presence of packet loss.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Loss-resilient Coding of Texture and Depth for Free-viewpoint Video Conferencing",
+  "authors": [
+   "Bruno Macchiavello",
+   "Camilo Dorea",
+   "Edson M. Hung",
+   "Gene Cheung",
+   "Wai-tian Tan"
+  ],
+  "year": 2013,
+  "venue": "arXiv",
+  "doi": "10.1109/tmm.2014.2299768",
+  "arxiv": "1305.5464",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Free-viewpoint video conferencing allows a participant to observe the remote 3D scene from any freely chosen viewpoint. An intermediate virtual viewpoint image is commonly synthesized using two pairs of transmitted texture and depth maps from two neighboring captured viewpoints via depth-image-based rendering (DIBR). To maintain high quality of synthesized images, it is imperative to contain the adverse effects of network packet losses that may arise during texture and depth video transmission. Towards this end, we develop an integrated approach that exploits the representation redundancy inherent in the multiple streamed videos a voxel in the 3D scene visible to two captured views is sampled and coded twice in the two views. In particular, at the receiver we first develop an error concealment strategy that adaptively blends corresponding pixels in the two captured views during DIBR, so that pixels from the more reliable transmitted view are weighted more heavily. We then couple it with a sender-side optimization of reference picture selection (RPS) during real-time video coding, so that blocks containing samples of voxels that are visible in both views are more error-resiliently coded in one view only, given adaptive blending will erase errors in the other view. Further, synthesized view distortion sensitivities to texture versus depth errors are analyzed, so that relative importance of texture and depth code blocks can be computed for system-wide RPS optimization. Experimental results show that the proposed scheme can outperform the use of a traditional feedback channel by up to 0.82 dB on average at 8% packet loss rate, and by as much as 3 dB for particular frames.",
+  "source": "arxiv"
+ }
+]

@@ -1,0 +1,886 @@
+[
+ {
+  "title": "Lossy Image Compression with Conditional Diffusion Models",
+  "authors": [
+   "Ruihan Yang",
+   "Stephan Mandt"
+  ],
+  "year": 2023,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/075280-2835",
+  "arxiv": "2209.06950",
+  "openalex": "W7133192149",
+  "cited_by": 82,
+  "abstract": "This paper outlines an end-to-end optimized lossy image compression framework using diffusion generative models. The approach relies on the transform coding paradigm, where an image is mapped into a latent space for entropy coding and, from there, mapped back to the data space for reconstruction. In contrast to VAE-based neural compression, where the (mean) decoder is a deterministic neural network, our decoder is a conditional diffusion model. Our approach thus introduces an additional ``content'' latent variable on which the reverse diffusion process is conditioned and uses this variable to store information about the image. The remaining ``texture'' variables characterizing the diffusion process are synthesized at decoding time. We show that the model's performance can be tuned toward perceptual metrics of interest. Our extensive experiments involving multiple datasets and image quality assessment metrics show that our approach yields stronger reported FID scores than the GAN-based model, while also yielding competitive performance with VAE-based models in several distortion metrics. Furthermore, training the diffusion with $\\mathcal{X}$-parameterization enables high-quality reconstructions in only a handful of decoding steps, greatly affecting the model's practicality. Our code is available at: \\url{https://github.com/buggyyang/CDC_compression}",
+  "source": "openalex"
+ },
+ {
+  "title": "Lossy Image Compression with Foundation Diffusion Models",
+  "authors": [
+   "Lucas Relic",
+   "Roberto Gerson de Albuquerque Azevedo",
+   "Markus H. Groß",
+   "Christopher Schroers"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-73030-6_17",
+  "arxiv": "2404.08580",
+  "openalex": "W4404707745",
+  "cited_by": 20,
+  "abstract": "Abstract Incorporating diffusion models in the image compression domain has the potential to produce realistic and detailed reconstructions, especially at extremely low bitrates. Previous methods focus on using diffusion models as expressive decoders robust to quantization errors in the conditioning signals. However, achieving competitive results in this manner requires costly training of the diffusion model and long inference times due to the iterative generative process. In this work we formulate the removal of quantization error as a denoising task, using diffusion to recover lost information in the transmitted image latent. Our approach allows us to perform less than 10% of the full diffusion generative process and requires no architectural changes to the diffusion model, enabling the use of foundation models as a strong prior without additional fine tuning of the backbone. Our proposed codec outperforms previous methods in quantitative realism metrics, and we verify that our reconstructions are qualitatively preferred by end users, even when other methods use twice the bitrate.",
+  "source": "openalex"
+ },
+ {
+  "title": "CoD: A Diffusion Foundation Model for Image Compression",
+  "authors": [
+   "Jia, Zhaoyang",
+   "Zheng, Zihan",
+   "Xue, Naifu",
+   "Li, Jiahao",
+   "Li, Bin",
+   "Guo, Zongyu",
+   "Zhang, Xiaoyi",
+   "Li, Houqiang",
+   "Lu, Yan"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.18706",
+  "arxiv": "2511.18706",
+  "openalex": "W7106699451",
+  "cited_by": 1,
+  "abstract": "Existing diffusion codecs typically build on text-to-image diffusion foundation models like Stable Diffusion. However, text conditioning is suboptimal from a compression perspective, hindering the potential of downstream diffusion codecs, particularly at ultra-low bitrates. To address it, we introduce \\textbf{CoD}, the first \\textbf{Co}mpression-oriented \\textbf{D}iffusion foundation model, trained from scratch to enable end-to-end optimization of both compression and generation. CoD is not a fixed codec but a general foundation model designed for various diffusion-based codecs. It offers several advantages: \\textbf{High compression efficiency}, replacing Stable Diffusion with CoD in downstream codecs like DiffC achieves SOTA results, especially at ultra-low bitrates (e.g., 0.0039 bpp); \\textbf{Low-cost and reproducible training}, 300$\\times$ faster training than Stable Diffusion ($\\sim$ 20 vs. $\\sim$ 6,250 A100 GPU days) on entirely open image-only datasets; \\textbf{Providing new insights}, e.g., We find pixel-space diffusion can achieve VTM-level PSNR with high perceptual quality and can outperform GAN-based codecs using fewer parameters. We hope CoD lays the foundation for future diffusion codec research. Codes are released at https://github.com/microsoft/GenCodec/tree/main/CoD.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Model Compression for Image-to-Image Translation",
+  "authors": [
+   "Geonung Kim",
+   "Beomsu Kim",
+   "Eunhyeok Park",
+   "Sunghyun Cho"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-981-96-0917-8_9",
+  "arxiv": "2401.17547",
+  "openalex": "W4405141576",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Hierarchical Image Encryption and Compression Based on Diffusion Models",
+  "authors": [
+   "Ping Kong",
+   "Feita Pan",
+   "Yunyu Shi",
+   "Lifan Chen",
+   "Chuanqing Zhou",
+   "Lin Huang",
+   "Chuan Qin"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2026.3732547",
+  "arxiv": null,
+  "openalex": "W7212173342",
+  "cited_by": 0,
+  "abstract": "End-to-end image encryption based on deep learning has attracted widespread attention due to its ability to leverage the nonlinear characteristics of generative models. In this work, we propose a joint hierarchical encryption and compression method based on Stable Diffusion and the Denoising Diffusion Implicit Models (DDIM) scheduler, this method enables hierarchical image encryption, decryption, and compression. Specifically, our method first maps plaintext images into a latent space and employs the forward process of a diffusion model to achieve encryption. During the encryption process, we design a multikey modulation mechanism to implement hierarchical encryption and decryption. In addition, to reduce the burden of storage and transmission, we design a compression method based on integer fraction hybrid quantization, where the encrypted latent vectors are quantized and decomposed into integer and fraction components. These components are represented through DCT-based pseudo-image generation and concatenated into a single JPEG ciphertext, thereby achieving the integration of compression and encryption. Experimental results demonstrate that the proposed method not only achieves secure encryption and multi-level decryption, but also ensures robust recovery against common perturbations such as JPEG compression and Gaussian noise, while maintaining high-fidelity semantic reconstruction. Moreover, the method exhibits favorable compression performance, achieving an average compression ratio of approximately 10%.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Preprocessing for Image Compression with Pre-Trained Diffusion Models",
+  "authors": [
+   "Mengxi Guo",
+   "Shijie Zhao",
+   "Junlin Li",
+   "Li Xin Zhang"
+  ],
+  "year": 2026,
+  "venue": "DCC",
+  "doi": "10.1109/dcc66757.2026.00015",
+  "arxiv": "2512.15270",
+  "openalex": "W7161169209",
+  "cited_by": 1,
+  "abstract": "Preprocessing is a well-established technique for optimizing compression, yet existing methods are predominantly Rate-Distortion (R-D) optimized and constrained by pixel-level fidelity. This work pioneers a shift towards Rate-Perception (R-P) optimization by, for the first time, adapting a large-scale pre-trained diffusion model for compression preprocessing. We propose a two-stage framework: first, we distill the multi-step Stable Diffusion 2.1 into a compact, one-step image-to-image model using Consistent Score Identity Distillation (CiD). Second, we perform a parameter-efficient fine-tuning of the distilled model's attention modules, guided by a Rate-Perception loss and a differentiable codec surrogate. Our method seamlessly integrates with standard codecs without any modification and leverages the model's powerful generative priors to enhance texture and mitigate artifacts. Experiments show substantial R-P gains, achieving up to a 30.13% BD-rate reduction in DISTS on the Kodak dataset and delivering superior subjective visual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Encryption and Compression Based on Reversed Diffusion Model",
+  "authors": [
+   "Yilin Guo",
+   "Jianhui Chang",
+   "Yuhuai Zhang",
+   "Jian Zhang",
+   "Siwei Ma"
+  ],
+  "year": 2024,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs60826.2024.10566414",
+  "arxiv": null,
+  "openalex": "W4400034306",
+  "cited_by": 3,
+  "abstract": "Nowadays, as critical conduits of communication, the information security of images and videos is particularly important. The existing encryption techniques usually transform images into high-frequency content that resembles noise, pre-senting significant challenges in achieving efficient compression. This paper presents an innovative collaborative approach that integrates image encryption and compression using a reversed diffusion model. This method, by reversing the typical process of diffusion models, adeptly changes encrypted high-frequency content into a domain that is more amenable to compression. Leveraging the reversible nature of the Denoising Diffusion Implicit Models (DDIM), our framework ensures the high-fidelity restoration of information. Our experimental findings demonstrate that this approach not only effectively encrypts images but also compresses the encrypted high-frequency noise content, outperforming Video Versatile Coding (VVC) in compression performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Biresidual Compression Network With Conditional Diffusion Model for Hyperspectral Image Compression",
+  "authors": [
+   "Jiahui Liu",
+   "Lili Zhang",
+   "Jingang Wang",
+   "Lele Qu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+  "doi": "10.1109/tgrs.2025.3596240",
+  "arxiv": null,
+  "openalex": "W4413010761",
+  "cited_by": 9,
+  "abstract": "Hyperspectral image (HSI) compression presents the challenge of preserving both spectral and spatial fidelity while achieving high compression rates. Current compression methods frequently depend on band-by-band compression or simplistic joint modeling, which complicates the balance between spectral consistency and perceptual quality. To address this issue, a compression driven generation framework (BRC-CDM) is proposed, which decouples the extraction of compressed representations from the reconstruction of high-quality images. We introduce reference band information through channel-level concatenation to guide the spectral residual compression network in collaboratively extracting residual information in both spatial and spectral domains. During the prediction phase, a spectral gaussian grid compensation structure is further integrated to enhance the accuracy of predictions for the target bands. Ultimately, by compressing the residual information based on the differences between the predicted bands and the true bands, an efficient representation of the residual information in the compressed domain is achieved. The predicted image is then fused with the compressed residual to obtain a more expressive and potentially compressed representation. During the decoding phase, the diffusion process of the conditional diffusion model (CDM) utilizes compressed representations as potential conditions to guide the model in progressively reconstructing images over multiple time steps. Experimental findings demonstrate that the bi-residual compression network achieves superior peak signal-to-noise ratio (PSNR) across nine datasets, with an improvement of approximately 1 dB over SOTA methods. Moreover, BRC-CDM attains a PSNR that surpasses that of the majority of current methodologies, while also delivering enhanced spectral fidelity and perceptual quality. To foster reproducibility and further development, we release the full implementation of BRC-CDM at https://github.com/Nicle-L/BRC-CDM.",
+  "source": "openalex"
+ },
+ {
+  "title": "HSCNet: AHyperspectral Image Compression Method Based on Diffusion Model",
+  "authors": [
+   "Peng Luo",
+   "Yuting Wan",
+   "Ailong Ma",
+   "Yanfei Zhong"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+  "doi": "10.1109/igarss55030.2025.11243140",
+  "arxiv": null,
+  "openalex": "W4416728328",
+  "cited_by": 1,
+  "abstract": "Hyperspectral image compression is crucial for the efficient storage and transmission of high-dimensional hyperspectral data. Existing methods demonstrate limitations in addressing significant spectral redundancy, spatial correlation, and the trade-off between compression ratio and reconstruction quality in hyperspectral images. This paper proposes a novel compression method named HSCNet, which combines a variational autoencoder and a diffusion model to address these challenges. HSCNet first employs an autoencoder network with a hyperprior module to extract spectral-spatial features, reduce inter-band redundancy, and simultaneously improve the modeling of the latent space. Subsequently, a diffusion network is used to achieve a high compression ratio while ensuring high-fidelity reconstruction. Preliminary experimental results show that the proposed method exhibits robustness to variations in spatial and spectral characteristics, and can efficiently and stably compress hyperspectral images, achieving compression ratios and reconstruction quality comparable to or even surpassing other state-of-the-art methods, particularly in terms of PSNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "Consistency Guided Diffusion Model with Neural Syntax for Perceptual Image Compression",
+  "authors": [
+   "Haowei Kuang",
+   "Yiyang Ma",
+   "Wenhan Yang",
+   "Zongming Guo",
+   "Jiaying Liu"
+  ],
+  "year": 2024,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3664647.3681336",
+  "arxiv": null,
+  "openalex": "W4403790957",
+  "cited_by": 8,
+  "abstract": "Diffusion models show impressive performances in image generation with excellent perceptual quality. However, its tendency to introduce additional distortion prevents its direct application in image compression. To address the issue, this paper introduces a Consistency Guided Diffusion Model (CGDM) tailored for perceptual image compression, which integrates an end-to-end image compression model with a diffusion-based post-processing network, aiming to learn richer detail representations with less fidelity loss. In detail, the compression and post-processing networks are cascaded and a branch of consistency guided features is added to constrain the deviation in the diffusion process for better reconstruction quality. Furthermore, a Syntax driven Feature Fusion (SFF) module is constructed to take an extra ultra-low bitstream from the encoding end as input, guiding the adaptive fusion of information from the two branches. In addition, we design a globally uniform boundary control strategy with overlapped patches and adopt a continuous online optimization mode to improve both coding efficiency and global consistency. Extensive experiments validate the superiority of our method to existing perceptual compression techniques. Our project is publicly available at: https://ellisonkuang.github.io/CGDM.github.io/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extreme Generative Image Compression by Learning Text Embedding from Diffusion Models",
+  "authors": [
+   "Zhihong Pan",
+   "Xin Zhou",
+   "Hao Tian"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2211.07793",
+  "arxiv": "2211.07793",
+  "openalex": "W4320352141",
+  "cited_by": 9,
+  "abstract": "Transferring large amount of high resolution images over limited bandwidth is an important but very challenging task. Compressing images using extremely low bitrates (<0.1 bpp) has been studied but it often results in low quality images of heavy artifacts due to the strong constraint in the number of bits available for the compressed data. It is often said that a picture is worth a thousand words but on the other hand, language is very powerful in capturing the essence of an image using short descriptions. With the recent success of diffusion models for text-to-image generation, we propose a generative image compression method that demonstrates the potential of saving an image as a short text embedding which in turn can be used to generate high-fidelity images which is equivalent to the original one perceptually. For a given image, its corresponding text embedding is learned using the same optimization process as the text-to-image diffusion model itself, using a learnable text embedding as input after bypassing the original transformer. The optimization is applied together with a learning compression model to achieve extreme compression of low bitrates <0.1 bpp. Based on our experiments measured by a comprehensive set of image quality metrics, our method outperforms the other state-of-the-art deep learning methods in terms of both perceptual quality and diversity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quality-Preserving Extreme Image Compression: Using Interpretable Conditioning Inputs with Diffusion Models",
+  "authors": [
+   "Shayan Ali Hassan",
+   "Danish Humair",
+   "Ihsan Ayyub Qazi",
+   "Ihsan Ayyub Qazi"
+  ],
+  "year": 2025,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-032-06066-2_23",
+  "arxiv": null,
+  "openalex": "W4414803833",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Importance-Based Deep Image Compression Using Diffusion Model",
+  "authors": [
+   "Xingyu Dai",
+   "Yuanyuan Xu",
+   "Kun Zhu"
+  ],
+  "year": 2025,
+  "venue": "Communications in computer and information science",
+  "doi": "10.1007/978-981-95-4097-6_40",
+  "arxiv": null,
+  "openalex": "W4416159122",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Scalable Image Compression Based on Diffusion Models at Ultra-Low Bitrates",
+  "authors": [
+   "Wuzhen Shi",
+   "Yuran Zhang"
+  ],
+  "year": 2025,
+  "venue": "DCC",
+  "doi": "10.1109/dcc62719.2025.00083",
+  "arxiv": null,
+  "openalex": "W4410536324",
+  "cited_by": 1,
+  "abstract": "Image codecs are typically optimized to trade-off between bitrate and distortion metrics. At low bitrates, they often result in compression artefacts. To solve this problem, we leverage the ability of diffusion models to produce high-quality images and design a scalable lossy image compression framework for ultra-low bitrates, as shown in Fig. 1. On the encoding side, we extract multiple conditional information from the image and perform scalable encoding on them. When the bandwidth is limited, only the text is encoded. We use Prompt Inversion (PI) to extract text and apply lossless compression using Lempel-Ziv (LZ) coding from the zlib library. As the bandwidth gradually increases, sketch and Spatial color palette can be encoded to supplement the conditional information. We use the edge prediction model PiDiNet to extract the sketch of the image. We further perform scalable palette compression to provide color information at different bitrates. We downsample the image by 64x using bicubic interpolation and upsample it to 1/32, 1/16, 1/4, and 1/2 of the original size with nearest-neighbor to obtain the spatial color palette at different bitrates. We use standard learned nonlinear transform codes (NTC) to compress the sketch and spatial color palette. On the decoding side, We use the T2I-Adapter [1] as our decoder. The text is processed through the CLIP text encoder to generate conditional text embeddings, while the sketch and spatial color palette are fed through adapters to obtain features at different scales. The decoding is performed in a scalable manner, where the transmitted information is processed as described above and input into the diffusion model to guide the image generation. Compared to JPEG and the latest diffusion-based methods (PIC and PICS [2]), our method achieves better perceptual quality, as shown in Table 1. It's important to note that t denotes using text as the sole condition, ts indicates using both text and sketch, and tsc1 to tsc4 refer to using text, sketch, and color palette at different bitrates as conditions. Experimental results show that as the number of conditional information increases and the accuracy of color information improves, the perceptual quality of the images improves.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Compression and Decompression Framework Based on Latent Diffusion Model for Breast Mammography",
+  "authors": [
+   "InChan Hwang",
+   "MinJae Woo"
+  ],
+  "year": 2023,
+  "venue": "International Conference on Computational Science and Computational Intelligence (CSCI)",
+  "doi": "10.1109/csci62032.2023.00221",
+  "arxiv": "2310.05299",
+  "openalex": "W4400811578",
+  "cited_by": 2,
+  "abstract": "This research presents a novel framework for the compression and decompression of medical images utilizing the Latent Diffusion Model (LDM). The LDM represents advancement over the denoising diffusion probabilistic model (DDPM) with a potential to yield superior image quality while requiring fewer computational resources in the image decompression process. A possible application of LDM and Torchvision for image upscaling has been explored using medical image data, such as mammography, serving as an alternative to traditional image compression and decompression algorithms. The experimental outcomes demonstrate that this approach surpasses a conventional file compression algorithm, and convolutional neural network (CNN) models trained with decompressed files perform comparably to those trained with original image files. This approach also significantly reduces dataset size so that it can be distributed with a smaller size, and medical images take up much less space in medical devices. The research implications extend to noise reduction in lossy compression algorithms and substitute for complex wavelet-based lossless algorithms.",
+  "source": "openalex"
+ },
+ {
+  "title": "Hierarchical Conditional Guidance Diffusion Model for Perceptual Image Compression",
+  "authors": [
+   "Zekai Ji",
+   "Jia Qin",
+   "Pinle Qin",
+   "Rui Chai",
+   "Jianchao Zeng",
+   "Zhipeng Lin"
+  ],
+  "year": 2025,
+  "venue": "Conference proceedings/Conference proceedings - IEEE International Conference on Systems, Man, and Cybernetics",
+  "doi": "10.1109/smc58881.2025.11342965",
+  "arxiv": null,
+  "openalex": "W7125980533",
+  "cited_by": 0,
+  "abstract": "Recently, diffusion-based image compression has achieved significant progress in terms of rate–distortion-perception trade-off, these approaches have replaced decoders with conditional diffusion models to enhance the visual quality of reconstructed images. However, diffusion models introduce noise into the input image during the initial stages of the diffusion process, which may cause the potential degradation of crucial image information. To address these limitations, we propose a Hierarchical Conditional guidance Diffusion model for perceptual Image Compression (HCD-IC) to ensure the fidelity of reconstruction, in which hierarchical features with selected typical context provide informative guidance during the denoising process of diffusion model to preserve both structural integrity and fine details. Specifically, we design a Gated Scale-Cross module (GSC) to integrate and select representative semantics and details, which leverages a hierarchical feature interaction architecture and dynamic gated strategy to ensure more robust and expressive representations. Furthermore, we present a Conditional Control Diffusion decode module (CCD) to integrate time-step information and latent features augmented by GSC into the diffusion model, which can dynamically acquire the required time-aware conditional features during different denoise stages. Extensive experiments conducted on multiple public datasets demonstrate that our method outperforms state-of-the-art approaches in various quantitative realism metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Syntax-Driven Multi-Realism Image Compression With Consistency Guided Diffusion Model",
+  "authors": [
+   "Haowei Kuang",
+   "Wenhan Yang",
+   "Zongming Guo",
+   "Jiaying Liu"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2026.3651547",
+  "arxiv": null,
+  "openalex": "W7118288042",
+  "cited_by": 1,
+  "abstract": "Given the challenge of balancing high fidelity with perceptual quality, multi-realism image compression is developed to adapt flexibly to varying requirements. It allows images with different levels of realism to be decoded from the same bit stream. Diffusion models are known for generating images with high perceptual quality. However, their inherent process of adding noise and denoising is often difficult to control and will bring more distortion. This limits their direct application in image compression, especially in multi-realism image compression which requires precise control to adapt to different requirements. To address this issue, we propose aConsistency Guided Diffusion Modelas a post-processing network for multi-realism image compression, aiming to control the addition of detail representations, thereby adjusting the trade-off between subjective quality and fidelity. In detail, our proposed novel method is crafted to introduce an additional consistency guided feature branch into the diffusion model to constrain the deviation caused by randomness in the diffusion process to ensure fidelity. Furthermore, a syntax-driven feature fusion module is constructed to guide the information adaptive fusion of two branches with an input extra ultra-low stream, which contains the context information and trade-off control information. In addition, we design a warm-up based training strategy and adopt a continuous online optimization method to improve coding efficiency and trade-off control precision. Extensive experiments validate the superiority of our method over existing compression techniques, as well as the effectiveness of each component.",
+  "source": "openalex"
+ },
+ {
+  "title": "RDDM: A Rate-Distortion Guided Diffusion Model for Learned Image Compression Enhancement",
+  "authors": [
+   "Sanxin Jiang",
+   "Jiro Katto",
+   "Heming Sun"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
+  "doi": "10.1109/jetcas.2025.3563228",
+  "arxiv": null,
+  "openalex": "W4409683682",
+  "cited_by": 2,
+  "abstract": "Currently, denoising diffusion probability models (DDPM) have achieved significant success in various image generation tasks, but their application in image compression, especially in the context of learned image compression (LIC), is quite limited. In this study, we introduce a rate-distortion (RD) guided diffusion model, referred to as RDDM, to enhance the performance of LIC. In RDDM, LIC is treated as a lossy codec function constrained by RD, dividing the input image into two parts through encoding and decoding operations: the reconstructed image and the residual image. The construction of RDDM is primarily based on two points. First, RDDM treats diffusion models as repositories of image structures and textures, built using extensive real-world datasets. Under the guidance of RD constraints, it extracts and utilizes the necessary structural and textural priors from these repositories to restore the input image. Second, RDDM employs a Bayesian network to progressively infer the input image based on the reconstructed image and its codec function. Additionally, our research reveals that RDDM’s performance declines when its codec function does not match the reconstructed image. However, using the highest bitrate codec function minimizes this performance drop. The resulting model is referred to as RDDM*. The experimental results indicate that both RDDM and RDDM* can be applied to various architectures of LICs, such as CNN, Transformer, and their hybrid. They can significantly improve the fidelity of these codecs while maintaining or even enhancing perceptual quality to some extent.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Tensor Imaging of Spinal Cord Compression Rat Model with Different Compression Ratio",
+  "authors": [
+   "YingJie Liang",
+   "Jiali Huang",
+   "Xin Cai",
+   "Yuexue Mai",
+   "Weipeng zheng",
+   "Shifeng Wen"
+  ],
+  "year": 2021,
+  "venue": "SSRN Electronic Journal",
+  "doi": "10.2139/ssrn.3964509",
+  "arxiv": null,
+  "openalex": "W4233192077",
+  "cited_by": 1,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Accurate Compression of Text-to-Image Diffusion Models via Vector Quantization",
+  "authors": [
+   "Vage Egiazarian",
+   "Denis Kuznedelev",
+   "Anton Yu. Voronov",
+   "Ruslan Svirschevski",
+   "Michael Goin",
+   "Pavlov, Daniil",
+   "Dan Alistarh",
+   "Dmitry Baranchuk"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2409.00492",
+  "arxiv": "2409.00492",
+  "openalex": "W4402953635",
+  "cited_by": 0,
+  "abstract": "Text-to-image diffusion models have emerged as a powerful framework for high-quality image generation given textual prompts. Their success has driven the rapid development of production-grade diffusion models that consistently increase in size and already contain billions of parameters. As a result, state-of-the-art text-to-image models are becoming less accessible in practice, especially in resource-limited environments. Post-training quantization (PTQ) tackles this issue by compressing the pretrained model weights into lower-bit representations. Recent diffusion quantization techniques primarily rely on uniform scalar quantization, providing decent performance for the models compressed to 4 bits. This work demonstrates that more versatile vector quantization (VQ) may achieve higher compression rates for large-scale text-to-image diffusion models. Specifically, we tailor vector-based PTQ methods to recent billion-scale text-to-image models (SDXL and SDXL-Turbo), and show that the diffusion models of 2B+ parameters compressed to around 3 bits using VQ exhibit the similar image quality and textual alignment as previous 4-bit compression techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quantization-Aware Diffusion Model for Variable-Rate Extreme Image Compression",
+  "authors": [
+   "Yuran Zhang",
+   "Wuzhen Shi"
+  ],
+  "year": 2026,
+  "venue": "DCC",
+  "doi": "10.1109/dcc66757.2026.00016",
+  "arxiv": null,
+  "openalex": "W7161132126",
+  "cited_by": 0,
+  "abstract": "In recent years, image compression based on diffusion models has achieved excellent perceptual reconstruction. However, their models typically support only fixed bitrates, which results in significant training costs and memory demands. In this paper, we propose a quantization-controllable diffusion-based image compression framework, which extends diffusion-based extreme compression to variable-rate scenarios by modulating quantization through a single control parameter. Furthermore, we introduce the Quantization Regulator Modulation RefineNet (QRMR), which dynamically modulates the diffusion decoding process according to different quantization levels, allowing the diffusion-based decoder to be quantization-aware and thereby significantly improving the rate-distortion performance. Experiments demonstrate that our method achieves good fidelity and perceptual quality in reconstructed images at extremely low bitrates.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Probabilistic Entropy Modeling With Conditional Diffusion for Learned Image Compression",
+  "authors": [
+   "Maida Cao",
+   "Wenrui Dai",
+   "Shaohui Li",
+   "Chenglin Li",
+   "Junni Zou",
+   "Weisheng Hu",
+   "Hongkai Xiong"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2025.3551780",
+  "arxiv": null,
+  "openalex": "W4408564084",
+  "cited_by": 4,
+  "abstract": "Entropy modeling is the core component of learned image compression (LIC) that models the distribution of latent representation learned from input images via neural networks for bit-rate estimation. However, existing entropy models employ presumed parameterized distributions such as Gaussian models and are limited for the learned latent representation characterized by complex distributions. To address this problem, in this paper, we for the first time achieve generative probabilistic entropy modeling of latent representation based on conditional diffusion models. Specifically, we propose a conditional diffusion-based probabilistic entropy model (CDPEM) to parameterize the latent representation with distributions of arbitrary forms that are generated by well designed training-test consistent denoising diffusion implicit model (TC-DDIM) without introducing any presumption. TC-DDIM is designed to leverage ancestral sampling to gradually approximate the distribution of latent representation with guaranteed consistency in generation for training and test. Furthermore, we develop a hierarchical spatial-channel context model to incorporate with TC-DDIM to sufficiently exploit spatial correlations with the approximate contextual information produced by ancestral sampling and channel-wise correlations using channel-wise information aggregation with reweighted training loss. Experimental results demonstrate that the proposed entropy model achieves state-of-the-art performance on the Kodak, CLIC, and Tecnick datasets compared to existing LIC methods. Remarkably, when incorporated with recent baselines, the proposed model outperforms latest VVC standard by an evident gain in R-D performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bridging the Gap between Gaussian Diffusion Models and Universal Quantization for Image Compression",
+  "authors": [
+   "Lucas Relic",
+   "Roberto Gerson de Albuquerque Azevedo",
+   "Yang Zhang",
+   "Markus H. Groß",
+   "Christopher Schroers"
+  ],
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52734.2025.00234",
+  "arxiv": "2504.02579",
+  "openalex": "W4413145927",
+  "cited_by": 4,
+  "abstract": "Generative neural image compression supports data representation at extremely low bitrate, synthesizing details at the client and consistently producing highly realistic images. By leveraging the similarities between quantization error and additive noise, diffusion-based generative image compression codecs can be built using a latent diffusion model to \"denoise\" the artifacts introduced by quantization. However, we identify three critical gaps in previous approaches following this paradigm (namely, the noise level, noise type, and discretization gaps) that result in the quantized data falling out of the data distribution known by the diffusion model. In this work, we propose a novel quantization-based forward diffusion process with theoretical foundations that tackles all three aforementioned gaps. We achieve this through universal quantization with a carefully tailored quantization schedule and a diffusion model trained with uniform noise. Compared to previous work, our proposal produces consistently realistic and detailed reconstructions, even at very low bitrates. In such a regime, we achieve the best rate-distortion-realism performance, outperforming previous related works.",
+  "source": "openalex"
+ },
+ {
+  "title": "Exploring Distortion Prior With Latent Diffusion Models for Remote Sensing Image Compression",
+  "authors": [
+   "Junhui Li",
+   "Junxuan Li",
+   "Xingsong Hou",
+   "Huake Wang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+  "doi": "10.1109/tgrs.2025.3565259",
+  "arxiv": "2406.03961",
+  "openalex": "W4409917232",
+  "cited_by": 3,
+  "abstract": "Learning-based image compression algorithms typically focus on designing encoding and decoding networks and improving the accuracy of entropy model estimation to enhance the rate-distortion (RD) performance. However, few algorithms leverage the compression distortion prior from existing compression algorithms to improve RD performance. In this paper, we propose a latent diffusion model-based remote sensing image compression (LDM-RSIC) method, which aims to enhance the final decoding quality of RS images by utilizing the generated distortion prior from a LDM. Our approach consists of two stages. In Stage I, a self-encoder learns prior from the high-quality input image. In Stage II, the prior is generated through a LDM, conditioned on the decoded image of an existing learning-based image compression algorithm, to be used as auxiliary information for generating the texture-rich enhanced images. To better utilize the prior, a channel attention and gate-based dynamic feature attention module (DFAM) is embedded into a Transformer-based multi-scale enhancement network (MEN) for image enhancement. Extensive experimental results demonstrate the proposed LDM-RSIC outperforms existing state-of-the-art traditional and learning-based image compression algorithms in terms of both subjective perception and objective metrics. The code will be available at https://github.com/mlkk518/LDM-RSIC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Radiomics-Driven Diffusion Model and Monte Carlo Compression Sampling for Reliable Medical Image Synthesis",
+  "authors": [
+   "Jianfeng Zhao",
+   "Shuo Li"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal of Biomedical and Health Informatics",
+  "doi": "10.1109/jbhi.2025.3602674",
+  "arxiv": null,
+  "openalex": "W4413630510",
+  "cited_by": 1,
+  "abstract": "Reliable medical image synthesis is crucial for clinical applications and downstream tasks, where high-quality anatomical structure and predictive confidence are essential. Existing studies have made significant progress by embedding prior conditional knowledge, such as conditional images or textual information, to synthesize natural images. However, medical image synthesis remains a challenging task due to: 1) Data scarcity: High-quality medical text prompt are extremely rare and require specialized expertise. 2) Insufficient uncertainty estimation: The uncertainty estimation is critical for evaluating the confidence of reliable medical image synthesis. This paper presents a novel approach for medical image synthesis, driven by radiomics prompts and combined with Monte Carlo Compression Sampling (MCCS) to ensure reliability. For the first time, our method leverages clinically focused radiomics prompts to condition the generation process, guiding the model to produce reliable medical images. Furthermore, the innovative MCCS algorithm employs Monte Carlo methods to randomly select and compress sampling steps within the denoising diffusion implicit models (DDIM), enabling efficient uncertainty quantification. Additionally, we introduce a MambaTrans architecture to model long-range dependencies in medical images and embed prior conditions (e.g., radiomics prompts). Extensive experiments on benchmark medical imaging datasets demonstrate that our approach significantly improves image quality and reliability, outperforming SoTA methods in both qualitative and quantitative evaluations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression",
+  "authors": [
+   "Zheng Chen",
+   "Mingde Zhou",
+   "Jinpei Guo",
+   "Jiale Yuan",
+   "Yifei Ji",
+   "Yulun Zhang"
+  ],
+  "year": 2026,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v40i5.37313",
+  "arxiv": null,
+  "openalex": "W7138420573",
+  "cited_by": 1,
+  "abstract": "Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging output that is faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate-distortion-perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20×.",
+  "source": "openalex"
+ },
+ {
+  "title": "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression",
+  "authors": [
+   "Zheng Chen",
+   "Zhou, Mingde",
+   "Guo, Jinpei",
+   "Jiale Yuan",
+   "Ji, Yifei",
+   "Yulun Zhang"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2508.04979",
+  "arxiv": "2508.04979",
+  "openalex": "W4417001468",
+  "cited_by": 0,
+  "abstract": "Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging output that is faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate-distortion-perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20$\\times$. Code is released at: https://github.com/zhengchen1999/SODEC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Higher Fidelity Perceptual Image and Video Compression with a Latent Conditioned Residual Denoising Diffusion Model",
+  "authors": [
+   "Jonas Brenig",
+   "Radu Timofte"
+  ],
+  "year": 2025,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-91838-4_12",
+  "arxiv": "2505.13152",
+  "openalex": "W4410719657",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression",
+  "authors": [
+   "Association for Artificial Intelligence 2026",
+   "Zheng Chen",
+   "Jinpei Guo",
+   "Yifei Ji",
+   "Jiale Yuan",
+   "Yulun Zhang",
+   "Mingde Zhou"
+  ],
+  "year": 2026,
+  "venue": "Underline Science Inc.",
+  "doi": "10.48448/gp02-pj24",
+  "arxiv": null,
+  "openalex": "W7128697701",
+  "cited_by": 0,
+  "abstract": "Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging outputs that are faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate–distortion–perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20$\\times$. Code will be made public.",
+  "source": "openalex"
+ },
+ {
+  "title": "Time course of diffusion tensor imaging metrics in the chronic spinal cord compression rat model",
+  "authors": [
+   "Weipeng Zheng",
+   "Fang-Tian Xu",
+   "Haoyi Chen",
+   "Ning Wang",
+   "Wende Xiao",
+   "YingJie Liang",
+   "Shifeng Wen"
+  ],
+  "year": 2018,
+  "venue": "Acta Radiologica",
+  "doi": "10.1177/0284185118795335",
+  "arxiv": null,
+  "openalex": "W2888286104",
+  "cited_by": 4,
+  "abstract": "BACKGROUND: Diffusion tensor imaging (DTI) provides information about water molecule diffusion in spinal cord. PURPOSE: This study was aimed to investigate DTI changes in the different stages of compressive spinal cord induced by water-absorbing material implantation. MATERIAL AND METHODS: The spinal cord compression was administered over the fourth cervical vertebral level in rat. Rat models were divided into five subgroups according to compression stages: sham group, group A: three-day compression rat models; group B: 12-day compression rat models; group C: 20-day compression rat models; group D: 60-day compression rat models. DTI including fractional anisotropy (FA) and apparent diffusion coefficient (ADC) in the compressive spinal cord were collected. The relationship between the Basso, Beattie, and Bresnahan (BBB) scores and DTI metrics was further explored. RESULTS: Compared with the sham group, BBB scoring of rat model showed a decreased tendency from group A ( P < 0.05) to group B ( P < 0.05). Then the motor function of rat model hindlimbs was recovered in some degree from group C ( P < 0.05) to group D ( P < 0.05) but had significant motor defects when compared with the normal level ( P < 0.05). The DTI metrics results revealed that chronic spinal cord compression resulted in lower FA value and higher ADC value at the compressive spinal cord level assessed at all four time-points ( P < 0.05). DTI metrics also showed a close correlation with motor function ( P < 0.05). CONCLUSION: DTI is an optimal pre-clinical imaging tool to reflect locomotor performance and pathological status of compressive spinal cord epicenter in chronic spinal cord compression rat model.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Anisotropic Convection-Diffusion Model Using Tailored Finite Point Method for Image Denoising and Compression",
+  "authors": [
+   "Yu-Tuan Lin",
+   "Yin-Tzer Shih",
+   "Chih-Ching Tsai"
+  ],
+  "year": 2016,
+  "venue": "Communications in Computational Physics",
+  "doi": "10.4208/cicp.scpde14.30s",
+  "arxiv": null,
+  "openalex": "W2404579661",
+  "cited_by": 1,
+  "abstract": "In this paper we consider an anisotropic convection-diffusion (ACD) filter for image denoising and compression simultaneously. The ACD filter is discretized by a tailored finite point method (TFPM), which can tailor some particular properties of the image in an irregular grid structure. A quadtree structure is implemented for the storage in multi-levels for the compression. We compare the performance of the proposed scheme with several well-known filters. The numerical results show that the proposed method is effective for removing a mixture of white Gaussian and salt-and-pepper noises.",
+  "source": "openalex"
+ },
+ {
+  "title": "On The Detection of Synthetic Images Generated by Diffusion Models",
+  "authors": [
+   "Riccardo Corvi",
+   "Davide Cozzolino",
+   "Giada Zingarini",
+   "Giovanni Poggi",
+   "Koki Nagano",
+   "Luisa Verdoliva"
+  ],
+  "year": 2023,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp49357.2023.10095167",
+  "arxiv": "2211.00680",
+  "openalex": "W4375869427",
+  "cited_by": 335,
+  "abstract": "Over the past decade, there has been tremendous progress in creating synthetic media, mainly thanks to the development of powerful methods based on generative adversarial networks (GAN). Very recently, methods based on diffusion models (DM) have been gaining the spotlight. In addition to providing an impressive level of photorealism, they enable the creation of text-based visual content, opening up new and exciting opportunities in many different application fields, from arts to video games. On the other hand, this property is an additional asset in the hands of malicious users, who can generate and distribute fake media perfectly adapted to their attacks, posing new challenges to the media forensic community. With this work, we seek to understand how difficult it is to distinguish synthetic images generated by diffusion models from pristine ones and whether current state-of-the-art detectors are suitable for the task. To this end, first we expose the forensics traces left by diffusion models, then study how current detectors, developed for GAN-generated images, perform on these new synthetic images, especially in challenging social-network scenarios involving image compression and resizing. Datasets and code are available at https:github.com/grip-unina/DMimageDetection.",
+  "source": "openalex"
+ },
+ {
+  "title": "A PPO-Based Bitrate Allocation Conditional Diffusion Model for Remote Sensing Image Compression",
+  "authors": [
+   "Y HAN",
+   "Jooho Kim",
+   "Anish Shakya"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.15365",
+  "arxiv": "2603.15365",
+  "openalex": "W7138244303",
+  "cited_by": 0,
+  "abstract": "Existing remote sensing image compression methods still explore to balance high compression efficiency with the preservation of fine details and task-relevant information. Meanwhile, high-resolution drone imagery offers valuable structural details for urban monitoring and disaster assessment, but large-area datasets can easily reach hundreds of gigabytes, creating significant challenges for storage and long-term management. In this paper, we propose a PPO-based bitrate allocation Conditional Diffusion Compression (PCDC) framework. PCDC integrates a conditional diffusion decoder with a PPO-based block-wise bitrate allocation strategy to achieve high compression ratios while maintaining strong perceptual performance. We also release a high-resolution drone image dataset with richer structural details at a consistent low altitude over residential neighborhoods in coastal urban areas. Experimental results show compression ratios of 19.3x on DIV2K and 21.2x on the drone image dataset. Moreover, downstream object detection experiments demonstrate that the reconstructed images preserve task-relevant information with negligible performance loss.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Scalable Image Compression Using Conditional Diffusion Model in Human-Machine Hybrid Vision",
+  "authors": [
+   "Jinhao Kuang",
+   "Yue Luo",
+   "Peng Yi",
+   "Jiabao Zhu",
+   "Li Chen Yu"
+  ],
+  "year": 2025,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip55913.2025.11084519",
+  "arxiv": null,
+  "openalex": "W4413277932",
+  "cited_by": 0,
+  "abstract": "With the growing demand for machine analysis of images and videos, there is a strong need for new codecs that support both human and machine vision. However, existing scalable codecs suffer from redundancy between the enhancement and base layers, while scalable codecs for human-machine hybrids struggle to provide sufficiently high subjective image quality at low bit rates. To address these two issues, we propose a method to reduce redundancy by constraining the redundant information between the enhancement and base layer bit streams. We present a decoder based on a conditional diffusion model that significantly improves subjective image quality by enhancing the fidelity of human perception, especially at low bit rates. Our method enforces orthogonality during training and employs a channel-based entropy model to improve latent variable distribution prediction. Experimental results show that our method achieves up to 81.96% gain in bit rate and subjective image quality comparable to current state-of-the-art techniques in machine vision tasks.",
+  "source": "openalex"
+ },
+ {
+  "title": "In vivo diffusion tensor imaging of chronic spinal cord compression : a rat model with special attention to the conus medullaris",
+  "authors": [
+   "Peng Zhao",
+   "Chao Kong",
+   "Xueming Chen",
+   "Hua Guan",
+   "YU Zhen-shan",
+   "Libin Cui",
+   "Yanhui Wang",
+   "Xin Yuan"
+  ],
+  "year": 2016,
+  "venue": "Acta Radiologica",
+  "doi": "10.1177/0284185116631185",
+  "arxiv": null,
+  "openalex": "W2288185352",
+  "cited_by": 4,
+  "abstract": "Background Few studies have focused on diffusion tensor imaging (DTI) parameters of the conus medullaris after chronic compression in the cervical spinal cord. Purpose To discuss the correlation of DTI parameters between the chronically compressed cervical spinal cord and the conus medullaris in a rat model at different time points. Material and Methods Fifty female Sprague-Dawley rats were randomized into five groups: control group (group A), sham group (group B), and test groups C, D, and E (1, 2, and 3 weeks after compression, respectively). Apparent diffusion coefficient (ADC) and fractional anisotropy (FA) values of the cervical spinal cord and conus medullaris were compared among different groups. Correlations of ADC and FA values of the cervical spinal cord with those of the conus medullaris were performed in all groups. Results The ADC values at the cervical spinal cord and conus medullaris in all test groups were higher than those of group A and B, while the FA values were lower. The ADC value of the cervical spinal cord was linearly correlated with that of the conus medullaris only in group D. There were no linear correlations of FA values between the cervical spinal cord and the conus medullaris in all test groups. Conclusion After compression of the cervical spinal cord, ADC values of the cervical spinal cord and conus medullaris in test group were significantly increased, while FA values were significantly decreased. The ADC value of the cervical spinal cord was linearly correlated with that of the conus medullaris at 2 weeks after compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Trajectory-Consistent Denoising Diffusion Codebook Models for Zero-Shot High-Fidelity Image Compression at Ultra-Low Bitrates",
+  "authors": [
+   "Fang Zhang",
+   "Linli Xu"
+  ],
+  "year": 2026,
+  "venue": "International Joint Conference on Artificial Intelligence",
+  "doi": "10.24963/ijcai.2026/230",
+  "arxiv": null,
+  "openalex": "W7213431530",
+  "cited_by": 0,
+  "abstract": "Denoising Diffusion Codebook Models (DDCM) have emerged as a promising framework for zero-shot image compression by replacing stochastic sampling with discrete selection from a reproducible Gaussian codebook. By greedily picking noise vectors that best match the target image, DDCM encodes the generative trajectory into a compact sequence of indices for image compression. However, the target-guided noise selection provides only coarse guidance as the discrepancy between the denoiser's output and the target image is substantial. This discrepancy inevitably results in trajectory drift, necessitating massive codebooks to span the enlarged search space and extensive inference steps to gradually compensate for the deviation. In this paper, we propose the Trajectory-Consistent Diffusion Codebook Model (TC-DDCM) to address these inefficiencies. Rather than approximating the distant target, TC-DDCM navigates the generative process by strictly tracking a pre-computed inversion trajectory. This paradigm shift yields two critical advantages: 1) By minimizing the deviation to the proximal reference state along the trajectory, the search space is drastically shrunk, resulting in significantly smaller codebooks. 2) By aligning the generative steps with inversion methods, TC-DDCM achieves optimal reconstruction in a few inference steps. Extensive experiments demonstrate that TC-DDCM significantly outperforms state-of-the-art zero-shot methods in rate-distortion-perception performance at ultra-low bitrates, making zero-shot diffusion-based compression practical.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variational Diffusion Models",
+  "authors": [
+   "Diederik P. Kingma",
+   "Tim Salimans",
+   "Ben Poole",
+   "Jonathan Ho"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2107.00630",
+  "arxiv": "2107.00630",
+  "openalex": "W3177150392",
+  "cited_by": 417,
+  "abstract": "Diffusion-based generative models have demonstrated a capacity for perceptually impressive synthesis, but can they also be great likelihood-based models? We answer this in the affirmative, and introduce a family of diffusion-based generative models that obtain state-of-the-art likelihoods on standard image density estimation benchmarks. Unlike other diffusion-based models, our method allows for efficient optimization of the noise schedule jointly with the rest of the model. We show that the variational lower bound (VLB) simplifies to a remarkably short expression in terms of the signal-to-noise ratio of the diffused data, thereby improving our theoretical understanding of this model class. Using this insight, we prove an equivalence between several models proposed in the literature. In addition, we show that the continuous-time VLB is invariant to the noise schedule, except for the signal-to-noise ratio at its endpoints. This enables us to learn a noise schedule that minimizes the variance of the resulting VLB estimator, leading to faster optimization. Combining these advances with architectural improvements, we obtain state-of-the-art likelihoods on image density estimation benchmarks, outperforming autoregressive models that have dominated these benchmarks for many years, with often significantly faster optimization. In addition, we show how to use the model as part of a bits-back compression scheme, and demonstrate lossless compression rates close to the theoretical optimum. Code is available at https://github.com/google-research/vdm .",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models for Image Restoration and Enhancement: A Comprehensive Survey",
+  "authors": [
+   "Xin Li",
+   "Yulin Ren",
+   "Xin Jin",
+   "Cuiling Lan",
+   "Xingrui Wang",
+   "Wenjun Zeng",
+   "Xinchao Wang",
+   "Zhibo Chen"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Computer Vision",
+  "doi": "10.1007/s11263-025-02570-9",
+  "arxiv": "2308.09388",
+  "openalex": "W4413794661",
+  "cited_by": 169,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "StableCodec: Taming One-Step Diffusion for Extreme Image Compression",
+  "authors": [
+   "Tianyu Zhang",
+   "Xin Luo",
+   "Li Li",
+   "Dong Liu"
+  ],
+  "year": 2025,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51701.2025.01614",
+  "arxiv": "2506.21977",
+  "openalex": "W7160159949",
+  "cited_by": 11,
+  "abstract": "Diffusion-based image compression has shown remarkable potential for achieving ultra-low bitrate coding (less than 0.05 bits per pixel) with high realism, by leveraging the generative priors of large pre-trained text-to-image diffusion models. However, current approaches require a large number of denoising steps at the decoder to generate realistic results under extreme bitrate constraints, limiting their application in real-time compression scenarios. Additionally, these methods often sacrifice reconstruction fidelity, as diffusion models typically fail to guarantee pixel-level consistency. To address these challenges, we introduce StableCodec, which enables one-step diffusion for high-fidelity and high-realism extreme image compression with improved coding efficiency. To achieve ultra-low bitrates, we first develop an efficient Deep Compression Latent Codec to transmit a noisy latent representation for a single-step denoising process. We then propose a Dual-Branch Coding Structure, consisting of a pair of auxiliary encoder and decoder, to enhance reconstruction fidelity. Furthermore, we adopt end-to-end optimization with joint bitrate and pixel-level constraints. Extensive experiments on the CLIC 2020, DIV2K, and Kodak dataset demonstrate that StableCodec outperforms existing methods in terms of FID, KID and DISTS by a significant margin, even at bitrates as low as 0.005 bits per pixel, while maintaining strong fidelity. Additionally, StableCodec achieves inference speeds comparable to mainstream transform coding schemes. All source code are available at https://github.com/LuizScarlet/StableCodec.",
+  "source": "openalex"
+ },
+ {
+  "title": "HDCompression: Hybrid-Diffusion Image Compression for Ultra-low Bitrates",
+  "authors": [
+   "Lei Lu",
+   "Yize Li",
+   "Yanzhi Wang",
+   "Wei Wang",
+   "Wei Jiang"
+  ],
+  "year": 2026,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-981-95-7084-3_18",
+  "arxiv": "2502.07160",
+  "openalex": "W4407424191",
+  "cited_by": 4,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "High-Fidelity Image Compression with Score-based Generative Models",
+  "authors": [
+   "Emiel Hoogeboom",
+   "Eirikur Agustsson",
+   "Fabian Mentzer",
+   "Luca Versari",
+   "George D. Toderici",
+   "Lucas Theis"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.18231",
+  "arxiv": "2305.18231",
+  "openalex": "W4378771614",
+  "cited_by": 27,
+  "abstract": "Despite the tremendous success of diffusion generative models in text-to-image generation, replicating this success in the domain of image compression has proven difficult. In this paper, we demonstrate that diffusion can significantly improve perceptual quality at a given bit-rate, outperforming state-of-the-art approaches PO-ELIC and HiFiC as measured by FID score. This is achieved using a simple but theoretically motivated two-stage approach combining an autoencoder targeting MSE followed by a further score-based decoder. However, as we will show, implementation details matter and the optimal design decisions can differ greatly from typical text-to-image models.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extreme Video Compression with Prediction Using Pre-trained Diffusion Models",
+  "authors": [
+   "Bohan Li",
+   "Yiming Liu",
+   "Xueyan Niu",
+   "Bo Bait",
+   "Wei Han",
+   "Lei Deng",
+   "Denız Gündüz"
+  ],
+  "year": 2024,
+  "venue": "International Conference on Wireless Communications and Signal Processing (WCSP)",
+  "doi": "10.1109/wcsp62071.2024.10827256",
+  "arxiv": null,
+  "openalex": "W4406355801",
+  "cited_by": 15,
+  "abstract": "Diffusion models have achieved remarkable success in generating high quality image and video data. More recently, they have also been used for image compression with high perceptual quality. In this paper, we present a novel approach to extreme video compression leveraging the predictive power of diffusion-based generative models at the decoder. The conditional diffusion model at the decoder takes several compressed frames and generates the subsequent frames. Since the encoder can perfectly replicate the generation process, it can decide which frames to transmit and which one can be generated to achieve the desired quality level. Therefore, only image compression is applied at the encoder, while the time correlation among the frames is utilized at the decoder in the generation process, which transfer the complexity from the encoder to the decoder. Experimental results demonstrate the effectiveness of the proposed scheme compared to standard codecs such as H.264 and H.265 in the low bpp regime considering perceptual quality metrics such as the learned perceptual image patch similarity (LPIPS) and the Frechet video distance (FVD). While this framework is not yet competitive with state of the art video compression methods, the presented results show their potential, particularly in the very low bit rate regime, and we will highlight its various advantages that could make it a viable alternative in certain applications. Code is available at: https://github.com/ElesionKyrie/Extreme-Video-Compression-With-Prediction-Using-Pre-trainded-Diffusion-Models-",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Extreme Image Compression With Latent Feature Guidance and Diffusion Prior",
+  "authors": [
+   "Zhiyuan Li",
+   "Yanhui Zhou",
+   "Wei Hao",
+   "Chenyang Ge",
+   "Jingwen Jiang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2024.3455576",
+  "arxiv": "2404.18820",
+  "openalex": "W4402299954",
+  "cited_by": 43,
+  "abstract": "Image compression at extremely low bitrates (below 0.1 bits per pixel (bpp)) is a significant challenge due to substantial information loss. In this work, we propose a novel two-stage extreme image compression framework that exploits the powerful generative capability of pre-trained diffusion models to achieve realistic image reconstruction at extremely low bitrates. In the first stage, we treat the latent representation of images in the diffusion space as guidance, employing a VAE-based compression approach to compress images and initially decode the compressed information into content variables. The second stage leverages pre-trained stable diffusion to reconstruct images under the guidance of content variables. Specifically, we introduce a small control module to inject content information while keeping the stable diffusion model fixed to maintain its generative capability. Furthermore, we design a space alignment loss to force the content variables to align with the diffusion space and provide the necessary constraints for optimization. Extensive experiments demonstrate that our method significantly outperforms state-of-the-art approaches in terms of visual performance at extremely low bitrates. The source code and trained models are available athttps://github.com/huai-chang/DiffEIC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Single-step Diffusion for Image Compression at Ultra-Low Bitrates",
+  "authors": [
+   "Chanung Park",
+   "Joo Chan Lee",
+   "Jong Hwan Ko"
+  ],
+  "year": 2026,
+  "venue": "IEEE Winter Conference on Applications of Computer Vision",
+  "doi": "10.1109/wacv61042.2026.00618",
+  "arxiv": "2506.16572",
+  "openalex": "W4415249917",
+  "cited_by": 1,
+  "abstract": "Although there have been significant advancements in image compression techniques, such as standard and learned codecs, these methods still suffer from severe quality degradation at extremely low bits per pixel. While recent diffusion-based models provided enhanced generative performance at low bitrates, they often yield limited perceptual quality and prohibitive decoding latency due to multiple denoising steps. In this paper, we propose the single-step diffusion model for image compression that delivers high perceptual quality and fast decoding at ultra-low bitrates. Our approach incorporates two key innovations: (i) Vector-Quantized Residual (VQ-Residual) training, which factorizes a structural base code and a learned residual in latent space, capturing both global geometry and high-frequency details; and (ii) rate-aware noise modulation, which tunes denoising strength to match the desired bitrate. Extensive experiments show that ours achieves comparable compression performance to state-of-the-art methods while improving decoding speed by about 50× compared to prior diffusion-based methods, greatly enhancing the practicality of generative codecs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Scalable Image Feature Compression: A Content-Adaptive and Diffusion-Based Approach",
+  "authors": [
+   "Sha Guo",
+   "Zhuo Chen",
+   "Yang Zhao",
+   "Ning Zhang",
+   "Xiaotong Li",
+   "Ling‐Yu Duan"
+  ],
+  "year": 2023,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3581783.3611851",
+  "arxiv": "2410.06149",
+  "openalex": "W4388186905",
+  "cited_by": 8,
+  "abstract": "Traditional image codecs prioritize signal fidelity and human perception, often neglecting machine vision tasks. Deep learning approaches have shown promising coding performance by leveraging rich semantic embeddings that can be optimized for both human and machine vision. However, these compact embeddings struggle to represent low-level details like contours and textures, leading to imperfect reconstructions. Additionally, existing learning-based coding tools lack scalability. To address these challenges, this paper presents a content-adaptive diffusion model for scalable image compression. The method encodes accurate texture through a diffusion process, enhancing human perception while preserving important features for machine vision tasks. It employs a Markov palette diffusion model with commonly-used feature extractors and image generators, enabling efficient data compression. By utilizing collaborative texture-semantic feature extraction and pseudo-label generation, the approach accurately learns texture information. A content-adaptive Markov palette diffusion model is then applied to capture both low-level texture and high-level semantic knowledge in a scalable manner. This framework enables elegant compression ratio control by flexibly selecting intermediate diffusion states, eliminating the need for deep learning model re-training at different operating points. Extensive experiments demonstrate the effectiveness of the proposed framework in image reconstruction and downstream machine vision tasks such as object detection, segmentation, and facial landmark detection. It achieves superior perceptual quality scores compared to state-of-the-art methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Recommender Model",
+  "authors": [
+   "Wenjie Wang",
+   "Yiyan Xu",
+   "Fuli Feng",
+   "Xinyu Lin",
+   "Xiangnan He",
+   "Tat‐Seng Chua"
+  ],
+  "year": 2023,
+  "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+  "doi": "10.1145/3539618.3591663",
+  "arxiv": "2304.04971",
+  "openalex": "W4384644330",
+  "cited_by": 339,
+  "abstract": "Generative models such as Generative Adversarial Networks (GANs) and Variational Auto-Encoders (VAEs) are widely utilized to model the generative process of user interactions. However, they suffer from intrinsic limitations such as the instability of GANs and the restricted representation ability of VAEs. Such limitations hinder the accurate modeling of the complex user interaction generation procedure, such as noisy interactions caused by various interference factors. In light of the impressive advantages of Diffusion Models (DMs) over traditional generative models in image synthesis, we propose a novel Diffusion Recommender Model (named DiffRec) to learn the generative process in a denoising manner. To retain personalized information in user interactions, DiffRec reduces the added noises and avoids corrupting users' interactions into pure noises like in image synthesis. In addition, we extend traditional DMs to tackle the unique challenges in recommendation: high resource costs for large-scale item prediction and temporal shifts of user preference. To this end, we propose two extensions of DiffRec: L-DiffRec clusters items for dimension compression and conducts the diffusion processes in the latent space; and T-DiffRec reweights user interactions based on the interaction timestamps to encode temporal information. We conduct extensive experiments on three datasets under multiple settings (e.g., clean training, noisy training, and temporal training). The empirical results validate the superiority of DiffRec with two extensions over competitive baselines.",
+  "source": "openalex"
+ },
+ {
+  "title": "Synthbuster: Towards Detection of Diffusion Model Generated Images",
+  "authors": [
+   "Quentin Bammey"
+  ],
+  "year": 2023,
+  "venue": "IEEE Open Journal of Signal Processing",
+  "doi": "10.1109/ojsp.2023.3337714",
+  "arxiv": null,
+  "openalex": "W4389370799",
+  "cited_by": 102,
+  "abstract": "Synthetically-generated images are getting increasingly popular. Diffusion models have advanced to the stage where even non-experts can generate photo-realistic images from a simple text prompt. They expand creative horizons but also open a Pandora's box of potential disinformation risks. In this context, the present corpus of synthetic image detection techniques, primarily focusing on older generative models like Generative Adversarial Networks, finds itself ill-equipped to deal with this emerging trend. Recognizing this challenge, we introduce a method specifically designed to detect synthetic images produced by diffusion models. Our approach capitalizes on the inherent frequency artefacts left behind during the diffusion process. Spectral analysis is used to highlight the artefacts in the Fourier transform of a residual image, which are used to distinguish real from fake images. The proposed method can detect diffusion-model-generated images even under mild JPEG compression, and generalizes relatively well to unknown models. By pioneering this novel approach, we aim to fortify forensic methodologies and ignite further research into the detection of AI-generated images.",
+  "source": "openalex"
+ },
+ {
+  "title": "Q-Diffusion: Quantizing Diffusion Models",
+  "authors": [
+   "Xiuyu Li",
+   "Yijiang Liu",
+   "Long Lian",
+   "Huanrui Yang",
+   "Zhen Dong",
+   "Daniel D. Kang",
+   "Shanghang Zhang",
+   "Kurt Keutzer"
+  ],
+  "year": 2023,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51070.2023.01608",
+  "arxiv": "2302.04304",
+  "openalex": "W4390874074",
+  "cited_by": 156,
+  "abstract": "Diffusion models have achieved great success in image synthesis through iterative noise estimation using deep neural networks. However, the slow inference, high memory consumption, and computation intensity of the noise estimation model hinder the efficient adoption of diffusion models. Although post-training quantization (PTQ) is considered a go-to compression method for other tasks, it does not work out-of-the-box on diffusion models. We propose a novel PTQ method specifically tailored towards the unique multi-timestep pipeline and model architecture of the diffusion models, which compresses the noise estimation network to accelerate the generation process. We identify the key difficulty of diffusion model quantization as the changing output distributions of noise estimation networks over multiple time steps and the bimodal activation distribution of the shortcut layers within the noise estimation network. We tackle these challenges with timestep-aware calibration and split shortcut quantization in this work. Experimental results show that our proposed method is able to quantize full-precision unconditional diffusion models into 4-bit while maintaining comparable performance (small FID change of at most 2.34 compared to >100 for traditional PTQ) in a training-free manner. Our approach can also be applied to text-guided image generation, where we can run stable diffusion in 4-bit weights with high generation quality for the first time.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models Beat GANs on Image Synthesis",
+  "authors": [
+   "Prafulla Dhariwal",
+   "Alex Nichol"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2105.05233",
+  "arxiv": "2105.05233",
+  "openalex": "W3162926177",
+  "cited_by": 3577,
+  "abstract": "We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128$\\times$128, 4.59 on ImageNet 256$\\times$256, and 7.72 on ImageNet 512$\\times$512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256$\\times$256 and 3.85 on ImageNet 512$\\times$512. We release our code at https://github.com/openai/guided-diffusion",
+  "source": "openalex"
+ },
+ {
+  "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+  "authors": [
+   "Robin Rombach",
+   "Andreas Blattmann",
+   "Dominik Lorenz",
+   "Patrick Esser",
+   "Björn Ommer"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.01042",
+  "arxiv": "2112.10752",
+  "openalex": "W4312933868",
+  "cited_by": 17617,
+  "abstract": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve new state of the art scores for image inpainting and class-conditional image synthesis and highly competitive performance on various tasks, including unconditional image generation, text-to-image synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.",
+  "source": "openalex"
+ }
+]

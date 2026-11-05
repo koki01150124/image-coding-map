@@ -1,0 +1,855 @@
+[
+ {
+  "title": "D²-JSCC: Digital Deep Joint Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jianhao Huang",
+   "Kai Yuan",
+   "Chuan Zhen Huang",
+   "Kaibin Huang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3531546",
+  "arxiv": null,
+  "openalex": "W4406610978",
+  "cited_by": 65,
+  "abstract": "Semantic communications (SemCom) have emerged as a new paradigm for supporting sixth-generation applications, where semantic features of data are transmitted using artificial intelligence algorithms to attain high communication efficiencies. Most existing SemCom techniques utilize deep neural networks (DNNs) to implement analog source-channel mappings, which are incompatible with existing digital communication architectures. To address this issue, this paper proposes a novel framework of digital deep joint source-channel coding (D2-JSCC) targeting image transmission in SemCom. The framework features digital source and channel codings that are jointly optimized to reduce the end-to-end (E2E) distortion. First, deep source coding with an adaptive prior model is designed to encode semantic features according to their distributions. Second, channel coding is employed to protect encoded features against channel distortion. To facilitate their joint design, the E2E distortion is characterized as a function of the source and channel rates via the analysis of the Bayesian model and Lipschitz assumption on the DNNs. Then to minimize the E2E distortion, a two-step algorithm is proposed to control the source-channel rates for a given channel signal-to-noise ratio. Simulation results reveal that the proposed framework outperforms classic deep JSCC and mitigates the cliff and leveling-off effects, which commonly exist for separation-based approaches.",
+  "source": "openalex"
+ },
+ {
+  "title": "D2-JSCC: Digital Deep Joint Source-channel Coding for Semantic Communications",
+  "authors": [
+   "Jianhao Huang",
+   "Kai Yuan",
+   "Chuan Zhen Huang",
+   "Kaibin Huang"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+  "doi": "10.1109/pimrc59610.2024.10817394",
+  "arxiv": "2403.07338",
+  "openalex": "W4405975556",
+  "cited_by": 12,
+  "abstract": "Semantic communications (SemCom) have emerged as a new paradigm for supporting sixth-generation applications with high communication efficiencies. Most existing SemCom techniques utilize deep neural networks (DNNs) to implement analog source-channel mappings, which are incompatible with existing digital communication architectures. To address this issue, this paper proposes a novel framework of digital deep joint source-channel coding ($\\mathrm{D}^{2}$-JSCC) targeting image transmission in SemCom. The framework features digital source and channel codings that are jointly optimized to reduce the end-to-end (E2E) distortion. First, deep source coding with an adaptive density model is designed to efficiently extract and encode semantic features according to their different distributions. Second, channel coding is employed to protect encoded features against channel distortion. To facilitate their joint design, the E2E distortion is characterized as a function of the source and channel rates. Then to minimize the E2E distortion, we propose an efficient two-step algorithm to find the optimal trade-off between the source and channel rates for a given channel signal-to-noise ratio (SNR). Via experiments on simulating the $\\mathbf{D}^{2}$-JSCC with different channel codes and real datasets, the proposed framework is observed to outperform the classic deep JSCC and separation-based approaches.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2019.2919300",
+  "arxiv": "1809.01733",
+  "openalex": "W2946889564",
+  "cited_by": 1516,
+  "abstract": "We propose a joint source and channel coding (JSCC) technique for wireless image transmission that does not rely on explicit codes for either compression or error correction; instead, it directly maps the image pixel values to the complex-valued channel input symbols. We parameterize the encoder and decoder functions by two convolutional neural networks (CNNs), which are trained jointly, and can be considered as an autoencoder with a non-trainable layer in the middle that represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms digital transmission concatenating JPEG or JPEG2000 compression with a capacity achieving channel code at low signal-to-noise ratio (SNR) and channel bandwidth values in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the “cliff effect,” and it provides a graceful performance degradation as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC learns noise resilient coded representations and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp.2019.8683463",
+  "arxiv": null,
+  "openalex": "W3103412725",
+  "cited_by": 132,
+  "abstract": "We propose a novel joint source and channel coding (JSCC) scheme for wireless image transmission that departs from the conventional use of explicit source and channel codes for compression and error correction, and directly maps the image pixel values to the complex-valued channel input signal. Our encoder-decoder pair form an autoencoder with a non-trainable layer in the middle, which represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms separation-based digital transmission at low signal-to-noise ratio (SNR) and low channel bandwidth regimes in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the \"cliff effect\" as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC can learn to communicate without explicit pilot signals or channel estimation, and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Zhongwei Si",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3180802",
+  "arxiv": "2112.10961",
+  "openalex": "W4226042246",
+  "cited_by": 369,
+  "abstract": "In this paper, we propose a class of high-efficiency deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+  "authors": [
+   "Tze-Yang Tung",
+   "David Burth Kurka",
+   "Mikołaj Jankowski",
+   "Denız Gündüz"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2022.3231042",
+  "arxiv": "2111.13042",
+  "openalex": "W4312539031",
+  "cited_by": 149,
+  "abstract": "Recent works have shown that modern machine learning techniques can provide an alternative approach to the long-standing joint source-channel coding (JSCC) problem. Very promising initial results, superior to popular digital schemes that utilize separate source and channel codes, have been demonstrated for wireless image and video transmission using deep neural networks (DNNs). However, end-to-end training of such schemes requires a differentiable channel input representation; hence, prior works have assumed that any complex value can be transmitted over the channel. This can prevent the application of these codes in scenarios where the hardware or protocol can only admit certain sets of channel inputs, prescribed by a digital constellation. Herein, we propose DeepJSCC-Q, an end-to-end optimized JSCC solution for wireless image transmission using a finite channel input alphabet. We show that DeepJSCC-Q can achieve similar performance to prior works that allow any complex valued channel input, especially when high modulation orders are available, and that the performance asymptotically approaches that of unconstrained channel input as the modulation order increases. Importantly, DeepJSCC-Q preserves the graceful degradation of image quality in unpredictable channel conditions, a desirable property for deployment in mobile systems with rapidly changing channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2021.3090048",
+  "arxiv": "2009.12480",
+  "openalex": "W3089229692",
+  "cited_by": 193,
+  "abstract": "We propose deep learning based communication methods for adaptive-bandwidth transmission of images over wireless channels. We consider the scenario in which images are transmitted progressively in layers over time or frequency, and such layers can be aggregated by receivers in order to increase the quality of their reconstructions. We investigate two scenarios, one in which the layers are sent sequentially, and incrementally contribute to the refinement of a reconstruction, and another in which the layers are independent and can be retrieved in any order. Those scenarios correspond to the well known problems ofsuccessive refinementandmultiple descriptions, respectively, in the context of joint source-channel coding (JSCC). We propose DeepJSCC-$l$, an innovative solution that uses convolutional autoencoders, and present three architectures with different complexity trade-offs. To the best of our knowledge, this is the first practical multiple-description JSCC scheme developed and tested for practical information sources and channels. Numerical results show that DeepJSCC-$l$can learn to transmit the source progressively with negligible losses in the end-to-end performance compared with a single transmission. Moreover, DeepJSCC-$l$has comparable performance with state of the art digital progressive transmission schemes in the challenging low signal-to-noise ratio (SNR) and small bandwidth regimes, with the additional advantage of graceful degradation with channel SNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning for Joint Source-Channel Coding of Text",
+  "authors": [
+   "Nariman Farsad",
+   "Milind Rao",
+   "Andrea J. Goldsmith"
+  ],
+  "year": 2018,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp.2018.8461983",
+  "arxiv": "1802.06832",
+  "openalex": "W2788661346",
+  "cited_by": 449,
+  "abstract": "We consider the problem of joint source and channel coding of structured data such as natural language over a noisy channel. The typical approach to this problem in both theory and practice involves performing source coding to first compress the text and then channel coding to add robustness for the transmission across the channel. This approach is optimal in terms of minimizing end-to-end distortion with arbitrarily large block lengths of both the source and channel codes when transmission is over discrete memoryless channels. However, the optimality of this approach is no longer ensured for documents of finite length and limitations on the length of the encoding. We will show in this scenario that we can achieve lower word error rates by developing a deep learning based encoder and decoder. While the approach of separate source and channel coding would minimize bit error rates, our approach preserves semantic information of sentences by first embedding sentences in a semantic space where sentences closer in meaning are located closer together, and then performing joint source and channel coding on these embeddings.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding Over the Relay Channel",
+  "authors": [
+   "Chenghong Bian",
+   "Yulin Shao",
+   "Haotian Wu",
+   "Denız Gündüz"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Machine Learning for Communication and Networking (ICMLCN)",
+  "doi": "10.1109/icmlcn59089.2024.10624800",
+  "arxiv": null,
+  "openalex": "W4401610441",
+  "cited_by": 10,
+  "abstract": "This paper presents a novel deep joint source-channel coding (DeepJSCC) scheme for image transmission over a half-duplex cooperative relay channel. Specifically, we apply DeepJSCC to two basic modes of cooperative communications, namely amplify-and-forward (AF) and decode-and-forward (DF). In DeepJSCC-AF, the relay simply amplifies and forwards its received signal. In DeepJSCC-DF, on the other hand, the relay first reconstructs the transmitted image and then re-encodes it before forwarding. Considering the excessive computation overhead of DeepJSCC-DF for recovering the image at the relay, we propose an alternative scheme, called DeepJSCC-PF, in which the relay processes and forwards its received signal without necessarily recovering the image. Simulation results show that the proposed DeepJSCC-AF, DF, and PF schemes are superior to the digital baselines with BPG compression with polar codes and provide a graceful performance degradation with deteriorating channel quality. Further investigation shows that the PSNR gain of DeepJSCC-DF/PF over DeepJSCC-AF improves as the channel condition between the source and relay improves. Moreover, the DeepJSCC-PF scheme achieves similar performance to DeepJSCC-DF with lower computational complexity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jialong Xu",
+   "Tze-Yang Tung",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Yuxuan Sun",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.004.2200819",
+  "arxiv": "2211.08747",
+  "openalex": "W4388937137",
+  "cited_by": 148,
+  "abstract": "Semantic communications is considered a promising technology that will increase the efficiency of next-generation communication systems, particularly human-machine and machine-type communications. In contrast to the source-agnostic approach of conventional wireless communication systems, semantic communications seek to ensure that only relevant information for the underlying task is communicated to the receiver. Considering most semantic communication applications have strict latency, bandwidth, and power constraints, a prominent approach is to model them as a joint source-channel coding (JSCC) problem. Although JSCC has been a long-standing open problem in communication and coding theory, remarkable performance gains have been made recently over existing separate source and channel coding systems, particularly in low-la-tency and low-power scenarios. Recent progress has been made thanks to the adoption of deep learning techniques for joint source-channel code design that outperform the concatenation of state-of-the-art compression and channel coding schemes, which are the result of decades-long research efforts. In this article, we present an adaptive deep learning based JSCC (DeepJSCC) architecture for semantic communications, introduce its design principles, highlight its benefits, and outline future research challenges that lie ahead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding Over Cooperative Relay Networks",
+  "authors": [
+   "Chenghong Bian",
+   "Yulin Shao",
+   "Haotian Wu",
+   "Denız Gündüz"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2211.06705",
+  "arxiv": "2211.06705",
+  "openalex": "W4309130261",
+  "cited_by": 17,
+  "abstract": "This paper presents a novel deep joint source-channel coding (DeepJSCC) scheme for image transmission over a half-duplex cooperative relay channel. Specifically, we apply DeepJSCC to two basic modes of cooperative communications, namely amplify-and-forward (AF) and decode-and-forward (DF). In DeepJSCC-AF, the relay simply amplifies and forwards its received signal. In DeepJSCC-DF, on the other hand, the relay first reconstructs the transmitted image and then re-encodes it before forwarding. Considering the excessive computation overhead of DeepJSCC-DF for recovering the image at the relay, we propose an alternative scheme, called DeepJSCC-PF, in which the relay processes and forwards its received signal without necessarily recovering the image. Simulation results show that the proposed DeepJSCC-AF, DF, and PF schemes are superior to the digital baselines with BPG compression with polar codes and provides a graceful performance degradation with deteriorating channel quality. Further investigation shows that the PSNR gain of DeepJSCC-DF/PF over DeepJSCC-AF improves as the channel condition between the source and relay improves. Moreover, DeepJSCC-PF scheme achieves a similar performance to DeepJSCC-DF with lower computational complexity.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2020.2987203",
+  "arxiv": "1911.11174",
+  "openalex": "W3016715915",
+  "cited_by": 491,
+  "abstract": "We consider wireless transmission of images in the presence of channel output feedback. From a Shannon theoretic perspective feedback does not improve the asymptotic end-to-end performance, and separate source coding followed by capacity-achieving channel coding, which ignores the feedback signal, achieves the optimal performance. It is well known that separation is not optimal in the practical finite blocklength regime; however, there are no known practical joint source-channel coding (JSCC) schemes that can exploit the feedback signal and surpass the performance of separation-based schemes. Inspired by the recent success of deep learning methods for JSCC, we investigate how noiseless or noisy channel output feedback can be incorporated into the transmission system to improve the reconstruction quality at the receiver. We introduce an autoencoder-based JSCC scheme, which we call DeepJSCC-f , that exploits the channel output feedback, and provides considerable improvements in terms of the end-to-end reconstruction quality for fixed-length transmission, or in terms of the average delay for variable-length transmission. To the best of our knowledge, this is the first practical JSCC scheme that can fully exploit channel output feedback, demonstrating yet another setting in which modern machine learning techniques can enable the design of new and efficient communication methods that surpass the performance of traditional structured coding-based designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Source-Channel Coding of Images with (not very) Deep Learning",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "Repository for Publications and Research Data (ETH Zurich)",
+  "doi": "10.3929/ethz-b-000402967",
+  "arxiv": null,
+  "openalex": "W3119819694",
+  "cited_by": 20,
+  "abstract": "Almost all wireless communication systems today are designed based on essentially the same digital approach, that separately optimizes the compression and channel coding stages.Using machine learning techniques, we investigate whether end-toend transmission can be learned from scratch, thus using joint source-channel coding (JSCC) rather than the separation approach.This paper reviews and advances recent developments on our proposed technique, deep-JSCC, an autoencoder-based solution for generating robust and compact codes directly from images pixels, being comparable or even superior in performance to state-of-the-art (SoA) separation-based schemes (BPG+LDPC).Additionally, we show that deep-JSCC can be expanded to exploit a series of important features, such as graceful degradation, versatility to different channels and domains, variable transmission rate through successive refinement, and its capability to exploit channel output feedback.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rateless Deep Joint Source Channel Coding for 3D Point Cloud",
+  "authors": [
+   "Shoichi Ibuki",
+   "Tsubasa Okamoto",
+   "Takuya Fujihashi",
+   "Toshiaki Koike–Akino",
+   "Takashi Watanabe"
+  ],
+  "year": 2025,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2025.3546514",
+  "arxiv": null,
+  "openalex": "W4408017290",
+  "cited_by": 9,
+  "abstract": "To enable untethered volumetric services, one of the primary challenges lies in reconstructing a high-quality 3D point cloud for each user, despite variations in channel conditions and bandwidth availability. Conventional digital point cloud coding approaches, such as tree-based or graph-based methods, reduce transmission data effectively; however, they are prone to quality degradation due to lossy compression and entropy coding, especially under fluctuating channels and limited bandwidth. To address these limitations, we propose a novel scheme inspired by deep joint source-channel coding (DJSCC). DJSCC compresses the 3D point cloud into coded symbols, which are then decoded via a graph auto-encoder (GAE) architecture. Additionally, the coded symbols are directly mapped to transmission symbols through analog modulation, allowing the point cloud quality to adapt dynamically to each user’s channel conditions. Unlike existing DJSCC schemes, our proposed scheme includes a non-uniform dropout mechanism that provides a rateless feature, enabling the point cloud quality to enhance based on the available bandwidth progressively. Experimental results with a point cloud dataset demonstrate that the proposed scheme mitigates quality degradation due to variations in channel quality and bandwidth better than the existing DJSCC scheme. Moreover, the proposed scheme shows improved generalization performance, leading to superior point cloud quality in narrow-band scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3424842",
+  "arxiv": "2308.09361",
+  "openalex": "W4400409682",
+  "cited_by": 227,
+  "abstract": "As one of the key techniques to realize semantic communications, end-to-end optimized neural joint source-channel coding (JSCC) has made great progress over the past few years. A general trend in many recent works pushing the model adaptability or the application diversity of neural JSCC is based on the convolutional neural network (CNN) backbone, whose model capacity is yet limited, inherently leading to inferior system coding gain against traditional coded transmission systems. In this paper, we establish a new neural JSCC backbone that can also adapt flexibly to diverse channel conditions and transmission rates within a single model, our open-source project aims to promote the research in this field. Specifically, we show that with elaborate design, neural JSCC codec built on the emerging Swin Transformer backbone achieves superior performance than conventional neural JSCC codecs built upon CNN, while also requiring lower end-to-end processing latency. Paired with two spatial modulation modules that scale latent representations based on the channel state information and target transmission rate, our baseline SwinJSCC can further upgrade to a versatile version, which increases its capability to adapt to diverse channel conditions and rate configurations. Extensive experimental results show that our SwinJSCC achieves better or comparable performance versus the state-of-the-art engineered BPG + 5G LDPC coded transmission system with much faster end-to-end coding speed, especially for high-resolution images, in which case traditional CNN-based JSCC yet falls behind due to its limited model capacity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Source-Channel Coding for Channel-Adaptive Digital Semantic Communications",
+  "authors": [
+   "Joohyuk Park",
+   "Yongjeong Oh",
+   "Seonjung Kim",
+   "Yo–Seb Jeon"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3422496",
+  "arxiv": "2311.08146",
+  "openalex": "W4400275583",
+  "cited_by": 81,
+  "abstract": "In this paper, we propose a novel joint source-channel coding (JSCC) approach for channel-adaptive digital semantic communications. In semantic communication systems with digital modulation and demodulation, robust design of JSCC encoder and decoder becomes challenging not only due to the unpredictable dynamics of channel conditions but also due to diverse modulation orders. To address this challenge, we first develop a new demodulation method which assesses the uncertainty of the demodulation output to improve the robustness of the digital semantic communication system. We then devise a robust training strategy which enhances the robustness and flexibility of the JSCC encoder and decoder against diverse channel conditions and modulation orders. To this end, we model the relationship between the encoder’s output and decoder’s input using binary symmetric erasure channels and then sample the parameters of these channels from diverse distributions. We also develop a channel-adaptive modulation technique for an inference phase, in order to reduce the communication latency while maintaining task performance. In this technique, we adaptively determine modulation orders for the latent variables based on channel conditions. Using simulations, we demonstrate the superior performance of the proposed JSCC approach for image classification, reconstruction, and retrieval tasks compared to existing JSCC approaches.",
+  "source": "openalex"
+ },
+ {
+  "title": "Digital Image Semantic Communications with Joint Source-Channel Coding and Constellation Optimization",
+  "authors": [
+   "Linzi Shen",
+   "Nan Ma",
+   "Jianqiao Chen",
+   "Mengshu Song",
+   "Chen Dong"
+  ],
+  "year": 2024,
+  "venue": "International Conference on Wireless Communications and Signal Processing (WCSP)",
+  "doi": "10.1109/wcsp62071.2024.10827523",
+  "arxiv": null,
+  "openalex": "W4406355967",
+  "cited_by": 4,
+  "abstract": "Recently developed semantic communication facilitates an intelligent and minimalist approach to meet the growing demands for future sixth-generation (6G) communication sys-tems. However, since the constraints of backpropagation during neural network training, the predominant approach of most extant studies are based on differentiable channel inputs, which is difficult to match with existing digital communication systems effectively. Meanwhile, the research on modulation techniques considering constellation optimization for digital semantic communication is still in the early stage. To deal with these issues, we propose a novel deep joint source-channel coding (DJSCC)-based digital semantic communication with considering constellation optimization, which is referred to as DJSCC-C. Firstly, the digital semantic communication system is introduced. Secondly, the DJSCC-C system is proposed for image transmission, which is trained with a newly-constructed loss function, aiming to improve the transmission rate in the digital semantic communication system as well as optimize the joint source-channel coding capability. Finally, simulation results are provided to verify the superiority of the proposed scheme for future design of digital semantic communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "OFDM-Guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+  "authors": [
+   "Mingyu Yang",
+   "Chenghong Bian",
+   "Hun-Seok Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2022.3151935",
+  "arxiv": "2109.05194",
+  "openalex": "W3201394241",
+  "cited_by": 195,
+  "abstract": "We investigate joint source channel coding (JSCC) for wireless image transmission over multipath fading channels. Inspired by recent works on deep learning based JSCC and model-based learning methods, we combine an autoencoder with orthogonal frequency division multiplexing (OFDM) to cope with multipath fading. The proposed encoder and decoder use convolutional neural networks (CNNs) and directly map the source images to complex-valued baseband samples for OFDM transmission. The multipath channel and OFDM are represented by non-trainable (deterministic) but differentiable layers so that the system can be trained end-to-end. Furthermore, our JSCC decoder further incorporates explicit channel estimation, equalization, and additional subnets to enhance the performance. The proposed method exhibits 2.5 – 4 dB SNR gain for the equivalent image quality compared to conventional schemes that employ state-of-the-art but separate source and channel coding such as Better Portable Graphics (BPG) and Low-Density Parity-Check (LDPC) schemes. The performance further improves when the system incorporates the channel state information (CSI) feedback. The proposed scheme is robust against OFDM signal clipping and parameter mismatch for the channel model used in training and evaluation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for CSI Feedback: An End-to-End Approach",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Ning Wang",
+   "Wei Ren Chen"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221963",
+  "arxiv": "2203.16005",
+  "openalex": "W4313387453",
+  "cited_by": 83,
+  "abstract": "The increased throughput brought by MIMO technology relies on the knowledge of channel state information (CSI) acquired in the base station (BS). To make the CSI feedback overhead affordable for the evolution of MIMO technology (e.g., massive MIMO and ultra-massive MIMO), deep learning (DL) is introduced to deal with the CSI compression task. In traditional communication systems, the compressed CSI bits is treated equally and expected to be transmitted accurately over the noisy channel. While the errors occur due to the limited bandwidth or low signal-to-noise ratios (SNRs), the reconstruction performance of the CSI degrades drastically. As a branch of semantic communications, deep joint source-channel coding (DJSCC) scheme performs better than the separate source-channel coding (SSCC) scheme—the cornerstone of traditional communication systems—in the limited bandwidth and low SNRs. In this paper, we propose a DJSCC based framework for the CSI feedback task. In particular, the proposed method can simultaneously learn from the CSI source and the wireless channel. Instead of truncating CSI via Fourier transform in the delay domain in existing methods, we apply non-linear transform networks to compress the CSI. Furthermore, we adopt an SNR adaption mechanism to deal with wireless channel variations. The extensive experiments demonstrate the validity, adaptability, and generality of the proposed framework.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Deep Joint Source-Channel Coding Scheme for Hybrid Mobile Multi-Hop Networks",
+  "authors": [
+   "Chenghong Bian",
+   "Yulin Shao",
+   "Denız Gündüz"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3559134",
+  "arxiv": "2405.09698",
+  "openalex": "W4409310585",
+  "cited_by": 5,
+  "abstract": "Efficient data transmission across mobile multi-hop networks that connect edge devices to core servers presents significant challenges, particularly due to the variability in link qualities between wireless and wired segments. This variability necessitates a robust transmission scheme that transcends the limitations of existing deep joint source-channel coding (Deep-JSCC) strategies, which often struggle at the intersection of analog and digital methods. Addressing this need, this paper introduces a novel hybrid DeepJSCC framework, h-DJSCC, tailored for effective image transmission from edge devices through a network architecture that includes initial wireless transmission followed by multiple wired hops. Our approach harnesses the strengths of DeepJSCC for the initial, variable-quality wireless link to avoid the cliff effect inherent in purely digital schemes. For the subsequent wired hops, which feature more stable and high-capacity connections, we implement digital compression and forwarding techniques to prevent noise accumulation. This dual-mode strategy is adaptable even in scenarios with limited knowledge of the image distribution, enhancing the framework’s robustness and utility. Extensive numerical simulations demonstrate that our hybrid solution outperforms traditional fully digital approaches by effectively managing transitions between different network segments and optimizing for variable signal-to-noise ratios (SNRs). We also introduce a fully adaptive h-DJSCC architecture with both SNR-adaptive (SA) and rate-adaptive (RA) modules capable of adjusting to different network conditions and achieving diverse rate-distortion objectives, thereby reducing the memory requirements on network nodes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Successive Refinement of Images with Deep Joint Source-Channel Coding",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)",
+  "doi": "10.1109/spawc.2019.8815416",
+  "arxiv": "1903.06333",
+  "openalex": "W2921840414",
+  "cited_by": 65,
+  "abstract": "We introduce deep learning based communication methods for successive refinement of images over wireless channels. We present three different strategies for progressive image transmission with deep JSCC, with different complexity-performance tradeoffs, all based on convolutional autoencoders. Numerical results show that deep JSCC not only provides graceful degradation with channel signal-to-noise ratio (SNR) and improved performance in low SNR and low bandwidth regimes compared to state-of-the-art digital communication techniques, but can also successfully learn a layered representation, achieving performance close to a single-layer scheme. These results suggest that natural images encoded with deep JSCC over Gaussian channels are almost successively refinable.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Digital Joint Source-Channel Based Wireless Speech Transmission",
+  "authors": [
+   "Mohammad Bokaei",
+   "Jesper Jensen",
+   "Simon Doclo",
+   "Jan Østergaard"
+  ],
+  "year": 2024,
+  "venue": "European Signal Processing Conference (EUSIPCO)",
+  "doi": "10.23919/eusipco63174.2024.10715034",
+  "arxiv": null,
+  "openalex": "W4404577190",
+  "cited_by": 0,
+  "abstract": "In this paper, we study low-latency speech transmission over a wireless channel based on deep digital Joint Source-Channel Coding (JSCC). Inspired by recent advances in quantization techniques in the realm of JSSC problems, we explore the feasibility of employing constellation-constrained deep JSCC for speech transmission. Our proposed system leverages a single DNN to jointly handle source coding, channel coding, and direct output mapping to specific constelltion points. We demonstrate the ability of the joint system to operate effectively under various latency constraints while outperforming separate systems, especially in adverse channel conditions. Simulation results validate the efficacy of our approach, highlighting its potential for real-world applications requiring low-latency speech transmission over wireless channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Adaptive Image Transmission Over MIMO Channels",
+  "authors": [
+   "Haotian Wu",
+   "Yulin Shao",
+   "Chenghong Bian",
+   "Krystian Mikolajczyk",
+   "Denız Gündüz"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2024.3422794",
+  "arxiv": "2309.00470",
+  "openalex": "W4400579059",
+  "cited_by": 107,
+  "abstract": "We introduce a vision transformer (ViT)-based deep joint source and channel coding (DeepJSCC) scheme for wireless image transmission over multiple-input multiple-output (MIMO) channels, called DeepJSCC-MIMO. We employ DeepJSCC-MIMO in both open-loop and closed-loop MIMO systems. The novel DeepJSCC-MIMO architecture surpasses the classical separation-based benchmarks, while exhibiting robustness to channel estimation errors and flexibility in adapting to diverse channel conditions and antenna configurations without requiring retraining. Specifically, by harnessing the self-attention mechanism of the ViT, DeepJSCC-MIMO intelligently learns feature mapping and power allocation strategies tailored to the unique characteristics of the source image and prevailing channel conditions. Extensive numerical experiments validate the significant improvements in both distortion quality and perceptual quality achieved by DeepJSCC-MIMO for both open-loop and closed-loop MIMO systems across a wide range of scenarios. Moreover, DeepJSCC-MIMO exhibits robustness to varying channel conditions, channel estimation errors, and different antenna numbers, making it an appealing technology for emerging semantic communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Retrieval",
+  "authors": [
+   "Mikołaj Jankowski",
+   "Denız Gündüz",
+   "Krystian Mikolajczyk"
+  ],
+  "year": 2020,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp40776.2020.9054078",
+  "arxiv": "1910.12703",
+  "openalex": "W2981934169",
+  "cited_by": 65,
+  "abstract": "Motivated by surveillance applications with wireless cameras or drones, we consider the problem of image retrieval over a wireless channel. Conventional systems apply lossy compression on query images to reduce the data that must be transmitted over a bandwidth and power limited wireless link. We first note that reconstructing the original image is not needed for retrieval tasks; hence, we introduce a deep neutral network (DNN) based compression scheme targeting the retrieval task. Then, we completely remove the compression step, and propose another DNN-based communication scheme that directly maps the feature vectors to channel inputs. This joint source-channel coding (JSCC) approach not only improves the end-to-end accuracy, but also simplifies and speeds up the encoding operation which is highly beneficial for power and latency constrained IoT applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC-Q: Channel Input Constrained Deep Joint Source-Channel Coding",
+  "authors": [
+   "Tze-Yang Tung",
+   "David Burth Kurka",
+   "Mikołaj Jankowski",
+   "Denız Gündüz"
+  ],
+  "year": 2022,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc45855.2022.9838671",
+  "arxiv": null,
+  "openalex": "W3215645731",
+  "cited_by": 43,
+  "abstract": "Recent works have shown that the task of wireless transmission of images can be learned with the use of machine learning techniques. Very promising results in end-to-end image quality, superior to popular digital schemes that utilize source and channel coding separation, have been demonstrated through the training of an autoencoder, with a non-trainable channel layer in the middle. However, these methods assume that any complex value can be transmitted over the channel, which can prevent the application of the algorithm in scenarios where the hardware or protocol can only admit certain sets of channel inputs, such as the use of a digital constellation. Herein, we propose DeepJSCC-Q, an end-to-end optimized joint source-channel coding scheme for wireless image transmission, which is able to operate with a fixed channel input alphabet. We show that DeepJSCC-Q can achieve similar performance to models that use continuous-valued channel input. Importantly, it preserves the graceful degradation of image quality observed in prior work when channel conditions worsen, making DeepJSCC-Q much more attractive for deployment in practical systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Joint Source-Channel Coding",
+  "authors": [
+   "Kristy Choi",
+   "Kedar Tatwawadi",
+   "Aditya Grover",
+   "Tsachy Weissman",
+   "Stefano Ermon"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1811.07557",
+  "arxiv": "1811.07557",
+  "openalex": "W2936697624",
+  "cited_by": 103,
+  "abstract": "For reliable transmission across a noisy communication channel, classical results from information theory show that it is asymptotically optimal to separate out the source and channel coding processes. However, this decomposition can fall short in the finite bit-length regime, as it requires non-trivial tuning of hand-crafted codes and assumes infinite computational power for decoding. In this work, we propose to jointly learn the encoding and decoding processes using a new discrete variational autoencoder model. By adding noise into the latent codes to simulate the channel during training, we learn to both compress and error-correct given a fixed bit-length and computational budget. We obtain codes that are not only competitive against several separation schemes, but also learn useful robust representations of the data for downstream tasks such as classification. Finally, inference amortization yields an extremely fast neural decoder, almost an order of magnitude faster compared to standard decoding methods based on iterative belief propagation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Engineering a Lightweight Deep Joint Source-Channel Coding Based Semantic Communication System",
+  "authors": [
+   "Weihan Zhang",
+   "Shaohua Wu",
+   "Siqi Meng",
+   "Jinghang He",
+   "Qinyu Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "10.1109/jiot.2024.3463652",
+  "arxiv": null,
+  "openalex": "W4402593326",
+  "cited_by": 4,
+  "abstract": "Deep joint source-channel coding (DeepJSCC) has emerged as a novel technology in semantic communication, coinciding with the increasing demand for the edge devices in the Internet of Things (IoT). Consequently, the deployment of DeepJSCC on edge devices has become a crucial research direction. However, DeepJSCC faces challenges related to channel fading. Moreover, implementing DeepJSCC on the edge devices poses challenges due to the constrained computational resources as well as the compatibility issue between DeepJSCC and digital systems. In this article, we devote to engineering the DeepJSCC system deployed on the edge devices. First, we propose a method named DeepJSCC with Ensemble learning (DeepJSCC-ES) to resist the channel fading. Then, we present a pruning algorithm called the DeepJSCC signal-to-noise ratio (SNR)-adaptive pruning method (DJSAP) to make the DeepJSCC network lightweight, reducing the computational demands on the edge nodes. Further, we propose a method called the simulated fixed-point quantization training based on soft quantization function (SFPQSQ) to tackle the compatibility issue between DeepJSCC and digital systems. Finally, we deploy the whole DeepJSCC system on the edge devices and conduct experiments to test the DeepJSCC system. The results of simulations show that the proposed DeepJSCC-ES system outperforms the baseline DeepJSCC, particularly excelling in low SNR conditions. Furthermore, the parameter size of the pruned model using DJSAP is compressed by 93.37% while the average structural similarity index metric (SSIM) decreases only by 0.92% compared with the baseline DeepJSCC. Additionally, the SFPQSQ works better than the ordinary quantization methods in tackling the compatibility issue between DeepJSCC and digital systems. The experiment results also show that our proposed system can serve as a feasible solution for practical deployment on the edge devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel and Encryption Coding: Secure Semantic Communications",
+  "authors": [
+   "Tze-Yang Tung",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc45041.2023.10278612",
+  "arxiv": "2208.09245",
+  "openalex": "W4387870828",
+  "cited_by": 79,
+  "abstract": "Deep learning driven joint source-channel coding (JSCC) for wireless image or video transmission, also called DeepJSCC, has been a topic of interest recently with very promising results. The idea is to map similar source samples to nearby points in the channel input space such that, despite the noise introduced by the channel, the input can be recovered with minimal distortion. However, the inherent correlation between the source sample and channel input makes DeepJSCC vulnerable to eavesdropping attacks. In this paper, we propose the first DeepJSCC scheme for wireless image transmission that is secure against eavesdroppers, called DeepJSCEC. The proposed solution not only preserves the results demonstrated by DeepJSCC, it also provides security against chosen-plaintext attacks from the eavesdropper, without the need to make assumptions about the eavesdropper's channel condition or its intended use of the intercepted signal.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Analog Coding for Low-Latency Speech Transmission Over Gaussian Channels",
+  "authors": [
+   "Mohammad Bokaei",
+   "Jesper Jensen",
+   "Simon Doclo",
+   "Jan Østergaard"
+  ],
+  "year": 2023,
+  "venue": "European Signal Processing Conference (EUSIPCO)",
+  "doi": "10.23919/eusipco58844.2023.10290056",
+  "arxiv": null,
+  "openalex": "W4388118365",
+  "cited_by": 5,
+  "abstract": "Robust low-latency data transmission is a challenging problem. The low-latency requirement means that limited source information is available for compression and short channel codes need to be used. In this paper, we study low-latency speech transmission over analog Gaussian wireless channels and propose a deep joint source-channel coding (JSCC) system. The proposed method includes a deep neural network (DNN) that consists of a source-channel encoder which transmits analog coded information over Gaussian wireless channels and a source-channel decoder which recovers data from the received noisy, compressed data. The total source-channel encoding and de-coding latency is configurable with respect to the input speech signal length. Simulation studies demonstrate that in low-latency and noisy channel regimes, our proposed JSCC system provides significant gains over state-of-the-art separate digital source-channel communication systems in terms of estimated speech quality and intelligibility. At higher latencies and better channel conditions, the separate coding schemes are better.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Source–Channel Coding: Fundamentals and Recent Progress in Practical Designs",
+  "authors": [
+   "Denız Gündüz",
+   "Michèle Wigger",
+   "Tze-Yang Tung",
+   "Ping Zhang",
+   "Yong Liang Xiao"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2024.3477331",
+  "arxiv": "2409.17557",
+  "openalex": "W4404178629",
+  "cited_by": 59,
+  "abstract": "Semantic-and task-oriented communication has emerged as a promising approach to reducing the latency and bandwidth requirements of the next-generation mobile networks by transmitting only the most relevant information needed to complete a specific task at the receiver. This is particularly advantageous for machine-oriented communication of high-data-rate content, such as images and videos, where the goal is rapid and accurate inference, rather than perfect signal reconstruction. While semantic-and task-oriented compression can be implemented in conventional communication systems, joint source–channel coding (JSCC) offers an alternative end-to-end approach by optimizing compression and channel coding together, or even directly mapping the source signal to the modulated waveform. Although all digital communication systems today rely on separation, thanks to its modularity, JSCC is known to achieve higher performance in finite blocklength scenarios and to avoidcliffand theleveling-off effectsin time-varying channel scenarios. This article provides an overview of the information theoretic foundations of JSCC, surveys practical JSCC designs over the decades, and discusses the reasons for their limited adoption in practical systems. We then examine the recent resurgence of JSCC, driven by the integration of deep learning techniques, particularly through DeepJSCC, highlighting its many surprising advantages in various scenarios. Finally, we discuss why it may be time to reconsider today’s strictly separate architectures and reintroduce JSCC to enable high-fidelity, low-latency communications in critical applications such as autonomous driving, drone surveillance, or wearable systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Adaptive Vector Quantization for Deep Joint Source-Channel Coding",
+  "authors": [
+   "Jiwan Seo",
+   "Jeongseok Ha",
+   "Joonhyuk Kang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2026.3720206",
+  "arxiv": null,
+  "openalex": "W7172494685",
+  "cited_by": 0,
+  "abstract": "Traditional deep learning-based joint source-channel coding (DeepJSCC) frameworks typically require separate models for different code rates and channel conditions, and remain incompatible with practical digital communication systems due to their analog transmission nature. To address these limitations, we propose a unified Rate-Adaptive Quantization-based DeepJSCC (RAQJSCC) framework that enables channel-aware rate adaptation within a single model while maintaining compatibility with conventional digital communication systems. The proposed framework achieves rate adaptivity through a rate-adaptive quantization (RAQ) mechanism that enables flexible codebook adaptation within a single model, supporting variable-rate operation without retraining. To improve robustness under vector quantization-based digital transmission, we design a cosine similarity-based codebook reordering (CSCR) mechanism that aligns quantized representations with modulation schemes and reduces the impact of index errors. Furthermore, we incorporate an adaptive modulation and coding (AMC) unit that jointly selects modulation orders and effective codebook sizes based on channel conditions, enabling dynamic link adaptation across diverse SNR regimes. Experimental results demonstrate that the proposed RAQJSCC framework outperforms existing DeepJSCC and separation-based methods in terms of reconstruction quality over a wide range of SNRs, while effectively mitigating the cliff effect. These results highlight the potential of RAQJSCC as a practical and scalable solution for next-generation wireless communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Distributed Deep Joint Source-Channel Coding over a Multiple Access Channel",
+  "authors": [
+   "Selim F. Yilmaz",
+   "Can Karamanlı",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc45041.2023.10279499",
+  "arxiv": "2211.09920",
+  "openalex": "W4387883742",
+  "cited_by": 40,
+  "abstract": "We consider distributed image transmission over a noisy multiple access channel (MAC) using deep joint source-channel coding (DeepJSCC). It is known that Shannon's separation theorem holds when transmitting independent sources over a MAC in the asymptotic infinite block length regime. However, we are interested in the practical finite block length regime, in which case separate source and channel coding is known to be suboptimal. We introduce a novel joint image compression and transmission scheme, where the devices send their compressed image representations in a non-orthogonal manner. While non-orthogonal multiple access (NOMA) is known to achieve the capacity region, to the best of our knowledge, non-orthogonal joint source-channel coding (JSCC) scheme for practical systems has not been studied before. Through extensive experiments, we show significant improvements in terms of the quality of the reconstructed images compared to orthogonal transmission employing current DeepJSCC approaches particularly for low bandwidth ratios. We publicly share source code to facilitate further research and reproducibility.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source Channel Coding via Attention for Wireless Image Transmission",
+  "authors": [
+   "Haoze Chang",
+   "Lin Ma",
+   "Xuedong Wang"
+  ],
+  "year": 2025,
+  "venue": "Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+  "doi": "10.1007/978-3-031-86196-3_27",
+  "arxiv": null,
+  "openalex": "W4408966860",
+  "cited_by": 2,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning Aided Joint Source-Channel Coding for Wireless Networks",
+  "authors": [
+   "Jintao Yan",
+   "Jianhao Huang",
+   "Chuan Zhen Huang"
+  ],
+  "year": 2021,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC)",
+  "doi": "10.1109/iccc52777.2021.9580301",
+  "arxiv": null,
+  "openalex": "W3211862227",
+  "cited_by": 6,
+  "abstract": "Wireless image transmission and estimation techniques have found a variety of applications in 5G Internet of Things (IoT) under the finite block length transmissions. However, the traditional digital transmission scheme is known to suffer from the “cliff effect”. By using deep machine learning techniques, we propose an autoencoder-based joint source-channel coding (JSCC) scheme for image transmission and estimation in multi-user wireless sensor networks. At the wireless edge, sensors independently observe a common image and encode the noisy observation to a complex vector. At the receiver side, the decoder receives all the transmitted signals to estimate the common image. We design an end-to-end autoencoder to complete this task, and combine mean squared error (MSE) and structural similarity index matrix (SSIM) as the loss function to explore both pixel-wise and structural features of the images. Our proposed scheme is evaluated in two types of noisy observation scenarios, multi-focus scenario and partial observation scenario, considering both additive white Gaussian noise (AWGN) channel and Rayleigh fading channel, and comparing the performance with the traditional transmission scheme. In both scenarios, our scheme achieves better peak-to-noise ratio (PSNR) performance, especially when the channel bandwidth is limited or the signal-to-noise ratio (SNR) is low.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Network Verification for Deep Joint Source-Channel Coding",
+  "authors": [
+   "Thanh Le",
+   "Hai Duong",
+   "Takeshi Matsumura",
+   "ThanhVu Nguyenz"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.11994",
+  "arxiv": "2610.11994",
+  "openalex": "W7221119585",
+  "cited_by": 0,
+  "abstract": "Deep joint source-channel coding (DeepJSCC) transmits data end-to-end over wireless channels using a neural encoder-decoder, but reconstruction quality can degrade sharply under adversarial perturbations and channel disturbances; no method formally bounds this degradation for DeepJSCC. We present the first bound-propagation framework for verifying DeepJSCC's decoder, bounding worst-case reconstruction error over a given wireless channel's noise region. Current deep neural network (DNN) verifiers do not support three DeepJSCC decoder components: parametric rectified linear activations (PReLU), transposed convolutions, and Rayleigh fading. We extend state-of-the-art techniques for optimization of linear relaxation in DNN verification for PReLU, replace the transposed convolution with its restricted upsample-then-convolution form, and formulate Rayleigh fading as a structural perturbation prepended directly into the decoder, thereby reducing the dimensionality of the verification problem. We also instantiate Lipschitz-regularized global robustness training, denoted GloRo, improving global robustness and enabling tight certification of DeepJSCC models for the first time. On DeepJSCC model for image transmission, this global robustness training procedure combined with structural encoding lowers the median certified bound by up to 41% and certifies about ten times more safe cases (192 against 19) than GloRo with interval encoding at a 10-degree error in channel estimation. Over-the-air validation with an orthogonal frequency-division multiplexing (OFDM) implementation on software-defined radio devices confirm the certificate holds on real hardware, with a worst observed error on radio link at 0.082 against a certified bound of 0.128.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extended Universal Joint Source-Channel Coding for Digital Semantic Communications: Improving Channel-Adaptability",
+  "authors": [
+   "Eunsoo Kim",
+   "Yoon Huh",
+   "Wan Choi"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2602.14018",
+  "arxiv": "2602.14018",
+  "openalex": "W7129468177",
+  "cited_by": 0,
+  "abstract": "Deep learning (DL)-based joint source--channel coding (JSCC), particularly vector quantization (VQ)-based JSCC, enables efficient semantic communication by mapping high-dimensional feature vectors into compact codeword indices for digital modulation. However, existing methods, including universal JSCC (uJSCC), rely on fixed, modulation-specific encoders, decoders, and codebooks, limiting adaptation to fine-grained channel variations. We propose an extended universal JSCC (euJSCC) framework that enables adaptive transmission across both modulation orders and fine-grained channel conditions within a single model using hypernetwork-based normalization and a dynamic codebook generation (DCG) network that refines modulation-specific base codebooks according to channel quality indicator (CQI) feedback. To support time-varying channels with periodic CQI feedback, euJSCC employs an inner--outer encoder--decoder architecture, where the outer modules capture long-term channel statistics and the inner modules refine feature vectors to align with block-wise codebooks. A two-phase training strategy first pretrains the outer modules and DCG network over additive white Gaussian noise (AWGN) channels to establish stable feature--codebook alignment and then fine-tunes the full model over time-varying channels. Experiments demonstrate that euJSCC consistently outperforms state-of-the-art channel-adaptive digital JSCC schemes in image transmission, while additional evaluations under practical channel and feedback conditions and on a downstream task further validate its effectiveness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantics-Guided Diffusion for Deep Joint Source-Channel Coding in Wireless Image Transmission",
+  "authors": [
+   "Maojun Zhang",
+   "Haotian Wu",
+   "Guangxu Zhu",
+   "Richeng Jin",
+   "Xiaoming Chen",
+   "Denız Gündüz"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3591456",
+  "arxiv": "2501.01138",
+  "openalex": "W4412722340",
+  "cited_by": 26,
+  "abstract": "Joint source-channel coding (JSCC) offers a promising avenue for enhancing transmission efficiency by jointly incorporating source and channel statistics into the system design. A key advancement in this area is the deep joint source and channel coding (DeepJSCC) technique that designs a direct mapping of input signals to channel symbols parameterized by a neural network, which can be trained for arbitrary channel models and semantic quality metrics. This paper advances the DeepJSCC framework toward a semantics-aligned, high-fidelity transmission approach, called semantics-guided diffusion DeepJSCC (SGD-JSCC). Existing schemes that integrate diffusion models (DMs) with JSCC face challenges in transforming random generation into accurate reconstruction and adapting to varying channel conditions. SGD-JSCC incorporates two key innovations: (1) utilizing some inherent information that contributes to the semantics of an image, such as text description or edge map, to guide the diffusion denoising process; and (2) enabling seamless adaptability to varying channel conditions with the help of a semantics-guided DM for channel denoising. The DM is guided by diverse semantic information and integrates seamlessly with DeepJSCC. In a slow fading channel, SGD-JSCC dynamically adapts to the instantaneous channel state information (CSI) directly estimated from the channel output, thereby eliminating the need for additional pilot transmissions for channel estimation. In a fast fading channel, we introduce a training-free denoising strategy, allowing SGD-JSCC to effectively adjust to fluctuations in channel gains. Numerical results demonstrate that, guided by semantic information and leveraging the powerful DM, our method outperforms existing DeepJSCC schemes, delivering satisfactory reconstruction performance even at extremely poor channel conditions. The proposed scheme highlights the potential of incorporating diffusion models in future communication systems. The code and pretrained checkpoints will be publicly available at https://github.com/MauroZMJ/SGDJSCC, allowing integration of this scheme with existing DeepJSCC models, without the need for retraining from scratch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Process-and-Forward: Deep Joint Source-Channel Coding Over Cooperative Relay Networks",
+  "authors": [
+   "Chenghong Bian",
+   "Yulin Shao",
+   "Haotian Wu",
+   "Emre Özfatura",
+   "Denız Gündüz"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3531579",
+  "arxiv": "2403.10613",
+  "openalex": "W4406611000",
+  "cited_by": 23,
+  "abstract": "We introduce deep joint source-channel coding (DeepJSCC) schemes for image transmission over cooperative relay channels. The relay either amplifies-and-forwards its received signal, called DeepJSCC-AF, or leverages neural networks to extract relevant features from its received signal, called DeepJSCC-PF (Process-and-Forward). We consider both half- and full-duplex relays, and propose a novel transformer-based model at the relay. For a half-duplex relay, it is shown that the proposed scheme learns to generate correlated signals at the relay and source to obtain beamforming gains. In the full-duplex case, we introduce a novel block-based transmission strategy, in which the source transmits in blocks, and the relay updates its knowledge about the input signal after each block and generates its own signal. To enhance practicality, a single transformer-based model is used at the relay at each block, together with an adaptive transmission module, which allows the model to seamlessly adapt to different channel qualities and the transmission powers. Simulation results demonstrate the superior performance of DeepJSCC-PF compared to the state-of-the-art BPG image compression algorithm operating at the maximum achievable rate of conventional decode-and-forward and compress-and-forward protocols, in both half- and full-duplex relay scenarios over AWGN and Rayleigh fading channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Contemporary Survey on Semantic Communications: Theory of Mind, Generative AI, and Deep Joint Source-Channel Coding",
+  "authors": [
+   "Loc X. Nguyen",
+   "Avi Deb Raha",
+   "Pyae Sone Aung",
+   "Dusit Tao Niyato",
+   "Zhu Han",
+   "Choong Seon Hong"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2025.3616973",
+  "arxiv": "2502.16468",
+  "openalex": "W4414788006",
+  "cited_by": 52,
+  "abstract": "Semantic communication is emerging as a key pillar of wireless communication technology, owing to its capabilities in reducing communication overhead, enhancing resilience to channel noise, and supporting a large number of users. However, it still encounters various challenging obstacles that need to be solved before real-world deployment. The major challenge is the lack of standardization across different directions, leading to variations in interpretations and objectives. In the survey, we provide detailed explanations of three leading directions in semantic communications, namelyTheory of Mind,Generative AI,Deep Joint Source-Channel Coding. These directions have been widely studied, developed, and verified by institutes worldwide, and their effectiveness has increased along with the advancement in technology. We provide explanations of the concepts and background for each direction. Firstly, we introduce the Theory of Mind-based semantic communication, in which communication agents gradually develop a shared, minimal-length language through interactions within a shared environment. Subsequently, we present works on Generative AI-based semantic communication, which leverage the creativity of generative models to produce high-quality data for goal-oriented tasks, as well as their powerful data encoding capabilities to represent transmitted information with minimal redundancy. For the final direction, we highlight the importance of deep learning (DL) models in jointly optimizing source and channel coding, demonstrating their ability to overcome the cliff effect associated with traditional separate coding approaches. Then, we present a comprehensive survey of existing works in each direction, thereby offering readers an overview of past achievements and potential avenues for further contribution. Moreover, for each direction, we identify and discuss the existing challenges that must be addressed before these approaches can be effectively deployed in real-world scenarios. These challenges encompass a range of technical, computational, and practical issues. For instance, scalability and adaptability remain critical barriers in real-world deployment, particularly in dynamic environments with diverse user demands. Additionally, the possibility of applying emerging technology, specifically quantum computing, in semantic communication is discussed in this survey.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Image Transmission With Visual Protection",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ning Wang",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2023.3306851",
+  "arxiv": "2111.03234",
+  "openalex": "W4386025568",
+  "cited_by": 38,
+  "abstract": "Joint source-channel coding (JSCC) has achieved great success due to the introduction of deep learning (DL). Compared to traditional separate source-channel coding (SSCC) schemes, the advantages of DL-based JSCC (DJSCC) include high spectrum efficiency, high reconstruction quality, and relief of “cliff effect”. However, it is difficult to couple existing secure communication mechanisms (e.g., encryption-decryption mechanism) with DJSCC in contrast with traditional SSCC schemes, which hinders the practical usage of this emerging technology. To this end, our paper proposes a novel method called DL-based joint protection and source-channel coding (DJPSCC) for images that can successfully protect the visual content of the plain image without significantly sacrificing image reconstruction performance. The idea of the design is to use a neural network to conduct visual protection, which converts the plain image to a visually protected one with the consideration of its interaction with DJSCC. During the training stage, the proposed DJPSCC method learns: 1) deep neural networks for image protection and image deprotection, and 2) an effective DJSCC network for image transmission in the protected domain. Compared to existing source protection methods applied with DJSCC transmission, the DJPSCC method achieves much better reconstruction performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Distributed Image Transmission using Deep Joint Source-Channel Coding",
+  "authors": [
+   "Sixian Wang",
+   "Ke Yang",
+   "Jincheng Dai",
+   "Kai Niu"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2201.10340",
+  "arxiv": "2201.10340",
+  "openalex": "W4285707593",
+  "cited_by": 0,
+  "abstract": "We study the problem of deep joint source-channel coding (D-JSCC) for correlated image sources, where each source is transmitted through a noisy independent channel to the common receiver. In particular, we consider a pair of images captured by two cameras with probably overlapping fields of view transmitted over wireless channels and reconstructed in the center node. The challenging problem involves designing a practical code to utilize both source and channel correlations to improve transmission efficiency without additional transmission overhead. To tackle this, we need to consider the common information across two stereo images as well as the differences between two transmission channels. In this case, we propose a deep neural networks solution that includes lightweight edge encoders and a powerful center decoder. Besides, in the decoder, we propose a novel channel state information aware cross attention module to highlight the overlapping fields and leverage the relevance between two noisy feature maps.Our results show the impressive improvement of reconstruction quality in both links by exploiting the noisy representations of the other link. Moreover, the proposed scheme shows competitive results compared to the separated schemes with capacity-achieving channel codes.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Deep Joint Source Channel Coding Scheme with Adaptive HARQ for Image Transmission",
+  "authors": [
+   "Qingping Yu",
+   "Jiao Bai",
+   "Longye Wang",
+   "Xiaoli Zeng"
+  ],
+  "year": 2025,
+  "venue": "IEICE Transactions on Fundamentals of Electronics Communications and Computer Sciences",
+  "doi": "10.1587/transfun.2025eal2052",
+  "arxiv": null,
+  "openalex": "W4414903009",
+  "cited_by": 0,
+  "abstract": "To address the insufficient image restoration quality of Deep Joint Source-Channel Coding (DJSCC) systems under low signal-to-noise ratio (SNR) conditions, this paper proposes an enhanced system called DJSCC-H, which integrates a Hybrid Automatic Repeat Request (HARQ) mechanism. By designing a HARQ neural network module (HARQnn) that leverages the Log-Likelihood Ratio (LLR) of transmitted data, channel SNR, and a custom retransmission penalty factor, the paper enables the module to adaptively generate retransmission probabilities and optimize the weighted merging strategy for multi-round transmission data. As a result, this module effectively improves transmission quality under low SNR conditions. Experimental results show that in AWGN channels, when the SNR is 0-5 dB, the DJSCC-H system achieves maximum performance improvements of 18.62% in Peak Signal-to-Noise Ratio (PSNR) and 7.79% in Structural Similarity Index (SSIM) for image reconstruction compared to the baseline DJSCC system, verifying the effectiveness of deep integration of the retransmission mechanism with DJSCC. This paper provides an enhanced scheme for image transmission under low-reliability channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Robust Deep Joint Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Eunhye Hong",
+   "Taewoo Park",
+   "Yongjune Kim"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2604.04413",
+  "arxiv": "2604.04413",
+  "openalex": "W7151638454",
+  "cited_by": 0,
+  "abstract": "Semantic communications (SCs) aim to transmit only the essential information required to perform given tasks, thereby improving communication efficiency. Deep learning-based joint source-channel coding (deep JSCC) has emerged as a promising approach for SC systems; however, its performance often degrades when the deployment channels differ from the training channel conditions, making robustness a critical requirement. This paper presents a structured overview of recent methodologies for enhancing the robustness of deep JSCC. Specifically, existing approaches are categorized into two classes: robust training approaches and adaptive approaches, with the latter further divided into adaptive semantic feature selection, physical-layer adaptation, and semantic feature adaptation. Finally, we discuss promising directions, including multi-task generalization and explainability in robust SC systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Scalable Deep Joint Source-Channel Coding for Multi-User Wireless Image Transmission With Diverse Bandwidth Conditions",
+  "authors": [
+   "Feng Wang",
+   "Xuechen Chen",
+   "Xiaoheng Deng",
+   "Siyu Lin"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3630680",
+  "arxiv": null,
+  "openalex": "W7105832298",
+  "cited_by": 4,
+  "abstract": "In recent years, Deep Joint Source-Channel Coding (DeepJSCC) has demonstrated superior performance over traditional digital schemes in wireless image transmission tasks. However, existing DeepJSCC approaches often overlook three critical challenges in broadcast communication scenarios: bandwidth heterogeneity among users, dynamic bandwidth variations experienced by individual users, and users diverse requirements. To address these issues, we propose a scalable DeepJSCC framework tailored for broadcast communications. This framework enables users to adaptively intercept an appropriate amount of encoded data according to their bandwidth conditions or specific requirements, thereby reconstructing images with corresponding quality. Specifically, the transmitter generates a multi-layered codestream, consisting of multiple base layers for image reconstruction at different resolutions, as well as enhancement layers built upon each base layer to improve visual quality. At the receiver, users can selectively intercept the base layer stream corresponding to their desired resolution, and further receive parts of the associated enhancement layer stream. This design allows for flexible and quality-adaptive image reconstruction based on the amount of data received. Extensive experiments demonstrate that the proposed scheme consistently achieves high-quality reconstruction across various resolutions and under diverse interception conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Source-Channel Coding for Sentence Semantic Transmission With HARQ",
+  "authors": [
+   "Peiwen Jiang",
+   "Chao-Kai Wen",
+   "Shi Jin",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2022.3180997",
+  "arxiv": "2106.03009",
+  "openalex": "W3168068147",
+  "cited_by": 202,
+  "abstract": "Recently, semantic communication has been brought to the forefront because deep learning (DL)-based methods, such as Transformer, have achieved great success in semantic extraction. Although semantic communication has been successfully applied in sentence transmission to reduce semantic errors, the existing architecture is usually fixed in terms of codeword length and inefficient and inflexible for varying sentence lengths. In this study, we exploit hybrid automatic repeat request (HARQ) to reduce the semantic transmission error further. We combine semantic coding (SC) with Reed-Solomon (RS) channel coding and HARQ (called SC-RS-HARQ). SC-RS-HARQ exploits the superiority of SC and the reliability of conventional methods successfully. Although SC-RS-HARQ can be easily applied in existing HARQ systems, we also develop an end-to-end architecture called SCHARQ to pursue enhanced performance. Numerical results demonstrate that SCHARQ significantly reduces the required number of bits for semantic sentence transmission and the sentence error rate. We also attempt to replace error detection from cyclic redundancy check to a similarity detection network called Sim32 to allow the receiver to reserve wrong sentences with similar semantic information and conserve transmission resources.",
+  "source": "openalex"
+ },
+ {
+  "title": "MambaJSCC: Adaptive Deep Joint Source–Channel Coding With Generalized State Space Model",
+  "authors": [
+   "Tong Wu",
+   "Zhiyong Chen",
+   "Meixia Tao",
+   "Yaping Sun",
+   "Xiaodong Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3643835",
+  "arxiv": "2409.16592",
+  "openalex": "W7116699076",
+  "cited_by": 9,
+  "abstract": "Lightweight and efficient neural network models for deep joint source-channel coding (JSCC) are crucial for semantic communications. In this paper, we propose a novel JSCC architecture, named MambaJSCC, that achieves great performance with low computational and parameter overhead. MambaJSCC utilizes the visual state space model with channel adaptation (VSSM-CA) blocks as its backbone for transmitting images over wireless channels, where the VSSM-CA primarily consists of the generalized state space models (GSSM) and the zero-parameter, zero-computational channel adaptation method (CSI-ReST). We design the GSSM module, leveraging reversible matrix transformations to express generalized scan expanding operations, and theoretically prove that two GSSM modules can effectively capture global information. We discover that GSSM inherently possesses the ability to adapt to channels, a form of endogenous intelligence. Based on this, we design the CSI-ReST method, which injects channel state information (CSI) into the initial state of GSSM to utilize its native response, and into the residual state to mitigate CSI forgetting, enabling effective channel adaptation without introducing additional computational and parameter overhead. Experimental results on different devices, including IoT device JETSON AGX ORIN, show that MambaJSCC not only outperforms existing JSCC methods (e.g., SwinJSCC) across various scenarios but also significantly reduces parameter size, computational overhead, and inference delay. We have released our code and pre-trained models at https://github.com/Wireless3C-SJTU/MambaJSCC, allowing full reproduction of our results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Space-Time Design for Deep Joint Source Channel Coding of Images over MIMO Channels",
+  "authors": [
+   "Chenghong Bian",
+   "Yulin Shao",
+   "Haotian Wu",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)",
+  "doi": "10.1109/spawc53906.2023.10304536",
+  "arxiv": "2210.16985",
+  "openalex": "W4388426858",
+  "cited_by": 35,
+  "abstract": "We propose novel deep joint source-channel coding (DeepJSCC) algorithms for wireless image transmission over multi-input multi-output (MIMO) Rayleigh fading channels, when channel state information (CSI) is available only at the receiver. We consider two different schemes; one exploiting the spatial diversity and the other exploiting the spatial multiplexing gain of the MIMO channel, respectively. For the former, we utilize an orthogonal space-time block code (OSTBC) to achieve full diversity and increase the robustness against channel variations. In the latter, we directly map the input to the antennas, where the additional degree of freedom can be used to send more information about the source signal. Simulation results show that the diversity scheme outperforms the multiplexing scheme for lower signal-to-noise ratio (SNR) values and a smaller number of receive antennas at the AP. When the number of transmit antennas is greater than two, however, the full-diversity scheme becomes less beneficial. We also show that both the diversity and multiplexing schemes can achieve comparable performance with the state-of-the-art BPG algorithm delivered at the instantaneous capacity of the MIMO channel, which serves as an upper bound on the performance of separation-based practical systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Scalable and perception-aware deep joint source–channel coding for underwater acoustic image transmission",
+  "authors": [
+   "Dumisani Z. Q. Tembo",
+   "Victor Adeyi Odeh",
+   "Rerimoi Samuel Kipkogei",
+   "Mary Abia Ediete"
+  ],
+  "year": 2026,
+  "venue": "International Conference on Digital Image Processing",
+  "doi": "10.1117/12.3119642",
+  "arxiv": null,
+  "openalex": "W7203839312",
+  "cited_by": 0,
+  "abstract": "Underwater acoustic communication is fundamentally constrained by limited bandwidth, severe multipath propagation, Doppler distortion, and strong time variability, which severely limit reliable image transmission. Conventional separationbased digital transmission schemes are sensitive to channel mismatch and often exhibit abrupt quality degradation. Existing deep joint source–channel coding (Deep JSCC) approaches, although more robust, are typically fixed-rate and offer limited perceptual stability under rapidly varying underwater conditions. This paper proposes a scalable, perception-aware Deep JSCC framework for underwater acoustic image transmission, in which a layered encoding architecture enables progressive reconstruction, allowing image quality to degrade gracefully at low signal-to-noise ratios (SNRs) and improve incrementally as channel conditions become more favorable, without relying on feedback mechanisms. Perceptual robustness is further enhanced through a perception-aware training objective that promotes structural and visual coherence beyond pixel-level fidelity. Extensive experiments under realistic underwater acoustic channel models demonstrate that the proposed method consistently outperforms conventional digital transmission and single-layer Deep JSCC baselines across a wide range of SNRs. At 0 dB, the proposed framework achieves a PSNR gain of approximately 1.7 dB over single-layer Deep JSCC and more than 7 dB over digital transmission, while improving SSIM by up to 0.09 and reducing LPIPS by approximately 28%. At 10 dB, it maintains a performance advantage of 1.7 dB in PSNR and achieves the lowest perceptual distortion among all methods. These results confirm improved structural preservation and perceptual stability, particularly in low-SNR regimes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Flexible Deep Joint Source-Channel Coding: A Vibrotactile Example",
+  "authors": [
+   "Shuijie Li",
+   "Kemi Chen",
+   "Runjie Wang",
+   "Tiesong Zhao",
+   "Xiaoming Tao"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.15070",
+  "arxiv": "2608.15070",
+  "openalex": "W7203724245",
+  "cited_by": 0,
+  "abstract": "The increasing demand for real-time tactile communication in multimedia systems has exposed the limitations of existing Joint Source-Channel Coding (JSCC) techniques. While current JSCC models facilitate end-to-end optimization, they typically operate at fixed coding rates and require separate model instances for different rate settings. This results in significant storage overhead and limited adaptability to dynamic bandwidth conditions. To address these challenges, we propose the Flexible Deep Joint Source-Channel Coding (FD-JSCC) framework for vibrotactile signals, which supports flexible-rate transmission without the need for model switching. The FD-JSCC integrates a flexible-rate encoder-decoder enhanced with Hierarchical Gain Adaptation Module (HGAM) and Rate-Switchable Residual Module (RSRM), enabling bitrate-aware compression by selectively preserving salient vibrotactile features. Additionally, we introduce a Channel Feature Processing Module (CFPM), which leverages real-time SNR information to enhance robustness against channel noise and signal degradation. Trained on the IEEE 1918.1.1 vibrotactile dataset, FD-JSCC achieves reconstruction performance comparable to fixed-rate baselines (e.g., DeepSC-S), while reducing storage requirements by 61.1\\% when supporting four rates. These results underscore its potential for scalable, low-latency tactile communication in next-generation networks.",
+  "source": "openalex"
+ }
+]

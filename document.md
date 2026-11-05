@@ -25,6 +25,9 @@
 | `tests/test_site.py` | Playwright（Chromium）による表示テスト |
 | `.github/workflows/pages.yml` | 検証 → 生成 → テスト → GitHub Pages へのデプロイ |
 | `requirements_tools.txt` | ツール・テスト用の Python ライブラリ |
+| `programs/audit_coverage/collect.py` | 収録範囲の監査の文献収集（既存ノードの台帳，横断検索，スノーボーリング，優先確認論文・本文の参考文献の照合） |
+| `programs/audit_coverage/build_candidates.py` | 収集結果の重複排除・関連性の一次判定・優先度付けと，`audit/decisions.json` の人手の判断の反映 |
+| `audit/` | 監査の成果物（`coverage_report.md`，`candidates.json`／`.csv`，`decisions.json`，`search_log.json`，`search_tables.md`，`dedup_log.json`，`priority_check.json`，`existing_inventory.csv`，`raw/` は API の応答を正規化したもの）．本番データ（`data/nodes/`）には反映していない |
 | `.orders/`，`.reports/` | 作業指示と作業報告 |
 
 ## 処理の流れと依存関係
@@ -106,6 +109,17 @@ python3 -m http.server 8000 -d site                        # http://localhost:80
 ```
 
 書誌情報を追加する場合は `python3 .ai/ai-survey-kit/scripts/surveykit.py add --title "..."` を用いる．
+
+監査の実行方法は以下の通りである（API の待機を含むため数十分を要する）．
+
+```bash
+.venv_tools/bin/python programs/audit_coverage/collect.py inventory
+.venv_tools/bin/python programs/audit_coverage/collect.py priority
+.venv_tools/bin/python programs/audit_coverage/collect.py search openalex_relevance,openalex_cited,arxiv_date
+.venv_tools/bin/python programs/audit_coverage/collect.py snowball
+.venv_tools/bin/python programs/audit_coverage/collect.py textrefs
+cd programs/audit_coverage && ../../.venv_tools/bin/python build_candidates.py
+```
 
 ## 生成物と文書の保存場所
 

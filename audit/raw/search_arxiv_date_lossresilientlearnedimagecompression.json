@@ -1,0 +1,171 @@
+[
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ReLViC: Loss-Resilient Learned Video Coding with Dispersed Packetization and Controllable Packet Dependencies",
+  "authors": [
+   "Xuyang Chen",
+   "Daquan Feng",
+   "Xianfu Chen",
+   "Xiang-Gen Xia"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.30202",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Packet loss can severely impair learned video coding because missing latent tokens compromise both spatial reconstruction and temporal prediction. We present ReLViC, a loss-resilient learned video coding framework that jointly addresses latent coding and packet-loss recovery. ReLViC disperses spatially adjacent latent tokens across packets and employs a dual-purpose Transformer to estimate entropy-model parameters during coding and reconstruct missing latent tokens at the receiver. It controls packet dependencies through a periodic-reset packet-context topology parameterized by the segment length, thereby tuning the trade-off between compression efficiency and error-propagation range without retraining. A three-stage progressive training procedure establishes single-frame coding, learns temporal context for entropy modeling, and then optimizes the recovery of masked latent tokens under simulated packet loss. Experiments using burst-loss traces evaluate ReLViC against H.265 protected by Reed--Solomon forward error correction (FEC) and GRACE, a loss-resilient learned video codec. ReLViC delivers more stable reconstruction and outperforms both baselines under severe packet loss.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Guo Lu",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.19590",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+  "authors": [
+   "Xueqin Niu",
+   "Mufan Liu",
+   "Yifan Wang",
+   "Le Yang",
+   "Jun Sun",
+   "Yiling Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.11845",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Every Packet Counts: Dispersing Information for Loss-Resilient Learned Image Compression",
+  "authors": [
+   "Yuhang Wei",
+   "Chuqin Zhou",
+   "Yibo Shi",
+   "Jing Wang",
+   "Guo Lu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": "10.1145/3767308.3836205",
+  "arxiv": "2608.11096",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned image compression (LIC) has achieved impressive rate-distortion performance. However, existing methods remain highly vulnerable to packet loss, a common challenge in satellite and emergency communications. This vulnerability stems from non-uniform information distribution at the packetization stage and sequential decoding dependencies at the entropy coding stage. We propose an end-to-end loss-resilient image compression scheme that addresses both. Before packetization, we introduce an Inter-Channel Redistribution (ICR) mechanism to redistribute channel energy, preventing critical information concentrating in a small subset of channels. Then, an Interleaved Channel Grouping (ICG) strategy partitions latent channels in a strided manner to disperse information across packets, with each packet kept within constrained sizes. To limit cascading errors from lost packets, we adopt a two-layer dual-branch autoregressive structure to shorten the dependency chain. Extensive experiments demonstrate that our method consistently outperforms existing approaches in both reconstruction quality and stability. At 20% packet loss, it achieves an average PSNR gain of 1.84 dB over LossResilientLIC while reducing PSNR variance by an order of magnitude. Notably, trained under uniform random loss only, our model generalizes to bursty loss modeled by the Gilbert-Elliott channel, outperforming methods explicitly trained for such conditions.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+  "authors": [
+   "Hongwei Sha",
+   "Muchen Dong",
+   "Quanyou Luo",
+   "Ming Lu",
+   "Hao Chen",
+   "Zhan Ma"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2501.11263",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments. Code is available at https://github.com/NJUVISION/LossResilientLIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Robust and Transferable Backdoor Attacks Against Deep Image Compression With Selective Frequency Prior",
+  "authors": [
+   "Yi Yu",
+   "Yufei Wang",
+   "Wenhan Yang",
+   "Lanqing Guo",
+   "Shijian Lu",
+   "Ling-Yu Duan",
+   "Yap-Peng Tan",
+   "Alex C. Kot"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2412.01646",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent advancements in deep learning-based compression techniques have surpassed traditional methods. However, deep neural networks remain vulnerable to backdoor attacks, where pre-defined triggers induce malicious behaviors. This paper introduces a novel frequency-based trigger injection model for launching backdoor attacks with multiple triggers on learned image compression models. Inspired by the widely used DCT in compression codecs, triggers are embedded in the DCT domain. We design attack objectives tailored to diverse scenarios, including: 1) degrading compression quality in terms of bit-rate and reconstruction accuracy; 2) targeting task-driven measures like face recognition and semantic segmentation. To improve training efficiency, we propose a dynamic loss function that balances loss terms with fewer hyper-parameters, optimizing attack objectives effectively. For advanced scenarios, we evaluate the attack's resistance to defensive preprocessing and propose a two-stage training schedule with robust frequency selection to enhance resilience. To improve cross-model and cross-domain transferability for downstream tasks, we adjust the classification boundary in the attack loss during training. Experiments show that our trigger injection models, combined with minor modifications to encoder parameters, successfully inject multiple backdoors and their triggers into a single compression model, demonstrating strong performance and versatility. (*Due to the notification of arXiv \"The Abstract field cannot be longer than 1,920 characters\", the appeared Abstract is shortened. For the full Abstract, please download the Article.)",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compressed learning based onboard semantic compression for remote sensing platforms",
+  "authors": [
+   "Protim Bhattacharjee",
+   "PEter Jung"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": "10.1117/12.3031472",
+  "arxiv": "2409.01988",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Earth observation (EO) plays a crucial role in creating and sustaining a resilient and prosperous society that has far reaching consequences for all life and the planet itself. Remote sensing platforms like satellites, airborne platforms, and more recently dones and UAVs are used for EO. They collect large amounts of data and this needs to be downlinked to Earth for further processing and analysis. Bottleneck for such high throughput acquisition is the downlink bandwidth. Data-centric solutions to image compression is required to address this deluge. In this work, semantic compression is studied through a compressed learning framework that utilizes only fast and sparse matrix-vector multiplication to encode the data. Camera noise and a communication channel are the considered sources of distortion. The complete semantic communication pipeline then consists of a learned low-complexity compression matrix that acts on the noisy camera output to generate onboard a vector of observations that is downlinked through a communication channel, processed through an unrolled network and then fed to a deep learning model performing the necessary downstream tasks; image classification is studied. Distortions are compensated by unrolling layers of NA-ALISTA with a wavelet sparsity prior. Decoding is thus a plug-n-play approach designed according to the camera/environment information and downstream task. The deep learning model for the downstream task is jointly fine-tuned with the compression matrix and the unrolled network through the loss function in an end-to-end fashion. It is shown that addition of a recovery loss along with the task dependent losses improves the downstream performance in noisy settings at low compression ratios.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Excitation Dropout: Encouraging Plasticity in Deep Neural Networks",
+  "authors": [
+   "Andrea Zunino",
+   "Sarah Adel Bargal",
+   "Pietro Morerio",
+   "Jianming Zhang",
+   "Stan Sclaroff",
+   "Vittorio Murino"
+  ],
+  "year": 2018,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "1805.09092",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We propose a guided dropout regularizer for deep networks based on the evidence of a network prediction defined as the firing of neurons in specific paths. In this work, we utilize the evidence at each neuron to determine the probability of dropout, rather than dropping out neurons uniformly at random as in standard dropout. In essence, we dropout with higher probability those neurons which contribute more to decision making at training time. This approach penalizes high saliency neurons that are most relevant for model prediction, i.e. those having stronger evidence. By dropping such high-saliency neurons, the network is forced to learn alternative paths in order to maintain loss minimization, resulting in a plasticity-like behavior, a characteristic of human brains too. We demonstrate better generalization ability, an increased utilization of network neurons, and a higher resilience to network compression using several metrics over four image/video recognition benchmarks.",
+  "source": "arxiv"
+ }
+]

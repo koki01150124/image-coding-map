@@ -1,0 +1,858 @@
+[
+ {
+  "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+  "authors": [
+   "Hongwei Sha",
+   "Muchen Dong",
+   "Quanyou Luo",
+   "Ming Lu",
+   "Hao Chen",
+   "Zhan Ma"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v39i12.33363",
+  "arxiv": "2501.11263",
+  "openalex": "W4409364733",
+  "cited_by": 4,
+  "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Every Packet Counts: Dispersing Information for Loss-Resilient Learned Image Compression",
+  "authors": [
+   "Yuhang Wei",
+   "Chuqin Zhou",
+   "Yibo Shi",
+   "Jing Wang",
+   "Guo Lu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.11096",
+  "arxiv": "2608.11096",
+  "openalex": "W7202295875",
+  "cited_by": 0,
+  "abstract": "Learned image compression (LIC) has achieved impressive rate-distortion performance. However, existing methods remain highly vulnerable to packet loss, a common challenge in satellite and emergency communications. This vulnerability stems from non-uniform information distribution at the packetization stage and sequential decoding dependencies at the entropy coding stage. We propose an end-to-end loss-resilient image compression scheme that addresses both. Before packetization, we introduce an Inter-Channel Redistribution (ICR) mechanism to redistribute channel energy, preventing critical information concentrating in a small subset of channels. Then, an Interleaved Channel Grouping (ICG) strategy partitions latent channels in a strided manner to disperse information across packets, with each packet kept within constrained sizes. To limit cascading errors from lost packets, we adopt a two-layer dual-branch autoregressive structure to shorten the dependency chain. Extensive experiments demonstrate that our method consistently outperforms existing approaches in both reconstruction quality and stability. At 20% packet loss, it achieves an average PSNR gain of 1.84 dB over LossResilientLIC while reducing PSNR variance by an order of magnitude. Notably, trained under uniform random loss only, our model generalizes to bursty loss modeled by the Gilbert-Elliott channel, outperforming methods explicitly trained for such conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Lu Guo",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3726512",
+  "arxiv": "2608.19590",
+  "openalex": "W7203906458",
+  "cited_by": 0,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error-Resilient Semantic Communication for Speech Transmission Over Packet-Loss Networks",
+  "authors": [
+   "Zhuohang Han",
+   "Jincheng Dai",
+   "Shengshi Yao",
+   "Junyi Wang",
+   "Yanlong Li",
+   "Kai Niu",
+   "Wei Xu",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3673476",
+  "arxiv": "2512.08203",
+  "openalex": "W7135010278",
+  "cited_by": 2,
+  "abstract": "Real-time speech communication over wireless networks remains challenging, as conventional channel protection mechanisms cannot effectively counter packet loss under stringent bandwidth and latency constraints. Semantic communication has emerged as a promising paradigm for enhancing the robustness of speech transmission by means of joint source channel coding (JSCC). However, its cross-layer design hinders practical deployment due to the incompatibility with existing digital communication systems. To address this, we perform JSCC over the network layer to combat packet loss and support real deployment. Inspired by the generative latent modeling, we propose Glaris, a generative latent-prior-based resilient speech semantic communication framework that performs resilient transform coding in the generative latent space. Generative latent priors enable high-quality packet loss concealment (PLC) at the receiver side, well-balancing semantic consistency and reconstruction fidelity. Additionally, an integrated error resilience mechanism is designed to mitigate the error propagation and improve the effectiveness of PLC. Compared with traditional packet-level forward error correction (FEC) strategies, our new method achieves enhanced robustness over dynamic wireless networks while reducing redundancy overhead significantly. Experimental results on the LibriSpeech dataset demonstrate that Glaris consistently outperforms existing error-resilient codecs, achieving JSCC-level robustness while maintaining seamless compatibility with existing systems, and it also strikes a favorable balance between transmission efficiency and error resilience.",
+  "source": "openalex"
+ },
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": "W7222852238",
+  "cited_by": 0,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Distortion Modeling for Error-Resilient Screen Content Video Coding",
+  "authors": [
+   "Tong Tang",
+   "Zhiyang Yin",
+   "Jie Li",
+   "Honggang Wang",
+   "Dapeng Wu",
+   "Ruyan Wang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Multimedia",
+  "doi": "10.1109/tmm.2023.3323895",
+  "arxiv": null,
+  "openalex": "W4387623957",
+  "cited_by": 10,
+  "abstract": "To improve the compression performance of screen content coding, extension coding standards (HEVC-SCC, VVC-SCC) have been developed. However, considering the compression ratio alone may lead to packet losses in bitstreams which may cause plenty of images decoded incorrectly, degrading the video quality at the receiver side. Thus, it urgently needs to study source-channel jointly coding scheme of screen content video. The most significant challenge lies in the complex spatial-temporal characteristics of screen content video, which complicate the creation of an accurate end-to-end distortion model. In this article, we delve into the traits of screen content video and construct an end-to-end distortion model. Building upon this, we introduce an error resilient coding scheme specifically for screen content video. More specifically, we first consider the characteristic of non-stationary temporal domain variation and classify the screen content images into three types of frames using a fast block-searching method. We then propose an adaptive error concealment method, taking into account the spatial-temporal prediction characteristics. Following this, we derive a pixel-level end-to-end distortion model and incorporate it into the rate distortion optimization process. Our experimental results reveal that, compared to state-of-the-art methods, our proposed method significantly enhances both objective and subjective quality across a variety of channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Communication-Oriented Model Fine-Tuning for Packet-Loss Resilient Distributed Inference Under Highly Lossy IoT Networks",
+  "authors": [
+   "Sohei Itahara",
+   "Takayuki Nishio",
+   "Yusuke Koda",
+   "Koji Yamamoto"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2022.3149336",
+  "arxiv": "2112.09407",
+  "openalex": "W4210839873",
+  "cited_by": 18,
+  "abstract": "The distributed inference (DI) framework has gained traction as a technique for real-time applications empowered by cutting-edge deep machine learning (ML) on resource-constrained Internet of things (IoT) devices. In DI, computational tasks are offloaded from the IoT device to the edge server via lossy IoT networks. However, generally, there is a communication system-level trade-off between communication latency and reliability; thus, to provide accurate DI results, a reliable and high-latency communication system is required to be adapted, which results in non-negligible end-to-end latency of the DI. This motivated us to improve the trade-off between the communication latency and accuracy by efforts on ML techniques. Specifically, we have proposed a communication-oriented model tuning (COMtune), which aims to achieve highly accurate DI with low-latency but unreliable communication links. In COMtune, the key idea is to fine-tune the ML model by emulating the effect of unreliable communication links through the application of the dropout technique. This enables the DI system to obtain robustness against unreliable communication links. Our ML experiments revealed that COMtune enables accurate predictions with low latency and under lossy networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Doubly Error Resilient Coder of Image Sequences",
+  "authors": [
+   "William A. Pearlman",
+   "Yang Hu"
+  ],
+  "year": 2016,
+  "venue": "Electronic Imaging",
+  "doi": "10.2352/issn.2470-1173.2016.2.vipc-233",
+  "arxiv": null,
+  "openalex": "W2752817943",
+  "cited_by": 1,
+  "abstract": "Many scenarios require single frame random access and error resilience in coding, transmission, and decoding of image sequences. We propose in this paper a SPIHT coder that encodes a sequence of images one frame at a time and uses two methods together to achieve strong error resilience. The first method groups wavelet coefficients into a number of tree blocks and the second one encodes these tree blocks independently using SPIHT with progressive significance maps. Because a substantial part of a progressive significance map contains a fixed-length code stream called the complementary significance map (comp-sigmap), transmission bit errors do not propagate within the comp-sig-map. Furthermore, since the block trees are encoded independently, no error in a given bitstream propagates to another bitstream. Simulations show that the two methods together show stronger error resilience than either one separately. Furthermore, because the groups are formed by interleaved spatial orientation trees, faulty reconstruction from bit errors affecting a given treeblock can be concealed by estimating the true wavelet coefficients from neighboring coefficients in adjacent error-free spatial orientation trees.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reparo: Loss-Resilient Generative Codec for Video Conferencing",
+  "authors": [
+   "Tianhong Li",
+   "Vibhaalakshmi Sivaraman",
+   "Karimi, Pantea",
+   "Lijie Fan",
+   "Mohammad Alizadeh",
+   "Dina Katabi"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.14135",
+  "arxiv": "2305.14135",
+  "openalex": "W4378508736",
+  "cited_by": 11,
+  "abstract": "Packet loss during video conferencing often results in poor quality and video freezing. Retransmitting lost packets is often impractical due to the need for real-time playback, and using Forward Error Correction (FEC) for packet recovery is challenging due to the unpredictable and bursty nature of Internet losses. Excessive redundancy leads to inefficiency and wasted bandwidth, while insufficient redundancy results in undecodable frames, causing video freezes and quality degradation in subsequent frames. We introduce Reparo -- a loss-resilient video conferencing framework based on generative deep learning models to address these issues. Our approach generates missing information when a frame or part of a frame is lost. This generation is conditioned on the data received thus far, considering the model's understanding of how people and objects appear and interact within the visual realm. Experimental results, using publicly available video conferencing datasets, demonstrate that Reparo outperforms state-of-the-art FEC-based video conferencing solutions in terms of both video quality (measured through PSNR, SSIM, and LPIPS) and the occurrence of video freezes.",
+  "source": "openalex"
+ },
+ {
+  "title": "CS-SPT: Secure and Packet Loss-Resilient Audio Transmission Based on Compressive Sensing",
+  "authors": [
+   "Zhi Zhang",
+   "Jun Zhang",
+   "Jiaxin Zhou",
+   "Jian Wang",
+   "Zhenghui Gu",
+   "Zhu Liang Yu",
+   "Yuanqing Li"
+  ],
+  "year": 2023,
+  "venue": "Security and Communication Networks",
+  "doi": "10.1155/2023/3601424",
+  "arxiv": null,
+  "openalex": "W4313590925",
+  "cited_by": 2,
+  "abstract": "Packet loss-resilient and security are two major challenges faced by real-time audio transmission over IP networks. Due to the capability of recovering the signal from a small set of samplings and the randomness in the acquisition process, compressive sensing (CS) has a vast prospect in dealing with these problems. In this paper, we propose a secure and packet loss-resistant real-time audio transmission framework (CS-SPT) based on the principle of CS. Inspired by the interleaving technique, an ultralow complexity scrambling matrix was adopted in the proposed CS-SPT to improve its packet loss-resilient capability by increasing the information redundancy. Moreover, the energy of ciphertext is homogenized using a diffusion operation. Experimental results show that compared with existing methods, the proposed CS-SPT not only improves the packet loss-resilient ability significantly but also can resist several major attacks, such as COAs and KPAs.",
+  "source": "openalex"
+ },
+ {
+  "title": "GRACE: Loss-Resilient Real-Time Video through Neural Codecs",
+  "authors": [
+   "Yihua Cheng",
+   "Ziyi Zhang",
+   "Hanchen Li",
+   "Anton Arapin",
+   "Zhang, Yue",
+   "Qizheng Zhang",
+   "Liu, Yuhan",
+   "Zhang, Xu",
+   "Yan, Francis Y.",
+   "Mazumdar, Amrita",
+   "Nick Feamster",
+   "Junchen Jiang"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.12333",
+  "arxiv": "2305.12333",
+  "openalex": "W4377864171",
+  "cited_by": 8,
+  "abstract": "In real-time video communication, retransmitting lost packets over high-latency networks is not viable due to strict latency requirements. To counter packet losses without retransmission, two primary strategies are employed -- encoder-based forward error correction (FEC) and decoder-based error concealment. The former encodes data with redundancy before transmission, yet determining the optimal redundancy level in advance proves challenging. The latter reconstructs video from partially received frames, but dividing a frame into independently coded partitions inherently compromises compression efficiency, and the lost information cannot be effectively recovered by the decoder without adapting the encoder. We present a loss-resilient real-time video system called GRACE, which preserves the user's quality of experience (QoE) across a wide range of packet losses through a new neural video codec. Central to GRACE's enhanced loss resilience is its joint training of the neural encoder and decoder under a spectrum of simulated packet losses. In lossless scenarios, GRACE achieves video quality on par with conventional codecs (e.g., H.265). As the loss rate escalates, GRACE exhibits a more graceful, less pronounced decline in quality, consistently outperforming other loss-resilient schemes. Through extensive evaluation on various videos and real network traces, we demonstrate that GRACE reduces undecodable frames by 95% and stall duration by 90% compared with FEC, while markedly boosting video quality over error concealment methods. In a user study with 240 crowdsourced participants and 960 subjective ratings, GRACE registers a 38% higher mean opinion score (MOS) than other baselines.",
+  "source": "openalex"
+ },
+ {
+  "title": "ERROR RESILIENCE TRANSMISSION OF COLOR MOSAIC IMAGES USING HYBRID MULTIPLE DESCRIPTION CODING AND YAMANAKA PATTERN CFA",
+  "authors": [
+   "Kitty Smailin D.H",
+   "Jacob Vetha Raj Y"
+  ],
+  "year": 2026,
+  "venue": "Nigerian Journal of Technology",
+  "doi": "10.67358/njt.2026.5731",
+  "arxiv": null,
+  "openalex": "W7202242439",
+  "cited_by": 0,
+  "abstract": "Video streaming often faces challenges due to data loss and poor network reliability. Packet loss during transmission leads to degraded video quality, making error resilience a critical requirement. Traditional error resilience methods have limitations, including high computational overhead and inefficiency in recovering data under adverse conditions. To address these issues, this research proposes an Error Resilience Video Streaming Technique Based on Hybrid Multiple Description Coding and Yamanaka pattern Color Filter Array algorithm (HMDC-YCFA). The proposed method aims to enhance the robustness of image transmission over error-prone networks, ensuring high-quality reconstruction even under adverse conditions. The approach transforms video sequences into color mosaic images and applies compression techniques to mitigate packet loss, reduce reconstruction errors, and overcome the inefficiencies of traditional error-resilience methods. Using a color mosaic image has the benefit of using one-third less storage space than an RGB image. The presented error-resilience framework is used to improve the transmission performance of multiple video frames. If all descriptor data are successfully received without loss, the restored color mosaic image is 100% identical to the original. The original color mosaic image and reconstructed color mosaic image peak signal-to-noise ratio (PSNR) value is 50 dB, and Similarity Index Measurement (SSIM) value is 1 because there is no difference between images. Simulation results demonstrate that the proposed error-resilient scheme outperforms in terms of PSNR, SSIM, processing time, and compression efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent Space Inpainting for Loss-Resilient Collaborative Object Detection",
+  "authors": [
+   "Ivan V. Bajić"
+  ],
+  "year": 2021,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc42927.2021.9500417",
+  "arxiv": "2102.00142",
+  "openalex": "W3193034260",
+  "cited_by": 9,
+  "abstract": "Edge devices, such as cameras and mobile units, are increasingly capable of performing sophisticated computation in addition to their traditional roles in sensing and communicating signals. The focus of this paper is on collaborative object detection, where deep features computed on the edge device from input images are transmitted to the cloud for further processing. We consider the impact of packet loss on the transmitted features and examine several ways for recovering the missing data. In particular, through theory and experiments, we show that methods for image inpainting based on partial differential equations work well for the recovery of missing features in the latent space. The obtained results represent the new state of the art for missing data recovery in collaborative object detection.",
+  "source": "openalex"
+ },
+ {
+  "title": "Packet Compressed Sensing Imaging (PCSI): Robust Image Transmission over Noisy Channels",
+  "authors": [
+   "Scott S. Howard",
+   "Grant Barthelmes",
+   "Cara R. Ravasio",
+   "Lisa L. Huang",
+   "Benjamin Poag",
+   "Varun Mannam"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2009.11455",
+  "arxiv": "2009.11455",
+  "openalex": "W3087789973",
+  "cited_by": 2,
+  "abstract": "Packet Compressed Sensing Imaging (PCSI) is digital unconnected image transmission method resilient to packet loss. The goal is to develop a robust image transmission method that is computationally trivial to transmit (e.g., compatible with low-power 8-bit microcontrollers) and well suited for weak signal environments where packets are likely to be lost. In other image transmission techniques, noise and packet loss leads to parts of the image being distorted or missing. In PCSI, every packet contains random pixel information from the entire image, and each additional packet received (in any order) simply enhances image quality. Satisfactory SSTV resolution (320x240 pixel) images can be received in ~1-2 minutes when transmitted at 1200 baud AFSK, which is on par with analog SSTV transmission time. Image transmission and reception can occur simultaneously on a computer, and multiple images can be received from multiple stations simultaneously - allowing for the creation of \"image nets.\" This paper presents a simple computer application for Windows, Mac, and Linux that implements PCSI transmission and reception on any KISS compatible hardware or software modem on any band and digital mode.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variable Packet-Error Coding",
+  "authors": [
+   "Xiaoqing Fan",
+   "Oliver Kosut",
+   "Aaron B. Wagner"
+  ],
+  "year": 2017,
+  "venue": "IEEE Transactions on Information Theory",
+  "doi": "10.1109/tit.2017.2761122",
+  "arxiv": "1608.01408",
+  "openalex": "W2496188640",
+  "cited_by": 7,
+  "abstract": "We consider a problem in which a source is encoded into N packets, an unknown number of which are subject to adversarial errors en route to the decoder. We seek code designs for which the decoder is guaranteed to be able to reproduce the source subject to a certain distortion constraint when there are no packets errors, subject to a less stringent distortion constraint when there is one error, and so on. Focusing on the special case of the erasure distortion measure, we introduce a code design based on the polytope codes of Kosut et al.. The resulting designs are also applied to a separate problem in distributed storage.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight Generative Image Semantic Communication over Packet Erasure Channels",
+  "authors": [
+   "Yufei Bo",
+   "Haoshuo Zhang",
+   "Meixia Tao",
+   "Jing He",
+   "Xinming Huang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.06989",
+  "arxiv": "2609.06989",
+  "openalex": "W7211991240",
+  "cited_by": 0,
+  "abstract": "This paper addresses packet loss in semantic communication caused by network congestion or channel fluctuations. We propose LGSemCom, a lightweight generative packet-level joint source-channel coding (JSCC) framework for efficient and robust image transmission over packet erasure channels. Unlike conventional distortion-oriented recovery methods that yield blurry averages over erased regions, LGSemCom reformulates image recovery under packet erasures as a conditional generative task. By leveraging adversarial learning, the proposed decoder synthesizes plausible details without increasing complexity during inference. A key innovation of our framework is an erasure-aware weighting (EAW) strategy, which prioritizes generation in erased regions while preserving pixel fidelity in correctly received areas. To ensure computational efficiency, LGSemCom employs a fully convolutional codec based on efficient long-range attention blocks (ELABs) that capture global semantic dependencies with low complexity. Extensive experiments show that LGSemCom achieves superior perceptual reconstruction quality compared with existing benchmarks under severe packet loss, while achieving an order of magnitude faster inference. These attributes make LGSemCom highly suitable for latency-sensitive applications on resource-constrained edge devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "A smart packet type identification scheme for selective discard of video packets",
+  "authors": [
+   "Ashkan Moharrami",
+   "Mohammad Ghasempour",
+   "M. Ghanbari"
+  ],
+  "year": 2021,
+  "venue": "e-Prime - Advances in Electrical Engineering Electronics and Energy",
+  "doi": "10.1016/j.prime.2023.100149",
+  "arxiv": "2104.13013",
+  "openalex": "W4361222327",
+  "cited_by": 8,
+  "abstract": "In recent years, due to the growth of social networks and development of video sharing platforms, transmission of video content has increased dramatically. This huge amount of data imposes a heavy load on the limited bandwidth of the networks. As a result, data loss will be inevitable. Nevertheless, since some types of video frames, such as B-frames are more resilient to packet loss, discarding them can ease network congestion while maintaining QoE. However, frame-type information is only available in the packet payload. Limited processing power of devices in high-speed networks, data encryption and user credibility issues, make finding the frame types a costly operation. Therefore, an intelligent router with fast and reliable decision-making is proposed to model live video streams structures and recognize the importance of video packets at the network level. This information enables the network routers to discard insignificant video packets ahead of congestion. The proposed method does not need to read the IP layer payload and uses only the packet header data for decision making. Experimental results show an intelligent router, at the worst scenario can classify packet type with better than 95.1% accuracy, as if packet types are marked at the source without any bias. Tests on various HD video, with 1–10% packet drop rates, shows while the proposed packet discarding scheme is 0.8–2.7 dB inferior to ground truth method, it is still 6–10 dB better than dropping packets at random.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adversarial Auto-Encoding for Packet Loss Concealment",
+  "authors": [
+   "Santiago Pascual",
+   "Joan Serrà",
+   "Jordi Pons"
+  ],
+  "year": 2021,
+  "venue": "IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)",
+  "doi": "10.1109/waspaa52581.2021.9632730",
+  "arxiv": "2107.03100",
+  "openalex": "W3178638614",
+  "cited_by": 29,
+  "abstract": "Communication technologies like voice over IP operate under constrained real-time conditions, with voice packets being subject to delays and losses from the network. In such cases, the packet loss concealment (PLC) algorithm reconstructs missing frames until a new real packet is received. Recently, autoregressive deep neural networks have been shown to surpass the quality of signal processing methods for PLC, specially for long-term predictions beyond 60 ms. In this work, we propose a non-autoregressive adversarial auto-encoder, named PLAAE, to perform real-time PLC in the waveform domain. PLAAE has a causal convolutional structure, and it learns in an auto-encoder fashion to reconstruct signals with gaps, with the help of an adversarial loss. During inference, it is able to predict smooth and coherent continuations of such gaps in a single feed-forward step, as opposed to autoregressive models. Our evaluation highlights the superiority of PLAAE over two classic PLCs and two deep autoregressive models in terms of spectral and intonation reconstruction, perceptual quality, and intelligibility.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+  "authors": [
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Ke Yang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2025.3539747",
+  "arxiv": "2502.10812",
+  "openalex": "W4407246827",
+  "cited_by": 5,
+  "abstract": "Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). In specific, ResiComp develops a bi-directional masked Transformer to model the contextual dependencies among latents with dual-functionality: 1) iteratively acts as a conditional entropy model to boost compression efficiency; 2) operates latent PLC to improve resilience. During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC’s resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience. Additionally, packet-level simulations, conducted using diverse network models based on real traces, demonstrate that ResiComp exhibits much better robustness to fluctuating network conditions compared to redundancy-based approaches like VTM + FEC.",
+  "source": "openalex"
+ },
+ {
+  "title": "LR-V2X: Loss-Resilient Collaborative Perception under Low-Bandwidth Communication",
+  "authors": [
+   "Kang Yang",
+   "Tianci Bu",
+   "Peng Wang",
+   "Deying Li",
+   "Yongcai Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.11264",
+  "arxiv": "2610.11264",
+  "openalex": "W7221099508",
+  "cited_by": 0,
+  "abstract": "Given the inherent unpredictability of packet loss in vehicular wireless communications, V2X collaborative perception can yield practical benefits only if agents can achieve reliable collaboration under lossy and low-bandwidth communication conditions. Existing dense BEV feature fusion methods depend on redundant BEV feature exchange, which is infeasible in low-bandwidth scenarios, while compact-communication methods aggressively compress messages but can hardly recover the missing feature content after packet loss. In this paper, we present LR-V2X, a loss-resilient, latent-space reconstruction framework that converts corrupted received latents (even under severe 90% packet loss) into a spatial prior and then reconstructs the missing BEV information from this informative prior and using ego context as condition. Notably, the model can be trained under complete communication conditions and can be directly applied to lossy conditions at test time, eliminating the need for training under numerous lossy conditions. Experiments on DAIR-V2X and V2XREAL show that LR-V2X delivers the strongest robustness under severe packet loss and preserves reliable collaboration as communication quality degrades. And it reduces communication overhead by $64\\times$ compared to dense BEV feature fusion baselines. Code will be released at https://github.com/sidiangongyuan/LR-V2X.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Thermal Image Fragmentation for LoRa Mesh IoT Networks",
+  "authors": [
+   "Krzysztof Sawicki",
+   "Tomasz Sosnowski",
+   "Mariusz Mścichowski"
+  ],
+  "year": 2025,
+  "venue": "Pomiary, Automatyka, Robotyka",
+  "doi": "10.14313/par_258/89",
+  "arxiv": null,
+  "openalex": "W7115173374",
+  "cited_by": 0,
+  "abstract": "Environmental monitoring using thermal cameras faces significant challenges in remote areas lacking cellular or fixed telecommunication infrastructure. This paper presents a novel fragmentation algorithm for transmitting low-resolution thermal images (32 × 24 pixels) through LoRa mesh networks characterized by limited throughput and high packet loss rates. The proposed threetier fragmentation strategy divides thermograms into 16, 24, or 32 fragments with adaptive redundancy and loss compensation mechanisms. The algorithm implements pixel permutation to prevent clustered losses and hierarchical reconstruction using redundant information in the form of average values for different-sized regions. Simulation studies on 24 thermograms demonstrated gradual, linear quality degradation with increasing fragment losses. At near complete losses, the algorithm achieved RMSE temperature error of approximately 2.3 °C (2.5 % relative error), PSNR drop from 53 dB to 30 dB, and maintained SSIM value at 0.3. The critical DIST metric, determining positional error of thermogram center of gravity, increased only to 0.25 pixels (less than 1 % of image size). Real-world verification in Warsaw’s Meshtastic network with 200 devices confirmed practical utility. After transmitting 225 thermograms, receivers with 40 % fragment delivery still enabled reconstruction with average SSIM >0.6 and DIST error <0.1 pixels, demonstrating algorithm effectiveness for IoT monitoring applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Performance evaluation of mpeg-5 part 2 (lcevc): impact of packet loss",
+  "authors": [
+   "George Roberts",
+   "Anthony Olufemi Tesimi Adeyemi-Ejeye"
+  ],
+  "year": 2024,
+  "venue": "Multimedia Tools and Applications",
+  "doi": "10.1007/s11042-023-17931-0",
+  "arxiv": null,
+  "openalex": "W4390744646",
+  "cited_by": 2,
+  "abstract": "Abstract This paper presents an evaluation of the latest MPEG-5 Part 2 Low Complexity Enhancement Video Coding (LCEVC) for video streaming applications using best effort protocols. LCEVC is a new video standard by MPEG, which enhances any base codec through an additional low bitrate stream, improving both video compression efficiency and and transmission. However, there is an interplay between packetization, packet loss visibility, choice of codec and video quality, which implies that prior studies with other codecs may be not as relevant. The contributions of this paper is, therefore in twofold: It evaluates the compression performance of LCEVC and then the impact of packet loss on its video quality when compared to H.264 and HEVC.The results from this evaluation suggest that, regarding compression, LCEVC outperformed its base codecs, overall in terms average encoding bitrate savings when using the constant rate factor (CRF) rate control. For example at a CRF of 19, the average encoding bitrate was reduced by 18.7% and 15.8% when compared with the base H.264 and HEVC codecs respectively. Furthermore, LCEVC produced better visual quality across the packet loss range compared to its base codecs and the quality only started to decrease once packet loss exceeded 0.8-1%, and decreases at a slower pace compared to its equivalent base codecs. This suggests that the LCEVC enhancement layer also provides error concealment. The results presented in this paper will be of interest to those considering the LCEVC standard and expected video quality in error-prone environments",
+  "source": "openalex"
+ },
+ {
+  "title": "Error-resilient multi-view video plus depth based 3-D video coding",
+  "authors": [
+   "Pan Gao"
+  ],
+  "year": 2026,
+  "venue": "University of Southern Queensland ePrints (University of Southern Queensland)",
+  "doi": "10.26192/q45q4",
+  "arxiv": null,
+  "openalex": "W2751065681",
+  "cited_by": 0,
+  "abstract": "Three Dimensional (3-D) video, by definition, is a collection of signals that can provide depth perception of a 3-D scene. With the development of 3-D display technologies and interactive multimedia systems, 3-D video has attracted significant interest from both industries and academia with a variety of applications. In order to provide desired services in various 3-D video applications, the multiview video plus depth (MVD) representation, which can facilitate the generation of virtual views, has been determined to be the best format for 3-D video data. Similar to 2-D video, compressed 3-D video is highly sensitive to transmission errors due to errors propagated from the current frame to the future predicted frames. Moreover, since the virtual views required for auto-stereoscopic displays are rendered from the compressed texture videos and depth maps, transmission errors of the distorted texture videos and depth maps can be further propagated to the virtual views. Besides, the distortions in texture and depth show different effects on the rendering views. Therefore, compared to the reliability of the transmission of the 2-D video, error-resilient texture video and depth map coding are facing major new challenges. This research concentrates on improving the error resilience performance of MVD-based 3-D video in packet loss scenarios. Based on the analysis of the propagating behaviour of transmission errors, a Wyner-Ziv (WZ)-based error-resilient algorithm is first designed for coding of the multi-view video data or depth data. In this scheme, an auxiliary redundant stream encoded according to WZ principle is employed to protect a primary stream encoded with standard multi-view video coding codec. Then, considering the fact that different combinations of texture and depth coding mode will exhibit varying robustness to transmission errors, a rate-distortion optimized mode switching scheme is proposed to strike the optimal trade-off between robustness and compression effciency. In this approach, the texture and depth modes are jointly optimized by minimizing the overall distortion of both the coded and synthesized views subject to a given bit rate. Finally, this study extends the research on the reliable transmission of view synthesis prediction (VSP)-based 3-D video. In order to mitigate the prediction position error caused by packet losses in the depth map, a novel disparity vector correction algorithm is developed, where the corrected disparity vector is calculated from the depth error. To facilitate decoder error concealment, the depth error is recursively estimated at the decoder. The contributions of this dissertation are multifold. First, the proposed WZbased error-resilient algorithm can accurately characterize the effect of transmission error on multi-view distortion at the transform domain in consideration of both temporal and inter-view error propagation, and based on the estimated distortion, this algorithm can perform optimal WZ bit allo",
+  "source": "openalex"
+ },
+ {
+  "title": "Error-Resilient Live Video Streaming Using Hybrid Multiple Description Coding and Adaptive Weighted Yamanaka CFA",
+  "authors": [
+   "Kitty Smailin D H",
+   "Jacob Vetha Raj Y"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Electronics and Communication Engineering",
+  "doi": "10.14445/23488549/ijece-v12i11p107",
+  "arxiv": null,
+  "openalex": "W7109044692",
+  "cited_by": 0,
+  "abstract": "Live medical video streaming is essential for accurate diagnosis and clinical decision-making in real-time healthcare applications. However, packet loss, unstable network conditions, and limited bandwidth degrade video quality during wireless transmission. The research problem focuses on reconstructing diagnostically important video frames with high visual clarity under lossy channel conditions. Most existing methods use static redundancy, non-adaptive filtering, or high-complexity encoding, which reduce their reliability in time-sensitive medical environments. This research proposes a hybrid solution combining Hybrid Multiple Description Coding (HMDC) and Adaptive Weighted Yamanaka Color Filter Array (AW-YCFA) to address these challenges. HMDC encodes each video frame into two descriptions and one correction stream. The redundancy is calculated dynamically using frame importance and packet loss probability. This ensures critical frames receive stronger protection and bandwidth is used efficiently. The decoding module includes adaptive concealment and interpolation techniques that reconstruct lost data using spatial and temporal references. AW-YCFA improves visual quality by modifying the color filter layout and applying local weights to refine color channel reconstruction. This step reduces chromatic noise and enhances edge sharpness. The system is evaluated using the Kvasir-Capsule-SEG dataset, which contains real-world capsule endoscopy video sequences. Performance is tested under packet loss rates of 10%, 20%, and 30%. The proposed method achieves a 40.91 dB PSNR and 0.9124 SSIM at a 10% loss, and maintains a 35.62 dB PSNR and 0.9467 SSIM at a 30% loss. Compared to existing methods such as ROI-aware video coding, EDBTC, convolutional coding, ARV, end-to-end distortion modeling, BBAG with HTTP/2, scalable video coding with reversible data embedding, and point cloud-based streaming, the proposed system consistently shows higher reconstruction quality and lower delay. It also achieves a compression ratio of 16.4 and 46 FPS throughput with 184 MB memory usage. These results confirm that the system supports high-speed and reliable transmission with accurate visual reconstruction in critical medical video applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Packet dispersion strategy evaluation from the perspective of packet loss pattern and VoIP quality",
+  "authors": [
+   "Nemanja M. Ninkovic",
+   "Slavko Gajin",
+   "Irini S. Reljin"
+  ],
+  "year": 2015,
+  "venue": "Computer Science and Information Systems",
+  "doi": "10.2298/csis150120043n",
+  "arxiv": null,
+  "openalex": "W2300529773",
+  "cited_by": 3,
+  "abstract": "The appearance of burst packet losses and its devastating effect on Voice over IP (VoIP) service have imposed a requirement for the implementation of loss recovery mechanisms to address VoIP quality during periods when high packet loss is exhibited. Existing loss recovery mechanisms are dependent on end point capabilities, whereas Quality of service (QoS) routing protocols suffer from complexity and scalability issues. In this paper, we examine packet dispersion?s ability to address burst losses and provide a computational model, which is verified using real network testing. A study has been carried out to investigate the effect of different packet dispersion strategies on burst losses, which clearly shows dispersion?s qualitative superiority over single path routing. Furthermore, an analytical approach is proposed resulting in quality estimation obtained by individual strategies. Practical evaluation has shown that each strategy copes differently with various burst scenarios in order to maximize VoIP quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Feature Imputing for Loss-Resilient Semantic Communication",
+  "authors": [
+   "Jianhao Huang",
+   "Qunsong Zeng",
+   "Hongyang Du",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc59461.2026.11587596",
+  "arxiv": null,
+  "openalex": "W7168292842",
+  "cited_by": 0,
+  "abstract": "Semantic communication (SemCom) has emerged as a promising paradigm for achieving unprecedented communication efficiency in sixth-generation (6G) networks. However, deploying SemCom over digital systems introduces new challenges in maintaining robustness against packet losses that distort critical content. To address this issue, this paper proposes a novel framework, termed generative feature imputing, which comprises three key techniques. First, we introduce a spatial-error-concentration packetization strategy that spatially concentrates feature distortions by encoding feature elements based on their channel mappings. Second, building on this strategy, we propose a generative feature imputing method that utilizes a diffusion model to efficiently reconstruct missing features caused by packet losses. Finally, we develop a semantic-aware power allocation scheme that enables unequal error protection by allocating transmission power according to the semantic importance of each packet. Experimental results demonstrate that the proposed framework outperforms conventional approaches, such as Deep Joint Source-Channel Coding (DJSCC) and JPEG2000, under block fading conditions, achieving higher semantic accuracy and lower Learned Perceptual Image Patch Similarity (LPIPS) scores.",
+  "source": "openalex"
+ },
+ {
+  "title": "RCodSpace: A Robust Learned Coding Method for Deep Space Visual Transmission",
+  "authors": [
+   "Rongao Yuan",
+   "Chen Cui",
+   "Yue Wang",
+   "Siwei Ma",
+   "Chuanmin Jia"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2026.3695654",
+  "arxiv": null,
+  "openalex": "W7162696812",
+  "cited_by": 0,
+  "abstract": "With advancement of deep space exploration, vast amounts of image data must be transmitted back to Earth for scientific research. Current deep-space image codecs rely on conventional progressive coding algorithms, but offer limited compression performance. Despite great success on natural images achieved by learning-based compression methods, the high computational complexity restrains their application in the deep space missions and they are unable to cope with packet loss caused by severe noise interference during transmission. Motivated by the urgent need and technical challenges, we take Mars as a representative case and propose a novel image compression and transmission framework that innovatively incorporates learning-based strategies to deliver both low-complexity and error-resilient source coding. To adapt learning-based methods to the stringent constraints and high packet loss of deep space environment, we first establish a new Martian image dataset with high resolution and diversity, and analyze its characteristics to guide the network design. With heterogeneous textures yet synergistic structures as well as higher inter-channel similarity in the feature domain revealed for the Martian images, we develop a Martian Vision Adaptive Transformation Module (MVATM) with efficient low-complexity compression. Furthermore, unlike conventional one-stage training, a novel two-stage training strategy with Joint Channel Training (JCT) is proposed to enhance error resilience. Experimental results and hardware deployment strongly validate that our method achieves a better rate-distortion-complexity (RDC) trade-offs than other advanced learning-based models and significantly outperforms conventional methods in deep space simulation test. Also, the technical strategies proposed herein can offer methodological insights for deep space and other resource-constrained fields.",
+  "source": "openalex"
+ },
+ {
+  "title": "LDSCD: A loss and DoS resistant secure code dissemination algorithm supporting multiple authorized tenants",
+  "authors": [
+   "Mande Xie",
+   "Urmila Bhanja",
+   "Jun Shao",
+   "Guoping Zhang",
+   "Guiyi Wei"
+  ],
+  "year": 2017,
+  "venue": "Information Sciences",
+  "doi": "10.1016/j.ins.2017.07.024",
+  "arxiv": null,
+  "openalex": "W2735723357",
+  "cited_by": 10,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Prism: Handling Packet Loss for Ultra-low Latency Video",
+  "authors": [
+   "Devdeep Ray",
+   "Vicente Bobadilla Riquelme",
+   "Srinivasan Seshan"
+  ],
+  "year": 2022,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3503161.3547856",
+  "arxiv": null,
+  "openalex": "W4304099411",
+  "cited_by": 10,
+  "abstract": "Real-time interactive video streaming applications like cloud-based video games, AR, and VR require high quality video streams and extremely low end-to-end interaction delays. These requirements cause the QoE to be extremely sensitive to packet losses. Due to the inter-dependency between compressed frames, packet losses stall the video decode pipeline until the lost packets are retransmitted (resulting in stutters and higher delays), or the decoder state is reset using IDR-frames (lower video quality for given bandwidth). Prism is a hybrid predictive-reactive packet loss recovery scheme that uses a split-stream video coding technique to meet the needs of ultra-low latency video streaming applications. Prism's approach enables aggressive loss prediction, rapid loss recovery, and high video quality post-recovery, with zero overhead during normal operation - avoiding the pitfalls of existing approaches. Our evaluation on real video game footage shows that Prism reduces the penalty of using I-frames for recovery by 81%, while achieving 30% lower delay than pure retransmission-based recovery.",
+  "source": "openalex"
+ },
+ {
+  "title": "Recent Advances in Image and Video Coding",
+  "authors": [
+   "Sudhakar Radhakrishnan"
+  ],
+  "year": 2016,
+  "venue": "InTech eBooks",
+  "doi": "10.5772/62602",
+  "arxiv": null,
+  "openalex": "W2549609129",
+  "cited_by": 4,
+  "abstract": "This book is intended to attract the attention of practitioners and researchers in academia and industry interested in challenging paradigms of image and video coding algorithms with an emphasis on recent technological developments. All the chapters are well demonstrated by various researchers around the world covering the field of image and video processing. This book highlights the current research in the image and video processing area such as image fusion, image segmentation and classification, image compression, machine vision algorithms and video compression. The entire work available in the book is mainly focusing on researchers who can do quality research in the area of image and video processing and related fields. Each chapter is an independent research which will definitely motivate the young researchers to ponder into. These eleven chapters available in five sections will be an eye-opener for all who are doing systematic research in these fields.",
+  "source": "openalex"
+ },
+ {
+  "title": "New Bounds and Constructions for Variable Packet-Error Coding",
+  "authors": [
+   "Xiangliang Kong",
+   "Xin Wang",
+   "Ron M. Roth",
+   "Itzhak Tamo"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Information Theory",
+  "doi": "10.1109/tit.2026.3708323",
+  "arxiv": "2506.15233",
+  "openalex": "W4415333659",
+  "cited_by": 0,
+  "abstract": "In this paper, we consider the problem of variable packet-error coding, which emerges in network communication scenarios where a source transmits information to a destination through multiple disjoint paths. The objective is to design codes with dynamic error-correcting capabilities that adapt to varying numbers of errors. Specifically, we first provide several bounds on the rate--distortion trade-off for general variable packet-error coding schemes. Then, we present two explicit constructions of variable packet-error coding schemes. The first construction uses higher-order MDS codes and provides a coding scheme that achieves a better rate--distortion trade-off compared to known results for general parameter regimes. The second construction is based on a variant of the repetition code and yields a coding scheme with an optimal rate--distortion trade-off, with respect to our bound, for certain parameter regimes.",
+  "source": "openalex"
+ },
+ {
+  "title": "KSVD-Based Multiple Description Image Coding",
+  "authors": [
+   "Guina Sun",
+   "Lili Meng",
+   "Li Liu",
+   "Yanyan Tan",
+   "Jia Zhang",
+   "Huaxiang Zhang"
+  ],
+  "year": 2018,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2018.2886823",
+  "arxiv": null,
+  "openalex": "W2903643197",
+  "cited_by": 9,
+  "abstract": "In this paper, we present a new multiple description coding scheme, which is based on a sparse dictionary training method called K singular value decomposition (KSVD). In the proposed scheme, each description encodes one source subset with a small quantization stepsize, and other subsets are predictively coded with a large quantization stepsize. The source processed by the KSVD becomes sparse, which can improve the coding efficiency. The proposed scheme is then applied to lapped transform-based multiple description image coding. Finally, image coding results show that the proposed scheme achieves a better performance than the current state-of-the-art multiple description coding methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Feature Imputing—A Technique for Error-Resilient Semantic Communication",
+  "authors": [
+   "Jianhao Huang",
+   "Qunsong Zeng",
+   "Hongyang Du",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2026.3700909",
+  "arxiv": "2508.17957",
+  "openalex": "W7164330227",
+  "cited_by": 2,
+  "abstract": "Semantic communication (SemCom) has emerged as a promising paradigm for achieving unprecedented communication efficiency in sixth-generation (6G) networks by leveraging artificial intelligence (AI) to extract and transmit the underlying meanings of source data. However, deploying SemCom over digital systems presents new challenges, particularly in ensuring robustness against transmission errors that may distort semantically critical content. To address this issue, this paper proposes a novel framework, termed generative feature imputing, which comprises three key techniques. First, we introduce a spatial-error-concentration packetization strategy that spatially concentrates feature distortions by encoding feature elements based on their channel mappings—a property crucial for both the effectiveness and reduced complexity of the subsequent techniques. Second, building on this strategy, we propose a generative feature imputing method that utilizes a diffusion model to efficiently reconstruct missing features caused by packet losses. Finally, we develop a semantic-aware power allocation scheme that enables unequal error protection by allocating transmission power according to the semantic importance of each packet. Experimental results demonstrate that the proposed framework outperforms conventional approaches, such as Deep Joint Source-Channel Coding (DJSCC) and JPEG2000, under block fading conditions, achieving higher semantic accuracy and lower Learned Perceptual Image Patch Similarity (LPIPS) scores.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Genetic Algorithm for the Generation of Packetization Masks for Robust Image Communication",
+  "authors": [
+   "Katherine Zapata-Quiñones",
+   "Cristian Durán-Faúndez",
+   "Gilberto Gutiérrez",
+   "Vincent Lecuire",
+   "Christopher Arredondo-Flores",
+   "Hugo Jara-Lipán"
+  ],
+  "year": 2017,
+  "venue": "Sensors",
+  "doi": "10.3390/s17050981",
+  "arxiv": null,
+  "openalex": "W2608755429",
+  "cited_by": 3,
+  "abstract": "Image interleaving has proven to be an effective solution to provide the robustness of image communication systems when resource limitations make reliable protocols unsuitable (e.g., in wireless camera sensor networks); however, the search for optimal interleaving patterns is scarcely tackled in the literature. In 2008, Rombaut et al. presented an interesting approach introducing a packetization mask generator based in Simulated Annealing (SA), including a cost function, which allows assessing the suitability of a packetization pattern, avoiding extensive simulations. In this work, we present a complementary study about the non-trivial problem of generating optimal packetization patterns. We propose a genetic algorithm, as an alternative to the cited work, adopting the mentioned cost function, then comparing it to the SA approach and a torus automorphism interleaver. In addition, we engage the validation of the cost function and provide results attempting to conclude about its implication in the quality of reconstructed images. Several scenarios based on visual sensor networks applications were tested in a computer application. Results in terms of the selected cost function and image quality metric PSNR show that our algorithm presents similar results to the other approaches. Finally, we discuss the obtained results and comment about open research challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "GRACE: Loss-Resilient Real-Time Video Communication Using Data-Scalable Autoencoder",
+  "authors": [
+   "Yihua Cheng",
+   "Anton Arapin",
+   "Ziyi Zhang",
+   "Qizheng Zhang",
+   "Hanchen Li",
+   "Nick Feamster",
+   "Junchen Jiang"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2210.16639",
+  "arxiv": "2210.16639",
+  "openalex": "W4307937549",
+  "cited_by": 5,
+  "abstract": "Across many real-time video applications, we see a growing need (especially in long delays and dynamic bandwidth) to allow clients to decode each frame once any (non-empty) subset of its packets is received and improve quality with each new packet. We call it data-scalable delivery. Unfortunately, existing techniques (e.g., FEC, RS and Fountain Codes) fall short: they require either delivery of a minimum number of packets to decode frames, and/or pad video data with redundancy in anticipation of packet losses, which hurts video quality if no packets get lost. This work explores a new approach, inspired by recent advances of neural-network autoencoders, which make data-scalable delivery possible. We present Grace, a concrete data-scalable real-time video system. With the same video encoding, Grace's quality is slightly lower than traditional codec without redundancy when no packet is lost, but with each missed packet, its quality degrades much more gracefully than existing solutions, allowing clients to flexibly trade between frame delay and video quality. Grace makes two contributions: (1) it trains new custom autoencoders to balance compression efficiency and resilience against a wide range of packet losses; and (2) it uses a new transmission scheme to deliver autoencoder-coded frames as individually decodable packets. We test Grace (and traditional loss-resilient schemes and codecs) on real network traces and videos, and show that while Grace's compression efficiency is slightly worse than heavily engineered video codecs, it significantly reduces tail video frame delay (by 2$\\times$ at the 95th percentile) with the marginally lowered video quality",
+  "source": "openalex"
+ },
+ {
+  "title": "SPIHT image coding : analysis, improvements and applications.",
+  "authors": [
+   "Jian Ming Zhu"
+  ],
+  "year": 2026,
+  "venue": "Warwick Research Archive Portal (University of Warwick)",
+  "doi": "10.82444/warw.33739798",
+  "arxiv": null,
+  "openalex": "W2631553613",
+  "cited_by": 0,
+  "abstract": "Image compression plays an important role in image storage and transmission. In the popular Internet applications and mobile communications, image coding is required to be not only efficient but also scalable. Recent wavelet techniques provide a way for efficient and scalable image coding. SPIHT (set partitioning in hierarchical trees) is such an algorithm based on wavelet transform. This thesis analyses and improves the SPIHT algorithm. The preliminary part of the thesis investigates two-dimensional multi-resolution decomposition for image coding using the wavelet transform, which is reviewed and analysed systematically. The wavelet transform is implemented using filter banks, and the z-domain proofs are given for the key implementation steps. A scheme of wavelet transform for arbitrarily sized images is proposed. The statistical properties of the wavelet coefficients (being the output of the wavelet transform) are explored for natural images. The energy in the transform domain is localised and highly concentrated on the low-resolution subband. The wavelet coefficients are DC-biased, and the gravity centre of most octave-segmented value sections (which are relevant to the binary bit-planes) is offset by approximately one eighth of the section range from the geometrical centre. The intra-subband correlation coefficients are the largest, followed by the inter-level correlation coefficients in the middle then the trivial inter-subband correlation coefficients on the same resolution level. The statistical properties reveal the success of the SPIHT algorithm, and lead to further improvements. The subsequent parts of the thesis examine the SPIHT algorithm. The concepts of successive approximation quantisation and ordered bit-plane coding are highlighted. The procedure of SPIHT image coding is demonstrated with a simple example. A solution for arbitrarily sized images is proposed. Seven measures are proposed to improve the SPIHT algorithm. Three DC-level shifting schemes are discussed, and the one subtracting the geometrical centre in the image domain is selected in the thesis. The virtual trees are introduced to hold more wavelet coefficients in each of the initial sets. A scheme is proposed to reduce the redundancy in the coding bit-stream by omitting the predictable symbols. The quantisation of wavelet coefficients is offset by one eighth from the geometrical centre. A pre-processing technique is proposed to speed up the judgement of the significance of trees, and a smoothing is imposed on the magnitude of the wavelet coefficients during the pre-processing for lossy image coding. The optimisation of arithmetic coding is also discussed. Experimental results show that these improvements to SPIHT get a significant performance gain. The running time is reduced by up to a half. The PSNR (peak signal to noise ratio) is improved a lot at very low bit rates, up to 12 dB in the extreme case. Moderate improvements are also made at high bit rates. The SPIHT al",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards Real-Time Network Intrusion Detection With Image-Based Sequential Packets Representation",
+  "authors": [
+   "Jalal Ghadermazi",
+   "Ankit Shah",
+   "Nathaniel D. Bastian"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Big Data",
+  "doi": "10.1109/tbdata.2024.3403394",
+  "arxiv": null,
+  "openalex": "W4398150616",
+  "cited_by": 52,
+  "abstract": "Machine learning (ML) and deep learning (DL) advancements have greatly enhanced anomaly detection of network intrusion detection systems (NIDS) by empowering them to analyze big data and extract patterns. ML/DL-based NIDS are trained using either flow-based or packet-based features. Flow-based NIDS are suitable for offline traffic analysis, while packet-based NIDS can analyze traffic and detect attacks in real-time. Current packet-based approaches analyze packets independently, overlooking the sequential nature of network communication. This results in biased models that exhibit increased false negatives and positives. Additionally, most literature-proposed packet-based NIDS capture only payload data, neglecting crucial information from packet headers. This oversight can impair the ability to identify header-level attacks, such as denial-of-service attacks. To address these limitations, we propose a novel artificial intelligence-enabled methodological framework for packet-based NIDS that effectively analyzes header and payload data and considers temporal connections among packets. Our framework transforms sequential packets into two-dimensional images. It then develops a convolutional neural network-based intrusion detection model to process these images and detect malicious activities. Through experiments using publicly available big datasets, we demonstrate that our framework is able to achieve high detection rates of 97.7% to 99% across different attack types and displays promising resilience against adversarial examples.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Wireless Video Token Communication over Block Fading Channels",
+  "authors": [
+   "Bingyan Xie",
+   "Yongjeong Oh",
+   "Zihan Chen",
+   "Jihong Park",
+   "Yongpeng Wu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.08698",
+  "arxiv": "2608.08698",
+  "openalex": "W7202163975",
+  "cited_by": 0,
+  "abstract": "Video token communication represents video content as discrete tokens that differ in their importance to reconstruction and exhibit temporal dependencies. When these tokens are packetized for wireless transmission, block fading can cause multiple important or correlated tokens to be lost together, severely degrading video reconstruction. To address this issue, we propose a loss-resilient wireless video token communication (WVTC) framework. WVTC evaluates token importance from the intrinsic predictive structure of video tokens, assigning high priority to structural I-tokens and measuring P-token importance by temporal neighborhood novelty. A shuffled mixed I/P-token packetization scheme disperses structural anchors and correlated temporal regions across packets. Using only current block channel state information, an online scheduler jointly considers packet importance density, MCS-dependent decoding reliability, block capacity, and importance concentration when allocating packets to fading blocks. At the receiver, a fine-tuned detokenizer reconstructs missing content from surviving tokens without retransmission. Numerical results demonstrate improved perceptual quality and more graceful degradation under increasing packet error rates.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+  "authors": [
+   "Xueqin Niu",
+   "Mufan Liu",
+   "Yifan Wang",
+   "Le Yang",
+   "Jun Sun",
+   "Yiling Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.11845",
+  "arxiv": "2608.11845",
+  "openalex": "W7202394886",
+  "cited_by": 0,
+  "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient Image Coding and Transmission in Deep Space Communication",
+  "authors": [
+   "Reiner Dizon"
+  ],
+  "year": 2018,
+  "venue": "Digital Scholarship - UNLV (University of Nevada Reno)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W2927372965",
+  "cited_by": 0,
+  "abstract": "The usefulness of modern digital communication comes from ensuring the data from a source arrives to its destination quickly and correctly. To meet these demands, communication protocols employ data compression and error detection/correction to ensure compactness and accuracy of the data, especially for critical scientific data which requires the use of lossless compression. For example, in deep space communication, information received from satellites to ground stations on Earth come in huge volumes captured with high precision and resolution by space mission instruments, such as Hubble Space Telescope (HST). On-board implementation of communication protocols poses numerous constraints and demands on the high performance given the criticality of data and a high cost of a space mission, including data values. The objectives of this study are to determine which data compression techniques yields the a) minimum data volumes, b) most error resilience, and c) utilize the least amount and power of hardware resources. For this study, a Field Programmable Gate Array (FPGA) will serve as the main component for building the circuitry for each source coding technique. Furthermore, errors are induced based on studies of reported errors rates in deep space communication channels to test for error resilience. Finally, the calculation of resource utilization of the source encoder determines the power and computational usage. Based on the analysis of the error resilience and the characteristics of errors, the requirements to the channel coding are formulated.",
+  "source": "openalex"
+ },
+ {
+  "title": "SoundSpring: Loss-Resilient Audio Transceiver With Dual-Functional Masked Language Modeling",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Sixian Wang",
+   "Siye Wang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3531406",
+  "arxiv": "2501.12696",
+  "openalex": "W4406610604",
+  "cited_by": 6,
+  "abstract": "In this paper, we propose “SoundSpring”, a cutting-edge error-resilient audio transceiver that marries the robustness benefits of joint source-channel coding (JSCC) while also being compatible with current digital communication systems. Unlike recent deep JSCC transceivers, which learn to directly map audio signals to analog channel-input symbols via neural networks, our SoundSpring adopts the layered architecture that delineates audio compression from digital coded transmission, but it sufficiently exploits the impressive in-context predictive capabilities of large language (foundation) models. Integrated with the casual-order mask learning strategy, our single model operates on the latent feature domain and serve dual-functionalities: as efficient audio compressors at the transmitter and as effective mechanisms for packet loss concealment at the receiver. By jointly optimizing towards both audio compression efficiency and transmission error resiliency, we show that mask-learned language models are indeed powerful contextual predictors, and our dual-functional compression and concealment framework offers fresh perspectives on the application of foundation language models in audio communication. Through extensive experimental evaluations, we establish that SoundSpring apparently outperforms contemporary audio transmission systems in terms of signal fidelity metrics and perceptual quality scores. These new findings not only advocate for the practical deployment of SoundSpring in learning-based audio communication systems but also inspire the development of future audio semantic transceivers.",
+  "source": "openalex"
+ },
+ {
+  "title": "Optimization of Protection Techniques Based on FEC Codes for the Transmission of Multimedia Packetized Streams",
+  "authors": [
+   "Filippo Casu"
+  ],
+  "year": 2017,
+  "venue": null,
+  "doi": "10.20868/upm.thesis.46530",
+  "arxiv": null,
+  "openalex": "W2623763937",
+  "cited_by": 1,
+  "abstract": "Esta tesis presenta dos modelos novedosos de arquitecturas basadas en esquemas FEC con el fin de proteger flujos de paquetes con contenido multimedial, para comunicaciones en tiempo real y en canales donde las pérdidas se producen en ráfagas. El objetivo de estos diseños ha sido maximizar la eficiencia de los códigos FEC considerados. Por un lado, el primer modelo busca alcanzar un menor coste computacional para los códigos de Reed- Solomon, ya que su conocida capacidad de recuperación para todo tipo de canales necesita un coste computacional elevado. Por otro lado, en el caso de los códigos LDPC, se ha perseguido aumentar la capacidad de recuperación de estos códigos operando en canales con errores en ráfagas, teniendo en cuenta que los códigos LDPC no están directamente diseñados para este tipo de entorno. El modelo aplicado a los códigos de Reed-Solomon se denomina inter-packet symbol approach. Este esquema consiste en una estructura alternativa que asocia los bits de los símbolos del código en distintos paquetes. Esta característica permite aprovechar de forma mejor la capacidad de recuperación de los códigos de Reed-Solomon frente a pérdidas de paquetes en ráfagas. Las prestaciones de este esquema han sido estudiadas en términos de tiempo de codificación/decodificación versus capacidad de recuperación y han sido comparados con otros esquemas propuestos en literatura. El análisis teórico ha demostrado que el enfoque propuesto permite la utilización de Campos de Galois de menor dimensión con respecto a otras soluciones. Esto se traduce en una disminución del tiempo de codificación/decodificación requerido, mientras que mantiene una capacidad de recuperación comparable. Aunque la utilización de los códigos LDPC está típicamente orientada hacía canales con errores uniformemente distribuidos (canales sin memoria) y para bloques de información largos, esta tesis surgiere el uso de este tipo de códigos FEC a nivel de aplicación, para canales con pérdidas en ráfagas y para entornos de comunicación de tiempo real, es decir, con una latencia de transmisión muy baja. Para satisfacer estas limitaciones, la configuración apropiada de los parámetros de un código LDPC ha sido determinada usando bloques de información pequeños y adaptando el código FEC de modo que sea capaz de recuperar paquetes perdidos en canales con errores en ráfagas. Para ello, primeramente se ha diseñado un algoritmo que realiza una estimación de las capacidades de recuperación del código LDPC para un canal con pérdidas en ráfagas. Una vez caracterizado el código, se ha diseñado un segundo algoritmo que optimiza la estructura del código en términos de capacidad de recuperación para las características especificas del canal con memoria, generado una versión modificada del código LDPC, adaptada al canal con perdidas en ráfagas. Finalmente, los dos esquemas FEC propuestos, han sido evaluado experimentalmente en entornos de simulación usando canales con errores en ráfagas y se han compara",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards Resilient UAV Swarms—A Breakdown of Resiliency Requirements in UAV Swarms",
+  "authors": [
+   "Abhishek Phadke",
+   "F. Antonio Medrano"
+  ],
+  "year": 2022,
+  "venue": "Drones",
+  "doi": "10.3390/drones6110340",
+  "arxiv": null,
+  "openalex": "W4308197791",
+  "cited_by": 88,
+  "abstract": "UAVs have rapidly become prevalent in applications related to surveillance, military operations, and disaster relief. Their low cost, operational flexibility, and unmanned capabilities make them ideal for accomplishing tasks in areas deemed dangerous for humans to enter. They can also accomplish previous high-cost and labor-intensive tasks, such as land surveying, in a faster and cheaper manner. Researchers studying UAV applications have realized that a swarm of UAVs working collaboratively on tasks can achieve better results. The dynamic work environment of UAVs makes controlling the vehicles a challenge. This is magnified by using multiple agents in a swarm. Resiliency is a broad concept that effectively defines how well a system handles disruptions in its normal functioning. The task of building resilient swarms has been attempted by researchers for the past decade. However, research on current trends shows gaps in swarm designs that make evaluating the resiliency of such swarms less than ideal. The authors believe that a complete well-defined system built from the ground up is the solution. This survey evaluates existing literature on resilient multi-UAV systems and lays down the groundwork for how best to develop a truly resilient system.",
+  "source": "openalex"
+ },
+ {
+  "title": "Source Authentication for Code Dissemination Supporting Dynamic Packet Size in Wireless Sensor Networks",
+  "authors": [
+   "Daehee Kim",
+   "Daehee Kim",
+   "Sunshin An"
+  ],
+  "year": 2016,
+  "venue": "Sensors",
+  "doi": "10.3390/s16071063",
+  "arxiv": null,
+  "openalex": "W2460312344",
+  "cited_by": 6,
+  "abstract": "Code dissemination in wireless sensor networks (WSNs) is a procedure for distributing a new code image over the air in order to update programs. Due to the fact that WSNs are mostly deployed in unattended and hostile environments, secure code dissemination ensuring authenticity and integrity is essential. Recent works on dynamic packet size control in WSNs allow enhancing the energy efficiency of code dissemination by dynamically changing the packet size on the basis of link quality. However, the authentication tokens attached by the base station become useless in the next hop where the packet size can vary according to the link quality of the next hop. In this paper, we propose three source authentication schemes for code dissemination supporting dynamic packet size. Compared to traditional source authentication schemes such as μTESLA and digital signatures, our schemes provide secure source authentication under the environment, where the packet size changes in each hop, with smaller energy consumption.",
+  "source": "openalex"
+ },
+ {
+  "title": "Insights on Error-Resilient Image Transmission Schemes on Wireless Network",
+  "authors": [
+   "Bharathi Gururaj",
+   "G. Sadashivappa"
+  ],
+  "year": 2017,
+  "venue": "International Journal of Advanced Computer Science and Applications",
+  "doi": "10.14569/ijacsa.2017.080106",
+  "arxiv": null,
+  "openalex": "W2585400073",
+  "cited_by": 2,
+  "abstract": "Usage of image as data (or signal) is quite frequent in majority of the user-centric application. However, transmission of image over non-concrete communication medium like air is still vulnerable due to inherent weakness of wireless communication e.g. interference, noise, scattering, fading, security etc. Wireless image transmission has yet unsolved problems when it comes to error resiliency. In this paper, we have reviewed the significant research contribution published in last 5 years associated with wireless image transmission, channel coding mechanism, and investigated the scale of effectiveness in the techniques based on advantages and limitations. We also extracted a significant research gap, which requires immediate attention. Hence, we propose our future direction of work with an indicative architectural design in order to address the problems identified in research gap from existing literatures. This paper is meant to brief about the existing system and practical approaches to solve such problems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Optimized Multiple Description Image Coding via Scalar Quantization Learning",
+  "authors": [
+   "Lijun Zhao",
+   "Huihui Bai",
+   "Anhong Wang",
+   "Yao Zhao"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2001.03851",
+  "arxiv": "2001.03851",
+  "openalex": "W2999778088",
+  "cited_by": 0,
+  "abstract": "In this paper, we introduce a deep multiple description coding (MDC) framework optimized by minimizing multiple description (MD) compressive loss. First, MD multi-scale-dilated encoder network generates multiple description tensors, which are discretized by scalar quantizers, while these quantized tensors are decompressed by MD cascaded-ResBlock decoder networks. To greatly reduce the total amount of artificial neural network parameters, an auto-encoder network composed of these two types of network is designed as a symmetrical parameter sharing structure. Second, this autoencoder network and a pair of scalar quantizers are simultaneously learned in an end-to-end self-supervised way. Third, considering the variation in the image spatial distribution, each scalar quantizer is accompanied by an importance-indicator map to generate MD tensors, rather than using direct quantization. Fourth, we introduce the multiple description structural similarity distance loss, which implicitly regularizes the diversified multiple description generations, to explicitly supervise multiple description diversified decoding in addition to MD reconstruction loss. Finally, we demonstrate that our MDC framework performs better than several state-of-the-art MDC approaches regarding image coding efficiency when tested on several commonly available datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multiple Description Image Coding Using Extended X-tree",
+  "authors": [],
+  "year": 2015,
+  "venue": "International Workshop on Computer Science and Engineering (WCSE)",
+  "doi": "10.18178/wcse.2015.04.068",
+  "arxiv": null,
+  "openalex": "W4255740809",
+  "cited_by": 0,
+  "abstract": "This paper presents a novel multiple description image coding scheme called extended xtree based multiple description image coding.First, the 2D dual-tree discrete wavelet transform (DDWT) is exerted on the original image to produce 2 wavelet trees.A noise shaping algorithm is used to reduce the redundancies of the resulted wavelet coefficients produced by DDWT, forming the primary parts of two descriptions.In order to enhance the quality of the side reconstruction, a side noise shaping algorithm is then used to produce the supplementary information of side decoding.The primary information from one tree and supplementary information from the other are grouped to form a description.To exploit the strong correlation between two wavelet trees resulted from DDWT, an extended x-tree coding scheme is used to jointly encode two wavelet trees to improve the coding efficiency.Two descriptions are dispatched through separate channels.Since each description includes critical information of the picture, in case that one of the descriptions is lost, the reconstructed image can still keep acceptable fidelity.Simulation results have demonstrated the superior performance and error resilient ability of the proposed algorithm.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "The Effect of Packet Loss Rate on Multipath Routing for Wireless Multimedia Sensor Network",
+  "authors": [
+   "Mohammed B. Abazeed"
+  ],
+  "year": 2022,
+  "venue": "Journal on internet of things",
+  "doi": "10.32604/jiot.2022.039598",
+  "arxiv": null,
+  "openalex": "W4385509506",
+  "cited_by": 0,
+  "abstract": "Wireless multimedia sensor networks present unique quality of service and resource management requirements that distinguish them from scalar data in traditional wireless sensor networks. These demands pose a formidable obstac... | Find, read and cite all the research you need on Tech Science Press",
+  "source": "openalex"
+ },
+ {
+  "title": "An Effective Framework for Packet Behavior Classification in High- Speed Connectionless Networks",
+  "authors": [
+   "Chetan L.",
+   "M. Rajani",
+   "Raghu Kumar K. S."
+  ],
+  "year": 2025,
+  "venue": "International Journal of Advance Scientific Research and Engineering Trends",
+  "doi": "10.65521/ijasret.v9i8.1519",
+  "arxiv": null,
+  "openalex": "W7162465420",
+  "cited_by": 0,
+  "abstract": "The surge in connectionless data transmissions, driven by IoT devices and streaming services, has intensified challenges suchas packet loss, jitter, and delay. Conventional monitoring systems often fail to adapt to these dynamic conditions, highlighting the needfor intelligent Machine Learning (ML)-based approaches. This paper presents a comprehensive ML framework for evaluating andpredicting packet behavior in connectionless networks using synthetically generated datasets. Two models—Random Forest and SupportVector Machine (SVM)—were developed and compared. The Random Forest classifier demonstrated superior performance, achieving98.33% precision, recall, and F1-score across all classes, while the SVM model yielded a slightly lower overall accuracy of 97%. Featureimportance analysis revealed packet loss rate and jitter as critical predictors influencing classification. Performance validation throughconfusion matrices, ROC-AUC scores, and precision-recall curves confirmed the high reliability of both models, with each attaining anAUC of 1.00. The findings establish Random Forest as the more robust and accurate choice for anomaly detection in unstable networkenvironments. Leveraging such ML techniques enables proactive monitoring, prediction, and optimization of network performance,ultimately enhancing the reliability and efficiency of connectionless communication systems.",
+  "source": "openalex"
+ }
+]

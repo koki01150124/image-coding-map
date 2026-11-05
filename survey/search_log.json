@@ -281,5 +281,131 @@
     "n_results": 5,
     "n_new": 5,
     "at": "2026-11-05 15:07:57"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2610.25682",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:16:47"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2404.17736",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:16:54"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2501.01138",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:16:58"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2309.08895",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:02"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2502.10812",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:07"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2501.11263",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:11"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2211.00937",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:15"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2109.05194",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:20"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2309.00470",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:24"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2110.04456",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:31"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2211.13772",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:35"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2209.11519",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:39"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2311.08146",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:44"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:1809.10452",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:48"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:1804.02958",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:53"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2411.10650",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:17:57"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2206.08889",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:18:03"
+  },
+  {
+    "type": "add",
+    "query": "add:arxiv:2501.09815",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 17:18:08"
   }
 ]

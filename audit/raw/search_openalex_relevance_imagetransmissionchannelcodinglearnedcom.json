@@ -1,0 +1,865 @@
+[
+ {
+  "title": "Causal Contextual Prediction for Learned Image Compression",
+  "authors": [
+   "Zongyu Guo",
+   "Zhizheng Zhang",
+   "Runsen Feng",
+   "Zhibo Chen"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3089491",
+  "arxiv": "2011.09704",
+  "openalex": "W3116647679",
+  "cited_by": 165,
+  "abstract": "Over the past several years, we have witnessed impressive progress in the field of learned image compression. Recent learned image codecs are commonly based on autoencoders, that first encode an image into low-dimensional latent representations and then decode them for reconstruction purposes. To capture spatial dependencies in the latent space, prior works exploit hyperprior and spatial context model to build an entropy model, which estimates the bit-rate for end-to-end rate-distortion optimization. However, such an entropy model is suboptimal from two aspects: (1) It fails to capture global-scope spatial correlations among the latents. (2) Cross-channel relationships of the latents remain unexplored. In this paper, we propose the concept of separate entropy coding to leverage a serial decoding process for causal contextual entropy prediction in the latent space. Acausal context modelis proposed that separates the latents across channels and makes use of channel-wise relationships to generate highly informative adjacent contexts. Furthermore, we propose acausal global prediction modelto find global reference points for accurate predictions of undecoded points. Both these two models facilitate entropy estimation without the transmission of overhead. In addition, we further adopt a new group-separated attention module to build more powerful transform networks. Experimental results demonstrate that our full image compression model outperforms standard VVC/H.266 codec on Kodak dataset in terms of both PSNR and MS-SSIM, yielding the state-of-the-art rate-distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Joint Source-Channel Coding for Semantic Image Transmission",
+  "authors": [
+   "Ecenaz Erdemir",
+   "Tze-Yang Tung",
+   "Pier Luigi Dragotti",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3288243",
+  "arxiv": "2211.13772",
+  "openalex": "W4381785967",
+  "cited_by": 194,
+  "abstract": "Recent works have shown that joint source-channel coding (JSCC) schemes using deep neural networks (DNNs), called DeepJSCC, provide promising results in wireless image transmission. However, these methods mostly focus on the distortion of the reconstructed signals with respect to the input image, rather than their perception by humans. However, focusing on traditional distortion metrics alone does not necessarily result in high perceptual quality, especially in extreme physical conditions, such as very low bandwidth compression ratio (BCR) and low signal-to-noise ratio (SNR) regimes. In this work, we propose two novel JSCC schemes that leverage the perceptual quality of deep generative models (DGMs) for wireless image transmission, namely InverseJSCC and GenerativeJSCC. While the former is an inverse problem approach to DeepJSCC, the latter is an end-to-end optimized JSCC scheme. In both, we optimize a weighted sum of mean squared error (MSE) and learned perceptual image patch similarity (LPIPS) losses, which capture more semantic similarities than other distortion metrics. InverseJSCC performs denoising on the distorted reconstructions of a DeepJSCC model by solving an inverse optimization problem using the pre-trained style-based generative adversarial network (StyleGAN). Our simulation results show that InverseJSCC significantly improves the state-of-the-art DeepJSCC in terms of perceptual quality in edge cases. In GenerativeJSCC, we carry out end-to-end training of an encoder and a StyleGAN-based decoder, and show that GenerativeJSCC significantly outperforms DeepJSCC both in terms of distortion and perceptual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2019.2919300",
+  "arxiv": "1809.01733",
+  "openalex": "W2946889564",
+  "cited_by": 1516,
+  "abstract": "We propose a joint source and channel coding (JSCC) technique for wireless image transmission that does not rely on explicit codes for either compression or error correction; instead, it directly maps the image pixel values to the complex-valued channel input symbols. We parameterize the encoder and decoder functions by two convolutional neural networks (CNNs), which are trained jointly, and can be considered as an autoencoder with a non-trainable layer in the middle that represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms digital transmission concatenating JPEG or JPEG2000 compression with a capacity achieving channel code at low signal-to-noise ratio (SNR) and channel bandwidth values in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the “cliff effect,” and it provides a graceful performance degradation as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC learns noise resilient coded representations and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ },
+ {
+  "title": "Perceptual Learned Source-Channel Coding for High-Fidelity Image Semantic Transmission",
+  "authors": [
+   "Jun Wang",
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Zhongwei Si",
+   "Dekun Zhou",
+   "Kai Niu"
+  ],
+  "year": 2022,
+  "venue": "Globecom",
+  "doi": "10.1109/globecom48099.2022.10001359",
+  "arxiv": "2205.13120",
+  "openalex": "W4315629655",
+  "cited_by": 44,
+  "abstract": "As one novel approach to realize end-to-end wireless image semantic transmission, deep learning-based joint source-channel coding (deep JSCC) method is emerging in both deep learning and communication communities. However, current deep JSCC image transmission systems are typically optimized for traditional distortion metrics such as peak signal-to-noise ratio (PSNR) or multi-scale structural similarity (MS-SSIM). But for low transmission rates, due to the imperfect wireless channel, these distortion metrics lose significance as they favor pixel-wise preservation. To account for human visual perception in semantic communications, it is of great importance to develop new deep JSCC systems optimized beyond traditional PSNR and MS-SSIM metrics. In this paper, we introduce adversarial losses to optimize deep JSCC, which tends to preserve global semantic information and local texture. Our new deep JSCC architecture combines encoder, wireless channel, decoder/generator, and discriminator, which are jointly learned under both perceptual and adversarial losses. Our method yields human visually much more pleasing results than state-of-the-art engineered image coded transmission systems and traditional deep JSCC systems. A user study confirms that achieving perceptually similar end-to-end image transmission quality, the proposed method can save about 50% wireless channel bandwidth costs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Acoustic Channel-aware Autoencoder-based Compression for Underwater Image Transmission",
+  "authors": [
+   "Khizar Anjum",
+   "Zhile Li",
+   "Dario Pompili"
+  ],
+  "year": 2022,
+  "venue": "Underwater Communications and Networking Conference (UComms)",
+  "doi": "10.1109/ucomms56954.2022.9905691",
+  "arxiv": null,
+  "openalex": "W4300773648",
+  "cited_by": 10,
+  "abstract": "Image transmission in Underwater Internet of Things (UW IoT) is a challenging problem due to the characteristic low bandwidth and variable path loss of the underwater acoustic channel. However, to enable intelligent and collaborative exploration of the underwater environment, such a communication is of paramount importance. To address such challenges, a reliable and energy-efficient Machine Learning (ML)-based underwater image transmission system is proposed where images are compressed using a data-based approach and robust compression codes are learned. The system uses an Autoencoder (AE) to enable intelligent, data-driven selection of coding parameters. The AE is evaluated in the presence of underwater acoustic fading channel information to achieve efficient and robust image transmission, and is compared against model-based approaches.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2021.3090048",
+  "arxiv": "2009.12480",
+  "openalex": "W3089229692",
+  "cited_by": 193,
+  "abstract": "We propose deep learning based communication methods for adaptive-bandwidth transmission of images over wireless channels. We consider the scenario in which images are transmitted progressively in layers over time or frequency, and such layers can be aggregated by receivers in order to increase the quality of their reconstructions. We investigate two scenarios, one in which the layers are sent sequentially, and incrementally contribute to the refinement of a reconstruction, and another in which the layers are independent and can be retrieved in any order. Those scenarios correspond to the well known problems ofsuccessive refinementandmultiple descriptions, respectively, in the context of joint source-channel coding (JSCC). We propose DeepJSCC-$l$, an innovative solution that uses convolutional autoencoders, and present three architectures with different complexity trade-offs. To the best of our knowledge, this is the first practical multiple-description JSCC scheme developed and tested for practical information sources and channels. Numerical results show that DeepJSCC-$l$can learn to transmit the source progressively with negligible losses in the end-to-end performance compared with a single transmission. Moreover, DeepJSCC-$l$has comparable performance with state of the art digital progressive transmission schemes in the challenging low signal-to-noise ratio (SNR) and small bandwidth regimes, with the additional advantage of graceful degradation with channel SNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Enhanced Invertible Encoding for Learned Image Compression",
+  "authors": [
+   "Yueqi Xie",
+   "Ka Leong Cheng",
+   "Qifeng Chen"
+  ],
+  "year": 2021,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3474085.3475213",
+  "arxiv": "2108.03690",
+  "openalex": "W3206996732",
+  "cited_by": 201,
+  "abstract": "Although deep learning based image compression methods have achieved promising progress these days, the performance of these methods still cannot match the latest compression standard Versatile Video Coding (VVC). Most of the recent developments focus on designing a more accurate and flexible entropy model that can better parameterize the distributions of the latent features. However, few efforts are devoted to structuring a better transformation between the image space and the latent feature space. In this paper, instead of employing previous autoencoder style networks to build this transformation, we propose an enhanced Invertible Encoding Network with invertible neural networks (INNs) to largely mitigate the information loss problem for better compression. Experimental results on the Kodak, CLIC, and Tecnick datasets show that our method outperforms the existing learned image compression methods and compression standards, including VVC (VTM 12.1), especially for high-resolution images. Our source code is available at https://github.com/xyq7/InvCompress.",
+  "source": "openalex"
+ },
+ {
+  "title": "A channel-wise contextual module for learned intra video compression",
+  "authors": [
+   "Yanrui Zhan",
+   "Shuhua Xiong",
+   "Xiaohai He",
+   "Bowen Tang",
+   "Honggang Chen"
+  ],
+  "year": 2024,
+  "venue": "Journal of Visual Communication and Image Representation",
+  "doi": "10.1016/j.jvcir.2024.104070",
+  "arxiv": null,
+  "openalex": "W4391431538",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Source-Channel Coding of Images with (not very) Deep Learning",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "Repository for Publications and Research Data (ETH Zurich)",
+  "doi": "10.3929/ethz-b-000402967",
+  "arxiv": null,
+  "openalex": "W3119819694",
+  "cited_by": 20,
+  "abstract": "Almost all wireless communication systems today are designed based on essentially the same digital approach, that separately optimizes the compression and channel coding stages.Using machine learning techniques, we investigate whether end-toend transmission can be learned from scratch, thus using joint source-channel coding (JSCC) rather than the separation approach.This paper reviews and advances recent developments on our proposed technique, deep-JSCC, an autoencoder-based solution for generating robust and compact codes directly from images pixels, being comparable or even superior in performance to state-of-the-art (SoA) separation-based schemes (BPG+LDPC).Additionally, we show that deep-JSCC can be expanded to exploit a series of important features, such as graceful degradation, versatility to different channels and domains, variable transmission rate through successive refinement, and its capability to exploit channel output feedback.",
+  "source": "openalex"
+ },
+ {
+  "title": "Q-LIC: Quantizing Learned Image Compression With Channel Splitting",
+  "authors": [
+   "Heming Sun",
+   "Lu Yu",
+   "Jiro Katto"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2022.3231789",
+  "arxiv": "2205.14510",
+  "openalex": "W4312653295",
+  "cited_by": 27,
+  "abstract": "Learned image compression (LIC) has reached a comparable coding gain with traditional hand-crafted methods such as VVC intra. However, the large network complexity prohibits the usage of LIC on resource-limited embedded systems. Network quantization is an efficient way to reduce the network burden. This paper presents a quantized LIC (QLIC) by channel splitting. First, we explore that the influence of quantization error to the reconstruction error is different for various channels. Second, we split the channels whose quantization has larger influence to the reconstruction error. After the splitting, the dynamic range of channels is reduced so that the quantization error can be reduced. Finally, we prune several channels to keep the number of overall channels as origin. By using the proposal, in the case of 8-bit quantization for weight and activation of both main and hyper path, we can reduce the BD-rate by 0.61%-4.74% compared with the previous QLIC. Besides, we can reach better coding gain compared with the state-of-the-art network quantization method when quantizing MS-SSIM models. Moreover, our proposal can be combined with other network quantization methods to further improve the coding gain. The moderate coding loss caused by the quantization validates the feasibility of the hardware implementation for QLIC in the future.",
+  "source": "openalex"
+ },
+ {
+  "title": "RNN–LSTM-assisted entropy-based source–channel coding for robust image transmission",
+  "authors": [
+   "Sarath V. Sankaran",
+   "J. D. Dorathi Jayaseeli"
+  ],
+  "year": 2026,
+  "venue": "Scientific Reports",
+  "doi": "10.1038/s41598-026-65390-y",
+  "arxiv": null,
+  "openalex": "W7204270517",
+  "cited_by": 0,
+  "abstract": "The widespread growth of multimedia applications across wireless networks has increased the necessity for robust image and video communications. Wireless image transmission over noisy communication channels suffers from degradation in reconstruction quality due to bandwidth limitations and channel impairments. Existing methods often failed to effectively integrate entropy-driven compression with adaptive feature modelling, limiting their robustness and efficiency. To address this issue, this research develops an effective technique using Deep Learning with entropy-based source-channel coding for image transmission. Initially, an input image is processed using a Graph Cut-based Region of Interest (ROI) detection method to identify visually significant regions. The image is then partitioned into ROI and non-ROI regions and encoded independently. Here, the ROI region is encoded using LZW coding, whereas the non-ROI region undergoes wavelet transformation, quantization, and holoentropy-based arithmetic coding for enhanced compression. The encoded streams are combined into a unified final bitstream. Subsequently, a proposed Recurrent Neural Network (RNN)-Long Short-Term Memory (LSTM) model -based entropy encoder further optimizes the bitstream before transmission through an Additive White Gaussian Noise channel. At the receiver, a joint source–channel decoder reconstructs the transmitted data, followed by decompression and ROI-guided image reconstruction. The developed RNN-LSTM + entropy encoding achieved superior performance, yielding a high Peak Signal-to-Noise Ratio of 46.64 dB, minimum Mean Absolute Error of 29.3% minimum Mean Squared Error of 5.6%, maximum Structural Similarity Index Measure of 92.5%, higher Multi-Scale Structural Similarity Index Measure of 95.4%, and minimum Learned Perceptual Image Patch Similarity of 6.2%. These results confirm the effectiveness of the proposed framework for robust image transmission.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+  "authors": [
+   "Zhengxue Cheng",
+   "Heming Sun",
+   "Masaru Takeuchi",
+   "Jiro Katto"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00796",
+  "arxiv": "2001.01568",
+  "openalex": "W3034469748",
+  "cited_by": 1205,
+  "abstract": "Image compression is a fundamental research field and many well-known compression standards have been developed for many decades. Recently, learned compression methods exhibit a fast development trend with promising results. However, there is still a performance gap between learned compression algorithms and reigning compression standards, especially in terms of widely used PSNR metric. In this paper, we explore the remaining redundancy of recent learned compression algorithms. We have found accurate entropy models for rate estimation largely affect the optimization of network parameters and thus affect the rate-distortion performance. Therefore, in this paper, we propose to use discretized Gaussian Mixture Likelihoods to parameterize the distributions of latent codes, which can achieve a more accurate and flexible entropy model. Besides, we take advantage of recent attention modules and incorporate them into network architecture to enhance the performance. Experimental results demonstrate our proposed method achieves a state-of-the-art performance compared to existing learned compression methods on both Kodak and high-resolution datasets. To our knowledge our approach is the first work to achieve comparable performance with latest compression standard Versatile Video Coding (VVC) regarding PSNR. More importantly, our approach generates more visually pleasant results when optimized by MS-SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Adaptive Image Transmission Over MIMO Channels",
+  "authors": [
+   "Haotian Wu",
+   "Yulin Shao",
+   "Chenghong Bian",
+   "Krystian Mikolajczyk",
+   "Denız Gündüz"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2024.3422794",
+  "arxiv": "2309.00470",
+  "openalex": "W4400579059",
+  "cited_by": 107,
+  "abstract": "We introduce a vision transformer (ViT)-based deep joint source and channel coding (DeepJSCC) scheme for wireless image transmission over multiple-input multiple-output (MIMO) channels, called DeepJSCC-MIMO. We employ DeepJSCC-MIMO in both open-loop and closed-loop MIMO systems. The novel DeepJSCC-MIMO architecture surpasses the classical separation-based benchmarks, while exhibiting robustness to channel estimation errors and flexibility in adapting to diverse channel conditions and antenna configurations without requiring retraining. Specifically, by harnessing the self-attention mechanism of the ViT, DeepJSCC-MIMO intelligently learns feature mapping and power allocation strategies tailored to the unique characteristics of the source image and prevailing channel conditions. Extensive numerical experiments validate the significant improvements in both distortion quality and perceptual quality achieved by DeepJSCC-MIMO for both open-loop and closed-loop MIMO systems across a wide range of scenarios. Moreover, DeepJSCC-MIMO exhibits robustness to varying channel conditions, channel estimation errors, and different antenna numbers, making it an appealing technology for emerging semantic communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication-Based Multiple Description Coding for Robust Image Transmission Over Wireless Channels",
+  "authors": [
+   "Prabhath Samarathunga",
+   "Udara Jayasinghe",
+   "Yasith Ganearachchi",
+   "Thanuj Fernando",
+   "Thushan Sivalingam",
+   "Nandana Rajatheva",
+   "Anil Fernando"
+  ],
+  "year": 2026,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2026.3716070",
+  "arxiv": null,
+  "openalex": "W7170082283",
+  "cited_by": 0,
+  "abstract": "The explosive growth of multimedia traffic over wireless networks demands robust image transmission mechanisms that maintain perceptual quality under channel impairments. Conventional compression standards and state of the art learned compression frameworks achieve remarkable rate distortion performance under error free assumptions but suffer from catastrophic cliff effects over realistic wireless channels. Recent advances in semantic communication, particularly deep joint source channel coding, address this through end to end learned representations exhibiting graceful degradation under noise. However, these systems remain vulnerable to complete transmission loss during deep fades or path outages, representing a critical single point of failure. We propose a semantic multiple description coding (SMDC) framework that synergistically integrates semantic communication with path diversity through joint end to end training of the encoder, description generator, and fusion decoder within a separation-based pipeline. The framework employs an autoencoder based semantic codec with a novel interleaved channel wise splitting strategy to generate three semantically complementary descriptions, each independently compressed via entropy coding (DeepCABAC), protected with polar channel codes, and transmitted over separate paths. An intelligent fusion decoder leverages learned inter description correlations to reconstruct images from any available subset, enabling meaningful reconstruction from a single path while achieving high fidelity when multiple paths succeed. Comprehensive evaluation across AWGN, Rayleigh, and Rician fading channels demonstrates that SMDC maintains PSNR above 30 dB and SSIM above 0.80 down to 1 dB combined SNR for AWGN channels, 5 dB for Rician, and 7 dB for Rayleigh fading channels, while conventional separation based systems (JPEG, JPEG2000, HEIF, CompressAI) fail catastrophically at 5 dB for AWGN, 10 dB for Rician, and 12 dB for Rayleigh fading channels. By eliminating cliff effects and establishing a guaranteed performance floor through semantic redundancy, the proposed framework ensures reliable visual communication even under severe asymmetric channel impairments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptive Information Bottleneck Guided Joint Source and Channel Coding for Image Transmission",
+  "authors": [
+   "Lunan Sun",
+   "Yang Yang",
+   "Mingzhe Chen",
+   "Caili Guo",
+   "Walid Saad",
+   "H. Vincent Poor"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3288238",
+  "arxiv": "2203.06492",
+  "openalex": "W4381785866",
+  "cited_by": 43,
+  "abstract": "Abstract Joint source channel coding (JSCC) has attracted increasing attentions due to its robustness and high efficiency. However, the existing research on JSCC mainly focuses on minimizing the distortion between the transmitted and received information under the constraint of the required data rate. Therefore, the transmitted bits may be far more than the minimal threshold according to the rate-distortion (RD) theory even though the transmitted information is well recovered. In this paper, we propose an adaptive Information Bottleneck (IB) guided JSCC (AIB-JSCC), which aims at achieving the theoretically maximal compression ratio for a given reconstruction quality. In particular, we first derive a mathematically tractable form of loss function for AIB-JSCC. To trade off compression and reconstruction quality, we further propose an adaptive algorithm that adjusts the hyperparameter of the proposed loss function dynamically according to the distortion during the training. Experimental results show that AIB-JSCC can significantly reduce the required amount of the transmitted data and improve the reconstruction quality and downstream artificial-intelligent task performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2020.2987203",
+  "arxiv": "1911.11174",
+  "openalex": "W3016715915",
+  "cited_by": 491,
+  "abstract": "We consider wireless transmission of images in the presence of channel output feedback. From a Shannon theoretic perspective feedback does not improve the asymptotic end-to-end performance, and separate source coding followed by capacity-achieving channel coding, which ignores the feedback signal, achieves the optimal performance. It is well known that separation is not optimal in the practical finite blocklength regime; however, there are no known practical joint source-channel coding (JSCC) schemes that can exploit the feedback signal and surpass the performance of separation-based schemes. Inspired by the recent success of deep learning methods for JSCC, we investigate how noiseless or noisy channel output feedback can be incorporated into the transmission system to improve the reconstruction quality at the receiver. We introduce an autoencoder-based JSCC scheme, which we call DeepJSCC-f , that exploits the channel output feedback, and provides considerable improvements in terms of the end-to-end reconstruction quality for fixed-length transmission, or in terms of the average delay for variable-length transmission. To the best of our knowledge, this is the first practical JSCC scheme that can fully exploit channel output feedback, demonstrating yet another setting in which modern machine learning techniques can enable the design of new and efficient communication methods that surpass the performance of traditional structured coding-based designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel-Wise Masked Deep Joint Source-Channel Coding for Rateless Size-Independent Image Transmission",
+  "authors": [
+   "Daisuke Hisano"
+  ],
+  "year": 2026,
+  "venue": "IEEE Consumer Communications and Networking Conference",
+  "doi": "10.1109/ccnc65079.2026.11366504",
+  "arxiv": null,
+  "openalex": "W7127663539",
+  "cited_by": 0,
+  "abstract": "Deep joint source-channel coding (DeepJSCC) has emerged as a promising paradigm that integrates source and channel coding into an end-to-end learned transmission pipeline. While conventional DeepJSCC models are typically trained for a fixed compression rate, practical communication requires flexible adaptation to varying bandwidths and channel conditions. This work proposes a simple yet effective design of rateless DeepJSCC that applies stochastic masking along the channel dimension of the encoder’s final convolutional layer. By assigning learned priorities to channels and transmitting only a subset according to available resources, the model achieves rateless adaptability while preserving the CNN-based property of being independent of input image resolution. Through experiments, we validate the effectiveness of the proposed approach. On CIFAR-10, the method achieves more stable training and slightly better PSNR and SSIM compared with the conventional rateless DeepJSCC, especially at low symbol-per-pixel (SPP) rates. On DIV2K, the proposed method achieves performance comparable to individually trained fixed-rate DeepJSCC models, while maintaining the advantage of size-independence. Overall, the results demonstrate that the proposed method provides stable and efficient rate adaptation.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepFGS: Fine-Grained Scalable Coding for Learned Image Compression",
+  "authors": [
+   "Yongqi Zhai",
+   "Yi Ma",
+   "Luyang Tang",
+   "Wei Jiang",
+   "Ronggang Wang"
+  ],
+  "year": 2025,
+  "venue": "DCC",
+  "doi": "10.1109/dcc62719.2025.00034",
+  "arxiv": "2201.01173",
+  "openalex": "W4410537863",
+  "cited_by": 8,
+  "abstract": "Scalable coding, which can adapt to channel bandwidth variation, performs well in today's complex network environment. However, most existing scalable compression methods face two challenges: reduced compression performance and insufficient scalability. To overcome the above problems, this paper proposes a learned fine-grained scalable image compression framework, namely DeepFGS. Specifically, we introduce a feature separation backbone to divide the image information into basic and scalable features, then redistribute the features channel by channel through an information rearrangement strategy. In this way, we can generate a continuously scalable bitstream via one-pass encoding. For entropy coding, we design a mutual entropy model to fully explore the correlation between the basic and scalable features. In addition, we reuse the decoder to reduce the parameters and computational complexity. Experiments demonstrate that our proposed DeepFGS outperforms previous learning-based scalable image compression models and traditional scalable image codecs in both PSNR and MS-SSIM metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight Generative Joint Source-Channel Coding for Semantic Image Transmission with Compressed Conditional GANs",
+  "authors": [
+   "Dongshan Ye",
+   "Xijun Wang",
+   "Xiang Chen"
+  ],
+  "year": 2023,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC)",
+  "doi": "10.1109/icccworkshops57813.2023.10233814",
+  "arxiv": null,
+  "openalex": "W4386360511",
+  "cited_by": 9,
+  "abstract": "Deep learning-based Joint Source-Channel Coding (JSCC) has shown promising results in wireless image transmission by integrating deep generative models. However, the computational demands of these models pose a challenge for practical deployment. In this paper, we propose a novel approach called Lightweight conditional GAN-based Deep Joint Source-Channel Coding (LGJSCC) to address this challenge. LGJSCC introduces a compressed generator using a GAN compression method based on intermediate feature distillation, enabling efficient utilization of computational resources at the receiver side. To enhance the perceptual quality of the reconstructed images, we incorporate the Learned Perceptual Image Patch Similarity (LPIPS) loss along with pixel-wise distortion, adversarial loss, and distillation loss. Experimental results demonstrate that the compressed generator achieves a size reduction of only 4.45% of the original, with Multiply-Accumulate Operations (MAC) decreasing to 11.92% of the original, while maintaining comparable image reconstruction quality. This makes LGJSCC highly suitable for deployment on resource-constrained devices such as mobile and IoT devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "Linear Attention Modeling for Learned Image Compression",
+  "authors": [
+   "Donghui Feng",
+   "Zhengxue Cheng",
+   "Shen Wang",
+   "Ronghua Wu",
+   "Hongwei Hu",
+   "Guo Sheng Lu",
+   "Li Song"
+  ],
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52734.2025.00714",
+  "arxiv": "2502.05741",
+  "openalex": "W4413144383",
+  "cited_by": 29,
+  "abstract": "Recent years, learned image compression has made tremendous progress to achieve impressive coding efficiency. Its coding gain mainly comes from non-linear neural network-based transform and learnable entropy modeling. However, most studies focus on a strong backbone, and few studies consider a low complexity design. In this paper, we propose LALIC, a linear attention modeling for learned image compression. Specially, we propose to use Bi-RWKV blocks, by utilizing the Spatial Mix and Channel Mix modules to achieve more compact feature extraction, and apply the Conv based Omni-Shift module to adapt to two-dimensional latent representation. Furthermore, we propose a RWKV-based Spatial-Channel ConTeXt model (RWKV-SCCTX), that leverages the Bi-RWKV to modeling the correlation between neighboring features effectively. To our knowledge, our work is the first work to utilize efficient Bi-RWKV models with linear attention for learned image compression. Experimental results demonstrate that our method achieves competitive RD performances by outperforming VTM-9.1 by -15.26%, -15.41%, -17.63% in BD-rate on Kodak, CLIC and Tecnick datasets. The code is available at https://github.com/sjtu-medialab/RwkvCompress.",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel-Blind Joint Source–Channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Hongjie Yuan",
+   "Weizhang Xu",
+   "Yuhuan Wang",
+   "Xingxing Wang"
+  ],
+  "year": 2024,
+  "venue": "Sensors",
+  "doi": "10.3390/s24124005",
+  "arxiv": "2306.15183",
+  "openalex": "W4399896651",
+  "cited_by": 27,
+  "abstract": "Joint source-channel coding (JSCC) based on deep learning has shown significant advancements in image transmission tasks. However, previous channel-adaptive JSCC methods often rely on the signal-to-noise ratio (SNR) of the current channel for encoding, which overlooks the neural network's self-adaptive capability across varying SNRs. This paper investigates the self-adaptive capability of deep learning-based JSCC models to dynamically changing channels and introduces a novel method named Channel-Blind JSCC (CBJSCC). CBJSCC leverages the intrinsic learning capability of neural networks to self-adapt to dynamic channels and diverse SNRs without relying on external SNR information. This approach is advantageous, as it is not affected by channel estimation errors and can be applied to one-to-many wireless communication scenarios. To enhance the performance of JSCC tasks, the CBJSCC model employs a specially designed encoder-decoder. Experimental results show that CBJSCC outperforms existing channel-adaptive JSCC methods that depend on SNR estimation and feedback, both in additive white Gaussian noise environments and under slow Rayleigh fading channel conditions. Through a comprehensive analysis of the model's performance, we further validate the robustness and adaptability of this strategy across different application scenarios, with the experimental results providing strong evidence to support this claim.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Block-Based Hybrid Image Compression",
+  "authors": [
+   "Yaojun Wu",
+   "Xin Li",
+   "Zhizheng Zhang",
+   "Xin Jin",
+   "Zhibo Chen"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3119660",
+  "arxiv": "2012.09550",
+  "openalex": "W3207351130",
+  "cited_by": 68,
+  "abstract": "Recent works on learned image compression perform encoding and decoding processes in a full-resolution manner, resulting in two problems when deployed for practical applications. First, parallel acceleration of the autoregressive entropy model cannot be achieved due to serial decoding. Second, full-resolution inference often causes the out-of-memory (OOM) problem with limited GPU resources, especially for high-resolution images. Block partition is a good choice to handle the above issues, but it brings about new challenges in reducing the redundancy between blocks and eliminating block effects. To tackle the above challenges, this paper provides a learned block-based hybrid image compression (LBHIC) framework. Specifically, we introduce explicit intra prediction into a learned image compression framework to utilize the relation among adjacent blocks. Superior to context modeling by linear weighting of neighbor pixels in traditional codecs, we propose a contextual prediction module (CPM) to better capture long-range correlations by utilizing the strip pooling to extract the most relevant information in neighboring latent space, thus achieving effective information prediction. Moreover, to alleviate blocking artifacts, we further propose a boundary-aware postprocessing module (BPM) with the edge importance taken into account. Extensive experiments demonstrate that the proposed LBHIC codec outperforms the VVC, with a bit-rate conservation of 4.1%, and reduces the decoding time by approximately 86.7% compared with that of state-of-the-art learned image compression methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Conditional Coding for Flexible Learned Video Compression",
+  "authors": [
+   "Théo Ladune",
+   "Pierrick Philippe",
+   "Wassim Hamidouche",
+   "Lu Zhang",
+   "Olivier Déforges A"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2104.07930",
+  "arxiv": "2104.07930",
+  "openalex": "W3155176888",
+  "cited_by": 34,
+  "abstract": "This paper introduces a novel framework for end-to-end learned video coding. Image compression is generalized through conditional coding to exploit information from reference frames, allowing to process intra and inter frames with the same coder. The system is trained through the minimization of a rate-distortion cost, with no pre-training or proxy loss. Its flexibility is assessed under three coding configurations (All Intra, Low-delay P and Random Access), where it is shown to achieve performance competitive with the state-of-the-art video codec HEVC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Data-Dependent Transform for Learned Image Compression",
+  "authors": [
+   "Dezhao Wang",
+   "Wenhan Yang",
+   "Yueyu Hu",
+   "Jiaying Liu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.01686",
+  "arxiv": "2203.04963",
+  "openalex": "W4312590925",
+  "cited_by": 60,
+  "abstract": "Learned image compression has achieved great success due to its excellent modeling capacity, but seldom further considers the Rate-Distortion Optimization (RDO) of each input image. To explore this potential in the learned codec, we make the first attempt to build a neural data-dependent transform and introduce a continuous online mode decision mechanism to jointly optimize the coding efficiency for each individual image. Specifically, apart from the image content stream, we employ an additional model stream to generate the transform parameters at the decoder side. The pres-ence of a model stream enables our model to learn more abstract neural-syntax, which helps cluster the latent repre-sentations of images more compactly. Beyond the transform stage, we also adopt neural-syntax based post-processing for the scenarios that require higher quality reconstructions regardless of extra decoding overhead. Moreover, the in-volvement of the model stream further makes it possible to optimize both the representation and the decoder in an on-line way, i. e. RDO at the testing time. It is equivalent to a continuous online mode decision, like coding modes in the traditional codecs, to improve the coding efficiency based on the individual input image. The experimental results show the effectiveness of the proposed neural-syntax de-sign and the continuous online mode decision mechanism, demonstrating the superiority of our method in coding effi-ciency. Our project is available at: https://dezhao-wang.github.io/Neural-Syntax-Website/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Frequency-Aware Transformer for Learned Image Compression",
+  "authors": [
+   "Han Li",
+   "Shaohui Li",
+   "Wenrui Dai",
+   "Chenglin Li",
+   "Junni Zou",
+   "Hongkai Xiong"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2310.16387",
+  "arxiv": "2310.16387",
+  "openalex": "W4387963828",
+  "cited_by": 23,
+  "abstract": "Learned image compression (LIC) has gained traction as an effective solution for image storage and transmission in recent years. However, existing LIC methods are redundant in latent representation due to limitations in capturing anisotropic frequency components and preserving directional details. To overcome these challenges, we propose a novel frequency-aware transformer (FAT) block that for the first time achieves multiscale directional ananlysis for LIC. The FAT block comprises frequency-decomposition window attention (FDWA) modules to capture multiscale and directional frequency components of natural images. Additionally, we introduce frequency-modulation feed-forward network (FMFFN) to adaptively modulate different frequency components, improving rate-distortion performance. Furthermore, we present a transformer-based channel-wise autoregressive (T-CA) model that effectively exploits channel dependencies. Experiments show that our method achieves state-of-the-art rate-distortion performance compared to existing LIC methods, and evidently outperforms latest standardized codec VTM-12.1 by 14.5%, 15.1%, 13.0% in BD-rate on the Kodak, Tecnick, and CLIC datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Transmission with Hierarchical Variational Autoencoder",
+  "authors": [
+   "Guangyi Zhang",
+   "Hanlei Li",
+   "Yunlong Cai",
+   "Qiyu Hu",
+   "Guanding Yu",
+   "Runmin Zhang"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v39i12.33442",
+  "arxiv": "2408.16340",
+  "openalex": "W4409366077",
+  "cited_by": 12,
+  "abstract": "In this paper, we introduce an innovative hierarchical joint source-channel coding (HJSCC) framework for image transmission, utilizing a hierarchical variational autoencoder (VAE). Our approach leverages a combination of bottom-up and top-down paths at the transmitter to autoregressively generate multiple hierarchical representations of the original image. These representations are then directly mapped to channel symbols for transmission by the JSCC encoder. We extend this framework to scenarios with a feedback link, modeling transmission over a noisy channel as a probabilistic sampling process and deriving a novel generative formulation for JSCC with feedback. Compared with existing approaches, our proposed HJSCC provides enhanced adaptability by dynamically adjusting transmission bandwidth, encoding these representations into varying amounts of channel symbols. Additionally, we introduce a rate attention module to guide the JSCC encoder in optimizing its encoding strategy based on prior information. Extensive experiments on images of varying resolutions demonstrate that our proposed model outperforms existing baselines in rate-distortion performance and maintains robustness against channel noise.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image-Dependent Local Entropy Models for Learned Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "George D. Toderici",
+   "Saurabh Singh",
+   "Sung Jin Hwang",
+   "Michele Covell"
+  ],
+  "year": 2018,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip.2018.8451502",
+  "arxiv": "1805.12295",
+  "openalex": "W2805673305",
+  "cited_by": 36,
+  "abstract": "The leading approach for image compression with artificial neural networks (ANNs) is to learn a nonlinear transform and a fixed entropy model that are optimized for rate-distortion performance. We show that this approach can be significantly improved by incorporating spatially local, image-dependent entropy models. The key insight is that existing ANN-based methods learn an entropy model that is shared between the encoder and decoder, but they do not transmit any side information that would allow the model to adapt to the structure of a specific image. We present a method for augmenting ANN-based image coders with image-dependent side information that leads to a 17.8% rate reduction over a state-of-the-art ANN-based baseline model on a standard evaluation set, and 70-98% reductions on images with low visual complexity that are poorly captured by a fixed, global entropy model.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression for Machine Perception",
+  "authors": [
+   "Felipe Codevilla",
+   "Jean-Gabriel Simard",
+   "Ross Goroshin",
+   "Christopher Pal"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2111.02249",
+  "arxiv": "2111.02249",
+  "openalex": "W3210496873",
+  "cited_by": 20,
+  "abstract": "Recent work has shown that learned image compression strategies can outperform standard hand-crafted compression algorithms that have been developed over decades of intensive research on the rate-distortion trade-off. With growing applications of computer vision, high quality image reconstruction from a compressible representation is often a secondary objective. Compression that ensures high accuracy on computer vision tasks such as image segmentation, classification, and detection therefore has the potential for significant impact across a wide variety of settings. In this work, we develop a framework that produces a compression format suitable for both human perception and machine perception. We show that representations can be learned that simultaneously optimize for compression and performance on core vision tasks. Our approach allows models to be trained directly from compressed representations, and this approach yields increased performance on new tasks and in low-shot learning settings. We present results that improve upon segmentation and detection performance compared to standard high quality JPGs, but with representations that are four to ten times smaller in terms of bits per pixel. Further, unlike naive compression methods, at a level ten times smaller than standard JEPGs, segmentation and detection models trained from our format suffer only minor degradation in performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Meta-learned Implicit Neural Representations for Scalable and Fast Hyperspectral Image Compression",
+  "authors": [
+   "Shima Rezasoltani",
+   "Faisal Z. Qureshi"
+  ],
+  "year": 2026,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-032-28661-1_2",
+  "arxiv": null,
+  "openalex": "W7222922386",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Bi-Level Spatial and Channel-aware Transformer for Learned Image Compression",
+  "authors": [
+   "Soltani, Hamidreza",
+   "Erfan Ghasemi"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2408.03842",
+  "arxiv": "2408.03842",
+  "openalex": "W4403662490",
+  "cited_by": 0,
+  "abstract": "Recent advancements in learned image compression (LIC) methods have demonstrated superior performance over traditional hand-crafted codecs. These learning-based methods often employ convolutional neural networks (CNNs) or Transformer-based architectures. However, these nonlinear approaches frequently overlook the frequency characteristics of images, which limits their compression efficiency. To address this issue, we propose a novel Transformer-based image compression method that enhances the transformation stage by considering frequency components within the feature map. Our method integrates a novel Hybrid Spatial-Channel Attention Transformer Block (HSCATB), where a spatial-based branch independently handles high and low frequencies at the attention layer, and a Channel-aware Self-Attention (CaSA) module captures information across channels, significantly improving compression performance. Additionally, we introduce a Mixed Local-Global Feed Forward Network (MLGFFN) within the Transformer block to enhance the extraction of diverse and rich information, which is crucial for effective compression. These innovations collectively improve the transformation's ability to project data into a more decorrelated latent space, thereby boosting overall compression efficiency. Experimental results demonstrate that our framework surpasses state-of-the-art LIC methods in rate-distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "IoT‐Oriented Lightweight Joint Source‐Channel Coding for Image Transmission via Filter Pruning in Semantic Communication",
+  "authors": [
+   "Ali Marami Zenouz",
+   "Mohammad Ali Amirabadi",
+   "Mohammad Hossein Kahaei"
+  ],
+  "year": 2026,
+  "venue": "IET Image Processing",
+  "doi": "10.1049/ipr2.70477",
+  "arxiv": null,
+  "openalex": "W7223664514",
+  "cited_by": 0,
+  "abstract": "ABSTRACT Traditional communication systems follow Shannon's bit‐level paradigm, prioritizing reliable bit transmission without regard to semantic content. Semantic Communications shift the focus to conveying task‐relevant meaning, offering substantial efficiency gains in resource‐constrained scenarios such as the Internet of Things (IoT) and edge computing. The Attention‐based Deep Joint Source–Channel Coding (ADJSCC) network achieves robust image reconstruction over wide Signal to Noise ratio (SNR) ranges by adaptively allocating resources between source compression and channel protection. However, its high computational complexity prevents deployment on energy‐ and memory‐limited devices. This paper proposes a Lightweight ADJSCC model obtained through structured Filter Pruning guided by information‐capacity and independence metrics, followed by multi‐objective fine‐tuning using a composite loss that balances pixel‐wise distortion (measured by Mean Square Error (MSE)), structural fidelity (measured by Structural Dissimilarity Index Measure (DSSIM)), and perceptual quality (measured by Learned Perceptual Image Patch Similarity (LPIPS)) with Adaptive Gradient Balancing (AGB). Results on the CIFAR‐10 dataset over Additive White Gaussian Noise (AWGN) channels show that the original ADJSCC model reconstructs images with the highest perceptual quality, maintaining sharp details and natural colours across varying SNRs. The pruned model fine‐tuned with MSE‐only loss exhibits noticeable degradation, including amplified noise, colour distortion, and texture loss, especially at lower SNRs. The proposed Lightweight ADJSCC model produces reconstructions that are qualitatively superior to the MSE‐only baseline, demonstrating better noise suppression and smoother gradients, particularly in low‐SNR conditions. Visual examples indicate that the proposed model's multi‐objective fine‐tuning strategy helps preserve structural integrity and natural statistics, resulting in reconstructions that are perceptually closer to the original, high‐fidelity model. These findings highlight the effectiveness of perception‐ and structure‐aware recovery in mitigating pruning‐induced semantic degradation, making the proposed lightweight design suitable for edge‐intelligent semantic image transmission in future 6G systems. The proposed framework mitigates pruning‐induced semantic degradation in ADJSCC networks through information‐aware pruning and perceptual‐structural fine‐tuning.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression with Dictionary-Based Entropy Model",
+  "authors": [
+   "Jingbo Lu",
+   "Leheng Zhang",
+   "Xingyu Zhou",
+   "Mu Li",
+   "Wen Li",
+   "Shuhang Gu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52734.2025.01199",
+  "arxiv": "2504.00496",
+  "openalex": "W4413145954",
+  "cited_by": 32,
+  "abstract": "Learned image compression methods have attracted great research interest and exhibited superior rate-distortion performance to the best classical image compression standards of the present. The entropy model plays a key role in learned image compression, which estimates the probability distribution of the latent representation for further entropy coding. Most existing methods employed hyper-prior and auto-regressive architectures to form their entropy models. However, they only aimed to explore the internal dependencies of latent representation while neglecting the importance of extracting prior from training data. In this work, we propose a novel entropy model named Dictionary-Based Cross Attention Entropy model, which introduces a learnable dictionary to summarize the typical structures occurring in the training dataset to enhance the entropy model. Extensive experimental results have demonstrated that the proposed model strikes a better balance between performance and latency, achieving state-of-the-art results on various benchmark datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Unveiling the Future of Human and Machine Coding: A Survey of End-to-End Learned Image Compression",
+  "authors": [
+   "Chen-Hsiu Huang",
+   "Ja‐Ling Wu"
+  ],
+  "year": 2024,
+  "venue": "Entropy",
+  "doi": "10.3390/e26050357",
+  "arxiv": null,
+  "openalex": "W4395082327",
+  "cited_by": 26,
+  "abstract": "End-to-end learned image compression codecs have notably emerged in recent years. These codecs have demonstrated superiority over conventional methods, showcasing remarkable flexibility and adaptability across diverse data domains while supporting new distortion losses. Despite challenges such as computational complexity, learned image compression methods inherently align with learning-based data processing and analytic pipelines due to their well-suited internal representations. The concept of Video Coding for Machines has garnered significant attention from both academic researchers and industry practitioners. This concept reflects the growing need to integrate data compression with computer vision applications. In light of these developments, we present a comprehensive survey and review of lossy image compression methods. Additionally, we provide a concise overview of two prominent international standards, MPEG Video Coding for Machines and JPEG AI. These standards are designed to bridge the gap between data compression and computer vision, catering to practical industry use cases.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Lossless Image Compression With Combined Channel-Conditioning Models and Autoregressive Modules",
+  "authors": [
+   "Ran Wang",
+   "Jinming Liu",
+   "Heming Sun",
+   "Jiro Katto"
+  ],
+  "year": 2023,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2023.3291591",
+  "arxiv": "2208.13974",
+  "openalex": "W4382998692",
+  "cited_by": 6,
+  "abstract": "Lossless image compression is an important research field in image compression. Recently, learning-based lossless image compression methods achieved impressive performance compared with traditional lossless methods, such as WebP, JPEG2000, and FLIF. The aim of the lossless image compression algorithms is to use shorter codelength to represent images. To encode an image with fewer bytes, eliminating the redundancies among the pixels in the image is highly important. Hence, in this paper, we explore the idea of combining an autoregressive model for the raw images based on the end-to-end lossless architecture proposed to enhance the performance. Furthermore, inspired by the successful achievements of Channel-conditioning models, we propose a Multivariant Mixture distribution Channel-conditioning model (MMCC) in our network architecture to boost performance. The experimental results show that our approach outperforms most classical lossless compression methods and existing learning-based lossless methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Recognition-Aware Learned Image Compression",
+  "authors": [
+   "Maxime Kawawa-Beaudan",
+   "Ryan Roggenkemper",
+   "Avideh Zakhor"
+  ],
+  "year": 2022,
+  "venue": "Electronic Imaging",
+  "doi": "10.2352/ei.2022.34.14.coimg-220",
+  "arxiv": "2202.00198",
+  "openalex": "W4225491309",
+  "cited_by": 9,
+  "abstract": "Learned image compression methods generally optimize a rate-distortion loss, trading off improvements in visual distortion for added bitrate. Increasingly, however, compressed imagery is used as an input to deep learning networks for various tasks such as classification, object detection, and super-resolution. We propose a recognition-aware learned compression method, which optimizes a rate-distortion loss alongside a task-specific loss, jointly learning compression and recognition networks. We augment a hierarchical autoencoder-based compression network with an EfficientNet recognition model and use two hyperparameters to trade off between distortion, bitrate, and recognition performance. We characterize the classification accuracy of our proposed method as a function of bitrate and find that for low bitrates our method achieves as much as 26% higher recognition accuracy at equivalent bitrates compared to traditional methods such as Better Portable Graphics (BPG).",
+  "source": "openalex"
+ },
+ {
+  "title": "An Optimization-Ready Semantic-Performance Model for DJSCC-based Image Transmission over Wireless Channels",
+  "authors": [
+   "Ti Ti Nguyen",
+   "Vu Nguyen Ha",
+   "Thanh-Dung Le",
+   "Duc‐Dung Tran",
+   "Hung Nguyen-Kha",
+   "Dinh-Hieu Tran",
+   "Carlos Luís Marcos Rojas",
+   "Raudel Cuiman",
+   "Juan Carlos Merlano Duncán",
+   "Symeon Chatzinotas"
+  ],
+  "year": 2026,
+  "venue": "IEEE Open Journal of the Communications Society",
+  "doi": "10.1109/ojcoms.2026.3747014",
+  "arxiv": null,
+  "openalex": "W7223692288",
+  "cited_by": 0,
+  "abstract": "Deep joint source–channel coding (DJSCC) has emerged as a promising approach for image transmission over bandwidth-limited and power-constrained wireless links in remote monitoring systems (RMSs), as it jointly learns source and channel coding. However, semantic communication based on DJSCC lacks a comparable system-level abstraction that relates physical-layer conditions to semantic or task-level performance. This gap limits the use of semantic communication techniques in resource allocation, scheduling, and cross-layer wireless design. Motivated by this limitation, this paper develops an interpretable and optimization-ready semantic performance model for DJSCC-based image transmission. The proposed model is explicitly alocal parametric surrogate: its coefficients are calibrated from measurements collected on the EuroSAT dataset using the specific DJSCC and downstream vision architectures. It characterizes the joint impact of the compression ratio and channel signal-to-interference-plus-noise ratio (SINR) on both reconstruction-oriented metrics, including peak signal-to-noise ratio (PSNR), structural similarity index measure (SSIM), and mean squared error (MSE), and task-oriented metrics, including accuracy, precision, and recall. Extensive experiments are conducted over additive white Gaussian noise (AWGN) and fading channels, with and without channel equalization, and using downstream vision models. The resulting model is then embedded into a semantic-aware resource allocation framework that jointly controls transmit power and compression ratio to improve fairness among users with heterogeneous semantic-quality requirements. Numerical results show that the proposed modeling approach provides a compact bridge between learned DJSCC transmission and system-level communication optimization, enabling semantic performance to be incorporated directly into wireless resource allocation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Manipulation Attacks on Learned Image Compression",
+  "authors": [
+   "Kang Liu",
+   "Di Wu",
+   "Yangyu Wu",
+   "Yiru Wang",
+   "Dan Feng",
+   "Benjamin Tan",
+   "Siddharth Garg"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Artificial Intelligence",
+  "doi": "10.1109/tai.2023.3340982",
+  "arxiv": "2205.13253",
+  "openalex": "W4389584550",
+  "cited_by": 10,
+  "abstract": "Deep learning (DL) techniques have shown promising results in image compression compared to conventional methods, with competitive bitrate and image reconstruction quality from compressed latent. However, whereas learned image compression has progressed towards a higher peak signal-to-noise ratio (PSNR) and fewer bits per pixel (bpp), its robustness to adversarial images has never received deliberation. In this work, we investigate the robustness of image compression systems where imperceptibly manipulated inputs can stealthily precipitate a significant increase in the compressed bitrate without compromising reconstruction quality. Such attacks can potentially exhaust the storage or network bandwidth of computing systems and lead to service denial. We term it as a DoS attack on image compressors. To characterize the robustness of state-of-the-art learned image compression, we mount white-box and black-box attacks. Our white-box attack employs a gradient ascent approach on the entropy estimation of the bitstream as its bitrate approximation. We propose DCT-Net simulating JPEG compression with architectural simplicity and lightweight training as the substitute in the black-box attack, enabling fast adversarial transferability. Our results on six image compression architectures, each with six different bitrate qualities (thirty-six models in total), show that they are surprisingly fragile, where the white-box attack achieves up to 55× and black-box 2× bpp increase, respectively, revealing the devastating fragility of DL-based compression models. To improve robustness, we propose a novel compression architecturefactorAtnincorporating attention modules and a basic factorized entropy model that presents a promising trade-off between rate-distortion performance and robustness to adversarial attacks and surpasses existing learned image compressors.",
+  "source": "openalex"
+ },
+ {
+  "title": "Timeliness-Aware Joint Source and Channel Coding for Adaptive Image Transmission",
+  "authors": [
+   "Yang Xiaolei",
+   "Zi Wang",
+   "Zhijin Qin",
+   "Xiaoming Tao"
+  ],
+  "year": 2025,
+  "venue": "IEEE Globecom Workshops (GC Wkshps)",
+  "doi": "10.1109/gcwkshps68340.2025.11591120",
+  "arxiv": "2509.19754",
+  "openalex": "W7167604654",
+  "cited_by": 1,
+  "abstract": "Accurate and timely image transmission is critical for emerging time-sensitive applications such as remote sensing in satellite-assisted Internet of Things. However, the bandwidth limitation poses a significant challenge in existing wireless systems, making it difficult to fulfill the requirements of both high-fidelity and low-latency image transmission. Semantic communication is expected to break through the performance bottleneck by focusing on the transmission of goal-oriented semantic information rather than raw data. In this paper, we employ a new timeliness metric named the value of information (VoI) and propose an adaptive joint source and channel coding (JSCC) method for image transmission that simultaneously considers both reconstruction quality and timeliness. Specifically, we first design a JSCC framework for image transmission with adaptive code length. Next, we formulate a VoI maximization problem by optimizing the transmission code length of the adaptive JSCC under the reconstruction quality constraint. Then, a deep reinforcement learning-based algorithm is proposed to solve the optimization problem efficiently. Experimental results show that the proposed method significantly outperforms baseline schemes in terms of reconstruction quality and timeliness, particularly in low signal-to-noise ratio conditions, offering a promising solution for efficient and robust image transmission in time-sensitive wireless networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards Higher Information Density in Image Transmission: Learned Image Compression for Construction Site Monitoring",
+  "authors": [
+   "Jiucai Liu",
+   "Chengzhang Chai",
+   "Linghan Ouyang",
+   "Haijiang Li"
+  ],
+  "year": 2025,
+  "venue": "Kalpa publications in computing",
+  "doi": "10.29007/r8b5",
+  "arxiv": null,
+  "openalex": "W4413784223",
+  "cited_by": 0,
+  "abstract": "The digital transformation in the Architecture, Engineering, and Construction (AEC) sector underscores the growing need for efficient data transmission, especially in computer vision tasks that depend on the transfer of large volumes of images. In this work, a novel method is introduced to enhance data transmission efficiency in an edge-cloud coordinated architecture using Learned Image Compression (LIC). By integrating the LIC model with multiple downstream task models (Mask R-CNN and Faster R-CNN), the proposed framework aligns their respective latent features, resulting in a task-oriented LIC model that optimises compression for specific tasks. The approach increases the proportion of task-relevant information—referred to as information density—in the transmitted bitstream. Experimental results demonstrate that this method significantly reduces data transmission load while concentrating the transmitted bits on regions essential for downstream tasks, all without a notable decrease in task accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Semantic Importance",
+  "authors": [
+   "Qizheng Sun",
+   "Caili Guo",
+   "Yang Yang",
+   "Jiujiu Chen",
+   "Rui Tang",
+   "Chuanhong Liu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Vehicular Technology Conference",
+  "doi": "10.1109/vtc2022-fall57202.2022.10012892",
+  "arxiv": "2302.02287",
+  "openalex": "W4317419007",
+  "cited_by": 25,
+  "abstract": "The sixth-generation mobile communication system proposes the vision of smart interconnection of everything, which requires accomplishing communication tasks while ensuring the performance of intelligent tasks. A joint source-channel coding method based on semantic importance is proposed, which aims at preserving semantic information during wireless image transmission and thereby boosting the performance of intelligent tasks for images at the receiver. Specifically, we first propose semantic importance weight calculation method, which is based on the gradient of intelligent task’s perception results with respect to the features. Then, we design the semantic loss function in the way of using semantic weights to weight the features. Finally, we train the deep joint source-channel coding network using the semantic loss function. Experiment results demonstrate that the proposed method achieves up to 57.7% and 9.1% improvement in terms of intelligent task’s performance compared with the source-channel separation coding method and the deep source-channel joint coding method without considering semantics at the same compression rate and signal-to-noise ratio, respectively.",
+  "source": "openalex"
+ },
+ {
+  "title": "Progressive Learned Image Compression for Machine Perception",
+  "authors": [
+   "Jungwoo Kim",
+   "Jun-Hyuk Kim",
+   "Jongseok Lee"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2512.20070",
+  "arxiv": "2512.20070",
+  "openalex": "W7117233055",
+  "cited_by": 0,
+  "abstract": "Recent advances in learned image codecs have extended from human perception toward machine perception However, progressive image compression with fine granular scalability (FGS)-which enables decoding a single bitstream at multiple quality levels-remains unexplored for machine-oriented codecs. In this work, we propose PICM-Net, a progressive learned image compression codec for machine perception built on trit-plane coding. Starting from a human-oriented codec, we adapt it for machine perception via a spatial-frequency modulation adapter (SFMA), a hyper-synthesis low-rank adapter (HSLoRA), and progressive decoding-aware training, and analyze how task-driven adaptation alters symbol prioritization for progressive transmission. To further support real-world deployment, we introduce an adaptive decoding controller that dynamically determines the necessary decoding level at inference time, requesting additional bits only when the current suitability is insufficient for the desired confidence level. Extensive experiments demonstrate that PICM-Net achieves efficient and adaptive progressive transmission while maintaining strong downstream classification performance. Our code is available at https://github.com/kjungwoo03/PICM-Net.",
+  "source": "openalex"
+ },
+ {
+  "title": "Conditional Color Separation and Variable Rate Coding in Learned Image Compression",
+  "authors": [
+   "Panqi Jia"
+  ],
+  "year": 2026,
+  "venue": null,
+  "doi": "10.25593/open-fau-3083",
+  "arxiv": null,
+  "openalex": "W7162249220",
+  "cited_by": 0,
+  "abstract": "In the contemporary world, there is an increasing demand for image and video data. The storage and transmission of such voluminous amounts of data has proven to be a significant challenge. Given the likelihood of continued growth in this trend, the development of new methods for compressing image and video data has become imperative. Recent advancements in neural network-based compression techniques offer potential solutions to this problem. It has been demonstrated that neural networks possess the capacity to learn nonlinear transformations, complex probability distributions, and various other components that are essential for image and video compression. The utilization of neural networks facilitates the direct acquisition of image properties from image and video data, thereby enabling the development of methods for their integration within the encoder. In this thesis, we propose a novel neural network-based image compression framework and a set of variable bitrate solutions designed for this framework. In addition, the aforementioned solutions have been integrated into the JPEG AI standard platform. The superiority of the technology has been validated through subjective visual experiments. A preliminary investigation into the human visual system reveals that humans exhibit heightened sensitivity to luminance relative to chrominance. The distribution of spatial pixels in images also reveals a high correlation between chrominance and luminance distributions. It is hypothesized that a conditional color separation compression framework capable of processing luminance and chrominance in parallel will emerge as a result of the observations outlined above. This framework employs a more complex neural network for luminance, ensuring quality, while assigning a less complex neural network to chrominance to reduce computational complexity. In order to maintain the reconstruction quality of chrominance, we employ luminance as auxiliary information for chrominance. This framework has been demonstrated to achieve a 42% reduction in complexity, with a concomitant loss of only 4% in objective quality. The framework’s adoption by JPEG AI is indicative of its noteworthy balance between complexity and performance. Subsequent to the aforementioned steps, we implemented a three-dimensional quality map of equivalent dimensions to the latent tensor within the proposed framework. This approach was undertaken to enable the model to operate with variable rates. The map can be derived by expanding two maps with different functionalities. The channel-wise quality map provides overall rate control, and the spatial quality map enhances the region of interest. We also proposed an efficient bit rate matching algorithm that helps our model reach the target rate within a short time and preserve the variable rate performance. Our efficient bitrate matching technology can enhance computational speed by 4-6 times without any loss. Finally, we integrated variable bitrate technolog",
+  "source": "openalex"
+ },
+ {
+  "title": "An Efficient Learned Image Source Coding Method Based on Multidimensional High-Order Nonlinear Transform",
+  "authors": [
+   "Chao Li",
+   "TAN Wen",
+   "MENG Fanyang",
+   "LIU Wei",
+   "LIANG Yongsheng"
+  ],
+  "year": 2026,
+  "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7160576048",
+  "cited_by": 0,
+  "abstract": "To enhance compression efficiency for image transmission in bandwidth‑limited communication scenarios, a learned image source coding method based on multidimensional high‑order nonlinear transformations is proposed. First, the serially stacked linear and nonlinear operators in learned image compression are formalized as a general representation of high‑order nonlinear composite functions, and the limitations of existing transformation methods are analyzed from the perspective of Taylor expansion. Second, a multidimensional high‑order nonlinear transformation module composed of multiple pathways is designed. In this module, the channel pathway constructs a high‑dimensional channel domain and introduces multiplicative fusion to form cross‑channel high‑order feature terms, while the spatial pathway integrates directional convolutions with multiplicative fusion to enhance structure and texture modeling, thereby improving high‑order spatial expressiveness. Finally, the features from the channel and spatial pathways are combined in a Taylor‑like manner, and the module is incorporated into a learned image compression framework for end‑to‑end training. Experimental results demonstrate that the proposed method achieves notable improvements in rate–distortion performance while maintaining lower parameter and computational costs.`",
+  "source": "openalex"
+ },
+ {
+  "title": "CI-ICM: Channel Importance-driven Learned Image Coding for Machines",
+  "authors": [
+   "Yun Zhang",
+   "Junle Liu",
+   "Huan Zhang",
+   "Zhaoqing Pan",
+   "Gangyi Jiang",
+   "Weisi Lin"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2026.3743840",
+  "arxiv": "2604.05347",
+  "openalex": "W7152107460",
+  "cited_by": 0,
+  "abstract": "Traditional human vision-centric image compression methods are suboptimal for machine vision centric compression due to different visual properties and feature characteristics. To address this problem, we propose a Channel Importance-driven learned Image Coding for Machines (CI-ICM), aiming to maximize the performance of machine vision tasks at a given bitrate constraint. First, we propose a Channel Importance Generation (CIG) module to quantify channel importance in machine vision and develop a channel order loss to rank channels in descending order. Second, to properly allocate bitrate among feature channels, we propose a Feature Channel Grouping and Scaling (FCGS) module that non-uniformly groups the feature channels based on their importance and adjusts the dynamic range of each group. Based on FCGS, we further propose a Channel Importance-based Context (CI-CTX) module to allocate bits among feature groups and to preserve higher fidelity in critical channels. Third, to adapt to multiple machine tasks, we propose a Task-Specific Channel Adaptation (TSCA) module to adaptively enhance features for multiple downstream machine tasks. Experimental results on the COCO2017 dataset show that the proposed CI-ICM achieves BD-mAP@50:95 gains of 16.25$\\%$ in object detection and 13.72$\\%$ in instance segmentation over the established baseline codec. Ablation studies validate the effectiveness of each contribution, and computation complexity analysis reveals the practicability of the CI-ICM. This work establishes feature channel optimization for machine vision-centric compression, bridging the gap between image coding and machine perception.",
+  "source": "openalex"
+ },
+ {
+  "title": "YUV-guided deep compression for low-bitrate IoT image transmission",
+  "authors": [
+   "Kaiyao Li",
+   "Mingjun Ouyang",
+   "Guanzhong Liao",
+   "Xiangwei Zhu",
+   "Zhisheng Luo",
+   "Yuanling Li",
+   "Xuelin Yuan"
+  ],
+  "year": 2026,
+  "venue": "Applied Soft Computing",
+  "doi": "10.1016/j.asoc.2026.115858",
+  "arxiv": null,
+  "openalex": "W7166300769",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Compression for Images and Point Clouds",
+  "authors": [
+   "Mateen Ulhaq"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2409.08376",
+  "arxiv": "2409.08376",
+  "openalex": "W4403661661",
+  "cited_by": 0,
+  "abstract": "Over the last decade, deep learning has shown great success at performing computer vision tasks, including classification, super-resolution, and style transfer. Now, we apply it to data compression to help build the next generation of multimedia codecs. This thesis provides three primary contributions to this new field of learned compression. First, we present an efficient low-complexity entropy model that dynamically adapts the encoding distribution to a specific input by compressing and transmitting the encoding distribution itself as side information. Secondly, we propose a novel lightweight low-complexity point cloud codec that is highly specialized for classification, attaining significant reductions in bitrate compared to non-specialized codecs. Lastly, we explore how motion within the input domain between consecutive video frames is manifested in the corresponding convolutionally-derived latent space.",
+  "source": "openalex"
+ },
+ {
+  "title": "Structured Pruning and Quantization for Learned Image Compression",
+  "authors": [
+   "Md Adnan Faisal Hossain",
+   "Fengqing Maggie Zhu"
+  ],
+  "year": 2024,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip51287.2024.10648236",
+  "arxiv": "2506.01229",
+  "openalex": "W4402916091",
+  "cited_by": 6,
+  "abstract": "The high computational costs associated with large deep learning models significantly hinder their practical deployment. Model pruning has been widely explored in deep learning literature to reduce their computational burden, but its application has been largely limited to computer vision tasks such as image classification and object detection. In this work, we propose a structured pruning method targeted for Learned Image Compression (LIC) models that aims to reduce the computational costs associated with image compression while maintaining the rate-distortion performance. We employ a Neural Architecture Search (NAS) method based on the rate-distortion loss for computing the pruning ratio for each layer of the network. We compare our pruned model with the uncompressed LIC Model with same network architecture and show that it can achieve model size reduction without any BD-Rate performance drop. We further show that our pruning method can be integrated with model quantization to achieve further model compression while maintaining similar BD-Rate performance. We have made the source code available at gitlab.com/viper-purdue/lic-pruning.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Zhongwei Si",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3180802",
+  "arxiv": "2112.10961",
+  "openalex": "W4226042246",
+  "cited_by": 369,
+  "abstract": "In this paper, we propose a class of high-efficiency deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.",
+  "source": "openalex"
+ },
+ {
+  "title": "AsymLLIC: Asymmetric Lightweight Learned Image Compression",
+  "authors": [
+   "Shen Wang",
+   "Zhengxue Cheng",
+   "Donghui Feng",
+   "Guo Sheng Lu",
+   "Li Song",
+   "Wenjun Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+  "doi": "10.1109/vcip63160.2024.10849935",
+  "arxiv": "2412.17270",
+  "openalex": "W4406859145",
+  "cited_by": 6,
+  "abstract": "Learned image compression (LIC) methods often employ symmetrical encoder and decoder architectures, evitably increasing decoding time. However, practical scenarios demand an asymmetric design, where the decoder requires low complexity to cater to diverse low-end devices, while the encoder can accommodate higher complexity to improve coding performance. In this paper, we propose an asymmetric lightweight learned image compression (AsymLLIC) architecture with a novel training scheme, enabling the gradual substitution of complex decoding modules with simpler ones. Building upon this approach, we conduct a comprehensive comparison of different decoder network structures to strike a better trade-off between complexity and compression performance. Experiment results validate the efficiency of our proposed method, which not only achieves comparable performance to VVC but also offers a lightweight decoder with only 51.47 GMACs computation and 19.65M parameters. Furthermore, this design methodology can be easily applied to any LIC models, enabling the practical deployment of LIC techniques.",
+  "source": "openalex"
+ }
+]

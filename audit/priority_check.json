@@ -1,0 +1,257 @@
+[
+ {
+  "label": "BitFlat",
+  "query": {
+   "arxiv": "2610.25682"
+  },
+  "found": {
+   "arxiv": {
+    "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+    "authors": [
+     "Xinfeng Deng",
+     "Li Zhou",
+     "Haitao Chen",
+     "Shengjie Wu",
+     "Lingjin Kong",
+     "Nan Li",
+     "Haitao Zhao",
+     "Dongtang Ma"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv": "2610.25682",
+    "openalex": null,
+    "cited_by": null,
+    "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+    "source": "arxiv"
+   },
+   "openalex": {
+    "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+    "authors": [
+     "Xinfeng Deng",
+     "Li Zhou",
+     "Haitao Chen",
+     "Shengjie Wu",
+     "Lingjin Kong",
+     "Nan Li",
+     "Haitao Zhao",
+     "Dongtang Ma"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2610.25682",
+    "arxiv": "2610.25682",
+    "openalex": "W7223070425",
+    "cited_by": 0,
+    "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+    "source": "openalex"
+   }
+  }
+ },
+ {
+  "label": "DiffJSCC",
+  "query": {
+   "arxiv": "2404.17736"
+  },
+  "found": {
+   "arxiv": {
+    "title": "Diffusion-Aided Joint Source Channel Coding For High Realism Wireless Image Transmission",
+    "authors": [
+     "Mingyu Yang",
+     "Bowen Liu",
+     "Boyang Wang",
+     "Hun-Seok Kim"
+    ],
+    "year": 2024,
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv": "2404.17736",
+    "openalex": null,
+    "cited_by": null,
+    "abstract": "Deep learning-based joint source-channel coding (deep JSCC) has been demonstrated to be an effective approach for wireless image transmission. Nevertheless, most existing work adopts an autoencoder framework to optimize conventional criteria such as Mean Squared Error (MSE) and Structural Similarity Index (SSIM) which do not suffice to maintain the perceptual quality of reconstructed images. Such an issue is more prominent under stringent bandwidth constraints or low signal-to-noise ratio (SNR) conditions. To tackle this challenge, we propose DiffJSCC, a novel framework that leverages the prior knowledge of the pre-trained Statble Diffusion model to produce high-realism images via the conditional diffusion denoising process. Our DiffJSCC first extracts multimodal spatial and textual features from the noisy channel symbols in the generation phase. Then, it produces an initial reconstructed image as an intermediate representation to aid robust feature extraction and a stable training process. In the following diffusion step, DiffJSCC uses the derived multimodal features, together with channel state information such as the signal-to-noise ratio (SNR), as conditions to guide the denoising diffusion process, which converts the initial random noise to the final reconstruction. DiffJSCC employs a novel control module to fine-tune the Stable Diffusion model and adjust it to the multimodal conditions. Extensive experiments on diverse datasets reveal that our method significantly surpasses prior deep JSCC approaches on both perceptual metrics and downstream task performance, showcasing its ability to preserve the semantics of the original transmitted images. Notably, DiffJSCC can achieve highly realistic reconstructions for 768x512 pixel Kodak images with only 3072 symbols (<0.008 symbols per pixel) under 1dB SNR channels.",
+    "source": "arxiv"
+   },
+   "openalex": {
+    "title": "Diffusion-Aided Joint Source Channel Coding for High Realism Wireless Image Transmission",
+    "authors": [
+     "Mingyu Yang",
+     "Bowen Liu",
+     "Boyang Wang",
+     "Hun-Seok Kim"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Machine Learning in Communications and Networking",
+    "doi": "10.1109/tmlcn.2025.3628535",
+    "arxiv": "2404.17736",
+    "openalex": "W4415820966",
+    "cited_by": 22,
+    "abstract": "Deep learning-based joint source-channel coding (deep JSCC) has been demonstrated to be an effective approach for wireless image transmission. However, many current approaches utilize an autoencoder framework to optimize conventional metrics such as Mean Squared Error (MSE) and Structural Similarity Index (SSIM), which are inadequate for preserving the perceptual quality of reconstructed images. Such an issue is more prominent under stringent bandwidth constraints or low signal-to-noise ratio (SNR) conditions. To tackle this challenge, we propose DiffJSCC, a novel framework that leverages the prior knowledge of the pre-trained Stable Diffusion model to produce high-realism images via the conditional diffusion denoising process. First, our DiffJSCC employs an autoencoder structure similar to prior deep JSCC works to generate an initial image reconstruction from the noisy channel symbols. This preliminary reconstruction serves as an intermediate step where robust multimodal spatial and textual features are extracted. In the following diffusion step, DiffJSCC uses the derived multimodal features, together with channel state information such as the signal-to-noise ratio (SNR) and channel gain, to guide the diffusion denoising process through a novel control module. To maintain the balance between realism and fidelity, an optional intermediate guidance approach using the initial image reconstruction is implemented. Extensive experiments on diverse datasets reveal that our method significantly surpasses prior deep JSCC approaches on both perceptual metrics and downstream task performance, showcasing its ability to preserve the semantics of the original transmitted images. Notably, DiffJSCC can achieve highly realistic reconstructions for 768×512 pixel Kodak images with only 3072 symbols (<0.008 symbols per pixel) under 1dB SNR channels. The source code is available at https://github.com/mingyuyng/DiffJSCC.",
+    "source": "openalex"
+   }
+  }
+ },
+ {
+  "label": "SGD-JSCC",
+  "query": {
+   "arxiv": "2501.01138"
+  },
+  "found": {
+   "arxiv": {
+    "title": "Semantics-Guided Diffusion for Deep Joint Source-Channel Coding in Wireless Image Transmission",
+    "authors": [
+     "Maojun Zhang",
+     "Haotian Wu",
+     "Guangxu Zhu",
+     "Richeng Jin",
+     "Xiaoming Chen",
+     "Deniz Gündüz"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv": "2501.01138",
+    "openalex": null,
+    "cited_by": null,
+    "abstract": "Joint source-channel coding (JSCC) offers a promising avenue for enhancing transmission efficiency by jointly incorporating source and channel statistics into the system design. A key advancement in this area is the deep joint source and channel coding (DeepJSCC) technique that designs a direct mapping of input signals to channel symbols parameterized by a neural network, which can be trained for arbitrary channel models and semantic quality metrics. This paper advances the DeepJSCC framework toward a semantics-aligned, high-fidelity transmission approach, called semantics-guided diffusion DeepJSCC (SGD-JSCC). Existing schemes that integrate diffusion models (DMs) with JSCC face challenges in transforming random generation into accurate reconstruction and adapting to varying channel conditions. SGD-JSCC incorporates two key innovations: (1) utilizing some inherent information that contributes to the semantics of an image, such as text description or edge map, to guide the diffusion denoising process; and (2) enabling seamless adaptability to varying channel conditions with the help of a semantics-guided DM for channel denoising. The DM is guided by diverse semantic information and integrates seamlessly with DeepJSCC. In a slow fading channel, SGD-JSCC dynamically adapts to the instantaneous signal-to-noise ratio (SNR) directly estimated from the channel output, thereby eliminating the need for additional pilot transmissions for channel estimation. In a fast fading channel, we introduce a training-free denoising strategy, allowing SGD-JSCC to effectively adjust to fluctuations in channel gains. Numerical results demonstrate that, guided by semantic information and leveraging the powerful DM, our method outperforms existing DeepJSCC schemes, delivering satisfactory reconstruction performance even at extremely poor channel conditions.",
+    "source": "arxiv"
+   },
+   "openalex": {
+    "title": "Semantics-Guided Diffusion for Deep Joint Source-Channel Coding in Wireless Image Transmission",
+    "authors": [
+     "Maojun Zhang",
+     "Haotian Wu",
+     "Guangxu Zhu",
+     "Richeng Jin",
+     "Xiaoming Chen",
+     "Denız Gündüz"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/twc.2025.3591456",
+    "arxiv": "2501.01138",
+    "openalex": "W4412722340",
+    "cited_by": 26,
+    "abstract": "Joint source-channel coding (JSCC) offers a promising avenue for enhancing transmission efficiency by jointly incorporating source and channel statistics into the system design. A key advancement in this area is the deep joint source and channel coding (DeepJSCC) technique that designs a direct mapping of input signals to channel symbols parameterized by a neural network, which can be trained for arbitrary channel models and semantic quality metrics. This paper advances the DeepJSCC framework toward a semantics-aligned, high-fidelity transmission approach, called semantics-guided diffusion DeepJSCC (SGD-JSCC). Existing schemes that integrate diffusion models (DMs) with JSCC face challenges in transforming random generation into accurate reconstruction and adapting to varying channel conditions. SGD-JSCC incorporates two key innovations: (1) utilizing some inherent information that contributes to the semantics of an image, such as text description or edge map, to guide the diffusion denoising process; and (2) enabling seamless adaptability to varying channel conditions with the help of a semantics-guided DM for channel denoising. The DM is guided by diverse semantic information and integrates seamlessly with DeepJSCC. In a slow fading channel, SGD-JSCC dynamically adapts to the instantaneous channel state information (CSI) directly estimated from the channel output, thereby eliminating the need for additional pilot transmissions for channel estimation. In a fast fading channel, we introduce a training-free denoising strategy, allowing SGD-JSCC to effectively adjust to fluctuations in channel gains. Numerical results demonstrate that, guided by semantic information and leveraging the powerful DM, our method outperforms existing DeepJSCC schemes, delivering satisfactory reconstruction performance even at extremely poor channel conditions. The proposed scheme highlights the potential of incorporating diffusion models in future communication systems. The code and pretrained checkpoints will be publicly available at https://github.com/MauroZMJ/SGDJSCC, allowing integration of this scheme with existing DeepJSCC models, without the need for retraining from scratch.",
+    "source": "openalex"
+   }
+  }
+ },
+ {
+  "label": "CDDM",
+  "query": {
+   "doi": "10.1109/twc.2024.3379244"
+  },
+  "found": {
+   "crossref": {
+    "title": "CDDM: Channel Denoising Diffusion Models for Wireless Semantic Communications",
+    "authors": [
+     "Tong Wu",
+     "Zhiyong Chen",
+     "Dazhi He",
+     "Liang Qian",
+     "Yin Xu",
+     "Meixia Tao",
+     "Wenjun Zhang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/twc.2024.3379244"
+   },
+   "openalex": null
+  }
+ },
+ {
+  "label": "ResiComp",
+  "query": {
+   "doi": "10.1109/tcsvt.2025.3539747"
+  },
+  "found": {
+   "crossref": {
+    "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+    "authors": [
+     "Sixian Wang",
+     "Jincheng Dai",
+     "Xiaoqi Qin",
+     "Ke Yang",
+     "Kai Niu",
+     "Ping Zhang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "doi": "10.1109/tcsvt.2025.3539747"
+   },
+   "openalex": {
+    "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+    "authors": [
+     "Sixian Wang",
+     "Jincheng Dai",
+     "Xiaoqi Qin",
+     "Ke Yang",
+     "Kai Niu",
+     "Ping Zhang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "doi": "10.1109/tcsvt.2025.3539747",
+    "arxiv": "2502.10812",
+    "openalex": "W4407246827",
+    "cited_by": 5,
+    "abstract": "Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). In specific, ResiComp develops a bi-directional masked Transformer to model the contextual dependencies among latents with dual-functionality: 1) iteratively acts as a conditional entropy model to boost compression efficiency; 2) operates latent PLC to improve resilience. During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC’s resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience. Additionally, packet-level simulations, conducted using diverse network models based on real traces, demonstrate that ResiComp exhibits much better robustness to fluctuating network conditions compared to redundancy-based approaches like VTM + FEC.",
+    "source": "openalex"
+   }
+  }
+ },
+ {
+  "label": "Loss-Resilient Image Coding (AAAI 2025)",
+  "query": {
+   "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks"
+  },
+  "found": {
+   "openalex": {
+    "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+    "authors": [
+     "Hongwei Sha",
+     "Muchen Dong",
+     "Quanyou Luo",
+     "Ming Lu",
+     "Hao Chen",
+     "Zhan Ma"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "doi": "10.1609/aaai.v39i12.33363",
+    "arxiv": "2501.11263",
+    "openalex": "W4409364733",
+    "cited_by": 4,
+    "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments.",
+    "source": "openalex"
+   }
+  }
+ },
+ {
+  "label": "Survey on Robust DeepJSCC",
+  "query": {
+   "arxiv": "2604.04413"
+  },
+  "found": {
+   "arxiv": {
+    "title": "A Survey on Robust Deep Joint Source-Channel Coding for Semantic Communications",
+    "authors": [
+     "Eunhye Hong",
+     "Taewoo Park",
+     "Yongjune Kim"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": null,
+    "arxiv": "2604.04413",
+    "openalex": null,
+    "cited_by": null,
+    "abstract": "Semantic communications (SCs) aim to transmit only the essential information required to perform given tasks, thereby improving communication efficiency. Deep learning-based joint source-channel coding (deep JSCC) has emerged as a promising approach for SC systems; however, its performance often degrades when the deployment channels differ from the training channel conditions, making robustness a critical requirement. This paper presents a structured overview of recent methodologies for enhancing the robustness of deep JSCC. Specifically, existing approaches are categorized into two classes: robust training approaches and adaptive approaches, with the latter further divided into adaptive semantic feature selection, physical-layer adaptation, and semantic feature adaptation. Finally, we discuss promising directions, including multi-task generalization and explainability in robust SC systems.",
+    "source": "arxiv"
+   },
+   "openalex": null
+  }
+ }
+]

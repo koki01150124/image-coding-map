@@ -1,0 +1,888 @@
+[
+ {
+  "title": "Every Packet Counts: Dispersing Information for Loss-Resilient Learned Image Compression",
+  "authors": [
+   "Yuhang Wei",
+   "Chuqin Zhou",
+   "Yibo Shi",
+   "Jing Wang",
+   "Guo Lu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.11096",
+  "arxiv": "2608.11096",
+  "openalex": "W7202295875",
+  "cited_by": 0,
+  "abstract": "Learned image compression (LIC) has achieved impressive rate-distortion performance. However, existing methods remain highly vulnerable to packet loss, a common challenge in satellite and emergency communications. This vulnerability stems from non-uniform information distribution at the packetization stage and sequential decoding dependencies at the entropy coding stage. We propose an end-to-end loss-resilient image compression scheme that addresses both. Before packetization, we introduce an Inter-Channel Redistribution (ICR) mechanism to redistribute channel energy, preventing critical information concentrating in a small subset of channels. Then, an Interleaved Channel Grouping (ICG) strategy partitions latent channels in a strided manner to disperse information across packets, with each packet kept within constrained sizes. To limit cascading errors from lost packets, we adopt a two-layer dual-branch autoregressive structure to shorten the dependency chain. Extensive experiments demonstrate that our method consistently outperforms existing approaches in both reconstruction quality and stability. At 20% packet loss, it achieves an average PSNR gain of 1.84 dB over LossResilientLIC while reducing PSNR variance by an order of magnitude. Notably, trained under uniform random loss only, our model generalizes to bursty loss modeled by the Gilbert-Elliott channel, outperforming methods explicitly trained for such conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+  "authors": [
+   "Hongwei Sha",
+   "Muchen Dong",
+   "Quanyou Luo",
+   "Ming Lu",
+   "Hao Chen",
+   "Zhan Ma"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v39i12.33363",
+  "arxiv": "2501.11263",
+  "openalex": "W4409364733",
+  "cited_by": 4,
+  "abstract": "Geostationary Earth Orbit (GEO) satellite communication demonstrates significant advantages in emergency short burst data services. However, unstable satellite networks, particularly those with frequent packet loss, present a severe challenge to accurate image transmission. To address it, we propose a loss-resilient image coding approach that leverages end-to-end optimization in learned image compression (LIC). Our method builds on the channel-wise progressive coding framework, incorporating Spatial-Channel Rearrangement (SCR) on the encoder side and Mask Conditional Aggregation (MCA) on the decoder side to improve reconstruction quality with unpredictable errors. By integrating the Gilbert-Elliot model into the training process, we enhance the model's ability to generalize in real-world network conditions. Extensive evaluations show that our approach outperforms traditional and deep learning-based methods in terms of compression performance and stability under diverse packet loss, offering robust and efficient progressive transmission even in challenging environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Approximately Invertible Neural Network for Learned Image Compression",
+  "authors": [
+   "Yanbo Gao",
+   "Shuai Li",
+   "Meng Fu",
+   "Chong Lv",
+   "Zhiyuan Yang",
+   "Xun Cai",
+   "Hui Yuan",
+   "Mao Ye"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2025.3567830",
+  "arxiv": "2408.17073",
+  "openalex": "W4410343042",
+  "cited_by": 13,
+  "abstract": "Learned image compression has attracted considerable interests in recent years. An analysis transform and a synthesis transform, which can be regarded as coupled transforms, are used to encode an image to latent feature and decode the feature after quantization to reconstruct the image. Inspired by the success of invertible neural networks in generative modeling, invertible modules can be used to construct the coupled analysis and synthesis transforms. Considering the noise introduced in the feature quantization invalidates the invertible process, this paper proposes an Approximately Invertible Neural Network (A-INN) framework for learned image compression. It formulates the rate-distortion optimization in lossy image compression when using INN with quantization, which differentiates from using INN for generative modelling. Generally speaking, A-INN can be used as the theoretical foundation for any INN based lossy compression method. Based on this formulation, A-INN with a progressive denoising module (PDM) is developed to effectively reduce the quantization noise in the decoding. Moreover, a Cascaded Feature Recovery Module (CFRM) is designed to learn high-dimensional feature recovery from low-dimensional ones to further reduce the noise in feature channel compression. In addition, a Frequency-enhanced Decomposition and Synthesis Module (FDSM) is developed by explicitly enhancing the high-frequency components in an image to address the loss of high-frequency information inherent in neural network based image compression, thereby enhancing the reconstructed image quality. Extensive experiments demonstrate that the proposed A-INN framework achieves better or comparable compression efficiency than the conventional image compression approach and state-of-the-art learned image compression methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "STanH: Parametric Quantization for Variable Rate Learned Image Compression",
+  "authors": [
+   "Alberto Presta",
+   "Enzo Tartaglione",
+   "Attilio Fiandrotti",
+   "Marco Grangetto"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2025.3527883",
+  "arxiv": "2410.00557",
+  "openalex": "W4406415307",
+  "cited_by": 7,
+  "abstract": "In end-to-end learned image compression, encoder and decoder are jointly trained to minimize a R + λD cost function, where λ controls the trade-off between rate of the quantized latent representation and image quality. Unfortunately, a distinct encoder-decoder pair with millions of parameters must be trained for each λ, hence the need to switch encoders and to store multiple encoders and decoders on the user device for every target rate. This paper proposes to exploit a differentiable quantizer designed around a parametric sum of hyperbolic tangents, called STanH, that relaxes the step-wise quantization function. STanH is implemented as a differentiable activation layer with learnable quantization parameters that can be plugged into a pre-trained fixed rate model and refined to achieve different target bitrates. Experimental results show that our method enables variable rate coding with comparable efficiency to the state-of-the-art, yet with significant savings in terms of ease of deployment, training time, and storage costs.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+  "authors": [
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Ke Yang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2025.3539747",
+  "arxiv": "2502.10812",
+  "openalex": "W4407246827",
+  "cited_by": 5,
+  "abstract": "Recent advancements in neural image codecs (NICs) are of significant compression performance, but limited attention has been paid to their error resilience. These resulting NICs tend to be sensitive to packet losses, which are prevalent in real-time communications. In this paper, we investigate how to elevate the resilience ability of NICs to combat packet losses. We propose ResiComp, a pioneering neural image compression framework with feature-domain packet loss concealment (PLC). Motivated by the inherent consistency between generation and compression, we advocate merging the tasks of entropy modeling and PLC into a unified framework focused on latent space context modeling. To this end, we take inspiration from the impressive generative capabilities of large language models (LLMs), particularly the recent advances of masked visual token modeling (MVTM). In specific, ResiComp develops a bi-directional masked Transformer to model the contextual dependencies among latents with dual-functionality: 1) iteratively acts as a conditional entropy model to boost compression efficiency; 2) operates latent PLC to improve resilience. During training, we integrate MVTM to mirror the effects of packet loss, enabling a dual-functional Transformer to restore the masked latents by predicting their missing values and conditional probability mass functions. Our ResiComp jointly optimizes compression efficiency and loss resilience. Moreover, ResiComp provides flexible coding modes, allowing for explicitly adjusting the efficiency-resilience trade-off in response to varying Internet or wireless network conditions. Extensive experiments demonstrate that ResiComp can significantly enhance the NIC’s resilience against packet losses, while exhibits a worthy trade-off between compression efficiency and packet loss resilience. Additionally, packet-level simulations, conducted using diverse network models based on real traces, demonstrate that ResiComp exhibits much better robustness to fluctuating network conditions compared to redundancy-based approaches like VTM + FEC.",
+  "source": "openalex"
+ },
+ {
+  "title": "N-DEPTH: Neural Depth Encoding for Compression-Resilient 3D Video Streaming",
+  "authors": [
+   "Stephen Siemonsma",
+   "Tyler Bell"
+  ],
+  "year": 2024,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics13132557",
+  "arxiv": null,
+  "openalex": "W4400200872",
+  "cited_by": 2,
+  "abstract": "Recent advancements in 3D data capture have enabled the real-time acquisition of high-resolution 3D range data, even in mobile devices. However, this type of high bit-depth data remains difficult to efficiently transmit over a standard broadband connection. The most successful techniques for tackling this data problem thus far have been image-based depth encoding schemes that leverage modern image and video codecs. To our knowledge, no published work has directly optimized the end-to-end losses of a depth encoding scheme sandwiched around a lossy image compression codec. We present N-DEPTH, a compression-resilient neural depth encoding method that leverages deep learning to efficiently encode depth maps into 24-bit RGB representations that minimize end-to-end depth reconstruction errors when compressed with JPEG. N-DEPTH’s learned robustness to lossy compression expands to video codecs as well. Compared to an existing state-of-the-art encoding method, N-DEPTH achieves smaller file sizes and lower errors across a large range of compression qualities, in both image (JPEG) and video (H.264) formats. For example, reconstructions from N-DEPTH encodings stored with JPEG had dramatically lower error while still offering 29.8%-smaller file sizes. When H.264 video was used to target a 10 Mbps bit rate, N-DEPTH reconstructions had 85.1%-lower root mean square error (RMSE) and 15.3%-lower mean absolute error (MAE). Overall, our method offers an efficient and robust solution for emerging 3D streaming and 3D telepresence applications, enabling high-quality 3D depth data storage and transmission.",
+  "source": "openalex"
+ },
+ {
+  "title": "Conditional Coding for Flexible Learned Video Compression",
+  "authors": [
+   "Théo Ladune",
+   "Pierrick Philippe",
+   "Wassim Hamidouche",
+   "Lu Zhang",
+   "Olivier Déforges A"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2104.07930",
+  "arxiv": "2104.07930",
+  "openalex": "W3155176888",
+  "cited_by": 34,
+  "abstract": "This paper introduces a novel framework for end-to-end learned video coding. Image compression is generalized through conditional coding to exploit information from reference frames, allowing to process intra and inter frames with the same coder. The system is trained through the minimization of a rate-distortion cost, with no pre-training or proxy loss. Its flexibility is assessed under three coding configurations (All Intra, Low-delay P and Random Access), where it is shown to achieve performance competitive with the state-of-the-art video codec HEVC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep learning for embedded image compression in Earth Observation",
+  "authors": [
+   "Vinícius Alves de Oliveira"
+  ],
+  "year": 2022,
+  "venue": null,
+  "doi": "10.70675/f9a47da0z6a4fz40eaz805ez33287fd80bc5",
+  "arxiv": null,
+  "openalex": "W7151602308",
+  "cited_by": 0,
+  "abstract": "Aprentissage profond pour la compression embarquée d'images d'observation de la Terre La nouvelle génération de satellites permet l’acquisition d’images avec des résolutions spectrales et spatiales toujours plus grandes. La contrepartie est qu’une quantité croissante de données doit être traitée et transmise au sol. La compression embarquée d’images devient donc cruciale pour préserver la bande passante du canal de transmission et réduire le temps de transmission des données. Récemment, les réseaux de neurones convolutifs ont montré des résultats exceptionnels pour la compression d’images avec perte par rapport aux schémas de compression traditionnels, au prix d’une complexité de calcul élevée. Les architectures basés sur l’autoencodeur sont entraînés de bout en bout, tirant parti de grandes bases de données et de la puissance de calcul disponible sur de puissants clusters. Par conséquent, les contributions potentielles et la faisabilité des techniques d’apprentissage profond pour la compression embarqué d’images satellitaires suscitent un grand intérêt. Dans ce contexte, néanmoins, les ressources de calcul sont soumises à de sévères limitations: un compromis entre performances de compression et complexité doit être établi. Dans cette thèse, l’objectif principal est d’adapter les architectures de compression appris à la compression embarquée, de les simplifier et de les entraîner avec des images spécifiques. Dans un premier temps, nous proposons de simplifier au maximum ces architectures tout en préservant des performances élevées, en conservant notamment l’adaptabilité pour traiter des images diverses. Dans un deuxième temps, nous étudions comment de telles architectures peuvent encore être améliorées en agrégeant d’autres fonctionnalités telles que le débruitage. Ainsi, nous avons incorporé le débruitage, soit en considérant les architectures de compression mentionnées ci-dessus pour la compression et le débruitage simultanément, soit en utilisant une approche séquentielle. L’approche séquentielle consiste à utiliser au sol une architecture différente pour débruiter les images compressées issues de l’architecture de compression appris précédent. En réalisant des expériences sur des images satellites simulées mais réalistes,nous montrons que les simplifications proposées pour l’architecture de compression appris entraînent une complexité considérablement moindre tout en maintenant des performances élevées. Tant en compression apprise qu’en débruitage appris aussi, les approches conjointes et séquentielles sont intéressantes et complémentaires, permettant de surpasser les performances du système d’imagerie du CNES, et ouvrant ainsi la voie à des chaines opérationnels de compression et de débruitage des images satellites.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Secure Data Encoding Framework with AES-GCM Encryption and Compress AI-Based Learned Compression",
+  "authors": [
+   "Kurella Padma",
+   "D. Sujatha"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Technology & Emerging Research",
+  "doi": "10.64823/ijter.2505005",
+  "arxiv": null,
+  "openalex": "W7166066561",
+  "cited_by": 1,
+  "abstract": "The exponential growth of digital information exchange demands secure, efficient, and robust data encoding methods. This paper presents a unified data encoding framework integrating AES-GCM authenticated encryption with PBKDF2-based key derivation, Compress AI-driven learned compression, and a scalable multi- part encapsulation format with integrity verification via SHA-256 digests. The framework supports large payloads by dividing encrypted data into verifiable segments, enabling resilient storage and transmission. Optional image-quality enhancement using Real-ESRGAN or OpenCV EDSR is provided when the payload is visual media. Prototype evaluations show strong compression gains from Compress AI over classical JPEG+zlib baselines, strict integrity enforcement through AES-GCM tags, and accurate end-to-end reconstruction provided that all segments are available. The proposed approach is suited for privacy-preserving storage and controlled sharing in modern digital ecosystems. Keywords: AES-GCM; PBKDF2; Compress AI; Learned Compression; Authenticated Encryption; Data Integrity; Multi-Part Encoding; Real-ESRGAN; EDSR; Secure Data Processing.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep learning-based image compression for wireless communications: impacts on robustness, throughput, and latency",
+  "authors": [
+   "Mostafa Naseri",
+   "Pooya Ashtari",
+   "Mohamed Seif",
+   "Eli De Poorter",
+   "H. Vincent Poor",
+   "Adnan Shahid"
+  ],
+  "year": 2026,
+  "venue": "npj Wireless Technology",
+  "doi": "10.1038/s44459-025-00019-6",
+  "arxiv": "2411.10650",
+  "openalex": "W7147352957",
+  "cited_by": 4,
+  "abstract": "In wireless communications, transmitting images efficiently requires a careful balance of robustness, throughput, and latency, particularly under dynamic channel conditions. This paper introduces an adaptive, progressive transmission pipeline for two state-of-the-art learned image compression (LIC) architectures: a hyperprior-based model and a Vector Quantized Generative Adversarial Network (VQGAN). We design and evaluate progressive versions of both models, enabling partial image reconstruction that gracefully adapts to fluctuating channel quality. Our evaluation, conducted over a simulated Rayleigh fading channel, focuses on the often-overlooked metric of transmission waiting time. Results show that our progressive framework significantly enhances robustness and reduces latency in low Signal-to-Noise Ratio (SNR) environments where standard codecs like adaptive WebP fail. Specifically, the progressive hyperprior model excels in minimizing latency, making it ideal for delay-sensitive applications. In contrast, the progressive VQGAN provides superior image quality in poor channel conditions without requiring channel coding. Our work demonstrates that tailoring LIC models with a progressive transmission strategy offers a robust and efficient solution for reliable image delivery in challenging wireless systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "CAS-CNN: A deep convolutional neural network for image compression artifact suppression",
+  "authors": [
+   "Lukas Cavigelli",
+   "Pascal Alexander Hager",
+   "Luca Benini"
+  ],
+  "year": 2017,
+  "venue": "International Joint Conference on Neural Networks (IJCNN)",
+  "doi": "10.1109/ijcnn.2017.7965927",
+  "arxiv": "1611.07233",
+  "openalex": "W2557216475",
+  "cited_by": 214,
+  "abstract": "Lossy image compression algorithms are pervasively used to reduce the size of images transmitted over the web and recorded on data storage media. However, we pay for their high compression rate with visual artifacts degrading the user experience. Deep convolutional neural networks have become a widespread tool to address high-level computer vision tasks very successfully. Recently, they have found their way into the areas of low-level computer vision and image processing to solve regression problems mostly with relatively shallow networks. We present a novel 12-layer deep convolutional network for image compression artifact suppression with hierarchical skip connections and a multi-scale loss function. We achieve a boost of up to 1.79 dB in PSNR over ordinary JPEG and an improvement of up to 0.36 dB over the best previous ConvNet result. We show that a network trained for a specific quality factor (QF) is resilient to the QF used to compress the input image - a single network trained for QF 60 provides a PSNR gain of more than 1.5 dB over the wide QF range from 40 to 76.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Generative Modeling Reshapes Compression and Transmission: From Efficiency to Resiliency",
+  "authors": [
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Sixian Wang",
+   "Lexi Xu",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.005.2300574",
+  "arxiv": "2406.06446",
+  "openalex": "W4401387180",
+  "cited_by": 17,
+  "abstract": "Information theory and machine learning are inextricably linked and have even been referred to as “two sides of the same coin.” One particularly elegant connection is the essential equivalence between probabilistic generative modeling and data compression or transmission. In this article, we reveal the dual-functionality of deep generative models that reshapes both data compression for efficiency and transmission error concealment for resiliency. We present how the contextual predictive capabilities of powerful generative models can be well positioned to be strong compressors and estimators. In this sense, we advocate for viewing the deep generative modeling problem through the lens of end-to-end communications, and evaluating the compression and error restoration capabilities of foundation generative models. We show that the kernel of many large generative models is a powerful predictor that can capture complex relationships among semantic latent variables, and the communication viewpoints provide novel insights into semantic feature tokenization, contextual learning, and usage of deep generative models. In summary, our article highlights the essential connections of generative AI to source and channel coding techniques, and motivates researchers to make further explorations in this emerging topic.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multiple Description Convolutional Neural Networks for Image Compression",
+  "authors": [
+   "Lijun Zhao",
+   "Huihui Bai",
+   "Anhong Wang",
+   "Yao Zhao"
+  ],
+  "year": 2018,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2018.2867067",
+  "arxiv": "1801.06611",
+  "openalex": "W2963633319",
+  "cited_by": 50,
+  "abstract": "Multiple description coding (MDC) is able to stably transmit signal in un-reliable and non-prioritized networks, which has been broadly studied for several decades. However, traditional MDC does not well leverage image's context features to generate multiple descriptions. In this paper, we propose a novel standard-compliant convolutional neural network-based MDC framework, which efficiently leverages image's context information to compress the image. First, multiple description generator network (MDGN) is designed to produce appearance-similar yet feature-different multiple descriptions automatically according to image's content, which are compressed by a standard codec. Second, we present multiple description reconstruction network (MDRN) including side reconstruction networks (SRNs) and central reconstruction network (CRN). When any one of two lossy descriptions is received at decoder, SRN network is used to improve the quality of this decoded lossy description by simultaneously removing compression artifact and up-sampling. Meanwhile, we utilize CRN network with two decoded descriptions as inputs for better reconstruction, if both of lossy descriptions are available. Third, multiple description virtual codec network is proposed to bridge the gap between MDGN network and MDRN network in order to train an end-to-end MDC framework. Here, two learning algorithms are provided to train our whole framework. In addition to structural dis-similarity loss function, the produced descriptions are used as opposing labels with multiple description distance loss function to regularize the training of MDGN network. These losses guarantee that the generated descriptions are structurally similar yet finely diverse. Experimental results show a great deal of objective and subjective quality measurements to validate the effectiveness of our framework.",
+  "source": "openalex"
+ },
+ {
+  "title": "Failure-Resilient Distributed Inference With Model Compression Over Heterogeneous Edge Devices",
+  "authors": [
+   "Li Wang",
+   "Liang Li",
+   "Lianming Xu",
+   "Xian Peng",
+   "Aiguo Fei"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2024.3419831",
+  "arxiv": "2406.14185",
+  "openalex": "W4400071219",
+  "cited_by": 9,
+  "abstract": "The distributed inference paradigm enables the computation workload to be distributed across multiple devices, facilitating the implementation of deep learning based intelligent services on extremely resource-constrained Internet of Things (IoT) scenarios. Yet it raises great challenges to perform complicated inference tasks relying on a cluster of IoT devices that are heterogeneous in their computing/communication capacity and prone to crash or timeout failures. In this paper, we present RoCoIn, a robust cooperative inference mechanism for locally distributed execution of deep neural network-based inference tasks over heterogeneous edge devices. It creates a set of independent and compact student models that are learned from a large model using knowledge distillation for distributed deployment. In particular, the devices are strategically grouped to redundantly deploy and execute the same student model such that the inference process is resilient to any local failures, while a joint knowledge partition and student model assignment scheme are designed to minimize the response latency of the distributed inference system in the presence of devices with diverse capacities. Extensive simulations are conducted to corroborate the superior performance of our RoCoIn for distributed inference compared to several baselines, and the results demonstrate its efficacy in timely inference and failure resilience.",
+  "source": "openalex"
+ },
+ {
+  "title": "Inevitable Encounters: Backdoor Attacks Involving Lossy Compression",
+  "authors": [
+   "Qian Li",
+   "Yunuo Chen",
+   "Yuntian Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.13864",
+  "arxiv": "2603.13864",
+  "openalex": "W7137893966",
+  "cited_by": 0,
+  "abstract": "Real-world backdoor attacks often require poisoned datasets to be stored and transmitted before being used to compromise deep learning systems. However, in the era of big data, the inevitable use of lossy compression poses a fundamental challenge to invisible backdoor attacks. We find that triggers embedded in RGB images often become ineffective after the images are lossily compressed into binary bitstreams (e.g., JPEG files) for storage and transmission. As a result, the poisoned data lose its malicious effect after compression, causing backdoor injection to fail. In this paper, we highlight the necessity of explicitly accounting for the lossy compression process in backdoor attacks. This requires attackers to ensure that the transmitted binary bitstreams preserve malicious trigger information, so that effective triggers can be recovered in the decompressed data. Building on the region-of-interest (ROI) coding mechanism in image compression, we propose two poisoning strategies tailored to inevitable lossy compression. First, we introduce Universal Attack Activation, a universal method that uses sample-specific ROI masks to reactivate trigger information in binary bitstreams for learned image compression (LIC). Second, we present Compression-Adapted Attack, a new attack strategy that employs customized ROI masks to encode trigger information into binary bitstreams and is applicable to both traditional codecs and LIC. Extensive experiments demonstrate the effectiveness of both strategies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Tailoring Image Compression Algorithms for Optimal PSNR and Compression Ratio in Medical Diagnostic Imaging",
+  "authors": [
+   "Gurveen Vaseer Bhawesh Joshi"
+  ],
+  "year": 2025,
+  "venue": "Cuestiones de Fisioterapia",
+  "doi": "10.48047/0z8xcd97",
+  "arxiv": null,
+  "openalex": "W4410289650",
+  "cited_by": 1,
+  "abstract": "Medical diagnostic imaging his primary importance in healthcare, in terms of identifying and analyzing various condition. As the volume of medical imaging data is growing, efficient image compression is necessary to minimize time required for transmission, storage and access while maintaining image quality. In this paper we examine how to these image compression algorithms can be tailored to achieve the maximal PSNR vs. compression ratio balance for medical diagnostic images. In this work, we utilize a novel approach that combines both lossless and lossy compression techniques to achieve high quality image with a considerable reduction in data size",
+  "source": "openalex"
+ },
+ {
+  "title": "Hardware-Aware Deployment of Joint SAR Compression and Despeckling on FPGA",
+  "authors": [
+   "Cédric Léonard",
+   "Francescopaolo Sica",
+   "Martin Schulz"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.11271",
+  "arxiv": "2608.11271",
+  "openalex": "W7202346017",
+  "cited_by": 0,
+  "abstract": "Next-generation Synthetic Aperture Radar (SAR) missions will generate data far faster than they can downlink, making onboard data reduction essential for near-real-time Earth observation. Learned Image Compression (LIC) offers better rate-distortion performance than handcrafted codecs used operationally today, and recent work shows that simultaneously despeckling and compressing SAR imagery enables better representation capacity while unlocking higher compression rates. These methods, however, have yet to be confronted with the strict power, compute, and operational constraints of spaceborne systems. In this work, we bridge this gap by deploying a joint SAR Despeckling and Data Compression (DDC) framework on an embedded ZCU102 FPGA-based platform, introducing model adaptations that respect the accelerator's fixed-point arithmetic and limited set of supported operations. We evaluate four model topologies across precision levels and across CPU, GPU, and FPGA platforms, revealing several findings with direct design implications. We find that replacing conventional GDN activation functions with plain ReLU improves quality on SAR, suggesting that design principles established for compression of natural images do not necessarily transfer to SAR imagery. In addition, we demonstrate that residual blocks offer little representational benefit for ten times the compute, and show that the FPGA is the most energy-efficient of the platforms tested. Together, these results set a functioning edge deployment workflow and an evidence-based starting point for onboard SAR compression. The code is available at https://github.com/CedricLeon/SAR_DDC_FPGA.",
+  "source": "openalex"
+ },
+ {
+  "title": "Attack-Resilient Image Watermarking Using Stable Diffusion",
+  "authors": [
+   "Lijun Zhang",
+   "Xiao Liu",
+   "Antoni Virós Martin",
+   "Cindy Bearfield",
+   "Yuriy Brun",
+   "Hui Guan"
+  ],
+  "year": 2024,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/079017-1215",
+  "arxiv": "2401.04247",
+  "openalex": "W4415797807",
+  "cited_by": 28,
+  "abstract": "Watermarking images is critical for tracking image provenance and proving ownership. With the advent of generative models, such as stable diffusion, that can create fake but realistic images, watermarking has become particularly important to make human-created images reliably identifiable. Unfortunately, the very same stable diffusion technology can remove watermarks injected using existing methods. To address this problem, we present ZoDiac, which uses a pre-trained stable diffusion model to inject a watermark into the trainable latent space, resulting in watermarks that can be reliably detected in the latent vector even when attacked. We evaluate ZoDiac on three benchmarks, MS-COCO, DiffusionDB, and WikiArt, and find that ZoDiac is robust against state-of-the-art watermark attacks, with a watermark detection rate above 98% and a false positive rate below 6.4%, outperforming state-of-the-art watermarking methods. We hypothesize that the reciprocating denoising process in diffusion models may inherently enhance the robustness of the watermark when faced with strong attacks and validate the hypothesis. Our research demonstrates that stable diffusion is a promising approach to robust watermarking, able to withstand even stable-diffusion--based attack methods. ZoDiac is open-sourced and available at https://github.com/zhanglijun95/ZoDiac.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Parameter Compression for Efficient and Privacy-Preserving Federated Learning",
+  "authors": [
+   "Yiming Chen",
+   "Lusine Abrahamyan",
+   "Hichem Sahli B",
+   "Nikos Deligiannis"
+  ],
+  "year": 2024,
+  "venue": "IEEE Open Journal of the Communications Society",
+  "doi": "10.1109/ojcoms.2024.3409191",
+  "arxiv": null,
+  "openalex": "W4399310974",
+  "cited_by": 11,
+  "abstract": "Federated learning performs collaborative training of deep learning models among multiple clients, safeguarding data privacy, security, and legal adherence by preserving training data locally. While the training data remains stored in the client side, instead of being shared with the server and other clients, recent work has shown that the data can still be reconstructed by local updates or gradients. Different defense techniques have been proposed to address this information leakage from the gradient or updates, including introducing noise to gradients, performing gradient compression (such as sparsification), and feature perturbation. However, these methods either impede model convergence, impose restrictions on model architecture incur, or entail substantial communication costs. Furthermore, balancing model performance, communication cost and privacy preservation remains a challenging trade-off. To tackle the information leakage during collaborative training, we introduce an adaptive autoencoder-based method for compressing and, thus, perturbing the model parameters. The client utilizes an autoencoder to acquire the representation of the local model parameters within few local iterations, and then shares the compressed model parameters with the server, rather than the true model parameters. The use of the autoencoder for lossy compression serves as an effective protection against information leakage from the updates. Additionally, the perturbation is intrinsically linked to the autoencoder's input, thereby achieving a perturbation with respect to the parameters of different layers. Moreover, our approach can reduce 4.1 × the communication rate compared to federated averaging. We empirically validate our method using two widely-used models within the context of federated learning, considering three datasets, and assess its performance against several well-established defense frameworks. The results indicate that our approach attains a model performance nearly identical to that of unmodified local updates, while effectively preventing information leakage and reducing communication costs in comparison to other methods, including noisy gradients, gradient sparsification, and PRECODE.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Compression Using Neural Networks: A Review",
+  "authors": [
+   "Haval Tariq Sadeeq",
+   "Thamer Hassan Hameed",
+   "Abdo Sulaiman Abdi",
+   "Ayman Nashwan Abdulfatah"
+  ],
+  "year": 2021,
+  "venue": "International Journal of Online and Biomedical Engineering (iJOE)",
+  "doi": "10.3991/ijoe.v17i14.26059",
+  "arxiv": null,
+  "openalex": "W4200088678",
+  "cited_by": 22,
+  "abstract": "Computer images consist of huge data and thus require more memory space. The compressed image requires less memory space and less transmission time. Imaging and video coding technology in recent years has evolved steadily. However, the image data growth rate is far above the compression ratio growth, Considering image and video acquisition system popularization. It is generally accepted, in particular that further improvement of coding efficiency within the conventional hybrid coding system is increasingly challenged. A new and exciting image compression solution is also offered by the deep convolution neural network (CNN), which in recent years has resumed the neural network and achieved significant success both in artificial intelligent fields and in signal processing. In this paper we include a systematic, detailed and current analysis of image compression techniques based on the neural network. Images are applied to the evolution and growth of compression methods based on the neural networks. In particular, the end-to-end frames based on neural networks are reviewed, revealing fascinating explorations of frameworks/standards for next-generation image coding. The most important studies are highlighted and future trends even envisaged in relation to image coding topics using neural networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Lu Guo",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3726512",
+  "arxiv": "2608.19590",
+  "openalex": "W7203906458",
+  "cited_by": 0,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "openalex"
+ },
+ {
+  "title": "MCUCoder: Adaptive Bitrate Learned Video Compression for IoT Devices",
+  "authors": [
+   "Ali Hojjat",
+   "Janek Haberer",
+   "Olaf Landsiedel"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2411.19442",
+  "arxiv": "2411.19442",
+  "openalex": "W4405030373",
+  "cited_by": 2,
+  "abstract": "The rapid growth of camera-based IoT devices demands the need for efficient video compression, particularly for edge applications where devices face hardware constraints, often with only 1 or 2 MB of RAM and unstable internet connections. Traditional and deep video compression methods are designed for high-end hardware, exceeding the capabilities of these constrained devices. Consequently, video compression in these scenarios is often limited to M-JPEG due to its high hardware efficiency and low complexity. This paper introduces , an open-source adaptive bitrate video compression model tailored for resource-limited IoT settings. MCUCoder features an ultra-lightweight encoder with only 10.5K parameters and a minimal 350KB memory footprint, making it well-suited for edge devices and MCUs. While MCUCoder uses a similar amount of energy as M-JPEG, it reduces bitrate by 55.65% on the MCL-JCV dataset and 55.59% on the UVG dataset, measured in MS-SSIM. Moreover, MCUCoder supports adaptive bitrate streaming by generating a latent representation that is sorted by importance, allowing transmission based on available bandwidth. This ensures smooth real-time video transmission even under fluctuating network conditions on low-resource devices. Source code available at https://github.com/ds-kiel/MCUCoder.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reparo: Loss-Resilient Generative Codec for Video Conferencing",
+  "authors": [
+   "Tianhong Li",
+   "Vibhaalakshmi Sivaraman",
+   "Karimi, Pantea",
+   "Lijie Fan",
+   "Mohammad Alizadeh",
+   "Dina Katabi"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.14135",
+  "arxiv": "2305.14135",
+  "openalex": "W4378508736",
+  "cited_by": 11,
+  "abstract": "Packet loss during video conferencing often results in poor quality and video freezing. Retransmitting lost packets is often impractical due to the need for real-time playback, and using Forward Error Correction (FEC) for packet recovery is challenging due to the unpredictable and bursty nature of Internet losses. Excessive redundancy leads to inefficiency and wasted bandwidth, while insufficient redundancy results in undecodable frames, causing video freezes and quality degradation in subsequent frames. We introduce Reparo -- a loss-resilient video conferencing framework based on generative deep learning models to address these issues. Our approach generates missing information when a frame or part of a frame is lost. This generation is conditioned on the data received thus far, considering the model's understanding of how people and objects appear and interact within the visual realm. Experimental results, using publicly available video conferencing datasets, demonstrate that Reparo outperforms state-of-the-art FEC-based video conferencing solutions in terms of both video quality (measured through PSNR, SSIM, and LPIPS) and the occurrence of video freezes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Compressed learning-based onboard semantic compression for remote sensing platforms",
+  "authors": [
+   "Protim Bhattacharjee",
+   "Peter Jung"
+  ],
+  "year": 2024,
+  "venue": "Image and signal processing for remote sensing. Conference",
+  "doi": "10.1117/12.3031472",
+  "arxiv": "2409.01988",
+  "openalex": "W4404513426",
+  "cited_by": 0,
+  "abstract": "Earth observation (EO) plays a crucial role in creating and sustaining a resilient and prosperous society that has far reaching consequences for all life and the planet itself. Remote sensing platforms like satellites, airborne platforms, and more recently dones and UAVs are used for EO. They collect large amounts of data and this needs to be downlinked to Earth for further processing and analysis. Bottleneck for such high throughput acquisition is the downlink bandwidth. Data-centric solutions to image compression is required to address this deluge. In this work, semantic compression is studied through a compressed learning framework that utilizes only fast and sparse matrix-vector multiplication to encode the data. Camera noise and a communication channel are the considered sources of distortion. The complete semantic communication pipeline then consists of a learned low-complexity compression matrix that acts on the noisy camera output to generate onboard a vector of observations that is downlinked through a communication channel, processed through an unrolled network and then fed to a deep learning model performing the necessary downstream tasks; image classification is studied. Distortions are compensated by unrolling layers of NA-ALISTA with a wavelet sparsity prior. Decoding is thus a plug-n-play approach designed according to the camera/environment information and downstream task. The deep learning model for the downstream task is jointly fine-tuned with the compression matrix and the unrolled network through the loss function in an end-to-end fashion. It is shown that addition of a recovery loss along with the task dependent losses improves the downstream performance in noisy settings at low compression ratios.",
+  "source": "openalex"
+ },
+ {
+  "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+  "authors": [
+   "Amit Vaisman",
+   "Gal Pomerants",
+   "Raz Lapid"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2604.05743",
+  "arxiv": "2604.05743",
+  "openalex": "W7151818635",
+  "cited_by": 0,
+  "abstract": "Modern image compression methods are typically optimized for the rate--distortion--perception trade-off, whereas their robustness to bit-level corruption is rarely examined. We show that diffusion-based compressors built on the Reverse Channel Coding (RCC) paradigm are substantially more robust to bit flips than classical and learned codecs. We further introduce a more robust variant of Turbo-DDCM that significantly improves robustness while only minimally affecting the rate--distortion--perception trade-off. Our findings suggest that RCC-based compression can yield more resilient compressed representations, potentially reducing reliance on error-correcting codes in highly noisy environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "A screen‐shooting resilient document image watermarking scheme using deep neural network",
+  "authors": [
+   "Sulong Ge",
+   "Jianwei Fei",
+   "Zhihua Xia",
+   "Yao Tong",
+   "Jian Weng",
+   "Jia-Nan Liu"
+  ],
+  "year": 2022,
+  "venue": "IET Image Processing",
+  "doi": "10.1049/ipr2.12653",
+  "arxiv": "2203.05198",
+  "openalex": "W4308146468",
+  "cited_by": 37,
+  "abstract": "Abstract With the advent of the screen‐reading era, the confidential documents displayed on the screen can be easily captured by a camera without leaving any traces. Thus, this paper proposes a novel screen‐shooting resilient watermarking scheme for document image using deep neural network. By applying this scheme, when the watermarked image is displayed on the screen and captured by a camera, the watermark can be still extracted from the captured photographs. Specifically, the scheme is an end‐to‐end neural network with an encoder to embed watermark and a decoder to extract watermark. During the training process, a distortion layer between encoder and decoder is added to simulate the distortions introduced by screen‐shooting process in real scenes, such as camera distortion, shooting distortion, and light source distortion. Furthermore, a background sensitive loss and a lpips loss are used to improve visual quality of the watermarked document images in the training process. Besides, a strength factor adjustment strategy is also designed to improve the visual quality with little loss of bit extraction accuracy. The experimental results show that the proposed scheme has higher visual quality and robustness than the other two recent state‐of‐the‐art methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lossless Image Compression Using Multi-level Dictionaries: Binary Images",
+  "authors": [
+   "Samar Agnihotri",
+   "Renu Rameshan",
+   "Ritwik Ghosal"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2406.03087",
+  "arxiv": "2406.03087",
+  "openalex": "W4399447827",
+  "cited_by": 0,
+  "abstract": "Lossless image compression is required in various applications to reduce storage or transmission costs of images, while requiring the reconstructed images to have zero information loss compared to the original. Existing lossless image compression methods either have simple design but poor compression performance, or complex design, better performance, but with no performance guarantees. In our endeavor to develop a lossless image compression method with low complexity and guaranteed performance, we argue that compressibility of a color image is essentially derived from the patterns in its spatial structure, intensity variations, and color variations. Thus, we divide the overall design of a lossless image compression scheme into three parts that exploit corresponding redundancies. We further argue that the binarized version of an image captures its fundamental spatial structure. In this first part of our work, we propose a scheme for lossless compression of binary images. The proposed scheme first learns dictionaries of $16\\times16$, $8\\times8$, $4\\times4$, and $2\\times 2$ square pixel patterns from various datasets of binary images. It then uses these dictionaries to encode binary images. These dictionaries have various interesting properties that are further exploited to construct an efficient and scalable scheme. Our preliminary results show that the proposed scheme consistently outperforms existing conventional and learning based lossless compression approaches, and provides, on average, as much as $1.5\\times$ better performance than a common general purpose lossless compression scheme (WebP), more than $3\\times$ better performance than a state of the art learning based scheme, and better performance than a specialized scheme for binary image compression (JBIG2).",
+  "source": "openalex"
+ },
+ {
+  "title": "GRACE: Loss-Resilient Real-Time Video through Neural Codecs",
+  "authors": [
+   "Yihua Cheng",
+   "Ziyi Zhang",
+   "Hanchen Li",
+   "Anton Arapin",
+   "Zhang, Yue",
+   "Qizheng Zhang",
+   "Liu, Yuhan",
+   "Zhang, Xu",
+   "Yan, Francis Y.",
+   "Mazumdar, Amrita",
+   "Nick Feamster",
+   "Junchen Jiang"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2305.12333",
+  "arxiv": "2305.12333",
+  "openalex": "W4377864171",
+  "cited_by": 8,
+  "abstract": "In real-time video communication, retransmitting lost packets over high-latency networks is not viable due to strict latency requirements. To counter packet losses without retransmission, two primary strategies are employed -- encoder-based forward error correction (FEC) and decoder-based error concealment. The former encodes data with redundancy before transmission, yet determining the optimal redundancy level in advance proves challenging. The latter reconstructs video from partially received frames, but dividing a frame into independently coded partitions inherently compromises compression efficiency, and the lost information cannot be effectively recovered by the decoder without adapting the encoder. We present a loss-resilient real-time video system called GRACE, which preserves the user's quality of experience (QoE) across a wide range of packet losses through a new neural video codec. Central to GRACE's enhanced loss resilience is its joint training of the neural encoder and decoder under a spectrum of simulated packet losses. In lossless scenarios, GRACE achieves video quality on par with conventional codecs (e.g., H.265). As the loss rate escalates, GRACE exhibits a more graceful, less pronounced decline in quality, consistently outperforming other loss-resilient schemes. Through extensive evaluation on various videos and real network traces, we demonstrate that GRACE reduces undecodable frames by 95% and stall duration by 90% compared with FEC, while markedly boosting video quality over error concealment methods. In a user study with 240 crowdsourced participants and 960 subjective ratings, GRACE registers a 38% higher mean opinion score (MOS) than other baselines.",
+  "source": "openalex"
+ },
+ {
+  "title": "Memristor-based storage system with convolutional autoencoder-based image compression network",
+  "authors": [
+   "Yulin Feng",
+   "Yizhou Zhang",
+   "Zheng Zhou",
+   "Peng Cheng Huang",
+   "Lifeng Liu",
+   "Xiaoyan Liu",
+   "Jinfeng Kang"
+  ],
+  "year": 2024,
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-024-45312-0",
+  "arxiv": null,
+  "openalex": "W4391610228",
+  "cited_by": 62,
+  "abstract": "The exponential growth of various complex images is putting tremendous pressure on storage systems. Here, we propose a memristor-based storage system with an integrated near-storage in-memory computing-based convolutional autoencoder compression network to boost the energy efficiency and speed of the image compression/retrieval and improve the storage density. We adopt the 4-bit memristor arrays to experimentally demonstrate the functions of the system. We propose a step-by-step quantization aware training scheme and an equivalent transformation for transpose convolution to improve the system performance. The system exhibits a high (>33 dB) peak signal-to-noise ratio in the compression and decompression of the ImageNet and Kodak24 datasets. Benchmark comparison results show that the 4-bit memristor-based storage system could reduce the latency and energy consumption by over 20×/5.6× and 180×/91×, respectively, compared with the server-grade central processing unit-based/the graphics processing unit-based processing system, and improve the storage density by more than 3 times.",
+  "source": "openalex"
+ },
+ {
+  "title": "Representation Compression and Scientific Loss in Materials AI",
+  "authors": [
+   "Claire Dupont",
+   "J. Martin"
+  ],
+  "year": 2023,
+  "venue": "Journal of Artificial Intelligence for Materials Science",
+  "doi": "10.68159/n403891302",
+  "arxiv": null,
+  "openalex": "W7211917518",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "LSP-Swarm: A Learned Semantic Protocol for Resilient Multi-Hop Distributed Inference",
+  "authors": [
+   "Kingsley Essel Arthur",
+   "Christabel Martey",
+   "Evans Tachie-Menson",
+   "Nathaniel Blaboe"
+  ],
+  "year": 2026,
+  "venue": null,
+  "doi": "10.36227/techrxiv.176800919.99207548/v1",
+  "arxiv": null,
+  "openalex": "W7119970285",
+  "cited_by": 0,
+  "abstract": "Distributed intelligence in communication-denied environments (e.g., UAV swarms, underground sensor networks, and underwater links) faces a structural constraint: transmitting raw sensor streams or continuous intermediate activations is often infeasible, while executing large monolithic models on every node violates size-weight-power-and-cost (SWaP-C) limits. Existing approaches split between networking-grade reliability mechanisms that preserve packets but do not preserve semantics, and learned transmission schemes that compress effectively in single-hop settings but can degrade under multi-hop impairments, producing hop-wise drift and brittle downstream behavior. We introduce LSP-Swarm, a protocol-first framework for resilient multi-hop semantic inference that treats intermediate representations as a communicated language rather than brittle tensors. LSP-Swarm packetizes semantics into a hierarchical tuple 𝑇 = [𝐻 slow , 𝐵 fast ], where a low-entropy, task-relevant header 𝐻 slow , trained under an Information Bottleneck perspective, serves as a stable semantic anchor, and a higher-capacity token payload 𝐵 fast carries conditional detail. Relay nodes perform integrity-aware semantic decode-and-forward by combining lightweight hard checks (CRC/ECC) with a soft semantic consistency score 𝑆 trust that deterministically selects repair-andforward, forward-with-uncertainty, or header-only fallback. To mitigate anchored failures, LSP-Swarm supports compact header appeals that are resolved by multi-view arbitration at the sink. Because the contribution is protocol and systems design, we define a reproducible evaluation suite with auditable bitrate accounting derived directly from packet budgets, standardized topology and channel stress regimes, and integrity decision metrics (AUROC, calibration, FAR/FDR) to enable independent validation and collaboration.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptive Importance Channel Selection for Perceptual Image Compression",
+  "authors": [
+   "Yifan He",
+   "Feng Li",
+   "Huihui Bai",
+   "Yao Zhao"
+  ],
+  "year": 2020,
+  "venue": "KSII Transactions on Internet and Information Systems",
+  "doi": "10.3837/tiis.2020.09.014",
+  "arxiv": null,
+  "openalex": "W3092754692",
+  "cited_by": 0,
+  "abstract": "Recently, auto-encoder has emerged as the most popular method in convolutional neural network (CNN) based image compression and has achieved impressive performance.In the traditional auto-encoder based image compression model, the encoder simply sends the features of last layer to the decoder, which cannot allocate bits over different spatial regions in an efficient way.Besides, these methods do not fully exploit the contextual information under different receptive fields for better reconstruction performance.In this paper, to solve these issues, a novel auto-encoder model is designed for image compression, which can effectively transmit the hierarchical features of the encoder to the decoder.Specifically, we first propose an adaptive bit-allocation strategy, which can adaptively select an importance channel.Then, we conduct the multiply operation on the generated importance mask and the features of the last layer in our proposed encoder to achieve efficient bit allocation.Moreover, we present an additional novel perceptual loss function for more accurate image details.Extensive experiments demonstrated that the proposed model can achieve significant superiority compared with JPEG and JPEG2000 both in both subjective and objective quality.Besides, our model shows better performance than the state-of-the-art convolutional neural network (CNN)-based image compression methods in terms of PSNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "SoundSpring: Loss-Resilient Audio Transceiver With Dual-Functional Masked Language Modeling",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Sixian Wang",
+   "Siye Wang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3531406",
+  "arxiv": "2501.12696",
+  "openalex": "W4406610604",
+  "cited_by": 6,
+  "abstract": "In this paper, we propose “SoundSpring”, a cutting-edge error-resilient audio transceiver that marries the robustness benefits of joint source-channel coding (JSCC) while also being compatible with current digital communication systems. Unlike recent deep JSCC transceivers, which learn to directly map audio signals to analog channel-input symbols via neural networks, our SoundSpring adopts the layered architecture that delineates audio compression from digital coded transmission, but it sufficiently exploits the impressive in-context predictive capabilities of large language (foundation) models. Integrated with the casual-order mask learning strategy, our single model operates on the latent feature domain and serve dual-functionalities: as efficient audio compressors at the transmitter and as effective mechanisms for packet loss concealment at the receiver. By jointly optimizing towards both audio compression efficiency and transmission error resiliency, we show that mask-learned language models are indeed powerful contextual predictors, and our dual-functional compression and concealment framework offers fresh perspectives on the application of foundation language models in audio communication. Through extensive experimental evaluations, we establish that SoundSpring apparently outperforms contemporary audio transmission systems in terms of signal fidelity metrics and perceptual quality scores. These new findings not only advocate for the practical deployment of SoundSpring in learning-based audio communication systems but also inspire the development of future audio semantic transceivers.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Step Size Quantization",
+  "authors": [
+   "Steven K. Esser",
+   "Jeffrey L. McKinstry",
+   "Deepika Bablani",
+   "Rathinakumar Appuswamy",
+   "Dharmendra S. Modha"
+  ],
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1902.08153",
+  "arxiv": "1902.08153",
+  "openalex": "W2916954108",
+  "cited_by": 527,
+  "abstract": "Deep networks run with low precision operations at inference time offer power and space advantages over high precision alternatives, but need to overcome the challenge of maintaining high accuracy as precision decreases. Here, we present a method for training such networks, Learned Step Size Quantization, that achieves the highest accuracy to date on the ImageNet dataset when using models, from a variety of architectures, with weights and activations quantized to 2-, 3- or 4-bits of precision, and that can train 3-bit models that reach full precision baseline accuracy. Our approach builds upon existing methods for learning weights in quantized networks by improving how the quantizer itself is configured. Specifically, we introduce a novel means to estimate and scale the task loss gradient at each weight and activation layer's quantizer step size, such that it can be learned in conjunction with other network parameters. This approach works using different levels of precision as needed for a given system and requires only a simple modification of existing training code.",
+  "source": "openalex"
+ },
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": "W7222852238",
+  "cited_by": 0,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Compression",
+  "authors": [
+   "Shibani Santurkar",
+   "David Mark Budden",
+   "Nir Shavit"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1703.01467",
+  "arxiv": "1703.01467",
+  "openalex": "W3037197620",
+  "cited_by": 14,
+  "abstract": "Traditional image and video compression algorithms rely on hand-crafted encoder/decoder pairs (codecs) that lack adaptability and are agnostic to the data being compressed. Here we describe the concept of generative compression, the compression of data using generative models, and suggest that it is a direction worth pursuing to produce more accurate and visually pleasing reconstructions at much deeper compression levels for both image and video data. We also demonstrate that generative compression is orders-of-magnitude more resilient to bit error rates (e.g. from noisy wireless channels) than traditional variable-length coding schemes.",
+  "source": "openalex"
+ },
+ {
+  "title": "SLIC: Secure Learned Image Codec through Compressed Domain Watermarking to Defend Image Manipulation",
+  "authors": [
+   "Chen-Hsiu Huang",
+   "Ja‐Ling Wu"
+  ],
+  "year": 2024,
+  "venue": "ACM International Conference on Multimedia in Asia (MMAsia)",
+  "doi": "10.1145/3696409.3700161",
+  "arxiv": "2410.15075",
+  "openalex": "W4405867749",
+  "cited_by": 2,
+  "abstract": "The digital image manipulation and advancements in Generative AI, such as Deepfake, has raised significant concerns regarding the authenticity of images shared on social media. Traditional image forensic techniques, while helpful, are often passive and insufficient against sophisticated tampering methods. This paper introduces the Secure Learned Image Codec (SLIC), a novel active approach to ensuring image authenticity through watermark embedding in the compressed domain. SLIC leverages neural network-based compression to embed watermarks as adversarial perturbations in the latent space, creating images that degrade in quality upon re-compression if tampered with. This degradation acts as a defense mechanism against unauthorized modifications. Our method involves fine-tuning a neural encoder/decoder to balance watermark invisibility with robustness, ensuring minimal quality loss for non-watermarked images. Experimental results demonstrate SLIC's effectiveness in generating visible artifacts in tampered images, thereby preventing their redistribution. This work represents a significant step toward developing secure image codecs that can be widely adopted to safeguard digital image integrity.",
+  "source": "openalex"
+ },
+ {
+  "title": "GRACE: Loss-Resilient Real-Time Video Communication Using Data-Scalable Autoencoder",
+  "authors": [
+   "Yihua Cheng",
+   "Anton Arapin",
+   "Ziyi Zhang",
+   "Qizheng Zhang",
+   "Hanchen Li",
+   "Nick Feamster",
+   "Junchen Jiang"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2210.16639",
+  "arxiv": "2210.16639",
+  "openalex": "W4307937549",
+  "cited_by": 5,
+  "abstract": "Across many real-time video applications, we see a growing need (especially in long delays and dynamic bandwidth) to allow clients to decode each frame once any (non-empty) subset of its packets is received and improve quality with each new packet. We call it data-scalable delivery. Unfortunately, existing techniques (e.g., FEC, RS and Fountain Codes) fall short: they require either delivery of a minimum number of packets to decode frames, and/or pad video data with redundancy in anticipation of packet losses, which hurts video quality if no packets get lost. This work explores a new approach, inspired by recent advances of neural-network autoencoders, which make data-scalable delivery possible. We present Grace, a concrete data-scalable real-time video system. With the same video encoding, Grace's quality is slightly lower than traditional codec without redundancy when no packet is lost, but with each missed packet, its quality degrades much more gracefully than existing solutions, allowing clients to flexibly trade between frame delay and video quality. Grace makes two contributions: (1) it trains new custom autoencoders to balance compression efficiency and resilience against a wide range of packet losses; and (2) it uses a new transmission scheme to deliver autoencoder-coded frames as individually decodable packets. We test Grace (and traditional loss-resilient schemes and codecs) on real network traces and videos, and show that while Grace's compression efficiency is slightly worse than heavily engineered video codecs, it significantly reduces tail video frame delay (by 2$\\times$ at the 95th percentile) with the marginally lowered video quality",
+  "source": "openalex"
+ },
+ {
+  "title": "Gradient-Leakage Resilient Federated Learning",
+  "authors": [
+   "Wenqi Wei",
+   "Ling Liu",
+   "Yanzhao Wu",
+   "Gong Su",
+   "Arun Iyengar"
+  ],
+  "year": 2021,
+  "venue": "IEEE International Conference on Distributed Computing Systems (ICDCS)",
+  "doi": "10.1109/icdcs51616.2021.00081",
+  "arxiv": "2107.01154",
+  "openalex": "W3203780767",
+  "cited_by": 116,
+  "abstract": "Federated learning(FL) is an emerging distributed learning paradigm with default client privacy because clients can keep sensitive data on their devices and only share local training parameter updates with the federated server. However, recent studies reveal that gradient leakages in FL may compromise the privacy of client training data. This paper presents a gradient leakage resilient approach to privacy-preserving federated learning with per training example-based client differential privacy, coined as Fed-CDP. It makes three original contributions. First, we identify three types of client gradient leakage threats in federated learning even with encrypted client-server communications. We articulate when and why the conventional server coordinated differential privacy approach, coined as Fed-SDP, is insufficient to protect the privacy of the training data. Second, we introduce Fed-CDP, the per example-based client differential privacy algorithm, and provide a formal analysis of Fed-CDP with the (∊,δ) differential privacy guarantee, and a formal comparison between Fed-CDP and Fed-SDP in terms of privacy accounting. Third, we formally analyze the privacy-utility tradeoff for providing differential privacy guarantee by Fed-CDP and present a dynamic decay noise-injection policy to further improve the accuracy and resiliency of Fed-CDP. We evaluate and compare Fed-CDP and Fed-CDP(decay) with Fed-SDP in terms of differential privacy guarantee and gradient leakage resilience over five benchmark datasets. The results show that the Fed-CDP approach outperforms conventional Fed-SDP in terms of resilience to client gradient leakages while offering competitive accuracy performance in federated learning.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+  "authors": [
+   "Xueqin Niu",
+   "Mufan Liu",
+   "Yifan Wang",
+   "Le Yang",
+   "Jun Sun",
+   "Yiling Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.11845",
+  "arxiv": "2608.11845",
+  "openalex": "W7202394886",
+  "cited_by": 0,
+  "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning Perspectives in Compression, Distributed Computing, and Brain Imaging",
+  "authors": [
+   "Mohammadreza Reza Ebrahimi"
+  ],
+  "year": 2024,
+  "venue": "TSpace (University of Toronto)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7132974855",
+  "cited_by": 0,
+  "abstract": "This thesis explores three critical dimensions in machine learning: modeling, training, and theory. Each dimension, represented by studies in brain imaging, distributed computing, and compression, addresses unique challenges with the goal of advancing machine learning methodologies and applications. First, within the domain of data modeling, we introduce Shared Gaussian Process Factor Analysis (S-GPFA), a novel probabilistic model for analyzing multi-subject fMRI datasets. S-GPFA addresses the challenge of modeling individual variability while uncovering shared temporal dynamics and spatial organization of brain activity. By incorporating Gaussian Process priors and emphasizing the temporal dimension of data, S-GPFA offers a more accurate and interpretable representation of brain activity compared to traditional static methods. The application of S-GPFA to a large fMRI dataset demonstrates its ability to identify group-specific dynamical characteristics and brain regions with meaningful functional variability, providing valuable insights into socioemotional cognitive capacity and potential avenues for studying psychiatric disorders. Second, focusing on the training aspect, we address the problem of straggler mitigation in distributed training of machine learning models. We present two innovative coding schemes, Selective Reattempt Sequential Gradient Coding (SR-SGC) and Multiplexed Sequential Gradient Coding (M-SGC), that leverage coding across both the spatial and temporal dimensions to achieve straggler resilience while reducing computational load. These schemes exploit the temporal diversity of straggler behavior, adapting to varying worker speeds and minimizing delays. Experiments on a large-scale AWS Lambda cluster demonstrate the effectiveness of the proposed schemes in reducing runtime and improving training performance under real-world conditions. Third, from a theoretical perspective, we investigate the foundations of data coupling and compression through the lens of information theory. We introduce the Minimum Entropy Coupling with Bottleneck (MEC-B) framework for lossy compression under logarithmic loss. This framework extends the classical Minimum Entropy Coupling (MEC) by incorporating rate limits, enabling a more controlled and flexible approach to compression. We explore the Entropy-Bounded Information Maximization (EBIM) formulation for compression and propose a novel search algorithm for identifying deterministic mappings with guaranteed performance bounds. Additionally, we characterize the optimal solution in the neighbourhood of deterministic mappings, providing valuable theoretical insights into the problem structure. Through these studies, this thesis contributes to machine learning methodologies and applications across diverse domains, ranging from brain imaging and distributed computing to information theory and data compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Progressive Neural Compression for Adaptive Image Offloading Under Timing Constraints",
+  "authors": [
+   "Ruiqi Wang",
+   "Hanyang Liu",
+   "Jiaming Qiu",
+   "Moran Xu",
+   "Roch A. Guérin",
+   "Chenyang Lu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Real-Time Systems Symposium (RTSS)",
+  "doi": "10.1109/rtss59052.2023.00020",
+  "arxiv": "2310.05306",
+  "openalex": "W4391583792",
+  "cited_by": 10,
+  "abstract": "IoT devices are increasingly the source of data for machine learning (ML) applications running on edge servers. Data transmissions from devices to servers are often over local wireless networks whose bandwidth is not just limited but, more importantly, variable. Furthermore, in cyber-physical systems interacting with the physical environment, image offloading is also commonly subject to timing constraints. It is, therefore, important to develop an adaptive approach that maximizes the inference performance of ML applications under timing constraints and the resource constraints of IoT devices. In this paper, we use image classification as our target application and propose progressive neural compression (PNC) as an efficient solution to this problem. Although neural compression has been used to compress images for different ML applications, existing solutions often produce fixed-size outputs that are unsuitable for timing-constrained offloading over variable bandwidth. To address this limitation, we train a multi-objective rateless autoencoder that optimizes for multiple compression rates via stochastic taildrop to create a compression solution that produces features ordered according to their importance to inference performance. Features are then transmitted in that order based on available bandwidth, with classification ultimately performed using the (sub)set of features received by the deadline. We demonstrate the benefits of PNC over state-of-the-art neural compression approaches and traditional compression methods on a testbed comprising an IoT device and an edge server connected over a wireless network with varying bandwidth.",
+  "source": "openalex"
+ },
+ {
+  "title": "Data Exfiltration by Compression Attack: Definition and Evaluation on Medical Image Data",
+  "authors": [
+   "Huiyu LI",
+   "Nicholas Ayache",
+   "Hervé Delingette"
+  ],
+  "year": 2025,
+  "venue": "The Journal of Machine Learning for Biomedical Imaging",
+  "doi": "10.59275/j.melba.2025-113f",
+  "arxiv": "2511.21227",
+  "openalex": "W4417097588",
+  "cited_by": 0,
+  "abstract": "With the rapid expansion of data lakes storing health data and hosting AI algorithms, a prominent concern arises: how safe is it to export machine learning models from these data lakes? In particular, deep network models, widely used for health data processing, encode information from their training dataset, potentially leading to the leakage of sensitive information upon export. This paper thoroughly examines this issue in the context of medical imaging data and introduces a novel data exfiltration attack based on image compression techniques. This attack, termed Data Exfiltration by Compression, requires only access to a data lake and is based on lossless or lossy image compression methods. Unlike previous data exfiltration attacks, it is compatible with any image processing task and depends solely on an exported network model without requiring any additional information collected during the training process. We explore various scenarios, and techniques to limit the size of the exported model and conceals the compression codes within the network. Using two public datasets of CT and MR images, we demonstrate that this attack can effectively steal medical images and reconstruct them outside the data lake with high fidelity, achieving an optimal balance between compression and reconstruction quality. Additionally, we investigate the impact of basic differential privacy measures, such as adding Gaussian noise to the model parameters, to prevent the data exfiltration by compression attack. We also show how the attacker can make its attack resilient to differential privacy at the expense of decreasing the number of stolen images. Lastly, we propose an alternative prevention strategy by fine-tuning the model to be exported.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Model Compression and Acceleration for Deep Neural Networks",
+  "authors": [
+   "Yu Cheng",
+   "Duo Wang",
+   "Pan Zhou",
+   "Tao Zhang"
+  ],
+  "year": 2017,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1710.09282",
+  "arxiv": "1710.09282",
+  "openalex": "W2766839578",
+  "cited_by": 1035,
+  "abstract": "Deep neural networks (DNNs) have recently achieved great success in many visual recognition tasks. However, existing deep neural network models are computationally expensive and memory intensive, hindering their deployment in devices with low memory resources or in applications with strict latency requirements. Therefore, a natural thought is to perform model compression and acceleration in deep networks without significantly decreasing the model performance. During the past five years, tremendous progress has been made in this area. In this paper, we review the recent techniques for compacting and accelerating DNN models. In general, these techniques are divided into four categories: parameter pruning and quantization, low-rank factorization, transferred/compact convolutional filters, and knowledge distillation. Methods of parameter pruning and quantization are described first, after that the other techniques are introduced. For each category, we also provide insightful analysis about the performance, related applications, advantages, and drawbacks. Then we go through some very recent successful methods, for example, dynamic capacity networks and stochastic depths networks. After that, we survey the evaluation matrices, the main datasets used for evaluating the model performance, and recent benchmark efforts. Finally, we conclude this paper, discuss remaining the challenges and possible directions for future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "Robust and Transferable Backdoor Attacks Against Deep Image Compression With Selective Frequency Prior",
+  "authors": [
+   "Yi Yu",
+   "Yufei Wang",
+   "Wenhan Yang",
+   "Lanqing Guo",
+   "Shijian Lu",
+   "Ling‐Yu Duan",
+   "Yap‐Peng Tan",
+   "Alex Chichung Kot"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2024.3507873",
+  "arxiv": "2412.01646",
+  "openalex": "W4404810593",
+  "cited_by": 8,
+  "abstract": "Recent advancements in deep learning-based compression techniques have demonstrated remarkable performance surpassing traditional methods. Nevertheless, deep neural networks have been observed to be vulnerable to backdoor attacks, where an added pre-defined trigger pattern can induce the malicious behavior of the models. In this paper, we propose a novel approach to launch a backdoor attack with multiple triggers against learned image compression models. Drawing inspiration from the widely used discrete cosine transform (DCT) in existing compression codecs and standards, we propose a frequency-based trigger injection model that adds triggers in the DCT domain. In particular, we design several attack objectives that are adapted for a series of diverse scenarios, including: 1) attacking compression quality in terms of bit-rate and reconstruction quality; 2) attacking task-driven measures, such as face recognition and semantic segmentation in downstream applications. To facilitate more efficient training, we develop a dynamic loss function that dynamically balances the impact of different loss terms with fewer hyper-parameters, which also results in more effective optimization of the attack objectives with improved performance. Furthermore, we consider several advanced scenarios. We evaluate the resistance of the proposed backdoor attack to the defensive pre-processing methods and then propose a two-stage training schedule along with the design of robust frequency selection to further improve resistance. To strengthen both the cross-model and cross-domain transferability on attacking downstream CV tasks, we propose to shift the classification boundary in the attack loss during training. Extensive experiments also demonstrate that by employing our trained trigger injection models and making slight modifications to the encoder parameters of the compression model, our proposed attack can successfully inject multiple backdoors accompanied by their corresponding triggers into a single image compression model.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error-Resilient Semantic Communication for Speech Transmission Over Packet-Loss Networks",
+  "authors": [
+   "Zhuohang Han",
+   "Jincheng Dai",
+   "Shengshi Yao",
+   "Junyi Wang",
+   "Yanlong Li",
+   "Kai Niu",
+   "Wei Xu",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3673476",
+  "arxiv": "2512.08203",
+  "openalex": "W7135010278",
+  "cited_by": 2,
+  "abstract": "Real-time speech communication over wireless networks remains challenging, as conventional channel protection mechanisms cannot effectively counter packet loss under stringent bandwidth and latency constraints. Semantic communication has emerged as a promising paradigm for enhancing the robustness of speech transmission by means of joint source channel coding (JSCC). However, its cross-layer design hinders practical deployment due to the incompatibility with existing digital communication systems. To address this, we perform JSCC over the network layer to combat packet loss and support real deployment. Inspired by the generative latent modeling, we propose Glaris, a generative latent-prior-based resilient speech semantic communication framework that performs resilient transform coding in the generative latent space. Generative latent priors enable high-quality packet loss concealment (PLC) at the receiver side, well-balancing semantic consistency and reconstruction fidelity. Additionally, an integrated error resilience mechanism is designed to mitigate the error propagation and improve the effectiveness of PLC. Compared with traditional packet-level forward error correction (FEC) strategies, our new method achieves enhanced robustness over dynamic wireless networks while reducing redundancy overhead significantly. Experimental results on the LibriSpeech dataset demonstrate that Glaris consistently outperforms existing error-resilient codecs, achieving JSCC-level robustness while maintaining seamless compatibility with existing systems, and it also strikes a favorable balance between transmission efficiency and error resilience.",
+  "source": "openalex"
+ },
+ {
+  "title": "Training with Quantization Noise for Extreme Model Compression",
+  "authors": [
+   "Angela Fan",
+   "Pierre Stock",
+   "Benjamin Graham",
+   "Édouard Grave",
+   "Rémi Gribonval",
+   "Hervé Jeǵou",
+   "Armand Joulin"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2004.07320",
+  "arxiv": "2004.07320",
+  "openalex": "W3017022649",
+  "cited_by": 173,
+  "abstract": "We tackle the problem of producing compact models, maximizing their accuracy for a given model size. A standard solution is to train networks with Quantization Aware Training, where the weights are quantized during training and the gradients approximated with the Straight-Through Estimator. In this paper, we extend this approach to work beyond int8 fixed-point quantization with extreme compression methods where the approximations introduced by STE are severe, such as Product Quantization. Our proposal is to only quantize a different random subset of weights during each forward, allowing for unbiased gradients to flow through the other weights. Controlling the amount of noise and its form allows for extreme compression rates while maintaining the performance of the original model. As a result we establish new state-of-the-art compromises between accuracy and model size both in natural language processing and image classification. For example, applying our method to state-of-the-art Transformer and ConvNet architectures, we can achieve 82.5% accuracy on MNLI by compressing RoBERTa to 14MB and 80.0 top-1 accuracy on ImageNet by compressing an EfficientNet-B3 to 3.3MB.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Generative Video Compression",
+  "authors": [
+   "Salvator Lombardo",
+   "Lombardo, Salvator",
+   "Christopher Schroers",
+   "Stephan Mandt"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1810.02845",
+  "arxiv": "1810.02845",
+  "openalex": "W2991043961",
+  "cited_by": 49,
+  "abstract": "The usage of deep generative models for image compression has led to impressive performance gains over classical codecs while neural video compression is still in its infancy. Here, we propose an end-to-end, deep generative modeling approach to compress temporal sequences with a focus on video. Our approach builds upon variational autoencoder (VAE) models for sequential data and combines them with recent work on neural image compression. The approach jointly learns to transform the original sequence into a lower-dimensional representation as well as to discretize and entropy code this representation according to predictions of the sequential VAE. Rate-distortion evaluations on small videos from public data sets with varying complexity and diversity show that our model yields competitive results when trained on generic video content. Extreme compression performance is achieved when training the model on specialized content.",
+  "source": "openalex"
+ },
+ {
+  "title": "ResiTok: A Resilient Tokenization-Enabled Framework for Ultra-Low-Rate and Robust Image Transmission",
+  "authors": [
+   "Zhenyu Liu",
+   "Yi Ma",
+   "Rahim Tafazolli"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)",
+  "doi": "10.1109/spawc66079.2025.11143268",
+  "arxiv": "2505.01870",
+  "openalex": "W4413978698",
+  "cited_by": 1,
+  "abstract": "Real-time transmission of visual data over wireless networks remains highly challenging, even when leveraging advanced deep neural networks, particularly under severe channel conditions such as limited bandwidth and weak connectivity. In this paper, we propose a novel Resilient Tokenization-Enabled (ResiTok) framework designed for ultra-low-rate image transmission that achieves exceptional robustness while maintaining high reconstruction quality. By reorganizing visual information into hierarchical token groups consisting of essential key tokens and supplementary detail tokens, ResiTok enables progressive encoding and graceful degradation of visual quality under constrained channel conditions. A key contribution is our resilient 1D tokenization method integrated with a specialized zero-out training strategy, which systematically simulates token loss during training, empowering the neural network to effectively compress and reconstruct images from incomplete token sets. Furthermore, the channel-adaptive coding and modulation design dynamically allocates coding resources according to prevailing channel conditions, yielding superior semantic fidelity and structural consistency even at extremely low channel bandwidth ratios. Evaluation results demonstrate that ResiTok outperforms state-of-the-art methods in both semantic similarity and visual quality, with significant advantages under challenging channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Wireless Video Token Communication over Block Fading Channels",
+  "authors": [
+   "Bingyan Xie",
+   "Yongjeong Oh",
+   "Zihan Chen",
+   "Jihong Park",
+   "Yongpeng Wu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.08698",
+  "arxiv": "2608.08698",
+  "openalex": "W7202163975",
+  "cited_by": 0,
+  "abstract": "Video token communication represents video content as discrete tokens that differ in their importance to reconstruction and exhibit temporal dependencies. When these tokens are packetized for wireless transmission, block fading can cause multiple important or correlated tokens to be lost together, severely degrading video reconstruction. To address this issue, we propose a loss-resilient wireless video token communication (WVTC) framework. WVTC evaluates token importance from the intrinsic predictive structure of video tokens, assigning high priority to structural I-tokens and measuring P-token importance by temporal neighborhood novelty. A shuffled mixed I/P-token packetization scheme disperses structural anchors and correlated temporal regions across packets. Using only current block channel state information, an online scheduler jointly considers packet importance density, MCS-dependent decoding reliability, block capacity, and importance concentration when allocating packets to fading blocks. At the receiver, a fine-tuned detokenizer reconstructs missing content from surviving tokens without retransmission. Numerical results demonstrate improved perceptual quality and more graceful degradation under increasing packet error rates.",
+  "source": "openalex"
+ }
+]

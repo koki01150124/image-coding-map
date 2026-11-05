@@ -1,0 +1,549 @@
+[
+ {
+  "title": "HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget",
+  "authors": [
+   "Harish Santhanalakshmi Ganesan",
+   "Hariharan M. S.",
+   "Prabhurajhan R"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.34582",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We describe HobbyLM, a family of small sparse Mixture-of-Experts (MoE) models trained from scratch with a few hundred to a few thousand dollars of rented GPU time. The core is a decoder-only transformer with fine-grained experts, sigmoid routing with auxiliary-loss-free load balancing, grouped-query attention with per-head QK-normalization, and aMuon/AdamW optimizer split. Each of these choices was selected with a single-variable ablation suite at 130M parameters. On this architecture we train a 500M-parameter model (169M active) on 40B FineWeb tokens and post-train it into a chat model, a masked-diffusion language model, a function-calling and computer-use agent, and a single \"omni\" checkpoint that reads text, images, video, sound and speech through frozen encoders and small projectors. We run these models on a laptop CPU with a from-scratch Rust inference engine. Two of the authors then adopted the architecture without architectural changes to build HobbyLM-1B (1.04B total, 305M active parameters), trained on a 100B-token curated mixture with a high-quality anneal. HobbyLM-1B reaches a 47.5 average on seven zero-shot benchmarks, and its builders also release an instruction-tuned model and an on-device macOS computer-use adapter. Finally, we describe HobbyLM-Image, a 333M-parameter flow-matching diffusion transformer that generates 1024x1024 images in a 32x-compressed latent space, together with a dependency-light CPU implementation of the full text-to-image pipeline. We report what worked, what did not, and where the small-scale ceilings lie. We also state for each component which author designed or built it.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Shengjie Wu",
+   "Lingjin Kong",
+   "Nan Li",
+   "Haitao Zhao",
+   "Dongtang Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25682",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+  "source": "arxiv"
+ },
+ {
+  "title": "GVCCTurbo: Rate-Compute Quality Scheduling for Codebook Driven Generative Compression",
+  "authors": [
+   "Ziyue Zeng",
+   "Dingjie Peng",
+   "Xun Su",
+   "Hiroshi Watanabe"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.03517",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Codebook-driven generative compression uses a pretrained image or video generator as a zero-shot visual prior and transmits compact codebook indices to guide reconstruction at ultra-low bitrate. Current codecs tie each finite-rate correction to a fresh prior evaluation, so shortening the sampler also removes correction slots that carry target-dependent information. We propose GVCCTurbo, a BPP-driven scheduler that separates expensive prior refreshes from codebook corrections: after calibrating an atom-count operating point and skip-gap ratio once per protocol, it maps a target codebook-payload bitrate to a trajectory length and refresh period, making BPP a schedule input instead of a fixed consequence of sampler length. The same endpoint-prediction and finite-rate steering interface covers GVCC-style rectified-flow video and DDCM-style diffusion image compression, preserving zero-training deployment and compatibility with future distilled priors. Native 1080p curves position the complete zero-shot codec in the ultra-low-bitrate regime. In a controlled 720p Wan-GVCC study, the scheduler cuts prior evaluations from 20 to 9 for a $\\sim\\!44\\%$ measured decoding-time reduction shared across the whole schedule family, at a small shared LPIPS cost on high-motion content; within that family, uniform refresh thinning (pure-skip) is a boundary point, and the BPP-aware interior point trades $2.9\\%$ fewer codebook-payload bits for consistently higher PSNR at comparable LPIPS. These results support BPP-to-compute scheduling as a controllable extension of sampler-length tuning, without requiring the allocated point to dominate every boundary point.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FreeShadow: Training-Free Shadow Removal via Illumination Transfer and Selective Content Preservation in Diffusion Models",
+  "authors": [
+   "Yinan Wang",
+   "Yan Huang",
+   "Yong Xu",
+   "Patrick Le Callet"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.26715",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Existing supervised and unsupervised shadow removal methods often suffer from limited generalization due to the insufficient diversity of available training datasets, while zero-shot methods tend to produce artifacts and require time-consuming test-time optimization. To address these issues, we propose FreeShadow, a training-free shadow removal method built upon pretrained diffusion models, which exploits diffusion priors for shadow removal without any training or optimization. For illumination recovery, we propose an illumination transfer attention (ITA), which re-weights the self-attention maps in diffusion model to transfer illumination cues from non-shadow to shadow regions. For content preservation, we analyze the effects of illumination variations on self-attention maps and latent high-frequency features in diffusion model, and selectively preserve illumination-invariant components to maintain content fidelity while suppressing residual shadows. We further propose local texture-preserving relighting (LTPR) to mitigate local texture misalignment caused by VAE compression. Extensive experiments demonstrate that our method achieves strong generalization and produces realistic shadow-free images.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Do You Remember? Toward Memory-Centric Multimodal AI",
+  "authors": [
+   "Xuguang Yu",
+   "Weigang Zheng",
+   "Minyue Yu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.11919",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Human memory is reconstructive, not a faithful recording. Current multimodal LLMs (MLLMs) lack this capability: they process images through a frozen visual encoder, produce a one-shot text output, and discard internal representations. We present DoYouRemember, a three-stage architecture introducing reconstructive memory into MLLMs: (1) a VQ-VAE compresses images into discrete visual tokens, (2) a LoRA-fine-tuned LLM jointly attends to visual and text tokens, and (3) a Diffusion Decoder reconstructs images from the LLM's hidden states. On 1,000 3D facial skin texture maps and 99,000 unlabeled facial images, we find that LLM hidden states contain approximately zero recoverable visual information -- the same Decoder producing clear reconstructions from VQ-VAE tokens (pre-LLM) produces pure noise from LLM hidden states (post-LLM), demonstrating that the LLM understands images but does not remember them. Training a shared memory matrix M under backpropagation systematically fails due to gradient cancellation (O(1/sqrt(N)) attenuation). We identify three root causes and show that local EMA updating resolves all three: each image updates only its top-8 slots out of 64, preserving inter-slot diversity. The resulting M (229K parameters, 16x compressed) approaches the VQ upper bound on unseen test images. Scaling to 1,024 slots surpasses it (LPIPS 0.056 vs. 0.071), as M's continuous representation avoids VQ quantization error. We unify these findings under an information-theoretic framework: memory is lossy compression, recall is decompression, and hallucination is an inherent property of lossy decompression rather than a defect.",
+  "source": "arxiv"
+ },
+ {
+  "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+  "authors": [
+   "Haoyu Zhao",
+   "Xingyue Zhao",
+   "Hangyu Li",
+   "Biao Gong",
+   "Kehan Li",
+   "Siteng Huang",
+   "Xin Li",
+   "Deli Zhao",
+   "Zhongyu Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.06558",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Scaling robot learning requires massive, diverse trajectory data, yet collection is currently bottlenecked by physical teleoperation, where every demonstration binds operator time to specific hardware and workspaces. We introduce digital teleoperation, a paradigm that decouples data collection from physical constraints by replacing the real robot with a generative world model. In this framework, an operator's hand-pose stream drives a robot-centric generative world model to synthesize high-fidelity egocentric videos from a single reference image. The recorded pose stream serves as an embodiment-agnostic action label transferable to any target robot via standard retargeting, yielding complete state-action trajectories for imitation learning independent of physical hardware. We instantiate this paradigm in RynnWorld-Teleop, a system that integrates depth-aware skeletal conditioning, progressive human-to-robot training on a video Diffusion Transformer (DiT), and streaming autoregressive distillation. This pipeline compresses the generative process into a single-pass inference, enabling 40+ FPS, real-time interactive generation on a single H100 GPU. Policies trained exclusively on RynnWorld-Teleop-generated data achieve effective zero-shot Sim2Real transfer across dexterous and diverse bimanual tasks. Moreover, augmenting real-world datasets with our digitally teleoperated data consistently improves success rates, demonstrating that RynnWorld-Teleop serves as a high-fidelity, scalable data engine for the next generation of robotic agents.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ZeroGVC: Zero-Shot Generative Video Compression with Autoregressive Diffusion Priors",
+  "authors": [
+   "Yixin Gao",
+   "Xiaohan Pan",
+   "Lin Liu",
+   "Xin Li",
+   "Zhibo Chen",
+   "Qi Tian"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.22371",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent generative video compression methods leverage powerful generative priors to achieve perceptually pleasing reconstructions. However, most existing approaches require additional training to adapt generative models to produce realistic reconstructions from compact representations. In this paper, we propose ZeroGVC, a zero-shot generative video compression framework that leverages pretrained autoregressive diffusion priors for low-delay video reconstruction. ZeroGVC encodes the first frame of each group of pictures (GOP) with an image codec and represents subsequent P-frames through Codebook-Guided Autoregressive Latent Compression. This design is motivated by our observation that the compression scheme of denoising diffusion codebook models is effective in few-step consistency sampling. By selecting compact combinations of reproducible codebook noise vectors, ZeroGVC steers the latent denoising trajectory toward the target P-frame while allowing the decoder to reproduce the same trajectory in only a few denoising steps. In addition, we design an optional bidirectional reference mode that mitigates error propagation by leveraging the next I-frame context without introducing any additional bitrate overhead. Extensive experiments on standard video compression benchmarks demonstrate that ZeroGVC achieves superior perceptual reconstruction quality at ultra-low bitrates without any additional training.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Addressing Detail Bottlenecks in Latent Diffusion for RGB-to-SWIR Image Translation",
+  "authors": [
+   "Kaili Wang",
+   "Martin Dimitrievski",
+   "Jose Maria Salvador",
+   "Ben Stoffelen",
+   "David Van Hamme",
+   "Lore Goetschalckx"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.19961",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Latent diffusion models (LDMs) enable efficient image-to-image translation but discard fine spatial details during compression, degrading downstream perception tasks. We identify two bottlenecks: the autoencoder, which loses spatial information, and the conditioning pathway, which further degrades the source signal through naive downsampling. We propose two lightweight, backbone-agnostic fixes: a Source-Conditioned Autoencoder (SCAE) that injects high-resolution source features into the decoder via skip connections, and a Learnable Guidance Encoder (LGE) that replaces naive downsampling with a learned conditioning signal. Evaluated on RGB-to-SWIR translation for driving scenes with two denoiser backbones (U-Net and DiT), our approach improves detection mAP by up to 2x over the latent diffusion baseline, with up to 3.4x gains on small objects (COCO-small, <32^2 px^2), while achieving state-of-the-art FID. We further show that FID and detection performance are poorly correlated, motivating multi-axis evaluation. Results generalise zero-shot to the public RASMD benchmark. We will publicly release test data with annotations, all checkpoints, and training code.",
+  "source": "arxiv"
+ },
+ {
+  "title": "GAP3D: Generative Alignment of VLM Latents to Patch-Level Embeddings for 3D Generation",
+  "authors": [
+   "Polytimi Anna Gkotsi",
+   "Andrii Zadaianchuk",
+   "Mohammad Mahdi Derakhshani"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2605.28995",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent approaches integrating vision-language models (VLMs) as prompt encoders for generative model conditioning typically rely on expensive end-to-end training or map features to compressed representations, discarding the dense spatial structure required for geometry-aware tasks like 3D asset generation. To address this, we propose GAP3D, a modular, diffusion-based approach that aligns VLM-generated latents directly to the complete, patch-level feature space of a pre-trained image encoder, enabling a frozen downstream generative model to utilize a VLM as prompt encoder while maintaining a spatially structured conditioning signal. Evaluated on 3D asset generation, our method bypasses the need for large-scale 3D data by training mainly on general-domain image-text pairs. It also exhibits emergent zero-shot capabilities for multimodal prompts, despite being trained exclusively on text input. Finally, while currently prioritizing high-level semantics over fine-grained detail, GAP3D demonstrates that the representation gap between VLM and image-encoder feature spaces can be partially bridged through diffusion-based alignment, taking the first steps towards a modular integration of foundation models through generative alignment to dense embedding spaces.",
+  "source": "arxiv"
+ },
+ {
+  "title": "MaMe & MaRe: Matrix-Based Token Merging and Restoration for Efficient Visual Perception and Synthesis",
+  "authors": [
+   "Simin Huo",
+   "Ning Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.13432",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Token compression is crucial for mitigating the quadratic complexity of self-attention mechanisms in Vision Transformers (ViTs), which often involve numerous input tokens. Existing methods, such as ToMe, rely on GPU-inefficient operations (e.g., sorting, scattered writes), introducing overheads that limit their effectiveness. We introduce MaMe, a training-free, differentiable token merging method based entirely on matrix operations, which is GPU-friendly to accelerate ViTs. Additionally, we present MaRe, its inverse operation, for token restoration, forming a MaMe+MaRe pipeline for image synthesis. When applied to pre-trained models, MaMe doubles ViT-B throughput with a 2% accuracy drop. Notably, fine-tuning the last layer with MaMe boosts ViT-B accuracy by 1.0% at 1.1x speed. In SigLIP2-B@512 zero-shot classification, MaMe provides 1.3x acceleration with negligible performance degradation. In video tasks, MaMe accelerates VideoMAE-L by 48.5% on Kinetics-400 with only a 0.84% accuracy loss. Furthermore, MaMe achieves simultaneous improvements in both performance and speed on some tasks. In image synthesis, the MaMe+MaRe pipeline enhances quality while reducing Stable Diffusion v2.1 generation latency by 31%. Collectively, these results demonstrate MaMe's and MaRe's effectiveness in accelerating vision models. The code is available at https://github.com/cominder/mame}{https://github.com/cominder/mame.",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Noise Constrained Diffusion (NC-Diffusion) Framework for High Fidelity Image Compression",
+  "authors": [
+   "Zhenyu Du",
+   "Yanbo Gao",
+   "Shuai Li",
+   "Yiyang Li",
+   "Hui Yuan",
+   "Mao Ye"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.06568",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "With the great success of diffusion models in image generation, diffusion-based image compression is attracting increasing interests. However, due to the random noise introduced in the diffusion learning, they usually produce reconstructions with deviation from the original images, leading to suboptimal compression results. To address this problem, in this paper, we propose a Noise Constrained Diffusion (NC-Diffusion) framework for high fidelity image compression. Unlike existing diffusion-based compression methods that add random Gaussian noise and direct the noise into the image space, the proposed NC-Diffusion formulates the quantization noise originally added in the learned image compression as the noise in the forward process of diffusion. Then a noise constrained diffusion process is constructed from the ground-truth image to the initial compression result generated with quantization noise. The NC-Diffusion overcomes the problem of noise mismatch between compression and diffusion, significantly improving the inference efficiency. In addition, an adaptive frequency-domain filtering module is developed to enhance the skip connections in the U-Net based diffusion architecture, in order to enhance high-frequency details. Moreover, a zero-shot sample-guided enhancement method is designed to further improve the fidelity of the image. Experiments on multiple benchmark datasets demonstrate that our method can achieve the best performance compared with existing methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DA-Flow: Degradation-Aware Optical Flow Estimation with Diffusion Models",
+  "authors": [
+   "Jaewon Min",
+   "Jaeeun Lee",
+   "Yeji Choi",
+   "Paul Hyunbin Cho",
+   "Jin Hyeon Kim",
+   "Tae-Young Lee",
+   "Jongsik Ahn",
+   "Hwayeong Lee",
+   "Seonghyun Park",
+   "Seungryong Kim"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2603.23499",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Optical flow models trained on high-quality data often degrade severely when confronted with real-world corruptions such as blur, noise, and compression artifacts. To overcome this limitation, we formulate Degradation-Aware Optical Flow, a new task targeting accurate dense correspondence estimation from real-world corrupted videos. Our key insight is that the intermediate representations of image restoration diffusion models are inherently corruption-aware but lack temporal awareness. To address this limitation, we lift the model to attend across adjacent frames via full spatio-temporal attention, and empirically demonstrate that the resulting features exhibit zero-shot correspondence capabilities. Based on this finding, we present DA-Flow, a hybrid architecture that fuses these diffusion features with convolutional features within an iterative refinement framework. DA-Flow substantially outperforms existing optical flow methods under severe degradation across multiple benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Field-Space Autoencoder for Scalable Climate Emulators",
+  "authors": [
+   "Johannes Meuer",
+   "Maximilian Witte",
+   "Étiénne Plésiat",
+   "Thomas Ludwig",
+   "Christopher Kadow"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2601.15102",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Kilometer-scale Earth system models are essential for capturing local climate change. However, these models are computationally expensive and produce petabyte-scale outputs, which limits their utility for applications such as probabilistic risk assessment. Here, we present the Field-Space Autoencoder, a scalable climate emulation framework based on a spherical compression model that overcomes these challenges. By utilizing Field-Space Attention, the model efficiently operates on native climate model output and therefore avoids geometric distortions caused by forcing spherical data onto Euclidean grids. This approach preserves physical structures significantly better than convolutional baselines. By producing a structured compressed field, it serves as a good baseline for downstream generative emulation. In addition, the model can perform zero-shot super-resolution that maps low-resolution large ensembles and scarce high-resolution data into a shared representation. We train a generative diffusion model on these compressed fields. The model can simultaneously learn internal variability from abundant low-resolution data and fine-scale physics from sparse high-resolution data. Our work bridges the gap between the high volume of low-resolution ensemble statistics and the scarcity of high-resolution physical detail.",
+  "source": "arxiv"
+ },
+ {
+  "title": "VLIC: Vision-Language Models As Perceptual Judges for Human-Aligned Image Compression",
+  "authors": [
+   "Kyle Sargent",
+   "Ruiqi Gao",
+   "Philipp Henzler",
+   "Charles Herrmann",
+   "Aleksander Holynski",
+   "Li Fei-Fei",
+   "Jiajun Wu",
+   "Jason Zhang"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2512.15701",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Evaluations of image compression performance which include human preferences have generally found that naive distortion functions such as MSE are insufficiently aligned to human perception. In order to align compression models to human perception, prior work has employed differentiable perceptual losses consisting of neural networks calibrated on large-scale datasets of human psycho-visual judgments. We show that, surprisingly, state-of-the-art vision-language models (VLMs) can replicate binary human two-alternative forced choice (2AFC) judgments zero-shot when asked to reason about the differences between pairs of images. Motivated to exploit the powerful zero-shot visual reasoning capabilities of VLMs, we propose Vision-Language Models for Image Compression (VLIC), a diffusion-based image compression system designed to be post-trained with binary VLM judgments. VLIC leverages existing techniques for diffusion model post-training with preferences, rather than distilling the VLM judgments into a separate perceptual loss network. We show that calibrating this system on VLM judgments produces competitive or state-of-the-art performance on human-aligned visual compression depending on the dataset, according to perceptual metrics and large-scale user studies. We additionally conduct an extensive analysis of the VLM-based reward design and training procedure and share important insights. More visuals are available at https://kylesargent.github.io/vlic",
+  "source": "arxiv"
+ },
+ {
+  "title": "Are Image-to-Video Models Good Zero-Shot Image Editors?",
+  "authors": [
+   "Zechuan Zhang",
+   "Zhenyuan Chen",
+   "Zongxin Yang",
+   "Yi Yang"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2511.19435",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Large-scale video diffusion models show strong world simulation and temporal reasoning abilities, but their use as zero-shot image editors remains underexplored. We introduce IF-Edit, a tuning-free framework that repurposes pretrained image-to-video diffusion models for instruction-driven image editing. IF-Edit addresses three key challenges: prompt misalignment, redundant temporal latents, and blurry late-stage frames. It includes (1) a chain-of-thought prompt enhancement module that transforms static editing instructions into temporally grounded reasoning prompts; (2) a temporal latent dropout strategy that compresses frame latents after the expert-switch point, accelerating denoising while preserving semantic and temporal coherence; and (3) a self-consistent post-refinement step that sharpens late-stage frames using a short still-video trajectory. Experiments on four public benchmarks, covering non-rigid editing, physical and temporal reasoning, and general instruction edits, show that IF-Edit performs strongly on reasoning-centric tasks while remaining competitive on general-purpose edits. Our study provides a systematic view of video diffusion models as image editors and highlights a simple recipe for unified video-image generative reasoning.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
+  "authors": [
+   "Amit Vaisman",
+   "Guy Ohayon",
+   "Hila Manor",
+   "Michael Elad",
+   "Tomer Michaeli"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2511.06424",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "While zero-shot diffusion-based compression methods have seen significant progress in recent years, they remain notoriously slow and computationally demanding. This paper presents an efficient zero-shot diffusion-based compression method that runs substantially faster than existing methods, while maintaining performance that is on par with the state-of-the-art techniques. Our method builds upon the recently proposed Denoising Diffusion Codebook Models (DDCMs) compression scheme. Specifically, DDCM compresses an image by sequentially choosing the diffusion noise vectors from reproducible random codebooks, guiding the denoiser's output to reconstruct the target image. We modify this framework with Turbo-DDCM, which efficiently combines a large number of noise vectors at each denoising step, thereby significantly reducing the number of required denoising operations. This modification is also coupled with an improved encoding protocol. Furthermore, we introduce two flexible variants of Turbo-DDCM, a priority-aware variant that prioritizes user-specified regions and a distortion-controlled variant that compresses an image based on a target PSNR rather than a target BPP. Comprehensive experiments position Turbo-DDCM as a compelling, practical, and flexible image compression scheme.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Noise is All You Need: Solving Linear Inverse Problems by Noise Combination Sampling with Diffusion Models",
+  "authors": [
+   "Xun Su",
+   "Hiroyuki Kasai"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2510.23633",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Pretrained diffusion models have demonstrated strong capabilities in zero-shot inverse problem solving by incorporating observation information into the generation process of the diffusion models. However, this presents an inherent dilemma: excessive integration can disrupt the generative process, while insufficient integration fails to emphasize the constraints imposed by the inverse problem. To address this, we propose \\emph{Noise Combination Sampling}, a novel method that synthesizes an optimal noise vector from a noise subspace to approximate the measurement score, replacing the noise term in the standard Denoising Diffusion Probabilistic Models process. This enables conditional information to be naturally embedded into the generation process without reliance on step-wise hyperparameter tuning. Our method can be applied to a wide range of inverse problem solvers, including image compression, and, particularly when the number of generation steps $T$ is small, achieves superior performance with negligible computational overhead, significantly improving robustness and stability.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Automated Tuning for Diffusion Inverse Problem Solvers without Generative Prior Retraining",
+  "authors": [
+   "Yaşar Utku Alçalar",
+   "Junno Yun",
+   "Mehmet Akçakaya"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2509.09880",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion/score-based models have recently emerged as powerful generative priors for solving inverse problems, including accelerated MRI reconstruction. While their flexibility allows decoupling the measurement model from the learned prior, their performance heavily depends on carefully tuned data fidelity weights, especially under fast sampling schedules with few denoising steps. Existing approaches often rely on heuristics or fixed weights, which fail to generalize across varying measurement conditions and irregular timestep schedules. In this work, we propose Zero-shot Adaptive Diffusion Sampling (ZADS), a test-time optimization method that adaptively tunes fidelity weights across arbitrary noise schedules without requiring retraining of the diffusion prior. ZADS treats the denoising process as a fixed unrolled sampler and optimizes fidelity weights in a self-supervised manner using only undersampled measurements. Experiments on the fastMRI knee dataset demonstrate that ZADS consistently outperforms both traditional compressed sensing and recent diffusion-based methods, showcasing its ability to deliver high-fidelity reconstructions across varying noise schedules and acquisition settings.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Quick Bypass Mechanism of Zero-Shot Diffusion-Based Image Restoration",
+  "authors": [
+   "Yu-Shan Tai",
+   " An-Yeu",
+   " Wu"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2507.04207",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent advancements in diffusion models have demonstrated remarkable success in various image generation tasks. Building upon these achievements, diffusion models have also been effectively adapted to image restoration tasks, e.g., super-resolution and deblurring, aiming to recover high-quality images from degraded inputs. Although existing zero-shot approaches enable pretrained diffusion models to perform restoration tasks without additional fine-tuning, these methods often suffer from prolonged iteration times in the denoising process. To address this limitation, we propose a Quick Bypass Mechanism (QBM), a strategy that significantly accelerates the denoising process by initializing from an intermediate approximation, effectively bypassing early denoising steps. Furthermore, recognizing that approximation may introduce inconsistencies, we introduce a Revised Reverse Process (RRP), which adjusts the weighting of random noise to enhance the stochasticity and mitigate potential disharmony. We validate proposed methods on ImageNet-1K and CelebA-HQ across multiple image restoration tasks, e.g., super-resolution, deblurring, and compressed sensing. Our experimental results show that the proposed methods can effectively accelerate existing methods while maintaining original performance.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Zero-Shot Solving of Imaging Inverse Problems via Noise-Refined Likelihood Guided Diffusion Models",
+  "authors": [
+   "Zhen Wang",
+   "Hongyi Liu",
+   "Zhihui Wei"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2506.13391",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have achieved remarkable success in imaging inverse problems owing to their powerful generative capabilities. However, existing approaches typically rely on models trained for specific degradation types, limiting their generalizability to various degradation scenarios. To address this limitation, we propose a zero-shot framework capable of handling various imaging inverse problems without model retraining. We introduce a likelihood-guided noise refinement mechanism that derives a closed-form approximation of the likelihood score, simplifying score estimation and avoiding expensive gradient computations. This estimated score is subsequently utilized to refine the model-predicted noise, thereby better aligning the restoration process with the generative framework of diffusion models. In addition, we integrate the Denoising Diffusion Implicit Models (DDIM) sampling strategy to further improve inference efficiency. The proposed mechanism can be applied to both optimization-based and sampling-based schemes, providing an effective and flexible zero-shot solution for imaging inverse problems. Extensive experiments demonstrate that our method achieves superior performance across multiple inverse problems, particularly in compressive sensing, delivering high-quality reconstructions even at an extremely low sampling rate (5%).",
+  "source": "arxiv"
+ },
+ {
+  "title": "DeeCLIP: A Robust and Generalizable Transformer-Based Framework for Detecting AI-Generated Images",
+  "authors": [
+   "Mamadou Keita",
+   "Wassim Hamidouche",
+   "Hessen Bougueffa Eutamene",
+   "Abdelmalik Taleb-Ahmed",
+   "Abdenour Hadid"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2504.19876",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This paper introduces DeeCLIP, a novel framework for detecting AI-generated images using CLIP-ViT and fusion learning. Despite significant advancements in generative models capable of creating highly photorealistic images, existing detection methods often struggle to generalize across different models and are highly sensitive to minor perturbations. To address these challenges, DeeCLIP incorporates DeeFuser, a fusion module that combines high-level and low-level features, improving robustness against degradations such as compression and blurring. Additionally, we apply triplet loss to refine the embedding space, enhancing the model's ability to distinguish between real and synthetic content. To further enable lightweight adaptation while preserving pre-trained knowledge, we adopt parameter-efficient fine-tuning using low-rank adaptation (LoRA) within the CLIP-ViT backbone. This approach supports effective zero-shot learning without sacrificing generalization. Trained exclusively on 4-class ProGAN data, DeeCLIP achieves an average accuracy of 89.00% on 19 test subsets composed of generative adversarial network (GAN) and diffusion models. Despite having fewer trainable parameters, DeeCLIP outperforms existing methods, demonstrating superior robustness against various generative models and real-world distortions. The code is publicly available at https://github.com/Mamadou-Keita/DeeCLIP for research purposes.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Fast MRI for All: Bridging Access Gaps by Training without Raw Data",
+  "authors": [
+   "Yaşar Utku Alçalar",
+   "Merve Gülle",
+   "Mehmet Akçakaya"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2411.13022",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Physics-driven deep learning (PD-DL) approaches have become popular for improved reconstruction of fast magnetic resonance imaging (MRI) scans. Though PD-DL offers higher acceleration rates than existing clinical fast MRI techniques, their use has been limited outside specialized MRI centers. A key challenge is generalization to rare pathologies or different populations, noted in multiple studies, with fine-tuning on target populations suggested for improvement. However, current approaches for PD-DL training require access to raw k-space measurements, which is typically only available at specialized MRI centers that have research agreements for such data access. This is especially an issue for rural and under-resourced areas, where commercial MRI scanners only provide access to a final reconstructed image. To tackle these challenges, we propose Compressibility-inspired Unsupervised Learning via Parallel Imaging Fidelity (CUPID) for high-quality PD-DL training using only routine clinical reconstructed images exported from an MRI scanner. CUPID evaluates output quality with a compressibility-based approach while ensuring that the output stays consistent with the clinical parallel imaging reconstruction through well-designed perturbations. Our results show CUPID achieves similar quality to established PD-DL training that requires k-space data while outperforming compressed sensing (CS) and diffusion-based generative methods. We further demonstrate its effectiveness in a zero-shot training setup for retrospectively and prospectively sub-sampled acquisitions, attesting to its minimal training burden. As an approach that radically deviates from existing strategies, CUPID presents an opportunity to provide broader access to fast MRI for remote and rural populations in an attempt to reduce the obstacles associated with this expensive imaging modality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Unified Model for Compressed Sensing MRI Across Undersampling Patterns",
+  "authors": [
+   "Armeet Singh Jatyani",
+   "Jiayun Wang",
+   "Aditi Chandrashekar",
+   "Zihui Wu",
+   "Miguel Liu-Schiaffini",
+   "Bahareh Tolooshams",
+   "Anima Anandkumar"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2410.16290",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Compressed Sensing MRI reconstructs images of the body's internal anatomy from undersampled measurements, thereby reducing scan time. Recently, deep learning has shown great potential for reconstructing high-fidelity images from highly undersampled measurements. However, one needs to train multiple models for different undersampling patterns and desired output image resolutions, since most networks operate on a fixed discretization. Such approaches are highly impractical in clinical settings, where undersampling patterns and image resolutions are frequently changed to accommodate different real-time imaging and diagnostic requirements. We propose a unified MRI reconstruction model robust to various measurement undersampling patterns and image resolutions. Our approach uses neural operators, a discretization-agnostic architecture applied in both image and measurement spaces, to capture local and global features. Empirically, our model improves SSIM by 11% and PSNR by 4 dB over a state-of-the-art CNN (End-to-End VarNet), with 600$\\times$ faster inference than diffusion methods. The resolution-agnostic design also enables zero-shot super-resolution and extended field-of-view reconstruction, offering a versatile and efficient solution for clinical MR imaging. Our unified model offers a versatile solution for MRI, adapting seamlessly to various measurement undersampling and imaging resolutions, making it highly effective for flexible and reliable clinical imaging. Our code is available at https://armeet.ca/nomri.",
+  "source": "arxiv"
+ },
+ {
+  "title": "AnyLogo: Symbiotic Subject-Driven Diffusion System with Gemini Status",
+  "authors": [
+   "Jinghao Zhang",
+   "Wen Qian",
+   "Hao Luo",
+   "Fan Wang",
+   "Feng Zhao"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2409.17740",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have made compelling progress on facilitating high-throughput daily production. Nevertheless, the appealing customized requirements are remain suffered from instance-level finetuning for authentic fidelity. Prior zero-shot customization works achieve the semantic consistence through the condensed injection of identity features, while addressing detailed low-level signatures through complex model configurations and subject-specific fabrications, which significantly break the statistical coherence within the overall system and limit the applicability across various scenarios. To facilitate the generic signature concentration with rectified efficiency, we present \\textbf{AnyLogo}, a zero-shot region customizer with remarkable detail consistency, building upon the symbiotic diffusion system with eliminated cumbersome designs. Streamlined as vanilla image generation, we discern that the rigorous signature extraction and creative content generation are promisingly compatible and can be systematically recycled within a single denoising model. In place of the external configurations, the gemini status of the denoising model promote the reinforced subject transmission efficiency and disentangled semantic-signature space with continuous signature decoration. Moreover, the sparse recycling paradigm is adopted to prevent the duplicated risk with compressed transmission quota for diversified signature stimulation. Extensive experiments on constructed logo-level benchmarks demonstrate the effectiveness and practicability of our methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PSC: Posterior Sampling-Based Compression",
+  "authors": [
+   "Noam Elata",
+   "Tomer Michaeli",
+   "Michael Elad"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2407.09896",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have transformed the landscape of image generation and now show remarkable potential for image compression. Most of the recent diffusion-based compression methods require training and are tailored for a specific bit-rate. In this work, we propose Posterior Sampling-based Compression (PSC) - a zero-shot compression method that leverages a pre-trained diffusion model as its sole neural network component, thus enabling the use of diverse, publicly available models without additional training. Our approach is inspired by transform coding methods, which encode the image in some pre-chosen transform domain. However, PSC constructs a transform that is adaptive to the image. This is done by employing a zero-shot diffusion-based posterior sampler so as to progressively construct the rows of the transform matrix. Each new chunk of rows is chosen to reduce the uncertainty about the image given the quantized measurements collected thus far. Importantly, the same adaptive scheme can be replicated at the decoder, thus avoiding the need to encode the transform itself. We demonstrate that even with basic quantization and entropy coding, PSC's performance is comparable to established training-based methods in terms of rate, distortion, and perceptual quality. This is while providing greater flexibility, allowing to choose at inference time any desired rate or distortion.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Adaptive Compressed Sensing with Diffusion-Based Posterior Sampling",
+  "authors": [
+   "Noam Elata",
+   "Tomer Michaeli",
+   "Michael Elad"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2407.08256",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Compressed Sensing (CS) facilitates rapid image acquisition by selecting a small subset of measurements sufficient for high-fidelity reconstruction. Adaptive CS seeks to further enhance this process by dynamically choosing future measurements based on information gleaned from data that is already acquired. However, many existing frameworks are often tailored to specific tasks and require intricate training procedures. We propose AdaSense, a novel Adaptive CS approach that leverages zero-shot posterior sampling with pre-trained diffusion models. By sequentially sampling from the posterior distribution, we can quantify the uncertainty of each possible future linear measurement throughout the acquisition process. AdaSense eliminates the need for additional training and boasts seamless adaptation to diverse domains with minimal tuning requirements. Our experiments demonstrate the effectiveness of AdaSense in reconstructing facial images from a small number of measurements. Furthermore, we apply AdaSense for active acquisition of medical images in the domains of magnetic resonance imaging (MRI) and computed tomography (CT), highlighting its potential for tangible real-world acceleration.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Blaze3DM: Marry Triplane Representation with Diffusion for 3D Medical Inverse Problem Solving",
+  "authors": [
+   "Jia He",
+   "Bonan Li",
+   "Ge Yang",
+   "Ziwen Liu"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2405.15241",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Solving 3D medical inverse problems such as image restoration and reconstruction is crucial in modern medical field. However, the curse of dimensionality in 3D medical data leads mainstream volume-wise methods to suffer from high resource consumption and challenges models to successfully capture the natural distribution, resulting in inevitable volume inconsistency and artifacts. Some recent works attempt to simplify generation in the latent space but lack the capability to efficiently model intricate image details. To address these limitations, we present Blaze3DM, a novel approach that enables fast and high-fidelity generation by integrating compact triplane neural field and powerful diffusion model. In technique, Blaze3DM begins by optimizing data-dependent triplane embeddings and a shared decoder simultaneously, reconstructing each triplane back to the corresponding 3D volume. To further enhance 3D consistency, we introduce a lightweight 3D aware module to model the correlation of three vertical planes. Then, diffusion model is trained on latent triplane embeddings and achieves both unconditional and conditional triplane generation, which is finally decoded to arbitrary size volume. Extensive experiments on zero-shot 3D medical inverse problem solving, including sparse-view CT, limited-angle CT, compressed-sensing MRI, and MRI isotropic super-resolution, demonstrate that Blaze3DM not only achieves state-of-the-art performance but also markedly improves computational efficiency over existing methods (22~40x faster than previous work).",
+  "source": "arxiv"
+ },
+ {
+  "title": "VidToMe: Video Token Merging for Zero-Shot Video Editing",
+  "authors": [
+   "Xirui Li",
+   "Chao Ma",
+   "Xiaokang Yang",
+   "Ming-Hsuan Yang"
+  ],
+  "year": 2023,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2312.10656",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have made significant advances in generating high-quality images, but their application to video generation has remained challenging due to the complexity of temporal motion. Zero-shot video editing offers a solution by utilizing pre-trained image diffusion models to translate source videos into new ones. Nevertheless, existing methods struggle to maintain strict temporal consistency and efficient memory consumption. In this work, we propose a novel approach to enhance temporal consistency in generated videos by merging self-attention tokens across frames. By aligning and compressing temporally redundant tokens across frames, our method improves temporal coherence and reduces memory consumption in self-attention computations. The merging strategy matches and aligns tokens according to the temporal correspondence between frames, facilitating natural temporal consistency in generated video frames. To manage the complexity of video processing, we divide videos into chunks and develop intra-chunk local token merging and inter-chunk global token merging, ensuring both short-term video continuity and long-term content consistency. Our video editing approach seamlessly extends the advancements in image editing to video editing, rendering favorable results in temporal consistency over state-of-the-art methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DiffSCI: Zero-Shot Snapshot Compressive Imaging via Iterative Spectral Diffusion Model",
+  "authors": [
+   "Zhenghao Pan",
+   "Haijin Zeng",
+   "Jiezhang Cao",
+   "Kai Zhang",
+   "Yongyong Chen"
+  ],
+  "year": 2023,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2311.11417",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This paper endeavors to advance the precision of snapshot compressive imaging (SCI) reconstruction for multispectral image (MSI). To achieve this, we integrate the advantageous attributes of established SCI techniques and an image generative model, propose a novel structured zero-shot diffusion model, dubbed DiffSCI. DiffSCI leverages the structural insights from the deep prior and optimization-based methodologies, complemented by the generative capabilities offered by the contemporary denoising diffusion model. Specifically, firstly, we employ a pre-trained diffusion model, which has been trained on a substantial corpus of RGB images, as the generative denoiser within the Plug-and-Play framework for the first time. This integration allows for the successful completion of SCI reconstruction, especially in the case that current methods struggle to address effectively. Secondly, we systematically account for spectral band correlations and introduce a robust methodology to mitigate wavelength mismatch, thus enabling seamless adaptation of the RGB diffusion model to MSIs. Thirdly, an accelerated algorithm is implemented to expedite the resolution of the data subproblem. This augmentation not only accelerates the convergence rate but also elevates the quality of the reconstruction process. We present extensive testing to show that DiffSCI exhibits discernible performance enhancements over prevailing self-supervised and zero-shot approaches, surpassing even supervised transformer counterparts across both simulated and real datasets. Our code will be available.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model",
+  "authors": [
+   "Yinhuai Wang",
+   "Jiwen Yu",
+   "Jian Zhang"
+  ],
+  "year": 2022,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2212.00490",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Most existing Image Restoration (IR) models are task-specific, which can not be generalized to different degradation operators. In this work, we propose the Denoising Diffusion Null-Space Model (DDNM), a novel zero-shot framework for arbitrary linear IR problems, including but not limited to image super-resolution, colorization, inpainting, compressed sensing, and deblurring. DDNM only needs a pre-trained off-the-shelf diffusion model as the generative prior, without any extra training or network modifications. By refining only the null-space contents during the reverse diffusion process, we can yield diverse results satisfying both data consistency and realness. We further propose an enhanced and robust version, dubbed DDNM+, to support noisy restoration and improve restoration quality for hard tasks. Our experiments on several IR tasks reveal that DDNM outperforms other state-of-the-art zero-shot IR methods. We also demonstrate that DDNM+ can solve complex real-world applications, e.g., old photo restoration.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Semi-Parametric Neural Image Synthesis",
+  "authors": [
+   "Andreas Blattmann",
+   "Robin Rombach",
+   "Kaan Oktay",
+   "Jonas Müller",
+   "Björn Ommer"
+  ],
+  "year": 2022,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2204.11824",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Novel architectures have recently improved generative image synthesis leading to excellent visual quality in various tasks. Much of this success is due to the scalability of these architectures and hence caused by a dramatic increase in model complexity and in the computational resources invested in training these models. Our work questions the underlying paradigm of compressing large training data into ever growing parametric representations. We rather present an orthogonal, semi-parametric approach. We complement comparably small diffusion or autoregressive models with a separate image database and a retrieval strategy. During training we retrieve a set of nearest neighbors from this external database for each training instance and condition the generative model on these informative samples. While the retrieval approach is providing the (local) content, the model is focusing on learning the composition of scenes based on this content. As demonstrated by our experiments, simply swapping the database for one with different contents transfers a trained model post-hoc to a novel domain. The evaluation shows competitive performance on tasks which the generative model has not been trained on, such as class-conditional synthesis, zero-shot stylization or text-to-image synthesis without requiring paired text-image data. With negligible memory and computational overhead for the external database and retrieval we can significantly reduce the parameter count of the generative model and still outperform the state-of-the-art.",
+  "source": "arxiv"
+ }
+]

@@ -1,0 +1,874 @@
+[
+ {
+  "title": "Semantic-Aware Neural Video Codec for Error-Resilient Low-Latency Transmission",
+  "authors": [
+   "Matin Mortaheb",
+   "Homa Esfahanizadeh",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.16279",
+  "arxiv": "2609.16279",
+  "openalex": "W7213407119",
+  "cited_by": 0,
+  "abstract": "Emerging physical AI systems require low-latency, task-oriented video communication over unreliable channels. We propose a semantic-aware multi-level neural video coding method for robust low-latency video transmission over unreliable channels that are abstracted as multi-level packet erasure channels. Built upon the real-time DCVC-RT neural video codec, the proposed framework introduces a semantic- and feature-aware coding strategy that partitions encoded representations into packets carrying different levels of semantic and latent-feature importance and assigns these packets to different streams, each associated with a priority level when transmitted over unreliable communication channels. We also developed an error-resilient entropy model that removes inter-packet dependencies, allowing each packet to be decoded independently under packet losses. The complete system is trained end-to-end over the abstracted multi-level packet erasure channels, enabling learning of channel-aware representations together with importance-aware packet assignment while facilitating the network for differentiated packet prioritization. Experiments show that the proposed framework significantly improves robustness over baseline DCVC-RT under packet erasures, achieving graceful degradation in less important regions while better preserving task-relevant visual content.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight Generative Image Semantic Communication over Packet Erasure Channels",
+  "authors": [
+   "Yufei Bo",
+   "Haoshuo Zhang",
+   "Meixia Tao",
+   "Jing He",
+   "Xinming Huang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.06989",
+  "arxiv": "2609.06989",
+  "openalex": "W7211991240",
+  "cited_by": 0,
+  "abstract": "This paper addresses packet loss in semantic communication caused by network congestion or channel fluctuations. We propose LGSemCom, a lightweight generative packet-level joint source-channel coding (JSCC) framework for efficient and robust image transmission over packet erasure channels. Unlike conventional distortion-oriented recovery methods that yield blurry averages over erased regions, LGSemCom reformulates image recovery under packet erasures as a conditional generative task. By leveraging adversarial learning, the proposed decoder synthesizes plausible details without increasing complexity during inference. A key innovation of our framework is an erasure-aware weighting (EAW) strategy, which prioritizes generation in erased regions while preserving pixel fidelity in correctly received areas. To ensure computational efficiency, LGSemCom employs a fully convolutional codec based on efficient long-range attention blocks (ELABs) that capture global semantic dependencies with low complexity. Extensive experiments show that LGSemCom achieves superior perceptual reconstruction quality compared with existing benchmarks under severe packet loss, while achieving an order of magnitude faster inference. These attributes make LGSemCom highly suitable for latency-sensitive applications on resource-constrained edge devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "Block Erasure-Aware Semantic Multimedia Compression via JSCC Autoencoder",
+  "authors": [
+   "Homa Esfahanizadeh",
+   "Nargis Fayaz",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2601.20707",
+  "arxiv": "2601.20707",
+  "openalex": "W7126014575",
+  "cited_by": 0,
+  "abstract": "We present an AI-based framework for semantic transmission of multimedia data over band-limited, time-varying channels. The method targets scenarios where large content is split into multiple packets, with an unknown number potentially dropped due to channel impairments. Using joint source-channel coding (JSCC), our approach achieves reliable semantic reconstruction with graceful quality degradation as channel conditions worsen, eliminating the need for retransmissions that cause unacceptable delays in latency-sensitive applications such as video conferencing and robotic control. The framework is compatible with existing network protocols and further enables intelligent congestion control and unequal error protection. A tunable design parameter allows balancing robustness at low channel quality against fidelity at high channel quality. Experiments demonstrate significant robustness improvement over state-of-the-art baselines in both image and video domains.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards Robust Semantic Video Transmission over Block Erasure Channels",
+  "authors": [
+   "Nargis Fayaz",
+   "Homa Esfahanizadeh",
+   "Matin Mortaheb",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2607.07823",
+  "arxiv": "2607.07823",
+  "openalex": "W7167939782",
+  "cited_by": 0,
+  "abstract": "This paper investigates semantic-aware neural joint source-channel coding (JSCC) for robust video transmission over block erasure channels. We propose a neural video compression framework exploring both spatial-domain and feature-domain designs. In the spatial domain, video frames are partitioned into blocks, enabling localized erasure handling and fine-grained robustness control via uniform erasure and two-level, semantic-guided non-uniform erasure strategies. In the feature domain, latent features are partitioned, enabling missing features to be semantically recovered while maintaining overall spatial consistency. Comprehensive experiments quantify reconstruction quality under varying uniform and non-uniform erasure probabilities. Our results show that spatial-domain JSCC excels at handling random localized losses, whereas feature-domain JSCC provides superior robustness to distributed erasures and maintains fidelity under low-loss scenarios. The analysis highlights the trade-offs between spatial continuity and semantic redundancy, offering insights for designing robust, task-aware video communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Mechanisms for Resilient Video Transmission",
+  "authors": [
+   "Roger Immich",
+   "Cerqueira, Eduardo",
+   "curado, Marilia"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1808.06722",
+  "arxiv": "1808.06722",
+  "openalex": "W2888290597",
+  "cited_by": 1,
+  "abstract": "Wireless networks are envisaged to be one of the most important technologies to provide cost-efficient content delivery, including for video applications. They will allow thousands of thousands of fixed and mobile users to access, produce, share, and consume video content in a ubiquitous way. Real-time video services over these networks are becoming a part of everyday life and have been used to spread information ranging from education to entertainment content. However, the challenge of dealing with the fluctuating bandwidth, scarce resources, and time-varying error rate of these networks, highlights the need for error-resilient video transmission. In this context, the combination of Forward Error Correction (FEC) and Unequal Error Protection (UEP) approaches is known to provide the distribution of video applications for wireless users with Quality of Experience (QoE) assurance. This thesis proposed a procedure to assess the video characteristics and their related impact on the perceived quality to end-users. This thesis proposes a series of cross-layer video-aware and FEC-based mechanisms with UEP to enhance video transmission in several types of wireless networks. A number of methods to set an adaptive amount of redundancy were used in these mechanisms, such as heuristic techniques, random neural networks, ant colony optimisation, and fuzzy logic. In the first one, heuristic techniques, the mechanisms rely on human experience to define the best strategy. The advantages and drawbacks of the proposed mechanisms were demonstrated in realistic simulations using real video sequences and actual network traces. The assessments were conducted with well-known QoE metrics. The results show that all the proposed mechanisms were able to outperform the competitors on both perceived video quality and network footprint.",
+  "source": "openalex"
+ },
+ {
+  "title": "GRACE: Loss-Resilient Real-Time Video Communication Using Data-Scalable Autoencoder",
+  "authors": [
+   "Yihua Cheng",
+   "Anton Arapin",
+   "Ziyi Zhang",
+   "Qizheng Zhang",
+   "Hanchen Li",
+   "Nick Feamster",
+   "Junchen Jiang"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2210.16639",
+  "arxiv": "2210.16639",
+  "openalex": "W4307937549",
+  "cited_by": 5,
+  "abstract": "Across many real-time video applications, we see a growing need (especially in long delays and dynamic bandwidth) to allow clients to decode each frame once any (non-empty) subset of its packets is received and improve quality with each new packet. We call it data-scalable delivery. Unfortunately, existing techniques (e.g., FEC, RS and Fountain Codes) fall short: they require either delivery of a minimum number of packets to decode frames, and/or pad video data with redundancy in anticipation of packet losses, which hurts video quality if no packets get lost. This work explores a new approach, inspired by recent advances of neural-network autoencoders, which make data-scalable delivery possible. We present Grace, a concrete data-scalable real-time video system. With the same video encoding, Grace's quality is slightly lower than traditional codec without redundancy when no packet is lost, but with each missed packet, its quality degrades much more gracefully than existing solutions, allowing clients to flexibly trade between frame delay and video quality. Grace makes two contributions: (1) it trains new custom autoencoders to balance compression efficiency and resilience against a wide range of packet losses; and (2) it uses a new transmission scheme to deliver autoencoder-coded frames as individually decodable packets. We test Grace (and traditional loss-resilient schemes and codecs) on real network traces and videos, and show that while Grace's compression efficiency is slightly worse than heavily engineered video codecs, it significantly reduces tail video frame delay (by 2$\\times$ at the 95th percentile) with the marginally lowered video quality",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Lu Guo",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3726512",
+  "arxiv": "2608.19590",
+  "openalex": "W7203906458",
+  "cited_by": 0,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "openalex"
+ },
+ {
+  "title": "SoundSpring: Loss-Resilient Audio Transceiver With Dual-Functional Masked Language Modeling",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Sixian Wang",
+   "Siye Wang",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3531406",
+  "arxiv": "2501.12696",
+  "openalex": "W4406610604",
+  "cited_by": 6,
+  "abstract": "In this paper, we propose “SoundSpring”, a cutting-edge error-resilient audio transceiver that marries the robustness benefits of joint source-channel coding (JSCC) while also being compatible with current digital communication systems. Unlike recent deep JSCC transceivers, which learn to directly map audio signals to analog channel-input symbols via neural networks, our SoundSpring adopts the layered architecture that delineates audio compression from digital coded transmission, but it sufficiently exploits the impressive in-context predictive capabilities of large language (foundation) models. Integrated with the casual-order mask learning strategy, our single model operates on the latent feature domain and serve dual-functionalities: as efficient audio compressors at the transmitter and as effective mechanisms for packet loss concealment at the receiver. By jointly optimizing towards both audio compression efficiency and transmission error resiliency, we show that mask-learned language models are indeed powerful contextual predictors, and our dual-functional compression and concealment framework offers fresh perspectives on the application of foundation language models in audio communication. Through extensive experimental evaluations, we establish that SoundSpring apparently outperforms contemporary audio transmission systems in terms of signal fidelity metrics and perceptual quality scores. These new findings not only advocate for the practical deployment of SoundSpring in learning-based audio communication systems but also inspire the development of future audio semantic transceivers.",
+  "source": "openalex"
+ },
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": "W7222852238",
+  "cited_by": 0,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Loss-Resilient Wireless Video Token Communication over Block Fading Channels",
+  "authors": [
+   "Bingyan Xie",
+   "Yongjeong Oh",
+   "Zihan Chen",
+   "Jihong Park",
+   "Yongpeng Wu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.08698",
+  "arxiv": "2608.08698",
+  "openalex": "W7202163975",
+  "cited_by": 0,
+  "abstract": "Video token communication represents video content as discrete tokens that differ in their importance to reconstruction and exhibit temporal dependencies. When these tokens are packetized for wireless transmission, block fading can cause multiple important or correlated tokens to be lost together, severely degrading video reconstruction. To address this issue, we propose a loss-resilient wireless video token communication (WVTC) framework. WVTC evaluates token importance from the intrinsic predictive structure of video tokens, assigning high priority to structural I-tokens and measuring P-token importance by temporal neighborhood novelty. A shuffled mixed I/P-token packetization scheme disperses structural anchors and correlated temporal regions across packets. Using only current block channel state information, an online scheduler jointly considers packet importance density, MCS-dependent decoding reliability, block capacity, and importance concentration when allocating packets to fading blocks. At the receiver, a fine-tuned detokenizer reconstructs missing content from surviving tokens without retransmission. Numerical results demonstrate improved perceptual quality and more graceful degradation under increasing packet error rates.",
+  "source": "openalex"
+ },
+ {
+  "title": "Yours or Mine? Overwriting Attacks Against Neural Audio Watermarking",
+  "authors": [
+   "Lingfeng Yao",
+   "Chenpei Huang",
+   "Shengyao Wang",
+   "Xue, Junpei",
+   "Hanqing Guo",
+   "Jiang Liu",
+   "Phone Lin",
+   "Tomoaki Otsuki Ohtsuki",
+   "Miao Pan"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2509.05835",
+  "arxiv": "2509.05835",
+  "openalex": "W4414755741",
+  "cited_by": 0,
+  "abstract": "As generative audio models are rapidly evolving, AI-generated audios increasingly raise concerns about copyright infringement and misinformation spread. Audio watermarking, as a proactive defense, can embed secret messages into audio for copyright protection and source verification. However, current neural audio watermarking methods focus primarily on the imperceptibility and robustness of watermarking, while ignoring its vulnerability to security attacks. In this paper, we develop a simple yet powerful attack: the overwriting attack that overwrites the legitimate audio watermark with a forged one and makes the original legitimate watermark undetectable. Based on the audio watermarking information that the adversary has, we propose three categories of overwriting attacks, i.e., white-box, gray-box, and black-box attacks. We also thoroughly evaluate the proposed attacks on state-of-the-art neural audio watermarking methods. Experimental results demonstrate that the proposed overwriting attacks can effectively compromise existing watermarking schemes across various settings and achieve a nearly 100% attack success rate. The practicality and effectiveness of the proposed overwriting attacks expose security flaws in existing neural audio watermarking systems, underscoring the need to enhance security in future audio watermarking designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "What Limits Robustness in Deep Image Watermarking: An Analysis of Mechanisms and Their Scaling Across Capacities",
+  "authors": [
+   "Marta Bistroń",
+   "Zbigniew Piotrowski"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.01050",
+  "arxiv": "2609.01050",
+  "openalex": "W7206158313",
+  "cited_by": 0,
+  "abstract": "Robustness remains the principal open problem in deep image watermarking, and what limits it becomes sharper as payload grows. This paper asks whether capacity is itself the limit or only makes other limits visible, and answers in two parts. The first organizes the distortions a watermark must survive and the strategies developed to resist them, ordering each by the axis that governs it: payload capacity for the distortions, differentiability for the strategies. The second identifies and measures three mechanisms that limit robustness in schemes mapping the payload onto a spatial block grid with extraction trained separately from a frozen embedder: desynchronization of the payload grid, the resistance of codec-induced distortion to training, and the narrowing of the usable embedding-strength window. Payloads from 64 to 16384 bits are measured, well beyond the range those strategies address. Training the extraction stage against a codec proves not merely ineffective but harmful, degrading the reading at the operating points used in training. The limits follow the class of distortion rather than capacity itself, and none is removed by further training on the extraction side, because all three arise before extraction. An evaluation protocol making claims of generalization verifiable is also contributed. The conclusions are properties of a class of designs rather than of one implementation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Robust End-to-End Image Transmission with Residual Learning",
+  "authors": [
+   "Cenk M. Yetiş"
+  ],
+  "year": 2025,
+  "venue": "Signal Processing and Communications Applications Conference (SIU)",
+  "doi": "10.1109/siu66497.2025.11112319",
+  "arxiv": "2409.03243",
+  "openalex": "W4413456364",
+  "cited_by": 0,
+  "abstract": "Recently, deep learning (DL) based image transmission at the physical layer (PL) has become a rising trend due to its ability to significantly outperform conventional separation-based digital transmissions. However, implementing solutions at the PL requires a major shift in established standards, such as those in cellular communications. Application layer (AL) solutions present a more feasible and standards-compliant alternative. In this work, we propose a layered image transmission scheme at the AL that is robust to end-to-end (E2E) channel errors. The base layer transmits a coarse image, while the enhancement layer transmits the residual between the original and coarse images. By mapping the residual image into a latent representation that aligns with the structure of the E2E channel, our proposed solution demonstrates high robustness to E2E channel errors.",
+  "source": "openalex"
+ },
+ {
+  "title": "HUM-Net: A Robust Semantic Segmentation Model for Medical Imaging Under Wireless Channel Degradations",
+  "authors": [
+   "Mohammed Younis Thanoun",
+   "Mohammad J. M. Zedan",
+   "Abdulbasit M. A. Sabaawi",
+   "Ahmed A. Mohammed",
+   "Ersin Elbasi Α",
+   "Mohd Asyraf Zulkifley"
+  ],
+  "year": 2026,
+  "venue": "Journal Européen des Systèmes Automatisés",
+  "doi": "10.18280/jesa.590806",
+  "arxiv": null,
+  "openalex": "W7214684009",
+  "cited_by": 0,
+  "abstract": "Reliable transmission of medical images over wireless networks is essential for modern telemedicine, yet the impact of channel impairments on deep-learning segmentation accuracy remains underexplored.In this work, HUM-Net, a hybrid U-shaped architecture, is proposed by integrating convolutional encoders with a Mamba-based Visual State Space (VSS) bottleneck and State-Space Attention Gates (SSAG) for kidney tumor segmentation in CT imagery.To evaluate its robustness under controlled physical-layer conditions, an end-to-end physical-layer simulation framework is developed by subjecting each image to representative wireless degradations, including Joint Photographic Experts Group (JPEG) source coding (Q = 10-70), Gilbert-Elliott packet loss (0.1%-10%), additive white Gaussian noise (Eb/N0 = 0-30 dB), and four representative combined-stress conditions.Using the KiTS23 dataset (6,289 curated 512 × 512 slices), HUM-Net is evaluated on more than 30,000 degraded images covering 24 distinct channel conditions.HUM-Net achieves a baseline Dice Score (DSC) of 0.9562 and mean Intersection-over-Union (mIoU) of 0.9569, while remaining highly robust to lossy compression.Furthermore, noise above 10 dB Eb/N0 is fully recoverable, while severe noise (0 dB) reduces the DSC to 0.7116.Packet loss, however, is severely disruptive: DSC drops to 0.8848 at just 0.2% loss and to 0.5275 at 1%.In combined-stress conditions, packet loss consistently dominates: DSC values track the packet-loss-only curve rather than the noise-only curve, and the two impairments interact only mildly (±2.6% DSC).Overall, these findings establish a clear hierarchy of impairments and indicate that, within the simulated conditions, packet-loss recovery warrants priority over compression mitigation and noise reduction in the design of wireless medical imaging links, subject to confirmation on deployed systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "UniTAC: Universal Task-Aware Compression via Weighted Distortion Measures",
+  "authors": [
+   "Homa Esfahanizadeh",
+   "Matin Mortaheb",
+   "Adeel Mahmood",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.16696",
+  "arxiv": "2608.16696",
+  "openalex": "W7203699773",
+  "cited_by": 0,
+  "abstract": "Lossy compression is conventionally driven by a task-agnostic distortion (e.g., MSE or MS-SSIM), yet in many emerging applications the receiver cares not about uniform fidelity but about a downstream task whose relevant content varies across the signal and evolves over time. We formulate task-aware compression as a weighted rate-distortion problem, in which a single codec is driven by a separable, per-component weighted distortion whose weights encode task importance and may depend on the source. We introduce task consistency, i.e., that minimizing the weighted distortion also minimizes the true task loss, and characterize when it holds: for linear tasks, the task loss admits a weighted-MSE form with signal-independent weights under suitable cross-term conditions, while for nonlinear tasks, an integrated-gradients analysis motivates separable task-aware weights. We show how task symmetry and irrelevance further constrain the admissible weights. Guided by this theory, we realize the weight-conditioned code in a single learned Vision Transformer (ViT) codec whose token-level attention natively consumes a per-component importance vector, so one fixed backbone is re-targeted at runtime, from universal (task-agnostic) to task-specialized operation, purely by swapping the injected weights, without retraining, while producing a single human-viewable reconstruction steered to the active task. On downstream face-analysis tasks, a single model reaches 91.4% accuracy at 0.034 bpp on a localized task, within 1.9% of a task-specific codec (93.3%) and well above a universal codec (76.9%). Such task-adaptive compression suits bandwidth-constrained perception systems, e.g., in Physical AI, where the active task drifts and per-task retraining is infeasible.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multiple Description Coding Based on Convolutional Auto-Encoder",
+  "authors": [
+   "Hongfei Li",
+   "Lili Meng",
+   "Jia Zhang",
+   "Yanyan Tan",
+   "Yuwei Ren",
+   "Huaxiang Zhang"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2900498",
+  "arxiv": null,
+  "openalex": "W2917598233",
+  "cited_by": 18,
+  "abstract": "Deep learning, such as convolutional neural networks, has been achieved great success in image processing, computer vision task, and image compression, and has achieved better performance. This paper designs a multiple description coding frameworks based on symmetric convolutional auto-encoder, which can achieve high-quality image reconstruction. First, the image is input into the convolutional auto-encoder, and the extracted features are obtained. Then, the extracted features are encoded by the multiple description coding and split into two descriptions for transmission to the decoder. We can get the side information by the side decoder and the central information by the central decoder. Finally, the side information and the central information are deconvolved by convolutional auto-encoder. The experimental results validate that the proposed scheme outperforms the state-of-the-art methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Mecanismos para transmissao resiliente de videos",
+  "authors": [
+   "Roger Kreutz Immich"
+  ],
+  "year": 2017,
+  "venue": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7127560026",
+  "cited_by": 0,
+  "abstract": "Wireless networks are envisaged to be one of the most important technologies to provide cost-efficient content delivery, including for video applications. They will allow thousands of thousands of fixed and mobile users to access, produce, share, and consume video content in an ubiquitous way. Real-time video services over these networks are becoming a part of everyday life and have been used to spread information ranging from education to entertainment content. However, the challenge of dealing with the fluctuating bandwidth, scarce resources, and time-varying error rate of these networks, highlights the need for error-resilient video transmission. In this context, the combination of Forward Error Correction (FEC) and Unequal Error Protection (UEP) approaches is known to provide the distribution of video applications for wireless users with Quality of Experience (QoE) assurance. In order to correctly perform the UEP it is necessary to identify the most important parts in the video sequences. To tackle this issue, this thesis proposed a procedure to assess the video characteristics, such as the codec type, the frame type and size, the length and format of the group of pictures as well as the motion vectors, and their related impact on the perceived quality to end-users. Furthermore, as the video content plays an important role on the perceived quality, this thesis also proposes a method to characterise the video’s motion intensity. This involves conducting an exploratory data analysis in bootstrap time and then the use of several techniques in real-time to use the found results. The purpose of the above-mentioned proposals is to give support for the main goal of this thesis, which is to propose mechanisms for resilient video transmission. Taking everything into consideration, this thesis proposes a series of cross-layer video-aware and FEC-based mechanisms with UEP to enhance video transmission in several types of wireless networks. A number of methods to set an adaptive amount of redundancy were used in these mechanisms, such as heuristic techniques, random neural networks, ant colony optimisation, and fuzzy logic. In the first one, heuristic techniques, the mechanisms rely on human experience to define the best strategy. In addition, the aim is not to reach a perfect solution, but a practical one with satisfactory results. In the random neural networks methods, the neurones are trained and validated before run-time until they are able to perform an adequate numeric categorisation. The ant colony optimisation techniques use a defined metaheuristic based on the ant’s pheromones and pre-set rules to compute a precise amount of redundancy. The last one, fuzzy logic techniques, the mechanisms depend on fuzzy rules and sets to find an adequate redundancy ratio. The advantages and drawbacks of the proposed mechanisms were demonstrated in realistic simulations using real video sequences and actual network traces. The assessments were conducted with wel",
+  "source": "openalex"
+ },
+ {
+  "title": "EFFICIENT DATA REDUCTION IN HPC AND DISTRIBUTED STORAGE SYSTEMS",
+  "authors": [
+   "Tong Liu"
+  ],
+  "year": 2021,
+  "venue": "TUScholarShare (Temple University)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W3193707952",
+  "cited_by": 0,
+  "abstract": "In modern distributed storage systems, space efficiency and system reliability are two major concerns. As a result, contemporary storage systems often employ data deduplication and erasure coding to reduce the storage overhead and provide fault tolerance, respectively. However, little work has been done to explore the relationship between these two techniques.Scientific simulations on high-performance computing (HPC) systems can generate large amounts of floating-point data per run. To mitigate the data storage bottleneck and lower the data volume, it is common for floating-point compressors to be employed. As compared to lossless compressors, lossy compressors, such as SZ and ZFP, can reduce data volume more aggressively while maintaining the usefulness of the data. However, a reduction ratio of more than two orders of magnitude is almost impossible without seriously distorting the data. In deep learning, the autoencoder technique has shown great potential for data compression, in particular with images. Whether the autoencoder can deliver similar performance on scientific data, however, is unknown. Nowadays, modern industry data centers have employed erasure codes to provide reliability for large amounts of data at a low cost. Although erasure codes provide optimal storage efficiency, they suffer from high repair costs compared to traditional three-way replication: when a data miss occurs in a data center, erasure codes would require high disk usage and network bandwidth consumption across nodes and racks to repair the failed data. This dissertation lists our research results on the above three mentioned challenges in order to either optimize or solve the issues for the HPC and distributed storage systems. Details are as follows: To solve the data storage challenge for the erasure-coded deduplication system, we propose Reference-counter Aware Deduplication (RAD), which employs the features of deduplication into erasure coding to improve garbage collection performance when deletion occurs. RAD wisely encodes the data according to the reference counter, which is provided by the deduplication level and thus reduces the encoding overhead when garbage collection is conducted. Further, since the reference counter also represents the reliability levels of the data chunks, we additionally made some effort to explore the trade-offs between storage overhead and reliability level among different erasure codes. The experiment results show that RAD can effectively improve the GC performance by up to 24.8% and the reliability analysis shows that, with certain data features, RAD can provide both better reliability and better storage efficiency compared to the traditional Round-Robin placement. To solve the data processing challenge for HPC system, we for the first time conduct a comprehensive study on the use of autoencoders to compress real-world scientific data and illustrate several key findings on using autoencoders for scientific data reduction. We imple",
+  "source": "openalex"
+ },
+ {
+  "title": "FEC Hybrid Method Based on Reed–Solomon Codes for Transmitting Video Signal Over Limited Bandwidth and High Loss Rate Channels",
+  "authors": [
+   "Leonid V. Kaliuzhnyi",
+   "Viktor B. Rusalovskiy",
+   "Артем Іщенко",
+   "Vasyl M. Didenko"
+  ],
+  "year": 2026,
+  "venue": "Journal of Telecommunications and Information Technology",
+  "doi": "10.26636/jtit.2026.3.2637",
+  "arxiv": null,
+  "openalex": "W7203872925",
+  "cited_by": 0,
+  "abstract": "The paper considers the adaptive forward error correction (FEC) technique for real-time video transmission over a feedback-free channel with limited bandwidth and non-stationary interference. A hybrid Reed-Solomon coding method is proposed in GF(2\\textsuperscript{8}), combining differentiated redundancy across specific frame types (I, P, and B), with adaptive code parameter control driven by physical layer channel state estimation. The channel is modeled by a three-state Markov process called Gilbert-Elliott-Jamming (GEJ), in which an explicit jamming state is added to the classical Gilbert-Elliott model. A closed-form expression for the block decoding failure probability under the erasure model is derived, and applicability bounds for representative RS configurations are determined. A redundancy adaptation function with a guaranteed upper bound on overhead is introduced together with a control algorithm. Experiments conducted under four scenarios (stable Wi-Fi, mobile 4G, tactical channel and active jamming) show that the mission success rate increases from 60% for fixed RS and 50% for SRT to 78% under sustained jamming, while the time to first frame decreases from 600 - 1200 ms to 200 ms. The method is implementable on the ESP32-S3 and ARM Cortex-M4 platforms with an encoding throughput of 4 to 8 Mbps.",
+  "source": "openalex"
+ },
+ {
+  "title": "AeroLat: Channel-Aware Latent Space Semantic Communication for Decentralized UAV Swarms",
+  "authors": [
+   "Rajdeep Ghosh",
+   "Goparaju Venkata Seshachala Sree Vatsava",
+   "Sudip Misra"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": null,
+  "arxiv": "2609.16947",
+  "openalex": "W7213473585",
+  "cited_by": 0,
+  "abstract": "Communication in latent space offers an intriguing alternative to symbolic messages for decentralized autonomous Unmanned Aerial Vehicle (UAV) swarms operating over bandwidth-constrained, time-varying wireless links. However, when homogeneous frozen models are prompted with discretized perceptual inputs, their broadcast states collapse toward the shared prompt template. In view of this, we propose AeroLat, a channel-aware latent semantic communication framework that uses evidence injection. The resulting latent states are then passed through an explicit communication model that encompasses bandwidth-limited serialization, additive noise and information staleness, which facilitates a joint assessment of communication fidelity and swarm-level coordination. Across multi-seed simulations, AeroLat provably remains resilient to codec choice, faults and increasing swarm size. It consistently reproduces the latent-swarm anomaly, while no-whitening controls recover the collapse. In particular, AeroLat is capable of reducing false similarity by 97.5%.",
+  "source": "openalex"
+ },
+ {
+  "title": "An innovative approach to integrate unequal protection-based steganography and progressive transmission of physiological data",
+  "authors": [
+   "Neerja Sahu",
+   "Dongming Peng",
+   "Hamid Sharif"
+  ],
+  "year": 2020,
+  "venue": "SN Applied Sciences",
+  "doi": "10.1007/s42452-020-1992-0",
+  "arxiv": null,
+  "openalex": "W3000681476",
+  "cited_by": 9,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Steganography techniques: a survey",
+  "authors": [],
+  "year": 2017,
+  "venue": "International Journal of Latest Trends in Engineering and Technology",
+  "doi": "10.21172/1.841.43",
+  "arxiv": null,
+  "openalex": "W4232889610",
+  "cited_by": 0,
+  "abstract": "With the growth in network technology, there is parallel growth of information being exchange over the network environment which in turn also demands the security of information to maintain its confidentiality along with integrity of data.Many of technologies are present such as cryptography and steganography to achieve the above purpose.In this paper a number of image steganography techniques are presented along with their review and the widely used metrics for image quality such as PSNR and MSE are discussed also.",
+  "source": "openalex"
+ },
+ {
+  "title": "Convolutional auto-encoder based multiple description coding network",
+  "authors": [
+   "Lili Meng",
+   "Hongfei Li",
+   "Jia Zhang",
+   "Yanyan Tan",
+   "Yuwei Ren",
+   "Huaxiang Zhang"
+  ],
+  "year": 2020,
+  "venue": "KSII Transactions on Internet and Information Systems",
+  "doi": "10.3837/tiis.2020.04.015",
+  "arxiv": null,
+  "openalex": "W3022006356",
+  "cited_by": 0,
+  "abstract": "When data is transmitted over an unreliable channel, the error of the data packet may result in serious degradation.The multiple description coding (MDC) can solve this problem and save transmission costs.In this paper, we propose a deep multiple description coding network (MDCN) to realize efficient image compression.Firstly, our network framework is based on convolutional auto-encoder (CAE), which include multiple description encoder network (MDEN) and multiple description decoder network (MDDN).Secondly, in order to obtain high-quality reconstructed images at low bit rates, the encoding network and decoding network are integrated into an end-to-end compression framework.Thirdly, the multiple description decoder network includes side decoder network and central decoder network.When the decoder receives only one of the two multiple description code streams, side decoder network is used to obtain side reconstructed image of acceptable quality.When two descriptions are received, the high quality reconstructed image is obtained.In addition, instead of quantization with additive uniform noise, and SSIM loss and distance loss combine to train multiple description encoder networks to ensure that they can share structural information.Experimental results show that the proposed framework performs better than traditional multiple description coding methods. .",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning for Multimedia Communications",
+  "authors": [
+   "Nikolaos Thomos",
+   "Thomas Maugey",
+   "Laura Toni"
+  ],
+  "year": 2022,
+  "venue": "Sensors",
+  "doi": "10.3390/s22030819",
+  "arxiv": null,
+  "openalex": "W4206909653",
+  "cited_by": 19,
+  "abstract": "Machine learning is revolutionizing the way multimedia information is processed and transmitted to users. After intensive and powerful training, some impressive efficiency/accuracy improvements have been made all over the transmission pipeline. For example, the high model capacity of the learning-based architectures enables us to accurately model the image and video behavior such that tremendous compression gains can be achieved. Similarly, error concealment, streaming strategy or even user perception modeling have widely benefited from the recent learning-oriented developments. However, learning-based algorithms often imply drastic changes to the way data are represented or consumed, meaning that the overall pipeline can be affected even though a subpart of it is optimized. In this paper, we review the recent major advances that have been proposed all across the transmission chain, and we discuss their potential impact and the research challenges that they raise.",
+  "source": "openalex"
+ },
+ {
+  "title": "MUSE: Flexible Voiceprint Receptive Fields and Multi-Path Fusion Enhanced Taylor Transformer for U-Net-based Speech Enhancement",
+  "authors": [
+   "Zizhen Lin",
+   "X. Chen",
+   "Junyu Wang"
+  ],
+  "year": 2024,
+  "venue": "Interspeech (USB)",
+  "doi": "10.21437/interspeech.2024-1017",
+  "arxiv": "2406.04589",
+  "openalex": "W4402112274",
+  "cited_by": 21,
+  "abstract": "Achieving a balance between lightweight design and high performance remains a challenging task for speech enhancement. In this paper, we introduce Multi-path Enhanced Taylor (MET) Transformer based U-net for Speech Enhancement (MUSE), a lightweight speech enhancement network built upon the Unet architecture. Our approach incorporates a novel Multi-path Enhanced Taylor (MET) Transformer block, which integrates Deformable Embedding (DE) to enable flexible receptive fields for voiceprints. The MET Transformer is uniquely designed to fuse Channel and Spatial Attention (CSA) branches, facilitating channel information exchange and addressing spatial attention deficits within the Taylor-Transformer framework. Through extensive experiments conducted on the VoiceBank+DEMAND dataset, we demonstrate that MUSE achieves competitive performance while significantly reducing both training and deployment costs, boasting a mere 0.51M parameters.",
+  "source": "openalex"
+ },
+ {
+  "title": "SNN-SC: A Spiking Semantic Communication Framework for Collaborative Intelligence",
+  "authors": [
+   "Mengyang Wang",
+   "Jiahui Li",
+   "Mengyao Ma",
+   "Xiaopeng Fan B"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "10.1109/tvt.2024.3506119",
+  "arxiv": "2210.06836",
+  "openalex": "W4404688700",
+  "cited_by": 6,
+  "abstract": "Collaborative Intelligence (CI) has emerged as a promising framework for deploying Artificial Intelligence (AI) models on resource-constrained edge devices. In CI, the AI model is partitioned between the edge device and the cloud, with intermediate features transmitted from the edge sub-model to the cloud sub-model to complete the inference task. However, reducing feature transmission overhead while maintaining task performance remains a challenge, particularly in the case of noisy wireless channels. In this paper, we propose a Spiking Neural Network (SNN)-based Semantic Communication (SC) model, SNN-SC, which extracts compact semantic information from features and transmits it through digital binary channels. Compared to the Deep Neural Network (DNN)-based SC model, whose output is floating-point, the binary output of SNN makes SNN-SC directly applicable to digital binary channels without the need for extra quantization. Moreover, we introduce a novel spiking neuron called IHF to enhance the reconstruction capability of the SNN-SC decoder. Finally, we enhance the performance of SNN-SC by maximizing the entropy of semantic information. SNN-SC achieves a higher compression ratio and overcomes the ‘cliff effect’ compared to the traditional separate source and channel coding method. In addition, SNN-SC has lower computational complexity than the DNN-based SC model and maintains higher task performance under poor channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Semantic Communication Networks: Architecture, Security, and Privacy",
+  "authors": [
+   "Shaolong Guo",
+   "Yuntao Wang",
+   "Ning Zhang",
+   "Zhou Su",
+   "Tom H. Luan",
+   "Zhiyi Tian",
+   "Xuemin Shen"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3516819",
+  "arxiv": "2405.01221",
+  "openalex": "W4405351316",
+  "cited_by": 92,
+  "abstract": "With the rapid advancement and deployment of intelligent agents and artificial general intelligence (AGI), a fundamental challenge for future networks is enabling efficient communications among agents. Unlike traditional human-centric, data-driven communication networks, the primary goal of agent-based communication is to facilitate coordination among agents. Therefore, task comprehension and collaboration become the key objectives of communications, rather than data synchronization. Semantic communication (SemCom) aims to align information and knowledge among agents to expedite task comprehension. While significant research has been conducted on SemCom for two-agent systems, the development of semantic communication networks (SemComNet) for multi-agent systems remains largely unexplored. In this paper, we provide a comprehensive and up-to-date survey of SemComNet, focusing on their fundamentals, security, and privacy aspects. We introduce a novel three-layer architecture for multi-agent interaction, comprising the control layer, semantic transmission layer, and cognitive sensing layer. We explore working modes and enabling technologies, and present a taxonomy of security and privacy threats, along with state-of-the-art defense mechanisms. Finally, we outline future research directions, paving the way toward intelligent, robust, and energy-efficient SemComNet. This survey represents the first comprehensive analysis of SemComNet, offering detailed insights into the core principles as well as associated security and privacy challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rethinking Visual Provenance: Detection and Watermarking Across Direct Visual Generation and LLM-Driven Code Rendering",
+  "authors": [
+   "Zheng Gao",
+   "Xiaoyu Li",
+   "Zhicheng Bao",
+   "Jiaojiao Jiang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.08137",
+  "arxiv": "2610.08137",
+  "openalex": "W7220963106",
+  "cited_by": 0,
+  "abstract": "AI systems create images and videos with image/video generation models or by writing code and graphics descriptions that are then rendered. These routes can produce similar visible artifacts but expose different representations, intervention points, and provenance evidence. We develop a production-centered framework that compares detection and watermarking across both routes. An explicit verification specification distinguishes passive inference, message recovery, and authenticated provenance. We organize image, video, source-code, and rendering-aware watermarks by production stage. We examine the different requirements of generated images and video, plots and SVG, programmable video, and agent-composed workflows. Documented Claude, OpenAI, and rendering-tool interfaces connect the framework to concrete systems. We pose ten scoped research questions on identifiability, observability, fair comparison across stages, recoverable payload, reconstruction, synchronization, composition, hybrid local contribution, and private production-event authentication. The result is a conceptual research agenda grounded in published methods, inspected interfaces, and elementary boundary examples. It reports no experiments and claims no new theorems; its appendix results are elementary calculations, and documentation and source inspection establish interfaces, not empirical robustness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rateless Joint Source-Channel Coding, and a Blueprint for 6G Semantic Communications System Design",
+  "authors": [
+   "Saeed R. Khosravirad"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2502.06095",
+  "arxiv": "2502.06095",
+  "openalex": "W4407386378",
+  "cited_by": 0,
+  "abstract": "This paper introduces rateless joint source-channel coding (rateless JSCC). The code is rateless in that it is designed and optimized for a continuum of coding rates such that it achieves a desired distortion for any rate in that continuum. We further introduce rate-adaptive and stable communication link operation to accommodate rateless JSCCs. The link operation resembles a ``bit pipe'' that is identified by its rate in bits per frame, and, by the rate of bits that are flipped in each frame. Thus, the link operation is rate-adaptive such that it punctures the rateless JSCC codeword to adapt its length (and coding rate) to the underlying channel capacity, and is stable in maintaining the bit flipping ratio across time frames. Next, a new family of autoencoder rateless JSCC codes are introduced. The code family is dubbed RLACS code (read as relax code, standing for ratelss and lossy autoencoder channel and source code). The code is tested for reconstruction loss of image signals and demonstrates powerful performance that is resilient to variation of channel quality. RLACS code is readily applicable to the case of semantic distortion suited to variety of semantic and effectiveness communications use cases. In the second part of the paper, we dive into the practical concerns around semantic communication and provide a blueprint for semantic networking system design relying on updating the existing network systems with some essential modifications. We further outline a comprehensive list of open research problems and development challenges towards a practical 6G communications system design that enables semantic networking.",
+  "source": "openalex"
+ },
+ {
+  "title": "From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity",
+  "authors": [
+   "Yu Ma",
+   "Zhen Gao",
+   "Li Qiao",
+   "Xiaoyuan Zhang",
+   "Mahdi Boloursaz Mashhadi",
+   "Yin Xu",
+   "Wenjun Xu",
+   "Xiaodong Xu",
+   "Kaibin Huang",
+   "Jiangzhou Wang",
+   "Rahim Tafazolli",
+   "Sheng Chen",
+   "Tony Q. S. Quek",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.10714",
+  "arxiv": "2609.10714",
+  "openalex": "W7212263873",
+  "cited_by": 0,
+  "abstract": "The ambitious requirements of sixth-generation (6G) networks are driving communication systems from reliable bit delivery toward meaning-aware and task-oriented connectivity. Large models (LMs), with strong multimodal understanding and generation capabilities, have accelerated this shift and made semantic communication (SemCom) increasingly practical. Yet current LM-driven SemCom remains fragmented: semantic representations are typically tied to specific modalities, models, or tasks. While the bit provides a universal unit for digital transport, there is still no analogous unit for representing and processing semantics, which limits interoperability, theoretical unification, and scalable system design. We argue that tokens provide a natural candidate for this missing abstraction. Two trends support this: unified multimodal LMs now encode text, images, audio, video, and robot actions in one token space, while distributed LM inference already generates substantial token-level traffic through expert routing, cache transfer, and speculative decoding. Token communication (TokenCom) emerges by unifying these trends, using the LM's native processing unit as a communication abstraction above the bit level and enabling importance assignment, error handling, and resource allocation directly at token granularity. This survey traces the evolution from LM-driven SemCom to TokenCom. We review three major directions of LM-driven SemCom: source-centric semantic coding, channel semantics for physical-layer tasks, and collaborative edge-device intelligence. We then examine the token abstraction, the transmission techniques it requires, and two emerging paradigms, namely TokenCom for LM services and for embodied and agentic intelligence. Finally, we identify open challenges toward unified, scalable, and AI-native 6G communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning in Physical Layer: Review on Data Driven End-to-End Communication Systems and Their Enabling Semantic Applications",
+  "authors": [
+   "Nazmul Islam",
+   "Seokjoo Shin"
+  ],
+  "year": 2024,
+  "venue": "IEEE Open Journal of the Communications Society",
+  "doi": "10.1109/ojcoms.2024.3425314",
+  "arxiv": "2401.12800",
+  "openalex": "W4400409115",
+  "cited_by": 45,
+  "abstract": "Deep learning (DL) has revolutionized wireless communication systems by introducing data-driven end-to-end (E2E) learning, where the physical layer (PHY) is transformed into DL architectures to achieve peak optimization. Leveraging DL for E2E optimization in PHY significantly enhances its adaptability and performance in complex wireless environments, meeting the demands of advanced network systems such as 5G and beyond. Furthermore, this evolution of data-driven PHY optimization has also enabled advanced semantic applications across various modalities, including text, image, audio, video, and multimodal transmissions. These applications elevate communication from bit-level to semantic-level intelligence, making it capable of discerning context and intent. Although the PHY, as a DL architecture, plays a crucial role in enabling semantic communication (SemCom) systems, comprehensive studies that integrate both E2E communication and SemCom systems remain significantly underexplored. This highlights the novelty and potential of these integrative fields, marking them as a promising research domain. Therefore, this article provides a comprehensive review of the emerging field of data-driven PHY for E2E communication systems, emphasizing their role in enabling semantic applications across various modalities. It also identifies key challenges and potential research directions, serving as a crucial guide for future advancements in DL for E2E communication and SemCom systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Hybrid Blind Audio Watermarking for Proprietary Protection, Tamper Proofing, and Self-Recovery",
+  "authors": [
+   "Hwai-Tsu Hu",
+   "Tung-Tsun Lee"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2958095",
+  "arxiv": null,
+  "openalex": "W2998067713",
+  "cited_by": 26,
+  "abstract": "The paper presents a lifting wavelet transform (LWT)-based framework for multi-purpose blind audio watermarking. The proposed schemes can be used to carry out robust watermarking for intellectual property protection as well as fragile watermarking for tamper detection and signal recovery. Following 3-level LWT decomposition of the host audio, the coefficients in selected subbands are partitioned into frames for watermarking. To expand applicability, the robust watermark comprising proprietary information, synchronization code, and frame-related data was particularly embedded in the approximation subband using perceptual-based rational dither modulation (RDM) and adaptive quantization index modulation (AQIM) at a payload capacity of 1523.9 bits per second. The fragile watermark is a highly compressed version of the audio embedded within the 2nd- and 3rd-level detail subbands using 2N- ary AQIM. Hashing comparison and source-channel coding make it possible to identify tampered frames and restore affected regions. Experiment results indicate that the embedded robust watermark can withstand commonly-encountered attacks and the fragile watermark is highly effective in tamper detection and self-recovery. More importantly, the incorporation of a frame synchronization mechanism makes the proposed system resistant to cropping and replacement attacks, all of which were unsolvable using previous watermarking schemes. The perceptual evaluation revealed that the watermark caused only minor degradation. The proposed watermarking scheme is suitable for a wide range of ownership protection and content authentication applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Guess and Send: World-Model-Guided Semantic Packet Transmission for Robust Video Perception",
+  "authors": [
+   "Yan Gong",
+   "Zheng Chu",
+   "Wei Koong Chai",
+   "Hari Mohan Pandey",
+   "Jiankang Zhang",
+   "Jingrui Hou",
+   "Miao Zhang",
+   "Y. Li",
+   "Pei Xiao"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.29587",
+  "arxiv": "2610.29587",
+  "openalex": "W7223215699",
+  "cited_by": 0,
+  "abstract": "Reliable video perception over bandwidth-constrained wireless links requires transmitting information that the receiver cannot already recover from its evolving scene representation. This paper introduces Guess and Send, a world-model-guided semantic packet transmission framework that prioritizes information according to its contribution to the receiver's perception. A shared feature-space world model predicts the receiver's scene state through affine motion compensation and learned residual displacement, while sender-side verification identifies reusable predictions. An acknowledgment-synchronized receiver twin estimates task-impact scores through two counterfactual evaluations, guiding packet selection and unequal error protection over LDPC-coded wireless channels. A compact 3-bit feature representation increases spatial coverage under stringent bandwidth constraints, while predictive fallback sustains perception during packet outages. Experiments on KITTI-MOTS (KITTI) and VisDrone2019-MOT (VisDrone) under Rayleigh fading and AWGN demonstrate substantial gains in low-SNR conditions. On KITTI at a 4.13% reference bandwidth budget, Guess and Send achieves 47.5% J&F at 0 dB Rayleigh SNR, outperforming H.264 by 11.3 percentage points. Controlled ablations show that world-model prediction contributes up to 8.7 points under Rayleigh fading. Object-detection experiments further demonstrate the transferability of receiver-relative predictive transmission across visual perception tasks. These results establish world-model-guided, receiver-state-aware transmission as an effective approach to robust video perception under severe communication constraints.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rateless DeepJSCC for Broadcast Channels: a Rate-Distortion-Complexity Tradeoff",
+  "authors": [
+   "Zijun Qin",
+   "Jingxuan Huang",
+   "Zesong Fei",
+   "Haichuan Ding",
+   "Yulin Shao",
+   "Xianhao Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.21616",
+  "arxiv": "2603.21616",
+  "openalex": "W7140228694",
+  "cited_by": 0,
+  "abstract": "In recent years, numerous data-intensive broadcasting applications have emerged at the wireless edge, calling for a flexible tradeoff between distortion, transmission rate, and processing complexity. While deep learning-based joint source-channel coding (DeepJSCC) has been identified as a potential solution to data-intensive communications, most of these schemes are confined to worst-case solutions, lack adaptive complexity, and are inefficient in broadcast settings. To overcome these limitations, this paper introduces nonlinear transform rateless source-channel coding (NTRSCC), a variable-length JSCC framework for broadcast channels based on rateless codes. In particular, we integrate learned source transformations with physical-layer LT codes, develop unequal protection schemes that exploit decoder side information, and devise approximations to enable end-to-end optimization of rateless parameters. Our framework enables heterogeneous receivers to adaptively adjust their received number of rateless symbols and decoding iterations in belief propagation, thereby achieving a controllable tradeoff between distortion, rate, and decoding complexity. Simulation results demonstrate that the proposed method enhances image broadcast quality under stringent communication and processing budgets over heterogeneous edge devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "Storing Digital Data in DNA: Advances Toward Practical Implementation",
+  "authors": [
+   "Sri Venkata Aravindbabu Malempati"
+  ],
+  "year": 2026,
+  "venue": "International Journal of Intelligent Systems and Applications in Engineering",
+  "doi": "10.5281/zenodo.20477986",
+  "arxiv": null,
+  "openalex": "W7162949187",
+  "cited_by": 0,
+  "abstract": "The exponential growth of global digital data, projected to exceed 175 zettabytes by 2025, has exposed fundamental limitations in conventional storage infrastructure, including finite media lifespan and unsustainable energy consumption. This review examines synthetic deoxyribonucleic acid (DNA) as a next-generation archival storage medium, systematically analyzing the encoding architectures, synthesis methodologies, error correction strategies, and retrieval mechanisms that define the DNA data storage pipeline. DNA offers volumetric storage densities of approximately 500 GB/mm³ and molecular stability, enabling data preservation across centuries. The four-nucleotide alphabet theoretically permits 2 bits per nucleotide, though biochemical constraints reduce practical efficiency to 1.5–1.98 bits per nucleotide. Error correction has advanced substantially, with fountain code implementations achieving near-theoretical efficiency at sequencing coverage depths below 11x. However, significant barriers impede deployment: synthesis costs of $0.05–$0.10 per base, write throughput limited to kilobytes per second, and absent universal standards. Recent advances, including CRISPR-based overwriting, microfluidic platforms achieving 97.67% synthesis yields, and enzymatic methods producing oligonucleotides exceeding 1,000 nucleotides, offer promising pathways toward economic viability. The review concludes that DNA storage is approaching feasibility for hybrid archival hierarchies targeting rarely accessed data, with initial commercial deployment anticipated within 10–20 years.",
+  "source": "openalex"
+ },
+ {
+  "title": "Anchor Watermark: Robust Attribution for Diffusion-based Text-to-Audio Model",
+  "authors": [
+   "Xianjin Rong",
+   "Donghui Hu"
+  ],
+  "year": 2026,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v40i39.40561",
+  "arxiv": null,
+  "openalex": "W7137892315",
+  "cited_by": 0,
+  "abstract": "With the increasing commercialization of the latent diffusion-based text-to-audio generation, model attribution has become a critical challenge. Embedding watermarks in generated audio is an effective way to distinguish synthetic from natural audio. However, existing watermarking methods often suffer from limited robustness or require additional training, limiting their scalability in practical applications. In this paper, we propose an anchor-based inversion optimization framework. The method embeds a watermark into the model's initial latent vector, designated as a pivotal anchor, and extracts the watermark through inversion. To mitigate error accumulation and enhance robustness during inversion, we leverage the temporal consistency and distributional similarity of diffusion models, formulating watermark extraction as a time-series optimization problem. Specifically, given a suspicious audio sample and a candidate model with a predefined anchor, we first perform unguided denoising diffusion on the anchor to generate an intermediate latent trajectory as the anchor sequence. Then, we optimize the inversion process to align the inverted trajectory with the anchor sequence, thereby reducing accumulated errors. During optimization, we adopt Soft Dynamic Time Warping as the loss function. Its flexible temporal alignment capability ensures that correct attribution is achieved only when the anchor matches the target audio. Experimental results show that our method enables training-free attribution while preserving audio quality and achieving strong robustness.",
+  "source": "openalex"
+ },
+ {
+  "title": "Improved Techniques for Video Compression and Communication",
+  "authors": [
+   "Haoming Chen"
+  ],
+  "year": 2016,
+  "venue": "ResearchWorks at the University of Washington (University of Washington)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W2553712872",
+  "cited_by": 0,
+  "abstract": "Video compression and communication has been an important field over the past decades and critical for many applications, e.g., video on demand, video-conferencing, and remote education.In many applications, providing low-delay and error-resilient video transmission and increasing the coding efficiency are two major challenges.Low-delay and error-resilient video coding is critical for real-time two-way video communication over wireless networks.Intra-refresh coding, which embeds intra coded regions into inter frames can achieve a relatively smooth bit-rate and terminate the error propagation caused by the transmission loss.In this dissertation, we propose a novel linear model for the intra-refresh cycle-size selection adapting to the network packet loss rates and the motions in the video content.We also propose a strategy that adapts the intra-refresh coding pattern to different cycle-size and obtains better R-D (Rate-Distortion) performance compared to traditional intrarefresh patterns.Experimental results show that the linear cycle-size selection model can achieve about 3dB improvement compared with a fixed cycle-size.Also, with the proposed intra-refresh order, a 2.0% bitrate reduction is obtained in average compared with the vertical-partition intrarefresh.The Intra Block Copy (IntraBC) is a newly adopted tool in the H.265/HEVC (High Efficiency Video Coding) extension for the screen content video coding.The IntraBC tool efficiently encodes repeating patterns in a picture.The current IntraBC scheme achieves about 1.0% bit-rate reduction on average and up to 4.3% bit-rate reduction on natural content video for a database consisting of 2K, 4K, and 8K sequences.In this dissertation, we propose to improve the IntraBC with a template matching block vector and a fractional search IntraBC.With these two tools, the gain on natural content video coding can be further improved by 0.5% on average and up to 2.0%.Intra prediction is an important tool in intra-frame video coding to reduce the spatial redundancy.In current coding standard H.265/HEVC, a copying-based method based on the boundary (or interpolated boundary) reference pixels is used to predict each pixel in the coding block to remove the spatial redundancy.We find that the conventional copying-based method can be further improved in two cases: 1) the boundary has an inhomogeneous region, and 2) the predicted pixel is far away from the boundary that the correlation between the predicted pixel and the reference pixels is relatively weak.This dissertation performs a theoretical analysis of the optimal weights based on a first-order Gaussian Markov model and the effects in these two cases.It also proposes a novel intra prediction scheme based on the analysis that smoothing the copying-based prediction can derive a better prediction block.Both the theoretical analysis of the coding gain and the experimental results show the effectiveness of the proposed intra prediction method.An average gain of 2.3%",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Compatible Semantic Communication: A Perspective on Digital Coding and Modulation",
+  "authors": [
+   "Guangyi Zhang",
+   "Kequan Zhou",
+   "Yunlong Cai",
+   "Qiyu Hu",
+   "Guanding Yu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.001.2400640",
+  "arxiv": "2412.18876",
+  "openalex": "W4413267739",
+  "cited_by": 8,
+  "abstract": "Semantic communication (SC) is emerging as a pivotal innovation within the 6G framework, aimed at enabling more intelligent transmission. This development has led to numerous studies focused on designing advanced systems through powerful deep learning techniques. Nevertheless, many of these approaches envision an analog transmission manner by formulating the transmit-ted signals as continuous-valued semantic repre-sentation vectors, limiting their compatibility with existing digital systems. To enhance compatibility, it is essential to explore digitized SC systems. This article systematically identifies two promising par-adigms for designing digital SC: probabilistic and deterministic approaches, according to the modulation strategies. For both, we first provide a comprehensive analysis of the methodologies. Then, we put forward the principles of designing digital SC systems with a specific focus on informative-ness and robustness of semantic representations to enhance performance, along with constellation design. Additionally, we present a case study to demonstrate the effectiveness of these methods. Moreover, this article also explores the intrinsic advantages and opportunities provided by digital SC systems, and then outlines several potential research directions for future investigation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Exploiting Trade-Offs In Memory, Storage, And Communication Performance And Accuracy In High-Capacity Computing Systems",
+  "authors": [
+   "Qianqian Fan"
+  ],
+  "year": 2019,
+  "venue": "University of Minnesota Digital Conservancy (University of Minnesota)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W3080498787",
+  "cited_by": 0,
+  "abstract": "University of Minnesota Ph.D. dissertation. August 2019. Major: Electrical Engineering. Advisors: David Lilja, Sachin Sapatnekar. 1 computer file (PDF); ix, 95 pages.",
+  "source": "openalex"
+ },
+ {
+  "title": "HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal",
+  "authors": [
+   "Kexin Li",
+   "Hu, Xiao",
+   "Ilya Grishchenko",
+   "David Lie"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.21577",
+  "arxiv": "2511.21577",
+  "openalex": "W4416780439",
+  "cited_by": 1,
+  "abstract": "The availability of high-quality, AI-generated audio raises security challenges such as misinformation campaigns and voice-cloning fraud. A key defense against the misuse of AI-generated audio is by watermarking it, so that it can be easily distinguished from genuine audio. Those seeking to misuse AI-generated audio may attempt to remove audio watermarks, so studying effective watermark removal techniques is critical to objectively evaluate the robustness of audio watermarks. Previous watermark removal schemes typically assume access to the target watermark detector during the removal process. This assumption is often impractical, which may lead to a false sense of confidence in current watermark schemes. We introduce HarmonicAttack, a novel audio watermark removal method that requires no access to the target watermark algorithm. It only needs a number of original and watermarked samples to train a general model capable of removing watermarks from audio samples. We also find that training samples do not need to share the same distribution as target samples, as our attack generalizes to out-of-distribution samples with minimal degradation. Compared with existing watermark removal attacks, HarmonicAttack is more effective at removing watermarks from state-of-the-art schemes, including AudioSeal, WavMark, SilentCipher, and AudioMarkNet, while maintaining high perceptual quality. Although HarmonicAttack is trained on the LibriSpeech dataset against AudioSeal, it generalizes across unseen datasets and watermarking schemes. For instance, on VCTK, HarmonicAttack achieves a 92% ASR against AudioMarkNet, substantially outperforming the best baseline at 38%. On FMA, HarmonicAttack reaches 100% ASR against all watermarks, whereas the best baseline achieves only 2% against AudioSeal and 44% against WavMark.",
+  "source": "openalex"
+ },
+ {
+  "title": "Big Data Privacy and Security Using Abundant Data Recovery Techniques and Data Obliviousness Methodologies",
+  "authors": [
+   "Snehalata K. Funde",
+   "Gandharba Swain"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2022.3211304",
+  "arxiv": null,
+  "openalex": "W4313031424",
+  "cited_by": 16,
+  "abstract": "The concept of big data security is introduced in this article along with many features. It illustrates the need for security in healthcare systems as the volume of data increases continuously over the period of time. The necessity of big data security as well as several big data analytics phases highlighted. It covers many big data privacy-preserving strategies. Many digital storage solutions being used in today’s world are designed to work only with fixed format of the data. This paper introduces some methods for maintaining metadata obliviousness. The oblivious RAM technology mentioned in the research article address security concerns and it can be handled with the daily increase in data in several industries. Security needs are introduced at many phases of big data creation, such as information extraction, storage systems, and analytics of the information. Additionally, it presents several data recovery methods for recovering original data in the event of a data crash. This paper covers several data categorization methods for sorting data into normal and sensitive categories as well as methods for anomaly detection. It discusses the advantages and disadvantages of various security measures.",
+  "source": "openalex"
+ },
+ {
+  "title": "Media Meets Communication in 6G: Fundamentals, Key Technologies, and Applications",
+  "authors": [
+   "Bingyan Xie",
+   "Longyu Zhou",
+   "Zihan Chen",
+   "Shunpu Tang",
+   "Mingyang Shi",
+   "Yu Tian",
+   "Guo Lu",
+   "Yongpeng Wu",
+   "Tianhao Liang",
+   "Tony Q. S. Quek",
+   "Guangtao Zhai",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2608.05184",
+  "arxiv": "2608.05184",
+  "openalex": "W7201874181",
+  "cited_by": 0,
+  "abstract": "The rapid advancement of sixth-generation (6G) networks is accelerating the convergence of media intelligence and communication intelligence, driving media communication beyond conventional bit-level delivery toward intelligent, semantic-aware, and generative paradigms. Emerging media services require not only high data rates and low latency, but also semantic awareness, perceptual quality assurance, adaptive resource orchestration, trustworthy content processing, and personalized media generation. Meanwhile, media technologies are evolving from handcrafted signal processing and conventional coding toward artificial intelligence (AI)-driven representation learning, content understanding, and generative reconstruction. Motivated by these trends, this paper presents a systematic survey of media communication technologies for 6G vision communication by revisiting the evolution of communication and media technologies and clarifying the intrinsic relationship between media content processing and wireless transmission. We introduce a unified framework consisting of four key dimensions: AI-driven media technologies, media-aware wireless transmission, large model-enabled media communication, and intelligent network infrastructures. Specifically, AI-driven media technologies encompass media coding, content understanding, quality assessment, security and compliance detection, and AIGC-enabled media generation, while media-aware wireless transmission is examined from three complementary perspectives: semantic joint source-channel optimization, which jointly encodes task-relevant semantic information; source-aware transmission optimization, which leverages media characteristics for channel adaptation, prediction, and compensation; and channel-aware source optimization, which adapts media coding and reconstruction based on real-time channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Outage and timeout probability using multiple description coding for video transmission over relay-assisted cognitive radio networks",
+  "authors": [
+   "Nor Khairiah Ibrahim"
+  ],
+  "year": 2024,
+  "venue": "Universiti Putra Malaysia Institutional Repository (Universiti Putra Malaysia)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7167988622",
+  "cited_by": 0,
+  "abstract": "Multiple Description Coding (MDC) is a source coding technique that enhances video transmission reliability over networks by splitting data into multiple descriptions sent via different paths. The accuracy of the received data improves with more received descriptions. Delivering multimedia content, including transmitting videos over wireless networks, presents notable difficulties, including limitations in spectrum capacity and occurrences of packet losses. Cognitive radio (CR) technology addresses spectrum scarcity problem. Relay communication is recognized as a promising technique for enhancing the capacity and range of wireless communication systems and been extensively utilized in CR systems. However, existing research studies concentrated on the MDC approach to the relay-assisted CR systems for accommodating the challenges raised in multimedia transmission, leaving opportunities to be explored. The outage and timeout probability are two transmission performance indicators in video transmission. MDC reduces the adverse effects of outages and timeouts in relay-assisted CR networks by dividing video sequences into descriptions, enabling partial reconstruction even when some packets are lost or delayed. This thesis proposed a system comprised of the MDC to a relay-assisted CR network named MDC-RC for video transmission. This work aims to recognize new opportunities to improve the received video quality and enhance the outage and timeout performance. The first part investigates the video performance of the proposed MDC-RC system to exploit the path diversity to improve error resilience. The video encoding and decoding algorithms at the transmitter and receiver are constructed with the MDC approach. The results indicate that the proposed MDC-RC system achieves better video quality improvement up to 15% compared to the system with the conventional scheme, Single Description Coding (SDC). For path diversity exploitation, the results show that the video quality improved up to 13% when both video descriptions were received compared to one description received. The second part of the thesis focuses on the derivation of outage and timeout probability expression based on the new proposed MDC-RC system models, named MDC-RC-I and MDC-RC-U, for video transmission over the interweave and underlay mode of CR, respectively. The expression for the outage and timeout probability are derived for two scenarios, relay network and non-relay network. In relay-assisted CR networks, assessing outage and timeout probability is essential for optimizing video transmission because it reduces packet losses and delays brought on by channel variations and spectrum variability. In the last part, the proposed system models are tested for outage, timeout, and video performance. First, the outage and timeout performance are evaluated, followed by the video performance. The results show the MDC approach’s benefits towards outage performance by 7% improvement over non-relay network",
+  "source": "openalex"
+ },
+ {
+  "title": "Detecting Voice Cloning Attacks via Timbre Watermarking",
+  "authors": [
+   "Chang Liu",
+   "Jie Zhang",
+   "Tianwei Zhang",
+   "Xi Yang",
+   "Weiming Zhang",
+   "Nenghai Yu"
+  ],
+  "year": 2024,
+  "venue": "Network and Distributed System Security Symposium",
+  "doi": "10.14722/ndss.2024.24200",
+  "arxiv": "2312.03410",
+  "openalex": "W4391725339",
+  "cited_by": 43,
+  "abstract": "Nowadays, it is common to release audio content to the public, for social sharing or commercial purposes.However, with the rise of voice cloning technology, attackers have the potential to easily impersonate a specific person by utilizing his publicly released audio without any permission.Therefore, it becomes significant to detect any potential misuse of the released audio content and protect its timbre from being impersonated.To this end, we introduce a novel concept, \"Timbre Watermarking\", which embeds watermark information into the target individual's speech, eventually defeating the voice cloning attacks.However, there are two challenges: 1) robustness: the attacker can remove the watermark with common speech preprocessing before launching voice cloning attacks; 2) generalization: there are a variety of voice cloning approaches for the attacker to choose, making it hard to build a general defense against all of them.To address these challenges, we design an end-to-end voice cloning-resistant detection framework.The core idea of our solution is to embed the watermark into the frequency domain, which is inherently robust against common data processing methods.A repeated embedding strategy is adopted to further enhance the robustness.To acquire generalization across different voice cloning attacks, we modulate their shared process and integrate it into our framework as a distortion layer.Experiments demonstrate that the proposed timbre watermarking can defend against different voice cloning attacks, exhibit strong resistance against various adaptive attacks (e.g., reconstruction-based removal attacks, watermark overwriting attacks), and achieve practicality in real-world services such as PaddleSpeech, Voice-Cloning-App, and so-vits-svc.In addition, ablation studies are also conducted to verify the effectiveness of our design.Some audio samples are available at https://timbrewatermarking.github.io/samples.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Study on High Reliable Wireless Video Transmission Scheme",
+  "authors": [
+   "宏和 田中"
+  ],
+  "year": 2015,
+  "venue": "Hokkaido University Collection of Scholarly and Academic Papers (Hokkaido University)",
+  "doi": "10.14943/doctoral.k11974",
+  "arxiv": null,
+  "openalex": "W2234516653",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Digital video watermarking algorithm integrating 3D convolution and DT-CWT",
+  "authors": [
+   "Dantong Li",
+   "Guixin Li"
+  ],
+  "year": 2026,
+  "venue": "Scientific Reports",
+  "doi": "10.1038/s41598-026-76098-4",
+  "arxiv": null,
+  "openalex": "W7223350868",
+  "cited_by": 0,
+  "abstract": "With the widespread application of digital video in copyright protection and multimedia security, embedding robust and imperceptible watermarks while preserving video quality remains a critical challenge in digital video applications. Therefore, this study proposes a digital video watermarking algorithm that integrates three-dimensional convolutions with the dual-tree complex wavelet transform (DT-CWT). Unlike existing convolutional neural network DT-CWT watermarking methods, which mainly use DT-CWT as a static frequency domain preprocessing method, this method models DT-CWT sub-band features across frames and spacetime through a three-dimensional convolutional network. Based on the synergistic effects of dense feature fusion and an attention guidance mechanism, it achieves adaptive watermark embedding in the frequency domain and temporal consistency dimensions. A differentiable compression simulation is used for H.264 encoding during training to perceive the actual encoding distortion distribution. This improves the stability of the watermark in real compression environments. The experimental results on the publicly available UVG dataset showed that the proposed algorithm achieved significant performance improvements in multiple indicators. In ablation experiments, the complete model achieved a peak signal-to-noise ratio of 41.8 dB and a structural similarity index of 0.985, validating the importance of key modules. Comparative experiments revealed that after 100 training epochs, the proposed algorithm achieved a bit error rate of 0.22 on the test set while maintaining a recognition rate above 96% under various typical attacks. This method was more resistant to attacks such as scaling, cropping, rotation, and Gaussian noise. The peak signal-to-noise ratio of this method was improved by an average of about 2–4 dB compared to the comparison method. The structural similarity index was improved by about 0.03–0.06. Moreover, the video multi method evaluation fusion index was improved by about 6–12 points. The proposed algorithm significantly enhances the robustness and stability of watermarks while maintaining video quality, providing a high-performance practical solution.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multilayer Steganalysis in the Encryption Era: A Comprehensive Review",
+  "authors": [
+   "Isamadeen A. Khalifa",
+   "Salih Mustafa S. Atroshey",
+   "Abdulkadir Şengür"
+  ],
+  "year": 2025,
+  "venue": "European Journal of Applied Science Engineering and Technology",
+  "doi": "10.59324/ejaset.2026.4(1).04",
+  "arxiv": null,
+  "openalex": "W7117892826",
+  "cited_by": 5,
+  "abstract": "This review offers a coherent, crypto-conscious view of multilayer steganalysis, stating that current detectability depends not so much on regularities of payloads, much of which is obviated by strong encryption, but on the geometry of cover alterations due to content- adaptive embedding, cryptographic overhead and processing by the platform. We summarize the core principles and threat models and analyze symmetric, asymmetric, and hybrid encryp- tion (KEM+AEAD) in terms of its impact on the ciphertext entropy and payload efficiency. Moreover, we map the design space in terms of operational taxonomy that includes single-layer and onion-style pipelines, multi-carrier spreading, secret sharing with fragmentation, protocol- aware embedding, and a variety of different key-management techniques, some of which are post-quantum ready. Our model clusters risk surfaces (cover–source mismatch, payload rate, recompression, metadata channels) and scans classical and deep steganalysis cross-modally with concern to calibration, robustness, and explainability. The novelty of the review in- cludes: (i) a crypto-conscious taxonomy that explicitly associates critical exchange, nonce dis- cipline, and AEAD overheads with anticipated detectability; (ii) a unified assessment protocol that normalizes encryption variables, payloads vs rate sweeps, channel stressors and reporting beyond imperfect information (ROC/AUC, EER, calibration, latency, energy); (iii) a future re- search agenda, which includes diffusion/GAN stego, federated steganalysis, post-quantum key exchange, deployment administration, and ethics. We conclude with a community benchmark suite and powerful open baselines to push reproducible, deployment-oriented development on multilayer steganalysis.",
+  "source": "openalex"
+ },
+ {
+  "title": "Satellite Intelligence: Distributed Training, Collaborative Inference,and LLM Adaptation in LEO Constellation",
+  "authors": [
+   "Zheng Lin",
+   "Zhanwei Wang",
+   "Yuxin Zhang",
+   "Yafei Wang",
+   "Ons Aouedi",
+   "Zihan Fang",
+   "Jinfeng Xu",
+   "Jing Yang",
+   "Vu Nguyen Ha",
+   "Yuanwei Liu",
+   "Mohamed-Slim Alouini",
+   "Symeon Chatzinotas"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.35282",
+  "arxiv": "2610.35282",
+  "openalex": "W7223943866",
+  "cited_by": 0,
+  "abstract": "The proliferation of orbital sensing data and the real-time demands of emerging global services are pushing low Earth orbit (LEO) satellite networks from bent-pipe relays toward intelligent onboard processing. This shift confronts a fundamental tension, where modern artificial intelligence (AI) training paradigms require intensive computation, abundant memory, and stable connectivity, all of which are scarce under the dynamic topologies, intermittent links, and severe size, weight, and power (SWaP) constraints of satellite networks. Addressing this tension demands rethinking AI workflows, from training and inference to the emerging deployment of large language models (LLMs), under a constraint-aware design philosophy. To the best of our knowledge, this paper provides the first survey that jointly covers all three, whereas prior surveys examine these aspects in isolation. We begin by identifying the deployment challenge of satellite intelligence (SI) and deriving design principles for SI. We then examine three advancing paradigms: i) distributed training, where federated learning (FL) and split learning (SL) enable satellite-ground co-training under resource limitations; ii) collaborative inference, which exploits single-satellite, multi-satellite, and satellite-ground architectures to meet real-time service demands; and iii) on-orbit LLM adaptation and serving, which tackles the frontier challenge of deploying LLMs under severe orbital constraints and resource-aware serving. Finally, we identify open challenges and future directions. By bridging the AI and satellite networks, this paper provides a research roadmap for the implementation of space-native AI technologies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Securing AI Agents in Cyber-Physical Systems: A Survey of Environmental Interactions, Deepfake Threats, and Defenses",
+  "authors": [
+   "Mohsen Hatami",
+   "Van Tuan Pham",
+   "Hozefa Lakadawala",
+   "Yu Yi Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2601.20184",
+  "arxiv": "2601.20184",
+  "openalex": "W7126037277",
+  "cited_by": 2,
+  "abstract": "The increasing integration of AI agents into cyber-physical systems (CPS) introduces new security risks that extend beyond traditional cyber or physical threat models. Recent advances in generative AI enable deepfake and semantic manipulation attacks that can compromise agent perception, reasoning, and interaction with the physical environment, while emerging protocols such as the Model Context Protocol (MCP) further expand the attack surface through dynamic tool use and cross-domain context sharing. This survey provides a comprehensive review of security threats targeting AI agents in CPS, with a particular focus on environmental interactions, deepfake-driven attacks, and MCP-mediated vulnerabilities. We organize the literature using the SENTINEL framework, a lifecycle-aware methodology that integrates threat characterization, feasibility analysis under CPS constraints, defense selection, and continuous validation. Through an end-to-end case study grounded in a real-world smart grid deployment, we quantitatively illustrate how timing, noise, and false-positive costs constrain deployable defenses, and why detection mechanisms alone are insufficient as decision authorities in safety-critical CPS. The survey highlights the role of provenance- and physics-grounded trust mechanisms and defense-in-depth architectures, and outlines open challenges toward trustworthy AI-enabled CPS.",
+  "source": "openalex"
+ },
+ {
+  "title": "Federated Learning in Intelligent Transportation Systems: Recent Applications and Open Problems",
+  "authors": [
+   "Shiying Zhang",
+   "Jun Li",
+   "Long Xing Shi",
+   "Ming Ding",
+   "Dinh C. Nguyen",
+   "Wuzheng Tan",
+   "Jian Weng",
+   "Zhu Han"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Intelligent Transportation Systems",
+  "doi": "10.1109/tits.2023.3324962",
+  "arxiv": "2309.11039",
+  "openalex": "W4388878683",
+  "cited_by": 167,
+  "abstract": "Intelligent transportation systems (ITSs) have been fueled by the rapid development of communication technologies, sensor technologies, and the Internet of Things (IoT). Nonetheless, due to the dynamic characteristics of the vehicle networks, it is rather challenging to make timely and accurate decisions of vehicle behaviors. Moreover, in the presence of mobile wireless communications, the privacy and security of vehicle information are at constant risk. In this context, a new paradigm is urgently needed for various applications in dynamic vehicle environments. As a distributed machine learning technology, federated learning (FL) has received extensive attention due to its outstanding privacy protection properties and easy scalability. We conduct a comprehensive survey of the latest developments in FL for ITS. Specifically, we initially research the prevalent challenges in ITS and elucidate the motivations for applying FL from various perspectives. Subsequently, we review existing deployments of FL in ITS across various scenarios, and discuss specific potential issues in object recognition, traffic management, and service providing scenarios. Furthermore, we conduct a further analysis of the new challenges introduced by FL deployment and the inherent limitations that FL alone cannot fully address, including uneven data distribution, limited storage and computing power, and potential privacy and security concerns. We then examine the existing collaborative technologies that can help mitigate these challenges. Lastly, we discuss the open challenges that remain to be addressed in applying FL in ITS and propose several future research directions.",
+  "source": "openalex"
+ }
+]

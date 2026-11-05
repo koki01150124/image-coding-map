@@ -1,0 +1,110 @@
+[
+ {
+  "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Shengjie Wu",
+   "Lingjin Kong",
+   "Nan Li",
+   "Haitao Zhao",
+   "Dongtang Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25682",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+  "source": "arxiv"
+ },
+ {
+  "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+  "authors": [
+   "Amit Vaisman",
+   "Gal Pomerants",
+   "Raz Lapid"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2604.05743",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Modern image compression methods are typically optimized for the rate--distortion--perception trade-off, whereas their robustness to bit-level corruption is rarely examined. We show that diffusion-based compressors built on the Reverse Channel Coding (RCC) paradigm are substantially more robust to bit flips than classical and learned codecs. We further introduce a more robust variant of Turbo-DDCM that significantly improves robustness while only minimally affecting the rate--distortion--perception trade-off. Our findings suggest that RCC-based compression can yield more resilient compressed representations, potentially reducing reliance on error-correcting codes in highly noisy environments.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Conditional Latent Coding with Learnable Synthesized Reference for Deep Image Compression",
+  "authors": [
+   "Siqi Wu",
+   "Yinda Chen",
+   "Dong Liu",
+   "Zhihai He"
+  ],
+  "year": 2025,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2502.09971",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In this paper, we study how to synthesize a dynamic reference from an external dictionary to perform conditional coding of the input image in the latent domain and how to learn the conditional latent synthesis and coding modules in an end-to-end manner. Our approach begins by constructing a universal image feature dictionary using a multi-stage approach involving modified spatial pyramid pooling, dimension reduction, and multi-scale feature clustering. For each input image, we learn to synthesize a conditioning latent by selecting and synthesizing relevant features from the dictionary, which significantly enhances the model's capability in capturing and exploring image source correlation. This conditional latent synthesis involves a correlation-based feature matching and alignment strategy, comprising a Conditional Latent Matching (CLM) module and a Conditional Latent Synthesis (CLS) module. The synthesized latent is then used to guide the encoding process, allowing for more efficient compression by exploiting the correlation between the input image and the reference dictionary. According to our theoretical analysis, the proposed conditional latent coding (CLC) method is robust to perturbations in the external dictionary samples and the selected conditioning latent, with an error bound that scales logarithmically with the dictionary size, ensuring stability even with large and diverse dictionaries. Experimental results on benchmark datasets show that our new method improves the coding performance by a large margin (up to 1.2 dB) with a very small overhead of approximately 0.5\\% bits per pixel. Our code is publicly available at https://github.com/ydchen0806/CLC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Deep Learning-Based Image Compression for Wireless Communications: Impacts on Reliability,Throughput, and Latency",
+  "authors": [
+   "Mostafa Naseri",
+   "Pooya Ashtari",
+   "Mohamed Seif",
+   "Eli De Poorter",
+   "H. Vincent Poor",
+   "Adnan Shahid"
+  ],
+  "year": 2024,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2411.10650",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In wireless communications, efficient image transmission must balance reliability, throughput, and latency, especially under dynamic channel conditions. This paper presents an adaptive and progressive pipeline for learned image compression (LIC)-based architectures tailored to such environments. We investigate two state-of-the-art learning-based models: the hyperprior model and Vector Quantized Generative Adversarial Network (VQGAN). The hyperprior model achieves superior compression performance through lossless compression in the bottleneck but is susceptible to bit errors, necessitating the use of error correction or retransmission mechanisms. In contrast, the VQGAN decoder demonstrates robust image reconstruction capabilities even in the absence of channel coding, enhancing reliability in challenging transmission scenarios. We propose progressive versions of both models, enabling partial image transmission and decoding under imperfect channel conditions. This progressive approach not only maintains image integrity under poor channel conditions but also significantly reduces latency by allowing immediate partial image availability. We evaluate our pipeline using the Kodak high-resolution image dataset under a Rayleigh fading wireless channel model simulating dynamic conditions. The results indicate that the progressive transmission framework enhances reliability and latency while maintaining or improving throughput compared to non-progressive counterparts across various Signal-to-Noise Ratio (SNR) levels. Specifically, the progressive-hyperprior model consistently outperforms others in latency metrics, particularly in the 99.9th percentile waiting time-a measure indicating the maximum waiting time experienced by 99.9% of transmission instances-across all SNRs, and achieves higher throughput in low SNR scenarios. where Adaptive WebP fails.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compact and Robust Deep Learning Architecture for Fluorescence Lifetime Imaging and FPGA Implementation",
+  "authors": [
+   "Zhenya Zang",
+   "Dong Xiao",
+   "Quan Wang",
+   "Ziao Jiao",
+   "Chen Yu",
+   "David Day-Uei Li"
+  ],
+  "year": 2022,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2209.03272",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This paper reported a bespoke adder-based deep learning network for time-domain fluorescence lifetime imaging (FLIM). By leveraging the l1-norm extraction method, we propose a 1-D Fluorescence Lifetime AdderNet (FLAN) without multiplication-based convolutions to reduce the computational complexity. Further, we compressed fluorescence decays in temporal dimension using a log-scale merging technique to discard redundant temporal information derived as log-scaling FLAN (FLAN+LS). FLAN+LS achieves 0.11 and 0.23 compression ratios compared with FLAN and a conventional 1-D convolutional neural network (1-D CNN) while maintaining high accuracy in retrieving lifetimes. We extensively evaluated FLAN and FLAN+LS using synthetic and real data. A traditional fitting method and other non-fitting, high-accuracy algorithms were compared with our networks for synthetic data. Our networks attained a minor reconstruction error in different photon-count scenarios. For real data, we used fluorescent beads' data acquired by a confocal microscope to validate the effectiveness of real fluorophores, and our networks can differentiate beads with different lifetimes. Additionally, we implemented the network architecture on a field-programmable gate array (FPGA) with a post-quantization technique to shorten the bit-width, thereby improving computing efficiency. FLAN+LS on hardware achieves the highest computing efficiency compared to 1-D CNN and FLAN. We also discussed the applicability of our network and hardware architecture for other time-resolved biomedical applications using photon-efficient, time-resolved sensors.",
+  "source": "arxiv"
+ },
+ {
+  "title": "MBRS : Enhancing Robustness of DNN-based Watermarking by Mini-Batch of Real and Simulated JPEG Compression",
+  "authors": [
+   "Zhaoyang Jia",
+   "Han Fang",
+   "Weiming Zhang"
+  ],
+  "year": 2021,
+  "venue": "arXiv",
+  "doi": "10.1145/3474085.3475324",
+  "arxiv": "2108.08211",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Based on the powerful feature extraction ability of deep learning architecture, recently, deep-learning based watermarking algorithms have been widely studied. The basic framework of such algorithm is the auto-encoder like end-to-end architecture with an encoder, a noise layer and a decoder. The key to guarantee robustness is the adversarial training with the differential noise layer. However, we found that none of the existing framework can well ensure the robustness against JPEG compression, which is non-differential but is an essential and important image processing operation. To address such limitations, we proposed a novel end-to-end training architecture, which utilizes Mini-Batch of Real and Simulated JPEG compression (MBRS) to enhance the JPEG robustness. Precisely, for different mini-batches, we randomly choose one of real JPEG, simulated JPEG and noise-free layer as the noise layer. Besides, we suggest to utilize the Squeeze-and-Excitation blocks which can learn better feature in embedding and extracting stage, and propose a \"message processor\" to expand the message in a more appreciate way. Meanwhile, to improve the robustness against crop attack, we propose an additive diffusion block into the network. The extensive experimental results have demonstrated the superior performance of the proposed scheme compared with the state-of-the-art algorithms. Under the JPEG compression with quality factor Q=50, our models achieve a bit error rate less than 0.01% for extracted messages, with PSNR larger than 36 for the encoded images, which shows the well-enhanced robustness against JPEG attack. Besides, under many other distortions such as Gaussian filter, crop, cropout and dropout, the proposed framework also obtains strong robustness. The code implemented by PyTorch \\cite{2011torch7} is avaiable in https://github.com/jzyustc/MBRS.",
+  "source": "arxiv"
+ }
+]

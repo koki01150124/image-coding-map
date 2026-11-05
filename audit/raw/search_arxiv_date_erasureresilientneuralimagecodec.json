@@ -1,0 +1,19 @@
+[
+ {
+  "title": "Semantic-Aware Neural Video Codec for Error-Resilient Low-Latency Transmission",
+  "authors": [
+   "Matin Mortaheb",
+   "Homa Esfahanizadeh",
+   "Jinfeng Du",
+   "Harish Viswanathan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.16279",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Emerging physical AI systems require low-latency, task-oriented video communication over unreliable channels. We propose a semantic-aware multi-level neural video coding method for robust low-latency video transmission over unreliable channels that are abstracted as multi-level packet erasure channels. Built upon the real-time DCVC-RT neural video codec, the proposed framework introduces a semantic- and feature-aware coding strategy that partitions encoded representations into packets carrying different levels of semantic and latent-feature importance and assigns these packets to different streams, each associated with a priority level when transmitted over unreliable communication channels. We also developed an error-resilient entropy model that removes inter-packet dependencies, allowing each packet to be decoded independently under packet losses. The complete system is trained end-to-end over the abstracted multi-level packet erasure channels, enabling learning of channel-aware representations together with importance-aware packet assignment while facilitating the network for differentiated packet prioritization. Experiments show that the proposed framework significantly improves robustness over baseline DCVC-RT under packet erasures, achieving graceful degradation in less important regions while better preserving task-relevant visual content.",
+  "source": "arxiv"
+ }
+]

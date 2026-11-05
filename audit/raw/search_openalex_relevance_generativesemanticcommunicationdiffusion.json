@@ -1,0 +1,912 @@
+[
+ {
+  "title": "Generative Semantic Communication: Diffusion Models Beyond Bit Recovery",
+  "authors": [
+   "Eleonora Grassucci",
+   "Sergio Barbarossa",
+   "Danilo Comminiello"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2026.3689849",
+  "arxiv": "2306.04321",
+  "openalex": "W4379933627",
+  "cited_by": 55,
+  "abstract": "Semantic communication is expected to be one of the cores of next-generation AI-based communications. One of the possibilities offered by semantic communication is the capability to regenerate, at the destination side, images or videos semantically equivalent to the transmitted ones, without necessarily recovering the transmitted sequence of bits. The current solutions still lack the ability to build complex scenes from the received partial information. Clearly, there is an unmet need to balance the effectiveness of generation methods and the complexity of the transmitted information, possibly taking into account the goal of communication. In this paper, we aim to bridge this gap by proposing a novel generative diffusion-guided framework for semantic communication that leverages the strong abilities of diffusion models in synthesizing multimedia content while preserving semantic features. We reduce bandwidth usage by sending highly-compressed semantic information only. Then, the diffusion model learns to synthesize semantic-consistent scenes through spatially-adaptive normalizations from such denoised semantic information. We prove, through an in-depth assessment of multiple scenarios, that our method outperforms existing solutions in generating high-quality images with preserved semantic information even in cases where the received content is significantly degraded. More specifically, our results show that objects, locations, and depths are still recognizable even in the presence of extremely noisy conditions of the communication channel. The code is available at https://github.com/ispamm/GESCO.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion-Driven Semantic Communication for Generative Models With Bandwidth Constraints",
+  "authors": [
+   "Lei Guo",
+   "Wei Ren Chen",
+   "Yuxuan Sun",
+   "Bo Ai",
+   "Νικόλαος Παππάς",
+   "Tony Q. S. Quek"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2025.3553851",
+  "arxiv": "2407.18468",
+  "openalex": "W4409014205",
+  "cited_by": 41,
+  "abstract": "Diffusion models have been extensively utilized in AI-generated content (AIGC) in recent years, thanks to the superior generation capabilities. Combining with semantic communications, diffusion models are used for tasks such as denoising, data reconstruction, and content generation. However, existing diffusion-based generative models do not consider the stringent bandwidth limitation, which limits its application in wireless communication. This paper introduces a diffusion-driven semantic communication framework with advanced VAE-based compression for bandwidth-constrained generative model. Our designed architecture utilizes the diffusion model, where the signal transmission process through the wireless channel acts as the forward process in diffusion. To reduce bandwidth requirements, we incorporate a downsampling module and a paired upsampling module based on a variational auto-encoder with reparameterization at the receiver to ensure that the recovered features conform to the Gaussian distribution. Furthermore, we derive the loss function for our proposed system and evaluate its performance through comprehensive experiments. Our experimental results demonstrate significant improvements in pixel-level metrics such as peak signal to noise ratio (PSNR) and semantic metrics like learned perceptual image patch similarity (LPIPS). These enhancements are more profound regarding the compression rates and SNR compared to deep joint source-channel coding (DJSCC).",
+  "source": "openalex"
+ },
+ {
+  "title": "Multimodal Generative Semantic Communication Based on Latent Diffusion Model",
+  "authors": [
+   "Weiqi Fu",
+   "Lianming Xu",
+   "Xin Wu",
+   "Haoyang Wei",
+   "Li Wang"
+  ],
+  "year": 2024,
+  "venue": "Machine learning for signal processing ...",
+  "doi": "10.1109/mlsp58920.2024.10734744",
+  "arxiv": "2408.05455",
+  "openalex": "W4404037698",
+  "cited_by": 7,
+  "abstract": "In emergencies, the ability to quickly and accurately gather environmental data and command information, and to make timely decisions, is particularly critical. Traditional semantic communication frameworks, primarily based on a single modality, are susceptible to complex environments and lighting conditions, thereby limiting decision accuracy. To this end, this paper introduces a multimodal generative semantic communication framework named mm-GESCO. The framework ingests streams of visible and infrared modal image data, generates fused semantic segmentation maps, and transmits them using a combination of one-hot encoding and zlib compression techniques to enhance data transmission efficiency. At the receiving end, the framework can reconstruct the original multimodal images based on the semantic maps. Additionally, a latent diffusion model based on contrastive learning is designed to align different modal data within the latent space, allowing mm-GESCO to reconstruct latent features of any modality presented at the input. Experimental results demonstrate that mm-GESCO achieves a compression ratio of up to 200 times, surpassing the performance of existing semantic communication frameworks and exhibiting excellent performance in downstream tasks such as object classification and detection.",
+  "source": "openalex"
+ },
+ {
+  "title": "SemSteDiff: Generative Diffusion Model-Based Coverless Semantic Steganography Communication",
+  "authors": [
+   "Song Gao",
+   "Rui Meng",
+   "Xiaodong Xu",
+   "Haixiao Gao",
+   "Yiming Liu",
+   "Chenyuan Feng",
+   "Ping Zhang",
+   "Tony Q. S. Quek",
+   "Dusit Tao Niyato"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "10.1109/tmc.2026.3678288",
+  "arxiv": "2509.04803",
+  "openalex": "W7143453512",
+  "cited_by": 7,
+  "abstract": "Semantic communication (SemCom), as a novel paradigm for future communication systems, has recently attracted much attention due to its superiority in communication efficiency. However, similar to traditional communication, it also suffers from eavesdropping threats. Intelligent eavesdroppers could launch advanced semantic analysis techniques to infer secret semantic information. Therefore, some researchers have designed Semantic Steganography Communication (SemSteCom) schemes to confuse semantic eavesdroppers. However, the state-of-the-art SemSteCom schemes for image transmission rely on the pre-selected cover image, which limits the generalization. To address this issue, we propose a Generative Diffusion Model-based Coverless Semantic Steganography Communication (SemSteDiff) scheme to hide secret images into generated stego images. The semantic related private and public keys enable legitimate receiver to decode secret images correctly while the eavesdropper without the completely correct key-pairs fail to obtain them. Simulation results demonstrate the effectiveness of the plug-and-play design in different Joint Source-Channel Coding (JSCC) frameworks. Results under different eavesdropping settings show that, when Signal-to-Noise Ratio (SNR) = 0 dB, the peak signal-to-noise ratio (PSNR) of the legitimate receiver is 4.14 dB higher than that of the eavesdropper.",
+  "source": "openalex"
+ },
+ {
+  "title": "Enabling Training-Free Semantic Communication Systems with Generative Diffusion Models",
+  "authors": [
+   "Shunpu Tang",
+   "Yuanyuan Jia",
+   "Qianqian Yang",
+   "Ruichen Zhang",
+   "Jihong Park",
+   "Dusit Tao Niyato"
+  ],
+  "year": 2025,
+  "venue": "Globecom",
+  "doi": "10.1109/globecom59602.2025.11431826",
+  "arxiv": "2505.01209",
+  "openalex": "W7138919409",
+  "cited_by": 3,
+  "abstract": "Semantic communication (SemCom) has recently emerged as a promising paradigm for next-generation wireless systems. Empowered by advanced artificial intelligence (AI) technologies, SemCom has achieved significant improvements in transmission quality and efficiency. However, existing SemCom systems either rely on training over large datasets and specific channel conditions or suffer from performance degradation under channel noise when operating in a training-free manner. To address these issues, we explore the use of generative diffusion models (GDMs) as training-free SemCom systems. Specifically, we design a semantic encoding and decoding method based on the inversion and sampling process of the denoising diffusion implicit model (DDIM), which introduces a two-stage forward diffusion process, split between the transmitter and receiver to enhance robustness against channel noise. Moreover, we optimize sampling steps to compensate for the increased noise level caused by channel noise. We also conduct a brief analysis to provide insights about this design. Simulations on the Kodak dataset validate that the proposed system outperforms the existing baseline SemCom systems across various metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Adaptive Generative Semantic Communication Using Conditional Diffusion Models",
+  "authors": [
+   "Pujing Yang",
+   "Guangyi Zhang",
+   "Yunlong Cai"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2024.3515656",
+  "arxiv": "2409.02597",
+  "openalex": "W4405270412",
+  "cited_by": 14,
+  "abstract": "Recent advances in deep learning-based joint source-channel coding (DJSCC) have shown promise for end-to-end semantic image transmission. However, most existing schemes primarily focus on optimizing pixel-wise metrics, which often fail to align with human perception, leading to lower perceptual quality. In this letter, we propose a novel generative DJSCC approach using conditional diffusion models to enhance the perceptual quality of transmitted images. Specifically, by utilizing entropy models, we effectively manage transmission bandwidth based on the estimated entropy of transmitted symbols. These symbols are then used at the receiver as conditional information to guide a conditional diffusion decoder in image reconstruction. Our model is built upon the emerging advanced mamba-like linear attention (MLLA) skeleton, which excels in image processing tasks while also offering fast inference speed. Besides, we introduce a multi-stage training strategy to ensure the stability and improve the overall performance of the model. Simulation results demonstrate that our proposed method significantly outperforms existing approaches in terms of perceptual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deadline-Aware Bandwidth Allocation for Semantic Generative Communication with Diffusion Models",
+  "authors": [
+   "Jin‐Hyuk Choi",
+   "Jihong Park",
+   "Seungeun Oh",
+   "Seong‐Lyun Kim"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2508.12701",
+  "arxiv": "2508.12701",
+  "openalex": "W4414489379",
+  "cited_by": 0,
+  "abstract": "The importance of Radio Access Network (RAN) in support Artificial Intelligence (AI) application services has grown significantly, underscoring the need for an integrated approach that considers not only network efficiency but also AI performance. In this paper we focus on a semantic generative communication (SGC) framework for image inpainting application. Specifically, the transmitter sends semantic information, i.e., semantic masks and textual descriptions, while the receiver utilizes a conditional diffusion model on a base image, using them as conditioning data to produce the intended image. In this framework, we propose a bandwidth allocation scheme designed to maximize bandwidth efficiency while ensuring generation performance. This approach is based on our finding of a Semantic Deadline--the minimum time that conditioning data is required to be injected to meet a given performance threshold--within the multi-modal SGC framework. Given this observation, the proposed scheme allocates limited bandwidth so that each semantic information can be transmitted within the corresponding semantic deadline. Experimental results corroborate that the proposed bandwidth allocation scheme achieves higher generation performance in terms of PSNR for a given bandwidth compared to traditional schemes that do not account for semantic deadlines.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deadline-Aware Bandwidth Allocation for Semantic Generative Communication with Diffusion Models",
+  "authors": [
+   "Choi, Jinhyuk",
+   "Oh, Seungeun",
+   "Park, Jihong",
+   "Seong‐Lyun Kim"
+  ],
+  "year": 2025,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "doi": "10.5281/zenodo.17656516",
+  "arxiv": null,
+  "openalex": "W7106215802",
+  "cited_by": 0,
+  "abstract": "The importance of Radio Access Network (RAN) in support Artificial Intelligence (AI) application services has grown significantly, underscoring the need for an integrated approach that considers not only network efficiency but also AI performance. In this paper we focus on a semantic generative communication (SGC) framework for image inpainting application. Specifically, the transmitter sends semantic information, i.e., semantic masks and textual descriptions, while the receiver utilizes a conditional diffusion model on a base image, using them as conditioning data to produce the intended image. In this framework, we propose a bandwidth allocation scheme designed to maximize bandwidth efficiency while ensuring generation performance. This approach is based on our finding of a Semantic Deadline--the minimum time that conditioning data is required to be injected to meet a given performance threshold--within the multi-modal SGC framework. Given this observation, the proposed scheme allocates limited bandwidth so that each semantic information can be transmitted within the corresponding semantic deadline. Experimental results corroborate that the proposed bandwidth allocation scheme achieves higher generation performance in terms of PSNR for a given bandwidth compared to traditional schemes that do not account for semantic deadlines.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deadline-Aware Bandwidth Allocation for Semantic Generative Communication with Diffusion Models",
+  "authors": [
+   "Jin‐Hyuk Choi",
+   "Jihong Park",
+   "Seungeun Oh",
+   "Seong‐Lyun Kim"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)",
+  "doi": "10.1109/spawc66079.2025.11143487",
+  "arxiv": null,
+  "openalex": "W4413980266",
+  "cited_by": 0,
+  "abstract": "The importance of Radio Access Network (RAN) in support Artificial Intelligence (AI) application services has grown significantly, underscoring the need for an integrated approach that considers not only network efficiency but also AI performance. In this paper we focus on a semantic generative communication (SGC) framework for image inpainting application. Specifically, the transmitter sends semantic information, i.e., semantic masks and textual descriptions, while the receiver utilizes a conditional diffusion model on a base image, using them as conditioning data to produce the intended image. In this framework, we propose a bandwidth allocation scheme designed to maximize bandwidth efficiency while ensuring generation performance. This approach is based on our finding of a “Semantic Deadline”-the minimum time that conditioning data is required to be injected to meet a given performance threshold-within the multi-modal SGC framework. Given this observation, the proposed scheme allocates limited bandwidth so that each semantic information can be transmitted within the corresponding semantic deadline. Experimental results corroborate that the proposed bandwidth allocation scheme achieves higher generation performance in terms of PSNR for a given bandwidth compared to traditional schemes that do not account for semantic deadlines.",
+  "source": "openalex"
+ },
+ {
+  "title": "FGAL-DM: Privacy-Preserving Semantic Communication via Federated Generative Adversarial Latent Diffusion Models",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Nan Li",
+   "Yichi Zhang",
+   "Haitao Zhao"
+  ],
+  "year": 2026,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp55912.2026.11460383",
+  "arxiv": null,
+  "openalex": "W7155099403",
+  "cited_by": 0,
+  "abstract": "Training generative models for semantic communication requires vast, distributed datasets, but this process faces critical challenges in distributed settings, including strict user privacy, limited client resources, and complex channel heterogeneity. Most existing works typically deploy the whole models on clients, leading to substantial overhead and limited adaptability to channel variations. To this end, we propose a training framework for the federated generative adversarial latent diffusion models (FGAL-DM). This framework employs an asymmetric architecture with a lightweight encoder on each client and a powerful signal-to-noise ratio (SNR)-aware generative model on the server. To overcome inherent privacy problem, we introduce a two-stage training strategy: supervised pre-training on public data for robust initialization, followed by adversarial fine-tuning in the latent space using a public data reference to avoid accessing private data. Additionally, a layer-wise contribution-aware aggregation mechanism is employed to further enhance training efficiency. Experimental results show that our framework achieves up to a 0.8 dB PSNR gain and a 1.4% LPIPS reduction, which facilitates the construction of a high-fidelity federated semantic communication model in practical scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models for Audio Semantic Communication",
+  "authors": [
+   "Eleonora Grassucci",
+   "Christian Marinoni",
+   "Andrea Rodriguez",
+   "Danilo Comminiello"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp48485.2024.10447612",
+  "arxiv": "2309.07195",
+  "openalex": "W4392903433",
+  "cited_by": 46,
+  "abstract": "Directly sending audio signals from a transmitter to a receiver across a noisy channel may absorb consistent bandwidth and be prone to errors when trying to recover the transmitted bits. On the contrary, the recent semantic communication approach proposes to send the semantics and then regenerate semantically consistent content at the receiver without exactly recovering the bitstream. In this paper, we propose a generative audio semantic communication framework that faces the communication problem as an inverse problem, therefore being robust to different corruptions. Our method transmits lower-dimensional representations of the audio signal and of the associated semantics to the receiver, which generates the corresponding signal with a particular focus on its meaning (i.e., the semantics) thanks to the conditional diffusion model at its core. During the generation process, the diffusion model restores the received information from multiple degradations at the same time including corruption noise and missing parts caused by the transmission over the noisy channel. We show that our framework outperforms competitors in a real-world scenario and with different channel conditions. Visit the project page to listen to samples and access code and experimental procedures: https://ispamm.github.io/diffusion-audio-semantic-communication/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Successive Refinement: A Generative AI-Aided Semantic Communication Framework",
+  "authors": [
+   "Kexin X. Zhang",
+   "Lixin Li",
+   "Wensheng Lin",
+   "Yuna Yan",
+   "Rui Li",
+   "Wenchi Cheng",
+   "Zhu Han"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2025.3526839",
+  "arxiv": "2408.05112",
+  "openalex": "W4406137664",
+  "cited_by": 39,
+  "abstract": "Semantic Communication (SC) is an emerging technology aiming to surpass the Shannon limit. Traditional SC strategies often minimize signal distortion between the original and reconstructed data, neglecting perceptual quality, especially in low Signal-to-Noise Ratio (SNR) environments. To address this issue, we introduce a novel Generative AI Semantic Communication (GSC) system for single-user scenarios. This system leverages deep generative models to establish a new paradigm in SC. Specifically, At the transmitter end, it employs a joint source-channel coding mechanism based on the Swin Transformer for efficient semantic feature extraction and compression. At the receiver end, an advanced Diffusion Model (DM) reconstructs high-quality images from degraded signals, enhancing perceptual details.Additionally, we present a Multi-User Generative Semantic Communication (MU-GSC) system utilizing an asynchronous processing model. This model effectively manages multiple user requests and optimally utilizes system resources for parallel processing. Simulation results on public datasets demonstrate that our generative AI semantic communication systems achieve superior transmission efficiency and enhanced communication content quality across various channel conditions. Compared to CNN-based DeepJSCC, our methods improve the Peak Signal-to-Noise Ratio (PSNR) by 17.75% in Additive White Gaussian Noise (AWGN) channels and by 20.84% in Rayleigh channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Change Driven Generative Semantic Communication Framework",
+  "authors": [
+   "Wanting Yang",
+   "Zehui Xiong",
+   "Hongyang Du",
+   "Yanli Yuan",
+   "Tony Q. S. Quek"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications and Networking Conference",
+  "doi": "10.1109/wcnc57260.2024.10571010",
+  "arxiv": "2309.12775",
+  "openalex": "W4400277805",
+  "cited_by": 13,
+  "abstract": "The burgeoning generative artificial intelligence technology offers novel insights into the development of semantic communication (SemCom) frameworks. These frameworks hold the potential to address the challenges associated with the black-box nature inherent in existing end-to-end training manner for the existing SemCom framework, as well as deterioration of the user experience caused by the inevitable error floor in deep learning-based SemCom. In this paper, we focus on the widespread remote monitoring scenario, and propose a semantic change driven generative SemCom framework. Therein, the semantic encoder and semantic decoder can be optimized independently. Specifically, we develop a modular semantic encoder with value of information based semantic sampling function. In addition, we propose a conditional denoising diffusion probabilistic mode-assisted semantic decoder that relies on received semantic information from the source, namely, the semantic map, and the local static scene information to remotely regenerate scenes. Moreover, we demonstrate the effectiveness of the proposed semantic encoder and decoder as well as the considerable potential in reducing energy consumption through simulation based on the realistic F composite channel fading model. The code is available at https://github.com/wty2011jl/SCDGSC.git.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Semantic Communication: Architectures, Technologies, and Applications",
+  "authors": [
+   "Jinke Ren",
+   "Yaping Sun",
+   "Hongyang Du",
+   "Wei Yuan",
+   "Chongjie Wang",
+   "Xianda Wang",
+   "Yingbin Zhou",
+   "Ziwei Zhu",
+   "Fangxin Wang",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2025,
+  "venue": "Engineering",
+  "doi": "10.1016/j.eng.2025.07.022",
+  "arxiv": "2412.08642",
+  "openalex": "W4412704455",
+  "cited_by": 22,
+  "abstract": "Semantic communication (SemCom) has emerged as a transformative paradigm for future wireless networks, aiming to improve communication efficiency by transmitting only the semantic meaning (or its encoded version) of the source data rather than the complete set of bits (symbols). However, traditional deep learning-based SemCom systems present challenges such as limited generalization, low robustness, and inadequate reasoning capabilities, primarily due to the inherently discriminative nature of deep neural networks. To address these limitations, generative artificial intelligence (GAI) is seen as a promising solution, offering notable advantages in learning complex data distributions, transforming data between high- and low-dimensional spaces, and generating high-quality content. This paper explores the applications of GAI in SemCom and presents a comprehensive study. It begins by introducing three widely used SemCom systems enabled by classical GAI models: variational autoencoders, generative adversarial networks, and diffusion models. For each system, the fundamental concept of the GAI model, the corresponding SemCom architecture, and a literature review of recent developments are provided. Subsequently, a novel generative SemCom system is proposed, incorporating cutting-edge GAI technology—large language models (LLMs). This system features LLM-based artificial intelligence (AI) agents at both the transmitter and receiver, which act as “brains” to enable advanced information understanding and content regeneration capabilities, respectively. Unlike traditional systems that focus on bitstream recovery, this design allows the receiver to directly generate the desired content from the coded semantic information sent by the transmitter. As a result, the communication paradigm shifts from “information recovery” to “information regeneration,” marking a new era in generative SemCom. A case study on point-to-point video retrieval is presented to demonstrate the effectiveness of the proposed system, showing a 99.98% reduction in communication overhead and a 53% improvement in average retrieval accuracy compared to traditional communication systems. Furthermore, four typical application scenarios for generative SemCom are described, followed by a discussion of three open issues for future research. In summary, this paper provides a comprehensive set of guidelines for applying GAI in SemCom, laying the groundwork for the efficient deployment of generative SemCom in future wireless networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lightweight Diffusion Models for Resource-Constrained Semantic Communication",
+  "authors": [
+   "Eleonora Grassucci",
+   "Giovanni Pignata",
+   "Giordano Cicchetti",
+   "Danilo Comminiello"
+  ],
+  "year": 2025,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2025.3578724",
+  "arxiv": "2410.02491",
+  "openalex": "W4411203476",
+  "cited_by": 11,
+  "abstract": "Recently, generative semantic communication models have proliferated as they are revolutionizing semantic communication frameworks, improving their performance, and opening the way to novel applications. Despite their impressive ability to regenerate content from the compressed semantic information received, generative models pose crucial challenges due to high memory footprints and heavy computational load. We present a novel Quantized GEnerative Semantic COmmunication framework (Q-GESCO), whose core method is a quantized semantic diffusion model capable of regenerating transmitted images from the received semantic maps with low computational load and memory footprint thanks to the proposed post-training quantization technique. Q-GESCO is robust to channel noises and obtains comparable performance to the full-precision counterpart saving 75% memory and 79% floating point operations. This allows resource-constrained devices to exploit the generative capabilities of Q-GESCO, widening the range of applications and systems for generative semantic communication frameworks. The code is available at.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI for future communication: semantic communication",
+  "authors": [
+   "Zhi Ding",
+   "Achintha Wijesinghe",
+   "Suchinthaka Wanninayaka"
+  ],
+  "year": 2026,
+  "venue": "Elsevier eBooks",
+  "doi": "10.1016/b978-0-44-341497-8.00020-1",
+  "arxiv": null,
+  "openalex": "W7166127924",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Semantic Communication for Text-to-Speech Synthesis",
+  "authors": [
+   "Jiahao Zheng",
+   "Jinke Ren",
+   "Peng Xu",
+   "Zhihao Yuan",
+   "Jie Xu",
+   "Fangxin Wang",
+   "Gui Gui",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2024,
+  "venue": "IEEE Globecom Workshops (GC Wkshps)",
+  "doi": "10.1109/gcwkshp64532.2024.11101684",
+  "arxiv": "2410.03459",
+  "openalex": "W4413179627",
+  "cited_by": 3,
+  "abstract": "Semantic communication is a promising technology to improve communication efficiency by transmitting only the semantic information of the source data. However, traditional semantic communication methods primarily focus on data reconstruction tasks, which may not be efficient for emerging generative tasks such as text-to-speech (TTS) synthesis. To address this limitation, this paper develops a novel generative semantic communication framework for TTS synthesis, leveraging generative artificial intelligence technologies. Firstly, we utilize a pre-trained large speech model called WavLM and the residual vector quantization method to construct two semantic knowledge bases (KBs) at the transmitter and receiver, respectively. The KB at the transmitter enables effective semantic extraction, while the KB at the receiver facilitates lifelike speech synthesis. Then, we employ a transformer encoder and a diffusion model to achieve efficient semantic coding without introducing significant communication overhead. Finally, numerical results demonstrate that our framework achieves much higher fidelity for the generated speech than four baselines, in both cases with additive white Gaussian noise channel and Rayleigh fading channel.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI Meets 6G and Beyond: Diffusion Models for Semantic Communications",
+  "authors": [
+   "Hai-Long Qin",
+   "Jincheng Dai",
+   "Guo Sheng Lu",
+   "Shuo Shao",
+   "Sixian Wang",
+   "Tongda Xu",
+   "Wenjun Zhang",
+   "Ping Zhang",
+   "Khaled B. Letaief"
+  ],
+  "year": 2026,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2026.3690542",
+  "arxiv": "2511.08416",
+  "openalex": "W4416191160",
+  "cited_by": 5,
+  "abstract": "Semantic communications mark a paradigm shift from bit-accurate transmission toward meaning-centric communication, essential as wireless systems approach theoretical capacity limits. The emergence of generative AI has catalyzed generative semantic communications, where receivers reconstruct content from minimal semantic cues by leveraging learned priors. Among generative approaches, diffusion models stand out for their superior generation quality, stable training dynamics, and rigorous theoretical foundations. However, the field currently lacks systematic guidance connecting diffusion techniques to communication system design, forcing researchers to navigate disparate literatures. This article provides the first comprehensive tutorial on diffusion models for generative semantic communications. We present score-based diffusion foundations and systematically review three technical pillars: conditional diffusion for controllable generation, efficient diffusion for accelerated inference, and generalized diffusion for cross-domain adaptation. In addition, we introduce an inverse problem perspective that reformulates semantic decoding as posterior inference, bridging semantic communications with computational imaging. Through analysis of human-centric, machine-centric, and agent-centric scenarios, we illustrate how diffusion models enable extreme compression while maintaining semantic fidelity and robustness. By bridging generative AI innovations with communication system design, this article aims to establish diffusion models as foundational components of next-generation wireless networks and beyond.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Semantic Communication for Joint Image Transmission and Segmentation",
+  "authors": [
+   "Wei Yuan",
+   "Jinke Ren",
+   "Chongjie Wang",
+   "Ruichen Zhang",
+   "Jun Wei",
+   "Dong In Kim",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Conference on Communications workshops",
+  "doi": "10.1109/iccworkshops67674.2025.11162317",
+  "arxiv": "2411.18005",
+  "openalex": "W4414405546",
+  "cited_by": 9,
+  "abstract": "Semantic communication has emerged as a promising technology for enhancing communication efficiency. However, most existing research emphasizes single-task reconstruction, neglecting model adaptability and generalization across multi-task systems. In this paper, we propose a novel generative semantic communication system that supports both image reconstruction and segmentation tasks. Our approach builds upon semantic knowledge bases (KBs) at both the transmitter and receiver, with each semantic KB comprising a source KB and a task KB. The source KB at the transmitter leverages a hierarchical Swin-Transformer, a generative AI scheme, to extract multi-level features from the input image. Concurrently, the counterpart source KB at the receiver utilizes hierarchical residual blocks to generate task-specific knowledge. Furthermore, the task KBs adopt a semantic similarity model to map different task requirements into pre-defined task instructions, thereby facilitating the feature selection of the source KBs. Additionally, we develop a unified residual block-based joint source and channel (JSCC) encoder and two task-specific JSCC decoders to achieve the two image tasks. In particular, a generative diffusion model is adopted to construct the JSCC decoder for the image reconstruction task. Experimental results show that our multi-task generative semantic communication system outperforms previous single-task communication systems in terms of peak signal-to-noise ratio and segmentation accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Video Semantic Communication via Multimodal Semantic Fusion With Large Model",
+  "authors": [
+   "Hang Yin",
+   "Li Qiao",
+   "Yu Ma",
+   "Shuo Sun",
+   "Kan Li",
+   "Zhen Gao",
+   "Dusit Tao Niyato"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "10.1109/tvt.2025.3595688",
+  "arxiv": "2502.13838",
+  "openalex": "W4412939921",
+  "cited_by": 13,
+  "abstract": "Despite significant advancements in traditional syntactic communications based on Shannon's theory, these methods struggle to meet the requirements of 6 G immersive communications, especially under challenging transmission conditions. With the development of generative artificial intelligence (GenAI), progress has been made in reconstructing videos using high-level semantic information. In this paper, we propose a scalable generative video semantic communication framework that extracts and transmits semantic information to achieve high-quality video reconstruction. Specifically, at the transmitter, description and other condition signals (e.g., first frame, sketches, etc.) are extracted from the source video, functioning as text and structural semantics, respectively. At the receiver, the diffusion-based GenAI large models are utilized to fuse the semantics of the multiple modalities for reconstructing the video. Simulation results demonstrate that, at an ultra-low channel bandwidth ratio (CBR), our scheme effectively captures semantic information to reconstruct videos aligned with human perception under different signal-to-noise ratios. Notably, the proposedFirst Frame+Desc.scheme consistently achieves CLIP score exceeding 0.92 at CBR = 0.0031 for SNR$>$0 dB. This demonstrates its robust performance even under low SNR conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Security and Privacy in Generative Semantic Communication Systems: A Comprehensive Survey",
+  "authors": [
+   "Mehwish Ali Naqvi",
+   "Insoo Sohn"
+  ],
+  "year": 2026,
+  "venue": "Mathematics",
+  "doi": "10.3390/math14091522",
+  "arxiv": null,
+  "openalex": "W7160182151",
+  "cited_by": 0,
+  "abstract": "Semantic communication (SemCom) has emerged as a task-oriented communication paradigm that prioritizes meaning delivery over exact bit recovery. The integration of generative artificial intelligence (GenAI) into SemCom further enables knowledge-guided inference, multimodal reconstruction, and semantic compression through architectures such as large language models, variational autoencoders, generative adversarial networks, and diffusion models. At the same time, this integration introduces new security and privacy risks, including semantic eavesdropping, model inversion, semantic jamming, covert backdoors, prompt manipulation, and knowledge-base leakage, which are not adequately captured by conventional communication security models. In this survey, we provide a security-centric review of GenAI-assisted semantic communication systems by organizing the literature according to threat models, attack surfaces, defence strategies, and semantic modalities across text, image, and multimodal settings. The survey was conducted using IEEE Xplore, ACM Digital Library, SpringerLink, arXiv, and Google Scholar. Approximately 180 papers were initially screened, and 53 representative studies published between 2021 and 2026 were selected for detailed review. Based on this analysis, we classify the major threats into adversarial perturbation, jamming, poisoning and backdoor attacks, privacy leakage and semantic eavesdropping, and generative-model-specific vulnerabilities involving diffusion, large language models, and multimodal foundation models. We further map the corresponding defences, including adversarial training, model ensembling, semantic-aware encryption, diffusion-guided denoising, privacy-preserving representation learning, and secure resource allocation. The survey also identifies persistent open challenges, including the lack of standardized semantic security metrics, unified benchmarks, cross-layer evaluation frameworks, and robust defences for GenAI-native and multimodal semantic communication systems. Overall, this work provides a structured reference for the design of secure, trustworthy, and attack-resilient generative semantic communication systems for future intelligent networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Large Generative Model Assisted 3D Semantic Communication",
+  "authors": [
+   "Feibo Jiang",
+   "Yubo Peng",
+   "Dong Li",
+   "Kezhi Wang",
+   "Kun Yang",
+   "Cunhua Pan",
+   "Xiaohu You"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2403.05783",
+  "arxiv": "2403.05783",
+  "openalex": "W4392736725",
+  "cited_by": 2,
+  "abstract": "Semantic Communication (SC) is a novel paradigm for data transmission in 6G. However, there are several challenges posed when performing SC in 3D scenarios: 1) 3D semantic extraction; 2) Latent semantic redundancy; and 3) Uncertain channel estimation. To address these issues, we propose a Generative AI Model assisted 3D SC (GAM-3DSC) system. Firstly, we introduce a 3D Semantic Extractor (3DSE), which employs generative AI models, including Segment Anything Model (SAM) and Neural Radiance Field (NeRF), to extract key semantics from a 3D scenario based on user requirements. The extracted 3D semantics are represented as multi-perspective images of the goal-oriented 3D object. Then, we present an Adaptive Semantic Compression Model (ASCM) for encoding these multi-perspective images, in which we use a semantic encoder with two output heads to perform semantic encoding and mask redundant semantics in the latent semantic space, respectively. Next, we design a conditional Generative adversarial network and Diffusion model aided-Channel Estimation (GDCE) to estimate and refine the Channel State Information (CSI) of physical channels. Finally, simulation results demonstrate the advantages of the proposed GAM-3DSC system in effectively transmitting the goal-oriented 3D scenario.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latency-Aware Generative Semantic Communications With Pre-Trained Diffusion Models",
+  "authors": [
+   "Li Qiao",
+   "Mahdi Boloursaz Mashhadi",
+   "Zhen Gao",
+   "Chuan Heng Foh",
+   "Pei Xiao",
+   "Mehdi Bennis"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2024.3429295",
+  "arxiv": "2403.17256",
+  "openalex": "W4400679943",
+  "cited_by": 96,
+  "abstract": "Generative foundation AI models have recently shown great success in synthesizing natural signals with high perceptual quality using only textual prompts and conditioning signals to guide the generation process. This enables semantic communications at extremely low data rates in future wireless networks. In this letter, we develop a latency-aware semantic communications framework with pre-trained generative models. The transmitter performs multi-modal semantic decomposition on the input signal and transmits each semantic stream with the appropriate coding and communication schemes based on the intent. For the prompt, we adopt a re-transmission-based scheme to ensure reliable transmission, and for the other semantic modalities we use an adaptive modulation/coding scheme to achieve robustness to the changing wireless channel. Furthermore, we design a semantic and latency-aware scheme to allocate transmission power to different semantic modalities based on their importance subjected to semantic quality constraints. At the receiver, a pre-trained generative model synthesizes a high fidelity signal using the received multi-stream semantics. Simulation results demonstrate ultra-low-rate, low-latency, and channel-adaptive semantic communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Scene‐Driven Semantic Alignment for Generative Communication in Underwater Images",
+  "authors": [
+   "Yuetong Li",
+   "Zhenyu Jia",
+   "Yuyang Peng",
+   "Yi Zhu",
+   "Fei Yuan"
+  ],
+  "year": 2026,
+  "venue": "IET Signal Processing",
+  "doi": "10.1049/sil2/9480527",
+  "arxiv": null,
+  "openalex": "W7118087625",
+  "cited_by": 0,
+  "abstract": "Underwater images serve as one of the most intuitive media for human perception of underwater environments. However, the limited bandwidth and susceptibility to noise in underwater acoustic (UWA) channels pose significant challenges for traditional image encoding and transmission methods, thereby hindering high‐quality image reconstruction. Semantic communication aims to shift from pixel‐level to semantic‐level transmission, enhancing both reliability and efficiency. This paper proposes a scene‐guided generative communication method for underwater images with semantic alignment. We decouple and transmit only the essential layout information of underwater scenes. This enables highly efficient compression. At the receiver, we employ a graph convolutional network (GCN) to correct layout distortions and a context‐aware diffusion model to generate realistic underwater images that preserve high semantic fidelity to the original. Experimental results demonstrate that, compared to pixel‐fidelity communication and other generative communication approaches, our method consistently achieves superior image reconstruction quality even under adverse channel conditions, such as extremely low signal‐to‐noise ratios (SNRs), and exhibits significant advantages in downstream tasks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic-Aware Power Allocation for Generative Semantic Communications with Foundation Models",
+  "authors": [
+   "Chunmei Xu",
+   "Mahdi Boloursaz Mashhadi",
+   "Yi Ma",
+   "Rahim Tafazolli"
+  ],
+  "year": 2024,
+  "venue": "IEEE Globecom Workshops (GC Wkshps)",
+  "doi": "10.1109/gcwkshp64532.2024.11100549",
+  "arxiv": "2407.03050",
+  "openalex": "W4413180563",
+  "cited_by": 19,
+  "abstract": "Recent advancements in diffusion models have led to a significant breakthrough in generative modeling. The combination of the generative model and semantic communication (SemCom) enables high-fidelity semantic information exchange at ultra-low rates. In this paper, a novel generative SemCom framework for image tasks is proposed, utilizing pre-trained foundation models as semantic encoders and decoders for semantic feature extraction and image regeneration, respectively. The mathematical relationship between transmission reliability and the perceptual quality of regenerated images is modeled and the semantic values of extracted features are defined accordingly. This relationship is derived through numerical simulations on the Kodak dataset. Furthermore, we investigate the semantic-aware power allocation problem, aiming to minimize total power consumption while guaranteeing semantic performance. To solve this problem, two semantic-aware power allocation methods are proposed by constraint decoupling and bisection search, respectively. Numerical results demonstrate that the proposed semantic-aware methods outperform conventional approach in terms of total power consumption.",
+  "source": "openalex"
+ },
+ {
+  "title": "FAST: Flexible and Adaptive Semantic Transmission for Resource-Constrained Multi-User Generative Semantic Communication",
+  "authors": [
+   "Yiru Wang",
+   "Wanting Yang",
+   "Fangli Mou",
+   "Zehui Xiong",
+   "Zide Fan",
+   "Shiwen Mao",
+   "Tony Q. S. Quek"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Network Science and Engineering",
+  "doi": "10.1109/tnse.2026.3676629",
+  "arxiv": "2407.15395",
+  "openalex": "W7140133901",
+  "cited_by": 1,
+  "abstract": "The rapid advancement of generative artificial intelligence has spurred innovative approaches to semantic communication, giving rise to a new paradigm known as generative semantic communication (GSC). The integration of flexible cross-modal semantic extraction with generative capability–driven semantic inference substantially enhances semantic compression efficiency, demonstrating significant promise under communication resource constraints. Nonetheless, the stringent dependence on high computational power and the resulting latency continue to present major challenges, thereby limiting the feasibility of large-scale deployment. To address these challenges, we propose a novel GSC framework named FAST, which stands forflexible andadaptivesemantictransmission. To accommodate limited computational resources, we propose a sequential semantic extraction method, where a temporal prompt engineering module orchestrates the distillation and transmission of key semantic units. Correspondingly, we introduce a sequential conditional denoising module at the receiver, which adapts the diffusion-based reconstruction to the progressively received input. To enhance overall task performance in multi-user semantic transmission, we propose a semantic-aware resource allocation method that optimizes bandwidth dynamically based on a joint consideration of semantic dependencies, user-level task priorities, and instantaneous channel conditions. Extensive experiments demonstrate that the proposed architecture achieves system precision comparable to conventional GSC systems while significantly reducing transmission latency and improving overall efficiency. These results confirm its enhanced potential for deployment in multi-user GSC scenarios with stringent communication and computational constraints.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI-Driven Semantic Communication Networks: Architecture, Technologies, and Applications",
+  "authors": [
+   "Chengsi Liang",
+   "Hongyang Du",
+   "Yao Sun",
+   "Dusit Tao Niyato",
+   "Jiawen Kang",
+   "Dezong Zhao",
+   "Muhammad Ali Imran"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3435524",
+  "arxiv": "2401.00124",
+  "openalex": "W4401070271",
+  "cited_by": 170,
+  "abstract": "Generative artificial intelligence (GAI) has emerged as a rapidly burgeoning field demonstrating significant potential in creating diverse content intelligently and automatically. To support such artificial intelligence-generated content (AIGC) services, future communication systems must fulfill stringent requirements, including high data rates, throughput, and low latency, while efficiently utilizing limited spectrum resources. Semantic communication (SemCom) has been deemed as a revolutionary communication scheme to tackle this challenge by conveying the meaning of messages instead of bit reproduction. GAI algorithms serve as the foundation for enabling intelligent and efficient SemCom systems in terms of model pre-training and fine-tuning, knowledge base construction, and resource allocation. Conversely, SemCom can provide AIGC services with low latency and high reliability due to its ability to perform semantic-aware encoding and compression of data, as well as knowledge- and context-based reasoning. In this survey, we break new ground by investigating the architecture, wireless communication schemes, and network management of GAI-driven SemCom networks. We first introduce a novel architecture for GAI-driven SemCom networks, comprising the data plane, physical infrastructure, and network control plane. In turn, we provide an in-depth analysis of the transceiver design and semantic effectiveness calculation of end-to-end GAI-driven SemCom systems. Subsequently, we present innovative generation level and knowledge management strategies in the proposed networks, including knowledge construction, update, and sharing, ensuring accurate and timely knowledge-based reasoning. Finally, we explore several promising use cases, i.e., autonomous driving, smart cities, and the Metaverse, to provide a comprehensive understanding and future direction of GAI-driven SemCom networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI for Semantic Communication: Architecture, Challenges, and Outlook",
+  "authors": [
+   "Le Xia",
+   "Yao Sun",
+   "Chengsi Liang",
+   "Lei Zhang",
+   "Muhammad Ali Imran",
+   "Dusit Tao Niyato"
+  ],
+  "year": 2025,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.003.2300351",
+  "arxiv": "2308.15483",
+  "openalex": "W4407168338",
+  "cited_by": 67,
+  "abstract": "Semantic communication (SemCom) is expected to be a core paradigm in future communication networks, yielding significant benefits in terms of spectrum resource saving and information interaction efficiency. However, the existing SemCom structure is limited by the lack of context-reasoning ability and background knowledge provisioning, which, therefore, motivates us to seek the potential of incorporating generative artificial intelligence (GAI) technologies with SemCom. Recognizing GAI's powerful capability in automating and creating valuable, diverse, and personalized multimodal content, this article first highlights the principal characteristics of the combination of GAI and SemCom along with their pertinent benefits and challenges. To tackle these challenges, we further propose a novel GAI-integrated SemCom network (GAI-SCN) framework in a cloud-edge-mobile design. Specifically, by employing global and local GAI models, our GAI-SCN enables multimodal semantic content provisioning, semantic-level joint-source-channel coding, and AIGC acquisition to maximize the efficiency and reliability of semantic reasoning and resource utilization. Afterward, we present a detailed implementation workflow of GAI-SCN, followed by corresponding initial simulations for performance evaluation in comparison with two benchmarks. Finally, we discuss several open issues and offer feasible solutions to unlock the full potential of GAI-SCN.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Feature Imputing for Loss-Resilient Semantic Communication",
+  "authors": [
+   "Jianhao Huang",
+   "Qunsong Zeng",
+   "Hongyang Du",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc59461.2026.11587596",
+  "arxiv": null,
+  "openalex": "W7168292842",
+  "cited_by": 0,
+  "abstract": "Semantic communication (SemCom) has emerged as a promising paradigm for achieving unprecedented communication efficiency in sixth-generation (6G) networks. However, deploying SemCom over digital systems introduces new challenges in maintaining robustness against packet losses that distort critical content. To address this issue, this paper proposes a novel framework, termed generative feature imputing, which comprises three key techniques. First, we introduce a spatial-error-concentration packetization strategy that spatially concentrates feature distortions by encoding feature elements based on their channel mappings. Second, building on this strategy, we propose a generative feature imputing method that utilizes a diffusion model to efficiently reconstruct missing features caused by packet losses. Finally, we develop a semantic-aware power allocation scheme that enables unequal error protection by allocating transmission power according to the semantic importance of each packet. Experimental results demonstrate that the proposed framework outperforms conventional approaches, such as Deep Joint Source-Channel Coding (DJSCC) and JPEG2000, under block fading conditions, achieving higher semantic accuracy and lower Learned Perceptual Image Patch Similarity (LPIPS) scores.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multi-User Generative Semantic Communication with Intent-Aware Semantic-Splitting Multiple Access",
+  "authors": [
+   "Jiayi Lu",
+   "Wanting Yang",
+   "Zehui Xiong",
+   "Rahim Tafazolli",
+   "Tony Q. S. Quek",
+   "Merouane Abdelkader Debbah",
+   "Dong In Kim"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2507.01333",
+  "arxiv": "2507.01333",
+  "openalex": "W4417182758",
+  "cited_by": 0,
+  "abstract": "With the booming development of generative artificial intelligence (GAI), semantic communication (SemCom) has emerged as a new paradigm for reliable and efficient communication. This paper considers a multi-user downlink SemCom system, using vehicular networks as the representative scenario for multi-user content dissemination. To address diverse yet overlapping user demands, we propose a multi-user Generative SemCom-enhanced intent-aware semantic-splitting multiple access (SS-MGSC) framework. In the framework, we construct an intent-aware shared knowledge base (SKB) that incorporates prior knowledge of semantic information (SI) and user-specific preferences. Then, we designate the common SI as a one-hot semantic map that is broadcast to all users, while the private SI is delivered as personalized text for each user. On the receiver side, a diffusion model enhanced with ControlNet is adopted to generate high-quality personalized images. To capture both semantic relevance and perceptual similarity, we design a novel semantic efficiency score (SES) metric as the optimization objective. Building on this, we formulate a joint optimization problem for multi-user semantic extraction and beamforming, solved using a reinforcement learning-based algorithm due to its robustness in high-dimensional settings. Simulation results demonstrate the effectiveness of the proposed scheme.",
+  "source": "openalex"
+ },
+ {
+  "title": "Knowledge Base Enabled Semantic Communication: A Generative Perspective",
+  "authors": [
+   "Jinke Ren",
+   "Zezhong Zhang",
+   "Jie Xu",
+   "Guanying Chen",
+   "Ya‐Ping Sun",
+   "Ping Zhang",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.001.2300553",
+  "arxiv": "2311.12443",
+  "openalex": "W4401387161",
+  "cited_by": 65,
+  "abstract": "Semantic communication is widely touted as a key technology for propelling sixth-generation (6G) wireless networks. However, providing effective semantic representation is quite challenging in practice. To address this issue, this article takes a crack at exploiting a semantic knowledge base (KB) to usher in a new era of generative semantic communication. Via semantic KB, source messages can be characterized in low-dimensional subspaces without compromising their desired meanings, thus significantly enhancing the communication efficiency. The fundamental principle of semantic KB is first introduced, and a generative semantic communication architecture is developed by presenting three sub-KBs, namely source, task, and channel KBs. Then, the detailed construction approaches for each sub-KB are described, followed by their utilization in terms of semantic coding and transmission. A case study is also provided to showcase the superiority of generative semantic communication over conventional syntactic communication and classical semantic communication. In a nutshell, this article establishes a scientific foundation for the exciting uncharted frontier of generative semantic communication.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Feature Imputing—A Technique for Error-Resilient Semantic Communication",
+  "authors": [
+   "Jianhao Huang",
+   "Qunsong Zeng",
+   "Hongyang Du",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2026.3700909",
+  "arxiv": "2508.17957",
+  "openalex": "W7164330227",
+  "cited_by": 2,
+  "abstract": "Semantic communication (SemCom) has emerged as a promising paradigm for achieving unprecedented communication efficiency in sixth-generation (6G) networks by leveraging artificial intelligence (AI) to extract and transmit the underlying meanings of source data. However, deploying SemCom over digital systems presents new challenges, particularly in ensuring robustness against transmission errors that may distort semantically critical content. To address this issue, this paper proposes a novel framework, termed generative feature imputing, which comprises three key techniques. First, we introduce a spatial-error-concentration packetization strategy that spatially concentrates feature distortions by encoding feature elements based on their channel mappings—a property crucial for both the effectiveness and reduced complexity of the subsequent techniques. Second, building on this strategy, we propose a generative feature imputing method that utilizes a diffusion model to efficiently reconstruct missing features caused by packet losses. Finally, we develop a semantic-aware power allocation scheme that enables unequal error protection by allocating transmission power according to the semantic importance of each packet. Experimental results demonstrate that the proposed framework outperforms conventional approaches, such as Deep Joint Source-Channel Coding (DJSCC) and JPEG2000, under block fading conditions, achieving higher semantic accuracy and lower Learned Perceptual Image Patch Similarity (LPIPS) scores.",
+  "source": "openalex"
+ },
+ {
+  "title": "CASC: Condition-Aware Semantic Communication with Latent Diffusion Models",
+  "authors": [
+   "Weixuan Chen",
+   "Qianqian Yang"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Conference on Communications workshops",
+  "doi": "10.1109/iccworkshops67674.2025.11162241",
+  "arxiv": "2411.06552",
+  "openalex": "W4414405379",
+  "cited_by": 0,
+  "abstract": "Diffusion-based semantic communication methods have shown significant advantages in image transmission by harnessing the generative power of diffusion models. However, they still face challenges, including generation randomness that leads to distorted reconstructions and high computational costs. To address these issues, we propose CASC, a condition-aware semantic communication framework that incorporates a latent diffusion model (LDM)-based denoiser. The LDM denoiser at the receiver utilizes the received noisy latent codes as the conditioning signal to reconstruct the latent codes, enabling the decoder to accurately recover the source image. By operating in the latent space, the LDM reduces computational complexity compared to traditional diffusion models (DMs). Additionally, we introduce a condition-aware neural network (CAN) that dynamically adjusts the weights in the hidden layers of the LDM based on the conditioning signal. This enables finer control over the generation process, significantly improving the perceptual quality of the reconstructed images. Experimental results show that CASC significantly outperforms DeepJSCC in both perceptual quality and visual effect. Moreover, CASC reduces inference time by 51.7% compared to existing DM-based semantic communication systems, while maintaining comparable perceptual performance. The ablation studies also validate the effectiveness of the CAN module in improving the image reconstruction quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Evolving Semantic Communication with Generative Modelling",
+  "authors": [
+   "Shunpu Tang",
+   "Qianqian Yang",
+   "Denız Gündüz",
+   "Zhaoyang Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+  "doi": "10.1109/pimrc59610.2024.10817276",
+  "arxiv": "2403.20237",
+  "openalex": "W4405975295",
+  "cited_by": 15,
+  "abstract": "Learning-based semantic communication (SemCom) has emerged as a promising solution for the upcoming 6G networks. In this paper, we explore an evolving SemCom system for image transmission, which can continuously adapt and enhance its transmission efficiency by exploiting knowledge accumulated during previous transmissions. Specifically, we propose a novel channel-aware semantic encoder that utilizes a pretrained generative model to extract channel-correlated latent variables consisting of several semantic vectors from the input images, which can be directly transmitted over a noisy channel without further channel coding. Moreover, we introduce a dynamic code construction mechanism that dynamically updates the codebook with transmitted semantic vectors to eliminate the need to transmit similar codes in subsequent transmissions, thus further reducing the communication overhead. Simulation results highlight the evolving performance of the proposed system in terms of transmission efficiency, achieving superior perceptual quality with an average bandwidth compression ratio (BCR) of $1 / 192$ for a sequence of 100 test images compared to DeepJSCC and InverseJSCC. Code used in this paper is available at https://github.com/recusant7/GAN_SeCom.",
+  "source": "openalex"
+ },
+ {
+  "title": "Mixture of Semantics Transmission for Generative AI-Enabled Semantic Communication Systems",
+  "authors": [
+   "Junjie Ni",
+   "Tong Wu",
+   "Zhiyong Chen",
+   "Yin Xu",
+   "Meixia Tao",
+   "Wenjun Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Letters",
+  "doi": "10.1109/lcomm.2025.3611002",
+  "arxiv": "2509.09499",
+  "openalex": "W4414310383",
+  "cited_by": 2,
+  "abstract": "In this paper, we propose a mixture of semantics (MoS) transmission strategy for wireless semantic communication systems based on generative artificial intelligence (AI). At the transmitter, we divide an image into regions of interest (ROI) and reigons of non-interest (RONI) to extract their semantic information respectively. Semantic information of ROI can be allocated more bandwidth, while RONI can be represented in a compact form for transmission. At the receiver, a diffusion model reconstructs the full image using the received semantic information of ROI and RONI. Compared to existing generative AI-based methods, MoS enables more efficient use of channel resources by balancing visual fidelity and semantic relevance. Experimental results demonstrate that appropriate ROI-RONI allocation is critical. The MoS achieves notable performance gains in peak signal-to-noise ratio (PSNR) of ROI and CLIP score of RONI.",
+  "source": "openalex"
+ },
+ {
+  "title": "SG2SC: A Generative Semantic Communication Framework for Scene Understanding-Oriented Image Transmission",
+  "authors": [
+   "Minxi Yang",
+   "Dahua Gao",
+   "Feng Xie",
+   "Jiaxuan Li",
+   "Xiaodan Song",
+   "Guangming Shi"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp48485.2024.10446594",
+  "arxiv": null,
+  "openalex": "W4392902645",
+  "cited_by": 15,
+  "abstract": "In recent years, semantic communication based on deep learning for source-channel joint encoding has garnered significant attention. It utilizes network models trained end-to-end to represent signals as embedding vectors and has demonstrated superior performance compared to traditional methods. However, due to the significant disparity between embedding vectors and human language, it can be challenging to succinctly capture abstract semantics such as scenes. In this paper, we introduce the Scene Graph-based Generative Semantic Communication (SG2SC) framework, built upon structured semantics and conditional generative models for image transmission. SG2SC aims to faithfully convey abstract semantics like scenes. It begins by detecting object categories, spatial attributes, and inter-category relationships in the image, representing scene semantics in a graph structure. Subsequently, it employs graph neural networks for scene graph encoding, decoding, and transmission, and finally utilizes a conditional diffusion model for semantic decoding. Benefiting from its concise graph structure semantics, SG2SC outperforms traditional method, semantic communication based on deep joint source-channel coding, and segmentation-based generative semantic communication in terms of noise resistance and encoding efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI-empowered semantic communication for wireless image transmission",
+  "authors": [
+   "Long V. Nguyen"
+  ],
+  "year": 2025,
+  "venue": null,
+  "doi": "10.48336/328",
+  "arxiv": null,
+  "openalex": "W7133528299",
+  "cited_by": 0,
+  "abstract": "Semantic communication (SemCom) has recently emerged as a promising technology for sixth-generation (6G) wireless networks by prioritizing the understanding of information at the receiver rather than just ensuring the fidelity of the transmitted data. This approach significantly reduces data redundancy, enhances the efficiency of resource allocation, adapts to varying communication contexts, and ultimately enables more intelligent forms of communication. However, current communication systems, primarily designed based on traditional information theory, face significant challenges in meeting the evolving demands of emerging intelligent applications due to their focus on accurate bit transmission rather than the meaning of information. The recent advancements in generative AI present a unique opportunity to further enhance semantic communication capabilities by learning complex data distributions, generating meaningful representations, and enabling more intelligent and context-aware information exchange. This thesis explores the application of generative AI in SemCom with a focus on image data. The first study begins by examining the performance analysis of digital communication, characterizing signal behavior, and evaluating system performance in terms of bit error rate over an AWGN channel with different modulation schemes. This indicates inherent limitations of traditional wireless communication systems. Subsequently, a novel semantic communication system based on Stable Diffusion, a large pretrained AI model, is introduced. This framework demonstrates superior performance, characterized by an elevated bandwidth compression ratio (BCR) and robust noise tolerance achieved by diffusion mechanism integrating with additional context-aware prompts. Finally, the last work presents a neural image compression-enabled semantic communication system by employing an accurate and adaptable entropy model. The system can achieve efficiently compressed bitstreams, which are compatible with the digital communication infrastructure in practice. Simulation results demonstrate that the proposed methods can obtain more efficient utilization of bandwidth and computational resources, along with robust noise tolerance in varying channel conditions and adaptivity with current digital communication systems. These contributions are expected to pave the way for the development of more efficient, robust, and intelligent wireless communication systems that can effectively support the changing requirements of our increasingly connected world.",
+  "source": "openalex"
+ },
+ {
+  "title": "Enhancing Semantic Communication with Deep Generative Models: An Overview",
+  "authors": [
+   "Eleonora Grassucci",
+   "Yuki Mitsufuji",
+   "Ping Zhang",
+   "Danilo Comminiello"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp48485.2024.10448235",
+  "arxiv": "2309.02478",
+  "openalex": "W4392904261",
+  "cited_by": 28,
+  "abstract": "Semantic communication is poised to play a pivotal role in shaping the landscape of future AI-driven communication systems. Its challenge of extracting semantic information from the original complex content and regenerating semantically consistent data at the receiver, possibly being robust to channel corruptions, can be addressed with deep generative models. This ICASSP special session overview paper discloses the semantic communication challenges from the machine learning perspective and unveils how deep generative models will significantly enhance semantic communication frameworks in dealing with real-world complex data, extracting and exploiting semantic information, and being robust to channel corruptions. Alongside establishing this emerging field, this paper charts novel research pathways for the next generative semantic communication frameworks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI-Enabled Semantic Communication: State-of-the-Art, Applications, and the Way Ahead",
+  "authors": [
+   "Chengyang Liang",
+   "Dong Li"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2025.3649707",
+  "arxiv": null,
+  "openalex": "W7117557822",
+  "cited_by": 11,
+  "abstract": "The rapid advancement of generative artificial intelligence (GenAI) has introduced novel opportunities for semantic communication (SemCom) systems. This survey offers a comprehensive overview of GenAI-enabled SemCom, connecting theoretical foundations with practical applications. Initially, we introduce the fundamental concepts of SemCom and explore how generative models augment traditional communication paradigms. The paper systematically reviews state-of-the-art methodologies, including variational autoencoders, generative adversarial networks, diffusion models, and other GenAI frameworks within SemCom contexts. We classify GenAI in SemCom based on its GenAI architecture, communication modality, and application tasks. Additionally, we present detailed case studies that demonstrate real-world applications in smart healthcare, intelligent transportation systems, and smart agriculture. These case studies exemplify how generative SemCom can fulfill semantic tasks while preserving the communication fidelity. Finally, we identify emerging research directions and discuss open challenges that merit further investigation. This survey constitutes a valuable resource for researchers and practitioners aiming to comprehend and implement GenAI techniques in next-generation communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Semantic Communication via Alternating Dual-Domain Posterior Sampling",
+  "authors": [
+   "Shunpu Tang",
+   "Qianqian Yang"
+  ],
+  "year": 2026,
+  "venue": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+  "doi": "10.1109/pimrc69400.2026.11711664",
+  "arxiv": "2604.16796",
+  "openalex": "W7155076630",
+  "cited_by": 0,
+  "abstract": "Generative semantic communication (SemCom) harnesses pretrained generative priors to improve the perceptual quality of wireless image transmission. Existing generative SemCom receivers, however, rely on maximum a posteriori (MAP) estimation, which fundamentally cannot preserve the data distribution and thus limits achievable perceptual quality. Moreover, current diffusion-based approaches using single-domain guidance face significant limitations: latent-domain guidance is sensitive to channel noise, while image-domain guidance inherits decoder bias. Simply combining both domains simultaneously yields an overconfident pseudo-posterior. In this paper, we formulate semantic decoding as a Bayesian inverse problem and prove that posterior sampling achieves optimal perceptual quality by preserving the data distribution. Building on this insight, we propose alternating dual-domain posterior sampling (ADDPS), a diffusion-based SemCom receiver that alternately enforces latent-domain and image-domain consistency during the sampling process. This alternating strategy decomposes joint posterior sampling into simpler subproblems, avoiding gradient conflicts while retaining the complementary strengths of both domains. Experiments on FFHQ demonstrate that the proposed ADDPS achieves superior perceptual quality compared with existing methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Training-Free Multi-User Generative Semantic Communications via Null-Space Diffusion Sampling",
+  "authors": [
+   "Eleonora Grassucci",
+   "Jinho Choi",
+   "Jihong Park",
+   "Riccardo Fosco Gramaccioni",
+   "Giordano Cicchetti",
+   "Danilo Comminiello"
+  ],
+  "year": 2026,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2026.3682495",
+  "arxiv": "2405.09866",
+  "openalex": "W4397049060",
+  "cited_by": 3,
+  "abstract": "Recent advances in artificial intelligence (AI) models, such as large language models and diffusion models, have shown significant potential in semantic communication by reconstructing multimedia data from highly compressed semantic signals under limited bandwidth and poor channel conditions. Unlike most existing approaches that focus on single-user scenarios with typical encoder-decoder models, this paper rethinks multi-user semantic communications using large generative models. In particular, in multi-user orthogonal frequency division multiple access (OFDMA) systems, we propose to reduce the number of subcarriers assigned per user by leveraging generative diffusion models to locally reconstruct missing or noisy information. By utilizing the null-space decomposition method for diffusion model sampling, we provide a traning-free, closed-form receiver design guideline for diffusion noise scheduling. Simulation results demonstrate that our proposed method achieves high-fidelity image reconstruction using only 60% of the original subcarriers, and outperforms deep joint source-channel coding (DeepJSCC) and LDPC baselines by up to -10 dB in signal-to-noise ratio (SNR).",
+  "source": "openalex"
+ },
+ {
+  "title": "GDE: A Generative Diffusion Equalizer for ICSI-Free Semantic Communications in SAGINs",
+  "authors": [
+   "Huaifeng Shi",
+   "Long Zhou",
+   "Wen Tian",
+   "Chaofan Liu"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2026.3709876",
+  "arxiv": null,
+  "openalex": "W7167275489",
+  "cited_by": 0,
+  "abstract": "In Space-Air-Ground Integrated Networks (SAGINs), high nodal mobility and long propagation delays make instantaneous channel state information (ICSI) prone to aging and estimation mismatch, which poses a major challenge to robust semantic recovery. Existing DeepJSCC-based semantic communication receivers commonly rely on pilot-aided coherent equalization before semantic decoding and are therefore sensitive to ICSI mismatch, especially in dynamic non-terrestrial links. To address this issue, this paper proposes the Generative Diffusion Equalizer (GDE), an ICSI-free receiver framework for semantic communications in SAGINs. Instead of inverting the instantaneous channel, GDE formulates receiver-side semantic recovery as a statistically guided agentic inference process. Specifically, the reverse diffusion process is conditioned on slowly varying statistical channel state information (SCSI), with the Rician factor serving as a representative statistical prompt, rather than on volatile instantaneous channel estimates. An adaptive reinforcement learning policy is further introduced to select the reverse-diffusion starting timestep, thereby controlling the fidelity–latency trade-off during inference. Experimental results show that GDE improves reconstruction robustness under ICSI mismatch, varying Rician fading statistics, and moderate SCSI estimation errors. The results also indicate that GDE leverages Contextual Inpainting in noise-limited regimes and Manifold Projection in mismatch-limited high-SNR regimes to mitigate error floors caused by imperfect channel estimation. Compared with DeepJSCC baselines under imperfect ICSI, GDE achieves an approximately 50% bandwidth reduction under moderate ICSI mismatch while maintaining comparable reconstruction quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards generative knowledge-collaborative semantic communication for extreme traffic environments",
+  "authors": [
+   "Yan Xiao",
+   "Xiumei Fan",
+   "Jiamou Liu",
+   "Yau Kok-Lim Alvin",
+   "Zhixin Xie",
+   "Yuanbo Lu"
+  ],
+  "year": 2026,
+  "venue": "Journal of King Saud University - Computer and Information Sciences",
+  "doi": "10.1007/s44443-026-00853-w",
+  "arxiv": null,
+  "openalex": "W7163651757",
+  "cited_by": 0,
+  "abstract": "While Semantic Communication (SC) is a promising paradigm for Intelligent Transportation Systems (ITS) by prioritizing task-relevant information, existing frameworks utilizing static knowledge bases or discriminative decoding often struggle to adapt to extreme traffic environments (e.g., nighttime, rain, and snow), where degraded visual inputs and low-SNR wireless channels cause severe semantic impairment and irreversible information loss. To overcome this perception bottleneck, this paper proposes the Generative Knowledge-Collaborative Semantic Communication (GKC-SC) framework. First, an environment-adaptive Semantic Knowledge Base (SKB) is constructed by integrating Retinex physics decoupling, diffusion-based texture restoration, and the Segment Anything Model (SAM) to extract high-precision semantic masks. Second, the transmitter leverages these SKB-derived masks for Adaptive Semantic Compression (ASC) alongside a Bi-level Routing Attention (BRA) module, effectively suppressing background redundancy to focus on critical traffic regions. Finally, a Guided Diffusion Receiver (GDR) is designed to jointly decode the transmitted discrete indices and SKB generative priors, enabling the active completion of high-frequency details and semantic structures. Extensive experiments on the BDD100K and ACDC datasets across a wide SNR range (-10 dB to 25 dB) demonstrate GKC-SC’s superiority. The framework achieves a mean Average Precision (mAP@0.5) of 0.918 on BDD100K and 0.935 on ACDC, while significantly reducing Learned Perceptual Image Patch Similarity (LPIPS) scores compared to baseline methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI ‐enabled Semantic Communications",
+  "authors": [
+   "Zhijin Qin",
+   "Huiqiang Xie",
+   "Zhenzi Weng",
+   "Xiaoming Tao"
+  ],
+  "year": 2025,
+  "venue": "Wiley eBooks",
+  "doi": "10.1002/9781394306268.ch07",
+  "arxiv": null,
+  "openalex": "W4417119164",
+  "cited_by": 0,
+  "abstract": "This study examines the integration of generative artificial intelligence (GAI) with semantic communications (SemCom), proposing a GAISemCom system that employs adversarial networks, diffusion models, and transformer-based frameworks to reconstruct intent accurately in noisy, bandwidth-limited environments while preserving multimodal data context. The framework positions GAI as both a semantic encoder and an imagination engine, capable of restoring lost details and generating context-aware content aligned with human cognition. The adoption of AI in communications has led to semantic-aware transmission strategies prioritizing meaning over raw data, with generative models such as GANs, VAEs, and diffusion models enhancing system quality, robustness, and flexibility. These models restore semantic fidelity by recovering lost details or filling in missing content, outperforming traditional error-correcting codes. GANs capture complex data distributions and synthesize signal reconstructions aligned with original intent, while VAEs encode essential semantics into compact latent spaces resilient to channel noise. Emerging paradigms like diffusion models further enhance capabilities in tasks such as image generation and text extraction. The study concludes that GAI provides robust techniques for data representation and transformation, significantly enhancing semantic communication systems by preserving content in low-data-rate or noisy environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI Meets Semantic Communication: Evolution and Revolution of Communication Tasks",
+  "authors": [
+   "Eleonora Grassucci",
+   "Jihong Park",
+   "Sergio Barbarossa",
+   "Seong‐Lyun Kim",
+   "Jinho Choi",
+   "Danilo Comminiello"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2401.06803",
+  "arxiv": "2401.06803",
+  "openalex": "W4390961145",
+  "cited_by": 17,
+  "abstract": "While deep generative models are showing exciting abilities in computer vision and natural language processing, their adoption in communication frameworks is still far underestimated. These methods are demonstrated to evolve solutions to classic communication problems such as denoising, restoration, or compression. Nevertheless, generative models can unveil their real potential in semantic communication frameworks, in which the receiver is not asked to recover the sequence of bits used to encode the transmitted (semantic) message, but only to regenerate content that is semantically consistent with the transmitted message. Disclosing generative models capabilities in semantic communication paves the way for a paradigm shift with respect to conventional communication systems, which has great potential to reduce the amount of data traffic and offers a revolutionary versatility to novel tasks and applications that were not even conceivable a few years ago. In this paper, we present a unified perspective of deep generative models in semantic communication and we unveil their revolutionary role in future communication frameworks, enabling emerging applications and tasks. Finally, we analyze the challenges and opportunities to face to develop generative models specifically tailored for communication systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "PromptSC: High-fidelity Prompt-based Video Semantic Communication with Generative Models",
+  "authors": [
+   "Changshu Yan",
+   "Jiangkai Wu",
+   "Liming Liu",
+   "Z Z Guo",
+   "Xinggong Zhang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Globecom Workshops (GC Wkshps)",
+  "doi": "10.1109/gcwkshps68340.2025.11591089",
+  "arxiv": null,
+  "openalex": "W7167621794",
+  "cited_by": 0,
+  "abstract": "Semantic Communication (SemCom), as a revolutionary communication paradigm, holds significant promise for future 6G networks. It transmits task-oriented semantic content with ultra-low bandwidth, yet fails to ensure the same pixel-level fidelity as traditional video communications. In this paper, we propose a prompt-based video semantic communication framework, PromptSC. It inversely transforms videos into prompts using the generative model, Stable Diffusion, and the receiver generates images with pixel-level fidelity. A noise-aware prompt training mechanism is designed to combat channel noise. Specifically, a prompt first goes through a noise channel and is then denoised by Stable Diffusion. The prompt is updated via loss gradients to align the pixel with the source videos. Furthermore, a tri-frame interpolation method is proposed where only key frames are trained to prompts, others are interpolated from the key frames. This not only reduces the complexity of generative communication, but also smooth the channel noise. With extensive simulation experiments, the PromptSC can outperform SOTA with 20% to 30% LPIPS improvement.",
+  "source": "openalex"
+ },
+ {
+  "title": "Edge Map-Enhanced Generative Probabilistic Semantic Communication with Scene Graph",
+  "authors": [
+   "Chen Zhu",
+   "Zhouxiang Zhao",
+   "Kang Liang",
+   "Zhaohui Yang",
+   "Jianrong Bao",
+   "Zhaoyang Zhang"
+  ],
+  "year": 2026,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC)",
+  "doi": "10.1109/iccc70295.2026.11680493",
+  "arxiv": null,
+  "openalex": "W7213420173",
+  "cited_by": 0,
+  "abstract": "In extreme communication scenarios characterized by severe channel fading and constrained bandwidth, traditional pixel-level image transmission schemes suffer from a catastrophic “cliff effect”. While generative semantic communication has emerged as a promising solution, existing frameworks relying solely on abstract textual or graph-based semantics often induce severe spatial distortions and structural ambiguities during image reconstruction. To address this challenge, we propose an edge map-enhanced generative probabilistic semantic communication (PSCom) framework. At the transmitter, we extract a structural scene graph and apply a triple-stage redundancy filtering mechanism, incorporating spatial overlap, probabilistic entropy, and semantic residual analysis, to achieve extreme data compression. Concurrently, a lightweight binary edge map is extracted to serve as a physical structural prior. At the receiver, a conditional diffusion model is driven by these dual priors via a ControlNetbased architecture, enabling the precise restoration of both logical semantics and geometric layouts. Extensive simulations demonstrate that the proposed PSCom framework maintains high-fidelity reconstruction at a signal-to-noise ratio (SNR) as low as 14 dB in Rayleigh fading channels. By bridging the gap between abstract meaning and physical structure, our approach significantly outperforms traditional JPEG2000 and baseline semantic schemes in both visual robustness and system throughput.",
+  "source": "openalex"
+ },
+ {
+  "title": "Incentive-driven semantic communication for user-centric mobile generative services",
+  "authors": [
+   "Guangyuan Liu"
+  ],
+  "year": 2026,
+  "venue": null,
+  "doi": "10.32657/10356/219042",
+  "arxiv": null,
+  "openalex": "W7196968110",
+  "cited_by": 0,
+  "abstract": "The rapid development of Generative Artificial Intelligence (GenAI) has made mobile-edge generative services increasingly feasible, allowing AI-generated content (AIGC) to be created and delivered closer to end users. However, practical deployment remains challenging because these services must operate over bandwidth-limited wireless links, under dynamic multi-user contention, and with heterogeneous device capabilities. As a result, communication, generation, and incentive design cannot be optimized independently. Instead, semantic representation, semantic update timing, and semantic quality provision must be jointly studied from a user-centric perspective. This thesis investigates mobile-edge generative services through three connected dimensions, namely semantic relevance, temporal freshness, and generation fidelity. First, this thesis develops a unified semantic communication and context-aware gating framework for mobile generative services. A SemCom-enabled generative model is established to connect semantic extraction, transmission cost, and downstream generation quality. Furthermore, a context-aware semantic communication architecture with mixture-of-experts routing is proposed, where a Large Language Model (LLM)-based gate jointly exploits task context and communication context to select semantic content and semantic experts, while a Deep Reinforcement Learning (DRL) fallback policy preserves robustness when LLM inference is constrained. Therefore, this part provides the semantic control and evaluation foundation for the subsequent studies. Second, this thesis investigates how to align semantic upload timing in multi-user Metaverse services. A vision-based semantic communication framework is proposed in which human pose estimation converts raw video frames into compact skeletal semantics, reducing the transmitted payload from 8.243 MB per frame to 51 bytes. On top of this semantic abstraction, a contest-theoretic mechanism models upload frequency as strategic effort under shared rendering constraints. Moreover, a Deep Q-Network (DQN)-based controller is introduced to adapt the reward structure in dynamic environments. Experimental results show that the proposed approach reduces aggregate down-sampling loss by 66.1% compared with average allocation. Third, this thesis studies semantic quality alignment for controllable image generation under heterogeneous semantic-task capabilities and information asymmetry. A contract-inspired contest mechanism links aggregate expected image quality to the generation server's payment and distributes this payment as rank-based awards among semantic transfer tasks. In addition, a Generative Diffusion Model (GDM)-assisted DRL framework generates and evaluates candidate payment and award parameters in a closed loop using generation-quality feedback. In the evaluated setting, GDM-assisted DRL reaches a higher converged reward than Transformer-based SAC, PPO, SAC, and average-power allocation. Overall, this thes",
+  "source": "openalex"
+ },
+ {
+  "title": "Optimizing Resource Allocation for Multi-Modal Semantic Communication in Mobile AIGC Networks: A Diffusion-Based Game Approach",
+  "authors": [
+   "Jian Liu",
+   "Ming Xiao",
+   "Jinbo Wen",
+   "Jiawen Kang",
+   "Ruichen Zhang",
+   "Tao Zhang",
+   "Dusit Tao Niyato",
+   "Weiting Zhang",
+   "Ying Liu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2025.3529747",
+  "arxiv": "2409.17506",
+  "openalex": "W4406367763",
+  "cited_by": 28,
+  "abstract": "Mobile Artificial Intelligence-Generated Content (AIGC) networks enable massive users to obtain customized content generation services. However, users still need to download a large number of AIGC outputs from mobile AIGC service providers, which strains communication resources and increases the risk of transmission failures. Fortunately, Semantic Communication (SemCom) can improve transmission efficiency and reliability through semantic information processing. Moreover, recent advances in Generative Artificial Intelligence (GAI) further enhanced the effectiveness of SemCom through its powerful generative capabilities. However, how to strike a balance between high-precision content reconstruction and efficient information transmission is a major challenge. In this paper, we propose a Generative Diffusion Model (GDM)-based multi-modal SemCom (GM-SemCom) framework. The framework improves the accuracy of information reconstruction by integrating GDMs and multi-modal semantic information and also adopts a controllable extraction module for efficient and controllable problems of unstable data recovery and slow decoding speed in GAI-enabled SemCom. Then, we introduce a novel metric called Age of Semantic Information (AoSI) based on the concept of Age of Information (AoI) to quantify the freshness of semantic information. To address the resource trading problem within the framework, we propose a Stackelberg game model, which integrates the AoSI with psychological factors to provide a comprehensive measure of user utility. Furthermore, we propose a GDM-based algorithm to solve the game under incomplete information. Compared with the traditional deep reinforcement learning algorithms, numerical results demonstrate that the proposed algorithm converges faster and is closer to the Stackelberg equilibrium.",
+  "source": "openalex"
+ },
+ {
+  "title": "Communicate Less, Synthesize the Rest: Latency-Aware Intent-Based Generative Semantic Multicasting With Diffusion Models",
+  "authors": [
+   "Xinkai Liu",
+   "Mahdi Boloursaz Mashhadi",
+   "Li Qiao",
+   "Yi Ma",
+   "Rahim Tafazolli",
+   "Mehdi Bennis"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "10.1109/tvt.2026.3660013",
+  "arxiv": "2411.02334",
+  "openalex": "W7127091128",
+  "cited_by": 6,
+  "abstract": "Generative diffusion models (GDMs) have recently shown great success in synthesizing multimedia signals with high perceptual quality enabling highly efficient semantic communications in future wireless networks. In this paper, we develop an intent-aware generative semantic multicasting framework utilizing pre-trained diffusion models. In the proposed framework, the transmitter decomposes the source signal to multiple semantic classes based on the multi-user intent, i.e. each user is assumed to be interested in details of only a subset of the semantic classes. To better utilize the wireless resources, the transmitter sends to each user only its intended classes, and multicasts a highly compressed semantic map to all users over shared wireless resources that allows them to locally synthesize the other classes, i.e. non-intended classes, utilizing pre-trained diffusion models. The signal retrieved at each user is thereby partially reconstructed and partially synthesized utilizing the received semantic map. We design a communication/computation-aware scheme for per-class adaptation of the communication parameters, such as the transmission power and compression rate to minimize the total latency of retrieving signals at multiple receivers, tailored to the prevailing channel conditions as well as the users' reconstruction/synthesis distortion/perception requirements. The simulation results demonstrate significantly reduced per-user latency compared with non-generative and intent-unaware multicasting benchmarks while maintaining high perceptual quality of the signals retrieved at the users. For a typical setup of multicasting street scene images to 10 users, our proposed framework achieves a$15.4\\%$reduction in per-user latency at a fixed power budget, or equivalently$50\\%$reduction in the transmission power required to achieve a fixed per-user latency, compared with non-generative multicasting.",
+  "source": "openalex"
+ }
+]

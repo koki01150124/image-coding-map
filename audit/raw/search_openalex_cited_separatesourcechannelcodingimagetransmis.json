@@ -1,0 +1,965 @@
+[
+ {
+  "title": "On the Road to 6G: Visions, Requirements, Key Technologies, and Testbeds",
+  "authors": [
+   "Cheng‐Xiang Wang",
+   "Xiaohu You",
+   "Xiqi Gao",
+   "Xiuming Zhu",
+   "Zixin Li",
+   "Chuan Zhang",
+   "Haiming Wang",
+   "Yongming Huang",
+   "Yunfei Chen",
+   "Harald Haas",
+   "John Thompson",
+   "Erik G. Larsson",
+   "Marco Di Renzo",
+   "Wen Tong",
+   "Peiying Zhu",
+   "Xuemin Shen",
+   "H. Vincent Poor",
+   "Lajos Hanzo"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3249835",
+  "arxiv": "2302.14536",
+  "openalex": "W4322576964",
+  "cited_by": 2407,
+  "abstract": "Fifth generation (5G) mobile communication systems have entered the stage of commercial deployment, providing users with new services, improved user experiences as well as a host of novel opportunities to various industries. However, 5G still faces many challenges. To address these challenges, international industrial, academic, and standards organizations have commenced research on sixth generation (6G) wireless communication systems. A series of white papers and survey papers have been published, which aim to define 6G in terms of requirements, application scenarios, key technologies, etc. Although ITU-R has been working on the 6G vision and it is expected to reach a consensus on what 6G will be by mid-2023, the related global discussions are still wide open and the existing literature has identified numerous open issues. This paper first provides a comprehensive portrayal of the 6G vision, technical requirements, and application scenarios, covering the current common understanding of 6G. Then, a critical appraisal of the 6G network architecture and key technologies is presented. Furthermore, existing testbeds and advanced 6G verification platforms are detailed for the first time. In addition, future research directions and open challenges are identified to stimulate the on-going global debate. Finally, lessons learned to date concerning 6G networks are discussed.",
+  "source": "openalex"
+ },
+ {
+  "title": "6G Wireless Systems: Vision, Requirements, Challenges, Insights, and Opportunities",
+  "authors": [
+   "Harsh Tataria",
+   "Mansoor Shafi",
+   "Andreas F. Molisch",
+   "Mischa Döhler",
+   "Henrik Sjöland",
+   "Fredrik Tufvesson"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3061701",
+  "arxiv": "2008.03213",
+  "openalex": "W3048081097",
+  "cited_by": 1611,
+  "abstract": "Mobile communications have been undergoing a generational change every ten years or so. However, the time difference between the so-called “G's” is also decreasing. While fifth-generation (5G) systems are becoming a commercial reality, there is already significant interest in systems beyond 5G, which we refer to as the sixth generation (6G) of wireless systems. In contrast to the already published papers on the topic, we take a top-down approach to 6G. More precisely, we present a holistic discussion of 6G systems beginning with lifestyle and societal changes driving the need for next-generation networks. This is followed by a discussion into the technical requirements needed to enable 6G applications, based on which we dissect key challenges and possibilities for practically realizable system solutions across all layers of the Open Systems Interconnection stack (i.e., from applications to the physical layer). Since many of the 6G applications will need access to an order-of-magnitude more spectrum, utilization of frequencies between 100 GHz and 1 THz becomes of paramount importance. As such, the 6G ecosystem will feature a diverse range of frequency bands, ranging from below 6 GHz up to 1 THz. We comprehensively characterize the limitations that must be overcome to realize working systems in these bands and provide a unique perspective on the physical and higher layer challenges relating to the design of next-generation core networks, new modulation and coding methods, novel multiple-access techniques, antenna arrays, wave propagation, radio frequency transceiver design, and real-time signal processing. We rigorously discuss the fundamental changes required in the core networks of the future, such as the redesign or significant reduction of the transport architecture that serves as a major source of latency for time-sensitive applications. This is in sharp contrast to the present hierarchical network architectures that are not suitable to realize many of the anticipated 6G services. While evaluating the strengths and weaknesses of key candidate 6G technologies, we differentiate what may be practically achievable over the next decade, relative to what is possible in theory. Keeping this in mind, we present concrete research challenges for each of the discussed system aspects, providing inspiration for what follows.",
+  "source": "openalex"
+ },
+ {
+  "title": "Secure quantum key distribution with realistic devices",
+  "authors": [
+   "Feihu Xu",
+   "Xiongfeng Ma",
+   "Qiang Zhang",
+   "Hoi‐Kwong Lo",
+   "Jian-Wei Pan"
+  ],
+  "year": 2020,
+  "venue": "Reviews of Modern Physics",
+  "doi": "10.1103/revmodphys.92.025002",
+  "arxiv": "1903.09051",
+  "openalex": "W3004357554",
+  "cited_by": 1571,
+  "abstract": "Some years ago quantum hacking became popular: devices implementing the unbreakable quantum cryptography were shown to have imperfections which could be exploited by attackers. Security has been thoroughly enhanced, as a consequence of both theoretical and experimental advances. This review gives both sides of the story, with the current best theory of quantum security, and an extensive survey of what makes quantum cryptosystem safe in practice.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2019.2919300",
+  "arxiv": "1809.01733",
+  "openalex": "W2946889564",
+  "cited_by": 1516,
+  "abstract": "We propose a joint source and channel coding (JSCC) technique for wireless image transmission that does not rely on explicit codes for either compression or error correction; instead, it directly maps the image pixel values to the complex-valued channel input symbols. We parameterize the encoder and decoder functions by two convolutional neural networks (CNNs), which are trained jointly, and can be considered as an autoencoder with a non-trainable layer in the middle that represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms digital transmission concatenating JPEG or JPEG2000 compression with a capacity achieving channel code at low signal-to-noise ratio (SNR) and channel bandwidth values in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the “cliff effect,” and it provides a graceful performance degradation as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC learns noise resilient coded representations and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ },
+ {
+  "title": "6G and Beyond: The Future of Wireless Communications Systems",
+  "authors": [
+   "Ian Fuat Akyildiz",
+   "Ahan Kak",
+   "Shuai Nie"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3010896",
+  "arxiv": null,
+  "openalex": "W3045086480",
+  "cited_by": 1416,
+  "abstract": "6G and beyond will fulfill the requirements of a fully connected world and provide ubiquitous wireless connectivity for all. Transformative solutions are expected to drive the surge for accommodating a rapidly growing number of intelligent devices and services. Major technological breakthroughs to achieve connectivity goals within 6G include: (i) a network operating at the THz band with much wider spectrum resources, (ii) intelligent communication environments that enable a wireless propagation environment with active signal transmission and reception, (iii) pervasive artificial intelligence, (iv) large-scale network automation, (v) an all-spectrum reconfigurable front-end for dynamic spectrum access, (vi) ambient backscatter communications for energy savings, (vii) the Internet of Space Things enabled by CubeSats and UAVs, and (viii) cell-free massive MIMO communication networks. In this roadmap paper, use cases for these enabling techniques as well as recent advancements on related topics are highlighted, and open problems with possible solutions are discussed, followed by a development timeline outlining the worldwide efforts in the realization of 6G. Going beyond 6G, promising early-stage technologies such as the Internet of NanoThings, the Internet of BioNanoThings, and quantum communications, which are expected to have a far-reaching impact on wireless communications, have also been discussed at length in this paper.",
+  "source": "openalex"
+ },
+ {
+  "title": "HiDDeN: Hiding Data With Deep Networks",
+  "authors": [
+   "Jiren Zhu",
+   "Russell Kaplan",
+   "Justin Johnson",
+   "Li Fei-Fei"
+  ],
+  "year": 2018,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-030-01267-0_40",
+  "arxiv": "1807.09937",
+  "openalex": "W2883233582",
+  "cited_by": 1219,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges",
+  "authors": [
+   "Michele Polese",
+   "Leonardo Bonati",
+   "Salvatore D’Oro",
+   "Stefano Basagni",
+   "Tommaso Melodia"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3239220",
+  "arxiv": "2202.01032",
+  "openalex": "W4317796310",
+  "cited_by": 1152,
+  "abstract": "The Open Radio Access Network (RAN) and its embodiment through the O-RAN Alliance specifications are poised to revolutionize the telecom ecosystem. O-RAN promotes virtualized RANs where disaggregated components are connected via open interfaces and optimized by intelligent controllers. The result is a new paradigm for the RAN design, deployment, and operations: O-RAN networks can be built with multivendor, interoperable components, and can be programmatically optimized through a centralized abstraction layer and datadriven closed-loop control. Therefore, understanding O-RAN, its architecture, its interfaces, and workflows is key for researchers and practitioners in the wireless community. In this article, we present the first detailed tutorial on O-RAN. We also discuss the main research challenges and review early research results. We provide a deep dive of the O-RAN specifications, describing its architecture, design principles, and the O-RAN interfaces. We then describe how the O-RAN RAN Intelligent Controllers (RICs) can be used to effectively control and manage 3GPP-defined RANs. Based on this, we discuss innovations and challenges of O-RAN networks, including the Artificial Intelligence (AI) and Machine Learning (ML) workflows that the architecture and interfaces enable, security, and standardization issues. Finally, we review experimental research platforms that can be used to design and test O-RAN networks, along with recent research results, and we outline future directions for O-RAN development.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comprehensive Survey of Recent Advancements in Molecular Communication",
+  "authors": [
+   "Nariman Farsad",
+   "H. Birkan Yilmaz",
+   "Andrew Eckford",
+   "Chan‐Byoung Chae",
+   "Weisi Guo"
+  ],
+  "year": 2016,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2016.2527741",
+  "arxiv": "1410.4258",
+  "openalex": "W2168002711",
+  "cited_by": 952,
+  "abstract": "With much advancement in the field of nanotechnology, bioengineering, and synthetic biology over the past decade, microscales and nanoscales devices are becoming a reality. Yet the problem of engineering a reliable communication system between tiny devices is still an open problem. At the same time, despite the prevalence of radio communication, there are still areas where traditional electromagnetic waves find it difficult or expensive to reach. Points of interest in industry, cities, and medical applications often lie in embedded and entrenched areas, accessible only by ventricles at scales too small for conventional radio waves and microwaves, or they are located in such a way that directional high frequency systems are ineffective. Inspired by nature, one solution to these problems is molecular communication (MC), where chemical signals are used to transfer information. Although biologists have studied MC for decades, it has only been researched for roughly 10 year from a communication engineering lens. Significant number of papers have been published to date, but owing to the need for interdisciplinary work, much of the results are preliminary. In this survey, the recent advancements in the field of MC engineering are highlighted. First, the biological, chemical, and physical processes used by an MC system are discussed. This includes different components of the MC transmitter and receiver, as well as the propagation and transport mechanisms. Then, a comprehensive survey of some of the recent works on MC through a communication engineering lens is provided. The survey ends with a technology readiness analysis of MC and future research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Low Latency Towards 5G: RAN, Core Network and Caching Solutions",
+  "authors": [
+   "Imtiaz Parvez",
+   "Ali Rahmati",
+   "İsmail Güvenç",
+   "Arif I. Sarwat",
+   "Huaiyu Dai"
+  ],
+  "year": 2018,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2018.2841349",
+  "arxiv": "1708.02562",
+  "openalex": "W2962855623",
+  "cited_by": 889,
+  "abstract": "The fifth generation (5G) wireless network technology is to be standardized by 2020, where main goals are to improve capacity, reliability, and energy efficiency, while reducing latency and massively increasing connection density. An integral part of 5G is the capability to transmit touch perception type real-time communication empowered by applicable robotics and haptics equipment at the network edge. In this regard, we need drastic changes in network architecture including core and radio access network (RAN) for achieving end-to-end latency on the order of 1 ms. In this paper, we present a detailed survey on the emerging technologies to achieve low latency communications considering three different solution domains: 1) RAN; 2) core network; and 3) caching. We also present a general overview of major 5G cellular network elements such as software defined network, network function virtualization, caching, and mobile edge computing capable of meeting latency and other 5G requirements.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Splitting Multiple Access: Fundamentals, Survey, and Future Research Trends",
+  "authors": [
+   "Yijie Mao",
+   "Onur Dizdar",
+   "Bruno Clerckx",
+   "Robert Schober",
+   "Petar Popovski",
+   "H. Vincent Poor"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3191937",
+  "arxiv": "2201.03192",
+  "openalex": "W4221160108",
+  "cited_by": 848,
+  "abstract": "Rate-splitting multiple access (RSMA) has emerged as a novel, general, and powerful framework for the design and optimization of non-orthogonal transmission, multiple access (MA), and interference management strategies for future wireless networks. By exploiting splitting of user messages as well as non-orthogonal transmission of common messages decoded by multiple users and private messages decoded by their corresponding users, RSMA can softly bridge and therefore reconcile the two extreme interference management strategies of fully decoding interference and treating interference as noise. RSMA has been shown to generalize and subsume as special cases four existing MA schemes, namely, orthogonal multiple access (OMA), physical-layer multicasting, space division multiple access (SDMA) based on linear precoding (currently used in the fifth generation wireless network–5G), and non-orthogonal multiple access (NOMA) based on linearly precoded superposition coding with successive interference cancellation (SIC). Through information and communication theoretic analysis, RSMA has been shown to be optimal (from a Degrees-of-Freedom region perspective) in several transmission scenarios. Compared to the conventional MA strategies used in 5G, RSMA enables spectral efficiency (SE), energy efficiency (EE), coverage, user fairness, reliability, and quality of service (QoS) enhancements for a wide range of network loads (including both underloaded and overloaded regimes) and user channel conditions. Furthermore, it enjoys a higher robustness against imperfect channel state information at the transmitter (CSIT) and entails lower feedback overhead and complexity. Despite its great potential to fundamentally change the physical (PHY) layer and media access control (MAC) layer of wireless communication networks, RSMA is still confronted with many challenges on the road towards standardization. In this paper, we present the first comprehensive tutorial on RSMA by providing a survey of the pertinent state-of-the-art research, detailing its architecture, taxonomy, and various appealing applications, as well as comparing with existing MA schemes in terms of their overall frameworks, performance, and complexities. An in-depth discussion of future RSMA research challenges is also provided to inspire future research on RSMA-aided wireless communication for beyond 5G systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Terahertz Band Communication: An Old Problem Revisited and Research Directions for the Next Decade",
+  "authors": [
+   "Ian Fuat Akyildiz",
+   "Chong Zhao Han",
+   "Zhifeng Hu",
+   "Shuai Nie",
+   "Josep Miquel Jornet"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2022.3171800",
+  "arxiv": "2112.13187",
+  "openalex": "W4285192749",
+  "cited_by": 708,
+  "abstract": "Terahertz (THz) band communications are envisioned as a key technology for 6G and Beyond. As a fundamental wireless infrastructure, THz communication can boost abundant promising applications. In 2014, our team published two comprehensive roadmaps for the development and progress of THz communication networks, which helped the research community to start research on this subject afterwards. The topic of THz communications became very important and appealing to the research community due to 6G wireless systems design and development in recent years. Many papers are getting published covering different aspects of wireless systems using the THz band. With this paper, our aim is looking back to the last decade and revisiting the old problems and pointing out what has been achieved in the research community so far. Furthermore, in this paper, open challenges and new research directions still to be investigated for the THz band communication systems are presented, by covering diverse topics ranging from devices, channel behavior, communication and networking, to physical testbeds and demonstration systems. The key aspects presented in this paper will enable THz communications as a pillar of 6G and Beyond wireless systems in the next decade.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications for Future Internet: Fundamentals, Applications, and Challenges",
+  "authors": [
+   "Wanting Yang",
+   "Hongyang Du",
+   "Zi Qin Liew",
+   "Wei Yang Bryan Lim",
+   "Zehui Xiong",
+   "Dusit Tao Niyato",
+   "Xuefen Chi",
+   "Xuemin Shen",
+   "Chunyan Miao"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3223224",
+  "arxiv": "2207.00427",
+  "openalex": "W4312766166",
+  "cited_by": 696,
+  "abstract": "With the increasing demand for intelligent services, the sixth-generation (6G) wireless networks will shift from a traditional architecture that focuses solely on a high transmission rate to a new architecture that is based on the intelligent connection of everything. Semantic communication (SemCom), a revolutionary architecture that integrates user as well as application requirements and the meaning of information into data processing and transmission, is predicted to become a new core paradigm in 6G. While SemCom is expected to progress beyond the classical Shannon paradigm, several obstacles need to be overcome on the way to a SemCom-enabled smart Internet. In this paper, we first highlight the motivations and compelling reasons for SemCom in 6G. Then, we provide an overview of SemCom-related theory development. After that, we introduce three types of SemCom, i.e., semantic-oriented communication, goal-oriented communication, and semantic-aware communication. Following that, we organize the design of the communication system into three dimensions, i.e., semantic information (SI) extraction, SI transmission, and SI metrics. For each dimension, we review existing techniques and discuss their benefits and limitations, as well as the remaining challenges. Then, we introduce the potential applications of SemCom in 6G and portray the vision of future SemCom-empowered network architecture. Finally, we outline future research opportunities. In a nutshell, this paper provides a holistic review of the fundamentals of SemCom, its applications in 6G networks, and the existing challenges and open issues with insights for further in-depth investigations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Jamming Attacks and Anti-Jamming Strategies in Wireless Networks: A Comprehensive Survey",
+  "authors": [
+   "Hossein Pirayesh",
+   "Huacheng Zeng"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3159185",
+  "arxiv": "2101.00292",
+  "openalex": "W3119223610",
+  "cited_by": 661,
+  "abstract": "Wireless networks are a key component of the telecommunications infrastructure in our society, and wireless services become increasingly important as the applications of wireless devices have penetrated every aspect of our lives. Although wireless technologies have significantly advanced in the past decades, most wireless networks are still vulnerable to radio jamming attacks due to the openness nature of wireless channels, and the progress in the design of jamming-resistant wireless networking systems remains limited. This stagnation can be attributed to the lack of practical physical-layer wireless technologies that can efficiently decode data packets in the presence of jamming attacks. This article surveys existing jamming attacks and anti-jamming strategies in wireless local area networks (WLANs), cellular networks, cognitive radio networks (CRNs), ZigBee networks, Bluetooth networks, vehicular networks, LoRa networks, RFID networks, GPS system, millimeter-wave (mmWave) and learning-assisted wireless systems, with the objective of offering a comprehensive knowledge landscape of existing jamming and anti-jamming strategies and therefore stimulating more research efforts to secure wireless networks against jamming attacks. Different from prior survey papers, this article conducts a comprehensive, in-depth review on jamming and anti-jamming strategies, casting insights on the design of jamming-resilient wireless networking systems. An outlook on promising anti-jamming techniques is offered at the end of this article to delineate important research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Cellular, Wide-Area, and Non-Terrestrial IoT: A Survey on 5G Advances and the Road Toward 6G",
+  "authors": [
+   "Mojtaba Vaezi",
+   "Amin Azari",
+   "Saeed R. Khosravirad",
+   "Mahyar Shirvanimoghaddam",
+   "Mohammad Mahdi Azari",
+   "Danai Chasaki",
+   "Petar Popovski"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3151028",
+  "arxiv": "2107.03059",
+  "openalex": "W3180641418",
+  "cited_by": 654,
+  "abstract": "The next wave of wireless technologies is proliferating in connecting things among themselves as well as to humans. In the era of the Internet of Things (IoT), billions of sensors, machines, vehicles, drones, and robots will be connected, making the world around us smarter. The IoT will encompass devices that must wirelessly communicate a diverse set of data gathered from the environment for myriad new applications. The ultimate goal is to extract insights from this data and develop solutions that improve quality of life and generate new revenue. Providing large-scale, long-lasting, reliable, and near real-time connectivity is the major challenge in enabling a smart connected world. This paper provides a comprehensive survey on existing and emerging communication solutions for serving IoT applications in the context of cellular, wide-area, as well as non-terrestrial networks. Specifically, wireless technology enhancements for providing IoT access in the fifth-generation (5G) and beyond cellular networks, and communication networks over the unlicensed spectrum are presented. Aligned with the main key performance indicators of 5G and beyond 5G networks, we investigate solutions and standards that enable energy efficiency, reliability, low latency, and scalability (connection density) of current and future IoT networks. The solutions include grant-free access and channel coding for short-packet communications, non-orthogonal multiple access, and on-device intelligence. Further, a vision of new paradigm shifts in communication networks in the 2030s is provided, and the integration of the associated new technologies like artificial intelligence, non-terrestrial networks, and new spectra is elaborated. In particular, the potential of using emerging deep learning and federated learning techniques for enhancing the efficiency and security of IoT communication are discussed, and their promises and challenges are introduced. Finally, future research directions toward beyond 5G IoT networks are pointed out.",
+  "source": "openalex"
+ },
+ {
+  "title": "Twisted photons: new quantum perspectives in high dimensions",
+  "authors": [
+   "Manuel Erhard",
+   "Robert Fickler",
+   "Mario Krenn",
+   "Anton Zeilinger"
+  ],
+  "year": 2017,
+  "venue": "Light Science & Applications",
+  "doi": "10.1038/lsa.2017.146",
+  "arxiv": "1708.06101",
+  "openalex": "W2749109634",
+  "cited_by": 647,
+  "abstract": "Twisted photons can be used as alphabets to encode information beyond one bit per single photon. This ability offers great potential for quantum information tasks, as well as for the investigation of fundamental questions. In this review article, we give a brief overview of the theoretical differences between qubits and higher dimensional systems, qudits, in different quantum information scenarios. We then describe recent experimental developments in this field over the past three years. Finally, we summarize some important experimental and theoretical questions that might be beneficial to understand better in the near future.",
+  "source": "openalex"
+ },
+ {
+  "title": "Unsupervised Machine Learning for Networking: Techniques, Applications and Research Challenges",
+  "authors": [
+   "Muhammad Usama",
+   "Junaid Qadir",
+   "Aunn Raza",
+   "Hunain Arif",
+   "Kok‐Lim Alvin Yau",
+   "Yehia Elkhatib",
+   "Amir Hussain",
+   "Ala Al‐Fuqaha"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2916648",
+  "arxiv": "1709.06599",
+  "openalex": "W2760560443",
+  "cited_by": 621,
+  "abstract": "While machine learning and artificial intelligence have long been applied in networking research, the bulk of such works has focused on supervised learning. Recently, there has been a rising trend of employing unsupervised machine learning using unstructured raw network data to improve network performance and provide services, such as traffic engineering, anomaly detection, Internet traffic classification, and quality of service optimization. The growing interest in applying unsupervised learning techniques in networking stems from their great success in other fields, such as computer vision, natural language processing, speech recognition, and optimal control (e.g., for developing autonomous self-driving cars). In addition, unsupervised learning can unconstrain us from the need for labeled data and manual handcrafted feature engineering, thereby facilitating flexible, general, and automated methods of machine learning. The focus of this survey paper is to provide an overview of applications of unsupervised learning in the domain of networking. We provide a comprehensive survey highlighting recent advancements in unsupervised learning techniques, and describe their applications in various learning tasks, in the context of networking. We also provide a discussion on future directions and open research issues, while identifying potential pitfalls. While a few survey papers focusing on applications of machine learning in networking have previously been published, a survey of similar scope and breadth is missing in the literature. Through this timely review, we aim to advance the current state of knowledge, by carefully synthesizing insights from previous survey papers, while providing contemporary coverage of the recent advances and innovations.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Security and Privacy of 5G Technologies: Potential Solutions, Recent Advancements, and Future Directions",
+  "authors": [
+   "Rabia Khan",
+   "Pardeep Kumar",
+   "Dushantha Nalin K. Jayakody",
+   "Madhusanka Liyanage"
+  ],
+  "year": 2019,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2019.2933899",
+  "arxiv": null,
+  "openalex": "W2968746919",
+  "cited_by": 594,
+  "abstract": "Security has become the primary concern in many telecommunications industries today as risks can have high consequences. Especially, as the core and enable technologies will be associated with 5G network, the confidential information will move at all layers in future wireless systems. Several incidents revealed that the hazard encountered by an infected wireless network, not only affects the security and privacy concerns, but also impedes the complex dynamics of the communications ecosystem. Consequently, the complexity and strength of security attacks have increased in the recent past making the detection or prevention of sabotage a global challenge. From the security and privacy perspectives, this paper presents a comprehensive detail on the core and enabling technologies, which are used to build the 5G security model; network softwarization security, PHY (Physical) layer security and 5G privacy concerns, among others. Additionally, the paper includes discussion on security monitoring and management of 5G networks. This paper also evaluates the related security measures and standards of core 5G technologies by resorting to different standardization bodies and provide a brief overview of 5G standardization security forces. Furthermore, the key projects of international significance, in line with the security concerns of 5G and beyond are also presented. Finally, a future directions and open challenges section has included to encourage future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comprehensive Overview on 5G-and-Beyond Networks With UAVs: From Communications to Sensing and Intelligence",
+  "authors": [
+   "Qingqing Wu",
+   "Jie Xu",
+   "Yong Zeng",
+   "Derrick Wing Kwan Ng",
+   "Naofal Al‐Dhahir",
+   "Robert Schober",
+   "Arnold Lee Swindlehurst"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3088681",
+  "arxiv": "2010.09317",
+  "openalex": "W3167450743",
+  "cited_by": 587,
+  "abstract": "Due to the advancements in cellular technologies and the dense deployment of cellular infrastructure, integrating unmanned aerial vehicles (UAVs) into the fifth-generation (5G) and beyond cellular networks is a promising solution to achieve safe UAV operation as well as enabling diversified applications with mission-specific payload data delivery. In particular, 5G networks need to support three typical usage scenarios, namely, enhanced mobile broadband (eMBB), ultra-reliable low-latency communications (URLLC), and massive machine-type communications (mMTC). On the one hand, UAVs can be leveraged as cost-effective aerial platforms to provide ground users with enhanced communication services by exploiting their high cruising altitude and controllable maneuverability in three-dimensional (3D) space. On the other hand, providing such communication services simultaneously for both UAV and ground users poses new challenges due to the need for ubiquitous 3D signal coverage as well as the strong air-ground network interference. Besides the requirement of high-performance wireless communications, the ability to support effective and efficient sensing as well as network intelligence is also essential for 5G-and-beyond 3D heterogeneous wireless networks with coexisting aerial and ground users. In this paper, we provide a comprehensive overview of the latest research efforts on integrating UAVs into cellular networks, with an emphasis on how to exploit advanced techniques (e.g., intelligent reflecting surface, short packet transmission, energy harvesting, joint communication and radar sensing, and edge intelligence) to meet the diversified service requirements of next-generation wireless systems. Moreover, we highlight important directions for further investigation in future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comparative Survey of Optical Wireless Technologies: Architectures and Applications",
+  "authors": [
+   "Mostafa Zaman Chowdhury",
+   "Md. Tanvir Hossan",
+   "Amirul Islam",
+   "Yeong Min Jang"
+  ],
+  "year": 2018,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2018.2792419",
+  "arxiv": "1810.02594",
+  "openalex": "W2784210264",
+  "cited_by": 578,
+  "abstract": "New high-data-rate multimedia services and applications are evolving continuously and exponentially increasing the demand for wireless capacity of fifth-generation (5G) and beyond. The existing radio frequency (RF) communication spectrum is insufficient to meet the demands of future high-datarate 5G services. Optical wireless communication (OWC), which uses an ultra-wide range of unregulated spectrum, has emerged as a promising solution to overcome the RF spectrum crisis. It has attracted growing research interest worldwide in the last decade for indoor and outdoor applications. OWC offloads huge data traffic applications from RF networks. A 100 Gb/s data rate has already been demonstrated through OWC. It offers services indoors as well as outdoors, and communication distances range from several nm to more than 10000 km. This paper provides a technology overview and a review on optical wireless technologies, such as visible light communication, light fidelity, optical camera communication, free space optical communication, and light detection and ranging. We survey the key technologies for understanding OWC and present state-of-the-art criteria in aspects, such as classification, spectrum use, architecture, and applications. The key contribution of this paper is to clarify the differences among different promising optical wireless technologies and between these technologies and their corresponding similar existing RF technologies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Security and Privacy for 6G: A Survey on Prospective Technologies and Challenges",
+  "authors": [
+   "Van-Linh Nguyen",
+   "Po‐Ching Lin",
+   "Bo‐Chao Cheng",
+   "Ren‐Hung Hwang",
+   "Ying–Dar Lin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2021.3108618",
+  "arxiv": "2108.11861",
+  "openalex": "W3195333310",
+  "cited_by": 530,
+  "abstract": "Sixth-generation (6G) mobile networks will have to cope with diverse threats on a space-air-ground integrated network environment, novel technologies, and an accessible user information explosion. However, for now, security and privacy issues for 6G remain largely in concept. This survey provides a systematic overview of security and privacy issues based on prospective technologies for 6G in the physical, connection, and service layers, as well as through lessons learned from the failures of existing security architectures and state-of-the-art defenses. Two key lessons learned are as follows. First, other than inheriting vulnerabilities from the previous generations, 6G has new threat vectors from new radio technologies, such as the exposed location of radio stripes in ultra-massive MIMO systems at Terahertz bands and attacks against pervasive intelligence. Second, physical layer protection, deep network slicing, quantum-safe communications, artificial intelligence (AI) security, platform-agnostic security, real-time adaptive security, and novel data protection mechanisms such as distributed ledgers and differential privacy are the top promising techniques to mitigate the attack magnitude and personal data breaches substantially.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Communication-Efficient Edge AI: Algorithms and Systems",
+  "authors": [
+   "Yuanming Shi",
+   "Kai Yang",
+   "Tao Jiang",
+   "Jun Zhang",
+   "Khaled B. Letaief"
+  ],
+  "year": 2020,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2020.3007787",
+  "arxiv": "2002.09668",
+  "openalex": "W3041971333",
+  "cited_by": 495,
+  "abstract": "Artificial intelligence (AI) has achieved remarkable breakthroughs in a wide range of fields, ranging from speech processing, image classification to drug discovery. This is driven by the explosive growth of data, advances in machine learning (especially deep learning), and the easy access to powerful computing resources. Particularly, the wide scale deployment of edge devices (e.g., IoT devices) generates an unprecedented scale of data, which provides the opportunity to derive accurate models and develop various intelligent applications at the network edge. However, such enormous data cannot all be sent to the cloud for processing, due to the varying channel quality, traffic congestion and/or privacy concerns, and the enormous energy consumption. By pushing inference and training processes of AI models to edge nodes, edge AI has emerged as a promising alternative. AI at the edge requires close cooperation amongedge devices, such as smart phones and smart vehicles, andedge serversat the wireless access points and base stations, which however result in heavy communication overheads. In this paper, we present a comprehensive survey of the recent developments in various techniques for overcoming these communication challenges. Specifically, we first identify key communication challenges in edge AI systems. We then introduce communication-efficient techniques, from both algorithmic and system perspectives for training and inference tasks at the network edge. Potential future research directions are also highlighted.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2020.2987203",
+  "arxiv": "1911.11174",
+  "openalex": "W3016715915",
+  "cited_by": 491,
+  "abstract": "We consider wireless transmission of images in the presence of channel output feedback. From a Shannon theoretic perspective feedback does not improve the asymptotic end-to-end performance, and separate source coding followed by capacity-achieving channel coding, which ignores the feedback signal, achieves the optimal performance. It is well known that separation is not optimal in the practical finite blocklength regime; however, there are no known practical joint source-channel coding (JSCC) schemes that can exploit the feedback signal and surpass the performance of separation-based schemes. Inspired by the recent success of deep learning methods for JSCC, we investigate how noiseless or noisy channel output feedback can be incorporated into the transmission system to improve the reconstruction quality at the receiver. We introduce an autoencoder-based JSCC scheme, which we call DeepJSCC-f , that exploits the channel output feedback, and provides considerable improvements in terms of the end-to-end reconstruction quality for fixed-length transmission, or in terms of the average delay for variable-length transmission. To the best of our knowledge, this is the first practical JSCC scheme that can fully exploit channel output feedback, demonstrating yet another setting in which modern machine learning techniques can enable the design of new and efficient communication methods that surpass the performance of traditional structured coding-based designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Ultra-dense optical data transmission over standard fibre with a single chip source",
+  "authors": [
+   "Bill Corcoran",
+   "Mengxi Tan",
+   "Xingyuan Xu",
+   "Andreas Boes",
+   "Jiayang Wu",
+   "Thach Giang Nguyen",
+   "Sai Tak Chu",
+   "Brent E. Little",
+   "Roberto Morandotti",
+   "Arnan Mitchell",
+   "David Moss"
+  ],
+  "year": 2020,
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-020-16265-x",
+  "arxiv": "2003.11893",
+  "openalex": "W3026186109",
+  "cited_by": 469,
+  "abstract": "Abstract Micro-combs - optical frequency combs generated by integrated micro-cavity resonators – offer the full potential of their bulk counterparts, but in an integrated footprint. They have enabled breakthroughs in many fields including spectroscopy, microwave photonics, frequency synthesis, optical ranging, quantum sources, metrology and ultrahigh capacity data transmission. Here, by using a powerful class of micro-comb called soliton crystals, we achieve ultra-high data transmission over 75 km of standard optical fibre using a single integrated chip source. We demonstrate a line rate of 44.2 Terabits s −1 using the telecommunications C-band at 1550 nm with a spectral efficiency of 10.4 bits s −1 Hz −1 . Soliton crystals exhibit robust and stable generation and operation as well as a high intrinsic efficiency that, together with an extremely low soliton micro-comb spacing of 48.9 GHz enable the use of a very high coherent data modulation format (64 QAM - quadrature amplitude modulated). This work demonstrates the capability of optical micro-combs to perform in demanding and practical optical communications networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Task-Oriented Multi-User Semantic Communications",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Xiaoming Tao",
+   "Khaled B. Letaief"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3191326",
+  "arxiv": "2112.10255",
+  "openalex": "W4226115138",
+  "cited_by": 467,
+  "abstract": "While semantic communications have shown the potential in the case of single-modal single-users, its applications to the multi-user scenario remain limited. In this paper, we investigate deep learning (DL) based multi-user semantic communication systems for transmitting single-modal data and multimodal data, respectively. We adopt three intelligent tasks, including, image retrieval, machine translation, and visual question answering (VQA) as the transmission goal of semantic communication systems. We propose a Transformer based framework to unify the structure of transmitters for different tasks. For the single-modal multi-user system, we propose two Transformer based models, named, DeepSC-IR and DeepSC-MT, to perform image retrieval and machine translation, respectively. In this case, DeepSC-IR is trained to optimize the distance in embedding space between images and DeepSC-MT is trained to minimize the semantic errors by recovering the semantic meaning of sentences. For the multimodal multi-user system, we develop a Transformer enabled model, named, DeepSC-VQA, for the VQA task by extracting text-image information at the transmitters and fusing it at the receiver. In particular, a novel layer-wise Transformer is designed to help fuse multimodal data by adding connection between each of the encoder and decoder layers. Numerical results show that the proposed models are superior to traditional communications in terms of the robustness to channels, computational complexity, transmission delay, and the task-execution performance at various task-specific metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Overview of Signal Processing Techniques for Terahertz Communications",
+  "authors": [
+   "Hadi Sarieddeen",
+   "Mohamed‐Slim Alouini",
+   "Tareq Y. Al-Naffouri"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3100811",
+  "arxiv": "2005.13176",
+  "openalex": "W3194281015",
+  "cited_by": 462,
+  "abstract": "Terahertz (THz)-band communications are a key enabler for future-generation wireless communication systems that promise to integrate a wide range of data-demanding applications. Recent advances in photonic, electronic, and plasmonic technologies are closing the gap in THz transceiver design. Consequently, prospect THz signal generation, modulation, and radiation methods are converging, and corresponding channel model, noise, and hardware-impairment notions are emerging. Such progress establishes a foundation for well-grounded research into THz-specific signal processing techniques for wireless communications. This tutorial overviews these techniques, emphasizing ultramassive multiple-input–multiple-output (UM-MIMO) systems and reconfigurable intelligent surfaces, vital for overcoming the distance problem at very high frequencies. We focus on the classical problems of waveform design and modulation, beamforming and precoding, index modulation, channel estimation, channel coding, and data detection. We also motivate signal processing techniques for THz sensing and localization.",
+  "source": "openalex"
+ },
+ {
+  "title": "Statistical physics of inference: thresholds and algorithms",
+  "authors": [
+   "Lenka Zdeborová",
+   "Florent Krząkała"
+  ],
+  "year": 2016,
+  "venue": "Advances In Physics",
+  "doi": "10.1080/00018732.2016.1211393",
+  "arxiv": "1511.02476",
+  "openalex": "W2151781750",
+  "cited_by": 452,
+  "abstract": "Many questions of fundamental interest in today's science can be formulated as inference problems: some partial, or noisy, observations are performed over a set of variables and the goal is to recover, or infer, the values of the variables based on the indirect information contained in the measurements. For such problems, the central scientific questions are: Under what conditions is the information contained in the measurements sufficient for a satisfactory inference to be possible? What are the most efficient algorithms for this task? A growing body of work has shown that often we can understand and locate these fundamental barriers by thinking of them as phase transitions in the sense of statistical physics. Moreover, it turned out that we can use the gained physical insight to develop new promising algorithms. The connection between inference and statistical physics is currently witnessing an impressive renaissance and we review here the current state-of-the-art, with a pedagogical focus on the Ising model which, formulated as an inference problem, we call the planted spin glass. In terms of applications we review two classes of problems: (i) inference of clusters on graphs and networks, with community detection as a special case and (ii) estimating a signal from its noisy linear measurements, with compressed sensing as a case of sparse estimation. Our goal is to provide a pedagogical review for researchers in physics and other fields interested in this fascinating topic.",
+  "source": "openalex"
+ },
+ {
+  "title": "Key Generation From Wireless Channels: A Review",
+  "authors": [
+   "Junqing Zhang",
+   "Trung Q. Duong",
+   "Alan Marshall",
+   "Roger Woods"
+  ],
+  "year": 2016,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2016.2521718",
+  "arxiv": null,
+  "openalex": "W2295120647",
+  "cited_by": 452,
+  "abstract": "Key generation from the randomness of wireless channels is a promising alternative to public key cryptography for the establishment of cryptographic keys between any two users. This paper reviews the current techniques for wireless key generation. The principles, performance metrics and key generation procedure are comprehensively surveyed. Methods for optimizing the performance of key generation are also discussed. Key generation applications in various environments are then introduced along with the challenges of applying the approach in each scenario. The paper concludes with some suggestions for future studies.",
+  "source": "openalex"
+ },
+ {
+  "title": "A contemporary survey on free space optical communication: Potentials, technical challenges, recent advances and research direction",
+  "authors": [
+   "Abu Jahid",
+   "Mohammed H. Alsharif",
+   "Trevor J. Hall"
+  ],
+  "year": 2022,
+  "venue": "Journal of Network and Computer Applications",
+  "doi": "10.1016/j.jnca.2021.103311",
+  "arxiv": "2012.00155",
+  "openalex": "W4206336178",
+  "cited_by": 402,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Ultrareliable and Low-Latency Communications in 6G: Integrating Domain Knowledge Into Deep Learning",
+  "authors": [
+   "Changyang She",
+   "Chengjian Sun",
+   "Zhouyou Gu",
+   "Yonghui Li",
+   "Chenyang Yang",
+   "H. Vincent Poor",
+   "Branka S. Vucetic"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3053601",
+  "arxiv": "2009.06010",
+  "openalex": "W3135089279",
+  "cited_by": 401,
+  "abstract": "As one of the key communication scenarios in the fifth-generation and also the sixth-generation (6G) mobile communication networks, ultrareliable and low-latency communications (URLLCs) will be central for the development of various emerging mission-critical applications. State-of-the-art mobile communication systems do not fulfill the end-to-end delay and overall reliability requirements of URLLCs. In particular, a holistic framework that takes into account latency, reliability, availability, scalability, and decision-making under uncertainty is lacking. Driven by recent breakthroughs in deep neural networks, deep learning algorithms have been considered as promising ways of developing enabling technologies for URLLCs in future 6G networks. This tutorial illustrates how domain knowledge (models, analytical tools, and optimization frameworks) of communications and networking can be integrated into different kinds of deep learning algorithms for URLLCs. We first provide some background of URLLCs and review promising network architectures and deep learning frameworks for 6G. To better illustrate how to improve learning algorithms with domain knowledge, we revisit model-based analytical tools and cross-layer optimization frameworks for URLLCs. Following this, we examine the potential of applying supervised/unsupervised deep learning and deep reinforcement learning in URLLCs and summarize related open problems. Finally, we provide simulation and experimental results to validate the effectiveness of different learning algorithms and discuss future directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Study and Investigation on 5G Technology: A Systematic Review",
+  "authors": [
+   "Ramraj Dangi",
+   "Praveen Lalwani",
+   "Gaurav Choudhary",
+   "Ilsun You",
+   "Giovanni Pau"
+  ],
+  "year": 2021,
+  "venue": "Sensors",
+  "doi": "10.3390/s22010026",
+  "arxiv": null,
+  "openalex": "W4200261490",
+  "cited_by": 395,
+  "abstract": "In wireless communication, Fifth Generation (5G) Technology is a recent generation of mobile networks. In this paper, evaluations in the field of mobile communication technology are presented. In each evolution, multiple challenges were faced that were captured with the help of next-generation mobile networks. Among all the previously existing mobile networks, 5G provides a high-speed internet facility, anytime, anywhere, for everyone. 5G is slightly different due to its novel features such as interconnecting people, controlling devices, objects, and machines. 5G mobile system will bring diverse levels of performance and capability, which will serve as new user experiences and connect new enterprises. Therefore, it is essential to know where the enterprise can utilize the benefits of 5G. In this research article, it was observed that extensive research and analysis unfolds different aspects, namely, millimeter wave (mmWave), massive multiple-input and multiple-output (Massive-MIMO), small cell, mobile edge computing (MEC), beamforming, different antenna technology, etc. This article's main aim is to highlight some of the most recent enhancements made towards the 5G mobile system and discuss its future research objectives.",
+  "source": "openalex"
+ },
+ {
+  "title": "CubeSat Communications: Recent Advances and Future Challenges",
+  "authors": [
+   "Nasir Saeed",
+   "Ahmed Elzanaty",
+   "Heba Almorad",
+   "Hayssam Dahrouj",
+   "Tareq Y. Al-Naffouri",
+   "Mohamed‐Slim Alouini"
+  ],
+  "year": 2020,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2020.2990499",
+  "arxiv": "1908.09501",
+  "openalex": "W3022612213",
+  "cited_by": 382,
+  "abstract": "Given the increasing number of space-related applications, research in the emerging space industry is becoming more and more attractive. One compelling area of current space research is the design of miniaturized satellites, known as CubeSats, which are enticing because of their numerous applications and low design-and-deployment cost. The new paradigm of connected space through CubeSats makes possible a wide range of applications, such as Earth remote sensing, space exploration, and rural connectivity. CubeSats further provide a complementary connectivity solution to the pervasive Internet of Things (IoT) networks, leading to a globally connected cyber-physical system. This paper presents a holistic overview of various aspects of CubeSat missions and provides a thorough review of the topic from both academic and industrial perspectives. We further present recent advances in the area of CubeSat communications, with an emphasis on constellation-and-coverage issues, channel modeling, modulation and coding, and networking. Finally, we identify several future research directions for CubeSat communications, including Internet of space things, low-power long-range networks, and machine learning for CubeSat resource allocation.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Autonomous Vehicles: Enabling Communication Technologies and Challenges",
+  "authors": [
+   "M. Nadeem Ahangar",
+   "Qasim Zeeshan Ahmed",
+   "Fahd Ahmed Khan",
+   "Maryam Hafeez"
+  ],
+  "year": 2021,
+  "venue": "Sensors",
+  "doi": "10.3390/s21030706",
+  "arxiv": null,
+  "openalex": "W3121993166",
+  "cited_by": 381,
+  "abstract": "The Department of Transport in the United Kingdom recorded 25,080 motor vehicle fatalities in 2019. This situation stresses the need for an intelligent transport system (ITS) that improves road safety and security by avoiding human errors with the use of autonomous vehicles (AVs). Therefore, this survey discusses the current development of two main components of an ITS: (1) gathering of AVs surrounding data using sensors; and (2) enabling vehicular communication technologies. First, the paper discusses various sensors and their role in AVs. Then, various communication technologies for AVs to facilitate vehicle to everything (V2X) communication are discussed. Based on the transmission range, these technologies are grouped into three main categories: long-range, medium-range and short-range. The short-range group presents the development of Bluetooth, ZigBee and ultra-wide band communication for AVs. The medium-range examines the properties of dedicated short-range communications (DSRC). Finally, the long-range group presents the cellular-vehicle to everything (C-V2X) and 5G-new radio (5G-NR). An important characteristic which differentiates each category and its suitable application is latency. This research presents a comprehensive study of AV technologies and identifies the main advantages, disadvantages, and challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Orbital angular momentum and beyond in free‐space optical communications",
+  "authors": [
+   "Jian Wang",
+   "Jun Liu",
+   "Shuhui Li",
+   "Yifan Zhao",
+   "Jing Lin Du",
+   "Long Zhu"
+  ],
+  "year": 2021,
+  "venue": "Nanophotonics",
+  "doi": "10.1515/nanoph-2021-0527",
+  "arxiv": null,
+  "openalex": "W4200345206",
+  "cited_by": 375,
+  "abstract": "Abstract Orbital angular momentum (OAM), which describes tailoring the spatial physical dimension of light waves into a helical phase structure, has given rise to many applications in optical manipulation, microscopy, imaging, metrology, sensing, quantum science, and optical communications. Light beams carrying OAM feature two distinct characteristics, i.e., inherent orthogonality and unbounded states in principle, which are suitable for capacity scaling of optical communications. In this paper, we give an overview of OAM and beyond in free‐space optical communications. The fundamentals of OAM, concept of optical communications using OAM, OAM modulation (OAM modulation based on spatial light modulator, high‐speed OAM modulation, spatial array modulation), OAM multiplexing (spectrally efficient, high capacity, long distance), OAM multicasting (adaptive multicasting, N ‐dimensional multicasting), OAM communications in turbulence (adaptive optics, digital signal processing, auto‐alignment system), structured light communications beyond OAM (Bessel beams, Airy beams, vector beams), diverse and robust communications using OAM and beyond (multiple scenes, turbulence‐resilient communications, intelligent communications) are comprehensively reviewed. The prospects and challenges of optical communications using OAM and beyond are also discussed at the end. In the future, there will be more opportunities in exploiting extensive advanced applications from OAM beams to more general structured light.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Zhongwei Si",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3180802",
+  "arxiv": "2112.10961",
+  "openalex": "W4226042246",
+  "cited_by": 369,
+  "abstract": "In this paper, we propose a class of high-efficiency deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.",
+  "source": "openalex"
+ },
+ {
+  "title": "Terahertz Channel Propagation Phenomena, Measurement Techniques and Modeling for 6G Wireless Communication Applications: A Survey, Open Challenges and Future Research Directions",
+  "authors": [
+   "Demos Serghiou",
+   "Mohsen Khalily",
+   "Tim Brown",
+   "Rahim Tafazolli"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3205505",
+  "arxiv": null,
+  "openalex": "W4295872755",
+  "cited_by": 327,
+  "abstract": "Terahertz channel propagation phenomena, measurements and modelling for 6G wireless communication applications: a survey, open challenges and future research directions",
+  "source": "openalex"
+ },
+ {
+  "title": "White Paper on Broadband Connectivity in 6G",
+  "authors": [
+   "Nandana Rajatheva",
+   "Italo Atzeni",
+   "Emil Björnson",
+   "André Bourdoux",
+   "Stefano Buzzi",
+   "Jean‐Baptiste Doré",
+   "Serhat Erküçük",
+   "Manuel Fuentes",
+   "Ke Guan",
+   "Yuzhou Hu",
+   "Xiaojing Huang",
+   "Jari Hulkkonen",
+   "Josep Miquel Jornet",
+   "Marcos D. Katz",
+   "Rickard Nilsson",
+   "Erdal Panayırcı",
+   "Khaled Maaiuf Rabie",
+   "Nuwanthika Rajapaksha",
+   "MohammadJavad Salehi",
+   "Hadi Sarieddeen",
+   "Tommy Svensson",
+   "Oskari Tervo",
+   "Antti Tölli",
+   "Qingqing Wu",
+   "Wen Tao Xu"
+  ],
+  "year": 2020,
+  "venue": "e-space (Manchester Metropolitan University)",
+  "doi": "10.48550/arxiv.2004.14247",
+  "arxiv": "2004.14247",
+  "openalex": "W3023940643",
+  "cited_by": 324,
+  "abstract": "This white paper explores the road to implementing broadband connectivity in future 6G wireless systems. Different categories of use cases are considered, from extreme capacity with peak data rates up to 1 Tbps, to raising the typical data rates by orders-of-magnitude, to support broadband connectivity at railway speeds up to 1000 km/h. To achieve these goals, not only the terrestrial networks will be evolved but they will also be integrated with satellite networks, all facilitating autonomous systems and various interconnected structures. We believe that several categories of enablers at the infrastructure, spectrum, and protocol/ algorithmic levels are required to realize the intended broadband connectivity goals in 6G. At the infrastructure level, we consider ultra-massive MIMO technology (possibly implemented using holographic radio), intelligent reflecting surfaces, user-centric and scalable cell-free networking, integrated access and backhaul, and integrated space and terrestrial networks. At the spectrum level, the network must seamlessly utilize sub-6 GHz bands for coverage and spatial multiplexing of many devices, while higher bands will be used for pushing the peak rates of point-to-point links. The latter path will lead to THz communications complemented by visible light communications in specific scenarios. At the protocol/algorithmic level, the enablers include improved coding, modulation, and waveforms to achieve lower latencies, higher reliability, and reduced complexity. Different options will be needed to optimally support different use cases. The resource efficiency can be further improved by using various combinations of full-duplex radios, interference management based on rate-splitting, machine-learning-based optimization, coded caching, and broadcasting.",
+  "source": "openalex"
+ },
+ {
+  "title": "Internet of Things and Its Applications: A Comprehensive Survey",
+  "authors": [
+   "Rosilah Binti Hassan",
+   "Faizan Qamar",
+   "Mohammad Kamrul Hasan",
+   "Azana Hafizah Mohd Aman",
+   "Amjed Sid Ahmed"
+  ],
+  "year": 2020,
+  "venue": "Symmetry",
+  "doi": "10.3390/sym12101674",
+  "arxiv": null,
+  "openalex": "W3093257130",
+  "cited_by": 318,
+  "abstract": "With the evolution of the fifth-generation (5G) wireless network, the Internet of Things (IoT) has become a revolutionary technique that enables a diverse number of features and applications. It can able a diverse amount of devices to be connected in order to create a single communication architecture. As it has significantly expanded in recent years, it is fundamental to study this trending technology in detail and take a close look at its applications in the different domains. It represents an enabler of new communication possibilities between people and things. The main asset of this concept is its significant influence through the creation of a new world dimension. The key features required for employing a large-scale IoT are low-cost sensors, high-speed and error-tolerant data communications, smart computations, and numerous applications. This research work is presented in four main sections, including a general overview of IoT technology, a summary of previous correlated surveys, a review regarding the main IoT applications, and a section on the challenges of IoT. The purpose of this study is to fully cover the applications of IoT, including healthcare, environmental, commercial, industrial, smart cities, and infrastructural applications. This work explains the concept of IoT and defines and summarizes its main technologies and uses, offering a next-generation protocol as a solution to the challenges. IoT challenges were investigated to enhance research and development in the fields. The contribution and weaknesses of each research work cited are covered, highlighting eventual possible research questions and open matters for IoT applications to ensure a full analysis coverage of the discussed papers.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Optical Communication's Perspective on Machine Learning and Its Applications",
+  "authors": [
+   "Faisal Nadeem Khan",
+   "Qirui Fan",
+   "Chao Lü",
+   "Alan Pak Tao Lau"
+  ],
+  "year": 2019,
+  "venue": "Journal of Lightwave Technology",
+  "doi": "10.1109/jlt.2019.2897313",
+  "arxiv": null,
+  "openalex": "W2912267671",
+  "cited_by": 318,
+  "abstract": "Machine learning (ML) has disrupted a wide range of science and engineering disciplines in recent years. ML applications in optical communications and networking are also gaining more attention, particularly in the areas of nonlinear transmission systems, optical performance monitoring, and cross-layer network optimizations for software-defined networks. However, the extent to which ML techniques can benefit optical communications and networking is not clear and this is partly due to an insufficient understanding of the nature of ML concepts. This paper aims to describe the mathematical foundations of basic ML techniques from communication theory and signal processing perspectives, which in turn will shed light on the types of problems in optical communications and networking that naturally warrant ML use. This will be followed by an overview of ongoing ML research in optical communications and networking with a focus on physical layer issues.",
+  "source": "openalex"
+ },
+ {
+  "title": "Twelve Scientific Challenges for 6G: Rethinking the Foundations of Communications Theory",
+  "authors": [
+   "Marwa Chafii",
+   "Lina Bariah",
+   "Sami Muhaidat",
+   "Merouane Abdelkader Debbah"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3243918",
+  "arxiv": "2207.01843",
+  "openalex": "W4320018468",
+  "cited_by": 295,
+  "abstract": "The research in the sixth generation of wireless networks needs to tackle new challenges in order to meet the requirements of emerging applications in terms of high data rate, low latency, high reliability, and massive connectivity. To this end, the entire communication chain needs to be optimized, including the channel and the surrounding environment, as it is no longer sufficient to control the transmitter and/or the receiver only. Investigating large intelligent surfaces, ultra-massive multiple-input-multiple-output, and smart constructive environments will ultimately contribute to this direction. In addition, to allow the exchange of high dimensional sensing data between connected intelligent devices, semantic and goal-oriented communications need to be considered for a more efficient and context-aware information encoding. In particular, for multi-agent systems, where agents are collaborating together to achieve a complex task, emergent communication, instead of hard-coded communication, can be learned for more efficient task execution and communication resources use. Moreover, new physical phenomena, such as the thermodynamics of communication and the interaction between information theory and electromagnetism should be exploited to better understand the physical limitations of different technologies, e.g., holographic communications. Another new communication paradigm is to consider the end-to-end communication system optimization instead of block-by-block optimization, which requires exploiting machine learning theory, non-linear signal processing theory, and non-coherent communications theory. Within this context, we identify and investigate twelve scientific challenges for rebuilding the theoretical foundation of communications. Furthermore, we present an overview of each of the challenges, along with their respective research opportunities and associated challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Position, Navigation, and Timing (PNT) Through Low Earth Orbit (LEO) Satellites: A Survey on Current Status, Challenges, and Opportunities",
+  "authors": [
+   "Fabricio S. Prol",
+   "Rubén Morales Ferré",
+   "Zainab Saleem",
+   "Petri O. Välisuo",
+   "Christina Pinell",
+   "Elena Simona Lohan",
+   "Mahmoud Elsanhoury",
+   "Mohammed Salem Elmusrati",
+   "Saiful Islam",
+   "Kaan Çelikbilek",
+   "Kannan Selvan",
+   "Jaakko Yliaho",
+   "K. Rutledge",
+   "Arto Ojala",
+   "Luca Ferranti",
+   "Jaan Praks",
+   "M. Zahidul H. Bhuiyan",
+   "Sanna Kaasalainen",
+   "Heidi Kuusniemi"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2022.3194050",
+  "arxiv": null,
+  "openalex": "W4288062148",
+  "cited_by": 291,
+  "abstract": "More and more satellites are populating the sky nowadays in the Low Earth orbits (LEO). Most of the targeted applications are related to broadband and narrowband communications, Earth observation, synthetic aperture radar, and internet-of-Things (IoT) connectivity. In addition to these targeted applications, there is yet-to-be-harnessed potential for LEO and positioning, navigation, and timing (PNT) systems, or what is nowadays referred to as LEO-PNT. No commercial LEO-PNT solutions currently exist and there is no unified research on LEO-PNT concepts. Our survey aims to fill the gaps in knowledge regarding what a LEO-PNT system entails, its technical design steps and challenges, what physical layer parameters are viable solutions, what tools can be used for a LEO-PNT design (e.g., optimisation steps, hardware and software simulators, etc.), the existing models of wireless channels for satellite-to-ground and ground-to-satellite propagation, and the commercial prospects of a future LEO-PNT system. A comprehensive and multidisciplinary survey is provided by a team of authors with complementary expertise in wireless communications, signal processing, navigation and tracking, physics, machine learning, Earth observation, remote sensing, digital economy, and business models.",
+  "source": "openalex"
+ },
+ {
+  "title": "Autonomous Vehicles Enabled by the Integration of IoT, Edge Intelligence, 5G, and Blockchain",
+  "authors": [
+   "Anushka Biswas",
+   "Hwang-Cheng Wang"
+  ],
+  "year": 2023,
+  "venue": "Sensors",
+  "doi": "10.3390/s23041963",
+  "arxiv": null,
+  "openalex": "W4319983517",
+  "cited_by": 289,
+  "abstract": "The wave of modernization around us has put the automotive industry on the brink of a paradigm shift. Leveraging the ever-evolving technologies, vehicles are steadily transitioning towards automated driving to constitute an integral part of the intelligent transportation system (ITS). The term autonomous vehicle has become ubiquitous in our lives, owing to the extensive research and development that frequently make headlines. Nonetheless, the flourishing of AVs hinges on many factors due to the extremely stringent demands for safety, security, and reliability. Cutting-edge technologies play critical roles in tackling complicated issues. Assimilating trailblazing technologies such as the Internet of Things (IoT), edge intelligence (EI), 5G, and Blockchain into the AV architecture will unlock the potential of an efficient and sustainable transportation system. This paper provides a comprehensive review of the state-of-the-art in the literature on the impact and implementation of the aforementioned technologies into AV architectures, along with the challenges faced by each of them. We also provide insights into the technological offshoots concerning their seamless integration to fulfill the requirements of AVs. Finally, the paper sheds light on future research directions and opportunities that will spur further developments. Exploring the integration of key enabling technologies in a single work will serve as a valuable reference for the community interested in the relevant issues surrounding AV research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Implementation of continuous-variable quantum key distribution with composable and one-sided-device-independent security against coherent attacks",
+  "authors": [
+   "Tobias Gehring",
+   "Vitus Händchen",
+   "Jörg Duhme",
+   "Fabian Furrer",
+   "Torsten Franz",
+   "Christoph Pacher",
+   "Reinhard F. Werner",
+   "Roman Schnabel"
+  ],
+  "year": 2015,
+  "venue": "Nature Communications",
+  "doi": "10.1038/ncomms9795",
+  "arxiv": "1406.6174",
+  "openalex": "W1869599893",
+  "cited_by": 289,
+  "abstract": "Secret communication over public channels is one of the central pillars of a modern information society. Using quantum key distribution this is achieved without relying on the hardness of mathematical problems, which might be compromised by improved algorithms or by future quantum computers. State-of-the-art quantum key distribution requires composable security against coherent attacks for a finite number of distributed quantum states as well as robustness against implementation side channels. Here we present an implementation of continuous-variable quantum key distribution satisfying these requirements. Our implementation is based on the distribution of continuous-variable Einstein-Podolsky-Rosen entangled light. It is one-sided device independent, which means the security of the generated key is independent of any memoryfree attacks on the remote detector. Since continuous-variable encoding is compatible with conventional optical communication technology, our work is a step towards practical implementations of quantum key distribution with state-of-the-art security based solely on telecom components.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine learning for wireless communications in the Internet of Things: A comprehensive survey",
+  "authors": [
+   "Jithin Jagannath",
+   "Nicholas Polosky",
+   "Anu Jagannath",
+   "Francesco Restuccia",
+   "Tommaso Melodia"
+  ],
+  "year": 2019,
+  "venue": "Ad Hoc Networks",
+  "doi": "10.1016/j.adhoc.2019.101913",
+  "arxiv": "1901.07947",
+  "openalex": "W2914940294",
+  "cited_by": 285,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Experimental quantum key distribution certified by Bell's theorem",
+  "authors": [
+   "D. P. Nadlinger",
+   "P. Drmota",
+   "B. C. Nichol",
+   "G. Araneda",
+   "D. Main",
+   "R. Srinivas",
+   "D. M. Lucas",
+   "Christopher J. Ballance",
+   "Kirill Svyatoslavich Ivanov",
+   "Ernest Y.-Z. Tan",
+   "Pavel Sekatski",
+   "Rudiger L. Urbanke",
+   "Renato Renner",
+   "Nicolas Sangouard",
+   "Jean-Daniel Bancal"
+  ],
+  "year": 2022,
+  "venue": "Nature",
+  "doi": "10.1038/s41586-022-04941-5",
+  "arxiv": "2109.14600",
+  "openalex": "W4288052217",
+  "cited_by": 276,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Deep Video Semantic Transmission",
+  "authors": [
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Zijian Liang",
+   "Kai Niu",
+   "Zhongwei Si",
+   "Chao Dong",
+   "Xiaoqi Qin",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221977",
+  "arxiv": "2205.13129",
+  "openalex": "W4313350178",
+  "cited_by": 274,
+  "abstract": "In this paper, we design a new class of high-efficiency deep joint source-channel coding methods to achieve end-to-end video transmission over wireless channels. The proposed methods exploit nonlinear transform and conditional coding architecture to adaptively extract semantic features across video frames, and transmit semantic feature domain representations over wireless channels via deep joint source-channel coding. Our framework is collected under the name deep video semantic transmission (DVST). In particular, benefiting from the strong temporal prior provided by the feature domain context, the learned nonlinear transform function becomes temporally adaptive, resulting in a richer and more accurate entropy model guiding the transmission of current frame. Accordingly, a novel rate adaptive transmission mechanism is developed to customize deep joint source-channel coding for video sources. It learns to allocate the limited channel bandwidth within and among video frames to maximize the overall transmission performance. The whole DVST design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under perceptual quality metrics or machine vision task performance metrics. Across standard video source test sequences and various communication scenarios, experiments show that our DVST can generally surpass traditional wireless video coded transmission schemes. The proposed DVST framework can well support future semantic communications due to its video content-aware and machine vision task integration abilities.",
+  "source": "openalex"
+ },
+ {
+  "title": "Implementation and security analysis of practical quantum secure direct communication",
+  "authors": [
+   "Ruoyang Qi",
+   "Zhen Sun",
+   "Zaisheng Lin",
+   "Peng-Hao Niu",
+   "Wentao Hao",
+   "Liyuan Song",
+   "Qin Huang",
+   "Jiancun Gao",
+   "Liuguo Yin",
+   "Gui‐Lu Long"
+  ],
+  "year": 2019,
+  "venue": "Light Science & Applications",
+  "doi": "10.1038/s41377-019-0132-3",
+  "arxiv": "1810.11806",
+  "openalex": "W2963490414",
+  "cited_by": 255,
+  "abstract": "Rapid development of supercomputers and the prospect of quantum computers are posing increasingly serious threats to the security of communication. Using the principles of quantum mechanics, quantum communication offers provable security of communication and is a promising solution to counter such threats. Quantum secure direct communication (QSDC) is one important branch of quantum communication. In contrast to other branches of quantum communication, it transmits secret information directly. Recently, remarkable progress has been made in proof-of-principle experimental demonstrations of QSDC. However, it remains a technical feat to bring QSDC into a practical application. Here, we report the implementation of a practical quantum secure communication system. The security is analyzed in the Wyner wiretap channel theory. The system uses a coding scheme of concatenation of low-density parity-check (LDPC) codes and works in a regime with a realistic environment of high noise and high loss. The present system operates with a repetition rate of 1 MHz at a distance of 1.5 kilometers. The secure communication rate is 50 bps, sufficient to effectively send text messages and reasonably sized files of images and sounds.",
+  "source": "openalex"
+ },
+ {
+  "title": "Communicating Using Spatial Mode Multiplexing: Potentials, Challenges, and Perspectives",
+  "authors": [
+   "Abderrahmen Trichili",
+   "Ki‐Hong Park",
+   "Mourad Zghal",
+   "Boon Siew Ooi",
+   "Mohamed‐Slim Alouini"
+  ],
+  "year": 2019,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2019.2915981",
+  "arxiv": "1808.02462",
+  "openalex": "W2885696331",
+  "cited_by": 255,
+  "abstract": "Time, polarization, and wavelength multiplexing schemes have been used to satisfy the growing need of transmission capacity. Using space as a new dimension for communication systems has been recently suggested as a versatile technique to address future bandwidth issues. We review the potentials of harnessing the space as an additional degree of freedom for communication applications including free space optics, optical fiber installation, underwater wireless optical links, on-chip interconnects, data center indoor connections, radio frequency, and acoustic communications. We focus on the orbital angular momentum (OAM) modes and equally identify the challenges related to each of the applications of spatial modes and the particular OAM modes in communication. We further discuss the perspectives of this emerging technology. Finally, we provide the open research directions and discuss the practical deployment of OAM communication links for different applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Task-Oriented Multi-User Semantic Communications for VQA",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2021,
+  "venue": "IEEE Wireless Communications Letters",
+  "doi": "10.1109/lwc.2021.3136045",
+  "arxiv": "2108.07357",
+  "openalex": "W4206175303",
+  "cited_by": 254,
+  "abstract": "Semantic communications focus on the transmission of semantic features. In this letter, we consider a task-oriented multi-user semantic communication system for multimodal data transmission. Particularly, partial users transmit images while the others transmit texts to inquiry the information about the images. To exploit the correlation among the multimodal data from multiple users, we propose a deep neural network enabled semantic communication system, named MU-DeepSC, to execute the visual question answering (VQA) task as an example. Specifically, the transceiver for MU-DeepSC is designed and optimized jointly to capture the features from the correlated multimodal data for task-oriented transmission. Simulation results demonstrate that the proposed MU-DeepSC is more robust to channel variations than the traditional communication systems, especially in the low signal-to-noise (SNR) regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Unified Multi-Task Semantic Communication System for Multimodal Data",
+  "authors": [
+   "Guangyi Zhang",
+   "Qiyu Hu",
+   "Zhijin Qin",
+   "Yunlong Cai",
+   "Guanding Yu",
+   "Xiaoming Tao"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3364990",
+  "arxiv": "2209.07689",
+  "openalex": "W4391677749",
+  "cited_by": 233,
+  "abstract": "Task-oriented semantic communications have achieved significant performance gains. However, the employed deep neural networks in semantic communications have to be updated when the task is changed or multiple models need to be stored for performing different tasks. To address this issue, we develop a unified deep learning-enabled semantic communication system (U-DeepSC), where a unified end-to-end framework can serve many different tasks with multiple modalities of data. As the number of required features varies from task to task, we propose a vector-wise dynamic scheme that can adjust the number of transmitted symbols for different tasks. Moreover, our dynamic scheme can also adaptively adjust the number of transmitted features under different channel conditions to optimize the transmission efficiency. Particularly, we devise a lightweight feature selection module (FSM) to evaluate the importance of feature vectors, which can hierarchically drop redundant feature vectors and significantly accelerate the inference. To reduce the transmission overhead, we then design a unified codebook for feature representation to serve multiple tasks, where only the indices of these task-specific features in the codebook are transmitted. According to the simulation results, the proposed U-DeepSC achieves comparable performance to the task-oriented semantic communication system designed for a specific task but with significant reduction in both transmission overhead and model size.",
+  "source": "openalex"
+ }
+]

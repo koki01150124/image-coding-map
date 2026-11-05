@@ -1,0 +1,910 @@
+[
+ {
+  "title": "Shortcuts to adiabaticity: Concepts, methods, and applications",
+  "authors": [
+   "David Guéry-Odelin",
+   "A. Ruschhaupt",
+   "Anthony Kiely",
+   "E. Torrontegui",
+   "S. Martínez-Garaot",
+   "Juan Gonzalo Muga"
+  ],
+  "year": 2019,
+  "venue": "Reviews of Modern Physics",
+  "doi": "10.1103/revmodphys.91.045001",
+  "arxiv": "1904.08448",
+  "openalex": "W2937049145",
+  "cited_by": 1043,
+  "abstract": "Adiabatic evolution along the instantaneous eigenstate of a time-dependent Hamiltonian is used for robust and high fidelity state transfer in atomic and molecular physics. Shortcuts to adiabaticity (STA) are systematic approaches to accomplish the same final state transfer in a faster manner. This article presents an introduction to STA and reviews different theoretical approaches and applications of STA to a range of scientific and engineering tasks in quantum physics and beyond.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quantum random number generators",
+  "authors": [
+   "Miguel Herrero-Collantes",
+   "Juan Carlos García-Escartín"
+  ],
+  "year": 2017,
+  "venue": "Reviews of Modern Physics",
+  "doi": "10.1103/revmodphys.89.015004",
+  "arxiv": "1604.03304",
+  "openalex": "W2988683112",
+  "cited_by": 802,
+  "abstract": "In mathematics and computer science, random numbers have the role of a resource for assisting proofs, making cryptography secure, and enabling computational protocols. This role motivates efforts to produce random numbers as a physical process. Potential physical sources abound, but arguably the most fundamental are those based on elementary quantum mechanical processes. This review discusses the current status of devices that generate quantum random numbers.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Evolutionary Neural Architecture Search",
+  "authors": [
+   "Yuqiao Liu",
+   "Yanan Sun",
+   "Bing Xue",
+   "Mengjie Zhang",
+   "Gary G. Yen",
+   "Kay Chen Tan"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "doi": "10.1109/tnnls.2021.3100554",
+  "arxiv": "2008.10937",
+  "openalex": "W3080443832",
+  "cited_by": 690,
+  "abstract": "Deep neural networks (DNNs) have achieved great success in many applications. The architectures of DNNs play a crucial role in their performance, which is usually manually designed with rich expertise. However, such a design process is labor-intensive because of the trial-and-error process and also not easy to realize due to the rare expertise in practice. Neural architecture search (NAS) is a type of technology that can design the architectures automatically. Among different methods to realize NAS, the evolutionary computation (EC) methods have recently gained much attention and success. Unfortunately, there has not yet been a comprehensive summary of the EC-based NAS algorithms. This article reviews over 200 articles of most recent EC-based NAS methods in light of the core components, to systematically discuss their design principles and justifications on the design. Furthermore, current challenges and issues are also discussed to identify future research in this emerging field.",
+  "source": "openalex"
+ },
+ {
+  "title": "Privacy and Robustness in Federated Learning: Attacks and Defenses",
+  "authors": [
+   "Lingjuan Lyu",
+   "Han Yu",
+   "Xingjun Ma",
+   "Chen Chen",
+   "Lichao Sun",
+   "Jun Zhao",
+   "Qiang Yang",
+   "Philip S. Yu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "doi": "10.1109/tnnls.2022.3216981",
+  "arxiv": "2012.06337",
+  "openalex": "W3111919937",
+  "cited_by": 572,
+  "abstract": "As data are increasingly being stored in different silos and societies becoming more aware of data privacy issues, the traditional centralized training of artificial intelligence (AI) models is facing efficiency and privacy challenges. Recently, federated learning (FL) has emerged as an alternative solution and continues to thrive in this new reality. Existing FL protocol designs have been shown to be vulnerable to adversaries within or outside of the system, compromising data privacy and system robustness. Besides training powerful global models, it is of paramount importance to design FL systems that have privacy guarantees and are resistant to different types of adversaries. In this article, we conduct a comprehensive survey on privacy and robustness in FL over the past five years. Through a concise introduction to the concept of FL and a unique taxonomy covering: 1) threat models; 2) privacy attacks and defenses; and 3) poisoning attacks and defenses, we provide an accessible review of this important topic. We highlight the intuitions, key techniques, and fundamental assumptions adopted by various attacks and defenses. Finally, we discuss promising future research directions toward robust and privacy-preserving FL, and their interplays with the multidisciplinary goals of FL.",
+  "source": "openalex"
+ },
+ {
+  "title": "Accurate deep neural network inference using computational phase-change memory",
+  "authors": [
+   "Vinay Joshi",
+   "Manuel Le Gallo",
+   "Simon Haefeli",
+   "Irem Boybat",
+   "S. R. Nandakumar",
+   "Christophe Piveteau",
+   "Martino Dazzi",
+   "Bipin Rajendran",
+   "Abu Sebastian",
+   "Evangelos Eleftheriou"
+  ],
+  "year": 2020,
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-020-16108-9",
+  "arxiv": "1906.03138",
+  "openalex": "W2948661249",
+  "cited_by": 515,
+  "abstract": "In-memory computing using resistive memory devices is a promising non-von Neumann approach for making energy-efficient deep learning inference hardware. However, due to device variability and noise, the network needs to be trained in a specific way so that transferring the digitally trained weights to the analog resistive memory devices will not result in significant loss of accuracy. Here, we introduce a methodology to train ResNet-type convolutional neural networks that results in no appreciable accuracy loss when transferring weights to phase-change memory (PCM) devices. We also propose a compensation technique that exploits the batch normalization parameters to improve the accuracy retention over time. We achieve a classification accuracy of 93.7% on CIFAR-10 and a top-1 accuracy of 71.6% on ImageNet benchmarks after mapping the trained weights to PCM. Our hardware results on CIFAR-10 with ResNet-32 demonstrate an accuracy above 93.5% retained over a one-day period, where each of the 361,722 synaptic weights is programmed on just two PCM devices organized in a differential configuration.",
+  "source": "openalex"
+ },
+ {
+  "title": "A cloud detection algorithm for satellite imagery based on deep learning",
+  "authors": [
+   "Jacob Høxbroe Jeppesen",
+   "Rune Hylsberg Jacobsen",
+   "Fadil Inceoglu",
+   "Thomas Skjødeberg Toftegaard"
+  ],
+  "year": 2019,
+  "venue": "Remote Sensing of Environment",
+  "doi": "10.1016/j.rse.2019.03.039",
+  "arxiv": null,
+  "openalex": "W2946072066",
+  "cited_by": 406,
+  "abstract": "Reliable detection of clouds is a critical pre-processing step in optical satellite based remote sensing. Currently, most methods are based on classifying invidual pixels from their spectral signatures, therefore they do not incorporate the spatial patterns. This often leads to misclassifications of highly reflective surfaces, such as human made structures or snow/ice. Multi-temporal methods can be used to alleviate this problem, but these methods introduce new problems, such as the need of a cloud-free image of the scene. In this paper, we introduce the Remote Sensing Network (RS-Net), a deep learning model for detection of clouds in optical satellite imagery, based on the U-net architecture. The model is trained and evaluated using the Landsat 8 Biome and SPARCS datasets, and it shows state-of-the-art performance, especially over biomes with hardly distinguishable scenery, such as clouds over snowy and icy regions. In particular, the performance of the model that uses only the RGB bands is significantly improved, showing promising results for cloud detection with smaller satellites with limited multi-spectral capabilities. Furthermore, we show how training the RS-Net models on data from an existing cloud masking method, which are treated as noisy data, leads to increased performance compared to the original method. This is validated by using the Fmask algorithm to annotate the Landsat 8 datasets, and then use these annotations as training data for regularized RS-Net models, which then show improved performance compared to the Fmask algorithm. Finally, the classification time of a full Landsat 8 product is 18.0 ± 2.4 s for the largest RS-Net model, thereby making it suitable for production environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "A review on modern defect detection models using DCNNs – Deep convolutional neural networks",
+  "authors": [
+   "Andrei Alexandru Tulbure",
+   "Adrian Alexandru Tulbure",
+   "Eva Henrietta Dulf"
+  ],
+  "year": 2021,
+  "venue": "Journal of Advanced Research",
+  "doi": "10.1016/j.jare.2021.03.015",
+  "arxiv": null,
+  "openalex": "W3157243312",
+  "cited_by": 385,
+  "abstract": "Background: Over the last years Deep Learning has shown to yield remarkable results when compared to traditional computer vision algorithms, in a large variety of computer vision applications. The deeplearning models outperformed in both accuracy and processing time. Thus, once a deeplearning models won the Image Net Large Scale Visual Recognition Contest, it proved that this area of research is of great potential. Furthermore, these increases in recognition performance resulted in more applied research and thus, more applications where deeplearning is useful: one of which is defect detection (or visual defect detection). In the last few years, deeplearning models achieved higher and higher accuracy on the complex testing datasets used for benchmarking. This surge in accuracy and usage is also supported (besides swarms of researchers pouring into the race), by incremental breakthroughs in computing hardware: such as more powerful GPUs(Graphical processing units), CPUs(central processing units) and better computing procedures (libraries and frameworks). Aim of the review: To offer a structured and analytical overview(stating both advantages and disadvantages) of the existing popular object detection models that can be re-purposed for defect detection: such as Region based CNNs(Convolutional neural networks), YOLO(You only look once), SSD(single shot detectors) and cascaded architectures. A further brief summary on model compression and acceleration techniques that enabled the portability of deeplearning detection models is included. Key Scientific Concepts of Review: It is of great use for future developments in the manufacturing industry that many of the popular, above mentioned models are easy to re-purpose for defect detection and, thus could really contribute to the overall increase in productivity of this sector. Moreover, in the experiment performed the YOLOv4 model was trained and re-purposed for industrial cable detection in several hours. The computing needs could be fulfilled by a general purpose computer or by a high-performance desktop setup, depending on the specificity of the application. Hence, the barrier of computing shall be somewhat easier to climb for all types of businesses.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Quantum Channel Capacities",
+  "authors": [
+   "Laszlo Gyongyosi",
+   "Sandor Imre",
+   "Hung Viet Nguyen"
+  ],
+  "year": 2018,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2017.2786748",
+  "arxiv": "1801.02019",
+  "openalex": "W2782413938",
+  "cited_by": 367,
+  "abstract": "Quantum information processing exploits the quantum nature of information. It offers fundamentally new solutions in the field of computer science and extends the possibilities to a level that cannot be imagined in classical communication systems. For quantum communication channels, many new capacity definitions were developed in comparison to classical counterparts. A quantum channel can be used to realize classical information transmission or to deliver quantum information, such as quantum entanglement. Here we review the properties of the quantum communication channel, the various capacity measures and the fundamental differences between the classical and quantum channels.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error Characterization, Mitigation, and Recovery in Flash-Memory-Based Solid-State Drives",
+  "authors": [
+   "Yu Cai",
+   "Saugata Ghose",
+   "Erich F. Haratsch",
+   "Yixin Luo",
+   "Onur Mutlu"
+  ],
+  "year": 2017,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2017.2713127",
+  "arxiv": "1706.08642",
+  "openalex": "W2962844766",
+  "cited_by": 347,
+  "abstract": "NAND flash memory is ubiquitous in everyday life today because its capacity has continuously increased and cost has continuously decreased over decades. This positive growth is a result of two key trends: 1) effective process technology scaling; and 2) multi-level (e.g., MLC, TLC) cell data coding. Unfortunately, the reliability of raw data stored in flash memory has also continued to become more difficult to ensure, because these two trends lead to 1) fewer electrons in the flash memory cell floating gate to represent the data; and 2) larger cell-to-cell interference and disturbance effects. Without mitigation, worsening reliability can reduce the lifetime of NAND flash memory. As a result, flash memory controllers in solid-state drives (SSDs) have become much more sophisticated: they incorporate many effective techniques to ensure the correct interpretation of noisy data stored in flash memory cells. In this article, we review recent advances in SSD error characterization, mitigation, and data recovery techniques for reliability and lifetime improvement. We provide rigorous experimental data from state-of-the-art MLC and TLC NAND flash devices on various types of flash memory errors, to motivate the need for such techniques. Based on the understanding developed by the experimental characterization, we describe several mitigation and recovery techniques, including 1) cell-to-cell interference mitigation; 2) optimal multi-level cell sensing; 3) error correction using state-of-the-art algorithms and methods; and 4) data recovery when error correction fails. We quantify the reliability improvement provided by each of these techniques. Looking forward, we briefly discuss how flash memory and these techniques could evolve into the future.",
+  "source": "openalex"
+ },
+ {
+  "title": "REDQUEEN: Fuzzing with Input-to-State Correspondence",
+  "authors": [
+   "Cornelius Aschermann",
+   "Sergej Schumilo",
+   "Tim Blazytko",
+   "Robert Gawlik",
+   "Thorsten Holz"
+  ],
+  "year": 2019,
+  "venue": "Network and Distributed System Security Symposium",
+  "doi": "10.14722/ndss.2019.23371",
+  "arxiv": null,
+  "openalex": "W2947182139",
+  "cited_by": 344,
+  "abstract": "Automated software testing based on fuzzing has experienced a revival in recent years.Especially feedback-driven fuzzing has become well-known for its ability to efficiently perform randomized testing with limited input corpora.Despite a lot of progress, two common problems are magic numbers and (nested) checksums.Computationally expensive methods such as taint tracking and symbolic execution are typically used to overcome such roadblocks.Unfortunately, such methods often require access to source code, a rather precise description of the environment (e.g., behavior of library calls or the underlying OS), or the exact semantics of the platform's instruction set.In this paper, we introduce a lightweight, yet very effective alternative to taint tracking and symbolic execution to facilitate and optimize state-of-the-art feedback fuzzing that easily scales to large binary applications and unknown environments.We observe that during the execution of a given program, parts of the input often end up directly (i.e., nearly unmodified) in the program state.This input-to-state correspondence can be exploited to create a robust method to overcome common fuzzing roadblocks in a highly effective and efficient manner.Our prototype implementation, called REDQUEEN, is able to solve magic bytes and (nested) checksum tests automatically for a given binary executable.Additionally, we show that our techniques outperform various state-of-the-art tools on a wide variety of targets across different privilege levels (kernel-space and userland) with no platform-specific code.REDQUEEN is the first method to find more than 100% of the bugs planted in LAVA-M across all targets.Furthermore, we were able to discover 65 new bugs and obtained 16 CVEs in multiple programs and OS kernel drivers.Finally, our evaluation demonstrates that REDQUEEN is fast, widely applicable and outperforms concurrent approaches by up to three orders of magnitude.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards the Science of Security and Privacy in Machine Learning",
+  "authors": [
+   "Nicolas Papernot",
+   "Patrick Drew McDaniel",
+   "Arunesh Sinha",
+   "Michael P. Wellman"
+  ],
+  "year": 2016,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1611.03814",
+  "arxiv": "1611.03814",
+  "openalex": "W4394644156",
+  "cited_by": 337,
+  "abstract": "Advances in machine learning (ML) in recent years have enabled a dizzying array of applications such as data analytics, autonomous systems, and security diagnostics. ML is now pervasive---new systems and models are being deployed in every domain imaginable, leading to rapid and widespread deployment of software based inference and decision making. There is growing recognition that ML exposes new vulnerabilities in software systems, yet the technical community's understanding of the nature and extent of these vulnerabilities remains limited. We systematize recent findings on ML security and privacy, focusing on attacks identified on these systems and defenses crafted to date. We articulate a comprehensive threat model for ML, and categorize attacks and defenses within an adversarial framework. Key insights resulting from works both in the ML and security communities are identified and the effectiveness of approaches are related to structural elements of ML algorithms and the data used to train them. We conclude by formally exploring the opposing relationship between model accuracy and resilience to adversarial manipulation. Through these explorations, we show that there are (possibly unavoidable) tensions between model complexity, accuracy, and resilience that must be calibrated for the environments in which they will be used.",
+  "source": "openalex"
+ },
+ {
+  "title": "A comprehensive survey on radio frequency (RF) fingerprinting: Traditional approaches, deep learning, and open challenges",
+  "authors": [
+   "Anu Jagannath",
+   "Jithin Jagannath",
+   "Prem Sagar Pattanshetty Vasanth Kumar"
+  ],
+  "year": 2022,
+  "venue": "Computer Networks",
+  "doi": "10.1016/j.comnet.2022.109455",
+  "arxiv": "2201.00680",
+  "openalex": "W4308655556",
+  "cited_by": 308,
+  "abstract": "Fifth generation (5G) network and beyond envision massive Internet of Things (IoT) rollout to support disruptive applications such as extended reality (XR), augmented/virtual reality (AR/VR), industrial automation, autonomous driving, and smart everything which brings together massive and diverse IoT devices occupying the radio frequency (RF) spectrum. Along with the spectrum crunch and throughput challenges, such a massive scale of wireless devices exposes unprecedented threat surfaces. RF fingerprinting is heralded as a candidate technology that can be combined with cryptographic and zero-trust security measures to ensure data privacy, confidentiality, and integrity in wireless networks. Motivated by the relevance of this subject in the future communication networks, in this work, we present a comprehensive survey of RF fingerprinting approaches ranging from a traditional view to the most recent deep learning (DL)-based algorithms. Existing surveys have mostly focused on a constrained presentation of the wireless fingerprinting approaches, however, many aspects remain untold. In this work, however, we mitigate this by addressing every aspect – background on signal intelligence (SIGINT), applications, relevant DL algorithms, systematic literature review of RF fingerprinting techniques spanning the past two decades, discussion on datasets, and potential research avenues – necessary to elucidate this topic to the reader in an encyclopedic manner.",
+  "source": "openalex"
+ },
+ {
+  "title": "Blockchain technology in healthcare: A systematic review",
+  "authors": [
+   "Huma Saeed",
+   "Hassaan Malik",
+   "Umair Bashir",
+   "Aiesha Ahmad",
+   "Shafia Riaz",
+   "Maheen Ilyas",
+   "Wajahat Anwaar Bukhari",
+   "Muhammad Imran Ali Khan"
+  ],
+  "year": 2022,
+  "venue": "PLoS ONE",
+  "doi": "10.1371/journal.pone.0266462",
+  "arxiv": null,
+  "openalex": "W4225579721",
+  "cited_by": 275,
+  "abstract": "Blockchain technology (BCT) has emerged in the last decade and added a lot of interest in the healthcare sector. The purpose of this systematic literature review (SLR) is to explore the potential paradigm shift in healthcare utilizing BCT. The study is compiled by reviewing research articles published in nine well-reputed venues such as IEEE Xplore, ACM Digital Library, Springs Link, Scopus, Taylor & Francis, Science Direct, PsycINFO, Ovid Medline, and MDPI between January 2016 to August 2021. A total of 1,192 research studies were identified out of which 51 articles were selected based on inclusion criteria for this SLR that presents the modern information on the recent implications and gaps in the use of BCT for enhancing the healthcare procedures. According to the outcomes, BCT is being applied to design the novel and advanced interventions to enrich the current protocol of managing, distributing, and processing clinical records and personal medical information. BCT is enduring the conceptual development in the healthcare domain, where it has summed up the substantial elements through better and enhanced efficiency, technological innovation, access control, data privacy, and security. A framework is developed to address the probable field where future researchers can add considerable value, such as data protection, system architecture, and regulatory compliance. Finally, this SLR concludes that the upcoming research can support the pervasive implementation of BCT to address the critical dilemmas related to health diagnostics, enhancing the patient healthcare process in remote monitoring or emergencies, data integrity, and avoiding fraud.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bit-Flip Attack: Crushing Neural Network With Progressive Bit Search",
+  "authors": [
+   "Adnan Siraj Rakin",
+   "Zhezhi He",
+   "Deliang Fan"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00130",
+  "arxiv": "1903.12269",
+  "openalex": "W2981860227",
+  "cited_by": 274,
+  "abstract": "Several important security issues of Deep Neural Network (DNN) have been raised recently associated with different applications and components. The most widely investigated security concern of DNN is from its malicious input, a.k.a adversarial example. Nevertheless, the security challenge of DNN's parameters is not well explored yet. In this work, we are the first to propose a novel DNN weight attack methodology called Bit-Flip Attack (BFA) which can crush a neural network through maliciously flipping extremely small amount of bits within its weight storage memory system (i.e., DRAM). The bit-flip operations could be conducted through well-known Row-Hammer attack, while our main contribution is to develop an algorithm to identify the most vulnerable bits of DNN weight parameters (stored in memory as binary bits), that could maximize the accuracy degradation with a minimum number of bit-flips. Our proposed BFA utilizes a Progressive Bit Search (PBS) method which combines gradient ranking and progressive search to identify the most vulnerable bit to be flipped. With the aid of PBS, we can successfully attack a ResNet-18 fully malfunction (i.e., top-1 accuracy degrade from 69.8% to 0.1%) only through 13 bit-flips out of 93 million bits, while randomly flipping 100 bits merely degrades the accuracy by less than 1%. Code is released at: https://github.com/elliothe/Neural_Network_Weight_Attack.",
+  "source": "openalex"
+ },
+ {
+  "title": "Revolutionizing Future Connectivity: A Contemporary Survey on AI-Empowered Satellite-Based Non-Terrestrial Networks in 6G",
+  "authors": [
+   "Shadab Mahboob",
+   "Lingjia Liu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3347145",
+  "arxiv": "2303.01633",
+  "openalex": "W4391019653",
+  "cited_by": 269,
+  "abstract": "Non-Terrestrial Networks (NTN) are expected to be a critical component of 6th Generation (6G) networks, providing ubiquitous, continuous, and scalable services. Satellites emerge as the primary enabler for NTN, leveraging their extensive coverage, stable orbits, scalability, and adherence to international regulations. However, satellite-based NTN presents unique challenges, including long propagation delay, high Doppler shift, frequent handovers, spectrum sharing complexities, and intricate beam and resource allocation, among others. The integration of NTNs into existing terrestrial networks in 6G introduces a range of novel challenges, including task offloading, network routing, network slicing, and many more. To tackle all these obstacles, this paper proposes Artificial Intelligence (AI) as a promising solution, harnessing its ability to capture intricate correlations among diverse network parameters. We begin by providing a comprehensive background on NTN and AI, highlighting the potential of AI techniques in addressing various NTN challenges. Next, we present an overview of existing works, emphasizing AI as an enabling tool for satellite-based NTN, and explore potential research directions. Furthermore, we discuss ongoing research efforts that aim to enable AI in satellite-based NTN through software-defined implementations, while also discussing the associated challenges. Finally, we conclude by providing insights and recommendations for enabling AI-driven satellite-based NTN in future 6G networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "On the Analyses of Medical Images Using Traditional Machine Learning Techniques and Convolutional Neural Networks",
+  "authors": [
+   "Saeed Iqbal",
+   "Adnan Nabeel Qureshi",
+   "Jianqiang Li",
+   "Tariq Mahmood"
+  ],
+  "year": 2023,
+  "venue": "Archives of Computational Methods in Engineering",
+  "doi": "10.1007/s11831-023-09899-9",
+  "arxiv": null,
+  "openalex": "W4362553764",
+  "cited_by": 233,
+  "abstract": "Convolutional neural network (CNN) has shown dissuasive accomplishment on different areas especially Object Detection, Segmentation, Reconstruction (2D and 3D), Information Retrieval, Medical Image Registration, Multi-lingual translation, Local language Processing, Anomaly Detection on video and Speech Recognition. CNN is a special type of Neural Network, which has compelling and effective learning ability to learn features at several steps during augmentation of the data. Recently, different interesting and inspiring ideas of Deep Learning (DL) such as different activation functions, hyperparameter optimization, regularization, momentum and loss functions has improved the performance, operation and execution of CNN Different internal architecture innovation of CNN and different representational style of CNN has significantly improved the performance. This survey focuses on internal taxonomy of deep learning, different models of vonvolutional neural network, especially depth and width of models and in addition CNN components, applications and current challenges of deep learning.",
+  "source": "openalex"
+ },
+ {
+  "title": "RocksDB: Evolution of Development Priorities in a Key-value Store Serving Large-scale Applications",
+  "authors": [
+   "Siying Dong",
+   "Andrew Kryczka",
+   "Yanqin Jin",
+   "Michael Stumm"
+  ],
+  "year": 2021,
+  "venue": "ACM Transactions on Storage",
+  "doi": "10.1145/3483840",
+  "arxiv": null,
+  "openalex": "W3207452942",
+  "cited_by": 226,
+  "abstract": "This article is an eight-year retrospective on development priorities for RocksDB, a key-value store developed at Facebook that targets large-scale distributed systems and that is optimized for Solid State Drives (SSDs). We describe how the priorities evolved over time as a result of hardware trends and extensive experiences running RocksDB at scale in production at a number of organizations: from optimizing write amplification, to space amplification, to CPU utilization. We describe lessons from running large-scale applications, including that resource allocation needs to be managed across different RocksDB instances, that data formats need to remain backward- and forward-compatible to allow incremental software rollouts, and that appropriate support for database replication and backups are needed. Lessons from failure handling taught us that data corruption errors needed to be detected earlier and that data integrity protection mechanisms are needed at every layer of the system. We describe improvements to the key-value interface. We describe a number of efforts that in retrospect proved to be misguided. Finally, we describe a number of open problems that could benefit from future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Overview of Hardware Security and Trust: Threats, Countermeasures, and Design Tools",
+  "authors": [
+   "Wei Hu",
+   "Chip-Hong Chang",
+   "Anirban Sengupta",
+   "Swarup Bhunia",
+   "Ryan Kastner",
+   "Hai Helen Li"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+  "doi": "10.1109/tcad.2020.3047976",
+  "arxiv": null,
+  "openalex": "W3114160048",
+  "cited_by": 226,
+  "abstract": "Hardware security and trust have become a pressing issue during the last two decades due to the globalization of the semiconductor supply chain and ubiquitous network connection of computing devices. Computing hardware is now an attractive attack surface for launching powerful cross-layer security attacks, allowing attackers to infer secret information, hijack control flow, compromise system root-of-trust, steal intellectual property (IP), and fool machine learners. On the other hand, security practitioners have been making tremendous efforts in developing protection techniques and design tools to detect hardware vulnerabilities and fortify hardware design against various known hardware attacks. This article presents an overview of hardware security and trust from the perspectives of threats, countermeasures, and design tools. By introducing the most recent advances in hardware security research and developments, we aim to motivate hardware designers and electronic design automation tool developers to consider the new challenges and opportunities of incorporating an additional dimension of security into robust hardware design, testing, and verification.",
+  "source": "openalex"
+ },
+ {
+  "title": "Saliency Prediction in the Deep Learning Era: Successes and Limitations",
+  "authors": [
+   "Ali Borji"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2019.2935715",
+  "arxiv": "1810.03716",
+  "openalex": "W2969316698",
+  "cited_by": 219,
+  "abstract": "Visual saliency models have enjoyed a big leap in performance in recent years, thanks to advances in deep learning and large scale annotated data. Despite enormous effort and huge breakthroughs, however, models still fall short in reaching human-level accuracy. In this work, I explore the landscape of the field emphasizing on new deep saliency models, benchmarks, and datasets. A large number of image and video saliency models are reviewed and compared over two image benchmarks and two large scale video datasets. Further, I identify factors that contribute to the gap between models and humans and discuss the remaining issues that need to be addressed to build the next generation of more powerful saliency models. Some specific questions that are addressed include: in what ways current models fail, how to remedy them, what can be learned from cognitive studies of attention, how explicit saliency judgments relate to fixations, how to conduct fair model comparison, and what are the emerging applications of saliency models.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning: Quantum vs Classical",
+  "authors": [
+   "Tariq Mahmood Khan",
+   "Antonio Robles‐Kelly"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3041719",
+  "arxiv": null,
+  "openalex": "W3106887093",
+  "cited_by": 217,
+  "abstract": "Encouraged by growing computing power and algorithmic development, machine learning technologies have become powerful tools for a wide variety of application areas, spanning from agriculture to chemistry and natural language processing. The use of quantum systems to process classical data using machine learning algorithms has given rise to an emerging research area, i.e. quantum machine learning. Despite its origins in the processing of classical data, quantum machine learning also explores the use of quantum phenomena for learning systems, the use of quantum computers for learning on quantum data and how machine learning algorithms and software can be formulated and implemented on quantum computers. Quantum machine learning can have a transformational effect on computer science. It may speed up the processing of information well beyond the existing classical speeds. Recent work has seen the development of quantum algorithms that could serve as foundations for machine learning applications. Despite its great promise, there are still significant hardware and software challenges that need to be resolved before quantum machine learning becomes practical. In this paper, we present an overview of quantum machine learning in the light of classical approaches. Departing from foundational concepts of machine learning and quantum computing, we discuss various technical contributions, strengths and similarities of the research work in this domain. We also elaborate upon the recent progress of different quantum machine learning approaches, their complexity, and applications in various fields such as physics, chemistry and natural language processing.",
+  "source": "openalex"
+ },
+ {
+  "title": "Privacy–Enhancing Face Biometrics: A Comprehensive Survey",
+  "authors": [
+   "Blaž Meden",
+   "Peter Rot",
+   "Philipp Terhörst",
+   "Naser Damer",
+   "Arjan Kuijper",
+   "Walter J. Scheirer",
+   "Arun A. Ross",
+   "Peter Peer",
+   "Vitomir Štruc"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Information Forensics and Security",
+  "doi": "10.1109/tifs.2021.3096024",
+  "arxiv": null,
+  "openalex": "W3179610792",
+  "cited_by": 212,
+  "abstract": "Biometric recognition technology has made significant advances over the last decade and is now used across a number of services and applications. However, this widespread deployment has also resulted in privacy concerns and evolving societal expectations about the appropriate use of the technology. For example, the ability to automatically extract age, gender, race, and health cues from biometric data has heightened concerns about privacy leakage. Face recognition technology, in particular, has been in the spotlight, and is now seen by many as posing a considerable risk to personal privacy. In response to these and similar concerns, researchers have intensified efforts towards developing techniques and computational models capable of ensuring privacy to individuals, while still facilitating the utility of face recognition technology in several application scenarios. These efforts have resulted in a multitude of privacy-enhancing techniques that aim at addressing privacy risks originating from biometric systems and providing technological solutions for legislative requirements set forth in privacy laws and regulations, such as GDPR. The goal of this overview paper is to provide a comprehensive introduction into privacy-related research in the area of biometrics and review existing work on Biometric Privacy-Enhancing Techniques (B-PETs) applied to face biometrics. To make this work useful for as wide of an audience as possible, several key topics are covered as well, including evaluation strategies used with B-PETs, existing datasets, relevant standards, and regulations and critical open issues that will have to be addressed in the future.",
+  "source": "openalex"
+ },
+ {
+  "title": "OFDM-Guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+  "authors": [
+   "Mingyu Yang",
+   "Chenghong Bian",
+   "Hun-Seok Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2022.3151935",
+  "arxiv": "2109.05194",
+  "openalex": "W3201394241",
+  "cited_by": 195,
+  "abstract": "We investigate joint source channel coding (JSCC) for wireless image transmission over multipath fading channels. Inspired by recent works on deep learning based JSCC and model-based learning methods, we combine an autoencoder with orthogonal frequency division multiplexing (OFDM) to cope with multipath fading. The proposed encoder and decoder use convolutional neural networks (CNNs) and directly map the source images to complex-valued baseband samples for OFDM transmission. The multipath channel and OFDM are represented by non-trainable (deterministic) but differentiable layers so that the system can be trained end-to-end. Furthermore, our JSCC decoder further incorporates explicit channel estimation, equalization, and additional subnets to enhance the performance. The proposed method exhibits 2.5 – 4 dB SNR gain for the equivalent image quality compared to conventional schemes that employ state-of-the-art but separate source and channel coding such as Better Portable Graphics (BPG) and Low-Density Parity-Check (LDPC) schemes. The performance further improves when the system incorporates the channel state information (CSI) feedback. The proposed scheme is robust against OFDM signal clipping and parameter mismatch for the channel model used in training and evaluation.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of ReRAM-Based Architectures for Processing-In-Memory and Neural Networks",
+  "authors": [
+   "Sparsh Mittal"
+  ],
+  "year": 2018,
+  "venue": "Machine Learning and Knowledge Extraction",
+  "doi": "10.3390/make1010005",
+  "arxiv": null,
+  "openalex": "W2802367674",
+  "cited_by": 185,
+  "abstract": "As data movement operations and power-budget become key bottlenecks in the design of computing systems, the interest in unconventional approaches such as processing-in-memory (PIM), machine learning (ML), and especially neural network (NN)-based accelerators has grown significantly. Resistive random access memory (ReRAM) is a promising technology for efficiently architecting PIM- and NN-based accelerators due to its capabilities to work as both: High-density/low-energy storage and in-memory computation/search engine. In this paper, we present a survey of techniques for designing ReRAM-based PIM and NN architectures. By classifying the techniques based on key parameters, we underscore their similarities and differences. This paper will be valuable for computer architects, chip designers and researchers in the area of machine learning.",
+  "source": "openalex"
+ },
+ {
+  "title": "Evading Deepfake-Image Detectors with White- and Black-Box Attacks",
+  "authors": [
+   "Nicholas Carlini",
+   "Hany Farid"
+  ],
+  "year": 2020,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "doi": "10.1109/cvprw50498.2020.00337",
+  "arxiv": "2004.00622",
+  "openalex": "W3015087080",
+  "cited_by": 175,
+  "abstract": "It is now possible to synthesize highly realistic images of people who do not exist. Such content has, for example, been implicated in the creation of fraudulent socialmedia profiles responsible for dis-information campaigns. Significant efforts are, therefore, being deployed to detect synthetically-generated content. One popular forensic approach trains a neural network to distinguish real from synthetic content.We show that such forensic classifiers are vulnerable to a range of attacks that reduce the classifier to near- 0% accuracy. We develop five attack case studies on a state- of-the-art classifier that achieves an area under the ROC curve (AUC) of 0.95 on almost all existing image generators, when only trained on one generator. With full access to the classifier, we can flip the lowest bit of each pixel in an image to reduce the classifier's AUC to 0.0005; perturb 1% of the image area to reduce the classifier's AUC to 0.08; or add a single noise pattern in the synthesizer's latent space to reduce the classifier's AUC to 0.17. We also develop a black-box attack that, with no access to the target classifier, reduces the AUC to 0.22. These attacks reveal significant vulnerabilities of certain image-forensic classifiers.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Over-the-Air Computation",
+  "authors": [
+   "Alphan Şahin",
+   "Rui Yang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3264649",
+  "arxiv": "2210.11350",
+  "openalex": "W4362653504",
+  "cited_by": 164,
+  "abstract": "Communication and computation are often viewed as separate tasks. This approach is very effective from the perspective of engineering as isolated optimizations can be performed. However, for many computation-oriented applications, the main interest is a function of the local information at the devices, rather than the local information itself. In such scenarios, information theoretical results show that harnessing the interference in a multiple access channel for computation, i.e., over-the-air computation (OAC), can provide a significantly higher achievable computation rate than separating communication and computation tasks. Moreover, the gap between OAC and separation in terms of computation rate increases with more participating nodes. Given this motivation, in this study, we provide a comprehensive survey on practical OAC methods. After outlining fundamentals related to OAC, we discuss the available OAC schemes with their pros and cons. We provide an overview of the enabling mechanisms for achieving reliable computation in the wireless channel. Finally, we summarize the potential applications of OAC and point out some future directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Coarse-Grained Reconfigurable Architectures From a Performance Perspective",
+  "authors": [
+   "Artur Podobas",
+   "Kentaro Sano",
+   "Satoshi Matsuoka"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3012084",
+  "arxiv": "2004.04509",
+  "openalex": "W3015998244",
+  "cited_by": 155,
+  "abstract": "With the end of both Dennard's scaling and Moore's law, computer users and researchers are aggressively exploring alternative forms of computing in order to continue the performance scaling that we have come to enjoy. Among the more salient and practical of the post-Moore alternatives are reconfigurable systems, with Coarse-Grained Reconfigurable Architectures (CGRAs) seemingly capable of striking a balance between performance and programmability. In this paper, we survey the landscape of CGRAs. We summarize nearly three decades of literature on the subject, with a particular focus on the premise behind the different CGRAs and how they have evolved. Next, we compile metrics of available CGRAs and analyze their performance properties in order to understand and discover knowledge gaps and opportunities for future CGRA research specialized towards High-Performance Computing (HPC). We find that there are ample opportunities for future research on CGRAs, in particular with respect to size, functionality, support for parallel programming models, and to evaluate more complex applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Terminal Brain Damage: Exposing the Graceless Degradation in Deep Neural Networks Under Hardware Fault Attacks",
+  "authors": [
+   "Sanghyun Hong",
+   "Pietro Frigo",
+   "Yiğitcan Kaya",
+   "Cristiano Giuffrida",
+   "Tudor Dumitraş"
+  ],
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1906.01017",
+  "arxiv": "1906.01017",
+  "openalex": "W2948811271",
+  "cited_by": 154,
+  "abstract": "Deep neural networks (DNNs) have been shown to tolerate \"brain damage\": cumulative changes to the network's parameters (e.g., pruning, numerical perturbations) typically result in a graceful degradation of classification accuracy. However, the limits of this natural resilience are not well understood in the presence of small adversarial changes to the DNN parameters' underlying memory representation, such as bit-flips that may be induced by hardware fault attacks. We study the effects of bitwise corruptions on 19 DNN models---six architectures on three image classification tasks---and we show that most models have at least one parameter that, after a specific bit-flip in their bitwise representation, causes an accuracy loss of over 90%. We employ simple heuristics to efficiently identify the parameters likely to be vulnerable. We estimate that 40-50% of the parameters in a model might lead to an accuracy drop greater than 10% when individually subjected to such single-bit perturbations. To demonstrate how an adversary could take advantage of this vulnerability, we study the impact of an exemplary hardware fault attack, Rowhammer, on DNNs. Specifically, we show that a Rowhammer enabled attacker co-located in the same physical machine can inflict significant accuracy drops (up to 99%) even with single bit-flip corruptions and no knowledge of the model. Our results expose the limits of DNNs' resilience against parameter perturbations induced by real-world fault attacks. We conclude by discussing possible mitigations and future research directions towards fault attack-resilient DNNs.",
+  "source": "openalex"
+ },
+ {
+  "title": "FT-ClipAct: Resilience Analysis of Deep Neural Networks and Improving their Fault Tolerance using Clipped Activation",
+  "authors": [
+   "Le-Ha Hoang",
+   "Muhammad Abdullah Hanif",
+   "Muhammad Shafique"
+  ],
+  "year": 2020,
+  "venue": "Design, Automation, and Test in Europe",
+  "doi": "10.23919/date48585.2020.9116571",
+  "arxiv": "1912.00941",
+  "openalex": "W2989817299",
+  "cited_by": 146,
+  "abstract": "Deep Neural Networks (DNNs) are widely being adopted for safety-critical applications, e.g., healthcare and autonomous driving. Inherently, they are considered to be highly error-tolerant. However, recent studies have shown that hardware faults that impact the parameters of a DNN (e.g., weights) can have drastic impacts on its classification accuracy. In this paper, we perform a comprehensive error resilience analysis of DNNs subjected to hardware faults (e.g., permanent faults) in the weight memory. The outcome of this analysis is leveraged to propose a novel error mitigation technique which squashes the high- intensity faulty activation values to alleviate their impact. We achieve this by replacing the unbounded activation functions with their clipped versions. We also present a method to systematically define the clipping values of the activation functions that result in increased resilience of the networks against faults. We evaluate our technique on the AlexNet and the VGG-16 DNNs trained for the CIFAR-10 dataset. The experimental results show that our mitigation technique significantly improves the resilience of the DNNs to faults. For example, the proposed technique offers on average 68.92% improvement in the classification accuracy of resilience-optimized VGG-16 model at 1 × 10-5fault rate, when compared to the base network without any fault mitigation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rethinking floating point for deep learning",
+  "authors": [
+   "Jeff Johnson"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1811.01721",
+  "arxiv": "1811.01721",
+  "openalex": "W2899063892",
+  "cited_by": 146,
+  "abstract": "Reducing hardware overhead of neural networks for faster or lower power inference and training is an active area of research. Uniform quantization using integer multiply-add has been thoroughly investigated, which requires learning many quantization parameters, fine-tuning training or other prerequisites. Little effort is made to improve floating point relative to this baseline; it remains energy inefficient, and word size reduction yields drastic loss in needed dynamic range. We improve floating point to be more energy efficient than equivalent bit width integer hardware on a 28 nm ASIC process while retaining accuracy in 8 bits with a novel hybrid log multiply/linear add, Kulisch accumulation and tapered encodings from Gustafson's posit format. With no network retraining, and drop-in replacement of all math and float32 parameters via round-to-nearest-even only, this open-sourced 8-bit log float is within 0.9% top-1 and 0.2% top-5 accuracy of the original float32 ResNet-50 CNN model on ImageNet. Unlike int8 quantization, it is still a general purpose floating point arithmetic, interpretable out-of-the-box. Our 8/38-bit log float multiply-add is synthesized and power profiled at 28 nm at 0.96x the power and 1.12x the area of 8/32-bit integer multiply-add. In 16 bits, our log float multiply-add is 0.59x the power and 0.68x the area of IEEE 754 float16 fused multiply-add, maintaining the same signficand precision and dynamic range, proving useful for training ASICs as well.",
+  "source": "openalex"
+ },
+ {
+  "title": "At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence",
+  "authors": [
+   "Abdulkadir Çelik",
+   "Ahmed M. Eltawil"
+  ],
+  "year": 2024,
+  "venue": "IEEE Open Journal of the Communications Society",
+  "doi": "10.1109/ojcoms.2024.3362271",
+  "arxiv": "2402.18587",
+  "openalex": "W4391547794",
+  "cited_by": 144,
+  "abstract": "As we transition from the 5G epoch, a new horizon beckons with the advent of 6G, seeking a profound fusion with novel communication paradigms and emerging technological trends, bringing once-futuristic visions to life along with added technical intricacies. Although analytical models lay the foundations and offer systematic insights, we have recently witnessed a noticeable surge in research suggesting machine learning (ML) and artificial intelligence (AI) can efficiently deal with complex problems by complementing or replacing model-based approaches. The majority of data-driven wireless research leans heavily on discriminative AI (DAI) that requires vast real-world datasets. Unlike the DAI, Generative AI (GenAI) pertains to generative models (GMs) capable of discerning the underlying data distribution, patterns, and features of the input data. This makes GenAI a crucial asset in wireless domain wherein real-world data is often scarce, incomplete, costly to acquire, and hard to model or comprehend. With these appealing attributes, GenAI can replace or supplement DAI methods in various capacities. Accordingly, this combined tutorial-survey paper commences with preliminaries of 6G and wireless intelligence by outlining candidate 6G applications and services, presenting a taxonomy of state-of-the-art DAI models, exemplifying prominent DAI use cases, and elucidating the multifaceted ways through which GenAI enhances DAI. Subsequently, we present a tutorial on GMs by spotlighting seminal examples such as generative adversarial networks, variational autoencoders, flow-based GMs, diffusion-based GMs, generative transformers, large language models, autoregressive GMs, to name a few. Contrary to the prevailing belief that GenAI is a nascent trend, our exhaustive review of approximately 120 technical papers demonstrates the scope of research across core wireless research areas, including 1) physical layer design; 2) network optimization, organization, and management; 3) network traffic analytics; 4) cross-layer network security; and 5) localization & positioning. Furthermore, we outline the central role of GMs in pioneering areas of 6G network research, including semantic communications, integrated sensing and communications, THz communications, extremely large antenna arrays, near-field communications, digital twins, AI-generated content services, mobile edge computing and edge AI, adversarial ML, and trustworthy AI. Lastly, we shed light on the multifarious challenges ahead, suggesting potential strategies and promising remedies. Given its depth and breadth, we are confident that this tutorial-cum-survey will serve as a pivotal reference for researchers and professionals delving into this dynamic and promising domain.",
+  "source": "openalex"
+ },
+ {
+  "title": "Algorithm-Based Fault Tolerance for Convolutional Neural Networks",
+  "authors": [
+   "Kai Zhao",
+   "Sheng Di",
+   "Sihuan Li",
+   "Xin Liang",
+   "Yujia Zhai",
+   "Jieyang Chen",
+   "Kaiming Ouyang",
+   "Franck Cappello",
+   "Zizhong Chen"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Parallel and Distributed Systems",
+  "doi": "10.1109/tpds.2020.3043449",
+  "arxiv": "2003.12203",
+  "openalex": "W3014034225",
+  "cited_by": 130,
+  "abstract": "Convolutional neural networks (CNNs) are becoming more and more important for solving challenging and critical problems in many fields. CNN inference applications have been deployed in safety-critical systems, which may suffer from soft errors caused by high-energy particles, high temperature, or abnormal voltage. Of critical importance is ensuring the stability of the CNN inference process against soft errors. Traditional fault tolerance methods are not suitable for CNN inference because error-correcting code is unable to protect computational components, instruction duplication techniques incur high overhead, and existing algorithm-based fault tolerance (ABFT) techniques cannot protect all convolution implementations. In this article, we focus on how to protect the CNN inference process against soft errors as efficiently as possible, with the following three contributions. (1) We propose several systematic ABFTschemes based on checksum techniques and analyze their fault protection ability and runtime thoroughly. Unlike traditional ABFT based on matrix-matrix multiplication, our schemes support any convolution implementations. (2) We design a novel workflow integrating all the proposed schemes to obtain a high detection/correction ability with limited total runtime overhead. (3) We perform our evaluation using ImageNet with well-known CNN models including AlexNet, VGG-19, ResNet-18, and YOLOv2. Experimental results demonstrate that our implementation can handle soft errors with very limited runtime overhead (4%~8% in both error-free and error-injected situations).",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of FPGA-Based Robotic Computing",
+  "authors": [
+   "Zishen Wan",
+   "Yu Bo",
+   "Thomas Yuang Li",
+   "Jie Tang",
+   "Yuhao Zhu",
+   "Yu Wang",
+   "Arijit Raychowdhury",
+   "Shaoshan Liu"
+  ],
+  "year": 2021,
+  "venue": "IEEE Circuits and Systems Magazine",
+  "doi": "10.1109/mcas.2021.3071609",
+  "arxiv": "2009.06034",
+  "openalex": "W3165570441",
+  "cited_by": 126,
+  "abstract": "Recent researches on robotics have shown significant improvement, spanning from algorithms, mechanics to hardware architectures. Robotics, including manipulators, legged robots, drones, and autonomous vehicles, are now widely applied in diverse scenarios. However, the high computation and data complexity of robotic algorithms pose great challenges to its applications. On the one hand, CPU platform is flexible to handle multiple robotic tasks. GPU platform has higher computational capacities and easy-to-use development frameworks, so they have been widely adopted in several applications. On the other hand, FPGA-based robotic accelerators are becoming increasingly competitive alternatives, especially in latency-critical and power-limited scenarios. With specialized designed hardware logic and algorithm kernels, FPGA-based accelerators can surpass CPU and GPU in performance and energy efficiency. In this paper, we give an overview of previous work on FPGA-based robotic accelerators covering different stages of the robotic system pipeline. An analysis of software and hardware optimization techniques and main technical issues is presented, along with some commercial and space applications, to serve as a guide for future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "Next-generation energy systems for sustainable smart cities: Roles of transfer learning",
+  "authors": [
+   "Yassine Himeur",
+   "Mariam Elnour",
+   "Fodil Fadli",
+   "Nader Meskin",
+   "Ioan Petri",
+   "Yacine Rezgui",
+   "Fayçal Bensaali",
+   "Abbes Amira"
+  ],
+  "year": 2022,
+  "venue": "Sustainable Cities and Society",
+  "doi": "10.1016/j.scs.2022.104059",
+  "arxiv": null,
+  "openalex": "W4286250636",
+  "cited_by": 124,
+  "abstract": "Smart cities attempt to reach net-zero emissions goals by reducing wasted energy while improving grid stability and meeting service demand. This is possible by adopting next-generation energy systems, which leverage artificial intelligence, the Internet of things (IoT), and communication technologies to collect and analyze big data in real-time and effectively run city services. However, training machine learning algorithms to perform various energy-related tasks in sustainable smart cities is a challenging data science task. These algorithms might not perform as expected, take much time in training, or do not have enough input data to generalize well. To that end, transfer learning (TL) has been proposed as a promising solution to alleviate these issues. To the best of the authors’ knowledge, this paper presents the first review of the applicability of TL for energy systems by adopting a well-defined taxonomy of existing TL frameworks. Next, an in-depth analysis is carried out to identify the pros and cons of current techniques and discuss unsolved issues. Moving on, two case studies illustrating the use of TL for (i) energy prediction with mobility data and (ii) load forecasting in sports facilities are presented. Lastly, the paper ends with a discussion of the future directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Set-Based Obfuscation for Strong PUFs Against Machine Learning Attacks",
+  "authors": [
+   "Jiliang Zhang",
+   "Chaoqun Shen"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Circuits and Systems I Regular Papers",
+  "doi": "10.1109/tcsi.2020.3028508",
+  "arxiv": "1806.02011",
+  "openalex": "W3094433534",
+  "cited_by": 123,
+  "abstract": "Strong physical unclonable function (PUF) is a promising solution for device authentication in resource-constrained applications but vulnerable to machine learning (ML) attacks. In order to resist attack, many defenses have been proposed in recent years. However, these defenses incur high hardware overhead, degenerate reliability and are inefficient against advanced ML attacks such as approximation attacks. To address these issues, we propose a Random Set-based Obfuscation (RSO) for Strong PUFs to resist ML attacks. The basic idea is that several stable responses are derived from the PUF itself and pre-stored as the set for obfuscation in the testing phase, and then a true random number generator is used to select any two keys to obfuscate challenges and responses with XOR operations. When the number of challenge-response pairs (CRPs) collected by the attacker exceeds the given threshold, the set will be updated immediately. In this way, ML attacks can be prevented with extremely low hardware overhead. Experimental results show that for a 64 × 64 Arbiter PUF, when the size of set is 32 and even if 1 million CRPs are collected by attackers, the prediction accuracies of the several ML attacks we use are about 50% which is equivalent to the random guessing.",
+  "source": "openalex"
+ },
+ {
+  "title": "Advances in Wirelessly Powered Backscatter Communications: From Antenna/RF Circuitry Design to Printed Flexible Electronics",
+  "authors": [
+   "Chaoyun Song",
+   "Yuan Ding",
+   "Aline Eid",
+   "Jimmy G. D. Hester",
+   "Xuanke He",
+   "Ryan A. Bahr",
+   "Apostolos Georgiadis",
+   "George Goussetis",
+   "Manos M. Tentzeris"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3125285",
+  "arxiv": null,
+  "openalex": "W3209645431",
+  "cited_by": 122,
+  "abstract": "Backscatter communication is an emerging paradigm for pervasive connectivity of low-power communication devices. Wirelessly powered backscattering wireless sensor networks (WSNs) become particularly important to meet the upcoming era of the Internet of Things (IoT), which requires the massive deployment of self-sustainable and maintenance-free low-cost sensing and communication devices. This article will introduce the state-of-the-art antenna design and radio frequency (RF) system integration for wirelessly powered backscatter communications, covering both the node and the base unit. We capture the latest development in ultralow-power RF front ends and coding schemes for$\\mu \\text{W}$-level backscatter modulators, as well as the latest progress in wireless power transfer (WPT) and energy harvesting (EH) techniques. Newly emerged rectenna system, waveform design, and channel optimization are reviewed in light of the opportunities for adaptively optimizing the WPT/EH efficiency for low-power signals with varying conditions. In addition, advanced device packaging and integration technologies in, e.g., additively manufactured RF components and modules for microwave and millimeter-wave ubiquitous sensing and backscattering energy-autonomous RF structures are reported. Inkjet printing for the sustainable and ultralow-cost fabrication of flexible RF devices and sensors will be reviewed to provide a prospective insight into the future packaging of backscatter communications from the chip-level design to complete system integration. Finally, this article will also address the challenges in fully wireless powered backscatter radio networks and discuss the future directions of backscatter communication in terms of “Green IoT” and “Low Carbon” smart home, smart city, smart skin, and machine-to-machine (M2M) applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on XAI for 5G and Beyond Security: Technical Aspects, Challenges and Research Directions",
+  "authors": [
+   "Thulitha Senevirathna",
+   "Vinh Hoa La",
+   "Samuel Marchal",
+   "Bartlomiej Siniarski",
+   "Madhusanka Liyanage",
+   "Shen Wang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3437248",
+  "arxiv": "2204.12822",
+  "openalex": "W4401247017",
+  "cited_by": 115,
+  "abstract": "With the advent of 5G commercialization, the need for more reliable, faster, and intelligent telecommunication systems is envisaged for the next generation beyond 5G (B5G) radio access technologies. Artificial Intelligence (AI) and Machine Learning (ML) are immensely popular in service layer applications and have been proposed as essential enablers in many aspects of 5G and beyond networks, from IoT devices and edge computing to cloud-based infrastructures. However, existing 5G ML-based security surveys tend to emphasize AI/ML model performance and accuracy more than the models’ accountability and trustworthiness. In contrast, this paper explores the potential of Explainable AI (XAI) methods, which would allow stakeholders in 5G and beyond to inspect intelligent black-box systems used to secure next-generation networks. The goal of using XAI in the security domain of 5G and beyond is to allow the decision-making processes of ML-based security systems to be transparent and comprehensible to 5G and beyond stakeholders, making the systems accountable for automated actions. In every facet of the forthcoming B5G era, including B5G technologies such as ORAN, zero-touch network management, and end-to-end slicing, this survey emphasizes the role of XAI in them that the general users would ultimately enjoy. Furthermore, we presented the lessons from recent efforts and future research directions on top of the currently conducted projects involving XAI.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Low-Cost Fault Corrector for Deep Neural Networks Through Range Restriction",
+  "authors": [
+   "Zitao Chen",
+   "Guanpeng Li",
+   "Karthik Pattabiraman"
+  ],
+  "year": 2021,
+  "venue": "International Conference on Dependable Systems & Networks/Proceedings",
+  "doi": "10.1109/dsn48987.2021.00018",
+  "arxiv": "2003.13874",
+  "openalex": "W3101647783",
+  "cited_by": 115,
+  "abstract": "Deep neural networks (DNNs) have seen growing adoption in safety-critical domains. Unfortunately, they are also subject to unexpected failures due to hardware transient faults (soft errors). Traditional fault tolerance techniques require significant implementation efforts and/or incur major performance overheads. This work introducesRanger, a low-cost fault corrector that can directly correct the faulty prediction output due to transient faults without re-computation. This research laid the foundations of improving the fault tolerance of DNN applications under hardware transient faults and it has influenced subsequent work in the area, both in academia and industry.",
+  "source": "openalex"
+ },
+ {
+  "title": "Artificial Intelligence-Empowered Radiology—Current Status and Critical Review",
+  "authors": [
+   "Rafał Obuchowicz",
+   "Julia Lasek",
+   "Marek Wodziński",
+   "Adam Piórkowski",
+   "Michał Strzelecki",
+   "Karolina Nurzyǹska"
+  ],
+  "year": 2025,
+  "venue": "Diagnostics",
+  "doi": "10.3390/diagnostics15030282",
+  "arxiv": null,
+  "openalex": "W4406797838",
+  "cited_by": 113,
+  "abstract": "Humanity stands at a pivotal moment of technological revolution, with artificial intelligence (AI) reshaping fields traditionally reliant on human cognitive abilities. This transition, driven by advancements in artificial neural networks, has transformed data processing and evaluation, creating opportunities for addressing complex and time-consuming tasks with AI solutions. Convolutional networks (CNNs) and the adoption of GPU technology have already revolutionized image recognition by enhancing computational efficiency and accuracy. In radiology, AI applications are particularly valuable for tasks involving pattern detection and classification; for example, AI tools have enhanced diagnostic accuracy and efficiency in detecting abnormalities across imaging modalities through automated feature extraction. Our analysis reveals that neuroimaging and chest imaging, as well as CT and MRI modalities, are the primary focus areas for AI products, reflecting their high clinical demand and complexity. AI tools are also used to target high-prevalence diseases, such as lung cancer, stroke, and breast cancer, underscoring AI's alignment with impactful diagnostic needs. The regulatory landscape is a critical factor in AI product development, with the majority of products certified under the Medical Device Directive (MDD) and Medical Device Regulation (MDR) in Class IIa or Class I categories, indicating compliance with moderate-risk standards. A rapid increase in AI product development from 2017 to 2020, peaking in 2020 and followed by recent stabilization and saturation, was identified. In this work, the authors review the advancements in AI-based imaging applications, underscoring AI's transformative potential for enhanced diagnostic support and focusing on the critical role of CNNs, regulatory challenges, and potential threats to human labor in the field of diagnostic imaging.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips",
+  "authors": [
+   "Fan Yao",
+   "Adnan Siraj Rakin",
+   "Deliang Fan"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2003.13746",
+  "arxiv": "2003.13746",
+  "openalex": "W3014592693",
+  "cited_by": 111,
+  "abstract": "Security of machine learning is increasingly becoming a major concern due to the ubiquitous deployment of deep learning in many security-sensitive domains. Many prior studies have shown external attacks such as adversarial examples that tamper with the integrity of DNNs using maliciously crafted inputs. However, the security implication of internal threats (i.e., hardware vulnerability) to DNN models has not yet been well understood. In this paper, we demonstrate the first hardware-based attack on quantized deep neural networks-DeepHammer-that deterministically induces bit flips in model weights to compromise DNN inference by exploiting the rowhammer vulnerability. DeepHammer performs aggressive bit search in the DNN model to identify the most vulnerable weight bits that are flippable under system constraints. To trigger deterministic bit flips across multiple pages within reasonable amount of time, we develop novel system-level techniques that enable fast deployment of victim pages, memory-efficient rowhammering and precise flipping of targeted bits. DeepHammer can deliberately degrade the inference accuracy of the victim DNN system to a level that is only as good as random guess, thus completely depleting the intelligence of targeted DNN systems. We systematically demonstrate our attacks on real systems against 12 DNN architectures with 4 different datasets and different application domains. Our evaluation shows that DeepHammer is able to successfully tamper DNN inference behavior at run-time within a few minutes. We further discuss several mitigation techniques from both algorithm and system levels to protect DNNs against such attacks. Our work highlights the need to incorporate security mechanisms in future deep learning system to enhance the robustness of DNN against hardware-based deterministic fault injections.",
+  "source": "openalex"
+ },
+ {
+  "title": "Microprocessor Optimizations for the Internet of Things: A Survey",
+  "authors": [
+   "Tosiron Adegbija",
+   "Anita Rogacs",
+   "Chandrakant D. Patel",
+   "Ross Gordon"
+  ],
+  "year": 2017,
+  "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+  "doi": "10.1109/tcad.2017.2717782",
+  "arxiv": "1603.02393",
+  "openalex": "W2637121726",
+  "cited_by": 108,
+  "abstract": "The Internet of Things (IoT) refers to a pervasive presence of interconnected and uniquely identifiable physical devices. These devices' goal is to gather data and drive actions in order to improve productivity, and ultimately reduce or eliminate reliance on human intervention for data acquisition, interpretation, and use. The proliferation of these connected low-power devices will result in a data explosion that will significantly increase data transmission costs with respect to energy consumption and latency. Edge computing reduces these costs by performing computations at the edge nodes, prior to data transmission, to interpret and/or utilize the data. While much research has focused on the IoT's connected nature and communication challenges, the challenges of IoT embedded computing with respect to device microprocessors has received much less attention. This paper explores IoT applications' execution characteristics from a microarchitectural perspective and the microarchitectural characteristics that will enable efficient and effective edge computing. To tractably represent a wide variety of next-generation IoT applications, we present a broad IoT application classification methodology based on application functions, to enable quicker workload characterizations for IoT microprocessors. We then survey and discuss potential microarchitectural optimizations and computing paradigms that will enable the design of right-provisioned microprocessors that are efficient, configurable, extensible, and scalable. This paper provides a foundation for the analysis and design of a diverse set of microprocessor architectures for next-generation IoT devices.",
+  "source": "openalex"
+ },
+ {
+  "title": "Millimeter-Wave Power Amplifier Integrated Circuits for High Dynamic Range Signals",
+  "authors": [
+   "Hua Wang",
+   "Peter M. Asbeck",
+   "Christian Fager"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal of Microwaves",
+  "doi": "10.1109/jmw.2020.3035897",
+  "arxiv": null,
+  "openalex": "W3118298779",
+  "cited_by": 107,
+  "abstract": "The next-generation 5G and beyond-5G wireless systems have stimulated a substantial growth in research, development, and deployment of mm-Wave electronic systems and antenna arrays at various scales. It is also envisioned that large dynamic range modulation signals with high spectral efficiency will be ubiquitously employed in future communication and sensing systems. As the interface between the antennas and transceiver electronics, power amplifiers (PAs) typically govern the output power, energy efficiency, and reliability of the entire wireless systems. However, the wide use of high dynamic range signals at mm-Wave carrier frequencies substantially complicates the design of PAs and demands an ultimate balance of energy efficiency and linearity as well as other PA performances. In this review paper, we will first introduce the system-level requirements and design challenges on mm-Waves PAs due to high dynamic range signals. We will review advanced active load modulation architectures for mm-Wave PAs and power devices. We will then introduce recent advances in mm-Wave PA technologies and innovations with several design examples. Special design considerations on mm-Wave PAs for phased array MIMOs and high mm-Wave frequencies will be outlined. We will also share our vision on future technology trends and innovation opportunities.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Novel Modular Approach Based Substitution-Box Design for Image Encryption",
+  "authors": [
+   "Amjad Hussain Zahid",
+   "Eesa Alsolami",
+   "Musheer Ahmad"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3016401",
+  "arxiv": null,
+  "openalex": "W3049726582",
+  "cited_by": 107,
+  "abstract": "In modern-day block ciphers, the role of substitution-boxes is to transform the plaintext data nonlinearly to generate ciphertext data with sufficient confusion. It has been well-confirmed that the robustness and security of such block ciphers heavily based on the cryptographic strength of the underlying substitution-boxes. Reason being, they are the only components that are held responsible to bring required nonlinearity and complexity into the security system which can frustrate the attackers. Accordingly, a number of different concepts have been explored to construct strong S-boxes. To move forward with the same aim, a novel simple modular approach, the very first time, is investigated to construct nonlinear S-box in this paper. The proposed new modular approach consists of three operations such as new transformation, modular inverses, and permutation. A number of highly nonlinear S-boxes can be easily constructed with slight changes in the novel transformation parameters. An example S-box is presented whose critical performance assessment against some benchmarking criterions such as high nonlinearity, absence of fixed points, fulfillment of SAC and BIC properties, low differential uniformity and linear approximation probability and comparison with recent S-boxes demonstrate its upright cryptographic potentiality. In addition, an image encryption algorithm is also proposed wherein the generated S-box is applied to perform the pixels shuffling and substitution for strong statistical and differential encryption performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Hallucinating IDT Descriptors and I3D Optical Flow Features for Action Recognition With CNNs",
+  "authors": [
+   "Lei Wang",
+   "Piotr Koniusz",
+   "Du Q. Huynh"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00879",
+  "arxiv": "1906.05910",
+  "openalex": "W2981578854",
+  "cited_by": 106,
+  "abstract": "In this paper, we revive the use of old-fashioned handcrafted video representations for action recognition and put new life into these techniques via a CNN-based hallucination step. Despite of the use of RGB and optical flow frames, the I3D model (amongst others) thrives on combining its output with the Improved Dense Trajectory (IDT) and extracted with its low-level video descriptors encoded via Bag-of-Words (BoW) and Fisher Vectors (FV). Such a fusion of CNNs and handcrafted representations is time-consuming due to pre-processing, descriptor extraction, encoding and tuning parameters. Thus, we propose an end-to-end trainable network with streams which learn the IDT-based BoW/FV representations at the training stage and are simple to integrate with the I3D model. Specifically, each stream takes I3D feature maps ahead of the last 1D conv. layer and learns to `translate' these maps to BoW/FV representations. Thus, our model can hallucinate and use such synthesized BoW/FV representations at the testing stage. We show that even features of the entire I3D optical flow stream can be hallucinated thus simplifying the pipeline. Our model saves 20-55h of computations and yields state-of-the-art results on four publicly available datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Creating, Using, Misusing, and Detecting Deep Fakes",
+  "authors": [
+   "Hany Farid"
+  ],
+  "year": 2022,
+  "venue": "Journal of Online Trust and Safety",
+  "doi": "10.54501/jots.v1i4.56",
+  "arxiv": null,
+  "openalex": "W4297878838",
+  "cited_by": 100,
+  "abstract": "Synthetic media—so-called deep fakes—have captured the imagination of some and struck fear in others. Although they vary in their form and creation, deep fakes refer to text, image, audio, or video that has been automatically synthesized by a machine-learning system. Deep fakes are the latest in a long line of techniques used to manipulate reality, yet their introduction poses new opportunities and risks due to the democratized access to what would have historically been the purview of Hollywood-style studios. This review describes how synthetic media is created, how it is being used and misused, and if (and how) it can be perceptually and forensically distinguished from reality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Edge AI for Internet of Energy: Challenges and perspectives",
+  "authors": [
+   "Yassine Himeur",
+   "Aya Nabil Sayed",
+   "Abdullah Alsalemi",
+   "Fayçal Bensaali",
+   "Abbes Amira"
+  ],
+  "year": 2023,
+  "venue": "Internet of Things",
+  "doi": "10.1016/j.iot.2023.101035",
+  "arxiv": "2311.16851",
+  "openalex": "W4389778805",
+  "cited_by": 99,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Roadmap for unconventional computing with nanotechnology",
+  "authors": [
+   "Giovanni Finocchio",
+   "Jean Anne C. Incorvia",
+   "Joseph S. Friedman",
+   "Yang Qu",
+   "Anna Giordano",
+   "Julie Grollier",
+   "Hyunsoo Yang",
+   "Florin Ciubotaru",
+   "Andrii V. Chumak",
+   "Azad Naeemi",
+   "Sorin Cotöfană",
+   "Riccardo Tomasello",
+   "C. Panagopoulos",
+   "Mario Carpentieri",
+   "Peng Lin",
+   "Gang Pan",
+   "J. Joshua Yang",
+   "Aida Todri‐Sanial",
+   "Gabriele Boschetto",
+   "Kremena Makasheva",
+   "Vinod Kumar Sangwan",
+   "Amit Ranjan Trivedi",
+   "Mark C. Hersam",
+   "Kerem Yunus Camsari",
+   "Peter L. McMahon",
+   "Supriyo Datta",
+   "Belita Koiller",
+   "G. H. Aguilar",
+   "Guilherme P. Temporão",
+   "Davi R. Rodrigues",
+   "Satoshi Sunada",
+   "Karin Everschor‐Sitte",
+   "Kosuke Tatsumura",
+   "Hayato Goto",
+   "Vito Puliafito",
+   "Johan J. Åkerman",
+   "Hiroki Takesue",
+   "Massimiliano Di Ventra",
+   "Yuriy V. Pershin",
+   "Saibal Mukhopadhyay",
+   "Kaushik Roy",
+   "I‐Ting Wang",
+   "Wang Kang",
+   "Zhu Yao",
+   "Brajesh Kumar Kaushik",
+   "Jennifer Hasler",
+   "Samiran Ganguly",
+   "Avik W. Ghosh",
+   "William B. Levy",
+   "Vwani Roychowdhury",
+   "Supriyo Bandyopadhyay"
+  ],
+  "year": 2024,
+  "venue": "Nano Futures",
+  "doi": "10.1088/2399-1984/ad299a",
+  "arxiv": "2301.06727",
+  "openalex": "W4391836388",
+  "cited_by": 98,
+  "abstract": "Abstract In the ‘Beyond Moore’s Law’ era, with increasing edge intelligence, domain-specific computing embracing unconventional approaches will become increasingly prevalent. At the same time, adopting a variety of nanotechnologies will offer benefits in energy cost, computational speed, reduced footprint, cyber resilience, and processing power. The time is ripe for a roadmap for unconventional computing with nanotechnologies to guide future research, and this collection aims to fill that need. The authors provide a comprehensive roadmap for neuromorphic computing using electron spins, memristive devices, two-dimensional nanomaterials, nanomagnets, and various dynamical systems. They also address other paradigms such as Ising machines, Bayesian inference engines, probabilistic computing with p-bits, processing in memory, quantum memories and algorithms, computing with skyrmions and spin waves, and brain-inspired computing for incremental learning and problem-solving in severely resource-constrained environments. These approaches have advantages over traditional Boolean computing based on von Neumann architecture. As the computational requirements for artificial intelligence grow 50 times faster than Moore’s Law for electronics, more unconventional approaches to computing and signal processing will appear on the horizon, and this roadmap will help identify future needs and challenges. In a very fertile field, experts in the field aim to present some of the dominant and most promising technologies for unconventional computing that will be around for some time to come. Within a holistic approach, the goal is to provide pathways for solidifying the field and guiding future impactful discoveries.",
+  "source": "openalex"
+ },
+ {
+  "title": "Hardware-Accelerated Platforms and Infrastructures for Network Functions: A Survey of Enabling Technologies and Research Studies",
+  "authors": [
+   "Prateek Shantharama",
+   "Akhilesh S. Thyagaturu",
+   "Martin Reisslein B"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3008250",
+  "arxiv": null,
+  "openalex": "W3041188508",
+  "cited_by": 98,
+  "abstract": "In order to facilitate flexible network service virtualization and migration, network functions (NFs) are increasingly executed by software modules as so-called “softwarized NFs” on General-Purpose Computing (GPC) platforms and infrastructures. GPC platforms are not specifically designed to efficiently execute NFs with their typically intense Input/Output (I/O) demands. Recently, numerous hardware-based accelerations have been developed to augment GPC platforms and infrastructures, e.g., the central processing unit (CPU) and memory, to efficiently execute NFs. This article comprehensively surveys hardware-accelerated platforms and infrastructures for executing softwarized NFs. This survey covers both commercial products, which we consider to be enabling technologies, as well as relevant research studies. We have organized the survey into the main categories of enabling technologies and research studies on hardware accelerations for the CPU, the memory, and the interconnects (e.g., between CPU and memory), as well as custom and dedicated hardware accelerators (that are embedded on the platforms); furthermore, we survey hardware-accelerated infrastructures that connect GPC platforms to networks (e.g., smart network interface cards). We find that the CPU hardware accelerations have mainly focused on extended instruction sets and CPU clock adjustments, as well as cache coherency. Hardware accelerated interconnects have been developed for on-chip and chip-to-chip connections. Our comprehensive up-to-date survey identifies the main trade-offs and limitations of the existing hardware-accelerated platforms and infrastructures for NFs and outlines directions for future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Sources of Risk of AI Systems",
+  "authors": [
+   "André Steimers",
+   "Moritz Schneider"
+  ],
+  "year": 2022,
+  "venue": "International Journal of Environmental Research and Public Health",
+  "doi": "10.3390/ijerph19063641",
+  "arxiv": null,
+  "openalex": "W4220657299",
+  "cited_by": 97,
+  "abstract": "Artificial intelligence can be used to realise new types of protective devices and assistance systems, so their importance for occupational safety and health is continuously increasing. However, established risk mitigation measures in software development are only partially suitable for applications in AI systems, which only create new sources of risk. Risk management for systems that for systems using AI must therefore be adapted to the new problems. This work objects to contribute hereto by identifying relevant sources of risk for AI systems. For this purpose, the differences between AI systems, especially those based on modern machine learning methods, and classical software were analysed, and the current research fields of trustworthy AI were evaluated. On this basis, a taxonomy could be created that provides an overview of various AI-specific sources of risk. These new sources of risk should be taken into account in the overall risk assessment of a system based on AI technologies, examined for their criticality and managed accordingly at an early stage to prevent a later system failure.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Brief, In-Depth Survey of Deep Learning-Based Image Watermarking",
+  "authors": [
+   "Xin Rong Zhong",
+   "Arjon Das",
+   "Fahad Alrasheedi",
+   "Abdullah All Tanvir"
+  ],
+  "year": 2023,
+  "venue": "Applied Sciences",
+  "doi": "10.3390/app132111852",
+  "arxiv": "2308.04603",
+  "openalex": "W4388018933",
+  "cited_by": 95,
+  "abstract": "This paper presents a comprehensive survey of deep learning-based image watermarking; this technique entails the invisible embedding and extraction of watermarks within a cover image, aiming for a seamless combination of robustness and adaptability. We navigate the complex landscape of this interdisciplinary domain, linking historical foundations, current innovations, and prospective developments. Unlike existing literature, our study concentrates exclusively on image watermarking with deep learning, delivering an in-depth, yet brief analysis enriched by three fundamental contributions. First, we introduce a refined categorization, segmenting the field into embedder–extractor, deep networks for feature transformation, and hybrid methods. This taxonomy, inspired by the varied roles of deep learning across studies, is designed to infuse clarity, offering readers technical insights and directional guidance. Second, our exploration dives into representative methodologies, encapsulating the diverse research directions and inherent challenges within each category to provide a consolidated perspective. Lastly, we venture beyond established boundaries, outlining emerging frontiers and providing detailed insights into prospective research avenues.",
+  "source": "openalex"
+ },
+ {
+  "title": "Optimized Quantum Compilation for Near-Term Algorithms with OpenPulse",
+  "authors": [
+   "Pranav Gokhale",
+   "Ali Javadi-Abhari",
+   "Nathan Earnest",
+   "Yunong Shi",
+   "Frederic T. Chong"
+  ],
+  "year": 2020,
+  "venue": "IEEE/ACM International Symposium on Microarchitecture (MICRO)",
+  "doi": "10.1109/micro50266.2020.00027",
+  "arxiv": "2004.11205",
+  "openalex": "W3018013878",
+  "cited_by": 94,
+  "abstract": "Quantum computers are traditionally operated by programmers at the granularity of a gate-based instruction set. However, the actual device-level control of a quantum computer is performed via analog pulses. We introduce a compiler that exploits direct control at this microarchitectural level to achieve significant improvements for quantum programs. Unlike quantum optimal control, our approach is bootstrapped from existing gate calibrations and the resulting pulses are simple. Our techniques are applicable to any quantum computer and realizable on current devices. We validate our techniques with millions of experimental shots on IBM quantum computers, controlled via the OpenPulse control interface. For representative benchmarks, our pulse control techniques achieve both 1.6x lower error rates and 2x faster execution time, relative to standard gate-based compilation. These improvements are critical in the near-term era of quantum computing, which is bottlenecked by error rates and qubit lifetimes.",
+  "source": "openalex"
+ }
+]

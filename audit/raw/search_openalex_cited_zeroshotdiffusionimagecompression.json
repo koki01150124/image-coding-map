@@ -1,0 +1,1016 @@
+[
+ {
+  "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+  "authors": [
+   "Robin Rombach",
+   "Andreas Blattmann",
+   "Dominik Lorenz",
+   "Patrick Esser",
+   "Björn Ommer"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.01042",
+  "arxiv": "2112.10752",
+  "openalex": "W4312933868",
+  "cited_by": 17617,
+  "abstract": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve new state of the art scores for image inpainting and class-conditional image synthesis and highly competitive performance on various tasks, including unconditional image generation, text-to-image synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs.",
+  "source": "openalex"
+ },
+ {
+  "title": "YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information",
+  "authors": [
+   "Chien-Yao Wang",
+   "I-Hau Yeh",
+   "Hong-Yuan Mark Liao"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-72751-1_1",
+  "arxiv": "2402.13616",
+  "openalex": "W4403770406",
+  "cited_by": 5136,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Large Language Models",
+  "authors": [
+   "Wayne Xin Zhao",
+   "Kun Zhou",
+   "Junyi Li",
+   "Tianyi Tang",
+   "Zican Dong",
+   "Yupeng Hou",
+   "Beichen Zhang",
+   "Yingqian Min",
+   "Junjie Zhang",
+   "Peiyu Liu",
+   "Xiaolei Wang",
+   "Yifan Du",
+   "Yushuo Chen",
+   "Yushuo Chen",
+   "Zhipeng Chen",
+   "Jinhao Jiang",
+   "Ruiyang Ren",
+   "Yifan Li",
+   "Xinyu Tang",
+   "Peiyu Liu",
+   "Yiwen Hu",
+   "Jian‐Yun Nie",
+   "Ji-Rong Wen"
+  ],
+  "year": 2026,
+  "venue": "Frontiers of Computer Science",
+  "doi": "10.1007/s11704-026-60308-3",
+  "arxiv": "2303.18223",
+  "openalex": "W4362515116",
+  "cited_by": 4932,
+  "abstract": "Abstract The rapid evolution of large language models (LLMs) has driven a transformative shift in artificial intelligence (AI), reshaping both research paradigms and practical applications. Distinguished from their predecessors by unprecedented scale and advanced capabilities, LLMs necessitate new frameworks for understanding their development, behavior, and societal impact. This survey systematically reviews recent advancements in LLM techniques across four key dimensions: (1) pre-training methodologies, which establish core model capabilities through large-scale self-supervised training, architectural innovations, and data curation strategies; (2) post-training techniques, including supervised fine-tuning and reinforcement learning, which adapt foundational models to downstream tasks and enhance their alignment and safety; (3) utilization strategies, such as in-context learning, prompt engineering, and agentic reasoning, that optimize real-world deployment and enable effective interaction with external environments; and (4) evaluation methods, encompassing benchmarks for key ability dimensions such as core language capabilities, reasoning, and safety, which support comprehensive and reliable assessment of model performance. Additionally, we identify critical research issues, including those concerning theoretical foundations, efficient scaling, alignment, and agentic capability, and highlight the open challenges they present. By synthesizing state-of-the-art insights and emerging trends, this survey aims to provide a systematic and comprehensive framework for understanding the trajectory, current limitations, and future directions of LLM progress.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models Beat GANs on Image Synthesis",
+  "authors": [
+   "Prafulla Dhariwal",
+   "Alex Nichol"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2105.05233",
+  "arxiv": "2105.05233",
+  "openalex": "W3162926177",
+  "cited_by": 3577,
+  "abstract": "We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128$\\times$128, 4.59 on ImageNet 256$\\times$256, and 7.72 on ImageNet 512$\\times$512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256$\\times$256 and 3.85 on ImageNet 512$\\times$512. We release our code at https://github.com/openai/guided-diffusion",
+  "source": "openalex"
+ },
+ {
+  "title": "An integrated approach to correction for off-resonance effects and subject movement in diffusion MR imaging",
+  "authors": [
+   "Jesper Andersson",
+   "Stamatios N. Sotiropoulos"
+  ],
+  "year": 2015,
+  "venue": "NeuroImage",
+  "doi": "10.1016/j.neuroimage.2015.10.019",
+  "arxiv": null,
+  "openalex": "W2127309075",
+  "cited_by": 3439,
+  "abstract": "In this paper we describe a method for retrospective estimation and correction of eddy current (EC)-induced distortions and subject movement in diffusion imaging. In addition a susceptibility-induced field can be supplied and will be incorporated into the calculations in a way that accurately reflects that the two fields (susceptibility- and EC-induced) behave differently in the presence of subject movement. The method is based on registering the individual volumes to a model free prediction of what each volume should look like, thereby enabling its use on high b-value data where the contrast is vastly different in different volumes. In addition we show that the linear EC-model commonly used is insufficient for the data used in the present paper (high spatial and angular resolution data acquired with Stejskal-Tanner gradients on a 3T Siemens Verio, a 3T Siemens Connectome Skyra or a 7T Siemens Magnetome scanner) and that a higher order model performs significantly better. The method is already in extensive practical use and is used by four major projects (the WU-UMinn HCP, the MGH HCP, the UK Biobank and the Whitehall studies) to correct for distortions and subject movement.",
+  "source": "openalex"
+ },
+ {
+  "title": "Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next",
+  "authors": [
+   "Salvatore Cuomo",
+   "Vincenzo Schiano Di Cola",
+   "Fabio Giampaolo",
+   "Gianluigi Rozza",
+   "Maziar Raissi",
+   "Francesco Piccialli"
+  ],
+  "year": 2022,
+  "venue": "Journal of Scientific Computing",
+  "doi": "10.1007/s10915-022-01939-z",
+  "arxiv": "2201.05624",
+  "openalex": "W4288039037",
+  "cited_by": 2974,
+  "abstract": "Abstract Physics-Informed Neural Networks (PINN) are neural networks (NNs) that encode model equations, like Partial Differential Equations (PDE), as a component of the neural network itself. PINNs are nowadays used to solve PDEs, fractional equations, integral-differential equations, and stochastic PDEs. This novel methodology has arisen as a multi-task learning framework in which a NN must fit observed data while reducing a PDE residual. This article provides a comprehensive review of the literature on PINNs: while the primary goal of the study was to characterize these networks and their related advantages and disadvantages. The review also attempts to incorporate publications on a broader range of collocation-based physics informed neural networks, which stars form the vanilla PINN, as well as many other variants, such as physics-constrained neural networks (PCNN), variational hp-VPINN, and conservative PINN (CPINN). The study indicates that most research has focused on customizing the PINN through different activation functions, gradient optimization techniques, neural network structures, and loss function structures. Despite the wide range of applications for which PINNs have been used, by demonstrating their ability to be more feasible in some contexts than classical numerical techniques like Finite Element Method (FEM), advancements are still possible, most notably theoretical issues that remain unresolved.",
+  "source": "openalex"
+ },
+ {
+  "title": "FFDNet: Toward a Fast and Flexible Solution for CNN-Based Image Denoising",
+  "authors": [
+   "Kai Zhang",
+   "Wangmeng Zuo",
+   "Lei Zhang A"
+  ],
+  "year": 2018,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2018.2839891",
+  "arxiv": "1710.04026",
+  "openalex": "W2764207251",
+  "cited_by": 2921,
+  "abstract": "Due to the fast inference and good performance, discriminative learning methods have been widely studied in image denoising. However, these methods mostly learn a specific model for each noise level, and require multiple models for denoising images with different noise levels. They also lack flexibility to deal with spatially variant noise, limiting their applications in practical denoising. To address these issues, we present a fast and flexible denoising convolutional neural network, namely FFDNet, with a tunable noise level map as the input. The proposed FFDNet works on downsampled subimages, achieving a good trade-off between inference speed and denoising performance. In contrast to the existing discriminative denoisers, FFDNet enjoys several desirable properties, including (i) the ability to handle a wide range of noise levels (i.e., [0, 75]) effectively with a single network, (ii) the ability to remove spatially variant noise by specifying a non-uniform noise level map, and (iii) faster speed than benchmark BM3D even on CPU without sacrificing denoising performance. Extensive experiments on synthetic and real noisy images are conducted to evaluate FFDNet in comparison with state-of-the-art denoisers. The results show that FFDNet is effective and efficient, making it highly attractive for practical denoising applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Taming Transformers for High-Resolution Image Synthesis",
+  "authors": [
+   "Patrick Esser",
+   "Robin Rombach",
+   "Björn Ommer"
+  ],
+  "year": 2021,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr46437.2021.01268",
+  "arxiv": "2012.09841",
+  "openalex": "W3111551570",
+  "cited_by": 2541,
+  "abstract": "Designed to learn long-range interactions on sequential data, transformers continue to show state-of-the-art results on a wide variety of tasks. In contrast to CNNs, they contain no inductive bias that prioritizes local interactions. This makes them expressive, but also computationally infeasible for long sequences, such as high-resolution images. We demonstrate how combining the effectiveness of the inductive bias of CNNs with the expressivity of transformers enables them to model and thereby synthesize high-resolution images. We show how to (i) use CNNs to learn a context-rich vocabulary of image constituents, and in turn (ii) utilize transformers to efficiently model their composition within high-resolution images. Our approach is readily applied to conditional synthesis tasks, where both non-spatial information, such as object classes, and spatial information, such as segmentations, can control the generated image. In particular, we present the first results on semantically-guided synthesis of megapixel images with transformers. Project page at https://git.io/JLlvY.",
+  "source": "openalex"
+ },
+ {
+  "title": "Opportunities and obstacles for deep learning in biology and medicine",
+  "authors": [
+   "Travers H. Ching",
+   "Daniel Scott Himmelstein",
+   "Brett K. Beaulieu‐Jones",
+   "Alexandr A. Kalinin",
+   "Brian T. Do",
+   "Gregory P. Way",
+   "Enrico Ferrero",
+   "Paul‐Michael Agapow",
+   "Michael Zietz",
+   "Michael M. Hoffman",
+   "Wei Xie",
+   "GAIL L. ROSEN",
+   "Benjamin J. Lengerich",
+   "Johnny Israeli",
+   "Jack Lanchantin",
+   "Stephen Woloszynek",
+   "Anne Elizabeth Carpenter",
+   "Avanti Shrikumar",
+   "Jinbo Xu",
+   "Evan M. Cofer",
+   "Christopher A. Lavender",
+   "Srinivas C. Turaga",
+   "Amr M. Alexandari",
+   "Zhiyong Lu",
+   "David J. Harris",
+   "David DeCaprio",
+   "Yanjun Qi",
+   "Anshul Bharat Kundaje",
+   "Yifan Peng",
+   "Laura K. Wiley",
+   "Marwin Segler",
+   "Simina Maria Boca",
+   "S. Joshua Swamidass",
+   "Austin Huang",
+   "Anthony Gitter",
+   "Casey S. Greene"
+  ],
+  "year": 2018,
+  "venue": "Journal of The Royal Society Interface",
+  "doi": "10.1098/rsif.2017.0387",
+  "arxiv": null,
+  "openalex": "W2951934944",
+  "cited_by": 2348,
+  "abstract": "Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains. Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well suited to solve problems of these fields. We examine applications of deep learning to a variety of biomedical problems-patient classification, fundamental biological processes and treatment of patients-and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges. Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art. Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation. Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge. Furthermore, the limited amount of labelled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records. Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.",
+  "source": "openalex"
+ },
+ {
+  "title": "Improved Baselines with Visual Instruction Tuning",
+  "authors": [
+   "Haotian Liu",
+   "Chunyuan Li",
+   "Yuheng Li",
+   "Yong Jae Lee"
+  ],
+  "year": 2024,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52733.2024.02484",
+  "arxiv": "2310.03744",
+  "openalex": "W4402727764",
+  "cited_by": 2063,
+  "abstract": "Large multimodal models (LMM) have recently shown encouraging progress with visual instruction tuning. In this paper, we present the first systematic study to investigate the design choices of LMMs in a controlled setting under the LLaVA framework. We show that the fully-connected vision-language connector in LLaVA is surprisingly power-ful and data-efficient. With simple modifications to LLa VA, namely, using CLIP- ViT-L-336px with an MLP projection and adding academic-task-oriented VQA data with response formatting prompts, we establish stronger baselines that achieve state-of-the-art across 11 benchmarks. Our final 13B checkpoint uses merely 1.2M publicly available data, and finishes full training in ~ 1 day on a single 8-AI00 node. Furthermore, we present some early exploration of open problems in LMMs, including scaling to higher resolution inputs, compositional capabilities, and model hallucination, etc. We hope this makes state-of-the-art LMM research more accessible. Code and model will be publicly available.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models: A Comprehensive Survey of Methods and Applications",
+  "authors": [
+   "Ling Qiang Yang",
+   "Zhilong Zhang",
+   "Yang Song",
+   "Shenda Hong",
+   "Runsheng Xu",
+   "Yue Zhao",
+   "Wentao Zhang",
+   "Bin Cui",
+   "Ming–Hsuan Yang"
+  ],
+  "year": 2023,
+  "venue": "ACM Computing Surveys",
+  "doi": "10.1145/3626235",
+  "arxiv": "2209.00796",
+  "openalex": "W4387195417",
+  "cited_by": 1850,
+  "abstract": "Diffusion models have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design. In this survey, we provide an overview of the rapidly expanding body of work on diffusion models, categorizing the research into three key areas: efficient sampling, improved likelihood estimation, and handling data with special structures. We also discuss the potential for combining diffusion models with other generative models for enhanced results. We further review the wide-ranging applications of diffusion models in fields spanning from computer vision, natural language processing, temporal data modeling, to interdisciplinary applications in other scientific disciplines. This survey aims to provide a contextualized, in-depth look at the state of diffusion models, identifying the key areas of focus and pointing to potential areas for further exploration. Github: https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy",
+  "source": "openalex"
+ },
+ {
+  "title": "Text Data Augmentation for Deep Learning",
+  "authors": [
+   "Connor Shorten",
+   "Taghi M. Khoshgoftaar",
+   "Borko Furht"
+  ],
+  "year": 2021,
+  "venue": "Journal Of Big Data",
+  "doi": "10.1186/s40537-021-00492-0",
+  "arxiv": null,
+  "openalex": "W3176923149",
+  "cited_by": 1798,
+  "abstract": "Natural Language Processing (NLP) is one of the most captivating applications of Deep Learning. In this survey, we consider how the Data Augmentation training strategy can aid in its development. We begin with the major motifs of Data Augmentation summarized into strengthening local decision boundaries, brute force training, causality and counterfactual examples, and the distinction between meaning and form. We follow these motifs with a concrete list of augmentation frameworks that have been developed for text data. Deep Learning generally struggles with the measurement of generalization and characterization of overfitting. We highlight studies that cover how augmentations can construct test sets for generalization. NLP is at an early stage in applying Data Augmentation compared to Computer Vision. We highlight the key differences and promising ideas that have yet to be tested in NLP. For the sake of practical implementation, we describe tools that facilitate Data Augmentation such as the use of consistency regularization, controllers, and offline and online augmentation pipelines, to preview a few. Finally, we discuss interesting topics around Data Augmentation in NLP such as task-specific augmentations, the use of prior knowledge in self-supervised learning versus Data Augmentation, intersections with transfer and multi-task learning, and ideas for AI-GAs (AI-Generating Algorithms). We hope this paper inspires further research interest in Text Data Augmentation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI",
+  "authors": [
+   "Stefan Feuerriegel",
+   "Jochen Hartmann",
+   "Christian Janiesch",
+   "Patrick Zschech"
+  ],
+  "year": 2023,
+  "venue": "Business & Information Systems Engineering",
+  "doi": "10.1007/s12599-023-00834-7",
+  "arxiv": "2309.07930",
+  "openalex": "W4386693657",
+  "cited_by": 1789,
+  "abstract": "The term \"generative AI'' refers to computational techniques that are capable of generating seemingly new, meaningful content such as text, images, or audio from training data. The widespread diffusion of this technology with examples such as Dall-E 2, GPT-4, and Copilot is currently revolutionizing the way we work and communicate with each other. In this article, we provide a conceptualization of generative AI as an entity in socio-technical systems and provide examples of models, systems, and applications. Based on that, we introduce limitations of current generative AI and provide an agenda for Business & Information Systems Engineering (BISE) research. Different from previous works, we focus on generative AI in the context of information systems, and, to this end, we discuss several opportunities and challenges that are unique to the BISE community and make suggestions for impactful directions for BISE research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Kindling the Darkness",
+  "authors": [
+   "Yonghua Zhang",
+   "Jiawan Zhang",
+   "Xiaojie Guo"
+  ],
+  "year": 2019,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3343031.3350926",
+  "arxiv": "1905.04161",
+  "openalex": "W2981718299",
+  "cited_by": 1718,
+  "abstract": "Images captured under low-light conditions often suffer from (partially) poor visibility. Besides unsatisfactory lightings, multiple types of degradations, such as noise and color distortion due to the limited quality of cameras, hide in the dark. In other words, solely turning up the brightness of dark regions will inevitably amplify hidden artifacts. This work builds a simple yet effective network for Kindling the Darkness (denoted as KinD), which, inspired by Retinex theory, decomposes images into two components. One component (illumination) is responsible for light adjustment, while the other (reflectance) for degradation removal. In such a way, the original space is decoupled into two smaller subspaces, expecting to be better regularized/learned. It is worth to note that our network is trained with paired images shot under different exposure conditions, instead of using any ground-truth reflectance and illumination information. Extensive experiments are conducted to demonstrate the efficacy of our design and its superiority over state-of-the-art alternatives. Our KinD is robust against severe visual defects, and user-friendly to arbitrarily adjust light levels. In addition, our model spends less than 50ms to process an image in VGA resolution on a 2080Ti GPU. All the above merits make our KinD attractive for practical use.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Image Prior",
+  "authors": [
+   "Dmitry Ulyanov",
+   "Andrea Vedaldi",
+   "Victor Lempitsky"
+  ],
+  "year": 2020,
+  "venue": "International Journal of Computer Vision",
+  "doi": "10.1007/s11263-020-01303-4",
+  "arxiv": "1711.10925",
+  "openalex": "W2771305881",
+  "cited_by": 1661,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A survey of transformers",
+  "authors": [
+   "Tianyang Lin",
+   "Yuxin Wang",
+   "Xiangyang Liu",
+   "Xipeng Qiu"
+  ],
+  "year": 2022,
+  "venue": "AI Open",
+  "doi": "10.1016/j.aiopen.2022.10.001",
+  "arxiv": "2106.04554",
+  "openalex": "W3171649327",
+  "cited_by": 1502,
+  "abstract": "Transformers have achieved great success in many artificial intelligence fields, such as natural language processing, computer vision, and audio processing. Therefore, it is natural to attract lots of interest from academic and industry researchers. Up to the present, a great variety of Transformer variants (a.k.a. X-formers) have been proposed, however, a systematic and comprehensive literature review on these Transformer variants is still missing. In this survey, we provide a comprehensive review of various X-formers. We first briefly introduce the vanilla Transformer and then propose a new taxonomy of X-formers. Next, we introduce the various X-formers from three perspectives: architectural modification, pre-training, and applications. Finally, we outline some potential directions for future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Deep Learning-Based Object Detection",
+  "authors": [
+   "Licheng Jiao",
+   "Fan Zhang",
+   "Fang Liu",
+   "Shuyuan Yang",
+   "Lingling Li",
+   "Zhixi Feng",
+   "Rong Qu"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2939201",
+  "arxiv": "1907.09408",
+  "openalex": "W2972006294",
+  "cited_by": 1390,
+  "abstract": "Object detection is one of the most important and challenging branches of computer vision, which has been widely applied in people’s life, such as monitoring security, autonomous driving and so on, with the purpose of locating instances of semantic objects of a certain class. With the rapid development of deep learning algorithms for detection tasks, the performance of object detectors has been greatly improved. In order to understand the main development status of object detection pipeline thoroughly and deeply, in this survey, we analyze the methods of existing typical detection models and describe the benchmark datasets at first. Afterwards and primarily, we provide a comprehensive overview of a variety of object detection methods in a systematic manner, covering the one-stage and two-stage detectors. Moreover, we list the traditional and new applications. Some representative branches of object detection are analyzed as well. Finally, we discuss the architecture of exploiting these object detection methods to build an effective and efficient system and point out a set of development trends to better follow the state-of-the-art algorithms and further research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Visual Instruction Tuning",
+  "authors": [
+   "Haotian Liu",
+   "Chunyuan Li",
+   "Qingyang Wu",
+   "Yong Jae Lee"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2304.08485",
+  "arxiv": "2304.08485",
+  "openalex": "W4366330503",
+  "cited_by": 1261,
+  "abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.",
+  "source": "openalex"
+ },
+ {
+  "title": "SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis",
+  "authors": [
+   "Dustin Podell",
+   "Zion English",
+   "Kyle Lacey",
+   "Andreas Blattmann",
+   "Tim Dockhorn",
+   "Jonas Müller",
+   "Joe Penna",
+   "Robin Rombach"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2307.01952",
+  "arxiv": "2307.01952",
+  "openalex": "W4383472654",
+  "cited_by": 1222,
+  "abstract": "We present SDXL, a latent diffusion model for text-to-image synthesis. Compared to previous versions of Stable Diffusion, SDXL leverages a three times larger UNet backbone: The increase of model parameters is mainly due to more attention blocks and a larger cross-attention context as SDXL uses a second text encoder. We design multiple novel conditioning schemes and train SDXL on multiple aspect ratios. We also introduce a refinement model which is used to improve the visual fidelity of samples generated by SDXL using a post-hoc image-to-image technique. We demonstrate that SDXL shows drastically improved performance compared the previous versions of Stable Diffusion and achieves results competitive with those of black-box state-of-the-art image generators. In the spirit of promoting open research and fostering transparency in large model training and evaluation, we provide access to code and model weights at https://github.com/Stability-AI/generative-models",
+  "source": "openalex"
+ },
+ {
+  "title": "Constraints on primordial black holes",
+  "authors": [
+   "B. J. Carr",
+   "Kazunori Kohri",
+   "Yuuiti Sendouda",
+   "Jun’ichi Yokoyama"
+  ],
+  "year": 2021,
+  "venue": "Reports on Progress in Physics",
+  "doi": "10.1088/1361-6633/ac1e31",
+  "arxiv": "2002.12778",
+  "openalex": "W3007895520",
+  "cited_by": 1210,
+  "abstract": "Abstract We update the constraints on the fraction of the Universe that may have gone into primordial black holes (PBHs) over the mass range 10 −5 to 10 50 g. Those smaller than ∼10 15 g would have evaporated by now due to Hawking radiation, so their abundance at formation is constrained by the effects of evaporated particles on big bang nucleosynthesis, the cosmic microwave background (CMB), the Galactic and extragalactic γ -ray and cosmic ray backgrounds and the possible generation of stable Planck mass relics. PBHs larger than ∼10 15 g are subject to a variety of constraints associated with gravitational lensing, dynamical effects, influence on large-scale structure, accretion and gravitational waves. We discuss the constraints on both the initial collapse fraction and the current fraction of the dark matter (DM) in PBHs at each mass scale but stress that many of the constraints are associated with observational or theoretical uncertainties. We also consider indirect constraints associated with the amplitude of the primordial density fluctuations, such as second-order tensor perturbations and μ -distortions arising from the effect of acoustic reheating on the CMB, if PBHs are created from the high- σ peaks of nearly Gaussian fluctuations. Finally we discuss how the constraints are modified if the PBHs have an extended mass function, this being relevant if PBHs provide some combination of the DM, the LIGO/Virgo coalescences and the seeds for cosmic structure. Even if PBHs make a small contribution to the DM, they could play an important cosmological role and provide a unique probe of the early Universe.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comprehensive Survey of Continual Learning: Theory, Method and Application",
+  "authors": [
+   "Liyuan Wang",
+   "Xingxing Zhang",
+   "Hang Su",
+   "Jun Zhu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2024.3367329",
+  "arxiv": "2302.00487",
+  "openalex": "W4392173735",
+  "cited_by": 1187,
+  "abstract": "To cope with real-world dynamics, an intelligent system needs to incrementally acquire, update, accumulate, and exploit knowledge throughout its lifetime. This ability, known as continual learning, provides a foundation for AI systems to develop themselves adaptively. In a general sense, continual learning is explicitly limited by catastrophic forgetting, where learning a new task usually results in a dramatic performance drop of the old tasks. Beyond this, increasingly numerous advances have emerged in recent years that largely extend the understanding and application of continual learning. The growing and widespread interest in this direction demonstrates its realistic significance as well as complexity. In this work, we present a comprehensive survey of continual learning, seeking to bridge the basic settings, theoretical foundations, representative methods, and practical applications. Based on existing theoretical and empirical results, we summarize the general objectives of continual learning as ensuring a proper stability-plasticity trade-off and an adequate intra/inter-task generalizability in the context of resource efficiency. Then we provide a state-of-the-art and elaborated taxonomy, extensively analyzing how representative strategies address continual learning, and how they are adapted to particular challenges in various applications. Through an in-depth discussion of promising directions, we believe that such a holistic perspective can greatly facilitate subsequent exploration in this field and beyond.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multi-Scale Boosted Dehazing Network With Dense Feature Fusion",
+  "authors": [
+   "Hang Dong",
+   "Jinshan Pan",
+   "Lei Xiang",
+   "Zhe Hu",
+   "Xinyi Zhang",
+   "Fei Wang",
+   "Ming–Hsuan Yang"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00223",
+  "arxiv": "2004.13388",
+  "openalex": "W3034278302",
+  "cited_by": 1172,
+  "abstract": "In this paper, we propose a Multi-Scale Boosted Dehazing Network with Dense Feature Fusion based on the U-Net architecture. The proposed method is designed based on two principles, boosting and error feedback, and we show that they are suitable for the dehazing problem. By incorporating the Strengthen-Operate-Subtract boosting strategy in the decoder of the proposed model, we develop a simple yet effective boosted decoder to progressively restore the haze-free image. To address the issue of preserving spatial information in the U-Net architecture, we design a dense feature fusion module using the back-projection feedback scheme. We show that the dense feature fusion module can simultaneously remedy the missing spatial information from high-resolution features and exploit the non-adjacent features. Extensive evaluations demonstrate that the proposed model performs favorably against the state-of-the-art approaches on the benchmark datasets as well as real-world hazy images.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neuromorphic computing using non-volatile memory",
+  "authors": [
+   "Geoffrey W. Burr",
+   "Robert M. Shelby",
+   "Abu Sebastian",
+   "Sang‐Bum Kim",
+   "Seyoung Kim",
+   "Severin Sidler",
+   "Kumar R. Virwani",
+   "Masatoshi Ishii",
+   "Pritish Narayanan",
+   "Alessandro Fumarola",
+   "Lucas L. Sanches",
+   "Irem Boybat",
+   "Manuel Le Gallo",
+   "Kibong Moon",
+   "Jiyoo Woo",
+   "Hyunsang Hwang",
+   "Yusuf Leblebici"
+  ],
+  "year": 2016,
+  "venue": "Advances in Physics X",
+  "doi": "10.1080/23746149.2016.1259585",
+  "arxiv": null,
+  "openalex": "W2560615381",
+  "cited_by": 1158,
+  "abstract": "Dense crossbar arrays of non-volatile memory (NVM) devices represent one possible path for implementing massively-parallel and highly energy-efficient neuromorphic computing systems. We first review recent advances in the application of NVM devices to three computing paradigms: spiking neural networks (SNNs), deep neural networks (DNNs), and ‘Memcomputing’. In SNNs, NVM synaptic connections are updated by a local learning rule such as spike-timing-dependent-plasticity, a computational approach directly inspired by biology. For DNNs, NVM arrays can represent matrices of synaptic weights, implementing the matrix–vector multiplication needed for algorithms such as backpropagation in an analog yet massively-parallel fashion. This approach could provide significant improvements in power and speed compared to GPU-based DNN training, for applications of commercial significance. We then survey recent research in which different types of NVM devices – including phase change memory, conductive-bridging RAM, filamentary and non-filamentary RRAM, and other NVMs – have been proposed, either as a synapse or as a neuron, for use within a neuromorphic computing application. The relevant virtues and limitations of these devices are assessed, in terms of properties such as conductance dynamic range, (non)linearity and (a)symmetry of conductance response, retention, endurance, required switching power, and device variability.",
+  "source": "openalex"
+ },
+ {
+  "title": "Plug-and-Play Image Restoration With Deep Denoiser Prior",
+  "authors": [
+   "Kai Zhang",
+   "Yawei Li",
+   "Wangmeng Zuo",
+   "Lei Zhang A",
+   "Luc Van Gool",
+   "Radu Timofte"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2021.3088914",
+  "arxiv": "2008.13751",
+  "openalex": "W3081639259",
+  "cited_by": 1151,
+  "abstract": "Recent works on plug-and-play image restoration have shown that a denoiser can implicitly serve as the image prior for model-based methods to solve many inverse problems. Such a property induces considerable advantages for plug-and-play image restoration (e.g., integrating the flexibility of model-based method and effectiveness of learning-based methods) when the denoiser is discriminatively learned via deep convolutional neural network (CNN) with large modeling capacity. However, while deeper and larger CNN models are rapidly gaining popularity, existing plug-and-play image restoration hinders its performance due to the lack of suitable denoiser prior. In order to push the limits of plug-and-play image restoration, we set up a benchmark deep denoiser prior by training a highly flexible and effective CNN denoiser. We then plug the deep denoiser prior as a modular part into a half quadratic splitting based iterative algorithm to solve various image restoration problems. We, meanwhile, provide a thorough analysis of parameter setting, intermediate results and empirical convergence to better understand the working mechanism. Experimental results on three representative image restoration tasks, including deblurring, super-resolution and demosaicing, demonstrate that the proposed plug-and-play image restoration with deep denoiser prior not only significantly outperforms other state-of-the-art model-based methods but also achieves competitive or even superior performance against state-of-the-art learning-based methods. The source code is available at https://github.com/cszn/DPIR.",
+  "source": "openalex"
+ },
+ {
+  "title": "FIRE-2 simulations: physics versus numerics in galaxy formation",
+  "authors": [
+   "Philip F. Hopkins",
+   "Andrew R. Wetzel",
+   "Dušan Kereš",
+   "Claude‐André Faucher‐Giguère",
+   "Eliot Quataert",
+   "Michael Boylan-Kolchin",
+   "Norman Murray",
+   "Christopher C. Hayward",
+   "Shea Garrison-Kimmel",
+   "Cameron Hummels",
+   "Robert Feldmann",
+   "Paul Torrey",
+   "Xiangcheng Ma",
+   "Daniel Anglés‐Alcázar",
+   "Kung-Yi Su",
+   "Matthew E Orr",
+   "Denise Schmitz",
+   "Ivanna Escala",
+   "Robyn Ellyn Sanderson",
+   "Michael Y Grudić",
+   "Zachary Hafen",
+   "Ji-hoon Kim",
+   "Alex Fitts",
+   "James S. Bullock",
+   "Coral Wheeler",
+   "T K Chan",
+   "Oliver D. Elbert",
+   "Desika Narayanan"
+  ],
+  "year": 2018,
+  "venue": "Monthly Notices of the Royal Astronomical Society",
+  "doi": "10.1093/mnras/sty1690",
+  "arxiv": "1702.06148",
+  "openalex": "W2589317285",
+  "cited_by": 1114,
+  "abstract": "The Feedback In Realistic Environments (FIRE) project explores feedback in cosmological galaxy formation simulations.Previous FIRE simulations used an identical source code ('FIRE-1') for consistency.Motivated by the development of more accurate numerics -including hydrodynamic solvers, gravitational softening, and supernova coupling algorithmsand exploration of new physics (e.g.magnetic fields), we introduce 'FIRE-2', an updated numerical implementation of FIRE physics for the GIZMO code.We run a suite of simulations and compare against FIRE-1: overall, FIRE-2 improvements do not qualitatively change galaxy-scale properties.We pursue an extensive study of numerics versus physics.Details of the star formation algorithm, cooling physics, and chemistry have weak effects provided that we include metal-line cooling and star formation occurs at higher-than-mean densities.We present new resolution criteria for high-resolution galaxy simulations.Most galaxy-scale properties are robust to numerics we test, provided: (1) Toomre masses are resolved; (2) feedback coupling ensures conservation, and (3) individual supernovae are time-resolved.Stellar masses and profiles are most robust to resolution, followed by metal abundances and morphologies, followed by properties of winds and circum-galactic media.Central (∼kpc) mass concentrations in massive (>L * ) galaxies are sensitive to numerics (via trapping/recycling of winds in hot haloes).Multiple feedback mechanisms play key roles: supernovae regulate stellar masses/winds; stellar mass-loss fuels late star formation; radiative feedback suppresses accretion on to dwarfs and instantaneous star formation in discs.We provide all initial conditions and numerical algorithms used.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of AI-Generated Content (AIGC)",
+  "authors": [
+   "Yihan Cao",
+   "Siyu Li",
+   "Yixin Liu",
+   "Zhiling Yan",
+   "Yutong Dai",
+   "Philip S. Yu",
+   "Lichao Sun"
+  ],
+  "year": 2024,
+  "venue": "ACM Computing Surveys",
+  "doi": "10.1145/3704262",
+  "arxiv": "2303.04226",
+  "openalex": "W4405114800",
+  "cited_by": 1095,
+  "abstract": "Recently, Artificial Intelligence Generated Content (AIGC) has gained significant attention from society, especially with the rise of Generative AI (GAI) techniques such as ChatGPT, GPT-4 [ 165 ], DALL-E-3 [ 184 ], and Sora [ 137 ]. AIGC involves using AI models to create digital content, such as images, music, and natural language, with the goal of making the content creation process more efficient and accessible. Large-scale models have become increasingly important in AIGC as they provide better intent extraction and generation results. This survey provides a comprehensive review of the history of generative models and recent advances in AIGC, focusing on both unimodal and multimodal interaction. From the perspective of unimodality, we introduce the generation tasks and relative models of text and image. From the perspective of multimodality, we introduce the cross-application between the modalities mentioned above. Finally, the survey discusses the existing open problems and future challenges in AIGC. Overall, this survey serves as a valuable resource for individuals interested in understanding the background and secrets behind the impressive performance of AIGC techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Review on Ammonia as a Potential Fuel: From Synthesis to Economics",
+  "authors": [
+   "Agustín Valera-Medina",
+   "Fares Amer Hatem",
+   "Абул Калам Азад",
+   "Irene C. Dedoussi",
+   "Mara de Joannon",
+   "R. X. Fernandes",
+   "Peter Glarborg",
+   "Hamid Hashemi",
+   "Xiaoyu He",
+   "Syed Mashruk",
+   "J.G. McGowan",
+   "Christine Mounaïm–Rousselle",
+   "Armando Ortiz",
+   "Adrián Esteban Ortiz-Valera",
+   "Ilenia Rossetti",
+   "Bo Shu",
+   "Mohamed A. Yehia",
+   "Hua Xiao",
+   "Mário Costa"
+  ],
+  "year": 2021,
+  "venue": "Energy & Fuels",
+  "doi": "10.1021/acs.energyfuels.0c03685",
+  "arxiv": null,
+  "openalex": "W3134967399",
+  "cited_by": 1087,
+  "abstract": "Ammonia, a molecule that is gaining more interest as a fueling vector, has been considered as a candidate to power transport, produce energy, and support heating applications for decades.However, the particular characteristics of the molecule always made it a chemical with low, if any, benefit once compared to conventional fossil fuels.Still, the current need to decarbonize our economy makes the search of new methods crucial to use chemicals, such as ammonia, that can be produced and employed without incurring in the emission of carbon oxides.Therefore, current efforts in this field are leading scientists, industries, and governments to seriously invest efforts in the development of holistic solutions capable of making ammonia a viable fuel for the transition toward a clean future.On that basis, this review has approached the subject gathering inputs from scientists actively working on the topic.The review starts from the importance of ammonia as an energy vector, moving through all of the steps in the production, distribution, utilization, safety, legal considerations, and economic aspects of the use of such a molecule to support the future energy mix.Fundamentals of combustion and practical cases for the recovery of energy of ammonia are also addressed, thus providing a complete view of what potentially could become a vector of crucial importance to the mitigation of carbon emissions.Different from other works, this review seeks to provide a holistic perspective of ammonia as a chemical that presents benefits and constraints for storing energy from sustainable sources.State-of-the-art knowledge provided by academics actively engaged with the topic at various fronts also enables a clear vision of the progress in each of the branches of ammonia as an energy carrier.Further, the fundamental boundaries of the use of the molecule are expanded to real technical issues for all potential technologies capable of using it for energy purposes, legal barriers that will be faced to achieve its deployment, safety and environmental considerations that impose a critical aspect for acceptance and wellbeing, and economic implications for the use of ammonia across all aspects approached for the production and implementation of this chemical as a fueling source.Herein, this work sets the principles, research, practicalities, and future views of a transition toward a future where ammonia will be a major energy player.",
+  "source": "openalex"
+ },
+ {
+  "title": "The Role of AI in Hospitals and Clinics: Transforming Healthcare in the 21st Century",
+  "authors": [
+   "Shiva Maleki Varnosfaderani",
+   "Mohamad Forouzanfar"
+  ],
+  "year": 2024,
+  "venue": "Bioengineering",
+  "doi": "10.3390/bioengineering11040337",
+  "arxiv": null,
+  "openalex": "W4393353064",
+  "cited_by": 1065,
+  "abstract": "As healthcare systems around the world face challenges such as escalating costs, limited access, and growing demand for personalized care, artificial intelligence (AI) is emerging as a key force for transformation. This review is motivated by the urgent need to harness AI's potential to mitigate these issues and aims to critically assess AI's integration in different healthcare domains. We explore how AI empowers clinical decision-making, optimizes hospital operation and management, refines medical image analysis, and revolutionizes patient care and monitoring through AI-powered wearables. Through several case studies, we review how AI has transformed specific healthcare domains and discuss the remaining challenges and possible solutions. Additionally, we will discuss methodologies for assessing AI healthcare solutions, ethical challenges of AI deployment, and the importance of data privacy and bias mitigation for responsible technology use. By presenting a critical assessment of AI's transformative potential, this review equips researchers with a deeper understanding of AI's current and future impact on healthcare. It encourages an interdisciplinary dialogue between researchers, clinicians, and technologists to navigate the complexities of AI implementation, fostering the development of AI-driven solutions that prioritize ethical standards, equity, and a patient-centered approach.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Review on Surface-Enhanced Raman Scattering",
+  "authors": [
+   "Roberto Pilot",
+   "Raffaella Signorini",
+   "Christian Durante",
+   "Laura Orian",
+   "Manjari Bhamidipati",
+   "Laura Fabris"
+  ],
+  "year": 2019,
+  "venue": "Biosensors",
+  "doi": "10.3390/bios9020057",
+  "arxiv": null,
+  "openalex": "W2938789811",
+  "cited_by": 1029,
+  "abstract": "Surface-enhanced Raman scattering (SERS) has become a powerful tool in chemical, material and life sciences, owing to its intrinsic features (i.e., fingerprint recognition capabilities and high sensitivity) and to the technological advancements that have lowered the cost of the instruments and improved their sensitivity and user-friendliness. We provide an overview of the most significant aspects of SERS. First, the phenomena at the basis of the SERS amplification are described. Then, the measurement of the enhancement and the key factors that determine it (the materials, the hot spots, and the analyte-surface distance) are discussed. A section is dedicated to the analysis of the relevant factors for the choice of the excitation wavelength in a SERS experiment. Several types of substrates and fabrication methods are illustrated, along with some examples of the coupling of SERS with separation and capturing techniques. Finally, a representative selection of applications in the biomedical field, with direct and indirect protocols, is provided. We intentionally avoided using a highly technical language and, whenever possible, intuitive explanations of the involved phenomena are provided, in order to make this review suitable to scientists with different degrees of specialization in this field.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Matching from Handcrafted to Deep Features: A Survey",
+  "authors": [
+   "Jiayi Ma",
+   "Xingyu Jiang",
+   "Aoxiang Fan",
+   "Junjun Jiang",
+   "Junchi Yan"
+  ],
+  "year": 2020,
+  "venue": "International Journal of Computer Vision",
+  "doi": "10.1007/s11263-020-01359-2",
+  "arxiv": null,
+  "openalex": "W3047057232",
+  "cited_by": 1010,
+  "abstract": "Abstract As a fundamental and critical task in various visual applications, image matching can identify then correspond the same or similar structure/content from two or more images. Over the past decades, growing amount and diversity of methods have been proposed for image matching, particularly with the development of deep learning techniques over the recent years. However, it may leave several open questions about which method would be a suitable choice for specific applications with respect to different scenarios and task requirements and how to design better image matching methods with superior performance in accuracy, robustness and efficiency. This encourages us to conduct a comprehensive and systematic review and analysis for those classical and latest techniques. Following the feature-based image matching pipeline, we first introduce feature detection, description, and matching techniques from handcrafted methods to trainable ones and provide an analysis of the development of these methods in theory and practice. Secondly, we briefly introduce several typical image matching-based applications for a comprehensive understanding of the significance of image matching. In addition, we also provide a comprehensive and objective comparison of these classical and latest techniques through extensive experiments on representative datasets. Finally, we conclude with the current status of image matching technologies and deliver insightful discussions and prospects for future works. This survey can serve as a reference for (but not limited to) researchers and engineers in image matching and related fields.",
+  "source": "openalex"
+ },
+ {
+  "title": "Cold spraying – A materials perspective",
+  "authors": [
+   "Hamid Assadi",
+   "H. Kreye",
+   "Frank Gärtner",
+   "Thomas Klassen"
+  ],
+  "year": 2016,
+  "venue": "Acta Materialia",
+  "doi": "10.1016/j.actamat.2016.06.034",
+  "arxiv": null,
+  "openalex": "W2463647074",
+  "cited_by": 946,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on In-context Learning",
+  "authors": [
+   "Qingxiu Dong",
+   "Lei Li",
+   "Damai Dai",
+   "Zheng, Ce",
+   "Ma, Jingyuan",
+   "Li, Rui",
+   "Xia, Heming",
+   "Jingjing Xu",
+   "Zhiyong Wu",
+   "Liu, Tianyu",
+   "Baobao Chang",
+   "Sun, Xu",
+   "Lei Li",
+   "Zhifang Sui"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2301.00234",
+  "arxiv": "2301.00234",
+  "openalex": "W4313483544",
+  "cited_by": 942,
+  "abstract": "With the increasing capabilities of large language models (LLMs), in-context learning (ICL) has emerged as a new paradigm for natural language processing (NLP), where LLMs make predictions based on contexts augmented with a few examples. It has been a significant trend to explore ICL to evaluate and extrapolate the ability of LLMs. In this paper, we aim to survey and summarize the progress and challenges of ICL. We first present a formal definition of ICL and clarify its correlation to related studies. Then, we organize and discuss advanced techniques, including training strategies, prompt designing strategies, and related analysis. Additionally, we explore various ICL application scenarios, such as data engineering and knowledge updating. Finally, we address the challenges of ICL and suggest potential directions for further research. We hope that our work can encourage more research on uncovering how ICL works and improving ICL.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+  "authors": [
+   "Wenqi Fan",
+   "Yujuan Ding",
+   "Liangbo Ning",
+   "Shijie Wang",
+   "Hengyun Li",
+   "Dawei Yin",
+   "Tat‐Seng Chua",
+   "Qing Li"
+  ],
+  "year": 2024,
+  "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+  "doi": "10.1145/3637528.3671470",
+  "arxiv": "2405.06211",
+  "openalex": "W4401857375",
+  "cited_by": 939,
+  "abstract": "As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the quality of the generated content of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: Furthermore, to deliver deeper insights, we discuss current limitations and several promising directions for future research. Updated information about this survey can be found at: https://advanced-recommender-systems.github.io/RAG-Meets-LLMs/",
+  "source": "openalex"
+ },
+ {
+  "title": "CNN Variants for Computer Vision: History, Architecture, Application, Challenges and Future Scope",
+  "authors": [
+   "Dulari Bhatt",
+   "Chirag I Patel",
+   "Hardik N Talsania",
+   "Jigar Patel",
+   "Rasmika Vaghela",
+   "Sharnil Pandya",
+   "Kirit J. Modi",
+   "Hemant Ghayvat"
+  ],
+  "year": 2021,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics10202470",
+  "arxiv": null,
+  "openalex": "W3206824631",
+  "cited_by": 931,
+  "abstract": "Computer vision is becoming an increasingly trendy word in the area of image processing. With the emergence of computer vision applications, there is a significant demand to recognize objects automatically. Deep CNN (convolution neural network) has benefited the computer vision community by producing excellent results in video processing, object recognition, picture classification and segmentation, natural language processing, speech recognition, and many other fields. Furthermore, the introduction of large amounts of data and readily available hardware has opened new avenues for CNN study. Several inspirational concepts for the progress of CNN have been investigated, including alternative activation functions, regularization, parameter optimization, and architectural advances. Furthermore, achieving innovations in architecture results in a tremendous enhancement in the capacity of the deep CNN. Significant emphasis has been given to leveraging channel and spatial information, with a depth of architecture and information processing via multi-path. This survey paper focuses mainly on the primary taxonomy and newly released deep CNN architectures, and it divides numerous recent developments in CNN architectures into eight groups. Spatial exploitation, multi-path, depth, breadth, dimension, channel boosting, feature-map exploitation, and attention-based CNN are the eight categories. The main contribution of this manuscript is in comparing various architectural evolutions in CNN by its architectural change, strengths, and weaknesses. Besides, it also includes an explanation of the CNN’s components, the strengths and weaknesses of various CNN variants, research gap or open challenges, CNN applications, and the future research direction.",
+  "source": "openalex"
+ },
+ {
+  "title": "Connecting the dots in trustworthy Artificial Intelligence: From AI principles, ethics, and key requirements to responsible AI systems and regulation",
+  "authors": [
+   "Natalia Díaz-Rodríguez",
+   "Javier Del Ser",
+   "Mark Coeckelbergh",
+   "Marcos López de Prado",
+   "Enrique Herrera‐Viedma",
+   "Francisco Herrera"
+  ],
+  "year": 2023,
+  "venue": "Information Fusion",
+  "doi": "10.1016/j.inffus.2023.101896",
+  "arxiv": "2305.02231",
+  "openalex": "W4381848566",
+  "cited_by": 915,
+  "abstract": "Trustworthy Artificial Intelligence (AI) is based on seven technical requirements sustained over three main pillars that should be met throughout the system’s entire life cycle: it should be (1) lawful, (2) ethical, and (3) robust, both from a technical and a social perspective. However, attaining truly trustworthy AI concerns a wider vision that comprises the trustworthiness of all processes and actors that are part of the system’s life cycle, and considers previous aspects from different lenses. A more holistic vision contemplates four essential axes: the global principles for ethical use and development of AI-based systems, a philosophical take on AI ethics, a risk-based approach to AI regulation, and the mentioned pillars and requirements. The seven requirements (human agency and oversight; robustness and safety; privacy and data governance; transparency; diversity, non-discrimination and fairness; societal and environmental wellbeing; and accountability) are analyzed from a triple perspective: What each requirement for trustworthy AI is, Why it is needed, and How each requirement can be implemented in practice. On the other hand, a practical approach to implement trustworthy AI systems allows defining the concept of responsibility of AI-based systems facing the law, through a given auditing process. Therefore, a responsible AI system is the resulting notion we introduce in this work, and a concept of utmost necessity that can be realized through auditing processes, subject to the challenges posed by the use of regulatory sandboxes. Our multidisciplinary vision of trustworthy AI culminates in a debate on the diverging views published lately about the future of AI. Our reflections in this matter conclude that regulation is a key for reaching a consensus among these views, and that trustworthy and responsible AI systems will be crucial for the present and future of our society.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion models in medical imaging: A comprehensive survey",
+  "authors": [
+   "Amirhossein Kazerouni",
+   "Ehsan Khodapanah Aghdam",
+   "Moein Heidari",
+   "Reza Azad",
+   "Mohsen Fayyaz",
+   "Ilker Hacihaliloglu",
+   "Dorit Merhof"
+  ],
+  "year": 2023,
+  "venue": "Medical Image Analysis",
+  "doi": "10.1016/j.media.2023.102846",
+  "arxiv": "2211.07804",
+  "openalex": "W4377695098",
+  "cited_by": 849,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "State of the Art in Defect Detection Based on Machine Vision",
+  "authors": [
+   "Zhonghe Ren",
+   "Fengzhou Fang",
+   "Ning Yan",
+   "You Wu"
+  ],
+  "year": 2021,
+  "venue": "International Journal of Precision Engineering and Manufacturing-Green Technology",
+  "doi": "10.1007/s40684-021-00343-6",
+  "arxiv": null,
+  "openalex": "W3164104137",
+  "cited_by": 849,
+  "abstract": "Abstract Machine vision significantly improves the efficiency, quality, and reliability of defect detection. In visual inspection, excellent optical illumination platforms and suitable image acquisition hardware are the prerequisites for obtaining high-quality images. Image processing and analysis are key technologies in obtaining defect information, while deep learning is significantly impacting the field of image analysis. In this study, a brief history and the state of the art in optical illumination, image acquisition, image processing, and image analysis in the field of visual inspection are systematically discussed. The latest developments in industrial defect detection based on machine vision are introduced. In the further development of the field of visual inspection, the application of deep learning will play an increasingly important role. Thus, a detailed description of the application of deep learning in defect classification, localization and segmentation follows the discussion of traditional defect detection algorithms. Finally, future prospects for the development of visual inspection technology are explored.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quantum random number generators",
+  "authors": [
+   "Miguel Herrero-Collantes",
+   "Juan Carlos García-Escartín"
+  ],
+  "year": 2017,
+  "venue": "Reviews of Modern Physics",
+  "doi": "10.1103/revmodphys.89.015004",
+  "arxiv": "1604.03304",
+  "openalex": "W2988683112",
+  "cited_by": 802,
+  "abstract": "In mathematics and computer science, random numbers have the role of a resource for assisting proofs, making cryptography secure, and enabling computational protocols. This role motivates efforts to produce random numbers as a physical process. Potential physical sources abound, but arguably the most fundamental are those based on elementary quantum mechanical processes. This review discusses the current status of devices that generate quantum random numbers.",
+  "source": "openalex"
+ },
+ {
+  "title": "MTEB: Massive Text Embedding Benchmark",
+  "authors": [
+   "Niklas Muennighoff",
+   "Nouamane Tazi",
+   "Loïc Magne",
+   "Nils Reimers"
+  ],
+  "year": 2023,
+  "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+  "doi": "10.18653/v1/2023.eacl-main.148",
+  "arxiv": "2210.07316",
+  "openalex": "W4386576685",
+  "cited_by": 798,
+  "abstract": "Text embeddings are commonly evaluated on a small set of datasets from a single task not covering their possible applications to other tasks.It is unclear whether state-of-the-art embeddings on semantic textual similarity (STS) can be equally well applied to other tasks like clustering or reranking.This makes progress in the field difficult to track, as various models are constantly being proposed without proper evaluation.To solve this problem, we introduce the Massive Text Embedding Benchmark (MTEB).MTEB spans 8 embedding tasks covering a total of 58 datasets and 112 languages.Through the benchmarking of 33 models on MTEB, we establish the most comprehensive benchmark of text embeddings to date.We find that no particular text embedding method dominates across all tasks.This suggests that the field has yet to converge on a universal text embedding method and scale it up sufficiently to provide state-of-the-art results on all embedding tasks.MTEB comes with open-source code and a public leaderboard at https://github.com/ embeddings-benchmark/mteb.",
+  "source": "openalex"
+ },
+ {
+  "title": "Real Image Denoising With Feature Attention",
+  "authors": [
+   "Saeed Anwar",
+   "Nick M. Barnes"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00325",
+  "arxiv": "1904.07396",
+  "openalex": "W2940805846",
+  "cited_by": 776,
+  "abstract": "Deep convolutional neural networks perform better on images containing spatially invariant noise (synthetic noise); however, its performance is limited on real-noisy photographs and requires multiple stage network modeling. To advance the practicability of the denoising algorithms, this paper proposes a novel single-stage blind real image denoising network (RIDNet) by employing a modular architecture. We use residual on the residual structure to ease the flow of low-frequency information and apply feature attention to exploit the channel dependencies. Furthermore, the evaluation in terms of quantitative metrics and visual quality on three synthetic and four real noisy datasets against 19 state-of-the-art algorithms demonstrate the superiority of our RIDNet.",
+  "source": "openalex"
+ },
+ {
+  "title": "Align Your Latents: High-Resolution Video Synthesis with Latent Diffusion Models",
+  "authors": [
+   "Andreas Blattmann",
+   "Robin Rombach",
+   "Huan Ling",
+   "Tim Dockhorn",
+   "Seung Wook Kim",
+   "Sanja Fidler",
+   "Karsten Kreis"
+  ],
+  "year": 2023,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52729.2023.02161",
+  "arxiv": "2304.08818",
+  "openalex": "W4386071957",
+  "cited_by": 741,
+  "abstract": "Latent Diffusion Models (LDMs) enable high-quality image synthesis while avoiding excessive compute demands by training a diffusion model in a compressed lower-dimensional latent space. Here, we apply the LDM paradigm to high-resolution video generation, a particularly resource-intensive task. We first pre-train an LDM on images only; then, we turn the image generator into a video generator by introducing a temporal dimension to the latent space diffusion model and finetuning on encoded image sequences, i.e., videos. Similarly, we temporally align diffusion model upsamplers, turning them into temporally consistent video super resolution models. We focus on two relevant real-world applications: Simulation of in-the-wild driving data and creative content creation with text-to-video modeling. In particular, we validate our Video LDM on real driving videos of resolution$512 \\times 1024$, achieving state-of-the-art performance. Furthermore, our approach can easily leverage off-the-shelf pretrained image LDMs, as we only need to train a temporal alignment model in that case. Doing so, we turn the publicly available, state-of-the-art text-to-image LDM Stable Diffusion into an efficient and expressive text-to-video model with resolution up to$1280 \\times 2048$. We show that the temporal layers trained in this way generalize to different finetuned text-to-image LDMs. Utilizing this property, we show the first results for personalized text-to-video generation, opening exciting directions for future content creation. Project page: https://nv-tlabs.github.io/VideoLDM/",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Generative Modelling: A Comparative Review of VAEs, GANs, Normalizing Flows, Energy-Based and Autoregressive Models",
+  "authors": [
+   "Sam Bond-Taylor",
+   "Adam Leach",
+   "Yang Long",
+   "Chris G. Willcocks"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2021.3116668",
+  "arxiv": "2103.04922",
+  "openalex": "W3135287914",
+  "cited_by": 733,
+  "abstract": "Deep generative models are a class of techniques that train deep neural networks to model the distribution of training samples. Research has fragmented into various interconnected approaches, each of which make trade-offs including run-time, diversity, and architectural restrictions. In particular, this compendium covers energy-based models, variational autoencoders, generative adversarial networks, autoregressive models, normalizing flows, in addition to numerous hybrid approaches. These techniques are compared and contrasted, explaining the premises behind each and how they are interrelated, while reviewing current state-of-the-art advances and implementations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning for Classification of Hyperspectral Data: A Comparative Review",
+  "authors": [
+   "Nicolas Audebert",
+   "Bertrand Le Saux",
+   "Sébastien Lefèvre"
+  ],
+  "year": 2019,
+  "venue": "IEEE Geoscience and Remote Sensing Magazine",
+  "doi": "10.1109/mgrs.2019.2912563",
+  "arxiv": "1904.10674",
+  "openalex": "W2962770389",
+  "cited_by": 706,
+  "abstract": "In recent years, deep-learning techniques revolutionized the way remote sensing data are processed. The classification of hyperspectral data is no exception to the rule, but it has intrinsic specificities that make the application of deep learning less straightforward than with other optical data. This article presents the state of the art of previous machine-learning approaches, reviews the various deep learning approaches currently proposed for hyperspectral classification, and identifies the problems and difficulties that arise in the implementation of deep neural networks for this task. In particular, the issues of spatial and spectral resolution, data volume, and transfer of models from multimedia images to hyperspectral data are addressed. Additionally, a comparative study of various families of network architectures is provided, and a software toolbox is publicly released to allow experimenting with these methods (https://github.com/nshaud/DeepHyperX). This article is intended for both data scientists with interest in hyperspectral data and remote sensing experts eager to apply deep learning techniques to their own data set.",
+  "source": "openalex"
+ },
+ {
+  "title": "A comprehensive survey on pretrained foundation models: a history from BERT to ChatGPT",
+  "authors": [
+   "Ce Zhou",
+   "Qian Li",
+   "Chen Li",
+   "Jun Yu",
+   "Yixin Liu",
+   "Guangjing Wang",
+   "Kai Zhang",
+   "Cheng Ji",
+   "Qiben Yan",
+   "Lifang He",
+   "Hao Peng",
+   "Jianxin Li",
+   "Jia Xin Wu",
+   "Ziwei Liu",
+   "Pengtao Xie",
+   "Caiming Xiong",
+   "Jian Pei",
+   "Philip S. Yu",
+   "Lichao Sun"
+  ],
+  "year": 2024,
+  "venue": "International Journal of Machine Learning and Cybernetics",
+  "doi": "10.1007/s13042-024-02443-6",
+  "arxiv": "2302.09419",
+  "openalex": "W4404658388",
+  "cited_by": 703,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook",
+  "authors": [
+   "Mike Davies",
+   "Andreas Wild",
+   "Garrick Orchard",
+   "Yulia Sandamirskaya",
+   "G. A. Fonseca Guerra",
+   "Prasad Joshi",
+   "Philipp Plank",
+   "Sumedh R. Risbud"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3067593",
+  "arxiv": null,
+  "openalex": "W3139657805",
+  "cited_by": 703,
+  "abstract": "Deep artificial neural networks apply principles of the brain's information processing that led to breakthroughs in machine learning spanning many problem domains. Neuromorphic computing aims to take this a step further to chips more directly inspired by the form and function of biological neural circuits, so they can process new knowledge, adapt, behave, and learn in real time at low power levels. Despite several decades of research, until recently, very few published results have shown that today's neuromorphic chips can demonstrate quantitative computational value. This is now changing with the advent of Intel's Loihi, a neuromorphic research processor designed to support a broad range of spiking neural networks with sufficient scale, performance, and features to deliver competitive results compared to state-of-the-art contemporary computing architectures. This survey reviews results that are obtained to date with Loihi across the major algorithmic domains under study, including deep learning approaches and novel approaches that aim to more directly harness the key features of spike-based neuromorphic hardware. While conventional feedforward deep neural networks show modest if any benefit on Loihi, more brain-inspired networks using recurrence, precise spike-timing relationships, synaptic plasticity, stochasticity, and sparsity perform certain computation with orders of magnitude lower latency and energy compared to state-of-the-art conventional approaches. These compelling neuromorphic networks solve a diverse range of problems representative of brain-like computation, such as event-based data processing, adaptive control, constrained optimization, sparse feature regression, and graph search.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reproducible Scaling Laws for Contrastive Language-Image Learning",
+  "authors": [
+   "Mehdi Cherti",
+   "Romain Beaumont",
+   "Ross Wightman",
+   "Mitchell Wortsman",
+   "Gabriel Ilharco",
+   "Cade Gordon",
+   "Christoph G. Schuhmann",
+   "Ludwig Schmidt",
+   "Jenia Jitsev"
+  ],
+  "year": 2023,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52729.2023.00276",
+  "arxiv": "2212.07143",
+  "openalex": "W4386065512",
+  "cited_by": 699,
+  "abstract": "Scaling up neural networks has led to remarkable performance across a wide range of tasks. Moreover, performance often follows reliable scaling laws as a function of training set size, model size, and compute, which offers valuable guidance as large-scale experiments are becoming increasingly expensive. However, previous work on scaling laws has primarily used private data & models or focused on uni-modal language or vision learning. To address these limitations, we investigate scaling laws for contrastive language-image pre-training (CLIP) with the public LAION dataset and the open-source OpenCLIP repository. Our large-scale experiments involve models trained on up to two billion image-text pairs and identify power law scaling for multiple downstream tasks including zero-shot classification, retrieval, linear probing, and end-to-end fine-tuning. We find that the training distribution plays a key role in scaling laws as the OpenAI and OpenCLIP models exhibit different scaling behavior despite identical model architectures and similar training recipes. We open-source our evaluation workflow and all models, including the largest public CLIP models, to ensure reproducibility and make scaling laws research more accessible. Source code and instructions to reproduce this study is available at https://github.eom/LAION-AI/sealing-laws-openelip.",
+  "source": "openalex"
+ },
+ {
+  "title": "Multi-Concept Customization of Text-to-Image Diffusion",
+  "authors": [
+   "Nupur Kumari",
+   "Bingliang Zhang",
+   "Richard Zhang",
+   "Eli Shechtman",
+   "Jun-Yan Zhu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52729.2023.00192",
+  "arxiv": "2212.04488",
+  "openalex": "W4386076425",
+  "cited_by": 689,
+  "abstract": "While generative models produce high-quality images of concepts learned from a large-scale database, a user often wishes to synthesize instantiations of their own concepts (for example, their family, pets, or items). Can we teach a model to quickly acquire a new concept, given a few examples? Furthermore, can we compose multiple new concepts together? We propose Custom Diffusion, an efficient method for augmenting existing text-to-image models. We find that only optimizing a few parameters in the text-to-image conditioning mechanism is sufficiently powerful to represent new concepts while enabling fast tuning (~ 6 minutes). Additionally, we can jointly train for multiple concepts or combine multiple fine-tuned models into one via closed-form constrained optimization. Our fine-tuned model generates variations of multiple new concepts and seamlessly composes them with existing concepts in novel settings. Our method outperforms or performs on par with several baselines and concurrent works in both qualitative and quantitative evaluations, while being memory and computationally efficient.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Unfolding Network for Image Super-Resolution",
+  "authors": [
+   "Kai Zhang",
+   "Luc Van Gool",
+   "Radu Timofte"
+  ],
+  "year": 2020,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr42600.2020.00328",
+  "arxiv": "2003.10428",
+  "openalex": "W3012811655",
+  "cited_by": 688,
+  "abstract": "Learning-based single image super-resolution (SISR) methods are continuously showing superior effectiveness and efficiency over traditional model-based methods, largely due to the end-to-end training. However, different from model-based methods that can handle the SISR problem with different scale factors, blur kernels and noise levels under a unified MAP (maximum a posteriori) framework, learning-based methods generally lack such flexibility. To address this issue, this paper proposes an end-to-end trainable unfolding network which leverages both learningbased methods and model-based methods. Specifically, by unfolding the MAP inference via a half-quadratic splitting algorithm, a fixed number of iterations consisting of alternately solving a data subproblem and a prior subproblem can be obtained. The two subproblems then can be solved with neural modules, resulting in an end-to-end trainable, iterative network. As a result, the proposed network inherits the flexibility of model-based methods to super-resolve blurry, noisy images for different scale factors via a single model, while maintaining the advantages of learning-based methods. Extensive experiments demonstrate the superiority of the proposed deep unfolding network in terms of flexibility, effectiveness and also generalizability.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Generative Diffusion Models",
+  "authors": [
+   "Hanqun Cao",
+   "Cheng Tan",
+   "Zhangyang Gao",
+   "Yilun Xu",
+   "Guangyong Chen",
+   "Pheng‐Ann Heng",
+   "Stan Ziqing Li"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Knowledge and Data Engineering",
+  "doi": "10.1109/tkde.2024.3361474",
+  "arxiv": "2209.02646",
+  "openalex": "W4391468387",
+  "cited_by": 677,
+  "abstract": "Deep generative models have unlocked another profound realm of human creativity. By capturing and generalizing patterns within data, we have entered the epoch of all-encompassing Artificial Intelligence for General Creativity (AIGC). Notably, diffusion models, recognized as one of the paramount generative models, materialize human ideation into tangible instances across diverse domains, encompassing imagery, text, speech, biology, and healthcare. To provide advanced and comprehensive insights into diffusion, this survey comprehensively elucidates its developmental trajectory and future directions from three distinct angles: the fundamental formulation of diffusion, algorithmic enhancements, and the manifold applications of diffusion. Each layer is meticulously explored to offer a profound comprehension of its evolution. Structured and summarized approaches are presented here.",
+  "source": "openalex"
+ },
+ {
+  "title": "The Power of Generative AI: A Review of Requirements, Models, Input–Output Formats, Evaluation Metrics, and Challenges",
+  "authors": [
+   "Ajay Bandi",
+   "Pydi Venkata Satya Ramesh Adapa",
+   "Yudu Eswar Vinay Pratap Kumar Kuchi"
+  ],
+  "year": 2023,
+  "venue": "Future Internet",
+  "doi": "10.3390/fi15080260",
+  "arxiv": null,
+  "openalex": "W4385416665",
+  "cited_by": 676,
+  "abstract": "Generative artificial intelligence (AI) has emerged as a powerful technology with numerous applications in various domains. There is a need to identify the requirements and evaluation metrics for generative AI models designed for specific tasks. The purpose of the research aims to investigate the fundamental aspects of generative AI systems, including their requirements, models, input–output formats, and evaluation metrics. The study addresses key research questions and presents comprehensive insights to guide researchers, developers, and practitioners in the field. Firstly, the requirements necessary for implementing generative AI systems are examined and categorized into three distinct categories: hardware, software, and user experience. Furthermore, the study explores the different types of generative AI models described in the literature by presenting a taxonomy based on architectural characteristics, such as variational autoencoders (VAEs), generative adversarial networks (GANs), diffusion models, transformers, language models, normalizing flow models, and hybrid models. A comprehensive classification of input and output formats used in generative AI systems is also provided. Moreover, the research proposes a classification system based on output types and discusses commonly used evaluation metrics in generative AI. The findings contribute to advancements in the field, enabling researchers, developers, and practitioners to effectively implement and evaluate generative AI models for various applications. The significance of the research lies in understanding that generative AI system requirements are crucial for effective planning, design, and optimal performance. A taxonomy of models aids in selecting suitable options and driving advancements. Classifying input–output formats enables leveraging diverse formats for customized systems, while evaluation metrics establish standardized methods to assess model quality and performance.",
+  "source": "openalex"
+ }
+]

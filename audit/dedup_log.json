@@ -1,0 +1,4030 @@
+{
+ "n_records": 3621,
+ "n_unique": 2320,
+ "matched_existing": [
+  {
+   "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+   "existing": "robust_turbo_ddcm"
+  },
+  {
+   "title": "DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+   "existing": "deepjscc_q"
+  },
+  {
+   "title": "D²-JSCC: Digital Deep Joint Source-Channel Coding for Semantic Communications",
+   "existing": "d2jscc"
+  },
+  {
+   "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+   "existing": "ntscc"
+  },
+  {
+   "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+   "existing": "deepjscc_l"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+   "existing": "deepjscc"
+  },
+  {
+   "title": "ESC-MVQ: End-to-End Semantic Communication With Multi-Codebook Vector Quantization",
+   "existing": "esc_mvq"
+  },
+  {
+   "title": "Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder",
+   "existing": "jcm"
+  },
+  {
+   "title": "Lossy Image Compression with Conditional Diffusion Models",
+   "existing": "cdc"
+  },
+  {
+   "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
+   "existing": "turbo_ddcm"
+  },
+  {
+   "title": "An Introduction to Deep Learning for the Physical Layer",
+   "existing": "oshea_phy"
+  },
+  {
+   "title": "Denoising Diffusion Probabilistic Models",
+   "existing": "ddpm"
+  },
+  {
+   "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+   "existing": "adjscc"
+  },
+  {
+   "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+   "existing": "deepjscc_f"
+  },
+  {
+   "title": "SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+   "existing": "swinjscc"
+  },
+  {
+   "title": "Variational image compression with a scale hyperprior",
+   "existing": "scale_hyperprior"
+  },
+  {
+   "title": "End-to-end Optimized Image Compression",
+   "existing": "balle_e2e"
+  },
+  {
+   "title": "Overview of the Versatile Video Coding (VVC) Standard and its Applications",
+   "existing": "vvc"
+  },
+  {
+   "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+   "existing": "cheng2020"
+  },
+  {
+   "title": "Lossy Image Compression with Compressive Autoencoders",
+   "existing": "cae"
+  },
+  {
+   "title": "Variable Rate Image Compression with Recurrent Neural Networks",
+   "existing": "toderici_rnn"
+  },
+  {
+   "title": "Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+   "existing": "channel_ar"
+  },
+  {
+   "title": "ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding",
+   "existing": "elic"
+  },
+  {
+   "title": "Neural Joint Source-Channel Coding",
+   "existing": "necst"
+  },
+  {
+   "title": "Joint Autoregressive and Hierarchical Priors for Learned Image Compression",
+   "existing": "minnen_joint"
+  },
+  {
+   "title": "High-Fidelity Generative Image Compression",
+   "existing": "hific"
+  },
+  {
+   "title": "Checkerboard Context Model for Efficient Learned Image Compression",
+   "existing": "checkerboard"
+  },
+  {
+   "title": "Learned Image Compression with Mixed Transformer-CNN Architectures",
+   "existing": "tcm"
+  },
+  {
+   "title": "Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip",
+   "existing": "iabf"
+  },
+  {
+   "title": "A Mathematical Theory of Communication",
+   "existing": "shannon1948"
+  },
+  {
+   "title": "Low-density parity-check codes",
+   "existing": "gallager_ldpc"
+  },
+  {
+   "title": "Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels",
+   "existing": "polar"
+  }
+ ],
+ "merged_groups": [
+  {
+   "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+   "n_records": 7,
+   "doi": "10.48550/arxiv.2610.25682",
+   "arxiv": "2610.25682"
+  },
+  {
+   "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+   "n_records": 5,
+   "doi": "10.48550/arxiv.2604.05743",
+   "arxiv": "2604.05743"
+  },
+  {
+   "title": "Deep learning-based image compression for wireless communications: impacts on robustness, throughput, and latency",
+   "n_records": 3,
+   "doi": "10.1038/s44459-025-00019-6",
+   "arxiv": "2411.10650"
+  },
+  {
+   "title": "Learnable Pilot Design for OFDM-based Deep Joint Source-Channel Coding",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2610.25979",
+   "arxiv": "2610.25979"
+  },
+  {
+   "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+   "n_records": 10,
+   "doi": null,
+   "arxiv": "2610.21166"
+  },
+  {
+   "title": "Neural Network Verification for Deep Joint Source-Channel Coding",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2610.11994",
+   "arxiv": "2610.11994"
+  },
+  {
+   "title": "TwinViT-DeepJSCC: Adversarially Robust Semantic Image Communication",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2610.08590"
+  },
+  {
+   "title": "TokenComSR: Task-Sensitivity-Guided Token Communication for Wireless Image Super-Resolution",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2609.03735"
+  },
+  {
+   "title": "Ada-TokenCom: Rate-Adaptive Token Communications via Large-Model-Driven Token Compression and Generation",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2608.28086"
+  },
+  {
+   "title": "Knowledge Distillation Driven Semantic NOMA with GAN Refinement for 6G Robotic Vehicle Networks",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2608.27198"
+  },
+  {
+   "title": "FlowSem: Flow Matching for Adaptive Wireless Image Transmission in Semantic Communication",
+   "n_records": 6,
+   "doi": null,
+   "arxiv": "2608.21651"
+  },
+  {
+   "title": "Flexible Deep Joint Source-Channel Coding: A Vibrotactile Example",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2608.15070",
+   "arxiv": "2608.15070"
+  },
+  {
+   "title": "Energy-Aware Compression-Computation Co-Adaptation for Latency Minimization in Multi-User Semantic Communication",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2608.13632"
+  },
+  {
+   "title": "Domain-Adaptive Deep Joint Source-Channel Coding for Image Classification",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2607.28907",
+   "arxiv": "2607.28907"
+  },
+  {
+   "title": "GenED-SC: Generative Editing Semantic Communication with Integrated Multi-Modal LLMs",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2606.04015"
+  },
+  {
+   "title": "DJSCC-Enabled Multi-User Semantic CSI Feedback for Hybrid Beamforming in Dual-Polarized cmWave Massive MIMO",
+   "n_records": 4,
+   "doi": null,
+   "arxiv": "2605.19489"
+  },
+  {
+   "title": "ChronoSC: Task-Oriented Semantic Communication via Temporal-to-Color Encoding",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2605.16388"
+  },
+  {
+   "title": "Selective Depthwise Separable Convolution for Lightweight Joint Source-Channel Coding in Wireless Image Transmission",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2604.22338"
+  },
+  {
+   "title": "Lightweight low-SNR-robust semantic communication system for autonomous driving",
+   "n_records": 8,
+   "doi": "10.1016/j.adhoc.2026.104414",
+   "arxiv": "2604.20278"
+  },
+  {
+   "title": "Semantic-Aware UAV Command and Control for Efficient IoT Data Collection",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2604.08153"
+  },
+  {
+   "title": "Rateless DeepJSCC for Broadcast Channels: a Rate-Distortion-Complexity Tradeoff",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2603.21616",
+   "arxiv": "2603.21616"
+  },
+  {
+   "title": "Topology-Preserving Deep Joint Source-Channel Coding for Semantic Communication",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2603.17126"
+  },
+  {
+   "title": "Doubly Adaptive Channel and Spatial Attention for Semantic Image Communication by IoT Devices",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2602.22794"
+  },
+  {
+   "title": "U-Net-Based Generative Joint Source-Channel Coding for Wireless Image Transmission",
+   "n_records": 6,
+   "doi": "10.48550/arxiv.2602.22691",
+   "arxiv": "2602.22691"
+  },
+  {
+   "title": "Extended Universal Joint Source-Channel Coding for Digital Semantic Communications: Improving Channel-Adaptability",
+   "n_records": 8,
+   "doi": "10.48550/arxiv.2602.14018",
+   "arxiv": "2602.14018"
+  },
+  {
+   "title": "Robust Semantic Transmission for Low-Altitude UAVs: Predictive Channel-Aware Scheduling and Generative Reconstruction",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2602.10482"
+  },
+  {
+   "title": "Toward a Unified Semantic Loss Model for Deep JSCC-based Transmission of EO Imagery",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2602.00136"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Video Transmission with Asymmetric Context",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2601.06170"
+  },
+  {
+   "title": "DiT-JSCC: Rethinking Deep JSCC With Diffusion Transformers and Semantic Representations",
+   "n_records": 5,
+   "doi": "10.1109/tccn.2026.3705826",
+   "arxiv": "2601.03112"
+  },
+  {
+   "title": "Robust Deep Joint Source-Channel Coding for Video Transmission over Multipath Fading Channel",
+   "n_records": 3,
+   "doi": "10.1109/globecom59602.2025.11432569",
+   "arxiv": "2601.01729"
+  },
+  {
+   "title": "Visual Event Detection over AI-Edge LEO Satellites with AoI Awareness",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2512.19764"
+  },
+  {
+   "title": "Image Semantic Communication With Quadtree Partition-Based Coding",
+   "n_records": 5,
+   "doi": "10.1109/jsac.2025.3644827",
+   "arxiv": "2512.05395"
+  },
+  {
+   "title": "Text-Guided Diffusion Model-based Generative Communication for Wireless Image Transmission",
+   "n_records": 8,
+   "doi": "10.48550/arxiv.2510.21299",
+   "arxiv": "2510.21299"
+  },
+  {
+   "title": "Channel-Aware Vector Quantization for Robust Semantic Communication on Discrete Channels",
+   "n_records": 6,
+   "doi": "10.48550/arxiv.2510.18604",
+   "arxiv": "2510.18604"
+  },
+  {
+   "title": "Distribution-Aligned Representation Adaptation for DJSCC over Hybrid Wireless-Wired Networks",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2510.13422"
+  },
+  {
+   "title": "Timeliness-Aware Joint Source and Channel Coding for Adaptive Image Transmission",
+   "n_records": 6,
+   "doi": "10.1109/gcwkshps68340.2025.11591120",
+   "arxiv": "2509.19754"
+  },
+  {
+   "title": "Synesthesia of Machines (SoM)-Empowered Wireless Image Transmission Over Time-Varying Dynamic Channel",
+   "n_records": 3,
+   "doi": "10.1109/twc.2026.3690314",
+   "arxiv": "2509.11243"
+  },
+  {
+   "title": "DD-JSCC: Dynamic Deep Joint Source-Channel Coding for Semantic Communications",
+   "n_records": 4,
+   "doi": "10.1109/icc52391.2025.11162089",
+   "arxiv": "2507.20467"
+  },
+  {
+   "title": "SNR and Resource Adaptive Deep JSCC for Distributed IoT Image Classification",
+   "n_records": 2,
+   "doi": "10.1109/pimrc62392.2025.11275242",
+   "arxiv": "2506.10699"
+  },
+  {
+   "title": "Region-of-Interest-Guided Deep Joint Source–Channel Coding for Image Transmission",
+   "n_records": 3,
+   "doi": "10.1109/lcomm.2025.3639610",
+   "arxiv": "2506.01269"
+  },
+  {
+   "title": "SNR-aware Semantic Image Transmission with Deep Learning-based Channel Estimation in Fading Channels",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2504.20557"
+  },
+  {
+   "title": "SING: Semantic Image Communications using Null-Space and INN-Guided Diffusion Models",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2503.12484"
+  },
+  {
+   "title": "Digital-Analog Transmission based Emergency Semantic Communications",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2501.01616"
+  },
+  {
+   "title": "Semantics-Guided Diffusion for Deep Joint Source-Channel Coding in Wireless Image Transmission",
+   "n_records": 11,
+   "doi": "10.1109/twc.2025.3591456",
+   "arxiv": "2501.01138"
+  },
+  {
+   "title": "Coarse-to-Fine: A Dual-Phase Channel-Adaptive Method for Wireless Image Transmission",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3597717",
+   "arxiv": "2412.08211"
+  },
+  {
+   "title": "Digital Wireless Image Transmission via Distribution Matching",
+   "n_records": 3,
+   "doi": "10.1109/pimrc59610.2024.10817327",
+   "arxiv": "2406.10838"
+  },
+  {
+   "title": "Diffusion-Aided Joint Source Channel Coding for High Realism Wireless Image Transmission",
+   "n_records": 7,
+   "doi": "10.1109/tmlcn.2025.3628535",
+   "arxiv": "2404.17736"
+  },
+  {
+   "title": "Joint Source-Channel Coding for Wireless Image Transmission: A Deep Compressed-Sensing Based Method",
+   "n_records": 2,
+   "doi": "10.1109/wcnc57260.2024.10571135",
+   "arxiv": "2402.07162"
+  },
+  {
+   "title": "Deep Refinement-Based Joint Source Channel Coding over Time- Varying Channels",
+   "n_records": 2,
+   "doi": "10.1109/wcnc57260.2024.10570529",
+   "arxiv": "2311.15309"
+  },
+  {
+   "title": "Distributed Deep Joint Source-Channel Coding with Decoder-Only Side Information",
+   "n_records": 3,
+   "doi": "10.1109/icmlcn59089.2024.10625214",
+   "arxiv": "2310.04311"
+  },
+  {
+   "title": "Channel-Blind Joint Source–Channel Coding for Wireless Image Transmission",
+   "n_records": 4,
+   "doi": "10.3390/s24124005",
+   "arxiv": "2306.15183"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Entropy-Aware Adaptive Rate Control",
+   "n_records": 3,
+   "doi": "10.1109/globecom54140.2023.10437482",
+   "arxiv": "2306.02825"
+  },
+  {
+   "title": "DeepMA: End-to-End Deep Multiple Access for Wireless Image Transmission in Semantic Communication",
+   "n_records": 4,
+   "doi": "10.1109/tccn.2023.3326302",
+   "arxiv": "2303.11543"
+  },
+  {
+   "title": "Adaptive CSI Feedback for Deep Learning-Enabled Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/icc45041.2023.10278961",
+   "arxiv": "2302.13477"
+  },
+  {
+   "title": "Generative Joint Source-Channel Coding for Semantic Image Transmission",
+   "n_records": 11,
+   "doi": "10.1109/jsac.2023.3288243",
+   "arxiv": "2211.13772"
+  },
+  {
+   "title": "Deep Joint Source-Channel and Encryption Coding: Secure Semantic Communications",
+   "n_records": 5,
+   "doi": "10.1109/icc45041.2023.10278612",
+   "arxiv": "2208.09245"
+  },
+  {
+   "title": "DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+   "n_records": 13,
+   "doi": "10.1109/jsait.2022.3231042",
+   "arxiv": "2206.08100"
+  },
+  {
+   "title": "Perceptual Learned Source-Channel Coding for High-Fidelity Image Semantic Transmission",
+   "n_records": 6,
+   "doi": "10.1109/globecom48099.2022.10001359",
+   "arxiv": "2205.13120"
+  },
+  {
+   "title": "Distributed Image Transmission Using Deep Joint Source-Channel Coding",
+   "n_records": 7,
+   "doi": "10.1109/icassp43922.2022.9746268",
+   "arxiv": "2201.10340"
+  },
+  {
+   "title": "DeepWiVe: Deep-Learning-Aided Wireless Video Transmission",
+   "n_records": 7,
+   "doi": "10.1109/jsac.2022.3191354",
+   "arxiv": "2111.13034"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Adaptive Rate Control",
+   "n_records": 9,
+   "doi": "10.1109/icassp43922.2022.9746335",
+   "arxiv": "2110.04456"
+  },
+  {
+   "title": "OFDM-Guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+   "n_records": 11,
+   "doi": "10.1109/tccn.2022.3151935",
+   "arxiv": "2109.05194"
+  },
+  {
+   "title": "SNR-Adaptive Deep Joint Source-Channel Coding for Wireless Image Transmission",
+   "n_records": 8,
+   "doi": "10.1109/icassp39728.2021.9414037",
+   "arxiv": "2102.00202"
+  },
+  {
+   "title": "CLEAR: Color-Texture Latent Alignment for Single Image Reflection Removal",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2611.05969"
+  },
+  {
+   "title": "Policy Network Diffusion",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2611.04614"
+  },
+  {
+   "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2611.04386"
+  },
+  {
+   "title": "HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.35515"
+  },
+  {
+   "title": "HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.34582"
+  },
+  {
+   "title": "CompMVR: Compression-Aware Multi-View Restoration Using Diffusion Models for Geometrically Consistent 3D Reconstruction",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.32800"
+  },
+  {
+   "title": "Rethinking Video Autoencoders for Interactive World Models",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.30129"
+  },
+  {
+   "title": "Efficient Generative Image Compression with Quantized Latents Refinement",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2610.29691",
+   "arxiv": "2610.29691"
+  },
+  {
+   "title": "BiNar: Bitstream Native Restorer for Bitstream-corrupted Image Restoration",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.24094"
+  },
+  {
+   "title": "UltraDiff: Transferring High-Fidelity Priors to Compressed Latent Spaces for High-Resolution Image Generation",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.21202"
+  },
+  {
+   "title": "Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.19778"
+  },
+  {
+   "title": "H-DDCM: Hadamard Codebooks for Fast Generative Image and Video Compression",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2610.18125",
+   "arxiv": "2610.18125"
+  },
+  {
+   "title": "ResARC: Residual-Aware AutoRegressive Coding for Ultra-Low Bitrate Image Compression",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2609.39451"
+  },
+  {
+   "title": "Semantic Communications: Principles, Architectures and Applications",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2610.27544"
+  },
+  {
+   "title": "Markov-Enforced Discrete Diffusion Model for Digital Semantic Symbol Error Correction",
+   "n_records": 3,
+   "doi": "10.1109/tcomm.2026.3735802",
+   "arxiv": "2603.22983"
+  },
+  {
+   "title": "Blind MIMO Semantic Communication via Parallel Variational Diffusion: A Completely Pilot-Free Approach",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2510.27043",
+   "arxiv": "2510.27043"
+  },
+  {
+   "title": "Knowledge Distillation-Driven Semantic NOMA for Image Transmission With Diffusion Model",
+   "n_records": 4,
+   "doi": "10.1109/twc.2026.3658710",
+   "arxiv": "2509.07363"
+  },
+  {
+   "title": "SemSteDiff: Generative Diffusion Model-Based Coverless Semantic Steganography Communication",
+   "n_records": 3,
+   "doi": "10.1109/tmc.2026.3678288",
+   "arxiv": "2509.04803"
+  },
+  {
+   "title": "Generative Feature Imputing—A Technique for Error-Resilient Semantic Communication",
+   "n_records": 8,
+   "doi": "10.1109/twc.2026.3700909",
+   "arxiv": "2508.17957"
+  },
+  {
+   "title": "TOAST: Task-Oriented Adaptive Semantic Transmission over Dynamic Wireless Environments",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2506.21900"
+  },
+  {
+   "title": "Residual Diffusion Models for Variable-Rate Joint Source–Channel Coding of MIMO CSI",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2026.3666741",
+   "arxiv": "2505.21681"
+  },
+  {
+   "title": "Rate-Adaptive Generative Semantic Communication Using Conditional Diffusion Models",
+   "n_records": 3,
+   "doi": "10.1109/lwc.2024.3515656",
+   "arxiv": "2409.02597"
+  },
+  {
+   "title": "Semantic Successive Refinement: A Generative AI-Aided Semantic Communication Framework",
+   "n_records": 5,
+   "doi": "10.1109/tccn.2025.3526839",
+   "arxiv": "2408.05112"
+  },
+  {
+   "title": "Diffusion-Driven Semantic Communication for Generative Models With Bandwidth Constraints",
+   "n_records": 5,
+   "doi": "10.1109/twc.2025.3553851",
+   "arxiv": "2407.18468"
+  },
+  {
+   "title": "DMCE: Diffusion Model Channel Enhancer for Multi-User Semantic Communication Systems",
+   "n_records": 3,
+   "doi": "10.1109/icc51166.2024.10622730",
+   "arxiv": "2401.16017"
+  },
+  {
+   "title": "Generative AI for Physical Layer Communications: A Survey",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2024.3384500",
+   "arxiv": "2312.05594"
+  },
+  {
+   "title": "CommIN: Semantic Image Communications as an Inverse Problem with INN-Guided Diffusion Models",
+   "n_records": 3,
+   "doi": "10.1109/icassp48485.2024.10448462",
+   "arxiv": "2310.01130"
+  },
+  {
+   "title": "High Perceptual Quality Wireless Image Delivery with Denoising Diffusion Models",
+   "n_records": 3,
+   "doi": "10.1109/infocomwkshps61880.2024.10620904",
+   "arxiv": "2309.15889"
+  },
+  {
+   "title": "CDDM: Channel Denoising Diffusion Models for Wireless Semantic Communications",
+   "n_records": 6,
+   "doi": "10.1109/twc.2024.3379244",
+   "arxiv": "2309.08895"
+  },
+  {
+   "title": "CDDM: Channel Denoising Diffusion Models for Wireless Communications",
+   "n_records": 3,
+   "doi": "10.1109/globecom54140.2023.10436728",
+   "arxiv": "2305.09161"
+  },
+  {
+   "title": "Dual-Branch Vector-Quantization-Aided Satellite Digital Semantic Communication with Index Compression for High-Resolution RSI Over AFDM",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2609.35906",
+   "arxiv": "2609.35906"
+  },
+  {
+   "title": "Synesthesia of Machines (SoM)-Based Task-Driven MIMO System for Image Transmission",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2509.02031"
+  },
+  {
+   "title": "VQ-DeepISC: Vector Quantized-Enabled Digital Semantic Communication with Channel Adaptive Image Transmission",
+   "n_records": 4,
+   "doi": null,
+   "arxiv": "2508.03740"
+  },
+  {
+   "title": "SoundSpring: Loss-Resilient Audio Transceiver With Dual-Functional Masked Language Modeling",
+   "n_records": 6,
+   "doi": "10.1109/jsac.2025.3531406",
+   "arxiv": "2501.12696"
+  },
+  {
+   "title": "A Multi-Scale Spatial-Temporal Network for Wireless Video Transmission",
+   "n_records": 2,
+   "doi": "10.1109/gcwkshp64532.2024.11100995",
+   "arxiv": "2411.09936"
+  },
+  {
+   "title": "Joint Source–Channel Coding: Fundamentals and Recent Progress in Practical Designs",
+   "n_records": 6,
+   "doi": "10.1109/jproc.2024.3477331",
+   "arxiv": "2409.17557"
+  },
+  {
+   "title": "A Deep Joint Source-Channel Coding Scheme for Hybrid Mobile Multi-Hop Networks",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2025.3559134",
+   "arxiv": "2405.09698"
+  },
+  {
+   "title": "D²-JSCC: Digital Deep Joint Source-Channel Coding for Semantic Communications",
+   "n_records": 10,
+   "doi": "10.1109/jsac.2025.3531546",
+   "arxiv": "2403.07338"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding Over Cooperative Relay Networks",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2211.06705",
+   "arxiv": "2211.06705"
+  },
+  {
+   "title": "Semantic Communications With Discrete-Time Analog Transmission: A PAPR Perspective",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2022.3232946",
+   "arxiv": "2208.08342"
+  },
+  {
+   "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+   "n_records": 12,
+   "doi": "10.1109/jsac.2022.3180802",
+   "arxiv": "2112.10961"
+  },
+  {
+   "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+   "n_records": 12,
+   "doi": "10.1109/twc.2021.3090048",
+   "arxiv": "2009.12480"
+  },
+  {
+   "title": "Wireless Image Retrieval at the Edge",
+   "n_records": 4,
+   "doi": "10.1109/jsac.2020.3036955",
+   "arxiv": "2007.10915"
+  },
+  {
+   "title": "Successive Refinement of Images with Deep Joint Source-Channel Coding",
+   "n_records": 7,
+   "doi": "10.1109/spawc.2019.8815416",
+   "arxiv": "1903.06333"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+   "n_records": 19,
+   "doi": "10.1109/tccn.2019.2919300",
+   "arxiv": "1809.01733"
+  },
+  {
+   "title": "Spatial Semantic Communication: When Semantic Transmission Meets Index Modulation",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2026.3720492",
+   "arxiv": "2607.19934"
+  },
+  {
+   "title": "VQ-DSC-R: Robust Vector Quantized-Enabled Digital Semantic Communication With OFDM Transmission",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2026.3712380",
+   "arxiv": "2602.15045"
+  },
+  {
+   "title": "Joint Semantic-Channel Coding and Modulation for Token Communications",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3636174",
+   "arxiv": "2511.15699"
+  },
+  {
+   "title": "Rate-Adaptive Semantic Communication via Multi-Stage Vector Quantization",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2510.02646",
+   "arxiv": "2510.02646"
+  },
+  {
+   "title": "ESC-MVQ: End-to-End Semantic Communication With Multi-Codebook Vector Quantization",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3605838",
+   "arxiv": "2504.11709"
+  },
+  {
+   "title": "VQ-DeepVSC: A Dual-Stage Vector Quantization System for Video Semantic Communication",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3641237",
+   "arxiv": "2409.03393"
+  },
+  {
+   "title": "From Analog to Digital: Multi-Order Digital Joint Coding-Modulation for Semantic Communication",
+   "n_records": 4,
+   "doi": "10.1109/tcomm.2024.3511949",
+   "arxiv": "2406.05437"
+  },
+  {
+   "title": "Adaptive Wireless Image Semantic Transmission and Over-The-Air Testing",
+   "n_records": 2,
+   "doi": "10.1109/iccc62479.2024.10681697",
+   "arxiv": "2405.13403"
+  },
+  {
+   "title": "Universal Joint Source-Channel Coding for Modulation-Agnostic Semantic Communication",
+   "n_records": 4,
+   "doi": "10.1109/jsac.2025.3559138",
+   "arxiv": "2405.10749"
+  },
+  {
+   "title": "sDAC—Semantic Digital Analog Converter for Semantic Communications",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2025.3566976",
+   "arxiv": "2405.02335"
+  },
+  {
+   "title": "MOC-RVQ: Multilevel Codebook-Assisted Digital Generative Semantic Communication",
+   "n_records": 3,
+   "doi": "10.1109/globecom52923.2024.10901060",
+   "arxiv": "2401.01272"
+  },
+  {
+   "title": "Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder",
+   "n_records": 7,
+   "doi": "10.1109/tcomm.2024.3386577",
+   "arxiv": "2310.06690"
+  },
+  {
+   "title": "Digital-SC: Digital Semantic Communication With Adaptive Network Split and Learned Non-Linear Quantization",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2024.3510586",
+   "arxiv": "2305.13553"
+  },
+  {
+   "title": "End-to-End Learned Image Coding: From Rate-Distortion Optimization to Practical Deployment",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2610.22421"
+  },
+  {
+   "title": "Multi-scale Image Representation Compression",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2609.04274"
+  },
+  {
+   "title": "A Theoretical Framework for Rate-Distortion Limits in Learned Image Compression",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2601.09254"
+  },
+  {
+   "title": "Optimizing Learned Image Compression on Scalar and Entropy-Constraint Quantization",
+   "n_records": 2,
+   "doi": "10.1109/icip51287.2024.10648254",
+   "arxiv": "2506.08662"
+  },
+  {
+   "title": "ResiComp: Loss-Resilient Image Compression via Dual-Functional Masked Visual Token Modeling",
+   "n_records": 6,
+   "doi": "10.1109/tcsvt.2025.3539747",
+   "arxiv": "2502.10812"
+  },
+  {
+   "title": "End-to-End Optimized Image Compression with the Frequency-Oriented Transform",
+   "n_records": 2,
+   "doi": "10.1007/s00138-023-01507-x",
+   "arxiv": "2401.08194"
+  },
+  {
+   "title": "End-to-End Learnable Multi-Scale Feature Compression for VCM",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2023.3302858",
+   "arxiv": "2306.16670"
+  },
+  {
+   "title": "Differentiable bit-rate estimation for neural-based video codec enhancement",
+   "n_records": 2,
+   "doi": "10.1109/pcs56426.2022.10018001",
+   "arxiv": "2301.09776"
+  },
+  {
+   "title": "Lossy Image Compression with Conditional Diffusion Models",
+   "n_records": 3,
+   "doi": "10.52202/075280-2835",
+   "arxiv": "2209.06950"
+  },
+  {
+   "title": "Reducing The Amortization Gap of Entropy Bottleneck In End-to-End Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/pcs56426.2022.10018064",
+   "arxiv": "2209.00964"
+  },
+  {
+   "title": "End-to-End Rate-Distortion Optimized Learned Hierarchical Bi-Directional Video Compression",
+   "n_records": 2,
+   "doi": "10.1109/tip.2021.3138300",
+   "arxiv": "2112.09529"
+  },
+  {
+   "title": "Causal Contextual Prediction for Learned Image Compression",
+   "n_records": 5,
+   "doi": "10.1109/tcsvt.2021.3089491",
+   "arxiv": "2011.09704"
+  },
+  {
+   "title": "Neural Video Coding Using Multiscale Motion Compensation and Spatiotemporal Context Model",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2020.3035680",
+   "arxiv": "2007.04574"
+  },
+  {
+   "title": "Learning End-to-End Lossy Image Compression: A Benchmark",
+   "n_records": 3,
+   "doi": "10.1109/tpami.2021.3065339",
+   "arxiv": "2002.03711"
+  },
+  {
+   "title": "An end‐to‐end joint learning scheme of image compression and quality enhancement with improved entropy minimization",
+   "n_records": 3,
+   "doi": "10.4218/etrij.2023-0275",
+   "arxiv": "1912.12817"
+  },
+  {
+   "title": "Efficient and Effective Context-Based Convolutional Entropy Modeling for Image Compression",
+   "n_records": 3,
+   "doi": "10.1109/tip.2020.2985225",
+   "arxiv": "1906.10057"
+  },
+  {
+   "title": "Practical Full Resolution Learned Lossless Image Compression",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2019.01088",
+   "arxiv": "1811.12817"
+  },
+  {
+   "title": "Semantic-Aware Neural Video Codec for Error-Resilient Low-Latency Transmission",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2609.16279",
+   "arxiv": "2609.16279"
+  },
+  {
+   "title": "PerQ: Inverse Generative Modeling for Neural Image Compression via Quantization Error Compensation",
+   "n_records": 3,
+   "doi": null,
+   "arxiv": "2610.27374"
+  },
+  {
+   "title": "Foundation Models for Generalizable Semantic and Goal-Oriented Communication",
+   "n_records": 2,
+   "doi": "10.1109/icc59461.2026.11588119",
+   "arxiv": "2609.07853"
+  },
+  {
+   "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+   "n_records": 7,
+   "doi": "10.1109/tmc.2026.3726512",
+   "arxiv": "2608.19590"
+  },
+  {
+   "title": "Bit Allocation Transfer for Perceptual Quality Enhancement of Traditional Video Codecs",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2608.07799"
+  },
+  {
+   "title": "Towards a Joint Task-Oriented and Generative Semantic Communication Framework for 6G Networks",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2606.31426"
+  },
+  {
+   "title": "ZeroGVC: Zero-Shot Generative Video Compression with Autoregressive Diffusion Priors",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2606.22371",
+   "arxiv": "2606.22371"
+  },
+  {
+   "title": "Generative Semantic Communication via Alternating Dual-Domain Posterior Sampling",
+   "n_records": 2,
+   "doi": "10.1109/pimrc69400.2026.11711664",
+   "arxiv": "2604.16796"
+  },
+  {
+   "title": "Adaptive Semantic Communication with Residual Quantization for Resilient Vehicular Networks",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2610.10886",
+   "arxiv": "2610.10886"
+  },
+  {
+   "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+   "n_records": 6,
+   "doi": "10.48550/arxiv.2608.11845",
+   "arxiv": "2608.11845"
+  },
+  {
+   "title": "Learning to Compress and Transmit: Adaptive Rate Control for Semantic Communications over LEO Satellite-to-Ground Links",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2605.10095"
+  },
+  {
+   "title": "Cache-Enabled Generative Joint Source-Channel Coding for Evolving Semantic Communications",
+   "n_records": 4,
+   "doi": "10.1109/tcomm.2026.3735786",
+   "arxiv": "2603.17702"
+  },
+  {
+   "title": "DeepStream: Prototyping Deep Joint Source-Channel Coding for Real-Time Multimedia Transmissions",
+   "n_records": 3,
+   "doi": "10.1109/tmc.2026.3720407",
+   "arxiv": "2509.05971"
+  },
+  {
+   "title": "Learning to Interfere in Non-Orthogonal Multiple-Access Joint Source-Channel Coding",
+   "n_records": 2,
+   "doi": "10.1109/twc.2026.3688951",
+   "arxiv": "2504.03690"
+  },
+  {
+   "title": "Towards Loss-Resilient Image Coding for Unstable Satellite Networks",
+   "n_records": 6,
+   "doi": "10.1609/aaai.v39i12.33363",
+   "arxiv": "2501.11263"
+  },
+  {
+   "title": "Deep Joint Semantic Coding and Beamforming for Near-Space Airship-Borne Massive MIMO Network",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2024.3460084",
+   "arxiv": "2405.19889"
+  },
+  {
+   "title": "Evolving Semantic Communication with Generative Modelling",
+   "n_records": 2,
+   "doi": "10.1109/pimrc59610.2024.10817276",
+   "arxiv": "2403.20237"
+  },
+  {
+   "title": "Process-and-Forward: Deep Joint Source-Channel Coding Over Cooperative Relay Networks",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2025.3531579",
+   "arxiv": "2403.10613"
+  },
+  {
+   "title": "Joint Task and Data-Oriented Semantic Communications: A Deep Separate Source-Channel Coding Scheme",
+   "n_records": 3,
+   "doi": "10.1109/jiot.2023.3293154",
+   "arxiv": "2302.13580"
+  },
+  {
+   "title": "HEALPix-Based Implicit Neural Compression of Omnidirectional Images",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2610.32561"
+  },
+  {
+   "title": "ReLViC: Loss-Resilient Learned Video Coding with Dispersed Packetization and Controllable Packet Dependencies",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2608.30202"
+  },
+  {
+   "title": "Every Packet Counts: Dispersing Information for Loss-Resilient Learned Image Compression",
+   "n_records": 4,
+   "doi": "10.1145/3767308.3836205",
+   "arxiv": "2608.11096"
+  },
+  {
+   "title": "Robust and Transferable Backdoor Attacks Against Deep Image Compression With Selective Frequency Prior",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2024.3507873",
+   "arxiv": "2412.01646"
+  },
+  {
+   "title": "Compressed learning-based onboard semantic compression for remote sensing platforms",
+   "n_records": 2,
+   "doi": "10.1117/12.3031472",
+   "arxiv": "2409.01988"
+  },
+  {
+   "title": "Dual-Constrained Diffusion Image Compression for Operational Rate-Distortion-Perception Optimization",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2606.13366",
+   "arxiv": "2606.13366"
+  },
+  {
+   "title": "Application Space and the Rate-Distortion-Complexity Analysis of Neural Video CODECs",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2509.05929",
+   "arxiv": "2509.05929"
+  },
+  {
+   "title": "NIC-RobustBench: A Comprehensive Open-Source Toolkit for Neural Image Compression and Robustness Analysis",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2506.19051",
+   "arxiv": "2506.19051"
+  },
+  {
+   "title": "Transformer-based Joint Source Channel Coding for Textual Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/iccc57788.2023.10233424",
+   "arxiv": "2307.12266"
+  },
+  {
+   "title": "Grad-FEC: Unequal Loss Protection of Deep Features in Collaborative Intelligence",
+   "n_records": 2,
+   "doi": "10.1109/icip49359.2023.10222115",
+   "arxiv": "2307.01846"
+  },
+  {
+   "title": "Privacy-Preserving Deep Joint Source-Channel Coding with In-Loop Concept Erasure",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2609.13393",
+   "arxiv": "2609.13393"
+  },
+  {
+   "title": "A Survey on Robust Deep Joint Source-Channel Coding for Semantic Communications",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2604.04413",
+   "arxiv": "2604.04413"
+  },
+  {
+   "title": "SecDiff: Diffusion-Aided Secure Deep Joint Source-Channel Coding Against Adversarial Attacks",
+   "n_records": 5,
+   "doi": "10.1109/jsac.2026.3669143",
+   "arxiv": "2511.01466"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Small Satellite Applications",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2508.00715",
+   "arxiv": "2508.00715"
+  },
+  {
+   "title": "LiteSC: Lightweight Semantic Communication for Robust Wireless Telesurgical Video Transmission",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2609.23661"
+  },
+  {
+   "title": "Lightweight Generative Image Semantic Communication over Packet Erasure Channels",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2609.06989",
+   "arxiv": "2609.06989"
+  },
+  {
+   "title": "Media Meets Communication in 6G: Fundamentals, Key Technologies, and Applications",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2608.05184",
+   "arxiv": "2608.05184"
+  },
+  {
+   "title": "Towards Robust Semantic Video Transmission over Block Erasure Channels",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2607.07823",
+   "arxiv": "2607.07823"
+  },
+  {
+   "title": "SA-RA-JSCC: SNR-Adaptive and Semantic-Rate-Aware Joint Source-Channel Coding",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2606.17940",
+   "arxiv": "2606.17940"
+  },
+  {
+   "title": "JSCGC: Joint Source-Channel-Generation Coding for Wireless Generative Communications",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2606.12858",
+   "arxiv": "2606.12858"
+  },
+  {
+   "title": "Generative Channel Knowledge Base With Environmental Information for Joint Source-Channel Coding in Semantic Communications",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2604.05342",
+   "arxiv": "2604.05342"
+  },
+  {
+   "title": "Joint Source-Channel-Check Coding with HARQ for Reliable Semantic Communications",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2603.23869",
+   "arxiv": "2603.23869"
+  },
+  {
+   "title": "Joint Source-Channel-Generation Coding: From Distortion-oriented Reconstruction to Semantic-consistent Generation",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2601.12808",
+   "arxiv": "2601.12808"
+  },
+  {
+   "title": "Joint Semantic-Channel Coding and Modulation for Generative Image Transmission",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2610.29643",
+   "arxiv": "2610.29643"
+  },
+  {
+   "title": "Survey on Source-coding technique",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2211.00230",
+   "arxiv": "2211.00230"
+  },
+  {
+   "title": "Deep Joint Source Channel Coding for Wireless Image Transmission with OFDM",
+   "n_records": 8,
+   "doi": "10.1109/icc42927.2021.9500996",
+   "arxiv": "2101.03909"
+  },
+  {
+   "title": "A Noise Constrained Diffusion (NC-Diffusion) Framework for High-Fidelity Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2025.3642340",
+   "arxiv": "2604.06568"
+  },
+  {
+   "title": "VLIC: Vision-Language Models As Perceptual Judges for Human-Aligned Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2512.15701",
+   "arxiv": "2512.15701"
+  },
+  {
+   "title": "Are Image-to-Video Models Good Zero-Shot Image Editors?",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2511.19435",
+   "arxiv": "2511.19435"
+  },
+  {
+   "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2511.06424",
+   "arxiv": "2511.06424"
+  },
+  {
+   "title": "PSC: Posterior Sampling-Based Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2407.09896",
+   "arxiv": "2407.09896"
+  },
+  {
+   "title": "ImageNet classification with deep convolutional neural networks",
+   "n_records": 2,
+   "doi": "10.1145/3065386",
+   "arxiv": null
+  },
+  {
+   "title": "Learning Transferable Visual Models From Natural Language Supervision",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2103.00020",
+   "arxiv": "2103.00020"
+  },
+  {
+   "title": "Advances and Open Problems in Federated Learning",
+   "n_records": 7,
+   "doi": "10.1561/2200000083",
+   "arxiv": "1912.04977"
+  },
+  {
+   "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+   "n_records": 6,
+   "doi": "10.1186/s40537-021-00444-8",
+   "arxiv": null
+  },
+  {
+   "title": "Recent advances in convolutional neural networks",
+   "n_records": 5,
+   "doi": "10.1016/j.patcog.2017.10.013",
+   "arxiv": "1512.07108"
+  },
+  {
+   "title": "Emerging Properties in Self-Supervised Vision Transformers",
+   "n_records": 6,
+   "doi": "10.1109/iccv48922.2021.00951",
+   "arxiv": "2104.14294"
+  },
+  {
+   "title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1510.00149",
+   "arxiv": "1510.00149"
+  },
+  {
+   "title": "Multimodal Machine Learning: A Survey and Taxonomy",
+   "n_records": 5,
+   "doi": "10.1109/tpami.2018.2798607",
+   "arxiv": "1705.09406"
+  },
+  {
+   "title": "A Survey of Large Language Models",
+   "n_records": 6,
+   "doi": "10.1007/s11704-026-60308-3",
+   "arxiv": "2303.18223"
+  },
+  {
+   "title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey",
+   "n_records": 6,
+   "doi": "10.1109/jproc.2017.2761740",
+   "arxiv": "1703.09039"
+  },
+  {
+   "title": "Instant neural graphics primitives with a multiresolution hash encoding",
+   "n_records": 2,
+   "doi": "10.1145/3528223.3530127",
+   "arxiv": "2201.05989"
+  },
+  {
+   "title": "Knowledge Distillation: A Survey",
+   "n_records": 3,
+   "doi": "10.1007/s11263-021-01453-z",
+   "arxiv": "2006.05525"
+  },
+  {
+   "title": "Transformers in Vision: A Survey",
+   "n_records": 3,
+   "doi": "10.1145/3505244",
+   "arxiv": "2101.01169"
+  },
+  {
+   "title": "Diffusion Models Beat GANs on Image Synthesis",
+   "n_records": 7,
+   "doi": "10.48550/arxiv.2105.05233",
+   "arxiv": "2105.05233"
+  },
+  {
+   "title": "Deep Learning for Computer Vision: A Brief Review",
+   "n_records": 2,
+   "doi": "10.1155/2018/7068349",
+   "arxiv": null
+  },
+  {
+   "title": "FaceForensics++: Learning to Detect Manipulated Facial Images",
+   "n_records": 2,
+   "doi": "10.1109/iccv.2019.00009",
+   "arxiv": "1901.08971"
+  },
+  {
+   "title": "An Introduction to Deep Learning for the Physical Layer",
+   "n_records": 4,
+   "doi": "10.1109/tccn.2017.2758370",
+   "arxiv": "1702.00832"
+  },
+  {
+   "title": "Neural Discrete Representation Learning",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1711.00937",
+   "arxiv": "1711.00937"
+  },
+  {
+   "title": "FFDNet: Toward a Fast and Flexible Solution for CNN-Based Image Denoising",
+   "n_records": 5,
+   "doi": "10.1109/tip.2018.2839891",
+   "arxiv": "1710.04026"
+  },
+  {
+   "title": "Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, Applications and Research Directions",
+   "n_records": 2,
+   "doi": "10.1007/s42979-021-00815-1",
+   "arxiv": null
+  },
+  {
+   "title": "Event-Based Vision: A Survey",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2020.3008413",
+   "arxiv": "1904.08405"
+  },
+  {
+   "title": "Federated Learning in Mobile Edge Networks: A Comprehensive Survey",
+   "n_records": 4,
+   "doi": "10.1109/comst.2020.2986024",
+   "arxiv": "1909.11875"
+  },
+  {
+   "title": "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+   "n_records": 6,
+   "doi": "10.1109/jproc.2019.2918951",
+   "arxiv": "1905.10083"
+  },
+  {
+   "title": "Taming Transformers for High-Resolution Image Synthesis",
+   "n_records": 4,
+   "doi": "10.1109/cvpr46437.2021.01268",
+   "arxiv": "2012.09841"
+  },
+  {
+   "title": "H-DenseUNet: Hybrid Densely Connected UNet for Liver and Tumor Segmentation From CT Volumes",
+   "n_records": 3,
+   "doi": "10.1109/tmi.2018.2845918",
+   "arxiv": "1709.07330"
+  },
+  {
+   "title": "Opportunities and obstacles for deep learning in biology and medicine",
+   "n_records": 4,
+   "doi": "10.1098/rsif.2017.0387",
+   "arxiv": null
+  },
+  {
+   "title": "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey",
+   "n_records": 2,
+   "doi": "10.1109/access.2018.2807385",
+   "arxiv": "1801.00553"
+  },
+  {
+   "title": "Improved Baselines with Visual Instruction Tuning",
+   "n_records": 3,
+   "doi": "10.1109/cvpr52733.2024.02484",
+   "arxiv": "2310.03744"
+  },
+  {
+   "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+   "n_records": 4,
+   "doi": "10.1007/s11432-020-2955-6",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Learning for Image Super-Resolution: A Survey",
+   "n_records": 3,
+   "doi": "10.1109/tpami.2020.2982166",
+   "arxiv": "1902.06068"
+  },
+  {
+   "title": "KAN: Kolmogorov-Arnold Networks",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2404.19756",
+   "arxiv": "2404.19756"
+  },
+  {
+   "title": "Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence",
+   "n_records": 4,
+   "doi": "10.1016/j.inffus.2023.101805",
+   "arxiv": null
+  },
+  {
+   "title": "Diffusion Models: A Comprehensive Survey of Methods and Applications",
+   "n_records": 4,
+   "doi": "10.1145/3626235",
+   "arxiv": "2209.00796"
+  },
+  {
+   "title": "Deep Learning Enabled Semantic Communication Systems",
+   "n_records": 7,
+   "doi": "10.1109/tsp.2021.3071210",
+   "arxiv": "2006.10685"
+  },
+  {
+   "title": "Efficient Learning Machines",
+   "n_records": 5,
+   "doi": "10.1007/978-1-4302-5990-9",
+   "arxiv": null
+  },
+  {
+   "title": "Convergence of Edge Computing and Deep Learning: A Comprehensive Survey",
+   "n_records": 2,
+   "doi": "10.1109/comst.2020.2970550",
+   "arxiv": "1907.08349"
+  },
+  {
+   "title": "Shortcuts to adiabaticity: Concepts, methods, and applications",
+   "n_records": 2,
+   "doi": "10.1103/revmodphys.91.045001",
+   "arxiv": "1904.08448"
+  },
+  {
+   "title": "Quantum random number generators",
+   "n_records": 2,
+   "doi": "10.1103/revmodphys.89.015004",
+   "arxiv": "1604.03304"
+  },
+  {
+   "title": "A Survey on Evolutionary Neural Architecture Search",
+   "n_records": 2,
+   "doi": "10.1109/tnnls.2021.3100554",
+   "arxiv": "2008.10937"
+  },
+  {
+   "title": "Privacy and Robustness in Federated Learning: Attacks and Defenses",
+   "n_records": 2,
+   "doi": "10.1109/tnnls.2022.3216981",
+   "arxiv": "2012.06337"
+  },
+  {
+   "title": "Accurate deep neural network inference using computational phase-change memory",
+   "n_records": 2,
+   "doi": "10.1038/s41467-020-16108-9",
+   "arxiv": "1906.03138"
+  },
+  {
+   "title": "A comprehensive survey on radio frequency (RF) fingerprinting: Traditional approaches, deep learning, and open challenges",
+   "n_records": 2,
+   "doi": "10.1016/j.comnet.2022.109455",
+   "arxiv": "2201.00680"
+  },
+  {
+   "title": "Bit-Flip Attack: Crushing Neural Network With Progressive Bit Search",
+   "n_records": 2,
+   "doi": "10.1109/iccv.2019.00130",
+   "arxiv": "1903.12269"
+  },
+  {
+   "title": "At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence",
+   "n_records": 2,
+   "doi": "10.1109/ojcoms.2024.3362271",
+   "arxiv": "2402.18587"
+  },
+  {
+   "title": "DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2003.13746",
+   "arxiv": "2003.13746"
+  },
+  {
+   "title": "Highly accurate protein structure prediction with AlphaFold",
+   "n_records": 2,
+   "doi": "10.1038/s41586-021-03819-2",
+   "arxiv": null
+  },
+  {
+   "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2010.11929",
+   "arxiv": "2010.11929"
+  },
+  {
+   "title": "A survey on deep learning in medical image analysis",
+   "n_records": 5,
+   "doi": "10.1016/j.media.2017.07.005",
+   "arxiv": "1702.05747"
+  },
+  {
+   "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1602.05629",
+   "arxiv": "1602.05629"
+  },
+  {
+   "title": "Fully Convolutional Networks for Semantic Segmentation",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2016.2572683",
+   "arxiv": "1411.4038"
+  },
+  {
+   "title": "YOLOv7: Trainable Bag-of-Freebies Sets New State-of-the-Art for Real-Time Object Detectors",
+   "n_records": 2,
+   "doi": "10.1109/cvpr52729.2023.00721",
+   "arxiv": "2207.02696"
+  },
+  {
+   "title": "Segment Anything",
+   "n_records": 3,
+   "doi": "10.1109/iccv51070.2023.00371",
+   "arxiv": "2304.02643"
+  },
+  {
+   "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+   "n_records": 4,
+   "doi": "10.1016/j.inffus.2019.12.012",
+   "arxiv": "1910.10045"
+  },
+  {
+   "title": "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines",
+   "n_records": 2,
+   "doi": "10.1080/20013078.2018.1535750",
+   "arxiv": null
+  },
+  {
+   "title": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+   "n_records": 2,
+   "doi": "10.1038/s41592-020-01008-z",
+   "arxiv": "1904.08128"
+  },
+  {
+   "title": "Denoising Diffusion Probabilistic Models",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2006.11239",
+   "arxiv": "2006.11239"
+  },
+  {
+   "title": "Multi-Scale Context Aggregation by Dilated Convolutions",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1511.07122",
+   "arxiv": "1511.07122"
+  },
+  {
+   "title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1706.06083",
+   "arxiv": "1706.06083"
+  },
+  {
+   "title": "Enhanced Deep Residual Networks for Single Image Super-Resolution",
+   "n_records": 2,
+   "doi": "10.1109/cvprw.2017.151",
+   "arxiv": "1707.02921"
+  },
+  {
+   "title": "Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network",
+   "n_records": 4,
+   "doi": "10.1109/cvpr.2016.207",
+   "arxiv": "1609.05158"
+  },
+  {
+   "title": "Spatial reconstruction of single-cell gene expression data",
+   "n_records": 2,
+   "doi": "10.1038/nbt.3192",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Learning with Differential Privacy",
+   "n_records": 2,
+   "doi": "10.1145/2976749.2978318",
+   "arxiv": "1607.00133"
+  },
+  {
+   "title": "ImageJ2: ImageJ for the next generation of scientific image data",
+   "n_records": 2,
+   "doi": "10.1186/s12859-017-1934-z",
+   "arxiv": "1701.05940"
+  },
+  {
+   "title": "A Survey on Mobile Edge Computing: The Communication Perspective",
+   "n_records": 2,
+   "doi": "10.1109/comst.2017.2745201",
+   "arxiv": "1701.01090"
+  },
+  {
+   "title": "Adversarial Examples in the Physical World",
+   "n_records": 3,
+   "doi": "10.1201/9781351251389-8",
+   "arxiv": "1607.02533"
+  },
+  {
+   "title": "OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2019.2929257",
+   "arxiv": "1812.08008"
+  },
+  {
+   "title": "Context Encoders: Feature Learning by Inpainting",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2016.278",
+   "arxiv": "1604.07379"
+  },
+  {
+   "title": "Object Detection With Deep Learning: A Review",
+   "n_records": 2,
+   "doi": "10.1109/tnnls.2018.2876865",
+   "arxiv": "1807.05511"
+  },
+  {
+   "title": "Dictionary learning for integrative, multimodal and scalable single-cell analysis",
+   "n_records": 4,
+   "doi": "10.1038/s41587-023-01767-y",
+   "arxiv": null
+  },
+  {
+   "title": "Stacked Hourglass Networks for Human Pose Estimation",
+   "n_records": 2,
+   "doi": "10.1007/978-3-319-46484-8_29",
+   "arxiv": "1603.06937"
+  },
+  {
+   "title": "A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects",
+   "n_records": 4,
+   "doi": "10.1109/tnnls.2021.3084827",
+   "arxiv": "2004.02806"
+  },
+  {
+   "title": "INFOGEST static in vitro simulation of gastrointestinal food digestion",
+   "n_records": 2,
+   "doi": "10.1038/s41596-018-0119-1",
+   "arxiv": null
+  },
+  {
+   "title": "Deformable DETR: Deformable Transformers for End-to-End Object Detection",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2010.04159",
+   "arxiv": "2010.04159"
+  },
+  {
+   "title": "SwinIR: Image Restoration Using Swin Transformer",
+   "n_records": 4,
+   "doi": "10.1109/iccvw54120.2021.00210",
+   "arxiv": "2108.10257"
+  },
+  {
+   "title": "Systematic methodological review: developing a framework for a qualitative semi‐structured interview guide",
+   "n_records": 6,
+   "doi": "10.1111/jan.13031",
+   "arxiv": null
+  },
+  {
+   "title": "PointPillars: Fast Encoders for Object Detection From Point Clouds",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2019.01298",
+   "arxiv": "1812.05784"
+  },
+  {
+   "title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual–Inertial, and Multimap SLAM",
+   "n_records": 2,
+   "doi": "10.1109/tro.2021.3075644",
+   "arxiv": "2007.11898"
+  },
+  {
+   "title": "LSST: From Science Drivers to Reference Design and Anticipated Data Products",
+   "n_records": 3,
+   "doi": "10.3847/1538-4357/ab042c",
+   "arxiv": "0805.2366"
+  },
+  {
+   "title": "A SARS-CoV-2 protein interaction map reveals targets for drug repurposing",
+   "n_records": 2,
+   "doi": "10.1038/s41586-020-2286-9",
+   "arxiv": null
+  },
+  {
+   "title": "Simple online and realtime tracking",
+   "n_records": 2,
+   "doi": "10.1109/icip.2016.7533003",
+   "arxiv": "1602.00763"
+  },
+  {
+   "title": "Restormer: Efficient Transformer for High-Resolution Image Restoration",
+   "n_records": 2,
+   "doi": "10.1109/cvpr52688.2022.00564",
+   "arxiv": "2111.09881"
+  },
+  {
+   "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+   "n_records": 5,
+   "doi": "10.1109/jsac.2021.3126076",
+   "arxiv": "2111.12444"
+  },
+  {
+   "title": "Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications",
+   "n_records": 6,
+   "doi": "10.1109/jsac.2022.3223408",
+   "arxiv": "2207.09353"
+  },
+  {
+   "title": "Semantic Communications for Future Internet: Fundamentals, Applications, and Challenges",
+   "n_records": 5,
+   "doi": "10.1109/comst.2022.3223224",
+   "arxiv": "2207.00427"
+  },
+  {
+   "title": "Semantic Communication Systems for Speech Transmission",
+   "n_records": 6,
+   "doi": "10.1109/jsac.2021.3087240",
+   "arxiv": "2102.12605"
+  },
+  {
+   "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+   "n_records": 14,
+   "doi": "10.1109/tcsvt.2021.3082521",
+   "arxiv": "2012.00533"
+  },
+  {
+   "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+   "n_records": 14,
+   "doi": "10.1109/jsait.2020.2987203",
+   "arxiv": "1911.11174"
+  },
+  {
+   "title": "Semantic Communications: Principles and Challenges",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2201.01389",
+   "arxiv": "2201.01389"
+  },
+  {
+   "title": "Learning Task-Oriented Communication for Edge Inference: An Information Bottleneck Approach",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2021.3126087",
+   "arxiv": "2102.04170"
+  },
+  {
+   "title": "Toward Semantic Communications: Deep Learning-Based Image Semantic Coding",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2022.3221999",
+   "arxiv": "2208.04094"
+  },
+  {
+   "title": "A Tutorial on Environment-Aware Communications via Channel Knowledge Map for 6G",
+   "n_records": 2,
+   "doi": "10.1109/comst.2024.3364508",
+   "arxiv": "2309.07460"
+  },
+  {
+   "title": "Robust Semantic Communications With Masked VQ-VAE Enabled Codebook",
+   "n_records": 3,
+   "doi": "10.1109/twc.2023.3265201",
+   "arxiv": "2206.04011"
+  },
+  {
+   "title": "Wireless Deep Video Semantic Transmission",
+   "n_records": 7,
+   "doi": "10.1109/jsac.2022.3221977",
+   "arxiv": "2205.13129"
+  },
+  {
+   "title": "Predictive and Adaptive Deep Coding for Wireless Image Transmission in Semantic Communication",
+   "n_records": 4,
+   "doi": "10.1109/twc.2023.3234408",
+   "arxiv": null
+  },
+  {
+   "title": "Overview of AI and communication for 6G network: fundamentals, challenges, and future research opportunities",
+   "n_records": 3,
+   "doi": "10.1007/s11432-024-4337-1",
+   "arxiv": "2412.14538"
+  },
+  {
+   "title": "A Unified Multi-Task Semantic Communication System for Multimodal Data",
+   "n_records": 3,
+   "doi": "10.1109/tcomm.2024.3364990",
+   "arxiv": "2209.07689"
+  },
+  {
+   "title": "SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+   "n_records": 6,
+   "doi": "10.1109/tccn.2024.3424842",
+   "arxiv": "2308.09361"
+  },
+  {
+   "title": "WITT: A Wireless Image Transmission Transformer for Semantic Communications",
+   "n_records": 4,
+   "doi": "10.1109/icassp49357.2023.10094735",
+   "arxiv": "2211.00937"
+  },
+  {
+   "title": "Semantic-Preserved Communication System for Highly Efficient Speech Transmission",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2022.3221952",
+   "arxiv": "2205.12727"
+  },
+  {
+   "title": "Machine Learning for Large-Scale Optimization in 6G Wireless Networks",
+   "n_records": 3,
+   "doi": "10.1109/comst.2023.3300664",
+   "arxiv": "2301.03377"
+  },
+  {
+   "title": "Machine Learning in the Air",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2019.2933969",
+   "arxiv": "1904.12385"
+  },
+  {
+   "title": "Communication-Computation Trade-off in Resource-Constrained Edge Inference",
+   "n_records": 3,
+   "doi": "10.1109/mcom.001.2000373",
+   "arxiv": "2006.02166"
+  },
+  {
+   "title": "Semantics-Empowered Communications: A Tutorial-Cum-Survey",
+   "n_records": 2,
+   "doi": "10.1109/comst.2023.3333342",
+   "arxiv": "2212.08487"
+  },
+  {
+   "title": "Adaptable Semantic Compression and Resource Allocation for Task-Oriented Communications",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2023.3346481",
+   "arxiv": "2204.08910"
+  },
+  {
+   "title": "Semantic Communications for Image Recovery and Classification via Deep Joint Source and Channel Coding",
+   "n_records": 7,
+   "doi": "10.1109/twc.2023.3349330",
+   "arxiv": "2304.02317"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Semantic Communications",
+   "n_records": 6,
+   "doi": "10.1109/mcom.004.2200819",
+   "arxiv": "2211.08747"
+  },
+  {
+   "title": "Task-Oriented Image Transmission for Scene Classification in Unmanned Aerial Systems",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2022.3182325",
+   "arxiv": "2112.10948"
+  },
+  {
+   "title": "Rethinking Modern Communication from Semantic Coding to Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/mwc.013.2100642",
+   "arxiv": "2110.08496"
+  },
+  {
+   "title": "Next Generation Advanced Transceiver Technologies for 6G and Beyond",
+   "n_records": 5,
+   "doi": "10.1109/jsac.2025.3536557",
+   "arxiv": "2403.16458"
+  },
+  {
+   "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+   "n_records": 5,
+   "doi": "10.1109/cvpr52688.2022.01042",
+   "arxiv": "2112.10752"
+  },
+  {
+   "title": "A critical review of high entropy alloys and related concepts",
+   "n_records": 2,
+   "doi": "10.1016/j.actamat.2016.08.081",
+   "arxiv": null
+  },
+  {
+   "title": "YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information",
+   "n_records": 2,
+   "doi": "10.1007/978-3-031-72751-1_1",
+   "arxiv": "2402.13616"
+  },
+  {
+   "title": "The path towards sustainable energy",
+   "n_records": 2,
+   "doi": "10.1038/nmat4834",
+   "arxiv": null
+  },
+  {
+   "title": "2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension",
+   "n_records": 5,
+   "doi": "10.1093/eurheartj/ehac237",
+   "arxiv": null
+  },
+  {
+   "title": "Denoising Diffusion Implicit Models",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2010.02502",
+   "arxiv": "2010.02502"
+  },
+  {
+   "title": "Marine Anthropogenic Litter",
+   "n_records": 3,
+   "doi": "10.1007/978-3-319-16510-3",
+   "arxiv": null
+  },
+  {
+   "title": "An integrated approach to correction for off-resonance effects and subject movement in diffusion MR imaging",
+   "n_records": 2,
+   "doi": "10.1016/j.neuroimage.2015.10.019",
+   "arxiv": null
+  },
+  {
+   "title": "MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA): BINARIES, PULSATIONS, AND EXPLOSIONS",
+   "n_records": 2,
+   "doi": "10.1088/0067-0049/220/1/15",
+   "arxiv": "1506.03146"
+  },
+  {
+   "title": "Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next",
+   "n_records": 6,
+   "doi": "10.1007/s10915-022-01939-z",
+   "arxiv": "2201.05624"
+  },
+  {
+   "title": "Active Particles in Complex and Crowded Environments",
+   "n_records": 2,
+   "doi": "10.1103/revmodphys.88.045006",
+   "arxiv": "1602.00081"
+  },
+  {
+   "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+   "n_records": 10,
+   "doi": "10.1109/access.2021.3140175",
+   "arxiv": null
+  },
+  {
+   "title": "Image Super-Resolution Via Iterative Refinement",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2022.3204461",
+   "arxiv": "2104.07636"
+  },
+  {
+   "title": "Planck 2015 results",
+   "n_records": 3,
+   "doi": "10.17863/cam.32861",
+   "arxiv": null
+  },
+  {
+   "title": "A new framework for developing and evaluating complex interventions: update of Medical Research Council guidance",
+   "n_records": 2,
+   "doi": "10.1136/bmj.n2061",
+   "arxiv": null
+  },
+  {
+   "title": "Variational Inference: A Review for Statisticians",
+   "n_records": 3,
+   "doi": "10.1080/01621459.2017.1285773",
+   "arxiv": "1601.00670"
+  },
+  {
+   "title": "Reconfigurable Intelligent Surfaces for Energy Efficiency in Wireless Communication",
+   "n_records": 2,
+   "doi": "10.1109/twc.2019.2922609",
+   "arxiv": "1810.06934"
+  },
+  {
+   "title": "Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features",
+   "n_records": 2,
+   "doi": "10.1038/sdata.2017.117",
+   "arxiv": null
+  },
+  {
+   "title": "Wireless Communications and Applications Above 100 GHz: Opportunities and Challenges for 6G and Beyond",
+   "n_records": 2,
+   "doi": "10.1109/access.2019.2921522",
+   "arxiv": null
+  },
+  {
+   "title": "An overview of deep learning in medical imaging focusing on MRI",
+   "n_records": 3,
+   "doi": "10.1016/j.zemedi.2018.11.002",
+   "arxiv": "1811.10052"
+  },
+  {
+   "title": "VoxelMorph: A Learning Framework for Deformable Medical Image Registration",
+   "n_records": 2,
+   "doi": "10.1109/tmi.2019.2897538",
+   "arxiv": "1809.05231"
+  },
+  {
+   "title": "Deep Facial Expression Recognition: A Survey",
+   "n_records": 3,
+   "doi": "10.1109/taffc.2020.2981446",
+   "arxiv": "1804.08348"
+  },
+  {
+   "title": "Diffusion Models in Vision: A Survey",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2023.3261988",
+   "arxiv": "2209.04747"
+  },
+  {
+   "title": "Generative adversarial network in medical imaging: A review",
+   "n_records": 2,
+   "doi": "10.1016/j.media.2019.101552",
+   "arxiv": "1809.07294"
+  },
+  {
+   "title": "Text Data Augmentation for Deep Learning",
+   "n_records": 3,
+   "doi": "10.1186/s40537-021-00492-0",
+   "arxiv": null
+  },
+  {
+   "title": "Object Detection in 20 Years: A Survey",
+   "n_records": 5,
+   "doi": "10.1109/jproc.2023.3238524",
+   "arxiv": "1905.05055"
+  },
+  {
+   "title": "CARLA: An Open Urban Driving Simulator",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1711.03938",
+   "arxiv": "1711.03938"
+  },
+  {
+   "title": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2022.3156632",
+   "arxiv": "2108.07165"
+  },
+  {
+   "title": "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources",
+   "n_records": 2,
+   "doi": "10.1109/mgrs.2017.2762307",
+   "arxiv": "1710.03959"
+  },
+  {
+   "title": "A Survey on Knowledge Graphs: Representation, Acquisition, and Applications",
+   "n_records": 2,
+   "doi": "10.1109/tnnls.2021.3070843",
+   "arxiv": "2002.00388"
+  },
+  {
+   "title": "EnlightenGAN: Deep Light Enhancement Without Paired Supervision",
+   "n_records": 2,
+   "doi": "10.1109/tip.2021.3051462",
+   "arxiv": "1906.06972"
+  },
+  {
+   "title": "A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI",
+   "n_records": 2,
+   "doi": "10.1109/tnnls.2020.3027314",
+   "arxiv": "1907.07374"
+  },
+  {
+   "title": "Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges",
+   "n_records": 2,
+   "doi": "10.1109/access.2019.2909530",
+   "arxiv": "1805.00881"
+  },
+  {
+   "title": "A Survey of Indoor Localization Systems and Technologies",
+   "n_records": 2,
+   "doi": "10.1109/comst.2019.2911558",
+   "arxiv": "1709.01015"
+  },
+  {
+   "title": "Deep learning for visual understanding: A review",
+   "n_records": 2,
+   "doi": "10.1016/j.neucom.2015.09.116",
+   "arxiv": null
+  },
+  {
+   "title": "Proceedings of the 28th International Conference on Computational Linguistics",
+   "n_records": 3,
+   "doi": "10.18653/v1/2020.coling-main",
+   "arxiv": null
+  },
+  {
+   "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+   "n_records": 4,
+   "doi": "10.1201/9781003162810-13",
+   "arxiv": null
+  },
+  {
+   "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+   "n_records": 3,
+   "doi": "10.1109/tsipn.2015.2448520",
+   "arxiv": "1412.8416"
+  },
+  {
+   "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook",
+   "n_records": 2,
+   "doi": "10.1109/jproc.2021.3067593",
+   "arxiv": null
+  },
+  {
+   "title": "Security and Privacy for 6G: A Survey on Prospective Technologies and Challenges",
+   "n_records": 3,
+   "doi": "10.1109/comst.2021.3108618",
+   "arxiv": "2108.11861"
+  },
+  {
+   "title": "Image and Video Compression With Neural Networks: A Review",
+   "n_records": 3,
+   "doi": "10.1109/tcsvt.2019.2910119",
+   "arxiv": "1904.03567"
+  },
+  {
+   "title": "5G-Advanced Toward 6G: Past, Present, and Future",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2023.3274037",
+   "arxiv": "2303.07456"
+  },
+  {
+   "title": "An Overview of Voice Conversion and Its Challenges: From Statistical Modeling to Deep Learning",
+   "n_records": 2,
+   "doi": "10.1109/taslp.2020.3038524",
+   "arxiv": "2008.03648"
+  },
+  {
+   "title": "Toward Wisdom-Evolutionary and Primitive-Concise 6G: A New Paradigm of Semantic Communication Networks",
+   "n_records": 4,
+   "doi": "10.1016/j.eng.2021.11.003",
+   "arxiv": null
+  },
+  {
+   "title": "Twelve Scientific Challenges for 6G: Rethinking the Foundations of Communications Theory",
+   "n_records": 2,
+   "doi": "10.1109/comst.2023.3243918",
+   "arxiv": "2207.01843"
+  },
+  {
+   "title": "Overview of Deep Learning-Based CSI Feedback in Massive MIMO Systems",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2022.3217777",
+   "arxiv": "2206.14383"
+  },
+  {
+   "title": "What is Semantic Communication? A View on Conveying Meaning in the Era of Machine Intelligence",
+   "n_records": 4,
+   "doi": "10.23919/jcin.2021.9663101",
+   "arxiv": "2110.00196"
+  },
+  {
+   "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1704.04861",
+   "arxiv": "1704.04861"
+  },
+  {
+   "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2017.632",
+   "arxiv": "1611.07004"
+  },
+  {
+   "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1910.10683",
+   "arxiv": "1910.10683"
+  },
+  {
+   "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2019.00453",
+   "arxiv": "1812.04948"
+  },
+  {
+   "title": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1502.03044",
+   "arxiv": "1502.03044"
+  },
+  {
+   "title": "ArcFace: Additive Angular Margin Loss for Deep Face Recognition",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2019.00482",
+   "arxiv": "1801.07698"
+  },
+  {
+   "title": "The Llama 3 Herd of Models",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2407.21783",
+   "arxiv": "2407.21783"
+  },
+  {
+   "title": "Survey of Hallucination in Natural Language Generation",
+   "n_records": 2,
+   "doi": "10.1145/3571730",
+   "arxiv": "2202.03629"
+  },
+  {
+   "title": "Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1703.01780",
+   "arxiv": "1703.01780"
+  },
+  {
+   "title": "Training data-efficient image transformers & distillation through attention",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2012.12877",
+   "arxiv": "2012.12877"
+  },
+  {
+   "title": "Categorical Reparameterization with Gumbel-Softmax",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1611.01144",
+   "arxiv": "1611.01144"
+  },
+  {
+   "title": "Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception Age",
+   "n_records": 4,
+   "doi": "10.1109/tro.2016.2624754",
+   "arxiv": "1606.05830"
+  },
+  {
+   "title": "Present and Future of Surface-Enhanced Raman Scattering",
+   "n_records": 2,
+   "doi": "10.1021/acsnano.9b04224",
+   "arxiv": null
+  },
+  {
+   "title": "Image Segmentation Using Deep Learning: A Survey",
+   "n_records": 4,
+   "doi": "10.1109/tpami.2021.3059968",
+   "arxiv": "2001.05566"
+  },
+  {
+   "title": "Variational quantum algorithms",
+   "n_records": 2,
+   "doi": "10.1038/s42254-021-00348-9",
+   "arxiv": "2012.09265"
+  },
+  {
+   "title": "Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2017.618",
+   "arxiv": "1704.03915"
+  },
+  {
+   "title": "Deep Learning for Anomaly Detection",
+   "n_records": 2,
+   "doi": "10.1145/3439950",
+   "arxiv": "2007.02500"
+  },
+  {
+   "title": "A review of uncertainty quantification in deep learning: Techniques, applications and challenges",
+   "n_records": 2,
+   "doi": "10.1016/j.inffus.2021.05.008",
+   "arxiv": "2011.06225"
+  },
+  {
+   "title": "An Introduction to Variational Autoencoders",
+   "n_records": 2,
+   "doi": "10.1561/2200000056",
+   "arxiv": "1906.02691"
+  },
+  {
+   "title": "An Underwater Image Enhancement Benchmark Dataset and Beyond",
+   "n_records": 2,
+   "doi": "10.1109/tip.2019.2955241",
+   "arxiv": "1901.05495"
+  },
+  {
+   "title": "Federated Learning in Intelligent Transportation Systems: Recent Applications and Open Problems",
+   "n_records": 2,
+   "doi": "10.1109/tits.2023.3324962",
+   "arxiv": "2309.11039"
+  },
+  {
+   "title": "A Survey on Semantic Communication Networks: Architecture, Security, and Privacy",
+   "n_records": 3,
+   "doi": "10.1109/comst.2024.3516819",
+   "arxiv": "2405.01221"
+  },
+  {
+   "title": "Deep Learning in Physical Layer: Review on Data Driven End-to-End Communication Systems and Their Enabling Semantic Applications",
+   "n_records": 4,
+   "doi": "10.1109/ojcoms.2024.3425314",
+   "arxiv": "2401.12800"
+  },
+  {
+   "title": "Detecting Voice Cloning Attacks via Timbre Watermarking",
+   "n_records": 2,
+   "doi": "10.14722/ndss.2024.24200",
+   "arxiv": "2312.03410"
+  },
+  {
+   "title": "Hybrid Blind Audio Watermarking for Proprietary Protection, Tamper Proofing, and Self-Recovery",
+   "n_records": 2,
+   "doi": "10.1109/access.2019.2958095",
+   "arxiv": null
+  },
+  {
+   "title": "MUSE: Flexible Voiceprint Receptive Fields and Multi-Path Fusion Enhanced Taylor Transformer for U-Net-based Speech Enhancement",
+   "n_records": 2,
+   "doi": "10.21437/interspeech.2024-1017",
+   "arxiv": "2406.04589"
+  },
+  {
+   "title": "Machine Learning for Multimedia Communications",
+   "n_records": 2,
+   "doi": "10.3390/s22030819",
+   "arxiv": null
+  },
+  {
+   "title": "Multiple Description Coding Based on Convolutional Auto-Encoder",
+   "n_records": 2,
+   "doi": "10.1109/access.2019.2900498",
+   "arxiv": null
+  },
+  {
+   "title": "Big Data Privacy and Security Using Abundant Data Recovery Techniques and Data Obliviousness Methodologies",
+   "n_records": 2,
+   "doi": "10.1109/access.2022.3211304",
+   "arxiv": null
+  },
+  {
+   "title": "An innovative approach to integrate unequal protection-based steganography and progressive transmission of physiological data",
+   "n_records": 2,
+   "doi": "10.1007/s42452-020-1992-0",
+   "arxiv": null
+  },
+  {
+   "title": "Toward Compatible Semantic Communication: A Perspective on Digital Coding and Modulation",
+   "n_records": 3,
+   "doi": "10.1109/mcom.001.2400640",
+   "arxiv": "2412.18876"
+  },
+  {
+   "title": "SNN-SC: A Spiking Semantic Communication Framework for Collaborative Intelligence",
+   "n_records": 2,
+   "doi": "10.1109/tvt.2024.3506119",
+   "arxiv": "2210.06836"
+  },
+  {
+   "title": "Multilayer Steganalysis in the Encryption Era: A Comprehensive Review",
+   "n_records": 2,
+   "doi": "10.59324/ejaset.2026.4(1).04",
+   "arxiv": null
+  },
+  {
+   "title": "GRACE: Loss-Resilient Real-Time Video Communication Using Data-Scalable Autoencoder",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2210.16639",
+   "arxiv": "2210.16639"
+  },
+  {
+   "title": "Securing AI Agents in Cyber-Physical Systems: A Survey of Environmental Interactions, Deepfake Threats, and Defenses",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2601.20184",
+   "arxiv": "2601.20184"
+  },
+  {
+   "title": "HarmonicAttack: An Adaptive Cross-Domain Audio Watermark Removal",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2511.21577",
+   "arxiv": "2511.21577"
+  },
+  {
+   "title": "Mechanisms for Resilient Video Transmission",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1808.06722",
+   "arxiv": "1808.06722"
+  },
+  {
+   "title": "Satellite Intelligence: Distributed Training, Collaborative Inference,and LLM Adaptation in LEO Constellation",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2610.35282",
+   "arxiv": "2610.35282"
+  },
+  {
+   "title": "Digital video watermarking algorithm integrating 3D convolution and DT-CWT",
+   "n_records": 2,
+   "doi": "10.1038/s41598-026-76098-4",
+   "arxiv": null
+  },
+  {
+   "title": "Guess and Send: World-Model-Guided Semantic Packet Transmission for Robust Video Perception",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2610.29587",
+   "arxiv": "2610.29587"
+  },
+  {
+   "title": "Rethinking Visual Provenance: Detection and Watermarking Across Direct Visual Generation and LLM-Driven Code Rendering",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2610.08137",
+   "arxiv": "2610.08137"
+  },
+  {
+   "title": "AeroLat: Channel-Aware Latent Space Semantic Communication for Decentralized UAV Swarms",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": "2609.16947"
+  },
+  {
+   "title": "From Semantic to Token Communication: The Next Paradigm for Large-Model-Driven 6G Intelligent Connectivity",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2609.10714",
+   "arxiv": "2609.10714"
+  },
+  {
+   "title": "What Limits Robustness in Deep Image Watermarking: An Analysis of Mechanisms and Their Scaling Across Capacities",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2609.01050",
+   "arxiv": "2609.01050"
+  },
+  {
+   "title": "HUM-Net: A Robust Semantic Segmentation Model for Medical Imaging Under Wireless Channel Degradations",
+   "n_records": 2,
+   "doi": "10.18280/jesa.590806",
+   "arxiv": null
+  },
+  {
+   "title": "FEC Hybrid Method Based on Reed–Solomon Codes for Transmitting Video Signal Over Limited Bandwidth and High Loss Rate Channels",
+   "n_records": 2,
+   "doi": "10.26636/jtit.2026.3.2637",
+   "arxiv": null
+  },
+  {
+   "title": "UniTAC: Universal Task-Aware Compression via Weighted Distortion Measures",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2608.16696",
+   "arxiv": "2608.16696"
+  },
+  {
+   "title": "Loss-Resilient Wireless Video Token Communication over Block Fading Channels",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.2608.08698",
+   "arxiv": "2608.08698"
+  },
+  {
+   "title": "Storing Digital Data in DNA: Advances Toward Practical Implementation",
+   "n_records": 2,
+   "doi": "10.5281/zenodo.20477986",
+   "arxiv": null
+  },
+  {
+   "title": "Anchor Watermark: Robust Attribution for Diffusion-based Text-to-Audio Model",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v40i39.40561",
+   "arxiv": null
+  },
+  {
+   "title": "Block Erasure-Aware Semantic Multimedia Compression via JSCC Autoencoder",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2601.20707",
+   "arxiv": "2601.20707"
+  },
+  {
+   "title": "Yours or Mine? Overwriting Attacks Against Neural Audio Watermarking",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2509.05835",
+   "arxiv": "2509.05835"
+  },
+  {
+   "title": "Robust End-to-End Image Transmission with Residual Learning",
+   "n_records": 2,
+   "doi": "10.1109/siu66497.2025.11112319",
+   "arxiv": "2409.03243"
+  },
+  {
+   "title": "Rateless Joint Source-Channel Coding, and a Blueprint for 6G Semantic Communications System Design",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.2502.06095",
+   "arxiv": "2502.06095"
+  },
+  {
+   "title": "Outage and timeout probability using multiple description coding for video transmission over relay-assisted cognitive radio networks",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": null
+  },
+  {
+   "title": "The Unreasonable Effectiveness of Deep Features as a Perceptual Metric",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2018.00068",
+   "arxiv": "1801.03924"
+  },
+  {
+   "title": "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2017.19",
+   "arxiv": "1609.04802"
+  },
+  {
+   "title": "Progressive Growing of GANs for Improved Quality, Stability, and Variation",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1710.10196",
+   "arxiv": "1710.10196"
+  },
+  {
+   "title": "Deep Image Prior",
+   "n_records": 2,
+   "doi": "10.1007/s11263-020-01303-4",
+   "arxiv": "1711.10925"
+  },
+  {
+   "title": "Variational image compression with a scale hyperprior",
+   "n_records": 5,
+   "doi": "10.48550/arxiv.1802.01436",
+   "arxiv": "1802.01436"
+  },
+  {
+   "title": "Supervised Speech Separation Based on Deep Learning: An Overview",
+   "n_records": 3,
+   "doi": "10.1109/taslp.2018.2842159",
+   "arxiv": "1708.07524"
+  },
+  {
+   "title": "End-to-end Optimized Image Compression",
+   "n_records": 6,
+   "doi": "10.48550/arxiv.1611.01704",
+   "arxiv": "1611.01704"
+  },
+  {
+   "title": "A Review on Generative Adversarial Networks: Algorithms, Theory, and Applications",
+   "n_records": 2,
+   "doi": "10.1109/tkde.2021.3130191",
+   "arxiv": "2001.06937"
+  },
+  {
+   "title": "Transformers in medical imaging: A survey",
+   "n_records": 2,
+   "doi": "10.1016/j.media.2023.102802",
+   "arxiv": "2201.09873"
+  },
+  {
+   "title": "A Survey of Deep Learning-Based Object Detection",
+   "n_records": 2,
+   "doi": "10.1109/access.2019.2939201",
+   "arxiv": "1907.09408"
+  },
+  {
+   "title": "SEGAN: Speech Enhancement Generative Adversarial Network",
+   "n_records": 2,
+   "doi": "10.21437/interspeech.2017-1428",
+   "arxiv": "1703.09452"
+  },
+  {
+   "title": "Generative AI",
+   "n_records": 2,
+   "doi": "10.1007/s12599-023-00834-7",
+   "arxiv": "2309.07930"
+  },
+  {
+   "title": "Visual Instruction Tuning",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2304.08485",
+   "arxiv": "2304.08485"
+  },
+  {
+   "title": "A Comprehensive Survey of Continual Learning: Theory, Method and Application",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2024.3367329",
+   "arxiv": "2302.00487"
+  },
+  {
+   "title": "Digital Transformation in Healthcare: Technology Acceptance and Its Applications",
+   "n_records": 2,
+   "doi": "10.3390/ijerph20043407",
+   "arxiv": null
+  },
+  {
+   "title": "A Survey of AI-Generated Content (AIGC)",
+   "n_records": 3,
+   "doi": "10.1145/3704262",
+   "arxiv": "2303.04226"
+  },
+  {
+   "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+   "n_records": 2,
+   "doi": "10.1145/3637528.3671470",
+   "arxiv": "2405.06211"
+  },
+  {
+   "title": "Training Spiking Neural Networks Using Lessons From Deep Learning",
+   "n_records": 2,
+   "doi": "10.1109/jproc.2023.3308088",
+   "arxiv": "2109.12894"
+  },
+  {
+   "title": "Connecting the dots in trustworthy Artificial Intelligence: From AI principles, ethics, and key requirements to responsible AI systems and regulation",
+   "n_records": 2,
+   "doi": "10.1016/j.inffus.2023.101896",
+   "arxiv": "2305.02231"
+  },
+  {
+   "title": "A Vision of 6G Wireless Systems: Applications, Trends, Technologies, and Open Research Problems",
+   "n_records": 2,
+   "doi": "10.1109/mnet.001.1900287",
+   "arxiv": "1902.10265"
+  },
+  {
+   "title": "Tackling Climate Change with Machine Learning",
+   "n_records": 2,
+   "doi": "10.1145/3485128",
+   "arxiv": "1906.05433"
+  },
+  {
+   "title": "Visual Place Recognition: A Survey",
+   "n_records": 2,
+   "doi": "10.1109/tro.2015.2496823",
+   "arxiv": null
+  },
+  {
+   "title": "A comprehensive survey on machine learning for networking: evolution, applications and research opportunities",
+   "n_records": 3,
+   "doi": "10.1186/s13174-018-0087-2",
+   "arxiv": null
+  },
+  {
+   "title": "A Survey of Model Compression and Acceleration for Deep Neural Networks",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1710.09282",
+   "arxiv": "1710.09282"
+  },
+  {
+   "title": "Image Matching from Handcrafted to Deep Features: A Survey",
+   "n_records": 2,
+   "doi": "10.1007/s11263-020-01359-2",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Learning Algorithms for Bearing Fault Diagnostics—A Comprehensive Review",
+   "n_records": 2,
+   "doi": "10.1109/access.2020.2972859",
+   "arxiv": "1901.08247"
+  },
+  {
+   "title": "Diffusion models in medical imaging: A comprehensive survey",
+   "n_records": 2,
+   "doi": "10.1016/j.media.2023.102846",
+   "arxiv": "2211.07804"
+  },
+  {
+   "title": "Survey on Multi-Access Edge Computing for Internet of Things Realization",
+   "n_records": 3,
+   "doi": "10.1109/comst.2018.2849509",
+   "arxiv": "1805.06695"
+  },
+  {
+   "title": "Decentralized Federated Learning: Fundamentals, State of the Art, Frameworks, Trends, and Challenges",
+   "n_records": 2,
+   "doi": "10.1109/comst.2023.3315746",
+   "arxiv": "2211.08413"
+  },
+  {
+   "title": "A Survey on Security and Privacy of 5G Technologies: Potential Solutions, Recent Advancements, and Future Directions",
+   "n_records": 3,
+   "doi": "10.1109/comst.2019.2933899",
+   "arxiv": null
+  },
+  {
+   "title": "A Full Dive Into Realizing the Edge-Enabled Metaverse: Visions, Enabling Technologies, and Challenges",
+   "n_records": 3,
+   "doi": "10.1109/comst.2022.3221119",
+   "arxiv": "2203.05471"
+  },
+  {
+   "title": "Learned Step Size Quantization",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1902.08153",
+   "arxiv": "1902.08153"
+  },
+  {
+   "title": "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation",
+   "n_records": 2,
+   "doi": "10.1109/taslp.2019.2915167",
+   "arxiv": "1809.07454"
+  },
+  {
+   "title": "Overview of the Versatile Video Coding (VVC) Standard and its Applications",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2021.3101953",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Neural Networks for No-Reference and Full-Reference Image Quality Assessment",
+   "n_records": 2,
+   "doi": "10.1109/tip.2017.2760518",
+   "arxiv": "1612.01697"
+  },
+  {
+   "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+   "n_records": 5,
+   "doi": "10.1109/cvpr42600.2020.00796",
+   "arxiv": "2001.01568"
+  },
+  {
+   "title": "Artificial intelligence in the creative industries: a review",
+   "n_records": 2,
+   "doi": "10.1007/s10462-021-10039-7",
+   "arxiv": "2007.12391"
+  },
+  {
+   "title": "Full Resolution Image Compression with Recurrent Neural Networks",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2017.577",
+   "arxiv": "1608.05148"
+  },
+  {
+   "title": "DVC: An End-To-End Deep Video Compression Framework",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2019.01126",
+   "arxiv": "1812.00101"
+  },
+  {
+   "title": "Lossy Image Compression with Compressive Autoencoders",
+   "n_records": 4,
+   "doi": "10.17863/cam.51995",
+   "arxiv": "1703.00395"
+  },
+  {
+   "title": "SoundStream: An End-to-End Neural Audio Codec",
+   "n_records": 2,
+   "doi": "10.1109/taslp.2021.3129994",
+   "arxiv": "2107.03312"
+  },
+  {
+   "title": "Generative Adversarial Networks for Extreme Learned Image Compression",
+   "n_records": 4,
+   "doi": "10.1109/iccv.2019.00031",
+   "arxiv": "1804.02958"
+  },
+  {
+   "title": "Variable Rate Image Compression with Recurrent Neural Networks",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1511.06085",
+   "arxiv": "1511.06085"
+  },
+  {
+   "title": "Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+   "n_records": 4,
+   "doi": "10.1109/icip40778.2020.9190935",
+   "arxiv": "2007.08739"
+  },
+  {
+   "title": "Real-Time Adaptive Image Compression",
+   "n_records": 3,
+   "doi": "10.48550/arxiv.1705.05823",
+   "arxiv": "1705.05823"
+  },
+  {
+   "title": "ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding",
+   "n_records": 3,
+   "doi": "10.1109/cvpr52688.2022.00563",
+   "arxiv": "2203.10886"
+  },
+  {
+   "title": "Task-Oriented Multi-User Semantic Communications",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2022.3191326",
+   "arxiv": "2112.10255"
+  },
+  {
+   "title": "A Tutorial on Ultrareliable and Low-Latency Communications in 6G: Integrating Domain Knowledge Into Deep Learning",
+   "n_records": 2,
+   "doi": "10.1109/jproc.2021.3053601",
+   "arxiv": "2009.06010"
+  },
+  {
+   "title": "CompressAI: a PyTorch library and evaluation platform for end-to-end compression research",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2011.03029",
+   "arxiv": "2011.03029"
+  },
+  {
+   "title": "Improved Lossy Image Compression with Priming and Spatially Adaptive Bit Rates for Recurrent Networks",
+   "n_records": 3,
+   "doi": "10.1109/cvpr.2018.00461",
+   "arxiv": "1703.10114"
+  },
+  {
+   "title": "A Survey on IoT Security: Application Areas, Security Threats, and Solution Architectures",
+   "n_records": 3,
+   "doi": "10.1109/access.2019.2924045",
+   "arxiv": null
+  },
+  {
+   "title": "HiDDeN: Hiding Data With Deep Networks",
+   "n_records": 2,
+   "doi": "10.1007/978-3-030-01267-0_40",
+   "arxiv": "1807.09937"
+  },
+  {
+   "title": "On the Road to 6G: Visions, Requirements, Key Technologies, and Testbeds",
+   "n_records": 3,
+   "doi": "10.1109/comst.2023.3249835",
+   "arxiv": "2302.14536"
+  },
+  {
+   "title": "Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges",
+   "n_records": 2,
+   "doi": "10.1109/comst.2023.3239220",
+   "arxiv": "2202.01032"
+  },
+  {
+   "title": "A Survey on Low Latency Towards 5G: RAN, Core Network and Caching Solutions",
+   "n_records": 2,
+   "doi": "10.1109/comst.2018.2841349",
+   "arxiv": "1708.02562"
+  },
+  {
+   "title": "A Comprehensive Review of Cyber Security Vulnerabilities, Threats, Attacks, and Solutions",
+   "n_records": 2,
+   "doi": "10.3390/electronics12061333",
+   "arxiv": null
+  },
+  {
+   "title": "Jamming Attacks and Anti-Jamming Strategies in Wireless Networks: A Comprehensive Survey",
+   "n_records": 2,
+   "doi": "10.1109/comst.2022.3159185",
+   "arxiv": "2101.00292"
+  },
+  {
+   "title": "A Comprehensive Overview on 5G-and-Beyond Networks With UAVs: From Communications to Sensing and Intelligence",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2021.3088681",
+   "arxiv": "2010.09317"
+  },
+  {
+   "title": "State of the Art in Defect Detection Based on Machine Vision",
+   "n_records": 2,
+   "doi": "10.1007/s40684-021-00343-6",
+   "arxiv": null
+  },
+  {
+   "title": "Task-Oriented Multi-User Semantic Communications for VQA",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2021.3136045",
+   "arxiv": "2108.07357"
+  },
+  {
+   "title": "Memristor-based storage system with convolutional autoencoder-based image compression network",
+   "n_records": 2,
+   "doi": "10.1038/s41467-024-45312-0",
+   "arxiv": null
+  },
+  {
+   "title": "SemanticNN: Compressive and Error-Resilient Semantic Offloading for Extremely Weak Devices",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v40i26.39351",
+   "arxiv": "2511.11038"
+  },
+  {
+   "title": "A screen‐shooting resilient document image watermarking scheme using deep neural network",
+   "n_records": 2,
+   "doi": "10.1049/ipr2.12653",
+   "arxiv": "2203.05198"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Retrieval",
+   "n_records": 5,
+   "doi": "10.1109/icassp40776.2020.9054078",
+   "arxiv": "1910.12703"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding of Images with Feedback",
+   "n_records": 3,
+   "doi": "10.1109/icassp40776.2020.9054216",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Adaptive Image Transmission Over MIMO Channels",
+   "n_records": 9,
+   "doi": "10.1109/twc.2024.3422794",
+   "arxiv": "2309.00470"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Image Transmission With Visual Protection",
+   "n_records": 9,
+   "doi": "10.1109/tccn.2023.3306851",
+   "arxiv": "2111.03234"
+  },
+  {
+   "title": "Joint Source-Channel Coding of Images with (not very) Deep Learning",
+   "n_records": 5,
+   "doi": "10.3929/ethz-b-000402967",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Semantic Importance",
+   "n_records": 4,
+   "doi": "10.1109/vtc2022-fall57202.2022.10012892",
+   "arxiv": "2302.02287"
+  },
+  {
+   "title": "Space-Time Design for Deep Joint Source Channel Coding of Images over MIMO Channels",
+   "n_records": 5,
+   "doi": "10.1109/spawc53906.2023.10304536",
+   "arxiv": "2210.16985"
+  },
+  {
+   "title": "A Deep Joint Source Channel Coding Scheme with Adaptive HARQ for Image Transmission",
+   "n_records": 2,
+   "doi": "10.1587/transfun.2025eal2052",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission: One-Model-to-Many",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2025.3547527",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source Channel Coding via Attention for Wireless Image Transmission",
+   "n_records": 3,
+   "doi": "10.1007/978-3-031-86196-3_27",
+   "arxiv": null
+  },
+  {
+   "title": "Robust Deep Joint Source-Channel Coding Enabled Distributed Image Transmission With Imperfect Channel State Information",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3601155",
+   "arxiv": "2411.12228"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Integrated Multi-hop Image Transmission and Reconstruction",
+   "n_records": 2,
+   "doi": "10.1109/icicn67355.2025.11430455",
+   "arxiv": null
+  },
+  {
+   "title": "Channel-Wise Masked Deep Joint Source-Channel Coding for Rateless Size-Independent Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/ccnc65079.2026.11366504",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding Based on Semantics of Pixels for Wireless Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/pimrc56721.2023.10293843",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source Channel Coding for Privacy-Aware End-to-End Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/tmlcn.2025.3564907",
+   "arxiv": "2412.17110"
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Image Transmission in Hardware-Impaired OFDM Systems",
+   "n_records": 2,
+   "doi": "10.1109/apwcs71511.2026.11742781",
+   "arxiv": null
+  },
+  {
+   "title": "Latent denoising deep joint source-channel coding with SNR-adaptive for wireless image transmission",
+   "n_records": 2,
+   "doi": "10.1016/j.neucom.2026.135307",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Adaptive Models",
+   "n_records": 5,
+   "doi": "10.3390/electronics12224637",
+   "arxiv": null
+  },
+  {
+   "title": "Privacy-Preserving Deep JSCC for Wireless Image Transmission Using Keyed Orthonormal Latent Scrambling",
+   "n_records": 2,
+   "doi": "10.20944/preprints202610.2102.v1",
+   "arxiv": null
+  },
+  {
+   "title": "Lightweight and Adaptive Deep Coding for Wireless Image Transmission in Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/access.2025.3607699",
+   "arxiv": null
+  },
+  {
+   "title": "Resolution-Adaptive Source-Channel Coding for End-to-End Wireless Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/globecom48099.2022.10001465",
+   "arxiv": null
+  },
+  {
+   "title": "Lossy Image Compression with Foundation Diffusion Models",
+   "n_records": 2,
+   "doi": "10.1007/978-3-031-73030-6_17",
+   "arxiv": "2404.08580"
+  },
+  {
+   "title": "CoD: A Diffusion Foundation Model for Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2511.18706",
+   "arxiv": "2511.18706"
+  },
+  {
+   "title": "Diffusion Model Compression for Image-to-Image Translation",
+   "n_records": 2,
+   "doi": "10.1007/978-981-96-0917-8_9",
+   "arxiv": "2401.17547"
+  },
+  {
+   "title": "Extreme Generative Image Compression by Learning Text Embedding from Diffusion Models",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2211.07793",
+   "arxiv": "2211.07793"
+  },
+  {
+   "title": "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression",
+   "n_records": 3,
+   "doi": "10.1609/aaai.v40i5.37313",
+   "arxiv": "2508.04979"
+  },
+  {
+   "title": "Higher Fidelity Perceptual Image and Video Compression with a Latent Conditioned Residual Denoising Diffusion Model",
+   "n_records": 2,
+   "doi": "10.1007/978-3-031-91838-4_12",
+   "arxiv": "2505.13152"
+  },
+  {
+   "title": "Trajectory-Consistent Denoising Diffusion Codebook Models for Zero-Shot High-Fidelity Image Compression at Ultra-Low Bitrates",
+   "n_records": 3,
+   "doi": "10.24963/ijcai.2026/230",
+   "arxiv": null
+  },
+  {
+   "title": "Variational Diffusion Models",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2107.00630",
+   "arxiv": "2107.00630"
+  },
+  {
+   "title": "StableCodec: Taming One-Step Diffusion for Extreme Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/iccv51701.2025.01614",
+   "arxiv": "2506.21977"
+  },
+  {
+   "title": "High-Fidelity Image Compression with Score-based Generative Models",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2305.18231",
+   "arxiv": "2305.18231"
+  },
+  {
+   "title": "Toward Extreme Image Compression With Latent Feature Guidance and Diffusion Prior",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2024.3455576",
+   "arxiv": "2404.18820"
+  },
+  {
+   "title": "Residual Vector Quantized Diffusion Model-Based Joint Source-Channel Coding for Task-Oriented Agent Communication",
+   "n_records": 2,
+   "doi": "10.1109/twc.2025.3543373",
+   "arxiv": null
+  },
+  {
+   "title": "A Joint Source-Channel Coding Learning Paradigm with Primary Semantic Supplement",
+   "n_records": 2,
+   "doi": "10.36227/techrxiv.173611745.57520048/v1",
+   "arxiv": null
+  },
+  {
+   "title": "MambaJSCC: Adaptive Deep Joint Source–Channel Coding With Generalized State Space Model",
+   "n_records": 3,
+   "doi": "10.1109/twc.2025.3643835",
+   "arxiv": "2409.16592"
+  },
+  {
+   "title": "Deep Learning for Joint Source-Channel Coding of Text",
+   "n_records": 5,
+   "doi": "10.1109/icassp.2018.8461983",
+   "arxiv": "1802.06832"
+  },
+  {
+   "title": "Joint Source-Channel Coding for Channel-Adaptive Digital Semantic Communications",
+   "n_records": 6,
+   "doi": "10.1109/tccn.2024.3422496",
+   "arxiv": "2311.08146"
+  },
+  {
+   "title": "Digital Image Semantic Communications with Joint Source-Channel Coding and Constellation Optimization",
+   "n_records": 3,
+   "doi": "10.1109/wcsp62071.2024.10827523",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for CSI Feedback: An End-to-End Approach",
+   "n_records": 3,
+   "doi": "10.1109/jsac.2022.3221963",
+   "arxiv": "2203.16005"
+  },
+  {
+   "title": "Neural Joint Source-Channel Coding",
+   "n_records": 7,
+   "doi": "10.48550/arxiv.1811.07557",
+   "arxiv": "1811.07557"
+  },
+  {
+   "title": "Deep Joint Source-Channel Analog Coding for Low-Latency Speech Transmission Over Gaussian Channels",
+   "n_records": 3,
+   "doi": "10.23919/eusipco58844.2023.10290056",
+   "arxiv": null
+  },
+  {
+   "title": "Distributed Deep Joint Source-Channel Coding over a Multiple Access Channel",
+   "n_records": 3,
+   "doi": "10.1109/icc45041.2023.10279499",
+   "arxiv": "2211.09920"
+  },
+  {
+   "title": "A Contemporary Survey on Semantic Communications: Theory of Mind, Generative AI, and Deep Joint Source-Channel Coding",
+   "n_records": 2,
+   "doi": "10.1109/comst.2025.3616973",
+   "arxiv": "2502.16468"
+  },
+  {
+   "title": "Scalable Deep Joint Source-Channel Coding for Multi-User Wireless Image Transmission With Diverse Bandwidth Conditions",
+   "n_records": 2,
+   "doi": "10.1109/twc.2025.3630680",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Source-Channel Coding for Sentence Semantic Transmission With HARQ",
+   "n_records": 3,
+   "doi": "10.1109/tcomm.2022.3180997",
+   "arxiv": "2106.03009"
+  },
+  {
+   "title": "Vector Quantized Semantic Communication System",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2023.3255221",
+   "arxiv": "2209.11519"
+  },
+  {
+   "title": "Taming Learnable Codebook Design and Modulation for Digital Semantic Image Communication",
+   "n_records": 2,
+   "doi": "10.1109/jiot.2025.3619193",
+   "arxiv": null
+  },
+  {
+   "title": "Learning Based Joint Coding-Modulation for Digital Semantic Communication Systems",
+   "n_records": 2,
+   "doi": "10.1109/wcsp55476.2022.10039447",
+   "arxiv": "2208.05704"
+  },
+  {
+   "title": "End-to-End Semantic Communication via Multi-Codebook Vector Quantization",
+   "n_records": 2,
+   "doi": "10.1109/gcwkshps68340.2025.11591197",
+   "arxiv": null
+  },
+  {
+   "title": "OFDM-Based Digital Semantic Communication With Importance Awareness",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2024.3397862",
+   "arxiv": "2401.02178"
+  },
+  {
+   "title": "Robust Information Bottleneck for Task-Oriented Communication With Digital Modulation",
+   "n_records": 4,
+   "doi": "10.1109/jsac.2023.3288252",
+   "arxiv": "2209.10382"
+  },
+  {
+   "title": "Vision Transformer-Based Semantic Communications With Importance-Aware Quantization",
+   "n_records": 2,
+   "doi": "10.1109/jiot.2025.3580597",
+   "arxiv": "2412.06038"
+  },
+  {
+   "title": "SCAN: Semantic Communication With Adaptive Channel Feedback",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2024.3394867",
+   "arxiv": "2306.15534"
+  },
+  {
+   "title": "Non-Orthogonal Multiple Access Enhanced Multi-User Semantic Communication",
+   "n_records": 5,
+   "doi": "10.1109/tccn.2023.3306852",
+   "arxiv": "2303.06597"
+  },
+  {
+   "title": "Hybrid Digital-Analog Semantic Communications",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2025.3559149",
+   "arxiv": "2405.12580"
+  },
+  {
+   "title": "Generative AI-Driven Semantic Communication Networks: Architecture, Technologies, and Applications",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2024.3435524",
+   "arxiv": "2401.00124"
+  },
+  {
+   "title": "Context-adaptive Entropy Model for End-to-end Optimized Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1809.10452",
+   "arxiv": "1809.10452"
+  },
+  {
+   "title": "End-to-End Optimized ROI Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tip.2019.2960869",
+   "arxiv": null
+  },
+  {
+   "title": "End-to-End Optimized Versatile Image Compression With Wavelet-Like Transform",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2020.3026003",
+   "arxiv": null
+  },
+  {
+   "title": "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling",
+   "n_records": 2,
+   "doi": "10.1109/tip.2021.3058615",
+   "arxiv": "1910.06244"
+  },
+  {
+   "title": "Reduced-Complexity End-to-End Variational Autoencoder for on Board Satellite Image Compression",
+   "n_records": 2,
+   "doi": "10.3390/rs13030447",
+   "arxiv": null
+  },
+  {
+   "title": "Ensemble Learning-Based Rate-Distortion Optimization for End-to-End Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2020.3000331",
+   "arxiv": null
+  },
+  {
+   "title": "End-to-End optimized image compression for machines, a study",
+   "n_records": 2,
+   "doi": "10.1109/dcc50243.2021.00024",
+   "arxiv": "2011.06409"
+  },
+  {
+   "title": "Joint Autoregressive and Hierarchical Priors for Learned Image Compression",
+   "n_records": 4,
+   "doi": "10.48550/arxiv.1809.02736",
+   "arxiv": "1809.02736"
+  },
+  {
+   "title": "Entroformer: A Transformer-based Entropy Model for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2202.05492",
+   "arxiv": "2202.05492"
+  },
+  {
+   "title": "A Unified End-to-End Framework for Efficient Deep Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2002.03370",
+   "arxiv": "2002.03370"
+  },
+  {
+   "title": "MLIC: Multi-Reference Entropy Model for Learned Image Compression",
+   "n_records": 3,
+   "doi": "10.1145/3581783.3611694",
+   "arxiv": "2211.07273"
+  },
+  {
+   "title": "Image-Dependent Local Entropy Models for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/icip.2018.8451502",
+   "arxiv": "1805.12295"
+  },
+  {
+   "title": "Learning Accurate Entropy Model with Global Reference for Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2010.08321",
+   "arxiv": "2010.08321"
+  },
+  {
+   "title": "Learned Image Compression with Dictionary-Based Entropy Model",
+   "n_records": 3,
+   "doi": "10.1109/cvpr52734.2025.01199",
+   "arxiv": "2504.00496"
+  },
+  {
+   "title": "Towards End-to-End Image Compression and Analysis with Transformers",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v36i1.19884",
+   "arxiv": "2112.09300"
+  },
+  {
+   "title": "End-to-end optimization of nonlinear transform codes for perceptual quality",
+   "n_records": 2,
+   "doi": "10.1109/pcs.2016.7906310",
+   "arxiv": "1607.05006"
+  },
+  {
+   "title": "High-Fidelity Generative Image Compression",
+   "n_records": 4,
+   "doi": "10.57702/ibvxyvoe",
+   "arxiv": "2006.09965"
+  },
+  {
+   "title": "Semantics-Guided Generative Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/icip55913.2025.11084711",
+   "arxiv": "2505.24015"
+  },
+  {
+   "title": "Saliency Driven Perceptual Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/wacv48630.2021.00027",
+   "arxiv": "2002.04988"
+  },
+  {
+   "title": "ProxIQA: A Proxy Approach to Perceptual Optimization of Learned Image Compression",
+   "n_records": 3,
+   "doi": "10.1109/tip.2020.3036752",
+   "arxiv": "1910.08845"
+  },
+  {
+   "title": "ProGIC: Progressive and Lightweight Generative Image Compression with Residual Vector Quantization",
+   "n_records": 2,
+   "doi": "10.1109/cvprf71909.2026.00284",
+   "arxiv": "2603.02897"
+  },
+  {
+   "title": "Generative Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1703.01467",
+   "arxiv": "1703.01467"
+  },
+  {
+   "title": "Deadline-Aware Bandwidth Allocation for Semantic Generative Communication with Diffusion Models",
+   "n_records": 3,
+   "doi": "10.5281/zenodo.17656516",
+   "arxiv": "2508.12701"
+  },
+  {
+   "title": "Generative Video Semantic Communication via Multimodal Semantic Fusion With Large Model",
+   "n_records": 2,
+   "doi": "10.1109/tvt.2025.3595688",
+   "arxiv": "2502.13838"
+  },
+  {
+   "title": "Latency-Aware Generative Semantic Communications With Pre-Trained Diffusion Models",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2024.3429295",
+   "arxiv": "2403.17256"
+  },
+  {
+   "title": "Generative Feature Imputing for Loss-Resilient Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/icc59461.2026.11587596",
+   "arxiv": null
+  },
+  {
+   "title": "SG2SC: A Generative Semantic Communication Framework for Scene Understanding-Oriented Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/icassp48485.2024.10446594",
+   "arxiv": null
+  },
+  {
+   "title": "Enhanced Invertible Encoding for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1145/3474085.3475213",
+   "arxiv": "2108.03690"
+  },
+  {
+   "title": "RNN–LSTM-assisted entropy-based source–channel coding for robust image transmission",
+   "n_records": 2,
+   "doi": "10.1038/s41598-026-65390-y",
+   "arxiv": null
+  },
+  {
+   "title": "Semantic Communication-Based Multiple Description Coding for Robust Image Transmission Over Wireless Channels",
+   "n_records": 2,
+   "doi": "10.1109/access.2026.3716070",
+   "arxiv": null
+  },
+  {
+   "title": "Adaptive Information Bottleneck Guided Joint Source and Channel Coding for Image Transmission",
+   "n_records": 5,
+   "doi": "10.1109/jsac.2023.3288238",
+   "arxiv": "2203.06492"
+  },
+  {
+   "title": "Linear Attention Modeling for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/cvpr52734.2025.00714",
+   "arxiv": "2502.05741"
+  },
+  {
+   "title": "Learned Block-Based Hybrid Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2021.3119660",
+   "arxiv": "2012.09550"
+  },
+  {
+   "title": "Conditional Coding for Flexible Learned Video Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2104.07930",
+   "arxiv": "2104.07930"
+  },
+  {
+   "title": "Neural Data-Dependent Transform for Learned Image Compression",
+   "n_records": 4,
+   "doi": "10.1109/cvpr52688.2022.01686",
+   "arxiv": "2203.04963"
+  },
+  {
+   "title": "Frequency-Aware Transformer for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2310.16387",
+   "arxiv": "2310.16387"
+  },
+  {
+   "title": "Learned Image Transmission with Hierarchical Variational Autoencoder",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v39i12.33442",
+   "arxiv": "2408.16340"
+  },
+  {
+   "title": "Learned Image Compression for Machine Perception",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2111.02249",
+   "arxiv": "2111.02249"
+  },
+  {
+   "title": "IoT‐Oriented Lightweight Joint Source‐Channel Coding for Image Transmission via Filter Pruning in Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1049/ipr2.70477",
+   "arxiv": null
+  },
+  {
+   "title": "Recognition-Aware Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.2352/ei.2022.34.14.coimg-220",
+   "arxiv": "2202.00198"
+  },
+  {
+   "title": "Manipulation Attacks on Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tai.2023.3340982",
+   "arxiv": "2205.13253"
+  },
+  {
+   "title": "Structured Pruning and Quantization for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/icip51287.2024.10648236",
+   "arxiv": "2506.01229"
+  },
+  {
+   "title": "AsymLLIC: Asymmetric Lightweight Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/vcip63160.2024.10849935",
+   "arxiv": "2412.17270"
+  },
+  {
+   "title": "Checkerboard Context Model for Efficient Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/cvpr46437.2021.01453",
+   "arxiv": "2103.15306"
+  },
+  {
+   "title": "Learned Image Compression with Mixed Transformer-CNN Architectures",
+   "n_records": 2,
+   "doi": "10.1109/cvpr52729.2023.01383",
+   "arxiv": "2303.14978"
+  },
+  {
+   "title": "Joint Global and Local Hierarchical Priors for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/cvpr52688.2022.00590",
+   "arxiv": "2112.04487"
+  },
+  {
+   "title": "Content-Oriented Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1007/978-3-031-19800-7_37",
+   "arxiv": "2207.14168"
+  },
+  {
+   "title": "Coarse-to-Fine Hyper-Prior Modeling for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v34i07.6736",
+   "arxiv": null
+  },
+  {
+   "title": "Approximately Invertible Neural Network for Learned Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/tip.2025.3567830",
+   "arxiv": "2408.17073"
+  },
+  {
+   "title": "Learned Image Compression With Gaussian-Laplacian-Logistic Mixture Model and Concatenated Residual Modules",
+   "n_records": 2,
+   "doi": "10.1109/tip.2023.3263099",
+   "arxiv": "2107.06463"
+  },
+  {
+   "title": "Deep Generative Modeling Reshapes Compression and Transmission: From Efficiency to Resiliency",
+   "n_records": 2,
+   "doi": "10.1109/mwc.005.2300574",
+   "arxiv": "2406.06446"
+  },
+  {
+   "title": "Reparo: Loss-Resilient Generative Codec for Video Conferencing",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2305.14135",
+   "arxiv": "2305.14135"
+  },
+  {
+   "title": "GRACE: Loss-Resilient Real-Time Video through Neural Codecs",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2305.12333",
+   "arxiv": "2305.12333"
+  },
+  {
+   "title": "Error-Resilient Semantic Communication for Speech Transmission Over Packet-Loss Networks",
+   "n_records": 3,
+   "doi": "10.1109/tmc.2026.3673476",
+   "arxiv": "2512.08203"
+  },
+  {
+   "title": "Deep Generative Video Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1810.02845",
+   "arxiv": "1810.02845"
+  },
+  {
+   "title": "Exploring the rate-distortion-complexity optimization in neural image compression",
+   "n_records": 2,
+   "doi": "10.1016/j.jvcir.2024.104294",
+   "arxiv": "2305.07678"
+  },
+  {
+   "title": "Slimmable Compressive Autoencoders for Practical Neural Image Compression",
+   "n_records": 2,
+   "doi": "10.1109/cvpr46437.2021.00496",
+   "arxiv": "2103.15726"
+  },
+  {
+   "title": "Neural joint source-channel coding via Bernoulli latent straight-through estimator",
+   "n_records": 2,
+   "doi": "10.23919/jcn.2022.000043",
+   "arxiv": null
+  },
+  {
+   "title": "Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip",
+   "n_records": 2,
+   "doi": "10.1609/aaai.v34i04.6041",
+   "arxiv": "2004.01454"
+  },
+  {
+   "title": "Turbo Autoencoder: Deep learning based channel codes for point-to-point communication channels",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1911.03038",
+   "arxiv": "1911.03038"
+  },
+  {
+   "title": "Robust Nonlinear Transform Coding: A Framework for Generalizable Joint Source-Channel Coding",
+   "n_records": 2,
+   "doi": "10.1109/twc.2026.3719686",
+   "arxiv": "2511.18884"
+  },
+  {
+   "title": "Neural Communication Systems with Bandwidth-limited Channel",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2003.13367",
+   "arxiv": "2003.13367"
+  },
+  {
+   "title": "Disentangled Information Bottleneck Guided Privacy-Protective Joint Source and Channel Coding for Image Transmission",
+   "n_records": 3,
+   "doi": "10.1109/tcomm.2024.3406381",
+   "arxiv": "2309.10263"
+  },
+  {
+   "title": "VQ-VAE Empowered Wireless Communication for Joint Source-Channel Coding and Beyond",
+   "n_records": 4,
+   "doi": "10.36227/techrxiv.19294622",
+   "arxiv": null
+  },
+  {
+   "title": "Improved Nonlinear Transform Source-Channel Coding to Catalyze Semantic Communications",
+   "n_records": 3,
+   "doi": "10.1109/jstsp.2023.3304140",
+   "arxiv": "2303.14637"
+  },
+  {
+   "title": "Communication-Oriented Model Fine-Tuning for Packet-Loss Resilient Distributed Inference Under Highly Lossy IoT Networks",
+   "n_records": 2,
+   "doi": "10.1109/access.2022.3149336",
+   "arxiv": "2112.09407"
+  },
+  {
+   "title": "Latent Space Inpainting for Loss-Resilient Collaborative Object Detection",
+   "n_records": 2,
+   "doi": "10.1109/icc42927.2021.9500417",
+   "arxiv": "2102.00142"
+  },
+  {
+   "title": "RDJSCC: Robust Deep Joint Source-Channel Coding Enabled Distributed Image Transmision over Severe Fading Channel",
+   "n_records": 2,
+   "doi": "10.1109/globecom52923.2024.10901284",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Joint Source-Channel Coding for Multi-Task Network",
+   "n_records": 2,
+   "doi": "10.1109/lsp.2021.3113827",
+   "arxiv": "2109.05779"
+  },
+  {
+   "title": "Robust Semantic Transmission: Joint Source Channel Coding for Cross-Domain Collaboration",
+   "n_records": 2,
+   "doi": null,
+   "arxiv": null
+  },
+  {
+   "title": "Adaptive deep joint source-channel coding via meta learning for semantic communication",
+   "n_records": 2,
+   "doi": "10.1016/j.phycom.2025.102899",
+   "arxiv": null
+  },
+  {
+   "title": "Transmission Map-Guided Joint Source-Channel Coding for Underwater Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/jsen.2025.3542396",
+   "arxiv": null
+  },
+  {
+   "title": "Wireless Image Transmission With Semantic and Security Awareness",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2023.3275383",
+   "arxiv": "2212.00227"
+  },
+  {
+   "title": "SCSC: A Novel Standards-Compatible Semantic Communication Framework for Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2025.3529221",
+   "arxiv": "2501.02738"
+  },
+  {
+   "title": "Semantic-Driven Joint Source-Channel Coding for Autonomous Driving Video Transmission",
+   "n_records": 2,
+   "doi": "10.1109/iccc68654.2025.11437947",
+   "arxiv": null
+  },
+  {
+   "title": "Improving Learning-Based Semantic Coding Efficiency for Image Transmission via Shared Semantic-Aware Codebook",
+   "n_records": 2,
+   "doi": "10.1109/tcomm.2024.3450877",
+   "arxiv": null
+  },
+  {
+   "title": "Transformer-Aided Wireless Image Transmission With Channel Feedback",
+   "n_records": 3,
+   "doi": "10.1109/twc.2024.3386052",
+   "arxiv": "2306.09101"
+  },
+  {
+   "title": "Communication Beyond Transmitting Bits: Semantics-Guided Source and Channel Coding",
+   "n_records": 2,
+   "doi": "10.1109/mwc.017.2100705",
+   "arxiv": "2112.03093"
+  },
+  {
+   "title": "Latent Resonance: Zero-Shot Autoencoder Inversion and Azimuthal Spectral Forensics for Diffusion Image Attribution",
+   "n_records": 2,
+   "doi": "10.2139/ssrn.7452278",
+   "arxiv": null
+  },
+  {
+   "title": "Lossy Compression with Gaussian Diffusion",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2206.08889",
+   "arxiv": "2206.08889"
+  },
+  {
+   "title": "Semantic Communications: Overview, Open Issues, and Future Research Directions",
+   "n_records": 2,
+   "doi": "10.1109/mwc.101.2100269",
+   "arxiv": null
+  },
+  {
+   "title": "A Lite Distributed Semantic Communication System for Internet of Things",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2020.3036968",
+   "arxiv": "2007.11095"
+  },
+  {
+   "title": "Less Data, More Knowledge: Building Next-Generation Semantic Communication Networks",
+   "n_records": 3,
+   "doi": "10.1109/comst.2024.3412852",
+   "arxiv": "2211.14343"
+  },
+  {
+   "title": "Wireless Semantic Communications for Video Conferencing",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2022.3221968",
+   "arxiv": "2204.07790"
+  },
+  {
+   "title": "Adaptive Modulation and Retransmission Scheme for Semantic Communication Systems",
+   "n_records": 2,
+   "doi": "10.1109/tccn.2023.3315386",
+   "arxiv": null
+  },
+  {
+   "title": "Semantic Feature Division Multiple Access for Multi-User Digital Interference Networks",
+   "n_records": 2,
+   "doi": "10.1109/twc.2024.3427675",
+   "arxiv": "2407.08424"
+  },
+  {
+   "title": "ImageNet: A large-scale hierarchical image database",
+   "n_records": 2,
+   "doi": "10.1109/cvpr.2009.5206848",
+   "arxiv": null
+  },
+  {
+   "title": "Image quality assessment: from error visibility to structural similarity",
+   "n_records": 2,
+   "doi": "10.1109/tip.2003.819861",
+   "arxiv": null
+  },
+  {
+   "title": "Elements of Information Theory",
+   "n_records": 2,
+   "doi": "10.1002/0471200611",
+   "arxiv": null
+  },
+  {
+   "title": "Learning Deep Architectures for AI",
+   "n_records": 2,
+   "doi": "10.1561/9781601982957",
+   "arxiv": null
+  },
+  {
+   "title": "Joint Source-Channel Coding with Neural Networks for Analog Data Compression and Storage",
+   "n_records": 2,
+   "doi": "10.1109/dcc.2018.00023",
+   "arxiv": null
+  },
+  {
+   "title": "Adam: A Method for Stochastic Optimization",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1412.6980",
+   "arxiv": "1412.6980"
+  },
+  {
+   "title": "Communication Algorithms via Deep Learning",
+   "n_records": 2,
+   "doi": "10.3929/ethz-b-000245054",
+   "arxiv": "1805.09317"
+  },
+  {
+   "title": "Learning Multiple Layers of Features from Tiny Images",
+   "n_records": 3,
+   "doi": "10.57702/zp44cu3g",
+   "arxiv": null
+  },
+  {
+   "title": "Model-Free Training of End-to-End Communication Systems",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2019.2933891",
+   "arxiv": "1812.05929"
+  },
+  {
+   "title": "BottleNet++: An End-to-End Approach for Feature Compression in Device-Edge Co-Inference Systems",
+   "n_records": 2,
+   "doi": "10.1109/iccworkshops49005.2020.9145068",
+   "arxiv": "1910.14315"
+  },
+  {
+   "title": "Semantic Communication System Based on Semantic Slice Models Propagation",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2022.3221948",
+   "arxiv": null
+  },
+  {
+   "title": "A Theory of Semantic Communication",
+   "n_records": 2,
+   "doi": "10.1109/tmc.2024.3406375",
+   "arxiv": "2212.01485"
+  },
+  {
+   "title": "Semantic Communication: A Survey on Research Landscape, Challenges, and Future Directions",
+   "n_records": 2,
+   "doi": "10.1109/jproc.2024.3520707",
+   "arxiv": null
+  },
+  {
+   "title": "Intellicise Wireless Networks From Semantic Communications: A Survey, Research Issues, and Challenges",
+   "n_records": 3,
+   "doi": "10.1109/comst.2024.3443193",
+   "arxiv": null
+  },
+  {
+   "title": "Semantics-Empowered Space-Air-Ground-Sea Integrated Network: New Paradigm, Frameworks, and Challenges",
+   "n_records": 2,
+   "doi": "10.1109/comst.2024.3416309",
+   "arxiv": "2402.14297"
+  },
+  {
+   "title": "Task-Oriented Explainable Semantic Communications",
+   "n_records": 2,
+   "doi": "10.1109/twc.2023.3269444",
+   "arxiv": "2302.13560"
+  },
+  {
+   "title": "Adaptive Bit Rate Control in Semantic Communication With Incremental Knowledge-Based HARQ",
+   "n_records": 2,
+   "doi": "10.1109/ojcoms.2022.3189023",
+   "arxiv": "2203.06634"
+  },
+  {
+   "title": "Channel-Adaptive Wireless Image Transmission With OFDM",
+   "n_records": 2,
+   "doi": "10.1109/lwc.2022.3204837",
+   "arxiv": "2205.02417"
+  },
+  {
+   "title": "Semantic segmentation-based semantic communication system for image transmission",
+   "n_records": 2,
+   "doi": "10.1016/j.dcan.2023.02.006",
+   "arxiv": null
+  },
+  {
+   "title": "Semantic Importance-Aware Communications Using Pre-Trained Language Models",
+   "n_records": 2,
+   "doi": "10.1109/lcomm.2023.3293805",
+   "arxiv": "2302.07142"
+  },
+  {
+   "title": "Toward Adaptive Semantic Communications: Efficient Data Transmission via Online Learned Nonlinear Transform Source-Channel Coding",
+   "n_records": 4,
+   "doi": "10.1109/jsac.2023.3288246",
+   "arxiv": "2211.04339"
+  },
+  {
+   "title": "Joint Source-Channel Coding Over Additive Noise Analog Channels Using Mixture of Variational Autoencoders",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2021.3078489",
+   "arxiv": null
+  },
+  {
+   "title": "Making Sense of Meaning: A Survey on Metrics for Semantic and Goal-Oriented Communication",
+   "n_records": 2,
+   "doi": "10.1109/access.2023.3269848",
+   "arxiv": "2303.10867"
+  },
+  {
+   "title": "Task-Oriented Communication for Edge Video Analytics",
+   "n_records": 2,
+   "doi": "10.1109/twc.2023.3314888",
+   "arxiv": "2211.14049"
+  },
+  {
+   "title": "Semantic Communication Empowered 6G Networks: Techniques, Applications, and Challenges",
+   "n_records": 2,
+   "doi": "10.1109/access.2025.3532797",
+   "arxiv": null
+  },
+  {
+   "title": "On the Role of ViT and CNN in Semantic Communications: Analysis and Prototype Validation",
+   "n_records": 2,
+   "doi": "10.1109/access.2023.3291405",
+   "arxiv": "2306.02759"
+  },
+  {
+   "title": "Semantic Communications With Variable-Length Coding for Extended Reality",
+   "n_records": 2,
+   "doi": "10.1109/jstsp.2023.3300509",
+   "arxiv": "2302.08645"
+  },
+  {
+   "title": "DeepJSCC-1++: Robust and Bandwidth-Adaptive Wireless Image Transmission",
+   "n_records": 2,
+   "doi": "10.1109/globecom54140.2023.10436878",
+   "arxiv": null
+  },
+  {
+   "title": "Vision Transformer for Adaptive Image Transmission over MIMO Channels",
+   "n_records": 2,
+   "doi": "10.1109/icc45041.2023.10278812",
+   "arxiv": "2210.15347"
+  },
+  {
+   "title": "A Semantic Communication System for Point Cloud",
+   "n_records": 3,
+   "doi": "10.1109/tvt.2024.3456099",
+   "arxiv": "2307.06027"
+  },
+  {
+   "title": "Scalable Extraction Based Semantic Communication for 6G Wireless Networks",
+   "n_records": 2,
+   "doi": "10.1109/mcom.021.2300269",
+   "arxiv": "2407.11334"
+  },
+  {
+   "title": "Neuron-Based Spiking Transmission and Reasoning Network for Robust Image-Text Retrieval",
+   "n_records": 2,
+   "doi": "10.1109/tcsvt.2022.3233042",
+   "arxiv": null
+  },
+  {
+   "title": "Generative Semantic Communications With Foundation Models: Perception-Error Analysis and Semantic-Aware Power Allocation",
+   "n_records": 2,
+   "doi": "10.1109/jsac.2025.3559120",
+   "arxiv": "2411.04575"
+  },
+  {
+   "title": "Privacy-Aware Communication over a Wiretap Channel with Generative Networks",
+   "n_records": 2,
+   "doi": "10.1109/icassp43922.2022.9747068",
+   "arxiv": null
+  },
+  {
+   "title": "Visual Language Model-Based Cross-Modal Semantic Communication Systems",
+   "n_records": 2,
+   "doi": "10.1109/twc.2025.3539526",
+   "arxiv": "2407.00020"
+  },
+  {
+   "title": "Orthogonal Model Division Multiple Access",
+   "n_records": 2,
+   "doi": "10.1109/twc.2024.3384421",
+   "arxiv": null
+  },
+  {
+   "title": "Robust Image Semantic Coding With Learnable CSI Fusion Masking Over MIMO Fading Channels",
+   "n_records": 2,
+   "doi": "10.1109/twc.2024.3409735",
+   "arxiv": "2406.07389"
+  },
+  {
+   "title": "A Mathematical Theory of Communication",
+   "n_records": 2,
+   "doi": "10.1002/j.1538-7305.1948.tb01338.x",
+   "arxiv": null
+  },
+  {
+   "title": "Fixing a Broken ELBO",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.1711.00464",
+   "arxiv": "1711.00464"
+  },
+  {
+   "title": "Generalization Bounds for Neural Belief Propagation Decoders",
+   "n_records": 2,
+   "doi": "10.1109/tit.2024.3361388",
+   "arxiv": "2305.10540"
+  },
+  {
+   "title": "Multiscale structural similarity for image quality assessment",
+   "n_records": 2,
+   "doi": "10.1109/acssc.2003.1292216",
+   "arxiv": null
+  },
+  {
+   "title": "Comparison of Full-Reference Image Quality Models for Optimization of Image Processing Systems",
+   "n_records": 2,
+   "doi": "10.1007/s11263-020-01419-7",
+   "arxiv": "2005.01338"
+  },
+  {
+   "title": "Nonlinear Transform Coding",
+   "n_records": 2,
+   "doi": "10.1109/jstsp.2020.3034501",
+   "arxiv": "2007.03034"
+  },
+  {
+   "title": "An End-to-End Learning Framework for Video Compression",
+   "n_records": 2,
+   "doi": "10.1109/tpami.2020.2988453",
+   "arxiv": null
+  },
+  {
+   "title": "Deep Contextual Video Compression",
+   "n_records": 2,
+   "doi": "10.48550/arxiv.2109.15047",
+   "arxiv": "2109.15047"
+  }
+ ]
+}

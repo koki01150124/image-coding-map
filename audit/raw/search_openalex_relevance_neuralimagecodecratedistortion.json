@@ -1,0 +1,899 @@
+[
+ {
+  "title": "Complexity-Aware Rate-Distortion Analysis of Classical and Neural Image Codecs",
+  "authors": [
+   "K. Kiruthika"
+  ],
+  "year": 2026,
+  "venue": "Digital Signal Processing and Artificial Intelligence for Automatic Learning",
+  "doi": "10.6025/dspaial/2026/5/1/1-17",
+  "arxiv": null,
+  "openalex": "W7134987754",
+  "cited_by": 0,
+  "abstract": "This study presents a complexity aware evaluation framework for comparing classical and neural image codecs across diverse content regimes.As video compression becomes critical for resource constrained edge IoT devices, conventional benchmarking often relies on aggregate metrics that obscure systematic performance variations driven by content complexity.Utilizing the Google Open Images Dataset (V7), we stratified approximately 125,000 images into three balanced complexity bins low, medium, and high using original file size as a proxy for spatial entropy via quantile based thresholds.We evaluated classical anchors (JPEG, AV1, VVC) and a representative neural codec, computing BD-Rate and BD-PSNR metrics separately for each bin to ensure statistically stable estimation.Empirical results reveal that neural codecs achieve substantial bitrate savings on low-complexity content (-32% versus JPEG), but advantages diminish significantly in high complexity regimes (-11%).Conversely, traditional codecs exhibit more robust performance across varying entropy levels.Statistical validation confirms these trends are not sampling artifacts.These findings establish content complexity as a first order variable governing codec behavior, indicating that current neural architectures struggle with high frequency details compared to hand engineered transforms.Consequently, we advocate for complexity stratified evaluation protocols as standard practice to prevent misleading performance assessments.The study highlights the necessity for complexity adaptive neural architectures and dynamic codec selection in green multimedia systems to maximize energy efficiency in heterogeneous edge environments.Future research must prioritize content conditioned rate allocation to bridge the gap between probabilistic bitstreams and dynamic network conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Complexity-Invariant Rate-Distortion Gains of Transformer- Based Neural Image Codecs: A Stratified Evaluation Framework",
+  "authors": [
+   "Maleerat Maliyaem"
+  ],
+  "year": 2026,
+  "venue": "Digital Signal Processing and Artificial Intelligence for Automatic Learning",
+  "doi": "10.6025/dspaial/2026/5/1/18-31",
+  "arxiv": null,
+  "openalex": "W7134920137",
+  "cited_by": 0,
+  "abstract": "This study investigates the rate distortion complexity tradeoffs of modern neural image codecs, with emphasis on practical deployment in resource constrained environments such as edge and augmented reality devices.While neural compression models often surpass classical standards (e.g., HEVC, VVC) in rate distortion performance, their high decoding complexity particularly from autoregressive entropy models hinders real world adoption.The authors address this by evaluating three representative architectures on the Kodak dataset (24 natural RGB images, 768×512): a hyperprior baseline, an autoregressive context model, and a transformer based codec.To ensure robust analysis, images were objectively stratified into low , medium, and high complexity bins based on Sobel-based gradient energy.Results demonstrate that transformer based codecs achieve approximately 44% improvement in BD rate over the hyperprior baseline, whereas autoregressive models yield approximately 30% savings.Critically, these gains remain consistent across all complexity levels (variation <1.5 percentage points), indicating architectural robustness rather than content specific optimization.At 0.62 bits per pixel, transformers deliver a 2.5 dB PSNR advantage with visibly superior texture and edge preservation.All performance differences were statistically significant (p < 0.001).The findings underscore a paradigm shift from pure rate distortion optimization toward balanced rate distortion complexity design.Transformer architectures, with their capacity for global context modeling, emerge as particularly promising for next generation standards where bandwidth efficiency and visual fidelity must coexist with computational constraints.The study establishes a reproducible evaluation framework grounded in objective complexity metrics and rigorous statistical validation, offering a methodological foundation for future codec development and benchmarking.",
+  "source": "openalex"
+ },
+ {
+  "title": "Sandwiched Image Compression: Wrapping Neural Networks Around A Standard Codec",
+  "authors": [
+   "Onur G. Guleryuz",
+   "Philip A. Chou",
+   "Hugues Hoppe",
+   "Danhang Tang",
+   "Ruofei Du",
+   "Philip Davidson",
+   "Sean Fanello"
+  ],
+  "year": 2021,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip42928.2021.9506256",
+  "arxiv": null,
+  "openalex": "W3183391581",
+  "cited_by": 24,
+  "abstract": "We sandwich a standard image codec between two neural networks: a preprocessor that outputs neural codes, and a postprocessor that reconstructs the image. The neural codes are compressed as ordinary images by the standard codec. Using differentiable proxies for both rate and distortion, we develop a rate-distortion optimization framework that trains the networks to generate neural codes that are efficiently compressible as images. This architecture not only improves rate-distortion performance for ordinary RGB images, but also enables efficient compression of alternative image types (such as normal maps of computer graphics) using standard image codecs. Results demonstrate the effectiveness and flexibility of neural processing in mapping a variety of input data modalities to the rigid structure of standard codecs. A surprising result is that the rate-distortion-optimized neural processing seamlessly learns to transport color images using a single-channel (grayscale) codec.",
+  "source": "openalex"
+ },
+ {
+  "title": "Exploring the rate-distortion-complexity optimization in neural image compression",
+  "authors": [
+   "Yixin Gao",
+   "Runsen Feng",
+   "Zongyu Guo",
+   "Zhibo Chen"
+  ],
+  "year": 2024,
+  "venue": "Journal of Visual Communication and Image Representation",
+  "doi": "10.1016/j.jvcir.2024.104294",
+  "arxiv": "2305.07678",
+  "openalex": "W4403848090",
+  "cited_by": 11,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Exploring the Rate-Distortion-Complexity Optimization in Neural Image Compression",
+  "authors": [
+   "Yixin Gao",
+   "Runsen Feng",
+   "Zongyu Guo",
+   "Zhibo Chen"
+  ],
+  "year": 2023,
+  "venue": "SSRN Electronic Journal",
+  "doi": "10.2139/ssrn.4669078",
+  "arxiv": null,
+  "openalex": "W4389960539",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Advancing the Rate-Distortion-Computation Frontier for Neural Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "Nick Johnston"
+  ],
+  "year": 2023,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip49359.2023.10222381",
+  "arxiv": "2311.12821",
+  "openalex": "W4386590373",
+  "cited_by": 12,
+  "abstract": "The rate-distortion performance of neural image compression models has exceeded the state-of-the-art for non-learned codecs, but neural codecs are still far from widespread deployment and adoption. The largest obstacle is having efficient models that are feasible on a wide variety of consumer hardware. Comparative research and evaluation is difficult due to the lack of standard benchmarking platforms and due to variations in hardware architectures and test environments. Through our rate-distortion-computation (RDC) study we demonstrate that neither floating-point operations (FLOPs) nor runtime are sufficient on their own to accurately rank neural compression methods. We also explore the RDC frontier, which leads to a family of model architectures with the best empirical trade-off between computational requirements and RD performance. Finally, we identify a novel neural compression architecture that yields state-of-the-art RD performance with rate savings of 23.1% over BPG (7.0% over VTM and 3.0% over ELIC) without requiring significantly more FLOPs than other learning-based codecs.",
+  "source": "openalex"
+ },
+ {
+  "title": "RDCompGS: Rate-Distortion Optimization for Compression of 3D Gaussian Splatting with Image Codecs",
+  "authors": [
+   "Huiping Ren",
+   "Shuai Wan",
+   "白璐 銭",
+   "Zhang Chen",
+   "Fuzheng Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.19538",
+  "arxiv": "2610.19538",
+  "openalex": "W7221887441",
+  "cited_by": 0,
+  "abstract": "3D Gaussian Splatting (3DGS) enables high-quality, real-time novel view synthesis but requires significant storage and transmission resources. Mapping Gaussian attributes to 2D representations enables efficient compression using mature image codecs. However, Gaussian representations that achieve comparable rendering quality are generally treated similarly during optimization, despite substantial differences in coding rate, leading to limited rate-distortion (R-D) performance after compression. To address this limitation, we propose RDCompGS, a 3DGS compression method that enables overall R-D optimization of Gaussian representations with respect to subsequent coding. A differentiable estimate of the coding rate is incorporated into the R-D optimization with rendering distortion. The rate constraint adjustment model further regulates the R-D trade-off across different compression conditions. Extensive experiments on three benchmark datasets demonstrate that RDCompGS achieves average Bjøntegaard Delta Rate reductions of 37.84% and 49.31% with H.265/HEVC and JPEG XL, respectively. The estimated rate also shows a strong correlation with the actual bit-rate under different compression conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Theoretical Bound-Guided Hierarchical Vae For Neural Image Codecs",
+  "authors": [
+   "Yichi Zhang",
+   "Zhihao Duan",
+   "Yuning Huang",
+   "Fengqing Maggie Zhu"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+  "doi": "10.1109/icme57554.2024.10688065",
+  "arxiv": "2403.18535",
+  "openalex": "W4402982478",
+  "cited_by": 9,
+  "abstract": "Recent studies reveal a significant theoretical link between variational autoencoders (VAEs) and rate-distortion theory, notably in utilizing VAEs to estimate the theoretical upper bound of the information rate-distortion function of images. Such estimated theoretical bounds substantially exceed the performance of existing neural image codecs (NICs). To narrow this gap, we propose a theoretical bound-guided hierarchical VAE (BG-VAE) for NIC. The proposed BG-VAE leverages the theoretical bound to guide the NIC model towards enhanced performance. We implement the BG-VAE using Hierarchical VAEs and demonstrate its effectiveness through extensive experiments. Along with advanced neural network blocks, we provide a versatile, variable-rate NIC that outperforms existing methods when considering both ratedistortion performance and computational complexity. The code is available at $\\color{magenta}{\\text{BG - VAE}}$.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Distortion-Cognition Controllable Versatile Neural Image Compression",
+  "authors": [
+   "Jinming Liu",
+   "Ruoyu Feng",
+   "Yunpeng Qi",
+   "Qiuyu Chen",
+   "Zhibo Chen",
+   "Wenjun Zeng",
+   "Xin Jin"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-72992-8_19",
+  "arxiv": "2407.11700",
+  "openalex": "W4403878008",
+  "cited_by": 11,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "SoundStream: An End-to-End Neural Audio Codec",
+  "authors": [
+   "Neil Zeghidour",
+   "Alejandro Luebs",
+   "Ahmed Omran",
+   "Jan Skoglund",
+   "Marco Tagliasacchi"
+  ],
+  "year": 2021,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2021.3129994",
+  "arxiv": "2107.03312",
+  "openalex": "W3178321840",
+  "cited_by": 654,
+  "abstract": "We presentSoundStream, a novel neural audio codec that can efficiently compress speech, music and general audio at bitrates normally targeted by speech-tailored codecs.SoundStreamrelies on a model architecture composed by a fully convolutional encoder/decoder network and a residual vector quantizer, which are trained jointly end-to-end. Training leverages recent advances in text-to-speech and speech enhancement, which combine adversarial and reconstruction losses to allow the generation of high-quality audio content from quantized embeddings. By training with structured dropout applied to quantizer layers, a single model can operate across variable bitrates from 3 kbps to 18 kbps, with a negligible quality loss when compared with models trained at fixed bitrates. In addition, the model is amenable to a low latency implementation, which supports streamable inference and runs in real time on a smartphone CPU. In subjective evaluations using audio at 24 kHz sampling rate,SoundStreamat 3 kbps outperforms Opus at 12 kbps and approaches EVS at 9.6 kbps. Moreover, we are able to perform joint compression and enhancement either at the encoder or at the decoder side with no additional latency, which we demonstrate through background noise suppression for speech.",
+  "source": "openalex"
+ },
+ {
+  "title": "Sandwiched Compression: Repurposing Standard Codecs with Neural Network Wrappers",
+  "authors": [
+   "Onur G. Guleryuz",
+   "Onur G Guleryuz",
+   "Philip A. Chou",
+   "Berivan Isik",
+   "Hugues Hoppe",
+   "Danhang Tang",
+   "Ruofei Du",
+   "Jonathan Taylor",
+   "Philip Davidson",
+   "Sean Fanello"
+  ],
+  "year": 2024,
+  "venue": null,
+  "doi": "10.36227/techrxiv.170775802.27887173/v1",
+  "arxiv": "2402.05887",
+  "openalex": "W4391743909",
+  "cited_by": 4,
+  "abstract": "We propose sandwiching standard image and video codecs between pre-and post-processing neural networks. The networks are jointly trained through a differentiable codec proxy to minimize a given rate-distortion loss. This sandwich architecture not only improves the standard codec's performance on its intended content, it can effectively adapt the codec to other types of image/video content and to other distortion measures. Essentially, the sandwich learns to transmit \"neural code images\" that optimize overall rate-distortion performance even when the overall problem is well outside the scope of the codec's design. Through a variety of examples, we apply the sandwich architecture to sources with different numbers of channels, higher resolution, higher dynamic range, and perceptual distortion measures. The results demonstrate substantial improvements (up to 9 dB gains or up to 30% bitrate reductions) compared to alternative adaptations. We derive VQ equivalents for the sandwich, establish optimality properties, and design differentiable codec proxies approximating current standard codecs. We further analyze model complexity, visual quality under perceptual metrics, as well as sandwich configurations that offer interesting potentials in image/video compression and streaming.",
+  "source": "openalex"
+ },
+ {
+  "title": "Low-Complexity Overfitted Neural Image Codec",
+  "authors": [
+   "Thomas Leguay",
+   "Théo Ladune",
+   "Pierrick Philippe",
+   "Gordon Clare",
+   "Félix Henry",
+   "Olivier Déforges A"
+  ],
+  "year": 2023,
+  "venue": "IEEE International Workshop on Multimedia Signal Processing (MMSP)",
+  "doi": "10.1109/mmsp59012.2023.10337636",
+  "arxiv": "2307.12706",
+  "openalex": "W4389474446",
+  "cited_by": 21,
+  "abstract": "We propose a neural image codec at reduced complexity which overfits the decoder parameters to each input image. While autoencoders perform up to a million multiplications per decoded pixel, the proposed approach only requires 2300 multiplications per pixel. Albeit low-complexity, the method rivals autoencoder performance and surpasses HEVC performance under various coding conditions. Additional lightweight modules and an improved training process provide a 14% rate reduction with respect to previous overfitted codecs, while offering a similar complexity. This work is made open-source at http://orange-opensource.github.io/Cool-Chic/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Application Space and the Rate-Distortion-Complexity Analysis of Neural Video CODECs",
+  "authors": [
+   "Ricardo Lopes de Queiroz",
+   "Diogo Caetano Garcia",
+   "Yi‐Hsin Chen",
+   "Ruhan Conceição",
+   "Wen-Hsiao Peng",
+   "Luciano Volcan Agostini"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2509.05929",
+  "arxiv": "2509.05929",
+  "openalex": "W4415054882",
+  "cited_by": 0,
+  "abstract": "We study the decision-making process for choosing video compression systems through a rate-distortion-complexity (RDC) analysis. We discuss the 2D Bjontegaard delta (BD) metric and formulate generalizations in an attempt to extend its notions to the 3D RDC volume. We follow that discussion with another one on the computation of metrics in the RDC volume, and on how to define and measure the cost of a coder-decoder (codec) pair, where the codec is characterized by a cloud of points in the RDC space. We use a Lagrangian cost $D+λR + γC$, such that choosing the best video codec among a number of candidates for an application demands selecting appropriate $(λ, γ)$ values. Thus, we argue that an application may be associated with a $(λ, γ)$ point in the application space. An example streaming application was given as a case study to set a particular point in the $(λ, γ)$ plane. The result is that we can compare Lagrangian costs in an RDC volume for different codecs for a given application. Furthermore, we can span the plane and compare codecs for the entire application space filled with different $(λ, γ)$ choices. We then compared several state-of-the-art neural video codecs using the proposed metrics. Results are informative and surprising. We found that, within our RDC computation constraints, only four neural video codecs came out as the best suited for any application, depending on where its desirable $(λ, γ)$ lies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Image Compression with Quantization Rectifier",
+  "authors": [
+   "Wei Luo",
+   "Bo Chen"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2403.17236",
+  "arxiv": "2403.17236",
+  "openalex": "W4393284494",
+  "cited_by": 1,
+  "abstract": "Neural image compression has been shown to outperform traditional image codecs in terms of rate-distortion performance. However, quantization introduces errors in the compression process, which can degrade the quality of the compressed image. Existing approaches address the train-test mismatch problem incurred during quantization, the random impact of quantization on the expressiveness of image features is still unsolved. This paper presents a novel quantization rectifier (QR) method for image compression that leverages image feature correlation to mitigate the impact of quantization. Our method designs a neural network architecture that predicts unquantized features from the quantized ones, preserving feature expressiveness for better image reconstruction quality. We develop a soft-to-predictive training technique to integrate QR into existing neural image codecs. In evaluation, we integrate QR into state-of-the-art neural image codecs and compare enhanced models and baselines on the widely-used Kodak benchmark. The results show consistent coding efficiency improvement by QR with a negligible increase in the running time.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent-Shift: Gradient of Entropy Helps Neural Codecs",
+  "authors": [
+   "Muhammet Balcılar",
+   "Bharath Bhushan Damodaran",
+   "Karam Naser",
+   "Franck Galpin",
+   "Pierre Hellier J"
+  ],
+  "year": 2023,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip49359.2023.10222469",
+  "arxiv": "2308.00725",
+  "openalex": "W4386598475",
+  "cited_by": 1,
+  "abstract": "End-to-end image/video codecs are getting competitive compared to traditional compression techniques that have been developed through decades of manual engineering efforts. These trainable codecs have many advantages over traditional techniques such as easy adaptation on perceptual distortion metrics and high performance on specific domains thanks to their learning ability. However, state of the art neural codecs does not take advantage of the existence of gradient of entropy in decoding device. In this paper, we theoretically show that gradient of entropy (available at decoder side) is correlated with the gradient of the reconstruction error (which is not available at decoder side). We then demonstrate experimentally that this gradient can be used on various compression methods, leading to a 1−2% rate savings for the same quality. Our method is orthogonal to other improvements and brings independent rate savings.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Distortion in Image Coding for Machines",
+  "authors": [
+   "Alon Harell",
+   "Anderson de Andrade",
+   "Ivan V. Bajić"
+  ],
+  "year": 2022,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs56426.2022.10018035",
+  "arxiv": "2209.11694",
+  "openalex": "W4317555115",
+  "cited_by": 14,
+  "abstract": "In recent years, there has been a sharp increase in transmission of images to remote servers specifically for the purpose of computer vision. In many applications, such as surveillance, images are mostly transmitted for automated analysis, and rarely seen by humans. Using traditional compression for this scenario has been shown to be inefficient in terms of bit-rate, likely due to the focus on human based distortion metrics. Thus, it is important to create specific image coding methods for joint use by humans and machines. One way to create the machine side of such a codec is to perform feature matching of some intermediate layer in a Deep Neural Network performing the machine task. In this work, we explore the effects of the layer choice used in training a learnable codec for humans and machines. We prove, using the data processing inequality, that matching features from deeper layers is preferable in the sense of rate-distortion. Next, we confirm our findings empirically by re-training an existing model for scalable human-machine coding. In our experiments we show the trade-off between the human and machine sides of such a scalable model, and discuss the benefit of using deeper layers for training in that regard.",
+  "source": "openalex"
+ },
+ {
+  "title": "ELFIC: A Learning-based Flexible Image Codec with Rate-Distortion-Complexity Optimization",
+  "authors": [
+   "Zhichen Zhang",
+   "Bolin Chen",
+   "Hongbin Lin",
+   "Jielian Lin",
+   "Xu Wang",
+   "Tiesong Zhao"
+  ],
+  "year": 2023,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3581783.3612540",
+  "arxiv": null,
+  "openalex": "W4387968526",
+  "cited_by": 10,
+  "abstract": "Learning-based image coding has attracted increasing attentions for its higher compression efficiency than reigning image codecs. However, most existing learning-based codecs do not support variable rates with a single encoder; their decoders are also of fixed, high computational complexity. In this paper, we propose an End-to-end, Learning-based and Flexible Image Codec (ELFIC) that supports variable rate and flexible decoding complexity. First, we propose a general image codec with Nonlinear Feature Fusion Transform (NFFT) as nonlinear transforms to improve its Rate-Distortion (RD) performance. Second, we propose an Instance-aware Decoding Complexity Allocation (IDCA) approach, which exploits image contents for a tradeoff between reconstruction quality and computational complexity in the decoding process. Third, we propose an RD-Complexity (RDC) optimization algorithm, which maximizes the image quality under given rate and complexity constraints for the whole framework. Experimental results show that ELFIC achie-ves variable rate, flexible decoding complexity with the state-of-the-art RD performance. It also supports a more efficient decoding process by focusing on image contents. Source codes are available at https://github.com/Zhichen-Zhang/ELFIC-Image-Compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Beyond Rate-Distortion: A Complexity-Aware Evaluation of Image Codecs Reveals INR-Based Approaches as Pareto- Optimal for Edge Deployment",
+  "authors": [
+   "Hathairat Ketmaneechairat"
+  ],
+  "year": 2026,
+  "venue": "Digital Signal Processing and Artificial Intelligence for Automatic Learning",
+  "doi": "10.6025/dspaial/2026/5/1/32-45",
+  "arxiv": null,
+  "openalex": "W7134935614",
+  "cited_by": 0,
+  "abstract": "This study challenges the conventional rate distortion (RD) paradigm for image codec evaluation by demonstrating its inadequacy in resource constrained, real world deployments.We introduce a unified rate distortion complexity (RDC) framework that explicitly incorporates decoding complexity as a first class evaluation dimension alongside bitrate and reconstruction quality.Through systematic analysis across classical (JPEG, BPG, VVC-intra), learned neural (hyperprior, autoregressive), and implicit neural representation (INR) codecs on a complexity stratified dataset, we reveal critical trade offs invisible to RD only assessment.Our results show that autoregressive neural codecs, while achieving state of the art RD performance, incur prohibitive decoding latency due to inherently sequential entropy decoding rendering them impractical for edge devices.Conversely, INR based approaches emerge as Pareto optimal under tight computational budgets (<5 ms), delivering competitive reconstruction quality with orders of magnitude lower decoding latency and linear complexity scaling with resolution unlike autoregressive methods' superlinear growth.Pareto front analysis confirms that RD optimal operating points are frequently dominated in RDC space once complexity constraints are imposed.Complexity constrained evaluations further demonstrate that codec superiority is budget dependent: INR dominates at low latency budgets, hyperprior models become competitive at moderate budgets (5-20 ms), and only at high budgets (>20 ms) do autoregressive methods justify their computational cost.These findings advocate for a paradigm shift toward RDC aware codec design and evaluation, positioning INR-based compression as a compelling solution for energy efficient, low latency streaming on heterogeneous edge devices without sacrificing perceptual fidelity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Exploiting Latent Properties to Optimize Neural Codecs",
+  "authors": [
+   "Muhammet Balcılar",
+   "Bharath Bhushan Damodaran",
+   "Karam Naser",
+   "Franck Galpin",
+   "Pierre Hellier J"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2024.3522813",
+  "arxiv": null,
+  "openalex": "W4405974086",
+  "cited_by": 0,
+  "abstract": "End-to-end image and video codecs are becoming increasingly competitive, compared to traditional compression techniques that have been developed through decades of manual engineering efforts. These trainable codecs have many advantages over traditional techniques, such as their straightforward adaptation to perceptual distortion metrics and high performance in specific fields thanks to their learning ability. However, current state-of-the-art neural codecs do not fully exploit the benefits of vector quantization and the existence of the entropy gradient in decoding devices. In this paper, we propose to leverage these two properties (vector quantization and entropy gradient) to improve the performance of off-the-shelf codecs. Firstly, we demonstrate that using non-uniform scalar quantization cannot improve performance over uniform quantization. We thus suggest using predefined optimal uniform vector quantization to improve performance. Secondly, we show that the entropy gradient, available at the decoder, is correlated with the reconstruction error gradient, which is not available at the decoder. We therefore use the former as a proxy to enhance compression performance. Our experimental results show that these approaches save between 1 to 3% of the rate for the same quality across various pre-trained methods. In addition, the entropy gradient based solution improves traditional codec performance significantly as well.",
+  "source": "openalex"
+ },
+ {
+  "title": "How to Exploit the Transferability of Learned Image Compression to Conventional Codecs",
+  "authors": [
+   "Jan P. Klopp",
+   "Keng-Chi Liu",
+   "Liang‐Gee Chen",
+   "Shao‐Yi Chien"
+  ],
+  "year": 2021,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr46437.2021.01590",
+  "arxiv": "2012.01874",
+  "openalex": "W3106665789",
+  "cited_by": 20,
+  "abstract": "Lossy image compression is often limited by the simplicity of the chosen loss measure. Recent research suggests that generative adversarial networks have the ability to overcome this limitation and serve as a multi-modal loss, especially for textures. Together with learned image compression, these two techniques can be used to great effect when relaxing the commonly employed tight measures of distortion. However, convolutional neural network-based algorithms have a large computational footprint. Ideally, an existing conventional codec should stay in place, ensuring faster adoption and adherence to a balanced computational envelope.As a possible avenue to this goal, we propose and investigate how learned image coding can be used as a surrogate to optimise an image for encoding. A learned filter alters the image to optimise a different performance measure or a particular task. Extending this idea with a generative adversarial network, we show how entire textures are replaced by ones that are less costly to encode but preserve a sense of detail.Our approach can remodel a conventional codec to adjust for the MS-SSIM distortion with over 20% rate improvement without any decoding overhead. On task-aware image compression, we perform favourably against a similar but codec-specific approach.",
+  "source": "openalex"
+ },
+ {
+  "title": "Evaluating Strong Idempotence of Image Codec",
+  "authors": [
+   "Qian Zhang",
+   "Tongda Xu",
+   "Yanghao Li",
+   "Wang, Yan"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2304.08269",
+  "arxiv": "2304.08269",
+  "openalex": "W4366327624",
+  "cited_by": 1,
+  "abstract": "In this paper, we first propose the concept of strong idempotent codec based on idempotent codec. The idempotence of codec refers to the stability of codec to re-compression. Similarly, we define the strong idempotence of codec as the stability of codec to multiple quality re-compression, which is an important feature of codec in the context of cloud transcoding. We provide a detailed example of strong idempotent codec with known source distribution. Further, we formalize a testing protocol to evaluate the strong idempotence of image codec. And finally, we evaluate the strong idempotence of current image codecs, including traditional codec and recent neural codec. Experimental results show that current image codecs are not stable to multi-round re-compression with different qualities, even if they are close to idempotent.",
+  "source": "openalex"
+ },
+ {
+  "title": "Controllable Distortion-Perception Tradeoff Through Latent Diffusion for Neural Image Compression",
+  "authors": [
+   "Chuqin Zhou",
+   "Guo Sheng Lu",
+   "Jiangchuan Li",
+   "Xiangyu Chen",
+   "Zhengxue Cheng",
+   "Li Song",
+   "Wenjun Zhang"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v39i10.33165",
+  "arxiv": "2412.11379",
+  "openalex": "W4409366141",
+  "cited_by": 6,
+  "abstract": "Neural image compression often faces a challenging trade-off among rate, distortion and perception. While most existing methods typically focus on either achieving high pixel-level fidelity or optimizing for perceptual metrics, we propose a novel approach that simultaneously addresses both aspects for a fixed neural image codec. Specifically, we introduce a plug-and-play module at the decoder side that leverages a latent diffusion process to transform the decoded features, enhancing either low distortion or high perceptual quality without altering the original image compression codec. Our approach facilitates fusion of original and transformed features without additional training, enabling users to flexibly adjust the balance between distortion and perception during inference. Extensive experimental results demonstrate that our method significantly enhances the pretrained codecs with a wide, adjustable distortion-perception range while maintaining their original compression capabilities. For instance, we can achieve more than 150% improvement in LPIPS-BDRate without sacrificing more than 1 dB in PSNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "Slimmable Video Codec",
+  "authors": [
+   "Zhaocheng Liu",
+   "Luis Herranz",
+   "Fei Yang",
+   "Saiping Zhang",
+   "Shuai Wan",
+   "Marta Mrak",
+   "Marc Górriz Blanch"
+  ],
+  "year": 2022,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "doi": "10.1109/cvprw56347.2022.00183",
+  "arxiv": "2205.06754",
+  "openalex": "W4280506599",
+  "cited_by": 7,
+  "abstract": "Neural video compression has emerged as a novel paradigm combining trainable multilayer neural net-works and machine learning, achieving competitive rate-distortion (RD) performances, but still remaining impractical due to heavy neural architectures, with large memory and computational demands. In addition, models are usually optimized for a single RD tradeoff. Recent slimmable image codecs can dynamically adjust their model capacity to gracefully reduce the memory and computation requirements, without harming RD performance. In this paper we propose a slimmable video codec (SlimVC), by integrating a slimmable temporal entropy model in a slimmable autoencoder. Despite a significantly more complex architecture, we show that slimming remains a powerful mechanism to control rate, memory footprint, computational cost and latency, all being important requirements for practical video compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Slimmable Compressive Autoencoders for Practical Neural Image Compression",
+  "authors": [
+   "Fei Yang",
+   "Luis Herranz",
+   "Yongmei Cheng",
+   "M. G. Mozerov"
+  ],
+  "year": 2021,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr46437.2021.00496",
+  "arxiv": "2103.15726",
+  "openalex": "W3173563913",
+  "cited_by": 78,
+  "abstract": "Neural image compression leverages deep neural networks to outperform traditional image codecs in rate-distortion performance. However, the resulting models are also heavy, computationally demanding and generally optimized for a single rate, limiting their practical use. Focusing on practical image compression, we propose slimmable compressive autoencoders (SlimCAEs), where rate (R) and distortion (D) are jointly optimized for different capacities. Once trained, encoders and decoders can be executed at different capacities, leading to different rates and complexities. We show that a successful implementation of Slim-CAEs requires suitable capacity-specific RD tradeoffs. Our experiments show that SlimCAEs are highly flexible models that provide excellent rate-distortion performance, variable rate, and dynamic adjustment of memory, computational cost and latency, thus addressing the main requirements of practical image compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Green image codec: a lightweight learning-based image coding method",
+  "authors": [
+   "Yifan Wang",
+   "Zhanxuan Mei",
+   "Qingyang Zhou",
+   "Ioannis X. Katsavounidis",
+   "C.‐C. Jay Kuo"
+  ],
+  "year": 2022,
+  "venue": "SPIE Applications of Digital Image Processing",
+  "doi": "10.1117/12.2633475",
+  "arxiv": null,
+  "openalex": "W4298129519",
+  "cited_by": 3,
+  "abstract": "Image compression has experienced a new revolution with the success of deep learning, which yields superior rate-distortion (RD) performance against traditional codecs. Yet, high computational complexity and energy consumption are the main bottlenecks that hinder the practical applicability of deep-learning-based (DL-based) codecs. Inspired by the neural network’s hierarchic structure yet with lower complexity, we propose a new lightweight image coding framework and name it the ”Green Image Codec” (GIC) in this work. First, GIC down-samples an input image into several spatial resolutions from fine-to-coarse grids and computes image residuals between two adjacent grids. Then, it encodes the coarsest content, interpolates content from coarse-tofine grids, encodes residuals, and adds residuals to interpolated images for reconstruction. All coding steps are implemented by vector quantization while all interpolation steps are conducted by the Lanczos interpolation. To facilitate VQ codebook training, the Saab transform is applied for energy compaction and, thus, dimension reduction. A simple rate-distortion optimization (RDO) is developed to help select the coding parameters. GIC yields an RD performance that is comparable with BPG at significantly lower complexity.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning a virtual codec based on deep convolutional neural network to compress image",
+  "authors": [
+   "Lijun Zhao",
+   "Huihui Bai",
+   "Anhong Wang",
+   "Yao Zhao"
+  ],
+  "year": 2019,
+  "venue": "Journal of Visual Communication and Image Representation",
+  "doi": "10.1016/j.jvcir.2019.102589",
+  "arxiv": "1712.05969",
+  "openalex": "W2966122314",
+  "cited_by": 37,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Enhancing the Rate-Distortion-Perception Flexibility of Learned Image Codecs with Conditional Diffusion Decoders",
+  "authors": [
+   "Daniele Mari",
+   "Simone Milani"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2403.02887",
+  "arxiv": "2403.02887",
+  "openalex": "W4392538394",
+  "cited_by": 1,
+  "abstract": "Learned image compression codecs have recently achieved impressive compression performances surpassing the most efficient image coding architectures. However, most approaches are trained to minimize rate and distortion which often leads to unsatisfactory visual results at low bitrates since perceptual metrics are not taken into account. In this paper, we show that conditional diffusion models can lead to promising results in the generative compression task when used as a decoder, and that, given a compressed representation, they allow creating new tradeoff points between distortion and perception at the decoder side based on the sampling method.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Image Data Hiding and Rate-Distortion Optimization in Neural Compressed Latent Representations",
+  "authors": [
+   "Chen-Hsiu Huang",
+   "Ja‐Ling Wu"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-53305-1_8",
+  "arxiv": null,
+  "openalex": "W4391274701",
+  "cited_by": 2,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate Distortion Characteristic Modeling for Neural Image Compression",
+  "authors": [
+   "Chuanmin Jia",
+   "Ziqing Ge",
+   "Shanshe Wang",
+   "Siwei Ma",
+   "Wen Gao"
+  ],
+  "year": 2022,
+  "venue": "DCC",
+  "doi": "10.1109/dcc52660.2022.00028",
+  "arxiv": "2106.12954",
+  "openalex": "W3174231492",
+  "cited_by": 18,
+  "abstract": "End-to-end optimized neural image compression (NIC) has obtained superior lossy compression performance recently. In this paper, we consider the problem of rate-distortion (R-D) characteristic analysis and modeling for NIC. We make efforts to formulate the essential mathematical functions to describe the R-D behavior of NIC using deep networks. Thus arbitrary bit-rate points could be elegantly realized by leveraging such model via a single trained network. We propose a plugin-in module to learn the relationship between the target bit-rate and the binary representation for the latent variable of auto-encoder. The proposed scheme resolves the problem of training distinct models to reach different points in the R-D space. Furthermore, we model the rate and distortion characteristic of NIC as a function of the coding parameter$\\lambda$respectively. Our experiments show our proposed method is easy to adopt and realizes state-of-the-art continuous bit-rate coding performance, which implies that our approach would benefit the practical deployment of NIC.",
+  "source": "openalex"
+ },
+ {
+  "title": "A New Image Codec Paradigm for Human and Machine Uses",
+  "authors": [
+   "Sien Chen",
+   "Jian Jin",
+   "Lili Meng",
+   "Weisi Lin",
+   "Zhuo Chen",
+   "Tsui-Shan Chang",
+   "Zhengguang Li",
+   "Huaxiang Zhang"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2112.10071",
+  "arxiv": "2112.10071",
+  "openalex": "W4226467531",
+  "cited_by": 6,
+  "abstract": "With the AI of Things (AIoT) development, a huge amount of visual data, e.g., images and videos, are produced in our daily work and life. These visual data are not only used for human viewing or understanding but also for machine analysis or decision-making, e.g., intelligent surveillance, automated vehicles, and many other smart city applications. To this end, a new image codec paradigm for both human and machine uses is proposed in this work. Firstly, the high-level instance segmentation map and the low-level signal features are extracted with neural networks. Then, the instance segmentation map is further represented as a profile with the proposed 16-bit gray-scale representation. After that, both 16-bit gray-scale profile and signal features are encoded with a lossless codec. Meanwhile, an image predictor is designed and trained to achieve the general-quality image reconstruction with the 16-bit gray-scale profile and signal features. Finally, the residual map between the original image and the predicted one is compressed with a lossy codec, used for high-quality image reconstruction. With such designs, on the one hand, we can achieve scalable image compression to meet the requirements of different human consumption; on the other hand, we can directly achieve several machine vision tasks at the decoder side with the decoded 16-bit gray-scale profile, e.g., object classification, detection, and segmentation. Experimental results show that the proposed codec achieves comparable results as most learning-based codecs and outperforms the traditional codecs (e.g., BPG and JPEG2000) in terms of PSNR and MS-SSIM for image reconstruction. At the same time, it outperforms the existing codecs in terms of the mAP for object detection and segmentation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error Tolerant Neural Media Codecs for 6G AI-on-RAN",
+  "authors": [
+   "Rui Yang",
+   "Shihang Lu",
+   "Yaru Shan",
+   "Yongqing Xu",
+   "Xueru Li",
+   "Feng Qian"
+  ],
+  "year": 2026,
+  "venue": "ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc)",
+  "doi": "10.1145/3842721.3856775",
+  "arxiv": null,
+  "openalex": "W7224905204",
+  "cited_by": 0,
+  "abstract": "Running neural media codecs on the RAN enables bandwidth-efficient and low-latency delivery in the emerging AI on radio access network (AI-on-RAN) paradigm. However, both conventional and neural codecs, e.g., JPEG and vector-quantized variational autoencoder (VQ-VAE), may degrade severely under packet loss and residual bit errors. While entropy coding in conventional codecs may cause extensive error propagation, the independently decodable discrete latents of neural codecs provide an opportunity to design codec-level error tolerance. This paper introduces EMA-SVTC, a unified quantization framework for error-prone 6G AI-on-RAN systems that combines exponential moving average (EMA) codebook updates with a semantically-adjacent vector transition constraint (SVTC). The constraint shapes the topological structure of the latent space by encouraging neighboring latent indices to correspond to semantically similar representations, thereby limiting the distortion caused by bit errors within individual latents while retaining independent decoding across latents and avoiding cross-latent error propagation. We apply the proposed framework to speech and image codecs based on finite scalar quantization (FSQ) and VQ-VAE, respectively. Experiments over error-prone wireless channels show that, at a bit error rate of 10-2, the proposed speech codec raises the perceptual evaluation of speech quality (PESQ) score from 1.44 for the conventional super-FSQ baseline to 2.51 with a 21× smaller model and to 2.97 at equal model size, corresponding to relative gains of 74% and 106%, while the proposed image codec raises the structural similarity index measure (SSIM) from 0.73 to 0.89 at the same bit error rate and preserves 0.86 at 2% BER, where JPEG has already collapsed. The proposed designs achieve comparable media quality at lower SNRs, reducing the need for nearly error-free wireless transport without introducing additional parity bits.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Distortion Optimized Encoding for Deep Image Compression",
+  "authors": [
+   "Michael Schäfer",
+   "Sophie Pientka",
+   "Jonathan Pfaff",
+   "Heiko Schwarz",
+   "Detlev Marpe",
+   "Thomas Wiegand"
+  ],
+  "year": 2021,
+  "venue": "IEEE Open Journal of Circuits and Systems",
+  "doi": "10.1109/ojcas.2021.3124995",
+  "arxiv": null,
+  "openalex": "W3215091705",
+  "cited_by": 8,
+  "abstract": "Deep-learned variational auto-encoders (VAE) have shown remarkable capabilities for lossy image compression. These neural networks typically employ non-linear convolutional layers for finding a compressible representation of the input image. Advanced techniques such as vector quantization, context-adaptive arithmetic coding and variable-rate compression have been implemented in these auto-encoders. Notably, these networks rely on an end-to-end approach, which fundamentally differs from hybrid, block-based video coding systems. Therefore, signal-dependent encoder optimizations have not been thoroughly investigated for VAEs yet. However, rate-distortion optimized encoding heavily determines the compression performance of state-of-the-art video codecs. Designing such optimizations for non-linear, multi-layered networks requires to understand the relationship between the quantization, the bit allocation of the features and the distortion. Therefore, this paper examines the rate-distortion performance of a variable-rate VAE. In particular, one demonstrates that the trained encoder network typically finds features with a near-optimal bit allocation across the channels. Furthermore, one approximates the relationship between distortion and quantization by a higher-order polynomial, whose coefficients can be robustly estimated. Based on these considerations, the authors investigate an encoding algorithm for the Lagrange optimization, which significantly improves the coding efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diversify, Contextualize, and Adapt: Efficient Entropy Modeling for Neural Image Codec",
+  "authors": [
+   "Jun-Hyuk Kim",
+   "Seungeon Kim",
+   "Wonhee Lee",
+   "Dokwan Oh"
+  ],
+  "year": 2024,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/079017-1461",
+  "arxiv": "2411.05832",
+  "openalex": "W4415797650",
+  "cited_by": 2,
+  "abstract": "Designing a fast and effective entropy model is challenging but essential for practical application of neural codecs. Beyond spatial autoregressive entropy models, more efficient backward adaptation-based entropy models have been recently developed. They not only reduce decoding time by using smaller number of modeling steps but also maintain or even improve rate--distortion performance by leveraging more diverse contexts for backward adaptation. Despite their significant progress, we argue that their performance has been limited by the simple adoption of the design convention for forward adaptation: using only a single type of hyper latent representation, which does not provide sufficient contextual information, especially in the first modeling step. In this paper, we propose a simple yet effective entropy modeling framework that leverages sufficient contexts for forward adaptation without compromising on bit-rate. Specifically, we introduce a strategy of diversifying hyper latent representations for forward adaptation, i.e., using two additional types of contexts along with the existing single type of context. In addition, we present a method to effectively use the diverse contexts for contextualizing the current elements to be encoded/decoded. By addressing the limitation of the previous approach, our proposed framework leads to significant performance improvements. Experimental results on popular datasets show that our proposed framework consistently improves rate--distortion performance across various bit-rate regions, e.g., 3.73% BD-rate gain over the state-of-the-art baseline on the Kodak dataset.",
+  "source": "openalex"
+ },
+ {
+  "title": "Feature-Preserving Rate-Distortion Optimization in Image Coding for Machines",
+  "authors": [
+   "Samuel Fernández-Menduiña",
+   "Eduardo Pavéz",
+   "Antonio Ortega"
+  ],
+  "year": 2024,
+  "venue": "IEEE International Workshop on Multimedia Signal Processing (MMSP)",
+  "doi": "10.1109/mmsp61759.2024.10743266",
+  "arxiv": "2408.07028",
+  "openalex": "W4404295473",
+  "cited_by": 4,
+  "abstract": "With the increasing number of images and videos consumed by computer vision algorithms, compression methods are evolving to consider both perceptual quality and performance in downstream tasks. Traditional codecs can tackle this problem by performing rate-distortion optimization (RDO) to minimize the distance at the output of a feature extractor. However, neural network non-linearities can make the rate-distortion landscape irregular, leading to reconstructions with poor visual quality even for high bit rates. Moreover, RDO decisions are made block-wise, while the feature extractor requires the whole image to exploit global information. In this paper, we address these limitations in three steps. First, we apply Taylor's expansion to the feature extractor, recasting the metric as an input-dependent squared error involving the Jacobian matrix of the neural network. Second, we make a localization assumption to compute the metric block-wise. Finally, we use randomized dimensionality reduction techniques to approximate the Jacobian. The resulting expression is monotonic with the rate and can be evaluated in the transform domain. Simulations with AVC show that our approach provides bit-rate savings while preserving accuracy in downstream tasks with less complexity than using the feature distance directly.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variable Rate Image Compression with Recurrent Neural Networks",
+  "authors": [
+   "George D. Toderici",
+   "Sean M. O’Malley",
+   "Sung Jin Hwang",
+   "Damien Vincent",
+   "David C. Minnen",
+   "Shumeet Baluja",
+   "Michele Covell",
+   "Rahul Sukthankar"
+  ],
+  "year": 2015,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1511.06085",
+  "arxiv": "1511.06085",
+  "openalex": "W2276024283",
+  "cited_by": 535,
+  "abstract": "A large fraction of Internet traffic is now driven by requests from mobile devices with relatively small screens and often stringent bandwidth requirements. Due to these factors, it has become the norm for modern graphics-heavy websites to transmit low-resolution, low-bytecount image previews (thumbnails) as part of the initial page load process to improve apparent page responsiveness. Increasing thumbnail compression beyond the capabilities of existing codecs is therefore a current research focus, as any byte savings will significantly enhance the experience of mobile device users. Toward this end, we propose a general framework for variable-rate image compression and a novel architecture based on convolutional and deconvolutional LSTM recurrent networks. Our models address the main issues that have prevented autoencoder neural networks from competing with existing image compression algorithms: (1) our networks only need to be trained once (not per-image), regardless of input image dimensions and the desired compression rate; (2) our networks are progressive, meaning that the more bits are sent, the more accurate the image reconstruction; and (3) the proposed architecture is at least as efficient as a standard purpose-trained autoencoder for a given number of bits. On a large-scale benchmark of 32$\\times$32 thumbnails, our LSTM-based approaches provide better visual quality than (headerless) JPEG, JPEG2000 and WebP, with a storage size that is reduced by 10% or more.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning based Facial Image Compression with semantic fidelity metric",
+  "authors": [
+   "Zhibo Chen",
+   "Tianyu He"
+  ],
+  "year": 2019,
+  "venue": "Neurocomputing",
+  "doi": "10.1016/j.neucom.2019.01.086",
+  "arxiv": "1812.10067",
+  "openalex": "W2906071635",
+  "cited_by": 34,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "ELIC-lite: Compressing Neural Image Codecs for TinyML Edge Deployment via Joint Knowledge Distillation and Quantization-Aware Training",
+  "authors": [
+   "Dounia Bouchaar",
+   "Nardjes Bouchemal",
+   "Naila Bouchemal",
+   "Sondes Khemiri-Kallel"
+  ],
+  "year": 2026,
+  "venue": "IEEE Symposium on Computers and Communications (ISCC)",
+  "doi": "10.1109/iscc70364.2026.11740055",
+  "arxiv": null,
+  "openalex": "W7224831397",
+  "cited_by": 0,
+  "abstract": "Learned image compression has achieved state of the art rate-distortion performance, yet deploying neural codecs on resource-constrained edge devices remains challenging due to their substantial memory and computational requirements. In this work, we present ELIC-lite, a lightweight neural image codec specifically designed for TinyML deployment. Our approach combines encoder-centric knowledge distillation with quantization-aware training (KD+QAT) to compress a high-capacity teacher model (ELIC, 106.4 MB) into a TinyML-compatible student (6.9 MB) while preserving compression quality. Unlike conventional approaches that apply model compression and codec training independently, our framework jointly optimizes both objectives through a three-phase curriculum: warmup, feature-level distillation, and INT8 quantization fine-tuning. Experimental results on the Kodak dataset demonstrate that ELIC-lite achieves model size reduction while maintaining competitive rate-distortion performance. Compared to post-training quantization, our KD+QAT approach improves PSNR and reduces bitrate validating the importance of joint optimization for edge-deployable neural codecs.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Residual Diffusion Model for High Perceptual Quality Codec Augmentation",
+  "authors": [
+   "Noor Fathima Goose",
+   "Petersen, Jens",
+   "Auke Wiggers",
+   "Tianlin Xu",
+   "Guillaume Sautière"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2301.05489",
+  "arxiv": "2301.05489",
+  "openalex": "W4316830033",
+  "cited_by": 20,
+  "abstract": "Diffusion probabilistic models have recently achieved remarkable success in generating high quality image and video data. In this work, we build on this class of generative models and introduce a method for lossy compression of high resolution images. The resulting codec, which we call DIffuson-based Residual Augmentation Codec (DIRAC), is the first neural codec to allow smooth traversal of the rate-distortion-perception tradeoff at test time, while obtaining competitive performance with GAN-based methods in perceptual quality. Furthermore, while sampling from diffusion probabilistic models is notoriously expensive, we show that in the compression setting the number of steps can be drastically reduced.",
+  "source": "openalex"
+ },
+ {
+  "title": "Dual-Constrained Diffusion Image Compression for Operational Rate-Distortion-Perception Optimization",
+  "authors": [
+   "Sanxin Jiang",
+   "Jiro Katto",
+   "Heming Sun"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2606.13366",
+  "arxiv": "2606.13366",
+  "openalex": "W7164533410",
+  "cited_by": 0,
+  "abstract": "The rate-distortion-perception (RDP) trade-off extends classical rate--distortion theory by imposing a distributional constraint on reconstructions, providing a unified framework for neural image compression that jointly governs fidelity and perceptual realism. While prior work achieves near-optimal rate--perception trade-offs, practical frameworks explicitly realizing the full RDP surface remain scarce, primarily due to the difficulty of introducing common randomness at the decoder. We propose DCIC (Dual-Constrained Diffusion Image Compression), which integrates a learned codec with a diffusion-based decoder governed by joint distortion and idempotence constraints. The distortion constraint bounds reconstruction fidelity relative to the base codec output; the idempotence constraint -- requiring that re-encoding the restored image recovers the base codec reconstruction -- serves as a tractable surrogate for the distributional perception requirement. Together, they steer the reverse denoising process via iterative optimization with consistent noise injection, realizing common randomness without additional rate overhead. At fixed rate, dual attenuation factors $(K_D, K_P)$ jointly navigate the Pareto frontier of the distortion-perception plane, enabling continuously adjustable fidelity-realism trade-offs from a single bitstream. DCIC$_{RD}$ ($K_P{=}0$) and DCIC$_{RP}$ ($K_D{=}0$) arise as boundary curves, with DCIC$_{RDP}$ ($K_D = K_P=1$) realizing the optimal interior operating point. Experiments on CelebA-HQ, CLIC2020, and ImageNet-1K across CNN, Transformer, and hybrid architectures confirm that DCIC$_{RDP}$ achieves superior BD-PSNR over all perceptual codecs, while DCIC$_{RP}$ matches dedicated perception-oriented methods in BD-FID, validating the practical value of full RDP surface navigation.",
+  "source": "openalex"
+ },
+ {
+  "title": "ESPnet-Codec: Comprehensive Training and Evaluation of Neural Codecs For Audio, Music, and Speech",
+  "authors": [
+   "Jiatong Shi",
+   "Jinchuan Tian",
+   "Yihan Wu",
+   "Jee-weon Jung",
+   "Jia Qi Yip",
+   "Yoshiki Masuyama",
+   "William Chen",
+   "Yuning Wu",
+   "Yuxun Tang",
+   "Massa Baali",
+   "Dareen Alharthi",
+   "Dong Zhang",
+   "Ruifan Deng",
+   "Tejes Srivastava",
+   "Haibin Wu",
+   "Alexander H. Liu",
+   "Bhiksha Raj",
+   "Qin Jin",
+   "Ruihua Song",
+   "Shinji Watanabe"
+  ],
+  "year": 2024,
+  "venue": "IEEE Spoken Language Technology Workshop (SLT)",
+  "doi": "10.1109/slt61566.2024.10832289",
+  "arxiv": "2409.15897",
+  "openalex": "W4406461437",
+  "cited_by": 18,
+  "abstract": "Neural codecs have become crucial to recent speech and audio generation research. In addition to signal compression capabilities, discrete codecs have also been found to enhance downstream training efficiency and compatibility with autoregressive language models. However, as extensive downstream applications are investigated, challenges have arisen in ensuring fair comparisons across diverse applications. To address these issues, we present a new open-source platform ESPnet-Codec, which is built on ESPnet and focuses on neural codec training and evaluation. ESPnet-Codec offers various recipes in audio, music, and speech for training and evaluation using several widely adopted codec models. Together with ESPnet-Codec, we present VERSA, a standalone evaluation toolkit, which provides a comprehensive evaluation of codec performance over 20 audio evaluation metrics. Notably, we demonstrate that ESPnet-Codec can be integrated into six ESPnet tasks, supporting diverse applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "On Enhancing Low Bit-Rate Performance of an Image Codec Using Deep Learning-Based Nonlinear Processing",
+  "authors": [
+   "Susmita Saha",
+   "Pradeepa Yahampath"
+  ],
+  "year": 2022,
+  "venue": "Signals and communication technology",
+  "doi": "10.1007/978-3-031-06947-5_16",
+  "arxiv": null,
+  "openalex": "W4312296627",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Substitutional Neural Image Compression",
+  "authors": [
+   "Xiao Wang",
+   "Ding Ding",
+   "Wei Jiang",
+   "Wei Wang",
+   "Xiaozhong Xu",
+   "Shan Liu",
+   "Brian Kulis",
+   "Peter S. Chin"
+  ],
+  "year": 2022,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs56426.2022.10018005",
+  "arxiv": "2105.07512",
+  "openalex": "W4317555479",
+  "cited_by": 6,
+  "abstract": "We describe Substitutional Neural Image Compression (SNIC), a general approach for enhancing any neural image compression model, that requires no data or additional tuning of the trained model. It boosts compression performance toward a flexible distortion metric and enables bit-rate control using a single model instance. The key idea is to replace the image to be compressed with a substitutional one that outperforms the original one in a desired way. Finding such a substitute is inherently difficult for conventional codecs, yet surprisingly favorable for neural compression models thanks to their fully differentiable structures. With gradients of a particular loss back-propogated to the input, a desired substitute can be efficiently crafted iteratively. We demonstrate the effectiveness of SNIC, when combined with various neural compression models and target metrics, in improving compression quality and performing bit-rate control measured by rate-distortion curves.",
+  "source": "openalex"
+ },
+ {
+  "title": "The Clipping Trap: A Silent Failure Mode in Overfitted Neural Image Codecs",
+  "authors": [
+   "Hung Tran"
+  ],
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "doi": "10.5281/zenodo.22997667",
+  "arxiv": null,
+  "openalex": "W7214535832",
+  "cited_by": 0,
+  "abstract": "Overfitted image codecs such as Cool-chic and C3 fit a decoder to each image instead of generalizing from a training set. We show that they can fail without raising an error on bright images and on screen content. The decoder clamps its output inside the differentiated loss, so for content near the top of the intensity range the distortion gradient can vanish, and the codec can return a reconstruction at most 0.8 dB better than a constant image. The brightest DIV2K training photograph collapses on 5 of 8 encodes at native resolution. On flat, bright content the constant image scores high, so SSIM, MS-SSIM and LPIPS rank a collapsed screenshot above a working photograph. In Cool-chic, a straight-through estimator removes the failure, keeps the bitstream format and has no significant rate-distortion cost on Kodak (95% t-interval on the mean BD-rate change: from a 1.22% saving to a 0.14% loss).",
+  "source": "openalex"
+ },
+ {
+  "title": "HILCodec: High-Fidelity and Lightweight Neural Audio Codec",
+  "authors": [
+   "Sunghwan Ahn",
+   "Beom Jun Woo",
+   "Min Hyun Han",
+   "Chanyeong Moon",
+   "Nam Soo Kim"
+  ],
+  "year": 2024,
+  "venue": "IEEE Journal of Selected Topics in Signal Processing",
+  "doi": "10.1109/jstsp.2024.3469530",
+  "arxiv": "2405.04752",
+  "openalex": "W4402915905",
+  "cited_by": 21,
+  "abstract": "The recent advancement of end-to-end neural audio codecs enables compressing audio at very low bitrates while reconstructing the output audio with high fidelity. Nonetheless, such improvements often come at the cost of increased model complexity. In this paper, we identify and address the problems of existing neural audio codecs. We show that the performance of the SEANet-based codec does not increase consistently as the network depth increases. We analyze the root cause of such a phenomenon and suggest a variance-constrained design. Also, we reveal various distortions in previous waveform domain discriminators and propose a novel distortion-free discriminator. The resulting model,HILCodec, is a real-time streaming audio codec that demonstrates state-of-the-art quality across various bitrates and audio types.",
+  "source": "openalex"
+ },
+ {
+  "title": "Improved Lossy Image Compression with Priming and Spatially Adaptive Bit Rates for Recurrent Networks",
+  "authors": [
+   "Nick Johnston",
+   "Damien Vincent",
+   "David C. Minnen",
+   "Michele Covell",
+   "Saurabh Singh",
+   "Troy T. Chinen",
+   "Sung Jin Hwang",
+   "Joel Shor",
+   "George D. Toderici"
+  ],
+  "year": 2018,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2018.00461",
+  "arxiv": "1703.10114",
+  "openalex": "W2597747080",
+  "cited_by": 373,
+  "abstract": "We propose a method for lossy image compression based on recurrent, convolutional neural networks that outperforms BPG (4:2:0), WebP, JPEG2000, and JPEG as measured by MS-SSIM. We introduce three improvements over previous research that lead to this state-of-the-art result using a single model. First, we modify the recurrent architecture to improve spatial diffusion, which allows the network to more effectively capture and propagate image information through the network's hidden state. Second, in addition to lossless entropy coding, we use a spatially adaptive bit allocation algorithm to more efficiently use the limited number of bits to encode visually complex image regions. Finally, we show that training with a pixel-wise loss weighted by SSIM increases reconstruction quality according to multiple metrics. We evaluate our method on the Kodak and Tecnick image sets and compare against standard codecs as well as recently published methods based on deep neural networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Differentiable bit-rate estimation for neural-based video codec enhancement",
+  "authors": [
+   "Amir Said",
+   "Manish Kumar",
+   "Reza Pourreza"
+  ],
+  "year": 2022,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs56426.2022.10018001",
+  "arxiv": "2301.09776",
+  "openalex": "W4317600317",
+  "cited_by": 5,
+  "abstract": "Neural networks (NN) can improve standard video compression by pre-and post-processing the encoded video. For optimal NN training, the standard codec needs to be replaced with a codec proxy that can provide derivatives of estimated bit-rate and distortion, which are used for gradient back-propagation. Since entropy coding of standard codecs is designed to take into account non-linear dependencies between transform coefficients, bit-rates cannot be well approximated with simple per-coefficient estimators. This paper presents a new approach for bit-rate estimation that is similar to the type employed in training end-to-end neural codecs, and able to efficiently take into account those statistical dependencies. It is defined from a mathematical model that provides closed-form formulas for the estimates and their gradients, reducing the computational complexity. Experimental results demonstrate the method’s accuracy in estimating HEVC/H.265 codec bit-rates.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Data-Dependent Transform for Learned Image Compression",
+  "authors": [
+   "Dezhao Wang",
+   "Wenhan Yang",
+   "Yueyu Hu",
+   "Jiaying Liu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52688.2022.01686",
+  "arxiv": "2203.04963",
+  "openalex": "W4312590925",
+  "cited_by": 60,
+  "abstract": "Learned image compression has achieved great success due to its excellent modeling capacity, but seldom further considers the Rate-Distortion Optimization (RDO) of each input image. To explore this potential in the learned codec, we make the first attempt to build a neural data-dependent transform and introduce a continuous online mode decision mechanism to jointly optimize the coding efficiency for each individual image. Specifically, apart from the image content stream, we employ an additional model stream to generate the transform parameters at the decoder side. The pres-ence of a model stream enables our model to learn more abstract neural-syntax, which helps cluster the latent repre-sentations of images more compactly. Beyond the transform stage, we also adopt neural-syntax based post-processing for the scenarios that require higher quality reconstructions regardless of extra decoding overhead. Moreover, the in-volvement of the model stream further makes it possible to optimize both the representation and the decoder in an on-line way, i. e. RDO at the testing time. It is equivalent to a continuous online mode decision, like coding modes in the traditional codecs, to improve the coding efficiency based on the individual input image. The experimental results show the effectiveness of the proposed neural-syntax de-sign and the continuous online mode decision mechanism, demonstrating the superiority of our method in coding effi-ciency. Our project is available at: https://dezhao-wang.github.io/Neural-Syntax-Website/.",
+  "source": "openalex"
+ },
+ {
+  "title": "GaussianImage: 1000 FPS Image Representation and Compression by 2D Gaussian Splatting",
+  "authors": [
+   "Xinjie Zhang",
+   "Xingtong Ge",
+   "Tongda Xu",
+   "Dailan He",
+   "Yan Wang",
+   "Hongwei Qin",
+   "Guoxing Lu",
+   "Jing Geng",
+   "Jun Zhang"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-72673-6_18",
+  "arxiv": "2403.08551",
+  "openalex": "W4403600289",
+  "cited_by": 53,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural Codecs as Biosignal Tokenizers",
+  "authors": [
+   "Kleanthis Avramidis",
+   "Tiantian Feng",
+   "Woojae Jeong",
+   "Jihwan Lee",
+   "Wenhui Cui",
+   "Richard M. Leahy",
+   "Shrikanth S. Narayanan"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2510.09095",
+  "arxiv": "2510.09095",
+  "openalex": "W4417119974",
+  "cited_by": 0,
+  "abstract": "Neurophysiological recordings such as electroencephalography (EEG) offer accessible and minimally invasive means of estimating physiological activity for applications in healthcare, diagnostic screening, and even immersive entertainment. However, these recordings yield high-dimensional, noisy time-series data that typically require extensive pre-processing and handcrafted feature extraction to reveal meaningful information. Recently, there has been a surge of interest in applying representation learning techniques from large pre-trained (foundation) models to effectively decode and interpret biosignals. We discuss the challenges posed for incorporating such methods and introduce BioCodec, an alternative representation learning framework inspired by neural codecs to capture low-level signal characteristics in the form of discrete tokens. Pre-trained on thousands of EEG hours, BioCodec shows efficacy across multiple downstream tasks, ranging from clinical diagnostic tasks and sleep physiology to decoding speech and motor imagery, particularly in low-resource settings. Additionally, we provide a qualitative analysis of codebook usage and estimate the spatial coherence of codebook embeddings from EEG connectivity. Notably, we also document the suitability of our method to other biosignal data, i.e., electromyographic (EMG) signals. Overall, the proposed approach provides a versatile solution for biosignal tokenization that performs competitively with state-of-the-art models. The source code and model checkpoints are shared.",
+  "source": "openalex"
+ },
+ {
+  "title": "Computationally-Efficient Neural Image Compression with Shallow Decoders",
+  "authors": [
+   "Yibo Yang",
+   "Stephan Mandt"
+  ],
+  "year": 2023,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51070.2023.00055",
+  "arxiv": "2304.06244",
+  "openalex": "W4390873640",
+  "cited_by": 41,
+  "abstract": "Neural image compression methods have seen increasingly strong performance in recent years. However, they suffer orders of magnitude higher computational complexity compared to traditional codecs, which hinders their real-world deployment. This paper takes a step forward in closing this gap in decoding complexity by adopting shallow or even linear decoding transforms. To compensate for the resulting drop in compression performance, we exploit the often asymmetrical computation budget between encoding and decoding, by adopting more powerful encoder networks and iterative encoding. We theoretically formalize the intuition behind, and our experimental results establish a new frontier in the trade-off between rate-distortion and decoding complexity for neural image compression. Specifically, we achieve rate-distortion performance competitive with the established mean-scale hyperprior architecture of Minnen et al. (2018) at less than 50K decoding FLOPs/pixel, reducing the baseline’s overall decoding complexity by 80%, or over 90% for the synthesis transform alone. Our code can be found at https://github.com/mandt-lab/shallow-ntc.",
+  "source": "openalex"
+ }
+]

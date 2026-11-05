@@ -1,0 +1,850 @@
+[
+ {
+  "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+  "authors": [
+   "Amit Vaisman",
+   "Gal Pomerants",
+   "Raz Lapid"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2604.05743",
+  "arxiv": "2604.05743",
+  "openalex": "W7151818635",
+  "cited_by": 0,
+  "abstract": "Modern image compression methods are typically optimized for the rate--distortion--perception trade-off, whereas their robustness to bit-level corruption is rarely examined. We show that diffusion-based compressors built on the Reverse Channel Coding (RCC) paradigm are substantially more robust to bit flips than classical and learned codecs. We further introduce a more robust variant of Turbo-DDCM that significantly improves robustness while only minimally affecting the rate--distortion--perception trade-off. Our findings suggest that RCC-based compression can yield more resilient compressed representations, potentially reducing reliance on error-correcting codes in highly noisy environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bit-Flip Attack: Crushing Neural Network With Progressive Bit Search",
+  "authors": [
+   "Adnan Siraj Rakin",
+   "Zhezhi He",
+   "Deliang Fan"
+  ],
+  "year": 2019,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv.2019.00130",
+  "arxiv": "1903.12269",
+  "openalex": "W2981860227",
+  "cited_by": 274,
+  "abstract": "Several important security issues of Deep Neural Network (DNN) have been raised recently associated with different applications and components. The most widely investigated security concern of DNN is from its malicious input, a.k.a adversarial example. Nevertheless, the security challenge of DNN's parameters is not well explored yet. In this work, we are the first to propose a novel DNN weight attack methodology called Bit-Flip Attack (BFA) which can crush a neural network through maliciously flipping extremely small amount of bits within its weight storage memory system (i.e., DRAM). The bit-flip operations could be conducted through well-known Row-Hammer attack, while our main contribution is to develop an algorithm to identify the most vulnerable bits of DNN weight parameters (stored in memory as binary bits), that could maximize the accuracy degradation with a minimum number of bit-flips. Our proposed BFA utilizes a Progressive Bit Search (PBS) method which combines gradient ranking and progressive search to identify the most vulnerable bit to be flipped. With the aid of PBS, we can successfully attack a ResNet-18 fully malfunction (i.e., top-1 accuracy degrade from 69.8% to 0.1%) only through 13 bit-flips out of 93 million bits, while randomly flipping 100 bits merely degrades the accuracy by less than 1%. Code is released at: https://github.com/elliothe/Neural_Network_Weight_Attack.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error-Resilient Data Compression With Tunstall Codes",
+  "authors": [
+   "Shanshan Liu",
+   "Pedro Reviriego",
+   "Anees Ullah",
+   "Ahmed Louri",
+   "Fabrizio Lombardi"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Circuits and Systems I Regular Papers",
+  "doi": "10.1109/tcsi.2023.3245022",
+  "arxiv": null,
+  "openalex": "W4321194415",
+  "cited_by": 6,
+  "abstract": "Data compression has been commonly employed to reduce the required memory size for emerging applications with large storage needs like Big Data and Machine Learning (ML). When considering the flexibility of decompression and its hardware implementation, variable-to-fixed length codes (e.g., Tunstall codes) are usually selected. However, memories are prone to suffer different types of errors, causing the stored data to be corrupted; if an error affects the compressed data, it can propagate and cause corruption in a sequence of bits of the decompressed data. Therefore, error resilience should be built-in as part of the memory design to provide reliable data, especially for safety-critical applications. However, Error Correction Codes (ECCs) that are widely used for memory protection, are not very efficient to protect compressed data, because ECCs further increase the memory size and the additional decoding process can impact the latency to decompress the stored data. In this paper, an efficient error-resilient data compression technique with Tunstall codes is proposed; it requires almost no memory overhead and can correct most errors during the decompression process by introducing a conversion table. An enhanced design is also presented to reduce the impact of errors when they cannot be corrected. The proposed scheme has been implemented and evaluated on three ML datasets; results show that it can deal with up to 99.98% errors with almost no memory overhead when Tunstall codes with smaller than 16-bit symbols are employed. The scheme has also been evaluated for two ML applications; results show that even though a small number of errors cannot be corrected in the proposed scheme, they have an extremely low impact on the classification results and the protection overhead is significantly lower than existing ECC techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Common lossless compression algorithms and their error resiliency performance",
+  "authors": [
+   "Mingchu Zhang"
+  ],
+  "year": 2023,
+  "venue": "Applied and Computational Engineering",
+  "doi": "10.54254/2755-2721/6/20230778",
+  "arxiv": null,
+  "openalex": "W4383560584",
+  "cited_by": 0,
+  "abstract": "With the development of communication technology and computer technology, many related industries, such as multimedia entertainment, put forward higher requirements for storing and transmitting information data. The research of data compression technology has attracted more and more attention. Therefore, the error resiliency ability of data compression algorithm is particularly important. How to enhance the error resiliency of data compression communication systems has been a hot topic for researchers. This paper mainly introduces the lossless data compression technology and its basic principle and performance index. Two typical lossless compression codes, Huffman and Arithmetic coding are deeply studied, including the principle of coding and the problem of error resiliency. Huffman coding and Arithmetic coding are two very important lossless compression codes widely used. The ability to resist channel error is an important index for data compression in communication. It is of great significance to further improve the channel adaptability of data compression to study the above two kinds of codes and their ability to resist channel error.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips",
+  "authors": [
+   "Fan Yao",
+   "Adnan Siraj Rakin",
+   "Deliang Fan"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2003.13746",
+  "arxiv": "2003.13746",
+  "openalex": "W3014592693",
+  "cited_by": 111,
+  "abstract": "Security of machine learning is increasingly becoming a major concern due to the ubiquitous deployment of deep learning in many security-sensitive domains. Many prior studies have shown external attacks such as adversarial examples that tamper with the integrity of DNNs using maliciously crafted inputs. However, the security implication of internal threats (i.e., hardware vulnerability) to DNN models has not yet been well understood. In this paper, we demonstrate the first hardware-based attack on quantized deep neural networks-DeepHammer-that deterministically induces bit flips in model weights to compromise DNN inference by exploiting the rowhammer vulnerability. DeepHammer performs aggressive bit search in the DNN model to identify the most vulnerable weight bits that are flippable under system constraints. To trigger deterministic bit flips across multiple pages within reasonable amount of time, we develop novel system-level techniques that enable fast deployment of victim pages, memory-efficient rowhammering and precise flipping of targeted bits. DeepHammer can deliberately degrade the inference accuracy of the victim DNN system to a level that is only as good as random guess, thus completely depleting the intelligence of targeted DNN systems. We systematically demonstrate our attacks on real systems against 12 DNN architectures with 4 different datasets and different application domains. Our evaluation shows that DeepHammer is able to successfully tamper DNN inference behavior at run-time within a few minutes. We further discuss several mitigation techniques from both algorithm and system levels to protect DNNs against such attacks. Our work highlights the need to incorporate security mechanisms in future deep learning system to enhance the robustness of DNN against hardware-based deterministic fault injections.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Data Compression and Noisy Channel Error Correction Using Deep Neural Network",
+  "authors": [
+   "Yijing Watkins",
+   "M.R. Sayeh"
+  ],
+  "year": 2016,
+  "venue": "Procedia Computer Science",
+  "doi": "10.1016/j.procs.2016.09.305",
+  "arxiv": null,
+  "openalex": "W2540559269",
+  "cited_by": 14,
+  "abstract": "Everyday an enormous amount of information is stored, processed and transmitted digitally around the world. Neural Networks have been rapidly developed and researched as a solution to image processing tasks and channel error correction control. This paper presents a deep neural network (DNN) for gray image compression and a fault-tolerant transmission system with channel error-correction capabilities. First, a DNN implemented with the Levenberg-Marguardt learning algorithm is proposed for image compression. We demonstrate experimentally that our DNN not only provides better quality reconstructed images but also less computational capacity compared to DCT Zonal coding, DCT Threshold coding, Set Partitioning in Hierarchical Trees (SPIHT) and Gaussian Pyramid. Secondly, a DNN with improved channel error-correction rate is proposed. The experimental results indicate that our implemented network provides a superior error-correction ability by transmitting binary images over the noisy channel using Hamming and Repeat-Accumulate coding. Meanwhile, the network's storage requirement is 64 times less than the Hamming coding and 62 times less than the Repeat-Accumulate coding.",
+  "source": "openalex"
+ },
+ {
+  "title": "NeuroAttack: Undermining Spiking Neural Networks Security through Externally Triggered Bit-Flips",
+  "authors": [
+   "Valerio Venceslai",
+   "Alberto Marchisio",
+   "Ihsen Alouani",
+   "Maurizio Martina",
+   "Muhammad Shafique"
+  ],
+  "year": 2020,
+  "venue": "International Joint Conference on Neural Networks (IJCNN)",
+  "doi": "10.1109/ijcnn48605.2020.9207351",
+  "arxiv": "2005.08041",
+  "openalex": "W3024936300",
+  "cited_by": 33,
+  "abstract": "Due to their proven efficiency, machine-learning systems are deployed in a wide range of complex real-life problems. More specifically, Spiking Neural Networks (SNNs) emerged as a promising solution to the accuracy, resource-utilization, and energy-efficiency challenges in machine-learning systems. While these systems are going mainstream, they have inherent security and reliability issues. In this paper, we propose NeuroAttack, a cross-layer attack that threatens the SNNs integrity by exploiting low-level reliability issues through a high-level attack. Particularly, we trigger a fault-injection based sneaky hardware backdoor through a carefully crafted adversarial input noise. Our results on Deep Neural Networks (DNNs) and SNNs show a serious integrity threat to state-of-the art machine-learning techniques.",
+  "source": "openalex"
+ },
+ {
+  "title": "Optimized Multiple-Bit-Flip Soft-Errors-Tolerant TCAM using Machine Learning",
+  "authors": [
+   "Infall Syafalni",
+   "Trio Adiono"
+  ],
+  "year": 2022,
+  "venue": "Jurnal Nasional Teknik Elektro",
+  "doi": "10.25077/jnte.v11n1.1007.2022",
+  "arxiv": null,
+  "openalex": "W4223459361",
+  "cited_by": 0,
+  "abstract": "Soft errors from radiations can change the data in electronic devices especially memory cells such as in TCAMs. The soft errors cause bit-flip errors that makes the data are corrupted in the network. This paper presents a novel machine learning for a multiple-bit-flip-tolerant TCAM that address soft errors problem using partial don't-care keys (X-keys). The general methodology is classified into two steps, i.e., statistical training and X-keys matching. First, we train the machine by collecting match probability of a filter by using X-keys that match the same locations as the search key. This method uses statistical training to determine the most efficient of number of don't cares. Moreover, in the statistical training, we also explore the maximum number of don't cares that produce best performance in covering the soft errors. Finally, the X-keys are implemented in the TCAM to correct bit-flip errors. The suitable number of don't cares in X-key is determined from the distribution of match probability of the X-keys so that the best degree of tolerance of the TCAM against soft errors is found. Match probabilities for various filters are shown. Experimental results demonstrate that the soft-error tolerance using statistical data has better soft-error tolerance than other methods. The proposed method is useful for soft-error tolerant TCAMs in routers and firewalls for robust networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Memristor-based storage system with convolutional autoencoder-based image compression network",
+  "authors": [
+   "Yulin Feng",
+   "Yizhou Zhang",
+   "Zheng Zhou",
+   "Peng Cheng Huang",
+   "Lifeng Liu",
+   "Xiaoyan Liu",
+   "Jinfeng Kang"
+  ],
+  "year": 2024,
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-024-45312-0",
+  "arxiv": null,
+  "openalex": "W4391610228",
+  "cited_by": 62,
+  "abstract": "The exponential growth of various complex images is putting tremendous pressure on storage systems. Here, we propose a memristor-based storage system with an integrated near-storage in-memory computing-based convolutional autoencoder compression network to boost the energy efficiency and speed of the image compression/retrieval and improve the storage density. We adopt the 4-bit memristor arrays to experimentally demonstrate the functions of the system. We propose a step-by-step quantization aware training scheme and an equivalent transformation for transpose convolution to improve the system performance. The system exhibits a high (>33 dB) peak signal-to-noise ratio in the compression and decompression of the ImageNet and Kodak24 datasets. Benchmark comparison results show that the 4-bit memristor-based storage system could reduce the latency and energy consumption by over 20×/5.6× and 180×/91×, respectively, compared with the server-grade central processing unit-based/the graphics processing unit-based processing system, and improve the storage density by more than 3 times.",
+  "source": "openalex"
+ },
+ {
+  "title": "Resilient error-bounded lossy compressor for data transfer",
+  "authors": [
+   "Sihuan Li",
+   "Sheng Di",
+   "Kai Zhao",
+   "Xin Liang",
+   "Zizhong Chen",
+   "Franck Cappello"
+  ],
+  "year": 2021,
+  "venue": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+  "doi": "10.1145/3458817.3476195",
+  "arxiv": null,
+  "openalex": "W3210414979",
+  "cited_by": 20,
+  "abstract": "Today's exa-scale scientific applications or advanced instruments are producing vast volumes of data, which need to be shared/transferred through the network/devices with relatively low bandwidth (e.g., data sharing on WAN or transferring from edge devices to supercomputers). Lossy compression is one of the candidate strategies to address the big data issue. However, little work was done to make it resilient against silent errors, which may happen during the stage of compression or data transferring. In this paper, we propose a resilient error-bounded lossy compressor based on the SZ compression framework. Specifically, we design a new independent-block-wise model that decomposes the entire dataset into many independent sub-blocks to compress. Then, we design and implement a series of error detection/correction strategies elaboratively for each stage of SZ. Our method is arguably the first algorithm-based fault tolerance (ABFT) solution for lossy compression. Our proposed solution incurs negligible execution overhead in the fault-free situation. Upon soft errors happening, it ensures decompressed data strictly bounded within user's requirement with a very limited degradation of compression ratio and low overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "SERA-Float: A Soft Error Resilient Approximate Floating-Point Computing Format",
+  "authors": [
+   "Vishesh Mishra",
+   "Marcello Traiola",
+   "Angeliki S. Kritikakou",
+   "Olivier Sentieys",
+   "Urbi Chatterjee"
+  ],
+  "year": 2025,
+  "venue": null,
+  "doi": "10.1109/iccad66269.2025.11240908",
+  "arxiv": null,
+  "openalex": "W4416429603",
+  "cited_by": 0,
+  "abstract": "Approximate computing (AxC) reduces power consumption with minimal accuracy loss, benefiting error-tolerant, compute-intensive tasks such as machine learning, deep learning, and image processing. However, existing AxC methods often ignore the vulnerability to soft errors. Such errors can interact with approximation-induced errors, causing system failures or unexpected exceptions. To our knowledge, no work has addressed both soft error resilience and exception avoidance in approximate floating-point computing. This gap is particularly critical in deep neural network (DNN) inference, where soft error-induced errors or exceptions can significantly affect the stability and accuracy of computations.In this paper, we introduce SERA-Float, an approximate floating-point format resilient to soft errors. Specifically, it is designed to protect floating-point computations from soft error-induced errors and exception-triggering bit-flips. Unlike prior floating-point formats, SERA-Float protects the sign and exponent bits using error-correcting codes and relies on storing 8 valid bits of mantissa rather than performing coarse truncation. Additionally, by tracking critical bits in the floating-point representation, SERA-Float prevents overflow, underflow, and NaN exceptions. Our evaluation demonstrates that SERA-Float improves the reliability of floating-point operations during DNN inference by significantly reducing exceptions and ensuring the stability of computations. Moreover, it enables energy-efficient arithmetic by leveraging narrower arithmetic units, yielding up to 80.3% energy savings per multiplication with a 0.9% reduction in DNN inference accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Assimilation Result of Watermarking and Image Compression",
+  "authors": [
+   "E. Kanniga"
+  ],
+  "year": 2019,
+  "venue": "International Journal of Psychosocial Rehabilitation",
+  "doi": "10.37200/ijpr/v23i3/pr190144",
+  "arxiv": null,
+  "openalex": "W4386717792",
+  "cited_by": 0,
+  "abstract": "In these days’ digital international, trade of statistics is been held electronically. Therefore there arises the exceptional want for secure transmission of the concerned facts. Various practices like cryptography, watermarking, compression and so forth. Is common seeing that beyond few years? All these strategies were proved to be terrific of their respective paintings concerning protection. In this paper a brand new approach has been provided to provide safety at stronger stage. Here the two techniques specifically watermarking and compression are combined together to decorate the extent of security for statistics transmission motive. Here the watermarking the usage of DCT method is been combined with picture compression technique the usage of stepped forward adaptive Huffman encoding. The progressed adaptive Huffman coding approach is been based on Huffman set of rules. This new compression set of rules no longer most effective reduces the number of skip required to encode the records however at the same time reduces the garage area in comparison to adaptive Huffman and static Huffman respectively. The ultimate result Cozy records transmission",
+  "source": "openalex"
+ },
+ {
+  "title": "SDC Resilient Error-bounded Lossy Compressor",
+  "authors": [
+   "Sihuan Li",
+   "Sheng Di",
+   "Kai Zhao",
+   "Xin Liang",
+   "Zizhong Chen",
+   "Franck Cappello"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2010.03144",
+  "arxiv": "2010.03144",
+  "openalex": "W3092209038",
+  "cited_by": 4,
+  "abstract": "Lossy compression is one of the most important strategies to resolve the big science data issue, however, little work was done to make it resilient against silent data corruptions (SDC). In fact, SDC is becoming non-negligible because of exa-scale computing demand on complex scientific simulations with vast volume of data being produced or in some particular instruments/devices (such as interplanetary space probe) that need to transfer large amount of data in an error-prone environment. In this paper, we propose an SDC resilient error-bounded lossy compressor upon the SZ compression framework. Specifically, we adopt a new independent-block-wise model that decomposes the entire dataset into many independent sub-blocks to compress. Then, we design and implement a series of error detection/correction strategies based on SZ. We are the first to extend algorithm-based fault tolerance (ABFT) to lossy compression. Our proposed solution incurs negligible execution overhead without soft errors. It keeps the correctness of decompressed data still bounded within user's requirement with a very limited degradation of compression ratios upon soft errors.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Bit-Flip Attacks on Deep Neural Network and Corresponding Defense Methods",
+  "authors": [
+   "Cheng Qian",
+   "Ming Zhang",
+   "Yuanping Nie",
+   "Shuaibing Lu",
+   "Huayang Cao"
+  ],
+  "year": 2023,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics12040853",
+  "arxiv": null,
+  "openalex": "W4319596548",
+  "cited_by": 37,
+  "abstract": "As the machine learning-related technology has made great progress in recent years, deep neural networks are widely used in many scenarios, including security-critical ones, which may incura great loss when DNN is compromised. Starting from introducing several commonly used bit-flip methods, this paper concentrates on bit-flips attacks aiming DNN and the corresponding defense methods. We analyze the threat models, methods design, and effect of attack and defense methods in detail, drawing some helpful conclusions about improving the robustness and resilience of DNN. In addition, we point out several drawbacks to existing works, which can hopefully be researched in the future.",
+  "source": "openalex"
+ },
+ {
+  "title": "Error Resilient Transformers: A Novel Soft Error Vulnerability Guided Approach to Error Checking and Suppression",
+  "authors": [
+   "Kwondo Ma",
+   "Chandramouli Amarnath",
+   "Jackson Isenberg",
+   "Abhijit Chatterjee"
+  ],
+  "year": 2023,
+  "venue": "Journal of Electronic Testing",
+  "doi": "10.1007/s10836-026-06227-4",
+  "arxiv": null,
+  "openalex": "W4384026312",
+  "cited_by": 14,
+  "abstract": "Transformer networks have achieved remarkable success in Natural Language Processing (NLP) and Computer Vision applications. However, the underlying large volumes of Transformer computations demand high reliability and resilience to soft errors in processor hardware. The objective of this research is to develop efficient techniques for design of error resilient Transformer architectures. To enable this, we first perform a soft error vulnerability analysis of every fully connected layers in Transformer computations. Based on this study, error detection and suppression modules are selectively introduced into datapaths to restore Transformer performance under anticipated error rate conditions. Memory access errors and neuron output errors are detected using checksums of linear Transformer computations. Correction consists of determining output neurons with out-of-range values and suppressing the same to zero. For a Transformer with nominal BLEU score of 52.7, such vulnerability guided selective error suppression can recover language translation performance from a BLEU score of 0 to 50.774 with as much as 0.001 probability of activation error, incurring negligible memory and computation overheads.",
+  "source": "openalex"
+ },
+ {
+  "title": "A multiplierless pruned DCT-like transformation for image and video compression that requires ten additions only",
+  "authors": [
+   "Vítor A. Coutinho",
+   "Renato J. Cintra",
+   "Fábio M. Bayer",
+   "Sunera Kulasekera",
+   "Arjuna Madanayake"
+  ],
+  "year": 2015,
+  "venue": "Journal of Real-Time Image Processing",
+  "doi": "10.1007/s11554-015-0492-8",
+  "arxiv": "1402.5979",
+  "openalex": "W2028673964",
+  "cited_by": 26,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Impact of Image Compression on the Performance of Steel Surface Defect Classification with a CNN",
+  "authors": [
+   "Tajeddine Benbarrad",
+   "Lamiae Eloutouate",
+   "Mounir Arioua",
+   "Fatiha Elouaai",
+   "My Driss Laanaoui"
+  ],
+  "year": 2021,
+  "venue": "Journal of Sensor and Actuator Networks",
+  "doi": "10.3390/jsan10040073",
+  "arxiv": null,
+  "openalex": "W4200184152",
+  "cited_by": 17,
+  "abstract": "Machine vision is increasingly replacing manual steel surface inspection. The automatic inspection of steel surface defects makes it possible to ensure the quality of products in the steel industry with high accuracy. However, the optimization of inspection time presents a great challenge for the integration of machine vision in high-speed production lines. In this context, compressing the collected images before transmission is essential to save bandwidth and energy, and improve the latency of vision applications. The aim of this paper was to study the impact of quality degradation resulting from image compression on the classification performance of steel surface defects with a CNN. Image compression was applied to the Northeastern University (NEU) surface-defect database with various compression ratios. Three different models were trained and tested with these images to classify surface defects using three different approaches. The obtained results showed that trained and tested models on the same compression qualities maintained approximately the same classification performance for all used compression grades. In addition, the findings clearly indicated that the classification efficiency was affected when the training and test datasets were compressed using different parameters. This impact was more obvious when there was a large difference between these compression parameters, and for models that achieved very high accuracy. Finally, it was found that compression-based data augmentation significantly increased the classification precision to perfect scores (98–100%), and thus improved the generalization of models when tested on different compression qualities. The importance of this work lies in exploiting the obtained results to successfully integrate image compression into machine vision systems, and as appropriately as possible.",
+  "source": "openalex"
+ },
+ {
+  "title": "Resource Efficient and Error Resilient Neural Networks",
+  "authors": [
+   "Jeng-Hau Lin"
+  ],
+  "year": 2019,
+  "venue": "eScholarship (California Digital Library)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W2957419742",
+  "cited_by": 0,
+  "abstract": "The entangled guardbands in terms of timing specification and energy budget ensure a system against faults, but the guardbands, meanwhile, impede the advance of a higher throughput and energy efficiency. To combat the over-designed guardbands in a system carrying out deep learning inference, we dive into the algorithmic demands and understand that the resource deficiency and hardware variation are the major reasons of the need of conservative guardbands. In modern convolutional neural networks (CNNs), the number of arithmetic operations for the inference could exceed tens of billions, which requires a sophisticated buffering mechanism to balance between resource utilization and throughput. In this case, the over-designed guardbands can seriously hinder system performance. On the other hand, timing errors can be incurred by the hardware variations including momentary voltage droops resulted from simultaneous switching noises, a gradually decreasing voltage level due to a limited battery, and the slow electron mobility incurred by the system power dissipation into heat. The timing errors propagating in a network can be a snowball in the beginning but ends up with a catastrophe in terms of a significant accuracy degradation.Knowing the need of guardbands originates from resource deficiency and timing errors, this dissertation focuses on cross-layer solutions to the problems of the high algorithmic demands incurred by deep learning methods and error vulnerability due to hardware variations. We begin with reviewing the methods and technologies proposed in the literature including weight encoding, filter decomposition, network pruning, efficient structure design, and precision quantizing. In the implementation of an FPGA accelerator for extreme-case quantization, binarized neural networks (BNN), we have realized more possible optimizations can be applied. Then, we extend BNN on the algorithmic layer with the binarized separable filters and proposed BCNNw/SF. Although the quantization and approximation benefit hardware efficiency to a certain extent, the optimal reduction or compression rate is still limited by the core of the conventional deep learning methods -- convolution. We, thus, introduce the local binary pattern (LBP) to deep learning because of LBP's low complexity yet high effectiveness. We name the new algorithm LBPNet, in which the feature maps are created with a similar fashion of the traditional LBP using comparisons. Our LBPNet can be trained with the forward-backward propagation algorithm to extract useful features for image classification. LBPNet accelerators have been implemented and optimized to verify their classification performance, processing throughput, and energy efficiency. We also demonstrate the error immunity of LBPNet to be the strongest compared with the subject MLP, CNN, and BCNN models since the classification accuracy of the LBPNet is decreased by only 10% and all the other models lose the classification ability when t",
+  "source": "openalex"
+ },
+ {
+  "title": "Hybrid approximate multiplier architectures for low power DWT image compression",
+  "authors": [
+   "R. Anitha",
+   "Sriadibhatla Sridevi"
+  ],
+  "year": 2026,
+  "venue": "Scientific Reports",
+  "doi": "10.1038/s41598-026-54818-0",
+  "arxiv": null,
+  "openalex": "W7163506265",
+  "cited_by": 1,
+  "abstract": "Approximate computing is a means for energy efficient computing by allowing some degree of arithmetic imprecision for error tolerant processing applications such as image compression. This work presents a high-efficiency image compression architecture which exploits the use of hybrid approximate multipliers in the discrete wavelet transform (DWT)-pipeline. The work presents four approximate variants which are realized using hybrid Wallace, Dadda and Baugh-Wooley multipliers which results in significant reduction in delay, power consumption and hardware resource usage. Approximation is only used in the least significant areas of the calculation, and exact calculations are used for the most significant calculation areas to maintain visual accuracy. Experimental results show great improvements with the fourth variant of the approximate DWT. The proposed design shows a PSNR of 35.9 dB, a SSIM of 0.94 and compression ratio of 1.9 when integrated to the wavelet-based compression scheme. There is little deviation between original and reconstructed images based on the error analysis. Hardware performance analysis in terms of area, power, and delay is performed by FPG synthesis targeting Artix-7 platform. Overall, the obtained results show that strategic use of approximation in selected computational stages allows energy-efficient wavelet-based image compression without noticeable loss in the perceptual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Making Convolutions Resilient Via Algorithm-Based Error Detection Techniques",
+  "authors": [
+   "Siva Kumar Sastry Hari",
+   "Michael B. Sullivan",
+   "Timothy K. Tsai",
+   "Stephen W. Keckler"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Dependable and Secure Computing",
+  "doi": "10.1109/tdsc.2021.3063083",
+  "arxiv": "2006.04984",
+  "openalex": "W3035117916",
+  "cited_by": 78,
+  "abstract": "Convolutional Neural Networks (CNNs) are being increasingly used in safety-critical and high-performance computing systems. As such systems require high levels of resilience to errors, CNNs must execute correctly in the presence of hardware faults. Full duplication provides the needed assurance but incurs a prohibitive 100 percent overhead. In this article, we focus on algorithmically verifying convolutions, the most resource-demanding operations in CNNs. We use checksums to verify convolutions. We identify the feasibility and performance related challenges that arise in algorithmically detecting errors in convolutions in optimized CNN inference deployment platforms (e.g., TensorFlow or TensorRT on GPUs) that fuse multiple network layers and use reduced-precision operations, and demonstrate how to overcome them. We propose and evaluate variations of the algorithm-based error detection (ABED) techniques that offer implementation complexity, runtime overhead, and coverage trade-offs. Results show that ABED can detect all transient hardware errors that might otherwise corrupt output with low runtime overheads (6-23 percent). Only about 1.4 percent of the total computations in a CNN are not protected by ABED, which can be duplicated for full CNN protection. ABED for the compute-intensive convolutions and duplicating the rest can offer at least 1.6× throughput compared to full duplication.",
+  "source": "openalex"
+ },
+ {
+  "title": "SemanticNN: Compressive and Error-Resilient Semantic Offloading for Extremely Weak Devices",
+  "authors": [
+   "Huang, Jiaming",
+   "Yi Gao",
+   "Pan, Fuchang",
+   "Renjie Li",
+   "Wei Dong"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.11038",
+  "arxiv": "2511.11038",
+  "openalex": "W4416341860",
+  "cited_by": 0,
+  "abstract": "With the rapid growth of the Internet of Things (IoT), integrating artificial intelligence (AI) on extremely weak embedded devices has garnered significant attention, enabling improved real-time performance and enhanced data privacy. However, the resource limitations of such devices and unreliable network conditions necessitate error-resilient device-edge collaboration systems. Traditional approaches focus on bit-level transmission correctness, which can be inefficient under dynamic channel conditions. In contrast, we propose SemanticNN, a semantic codec that tolerates bit-level errors in pursuit of semantic-level correctness, enabling compressive and resilient collaborative inference offloading under strict computational and communication constraints. It incorporates a Bit Error Rate (BER)-aware decoder that adapts to dynamic channel conditions and a Soft Quantization (SQ)-based encoder to learn compact representations. Building on this architecture, we introduce Feature-augmentation Learning, a novel training strategy that enhances offloading efficiency. To address encoder-decoder capability mismatches from asymmetric resources, we propose XAI-based Asymmetry Compensation to enhance decoding semantic fidelity. We conduct extensive experiments on STM32 using three models and six datasets across image classification and object detection tasks. Experimental results demonstrate that, under varying transmission error rates, SemanticNN significantly reduces feature transmission volume by 56.82-344.83x while maintaining superior inference accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Resilient Image Feature Description through Evolution",
+  "authors": [
+   "Erkan Bostancı"
+  ],
+  "year": 2017,
+  "venue": "International Journal of Intelligent Systems and Applications in Engineering",
+  "doi": "10.18201/ijisae.2017528728",
+  "arxiv": null,
+  "openalex": "W2725007877",
+  "cited_by": 1,
+  "abstract": "Feature description is an important stage in many different vision algorithms. Image features detected by various detectors can be described using descriptors either with a binary or floating-point structure. This study presents the use of evolutionary algorithms, namely Genetic Algorithms (GA), in order to improve the robustness of the feature descriptors against increasing levels of photographic distortions such as noise or JPEG compression. Original feature descriptors were evolved in order to reduce the descriptor distance for the mentioned test cases. Results, tested using a statistical framework, suggest that the evolved descriptors offer better matching performance for two state-of-the-art descriptors.",
+  "source": "openalex"
+ },
+ {
+  "title": "Local Geometric Distortions Resilient Watermarking Scheme Based on Symmetry",
+  "authors": [
+   "Zehua Ma",
+   "Weiming Zhang",
+   "Han Fang",
+   "Xiaoyi Dong",
+   "Linfeng Geng",
+   "Nenghai Yu"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3055255",
+  "arxiv": "2007.10240",
+  "openalex": "W3129082635",
+  "cited_by": 91,
+  "abstract": "As an efficient watermark attack method, geometric distortions destroy the synchronization between the watermark encoder and decoder. Local geometric distortion is a considerable challenge in the watermarking field. Although many geometric distortion resilient watermarking schemes have been proposed, few perform well against local geometric distortions, such as random bending attacks (RBAs). To address this problem, this paper proposes a novel watermark synchronization process and a corresponding watermarking scheme. In our scheme, the watermark bits are represented by random patterns. The message is encoded to obtain a watermark unit, and the watermark unit is flipped to generate a symmetrical watermark. Then, the symmetrical watermark is additively embedded into the spatial domain of the host image. In watermark extraction, we first obtain the theoretical mean-square error minimized estimation of the watermark. Then, an autoconvolution function is applied to this estimation to detect the symmetry and obtain a watermark unit map. According to this map, the watermark can be accurately synchronized, and then extraction can be performed. Experimental results demonstrate the excellent robustness of the proposed watermarking scheme to local geometric distortions, global geometric distortions, common image processing operations, and some kinds of combined attacks.",
+  "source": "openalex"
+ },
+ {
+  "title": "SemanticNN: Compressive and Error-Resilient Semantic Offloading for Extremely Weak Devices",
+  "authors": [
+   "Jiaming Huang",
+   "Yi Gao",
+   "Fuchang Pan",
+   "Renjie Li",
+   "Wei Dong"
+  ],
+  "year": 2026,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v40i26.39351",
+  "arxiv": null,
+  "openalex": "W7138072261",
+  "cited_by": 0,
+  "abstract": "With the rapid growth of the Internet of Things (IoT), integrating artificial intelligence (AI) on extremely weak embedded devices has garnered significant attention, enabling improved real-time performance and enhanced data privacy. However, the resource limitations of such devices and unreliable network conditions necessitate error-resilient device-edge collaboration systems. Traditional approaches focus on bit-level transmission correctness, which can be inefficient under dynamic channel conditions. In contrast, we propose SemanticNN, a semantic codec that tolerates bit-level errors in pursuit of semantic-level correctness, enabling compressive and resilient collaborative inference offloading under strict computational and communication constraints. It incorporates a Bit Error Rate (BER)-aware decoder that adapts to dynamic channel conditions and a Soft Quantization (SQ)-based encoder to learn compact representations. Building on this architecture, we introduce Feature-augmentation Learning, a novel training strategy that enhances offloading efficiency. To address encoder-decoder capability mismatches from asymmetric resources, we propose XAI-based Asymmetry Compensation to enhance decoding semantic fidelity. We conduct extensive experiments on STM32 using three models and six datasets across image classification and object detection tasks. Experimental results demonstrate that, under varying transmission error rates, SemanticNN significantly reduces feature transmission volume by 56.82–344.83× while maintaining superior inference accuracy.",
+  "source": "openalex"
+ },
+ {
+  "title": "Mini-Hide: Generative Image Steganography via Flip Watermarking for Reducing BER",
+  "authors": [
+   "Rixuan Qiu",
+   "Zhiyuan Luo",
+   "Ruixiang Fan",
+   "Na Cao",
+   "Yuan Wang",
+   "Cong Yang"
+  ],
+  "year": 2026,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics15050939",
+  "arxiv": null,
+  "openalex": "W7131631382",
+  "cited_by": 1,
+  "abstract": "Generative image steganography is a key technology for secure information transmission, but existing deep learning-based generative steganographic methods suffer from an extremely high bit error rate (BER) and degraded steganographic image quality in low-bit-rate embedding tasks in which secret information needs duplication or padding to match the model input size. In addition, it is difficult to balance BER reduction and imperceptibility of stego-images. To address these issues, this paper proposes a novel generative image steganography algorithm based on flip watermarking, with the core novelty of designing a mirror flipping preprocessing mechanism to achieve a redundant watermark and eliminate information errors caused by duplication or padding, and constructing an end-to-end Mini-Hide steganographic framework to integrate flip watermarking with generative steganography for the first time. Specifically, the proposed method first converts the binary bitstream of secret information into a square matrix, and performs vertical, horizontal and vertical–horizontal mirror flipping on the matrix to form a redundant basic watermark, which is then expanded to a secret image with the same size as the cover image. After that, the secret image is preprocessed by a preparation network and then input into an encoding network together with the cover image to generate a stego-image. Finally, the generated stego-image is input into the decoding network to extract the secret image. Subsequently, the inverse operation of flip watermarking is performed on the extracted secret image to recover the original binary bitstream. Extensive experiments are conducted on the public COCO dataset (256×256 pixels) with BER, PSNR, and SSIM, and the proposed method is compared with state-of-the-art generative steganographic methods. Quantitative results show that the proposed method achieves a 0% BER for secret information of 8×8 to 64×64 bits, and the BER is only 0.00002% for 256×256-bit secret information; the PSNR of stego-images reaches 37.75 dB, and the SSIM hits 0.96, which are 7.07 dB and 0.02 higher than those of the classic HiDDeN method (64×64 bit) respectively. We also validated the flip watermark module by integrating into other methods; the results also show that the PSNR of FNNS-D is improved by 13.12 dB (256×256), and the BER of SteganoGAN is reduced by 99.99% (256×256 bit). In addition, the proposed method breaks the embedding size limit of HiDDeN (≤64×64 bit) and supports up to 256×256-bit secret information embedding with stable performance. This work significantly reduces the BER of generative image steganography while improving the visual quality of stego-images, provides a new preprocessing and optimization scheme for low-BER generative steganographic algorithm design, and also offers a universal lightweight module for performance improvement of existing steganographic methods, which has important theoretical and practical significance for enhancing the secu",
+  "source": "openalex"
+ },
+ {
+  "title": "ERDNN: Error-Resilient Deep Neural Networks With a New Error Correction Layer and Piece-Wise Rectified Linear Unit",
+  "authors": [
+   "Muhammad Salman Ali",
+   "Tauhid Bin Iqbal",
+   "Kang-Ho Lee",
+   "Abdul Muqeet",
+   "Seunghyun Lee",
+   "Lok-Won Kim",
+   "Sung‐Ho Bae"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.3017211",
+  "arxiv": null,
+  "openalex": "W3075036515",
+  "cited_by": 12,
+  "abstract": "Deep Learning techniques have been successfully used to solve a wide range of computer vision problems. Due to their high computation complexity, specialized hardware accelerators are being proposed to achieve high performance and efficiency for deep learning-based algorithms. However, soft errors, i.e., bit flipping errors in the layer output, are often caused due to process variation and high energy particles in these hardware systems. These can significantly reduce model accuracy. To remedy this problem, we propose new algorithms that effectively reduce the impact of errors, thus keeping high accuracy. We firstly propose to incorporate an Error Correction Layer (ECL) into neural networks where convolution is performed multiple times in each layer and majority reporting is conducted for the outputs at bit level. We found that ECL can eliminate most errors while bypassing the bit-error when the bits at the same position are corrupted multiple times under the simulated condition. In order to solve this problem, we analyze the impact of errors depending on the position of bits, thus observing that errors in most significant bit (MSB) positions tend to severely corrupt the output of the network compared to the errors in the least significant bit (LSB) positions. According to this observation, we propose a new specialized activation function, called Piece-wise Rectified Linear Unit (PwReLU), which selectively suppresses errors depending on the bit positions, resulting in an increased model resistance against the errors. Compared to existing activation functions, the proposed PwReLU outperforms with large accuracy margins of up-to 20% even with very high bit error rates (BERs). Our extensive experiments show that the proposed ECL and PwReLU work in a complementary manner, achieving comparable accuracy to the error-free networks even at a severe BER of 0.1% on CIFAR10, CIFAR100, and ImageNet.",
+  "source": "openalex"
+ },
+ {
+  "title": "A screen‐shooting resilient document image watermarking scheme using deep neural network",
+  "authors": [
+   "Sulong Ge",
+   "Jianwei Fei",
+   "Zhihua Xia",
+   "Yao Tong",
+   "Jian Weng",
+   "Jia-Nan Liu"
+  ],
+  "year": 2022,
+  "venue": "IET Image Processing",
+  "doi": "10.1049/ipr2.12653",
+  "arxiv": "2203.05198",
+  "openalex": "W4308146468",
+  "cited_by": 37,
+  "abstract": "Abstract With the advent of the screen‐reading era, the confidential documents displayed on the screen can be easily captured by a camera without leaving any traces. Thus, this paper proposes a novel screen‐shooting resilient watermarking scheme for document image using deep neural network. By applying this scheme, when the watermarked image is displayed on the screen and captured by a camera, the watermark can be still extracted from the captured photographs. Specifically, the scheme is an end‐to‐end neural network with an encoder to embed watermark and a decoder to extract watermark. During the training process, a distortion layer between encoder and decoder is added to simulate the distortions introduced by screen‐shooting process in real scenes, such as camera distortion, shooting distortion, and light source distortion. Furthermore, a background sensitive loss and a lpips loss are used to improve visual quality of the watermarked document images in the training process. Besides, a strength factor adjustment strategy is also designed to improve the visual quality with little loss of bit extraction accuracy. The experimental results show that the proposed scheme has higher visual quality and robustness than the other two recent state‐of‐the‐art methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "ERASE: Error-Resilient Representation Learning on Graphs for Label Noise Tolerance",
+  "authors": [
+   "Ling-Hao Chen",
+   "Yuanshuo Zhang",
+   "Taohua Huang",
+   "Liangcai Su",
+   "Zeyi Lin",
+   "Xi Xiao",
+   "Xiaobo Xia",
+   "Tongliang Liu"
+  ],
+  "year": 2024,
+  "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+  "doi": "10.1145/3627673.3679552",
+  "arxiv": "2312.08852",
+  "openalex": "W4403577372",
+  "cited_by": 15,
+  "abstract": "Deep learning has achieved remarkable success in graph-related tasks, yet this accomplishment heavily relies on large-scale highquality annotated datasets.However, acquiring such datasets can be cost-prohibitive, leading to the practical use of labels obtained from economically efficient sources such as web searches and user tags.Unfortunately, these labels often come with noise, compromising the generalization performance of deep networks.To tackle this challenge and enhance the robustness of deep learning models against label noise in graph-based tasks, we propose a method called ERASE (Error-Resilient representation learning on graphs for lAbel noiSe tolerancE).The core idea of ERASE is to learn representations with error tolerance by maximizing coding rate reduction.To the best of our knowledge, it is the first time that the error-resilient mechanism is introduced into graph representation learning against label noise.Particularly, we also propose a decoupled label propagation method to estimate coding rate reduction.Before training, noisy labels are pre-corrected * Equal Contribution.",
+  "source": "openalex"
+ },
+ {
+  "title": "FaRAccel: FPGA-Accelerated Defense Architecture for Efficient Bit-Flip Attack Resilience in Transformer Models",
+  "authors": [
+   "Najmeh Nazari",
+   "Banafsheh Saber Latibari",
+   "Elahe Hosseini",
+   "Fatemeh Movafagh",
+   "Chongzhou Fang",
+   "Hosein Mohammadi Makrani",
+   "Kevin Immanuel Gubbi",
+   "Abhijit Mahalanobis",
+   "Setareh Rafatirad",
+   "Hossein Sayadi",
+   "Houman Homayoun"
+  ],
+  "year": 2025,
+  "venue": "IEEE International Conference on Computer Design: VLSI in Computers and Processors (ICCD)",
+  "doi": "10.1109/iccd65941.2025.00069",
+  "arxiv": "2510.24985",
+  "openalex": "W7117556177",
+  "cited_by": 2,
+  "abstract": "Forget and Rewire (FaR) methodology has demonstrated strong resilience against Bit-Flip Attacks (BFAs) on Transformer-based models by obfuscating critical parameters through dynamic rewiring of linear layers. However, the application of FaR introduces non-negligible performance and memory overheads, primarily due to the runtime modification of activation pathways and the lack of hardware-level optimization. To overcome these limitations, we propose FaRAccel, a novel hardware accelerator architecture implemented on FPGA, specifically designed to offload and optimize FaR operations. FaRAccel integrates reconfigurable logic for dynamic activation rerouting, and lightweight storage of rewiring configurations, enabling low-latency inference with minimal energy overhead. We evaluate FaRAccel across a suite of Transformer models and demonstrate substantial reductions in FaR inference latency and improvement in energy efficiency, while maintaining the robustness gains of the original FaR methodology. To the best of our knowledge, this is the first hardware-accelerated defense against BFAs in Transformers, effectively bridging the gap between algorithmic resilience and efficient deployment on real-world AI platforms.",
+  "source": "openalex"
+ },
+ {
+  "title": "An evolutionary computing enriched RS attack resilient medical image steganography model for telemedicine applications",
+  "authors": [
+   "Romany F. Mansour",
+   "Elsaid Md. Abdelrahim"
+  ],
+  "year": 2018,
+  "venue": "Multidimensional Systems and Signal Processing",
+  "doi": "10.1007/s11045-018-0575-3",
+  "arxiv": "1709.08362",
+  "openalex": "W2759551513",
+  "cited_by": 44,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero Aware Configurable Data Encoding by Skipping Transfer for Error Resilient Applications",
+  "authors": [
+   "Chandan Kumar Jha",
+   "Shreyas Singh",
+   "Riddhi Thakker",
+   "Manu Awasthi",
+   "Joycee Mekie"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems I Regular Papers",
+  "doi": "10.1109/tcsi.2021.3081623",
+  "arxiv": "2105.07432",
+  "openalex": "W3162196808",
+  "cited_by": 9,
+  "abstract": "Data transfer across DRAM channels accounts for nearly a quarter of the total energy consumption of DDR4 DRAMs. Modern applications with high bandwidth requirements further increase channel energy consumption. However, channel energy consumption is dependent on data being transferred. Pseudo Open Drain (POD) asymmetric termination, used in current DDR4 systems, consumes energy only when 1's are being transmitted over the channels. Many modern applications, including AI/ML ones are resilient to errors in data, and can work well with approximate data. This resilience can vary widely across and within applications, which provides a number of ways for exploiting these characteristics to save data transfer energy across the DRAM channel. However, all DRAM data encoding schemes have been targeted towards applications that require exact data and are not approximation resilient. In this paper, we propose Zero Aware Configurable Data Encoding by Skipping Transfer (ZAC-DEST), a data encoding scheme to reduce the energy consumption of DRAM channels, specifically targeted towards approximate computing and error resilient applications. ZAC-DEST exploits the similarity between recent data transfers across channels and information about error resilience behaviour of applications to reduce on-die termination and switching energy by reducing the number of 1's transmitted over the channels. ZAC-DEST also provides a number of knobs for trading off application's accuracy for energy savings, and vice versa, and can be applied to both training and inference. We apply ZAC-DEST to five machine learning applications. On average, across all applications and configurations, we observed a reduction of 40% in termination energy and 37% in switching energy as compared to the state of the art data encoding technique BD-Coder with an average output quality loss of 10%. We show that if both training and testing are done assuming the presence of ZAC-DEST, the output quality of the applications can be improved upto 9× as compared to when ZAC-DEST is only applied during testing leading to energy savings during training and inference with increased output quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Forward Error Compensation Approach for Fault Resilient Deep Neural Network Accelerator Design",
+  "authors": [
+   "Wenye Liu",
+   "Chip-Hong Chang"
+  ],
+  "year": 2021,
+  "venue": "Workshop on Attacks and Solutions in Hardware Security (ASHES)",
+  "doi": "10.1145/3474376.3487281",
+  "arxiv": null,
+  "openalex": "W3213522731",
+  "cited_by": 3,
+  "abstract": "Deep learning accelerator is a key enabler of a variety of safety-critical applications such as self-driving car and video surveillance. However, recently reported hardware-oriented attack vectors, e.g., fault injection attacks, have extended the threats on deployed deep neural network (DNN) systems beyond the software attack boundary by input data perturbation. Existing fault mitigation schemes including data masking, zeroing-on-error and circuit level time-borrowing techniques exploit the noise-tolerance of neural network models to resist random and sparse errors. Such noise tolerant-based schemes are not sufficiently effective to suppress intensive transient errors if a DNN accelerator is blasted with malicious and deliberate faults. In this paper, we conduct comprehensive investigations on reported resilient designs and propose a more robust countermeasure to fault injection attacks. The proposed design utilizes shadow flip flops for error detection and lightweight circuit for timely error correction. Our forward error compensation scheme rectifies the incorrect partial sum of the multiply-accumulation operation by estimating the difference between the correct and error-inflicted computation. The difference is added back to the final accumulated result at a later cycle without stalling the execution pipeline. We implemented our proposed design and the existing fault-mitigation schemes on the same Intel FPGA-based DNN accelerator to demonstrate its substantially enhanced resiliency against deliberate fault attacks on two popular DNN models, ResNet50 and VGG16, trained with ImageNet.",
+  "source": "openalex"
+ },
+ {
+  "title": "Secure image transmission using chaotic encryption and DWT watermarking on reconfigurable platform",
+  "authors": [
+   "Shweta Sadanand Salunkhe",
+   "Altaf Osman Mulani",
+   "Deepali Shahane",
+   "Manish Rana",
+   "Shivam Mahendra Shukla",
+   "Makarand Mohan Jadhav"
+  ],
+  "year": 2026,
+  "venue": "Journal of Discrete Mathematical Sciences and Cryptography",
+  "doi": "10.47974/jdmsc-2608",
+  "arxiv": null,
+  "openalex": "W7124444176",
+  "cited_by": 5,
+  "abstract": "With the exponential rise in digital image transmission across unsecured networks, ensuring image confidentiality and authenticity has become essential. Traditional cryptographic methods like AES provide strong confidentiality but lack built-in authentication mechanisms. On the other hand, digital watermarking, especially in the Discrete Wavelet Transform (DWT) domain, offers robust image authentication. Combining both techniques and deploying them on reconfigurable platforms such as FPGAs addresses the growing demand for secure, high-performance image communication systems. This paper presents a hybrid image authentication framework that integrates AES encryption for confidentiality and DWT-based invisible watermarking for authenticity. The process involves preprocessing the image, applying AES encryption, embedding a watermark in the high-frequency sub-bands of the DWT domain, and implementing the system on an FPGA using Verilog HDL. The AES and DWT modules are designed as separate cores, synthesized, and verified using Xilinx tools on Spartan-6 FPGA. The watermark, encrypted if necessary, is embedded in the HH sub-band to ensure robustness and imperceptibility. Simulations conducted on standard grayscale images (e.g., Lena, Cameraman) demonstrate high image fidelity, with PSNR exceeding 40 dB and SSIM values above 0.95. The watermark remained resilient under Gaussian noise, JPEG compression, and median filtering, with a bit error rate below 2%. FPGA implementation showed efficient resource utilization, consuming 4321 LUTs and 2176 flip-flops, with a total power consumption of 354 mW and latency of 1.02 μs. These results confirm the system’s real-time suitability and robustness. The proposed hybrid image authentication system successfully ensures both security and authenticity in an image.",
+  "source": "openalex"
+ },
+ {
+  "title": "Appropriateness of Imperfect CNFET Based Circuits for Error Resilient Computing Systems",
+  "authors": [
+   "Kaship Sheikh"
+  ],
+  "year": 2020,
+  "venue": "UWSpace (University of Waterloo)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W3018833682",
+  "cited_by": 0,
+  "abstract": "With superior device performance consistently reported in extremely scaled dimensions, low dimensional materials (LDMs), including Carbon Nanotube Field Effect Transistor (CNFET) based technology, have shown the potential to outperform silicon for future transistors in advanced technology nodes. Studies have also demonstrated orders of magnitude improvement in energy efficiency possible with LDMs, in comparison to silicon at competing technology nodes. However, the current fabrication processes for these materials suffer from process imperfections and still appear to be inadequate to compete with silicon for the mainstream high volume manufacturing. Among the LDMs, CNFETs are the most widely studied and closest to high volume manufacturing. Recent works have shown a significant increase in the complexity of CNFET based systems, including demonstration of a 16-bit microprocessor. However, the design of such systems has involved significantly wider-than-usual transistors and avoidance of certain logic combinations. The resulting complexity of several thousand transistors in such systems is still far from the requirements of high-performance general-purpose computing systems having billions of transistors. With the current progress of the process to fabricate CNFETs, their introduction in mainstream manufacturing is expected to take several more years. For an earlier technology adoption, CNFETs appear to be suited for error-resilient computing systems where errors during computation can be tolerated to a certain degree. Such systems relax the need for precise circuits and a perfect process while leveraging the potential energy benefits of CNFET technology in comparison to conventional Si technology. In this thesis, we explore the potential applications using an imperfect CNFET process for error-resilient computing systems, including the impact of the process imperfections at the system level and methods to improve it. \\n \\nThe current most widely adopted fabrication process for CNFETs (separation and placement of solution-based CNTs) still suffers from process imperfections, mainly from open CNTs due to missing of CNTs (in trenches connecting source and drain of CNFET). A fair evaluation of the performance of CNFET based circuits should thus take into consideration the effect of open CNTs, resulting in reduced drive currents. At the circuit level, this leads to failures in meeting 1) the minimum frequency requirement (due to an increase in critical path delay), and 2) the noise suppression requirement. We present a methodology to accurately capture the effect of open CNT imperfection in the state-of-the-art CNFET model, for circuit-level performance evaluation (both delay and glitch vulnerability) of CNFET based circuits using SPICE. A Monte Carlo simulation framework is also provided to investigate the statistical effect of open CNT imperfection on circuit-level performance. We introduce essential metrics to evaluate glitch vulnerability and also p",
+  "source": "openalex"
+ },
+ {
+  "title": "From Bit-Position Sensitivity to Unequal Error Protection for DNN Inference Memory",
+  "authors": [
+   "Muhammad Husnain Mubarik",
+   "Kishore Kumar",
+   "Pedro Antonio Pena",
+   "Keshavan Varadarajan",
+   "Kunal Tyagi"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2607.19623",
+  "arxiv": "2607.19623",
+  "openalex": "W7170171992",
+  "cited_by": 0,
+  "abstract": "We characterize per-bit-position fault sensitivity in ML inference across 16 workloads -- spanning transformer-based models and attention-free CNNs -- and across three floating-point formats. Our central empirical finding is a sharp bit-sensitivity transition: flipping any of the least-significant fraction bits up to a data-type-specific threshold, Xsafe, degrades task metrics by less than 1% under deterministic single-bit stress tests. Sensitivity rises through the upper fraction bits and spikes at the exponent-mantissa boundary, where a single-bit flip causes catastrophic collapse. Because low-order bits are largely inconsequential while high-order and exponent bits are critical, uniform SECDED protection -- which guards every bit equally at 12.5% storage overhead -- is unnecessarily conservative. We derive per-data-type Xsafe floors (FP16: 6, BF16: 4, FP32: 15) and workload-aware tiers that widen the unprotected region for resilient model classes, raising ECC savings to 37.5-62.5% without retraining. Text-conditioned diffusion models dictate the conservative floor; vision encoders, NLU models, and resilient LLMs tolerate wider bypass regions. These floors and tiers drive an Unequal Error Protection (UEP) codec with per-cacheline data-type tags and a dual-partition SRAM architecture for ML accelerators. Validation across 870+ fault-injection runs confirms selective protection holds under contiguous 2- and 3-bit upsets. The codec reduces ECC area by 27.8% relative to uniform SECDED; dual-voltage operation of the non-critical partition lowers gross BF16 read energy by about 17%, with a roughly 4% dual-partition macro-area overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Neural network based image classifier resilient to destructive perturbation influences – architecture and training method",
+  "authors": [
+   "В’ячеслав Васильович Москаленко",
+   "Альона Сергіївна Москаленко"
+  ],
+  "year": 2022,
+  "venue": "RADIOELECTRONIC AND COMPUTER SYSTEMS",
+  "doi": "10.32620/reks.2022.3.07",
+  "arxiv": null,
+  "openalex": "W4302007512",
+  "cited_by": 11,
+  "abstract": "Modern methods of image recognition are sensitive to various types of disturbances, which actualize the development of resilient intelligent algorithms for safety-critical applications. The current article develops a model and method of training a classifier that exhibits characteristics of resilience to adversarial attacks, fault injection, and concept drift. The proposed model has a hierarchical structure of prototypes and hyperspherical boundaries of classes formed in the space of high-level features. Class boundaries are optimized during training and provide perturbation absorption and graceful degradation. The proposed learning method involves the use of a combined loss function, which allows the use of both labeled and unlabeled data, implements the compression of the feature representation to a discrete form and ensures the compactness of the distribution of classes and the maximization of the buffer zone between classes. The main component of the loss function is the value of the normalized modification of Shannon's information measure, averaged over the alphabet of the classes, expressed as a function of accuracy characteristics. Simultaneously, accuracy characteristics are calculated on the basis of smoothed versions of the distribution of statistical hypothesis testing results. It is experimentally confirmed that the proposed approach provides a certain level of disturbance absorption, graceful degradation and recovery. During testing of the proposed algorithm on the Cifar10 data set, it was established that the integral metric of resilience to tensor damage by inversion of one randomly selected bit is about 0.95 if the share of damaged tensors does not exceed 30%. Also, during testing of the proposed algorithm, it was established that an adversarial attack with a disturbance that does not exceed the L∞-norm threshold equal to 3 provides resilience that exceeds the value of 0.95 according to the integral metric. Additionally, the integral metric of resilience during adaptation to the appearance of two new classes is 0.959. The integral metric of resilience to the real drift of concepts between the two classes is 0.973. The ability to adapt to the appearance of new classes or the concept drift has been confirmed 8 times faster than learning from scratch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Model and Training Method of the Resilient Image Classifier Considering Faults, Concept Drift, and Adversarial Attacks",
+  "authors": [
+   "В’ячеслав Васильович Москаленко",
+   "Vyacheslav Serhiiovych Kharchenko",
+   "Альона Сергіївна Москаленко",
+   "Sergey Petrov"
+  ],
+  "year": 2022,
+  "venue": "Algorithms",
+  "doi": "10.3390/a15100384",
+  "arxiv": null,
+  "openalex": "W4306836273",
+  "cited_by": 10,
+  "abstract": "Modern trainable image recognition models are vulnerable to different types of perturbations; hence, the development of resilient intelligent algorithms for safety-critical applications remains a relevant concern to reduce the impact of perturbation on model performance. This paper proposes a model and training method for a resilient image classifier capable of efficiently functioning despite various faults, adversarial attacks, and concept drifts. The proposed model has a multi-section structure with a hierarchy of optimized class prototypes and hyperspherical class boundaries, which provides adaptive computation, perturbation absorption, and graceful degradation. The proposed training method entails the application of a complex loss function assembled from its constituent parts in a particular way depending on the result of perturbation detection and the presence of new labeled and unlabeled data. The training method implements principles of self-knowledge distillation, the compactness maximization of class distribution and the interclass gap, the compression of feature representations, and consistency regularization. Consistency regularization makes it possible to utilize both labeled and unlabeled data to obtain a robust model and implement continuous adaptation. Experiments are performed on the publicly available CIFAR-10 and CIFAR-100 datasets using model backbones based on modules ResBlocks from the ResNet50 architecture and Swin transformer blocks. It is experimentally proven that the proposed prototype-based classifier head is characterized by a higher level of robustness and adaptability in comparison with the dense layer-based classifier head. It is also shown that multi-section structure and self-knowledge distillation feature conserve resources when processing simple samples under normal conditions and increase computational costs to improve the reliability of decisions when exposed to perturbations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Random and Adversarial Bit Error Robustness: Energy-Efficient and Secure DNN Accelerators",
+  "authors": [
+   "David Stutz",
+   "Nandhini Chandramoorthy",
+   "Matthias Hein",
+   "Bernt Schiele"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2022.3181972",
+  "arxiv": "2104.08323",
+  "openalex": "W3155048100",
+  "cited_by": 21,
+  "abstract": "Deep neural network (DNN) accelerators received considerable attention in recent years due to the potential to save energy compared to mainstream hardware. Low-voltage operation of DNN accelerators allows to further reduce energy consumption, however, causes bit-level failures in the memory storing the quantized weights. Furthermore, DNN accelerators are vulnerable to adversarial attacks on voltage controllers or individual bits. In this paper, we show that a combination of robust fixed-point quantization, weight clipping, as well as random bit error training (RandBET) or adversarial bit error training (AdvBET) improves robustness against random or adversarial bit errors in quantized DNN weights significantly. This leads not only to high energy savings for low-voltage operation as well as low-precision quantization, but also improves security of DNN accelerators. In contrast to related work, our approach generalizes across operating voltages and accelerators and does not require hardware changes. Moreover, we present a novel adversarial bit error attack and are able to obtain robustness against both targeted and untargeted bit-level attacks. Without losing more than 0.8%/2% in test accuracy, we can reduce energy consumption on CIFAR10by 20%/30% for 8/4-bit quantization. Allowing up to 320 adversarial bit errors, we reduce test error from above 90% (chance level) to 26.22%.",
+  "source": "openalex"
+ },
+ {
+  "title": "The Case for Error-Bounded Lossy Floating-Point Data Compression on Interconnection Networks",
+  "authors": [
+   "Yao Guang Hu",
+   "Michihiro Koibuchi"
+  ],
+  "year": 2021,
+  "venue": null,
+  "doi": "10.5121/csit.2021.110706",
+  "arxiv": null,
+  "openalex": "W3167252998",
+  "cited_by": 4,
+  "abstract": "Data compression virtually increases the effective network bandwidth on an interconnection network of parallel computers. Although a floating-point dataset is frequently exchanged between compute nodes in parallel applications, its compression ratio often becomes low when using simple lossless compression algorithms. In this study, we aggressively introduce a lossy compression algorithm for floating-point values on interconnection networks. We take an application-level compression for providing high portability: a source process compresses communication datasets at an MPI parallel program, and a destination process decompresses them. Since recent interconnection networks are latency-sensitive, sophisticated lossy compression techniques that introduce large compression overhead are not suitable for compressing communication data. In this context, we apply a linear predictor with the userdefined error bound to the compression of communication datasets. We design, implement, and evaluate the compression technique for the floating-point communication datasets generated in MPI parallel programs, i.e., Ping Pong, Himeno, K-means Clustering, and Fast Fourier Transform (FFT). The proposed compression technique achieves 2.4x, 6.6x, 4.3x and 2.7x compression ratio for Ping Pong, Himeno, K-means and FFT at the cost of the moderate decrease of quality of results (error bound is 10-4 ), thus achieving 2.1x, 1.7x, 2.0x and 2.4x speedup of the execution time, respectively. More generally, our cycle-accurate network simulation shows that a high compression ratio provides comparably low communication latency, and significantly improves effective network throughput on typical synthetic traffic patterns when compared to no data compression on a conventional interconnection network.",
+  "source": "openalex"
+ },
+ {
+  "title": "Two-Stage Detect-Then-Classify Pipeline with DSAR-CNN for Robust Fragment Classification Under Padding and Bit-Flip Attacks",
+  "authors": [
+   "Teena Mary",
+   "C. S. Sreeja"
+  ],
+  "year": 2026,
+  "venue": "ITEGAM- Journal of Engineering and Technology for Industrial Applications (ITEGAM-JETIA)",
+  "doi": "10.5935/jetia.v12i60.3909",
+  "arxiv": null,
+  "openalex": "W7171945223",
+  "cited_by": 0,
+  "abstract": "File fragment classification is fundamental to digital forensics and network security, enabling the recovery and identification of files when metadata is corrupted or absent. While state-of-the-art deep learning models on the FFT-75 benchmark achieve 65–79% accuracy on clean fragments, they exhibit vulnerability to byte-level adversarial perturbations, and evaluation across 39 byte-level attack variants shows that the baseline accuracy drops from 71.1% on clean fragments to an average of 15.8% under adversarial perturbations. This paper presents a novel two-stage detection-based defense framework tailored for file fragment classification that mitigates the accuracy-robustness trade-off commonly associated with adversarial training. The framework integrates three components: (1) an attention-based adversarial detector achieving 95.46% specificity and 91.34% recall (91.44% overall accuracy); (2) an existing baseline file fragment classifier preserving 71.1% accuracy on clean fragments; and (3) a novel Dual-Scale Attention-based Robust CNN (DSAR-CNN) specifically designed for adversarial fragment classification, achieving 68.4% accuracy on adversarially perturbed samples (evaluated on the test set of 4.6M fragments) through multi-scale depth wise separable convolution, CBAM-style dual attention, learnable position embeddings, and split global pooling. Developed and evaluated across 75 file types and 39 attack variants from the FFT-75 benchmark, the complete pipeline achieves 70.91% accuracy on clean data (0.19 percentage point penalty) and 63.84% on adversarial data, yielding 70.20% accuracy in realistic mixed-threat scenarios (90% clean, 10% adversarial) - outperforming both the undefended baseline and the standard adversarial training benchmark. The framework provides an approach for improving the robustness of forensic classification systems against byte-level adversarial attacks such as padding and bit-flipping.",
+  "source": "openalex"
+ },
+ {
+  "title": "IMAGE CLASSIFIER RESILIENT TO ADVERSARIAL ATTACKS, FAULT INJECTIONS AND CONCEPT DRIFT – MODEL ARCHITECTURE AND TRAINING ALGORITHM",
+  "authors": [
+   "В’ячеслав Васильович Москаленко",
+   "Альона Сергіївна Москаленко",
+   "Артем Геннадійович Коробов",
+   "Микола Олександрович Зарецький"
+  ],
+  "year": 2022,
+  "venue": "Radio Electronics Computer Science Control",
+  "doi": "10.15588/1607-3274-2022-3-9",
+  "arxiv": null,
+  "openalex": "W4307558800",
+  "cited_by": 3,
+  "abstract": "Context. The problem of image classification algorithms vulnerability to destructive perturbations has not yet been definitively resolved and is quite relevant for safety-critical applications. Therefore, object of research is the process of training and inference for image classifier that functioning under influences of destructive perturbations. The subjects of the research are model architecture and training algorithm of image classifier that provide resilience to adversarial attacks, fault injection attacks and concept drift. Objective. Stated research goal is to develop effective model architecture and training algorithm that provide resilience to adversarial attacks, fault injections and concept drift. Method. New training algorithm which combines self-knowledge distillation, information measure maximization, class distribution compactness and interclass gap maximization, data compression based on discretization of feature representation and semi-supervised learning based on consistency regularization is proposed. Results. The model architecture and training algorithm of image classifier were developed. The obtained classifier was tested on the Cifar10 dataset to evaluate its resilience over an interval of 200 mini-batches with a training and test size of mini-batch equals to 128 examples for such perturbations: adversarial black-box L∞-attacks with perturbation levels equal to 1, 3, 5 and 10; inversion of one randomly selected bit in a tensor for 10%, 30%, 50% and 60% randomly selected tensors; addition of one new class; real concept drift between a pair of classes. The effect of the feature space dimensionality on the value of the information criterion of the model performance without perturbations and the value of the integral metric of resilience during the exposure to perturbations is considered. Conclusions. The proposed model architecture and learning algorithm provide absorption of part of the disturbing influence, graceful degradation due to hierarchical classes and adaptive computation, and fast adaptation on a limited amount of labeled data. It is shown that adaptive computation saves up to 40% of resources due to early decision-making in the lower sections of the model, but perturbing influence leads to slowing down, which can be considered as graceful degradation. A multi-section structure trained using knowledge self-distillation principles has been shown to provide more than 5% improvement in the value of the integral mectric of resilience compared to an architecture where the decision is made on the last layer of the model. It is observed that the dimensionality of the feature space noticeably affects the resilience to adversarial attacks and can be chosen as a tradeoff between resilience to perturbations and efficiency without perturbations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Impact of JPEG 2000 compression on deep convolutional neural networks for metastatic cancer detection in histopathological images",
+  "authors": [
+   "Farhad Ghazvinian Zanjani",
+   "Svitlana Zinger",
+   "Bastian Piepers",
+   "Saeed Mahmoudpour",
+   "Peter Schelkens",
+   "Peter H. N. de With"
+  ],
+  "year": 2019,
+  "venue": "Journal of medical imaging",
+  "doi": "10.1117/1.jmi.6.2.027501",
+  "arxiv": null,
+  "openalex": "W2941282280",
+  "cited_by": 38,
+  "abstract": "The availability of massive amounts of data in histopathological whole-slide images (WSIs) has enabled the application of deep learning models and especially convolutional neural networks (CNNs), which have shown a high potential for improvement in cancer diagnosis. However, storage and transmission of large amounts of data such as gigapixel histopathological WSIs are challenging. Exploiting lossy compression algorithms for medical images is controversial but, as long as the clinical diagnosis is not affected, is acceptable. We study the impact of JPEG 2000 compression on our proposed CNN-based algorithm, which has produced performance comparable to that of pathologists and which was ranked second place in the CAMELYON17 challenge. Detecting tumor metastases in hematoxylin and eosin-stained tissue sections of breast lymph nodes is evaluated and compared with the pathologists' diagnoses in three different experimental setups. Our experiments show that the CNN model is robust against compression ratios up to 24:1 when it is trained on uncompressed high-quality images. We demonstrate that a model trained on lower quality images-i.e., lossy compressed images-depicts a classification performance that is significantly improved for the corresponding compression ratio. Moreover, it is also observed that the model performs equally well on all higher-quality images. These properties will help to design cloud-based computer-aided diagnosis (CAD) systems, e.g., telemedicine that employ deep CNN models that are more robust to image quality variations due to compression required to address data storage and transmission constraints. However, the results presented are specific to the CAD system and application described, and further work is needed to examine whether they generalize to other systems and applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Circular Polarization-Based Quantum Encoding for Image Transmission over Error-Prone Channels",
+  "authors": [
+   "Udara Jayasinghe",
+   "Anil Fernando"
+  ],
+  "year": 2026,
+  "venue": "Signals",
+  "doi": "10.3390/signals7020037",
+  "arxiv": null,
+  "openalex": "W7151974449",
+  "cited_by": 0,
+  "abstract": "Quantum image transmission over noisy communication channels remains a challenge due to the fragility of quantum states and their susceptibility to channel impairments. Existing quantum encoding schemes often exhibit limited noise resilience, while advanced approaches introduce computational and implementation complexity. To address these limitations, this paper proposes a circular polarization-based quantum encoding framework for image transmission over error-prone channels. In the proposed approach, source images are compressed and source-encoded using standard image coding formats, including the joint photographic experts group (JPEG) standard and the high-efficiency image file format (HEIF), and converted into classical bitstreams. The resulting bitstreams are protected using channel coding and mapped onto quantum states via circular polarization representations, where left- and right-hand circularly polarized states encode binary information. The encoded quantum states are transmitted over noisy quantum channels to model channel impairments. At the receiver, appropriate quantum decoding and channel decoding operations are applied to recover the classical bitstream, followed by source decoding to reconstruct the image. The performance of the proposed framework is evaluated using image quality metrics, including peak signal-to-noise ratio (PSNR), structural similarity index measure (SSIM), and universal quality index (UQI). Simulation results demonstrate that the proposed circular polarization-based encoding scheme outperforms existing quantum image encoding techniques, achieving channel SNR gains of 4 dB over state-of-the-art Hadamard-based encoding and 3 dB over frequency-domain quantum encoding methods under severe noise conditions. These results indicate that circular polarization-based quantum encoding provides improved noise robustness and reconstruction fidelity for practical quantum image transmission systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "A MIMO-OFDM Framework for Video Streaming: An Error-Resilient FPGA Design with an Economical Perspective",
+  "authors": [
+   "Patikiri Arachchige Don Shehan Nilmantha Wijesekara"
+  ],
+  "year": 2025,
+  "venue": "Engineer Journal of the Institution of Engineers Sri Lanka",
+  "doi": "10.4038/engineer.v58i2.7691",
+  "arxiv": null,
+  "openalex": "W4411278388",
+  "cited_by": 0,
+  "abstract": "nsmission of modulated data in several spatial streams, each of which is made up of many orthogonal subcarriers, is fundamental to Multiple Input Multiple Output (MIMO)-Orthogonal Frequency Division Multiplexing (OFDM). Nevertheless, we discover that current hardware implementations of MIMO-OFDM systems are less appropriate for use, particularly in low-power embedded devices, and need significant hardware resources. In this work, in order to fill this research gap, we develop and build a low-cost MIMO-OFDM system that may be used for video streaming in a Field Programmable Gate Array (FPGA) while still meeting the high-performance criteria required for video communication. In particular, we use configurable pilot symbols and a modulation approach that includes a 3-level BCH code that can handle up to 5-bit corrections per pixel, as well as an intra- and inter-pixel interleaver. To make the error-correcting code less complicated, we employ a simpler third-order generating polynomial and a precalculated Lookup Table (LUT). Karatsuba-inspired multiplications with fixed-point computations, shift register-driven correlators, and LUT-driven square root approximation are used at the receiver for synchronization. By using pipelining inside OFDM phases, multiplexing in the time domain among the four streams, we significantly minimize hardware complexity. In order to determine whether to decompose singular values for calculating the channel matrix inverse, we first approximate the channel matrix utilizing the least squares technique. Then, we perform channel equalization adaptively with reduced noise magnification by calculating the infinity norm difference among the current channel matrix and the most recent recognized channel matrix. Ultimately, the system was put into practice using Artix 7 FPGAs, validated by thorough simulations, and tested for actual data transfer. The outcomes demonstrate that the suggested system is error-resilient, economical, and energy-efficient when compared to current methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Evaluating the Resiliency of Posits for Scientific Computing",
+  "authors": [
+   "Benjamin Schlueter",
+   "Jon C. Calhoun",
+   "Alexandra Poulos"
+  ],
+  "year": 2023,
+  "venue": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+  "doi": "10.1145/3624062.3624116",
+  "arxiv": null,
+  "openalex": "W4388581358",
+  "cited_by": 7,
+  "abstract": "IEEE-754 is the de-facto standard for the implementation of floating-point number systems in hardware. With the rise of machine-learning and mixed-precision computation, applications tolerate small inaccuracies in the data by using lower bit-width floating-point values to improve computational speed and memory bandwidth, but still rely on some variant of IEEE-754. Posits have been proposed as a drop-in replacement to the IEEE-754 floating-point standard. Recent work has suggested that posits can offer greater numerical accuracy and reproducibility than IEEE-754-compliant floating point numbers at a comparable architectural cost. There have been several studies which consider the use of posits and other floating-point implementations in hardware and software, but there is limited work examining this new number system from a reliability perspective.",
+  "source": "openalex"
+ },
+ {
+  "title": "SZ Lossy Compression On-FPGA using OpenCL",
+  "authors": [
+   "HAZIM AHMED"
+  ],
+  "year": 2024,
+  "venue": "Research Publication Repository of King Fahd University of Petroleum and Minerals (King Fahd University of Petroleum and Minerals)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W7167192449",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Compression or Corruption? A Study on the Effects of Transient Faults on BNN Inference Accelerators",
+  "authors": [
+   "Navid Khoshavi",
+   "Connor Broyles",
+   "Yu Bi"
+  ],
+  "year": 2020,
+  "venue": "International Symposium on Quality Electronic Design (ISQED)",
+  "doi": "10.1109/isqed48828.2020.9137006",
+  "arxiv": "2004.05915",
+  "openalex": "W3041816437",
+  "cited_by": 25,
+  "abstract": "Over past years, the philosophy for designing the artificial intelligence algorithms has significantly shifted towards automatically extracting the composable systems from massive data volumes. This paradigm shift has been expedited by the big data booming which enables us to easily access and analyze the highly large data sets. The most well-known class of big data analysis techniques is called deep learning. These models require significant computation power and extremely high memory accesses which necessitate the design of novel approaches to reduce the memory access and improve power efficiency while taking into account the development of domain-specific hardware accelerators to support the current and future data sizes and model structures. The current trends for designing application-specific integrated circuits barely consider the essential requirement for maintaining the complex neural network computation to be resilient in the presence of soft errors. The soft errors might strike either memory storage or combinational logic in the hardware accelerator that can affect the architectural behavior such that the precision of the results fall behind the minimum allowable correctness. In this study, we demonstrate that the impact of soft errors on a customized deep learning algorithm called Binarized Neural Network might cause drastic image misclassification. Our experimental results show that the accuracy of image classifier can drastically drop by 76.70% and 19.25% in IfcW1A1 and cnvW1A1 networks, respectively across CIFAR-10 and MNIST datasets during the fault injection for the worst-case scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "Experimental and Numerical Thermal Analysis for Advanced Flip Chip Thermo-Compression Bonding via CMOS Microsensor Arrays and Finite Element Modelling",
+  "authors": [
+   "Depayne Athia"
+  ],
+  "year": 2017,
+  "venue": "UWSpace (University of Waterloo)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W2760853600",
+  "cited_by": 0,
+  "abstract": "Thermo-compression bonding (TCB) relies on uniform thermal distribution during \\nmicroelectronic packaging processes to ensure reliable interconnects are formed. During \\nany TCB processes, the thermal application must uniformly distribute heat in order to produce \\nrobust, thoroughly bonded packages without being damaged due to thermo-mechanical \\neffects. To better control and develop TCB processes, further insight through thermal \\nanalysis is required. Due to the form factors and complexity involved in TCB, it is difficult \\nto accurately extract viable information such as temperature variation, lateral and vertical \\ngradients, or interfacial bonding temperatures. \\nTo extract real time in-situ temperature and force signals, a microsensor array was \\nused to observe any thermo-mechanical features recorded during emulated TCB processes. \\nAlgorithms were developed to post-process the signals and produce quantifiable \\ndata. Finite element models were developed to verify the experimental thermal responses \\nand subsequently post-analyze the numerical results. Models formed through hybridized \\ncontact resistance layers as well as surface contact models are also discussed. \\nSeveral features were identified and quantified: maximum heating rates, location \\nof maximum lateral thermal gradients, internal joint thermal distributions, knee-region \\nslope analysis and joint to joint thermal variation. The experimental responses in combination \\nwith numerical analyses show evidence that thermal applications during TCB is \\nrobust. Low thermal variation was found with respect to joint to joint temperatures. Chip \\ndesign was found to heavily influence cooling on the periphery edges of the bump array. \\nThe sensor chip temperatures were to found to be about ≈ 6 °C lower than the extracted \\nbump temperatures, signifying the use of microsensor arrays could be developed as accurate \\ntools for thermal process control during TCB.",
+  "source": "openalex"
+ },
+ {
+  "title": "Always-On 674μ W@4GOP/s Error Resilient Binary Neural Networks With Aggressive SRAM Voltage Scaling on a 22-nm IoT End-Node",
+  "authors": [
+   "Alfio Di Mauro",
+   "Francesco Conti",
+   "Pasquale Davide Schiavone",
+   "Davide Rossi",
+   "Luca Benini C"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Circuits and Systems I Regular Papers",
+  "doi": "10.1109/tcsi.2020.3012576",
+  "arxiv": "2007.08952",
+  "openalex": "W3046926000",
+  "cited_by": 33,
+  "abstract": "Binary Neural Networks (BNNs) have been shown to be robust to random bit-level noise, making aggressive voltage scaling attractive as a power-saving technique for both logic and SRAMs. In this work, we introduce the first fully programmable IoT end-node system-on-chip (SoC) capable of executing software-defined, hardware-accelerated BNNs at ultra-low voltage. Our SoC exploits a hybrid memory scheme where error-vulnerable SRAMs are complemented by reliable standard-cell memories to safely store critical data under aggressive voltage scaling. On a prototype in 22nm FDX technology, we demonstrate that both the logic and SRAM voltage can be dropped to 0.5V without any accuracy penalty on a BNN trained for the CIFAR-10 dataset, improving energy efficiency by 2.2X w.r.t. nominal conditions. Furthermore, we show that the supply voltage can be dropped to 0.42V (50% of nominal) while keeping more than 99% of the nominal accuracy (with a bit error rate ~1/1000). In this operating point, our prototype performs 4Gop/s (15.4 Inference/s on the CIFAR-10 dataset) by computing up to 13 binary ops per pJ, achieving 22.8 Inference/s/mW while keeping within a peak power envelope of 674uW - low enough to enable always-on operation in ultra-low power smart cameras, long-lifetime environmental sensors, and insect-sized pico-drones.",
+  "source": "openalex"
+ },
+ {
+  "title": "NIC-RobustBench: A Comprehensive Open-Source Toolkit for Neural Image Compression and Robustness Analysis",
+  "authors": [
+   "Georgii Bychkov",
+   "Khaled Abud",
+   "Е. В. Ковалев",
+   "Alexander Gushchin",
+   "Lavrushkin, Sergey",
+   "Dmitriy Sergeevich Vatolin",
+   "Anastasia Antsiferova"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2506.19051",
+  "arxiv": "2506.19051",
+  "openalex": "W4414682253",
+  "cited_by": 0,
+  "abstract": "Neural image compression (NIC) is increasingly used in computer vision pipelines, as learning-based models are able to surpass traditional algorithms in compression efficiency. However, learned codecs can be unstable and vulnerable to adversarial attacks: small perturbations may cause severe reconstruction artifacts or indirectly break downstream models. Despite these risks, most NIC benchmarks only emphasize rate-distortion (RD) performance, focusing on model efficiency in safe, non-adversarial scenarios, while NIC robustness studies cover only specific codecs and attacks. To fill this gap, we introduce \\textbf{NIC-RobustBench}, an open-source benchmark and evaluation framework for adversarial robustness of NIC methods. The benchmark integrates 8 attacks, 9 defense strategies, standard RD metrics, a large and extensible set of codecs, and tools for assessing both the robustness of the compression model and impact on downstream tasks. Using NIC-RobustBench, we provide a broad empirical study of modern NICs and defenses in adversarial scenarios, highlighting failure modes, least and most resilient architectures, and other insights into NIC robustness. Our code is available online at https://github.com/msu-video-group/NIC-RobustBench.",
+  "source": "openalex"
+ }
+]

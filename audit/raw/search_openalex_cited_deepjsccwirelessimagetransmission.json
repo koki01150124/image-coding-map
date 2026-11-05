@@ -1,0 +1,937 @@
+[
+ {
+  "title": "Deep Learning Enabled Semantic Communication Systems",
+  "authors": [
+   "Huiqiang Xie",
+   "Zhijin Qin",
+   "Geoffrey Ye Li",
+   "Biing-Hwang Fred Juang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Signal Processing",
+  "doi": "10.1109/tsp.2021.3071210",
+  "arxiv": "2006.10685",
+  "openalex": "W3036851434",
+  "cited_by": 1627,
+  "abstract": "Recently, deep learned enabled end-to-end communication systems have been developed to merge all physical layer blocks in the traditional communication systems, which make joint transceiver optimization possible. Powered by deep learning, natural language processing has achieved great success in analyzing and understanding a large amount of language texts. Inspired by research results in both areas, we aim to provide a new view on communication systems from the semantic level. Particularly, we propose a deep learning based semantic communication system, named DeepSC, for text transmission. Based on the Transformer, the DeepSC aims at maximizing the system capacity and minimizing the semantic errors by recovering the meaning of sentences, rather than bit- or symbol-errors in traditional communications. Moreover, transfer learning is used to ensure the DeepSC applicable to different communication environments and to accelerate the model training process. To justify the performance of semantic communications accurately, we also initialize a new metric, named sentence similarity. Compared with the traditional communication system without considering semantic information exchange, the proposed DeepSC is more robust to channel variation and is able to achieve better performance, especially in the low signal-to-noise (SNR) regime, as demonstrated by the extensive simulation results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2019.2919300",
+  "arxiv": "1809.01733",
+  "openalex": "W2946889564",
+  "cited_by": 1516,
+  "abstract": "We propose a joint source and channel coding (JSCC) technique for wireless image transmission that does not rely on explicit codes for either compression or error correction; instead, it directly maps the image pixel values to the complex-valued channel input symbols. We parameterize the encoder and decoder functions by two convolutional neural networks (CNNs), which are trained jointly, and can be considered as an autoencoder with a non-trainable layer in the middle that represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms digital transmission concatenating JPEG or JPEG2000 compression with a capacity achieving channel code at low signal-to-noise ratio (SNR) and channel bandwidth values in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the “cliff effect,” and it provides a graceful performance degradation as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC learns noise resilient coded representations and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ },
+ {
+  "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+  "authors": [
+   "Khaled B. Letaief",
+   "Yuanming Shi",
+   "Jianmin Lu",
+   "Jianhua Lü"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3126076",
+  "arxiv": "2111.12444",
+  "openalex": "W3212941463",
+  "cited_by": 860,
+  "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Beyond Transmitting Bits: Context, Semantics, and Task-Oriented Communications",
+  "authors": [
+   "Denız Gündüz",
+   "Zhijin Qin",
+   "Iñaki Estella Aguerri",
+   "Harpreet S. Dhillon",
+   "Zhaohui Yang",
+   "Aylin Yener",
+   "Kai‐Kit Wong",
+   "Chan‐Byoung Chae"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3223408",
+  "arxiv": "2207.09353",
+  "openalex": "W4313455370",
+  "cited_by": 801,
+  "abstract": "Communication systems to date primarily aim at reliably communicating bit sequences. Such an approach provides efficient engineering designs that are agnostic to the meanings of the messages or to the goal that the message exchange aims to achieve. Next generation systems, however, can be potentially enriched by folding message semantics and goals of communication into their design. Further, these systems can be made cognizant of the context in which communication exchange takes place, thereby providing avenues for novel design insights. This tutorial summarizes the efforts to date, starting from its early adaptations, semantic-aware and task-oriented communications, covering the foundations, algorithms and potential implementations. The focus is on approaches that utilize information theory to provide the foundations, as well as the significant role of learning in semantics and task-aware communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications for Future Internet: Fundamentals, Applications, and Challenges",
+  "authors": [
+   "Wanting Yang",
+   "Hongyang Du",
+   "Zi Qin Liew",
+   "Wei Yang Bryan Lim",
+   "Zehui Xiong",
+   "Dusit Tao Niyato",
+   "Xuefen Chi",
+   "Xuemin Shen",
+   "Chunyan Miao"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3223224",
+  "arxiv": "2207.00427",
+  "openalex": "W4312766166",
+  "cited_by": 696,
+  "abstract": "With the increasing demand for intelligent services, the sixth-generation (6G) wireless networks will shift from a traditional architecture that focuses solely on a high transmission rate to a new architecture that is based on the intelligent connection of everything. Semantic communication (SemCom), a revolutionary architecture that integrates user as well as application requirements and the meaning of information into data processing and transmission, is predicted to become a new core paradigm in 6G. While SemCom is expected to progress beyond the classical Shannon paradigm, several obstacles need to be overcome on the way to a SemCom-enabled smart Internet. In this paper, we first highlight the motivations and compelling reasons for SemCom in 6G. Then, we provide an overview of SemCom-related theory development. After that, we introduce three types of SemCom, i.e., semantic-oriented communication, goal-oriented communication, and semantic-aware communication. Following that, we organize the design of the communication system into three dimensions, i.e., semantic information (SI) extraction, SI transmission, and SI metrics. For each dimension, we review existing techniques and discuss their benefits and limitations, as well as the remaining challenges. Then, we introduce the potential applications of SemCom in 6G and portray the vision of future SemCom-empowered network architecture. Finally, we outline future research opportunities. In a nutshell, this paper provides a holistic review of the fundamentals of SemCom, its applications in 6G networks, and the existing challenges and open issues with insights for further in-depth investigations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Edge Learning for B5G Networks With Distributed Signal Processing: Semantic Communication, Edge Computing, and Wireless Sensing",
+  "authors": [
+   "Wei Xu",
+   "Zhaohui Yang",
+   "Derrick Wing Kwan Ng",
+   "Marco Levorato",
+   "Yonina C. Eldar",
+   "Merouane Abdelkader Debbah"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal of Selected Topics in Signal Processing",
+  "doi": "10.1109/jstsp.2023.3239189",
+  "arxiv": "2206.00422",
+  "openalex": "W4317794926",
+  "cited_by": 681,
+  "abstract": "To process and transfer large amounts of data in emerging wireless services, it has become increasingly appealing to exploit distributed data communication and learning. Specifically, edge learning (EL) enables local model training on geographically disperse edge nodes and minimizes the need for frequent data exchange. However, the current design of separating EL deployment and communication optimization does not yet reap the promised benefits of distributed signal processing, and sometimes suffers from excessive signalling overhead, long processing delay, and unstable learning convergence. In this paper, we provide an overview on practical distributed EL techniques and their interplay with advanced communication optimization designs. In particular, typical performance metrics for dual-functional learning and communication networks are discussed. Also, recent achievements of enabling techniques for the dual-functional design are surveyed with exemplifications from the mutual perspectives of “communications for learning” and “learning for communications.” The application of EL techniques within a variety of future communication systems are also envisioned for beyond 5G (B5G) wireless networks. For the application in goal-oriented semantic communication, we present a first mathematical model of the goal-oriented source entropy as an optimization problem. In addition, from the viewpoint of information theory, we identify fundamental open problems of characterizing rate regions for communication networks supporting distributed learning-and-computing tasks. We also present technical challenges as well as emerging application opportunities in this field, with the aim of inspiring future research and promoting widespread developments of EL in B5G.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication Systems for Speech Transmission",
+  "authors": [
+   "Zhenzi Weng",
+   "Zhijin Qin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3087240",
+  "arxiv": "2102.12605",
+  "openalex": "W3166791908",
+  "cited_by": 677,
+  "abstract": "Semantic communications could improve the transmission efficiency significantly by exploring the semantic information. In this paper, we make an effort to recover the transmitted speech signals in the semantic communication systems, which minimizes the error at the semantic level rather than the bit or symbol level. Particularly, we design a deep learning (DL)-enabled semantic communication system for speech signals, named DeepSC-S. In order to improve the recovery accuracy of speech signals, especially for the essential information, DeepSC-S is developed based on an attention mechanism by utilizing a squeeze-and-excitation (SE) network. The motivation behind the attention mechanism is to identify the essential speech information by providing higher weights to them when training the neural network. Moreover, in order to facilitate the proposed DeepSC-S for dynamic channel environments, we find a general model to cope with various channel conditions without retraining. Furthermore, we investigate DeepSC-S in telephone systems as well as multimedia transmission systems to verify the model adaptation in practice. The simulation results demonstrate that our proposed DeepSC-S outperforms the traditional communications in both cases in terms of the speech signals metrics, such as signal-to-distortion ration and perceptual evaluation of speech distortion. Besides, DeepSC-S is more robust to channel variations, especially in the low signal-to-noise (SNR) regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2020.2987203",
+  "arxiv": "1911.11174",
+  "openalex": "W3016715915",
+  "cited_by": 491,
+  "abstract": "We consider wireless transmission of images in the presence of channel output feedback. From a Shannon theoretic perspective feedback does not improve the asymptotic end-to-end performance, and separate source coding followed by capacity-achieving channel coding, which ignores the feedback signal, achieves the optimal performance. It is well known that separation is not optimal in the practical finite blocklength regime; however, there are no known practical joint source-channel coding (JSCC) schemes that can exploit the feedback signal and surpass the performance of separation-based schemes. Inspired by the recent success of deep learning methods for JSCC, we investigate how noiseless or noisy channel output feedback can be incorporated into the transmission system to improve the reconstruction quality at the receiver. We introduce an autoencoder-based JSCC scheme, which we call DeepJSCC-f , that exploits the channel output feedback, and provides considerable improvements in terms of the end-to-end reconstruction quality for fixed-length transmission, or in terms of the average delay for variable-length transmission. To the best of our knowledge, this is the first practical JSCC scheme that can fully exploit channel output feedback, demonstrating yet another setting in which modern machine learning techniques can enable the design of new and efficient communication methods that surpass the performance of traditional structured coding-based designs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications: Principles and Challenges",
+  "authors": [
+   "Zhijin Qin",
+   "Xiaoming Tao",
+   "Jianhua Lü",
+   "Tong, Wen",
+   "Li, Geoffrey Ye"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2201.01389",
+  "arxiv": "2201.01389",
+  "openalex": "W4226150551",
+  "cited_by": 403,
+  "abstract": "Semantic communication, regarded as the breakthrough beyond the Shannon paradigm, aims at the successful transmission of semantic information conveyed by the source rather than the accurate reception of each single symbol or bit regardless of its meaning. This article provides an overview on semantic communications. After a brief review of Shannon information theory, we discuss semantic communications with theory, framework, and system design enabled by deep learning. Different from the symbol/bit error rate used for measuring conventional communication systems, performance metrics for semantic communications are also discussed. The article concludes with several open questions in semantic communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Zhongwei Si",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3180802",
+  "arxiv": "2112.10961",
+  "openalex": "W4226042246",
+  "cited_by": 369,
+  "abstract": "In this paper, we propose a class of high-efficiency deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning Task-Oriented Communication for Edge Inference: An Information Bottleneck Approach",
+  "authors": [
+   "Jiawei Shao",
+   "Yuyi Mao",
+   "Jun Zhang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3126087",
+  "arxiv": "2102.04170",
+  "openalex": "W3214462705",
+  "cited_by": 346,
+  "abstract": "This paper investigates task-oriented communication for edge inference, where a low-end edge device transmits the extracted feature vector of a local data sample to a powerful edge server for processing. It is critical to encode the data into aninformativeandcompactrepresentation for low-latency inference given the limited bandwidth. We propose a learning-based communication scheme that jointly optimizes feature extraction, source coding, and channel coding in a task-oriented manner, i.e., targeting the downstream inference task rather than data reconstruction. Specifically, we leverage an information bottleneck (IB) framework to formalize a rate-distortion tradeoff between the informativeness of the encoded feature and the inference performance. As the IB optimization is computationally prohibitive for the high-dimensional data, we adopt a variational approximation, namely the variational information bottleneck (VIB), to build a tractable upper bound. To reduce the communication overhead, we leverage a sparsity-inducing distribution as the variational prior for the VIB framework to sparsify the encoded feature vector. Furthermore, considering dynamic channel conditions in practical communication systems, we propose a variable-length feature encoding scheme based on dynamic neural networks to adaptively adjust the activated dimensions of the encoded feature to different channel conditions. Extensive experiments evidence that the proposed task-oriented communication system achieves a better rate-distortion tradeoff than baseline methods and significantly reduces the feature transmission latency in dynamic channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Semantic Communications: Deep Learning-Based Image Semantic Coding",
+  "authors": [
+   "Danlan Huang",
+   "Feifei Gao",
+   "Xiaoming Tao",
+   "Qiyuan Du",
+   "Jianhua Lü"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221999",
+  "arxiv": "2208.04094",
+  "openalex": "W4313350220",
+  "cited_by": 341,
+  "abstract": "Semantic communications has received growing interest since it can remarkably reduce the amount of data to be transmitted without missing critical information. Most existing works explore the semantic encoding and transmission for text and apply techniques in Natural Language Processing (NLP) to interpret the meaning of the text. In this paper, we conceive the semantic communications for image data that is much more richer in semantics and bandwidth sensitive. We propose an reinforcement learning based adaptive semantic coding (RL-ASC) approach that encodes images beyond pixel level. Firstly, we define the semantic concept of image data that includes the category, spatial arrangement, and visual feature as the representation unit, and propose a convolutional semantic encoder to extract semantic concepts. Secondly, we propose the image reconstruction criterion that evolves from the traditional pixel similarity to semantic similarity and perceptual performance. Thirdly, we design a novel RL-based semantic bit allocation model, whose reward is the increase in rate-semantic-perceptual performance after encoding a certain semantic concept with adaptive quantization level. Thus, the task-related information is preserved and reconstructed properly while less important data is discarded. Finally, we propose the Generative Adversarial Nets (GANs) based semantic decoder that fuses both locally and globally features via an attention module. Experimental results demonstrate that the proposed RL-ASC is noise robust and could reconstruct visually pleasant and semantic consistent image in low bit rate condition.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Environment-Aware Communications via Channel Knowledge Map for 6G",
+  "authors": [
+   "Yong Zeng",
+   "Junting Chen",
+   "Jie Xu",
+   "Di Wu",
+   "Xiaoli Xu",
+   "Shi Jin",
+   "Xiqi Gao",
+   "David Gesbert",
+   "Shuguang Robert Cui",
+   "Rui Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3364508",
+  "arxiv": "2309.07460",
+  "openalex": "W4391697040",
+  "cited_by": 315,
+  "abstract": "Sixth-generation (6G) mobile communication networks are expected to have dense infrastructures, large antenna size, wide bandwidth, cost-effective hardware, diversified positioning methods, and enhanced intelligence. Such trends bring both new challenges and opportunities for the practical design of 6G. On one hand, acquiring channel state information (CSI) in real time for all wireless links becomes quite challenging in 6G. On the other hand, there would be numerous data sources in 6G containing high-quality location-tagged channel data, e.g., the estimated channels or beams between base station (BS) and user equipment (UE), making it possible to better learn the local wireless environment. By exploiting this new opportunity and for tackling the CSI acquisition challenge, there is a promising paradigm shift from the conventional environment-unaware communications to the new environment-aware communications based on the novel approach of channel knowledge map (CKM). This article aims to provide a comprehensive overview on environment-aware communications enabled by CKM to fully harness its benefits for 6G. First, the basic concept of CKM is presented, followed by the comparison of CKM with various existing channel inference techniques. Next, the main techniques for CKM construction are discussed, including both environment model-free and environment model-assisted approaches. Furthermore, a general framework is presented for the utilization of CKM to achieve environment-aware communications, followed by some typical CKM-aided communication scenarios. Finally, important open problems in CKM research are highlighted and potential solutions are discussed to inspire future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "Robust Semantic Communications With Masked VQ-VAE Enabled Codebook",
+  "authors": [
+   "Qiyu Hu",
+   "Guangyi Zhang",
+   "Zhijin Qin",
+   "Yunlong Cai",
+   "Guanding Yu",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2023.3265201",
+  "arxiv": "2206.04011",
+  "openalex": "W4365420366",
+  "cited_by": 288,
+  "abstract": "Although semantic communications have exhibited satisfactory performance on a large number of tasks, the impact of semantic noise and the robustness of the systems have not been well investigated. Semantic noise refers to the misleading between the intended semantic symbols and received ones, thus causes the failure of tasks. In this paper, we first propose a framework for the robust end-to-end semantic communication systems to combat the semantic noise. In particular, we analyze sample-dependent and sample-independent semantic noise. To combat the semantic noise, the adversarial training with weight perturbation is developed to incorporate the samples with semantic noise in the training dataset. Then, we propose to mask a portion of the input, where the semantic noise appears frequently, and design the masked vector quantized-variational autoencoder (VQ-VAE) with the noise-related masking strategy. We use a discrete codebook shared by the transmitter and the receiver for encoded feature representation. To further improve the system robustness, we develop a feature importance module (FIM) to suppress the noise-related and task-unrelated features. Thus, the transmitter simply needs to transmit the indices of these important task-related features in the codebook. Simulation results show that the proposed method can be applied in many downstream tasks and significantly improve the robustness against semantic noise with remarkable reduction on the transmission overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Deep Video Semantic Transmission",
+  "authors": [
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Zijian Liang",
+   "Kai Niu",
+   "Zhongwei Si",
+   "Chao Dong",
+   "Xiaoqi Qin",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221977",
+  "arxiv": "2205.13129",
+  "openalex": "W4313350178",
+  "cited_by": 274,
+  "abstract": "In this paper, we design a new class of high-efficiency deep joint source-channel coding methods to achieve end-to-end video transmission over wireless channels. The proposed methods exploit nonlinear transform and conditional coding architecture to adaptively extract semantic features across video frames, and transmit semantic feature domain representations over wireless channels via deep joint source-channel coding. Our framework is collected under the name deep video semantic transmission (DVST). In particular, benefiting from the strong temporal prior provided by the feature domain context, the learned nonlinear transform function becomes temporally adaptive, resulting in a richer and more accurate entropy model guiding the transmission of current frame. Accordingly, a novel rate adaptive transmission mechanism is developed to customize deep joint source-channel coding for video sources. It learns to allocate the limited channel bandwidth within and among video frames to maximize the overall transmission performance. The whole DVST design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under perceptual quality metrics or machine vision task performance metrics. Across standard video source test sequences and various communication scenarios, experiments show that our DVST can generally surpass traditional wireless video coded transmission schemes. The proposed DVST framework can well support future semantic communications due to its video content-aware and machine vision task integration abilities.",
+  "source": "openalex"
+ },
+ {
+  "title": "Enhancing Deep Reinforcement Learning: A Tutorial on Generative Diffusion Models in Network Optimization",
+  "authors": [
+   "Hongyang Du",
+   "Ruichen Zhang",
+   "Yinqiu Liu",
+   "Jiacheng Wang",
+   "Yijing Lin",
+   "Zonghang Li",
+   "Dusit Tao Niyato",
+   "Jiawen Kang",
+   "Zehui Xiong",
+   "Shuguang Robert Cui",
+   "Bo Ai",
+   "Haibo Zhou",
+   "Dong In Kim"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3400011",
+  "arxiv": "2308.05384",
+  "openalex": "W4396817538",
+  "cited_by": 270,
+  "abstract": "Generative Diffusion Models (GDMs) have emerged as a transformative force in the realm of Generative Artificial Intelligence (GenAI), demonstrating their versatility and efficacy across various applications. The ability to model complex data distributions and generate high-quality samples has made GDMs particularly effective in tasks such as image generation and reinforcement learning. Furthermore, their iterative nature, which involves a series of noise addition and denoising steps, is a powerful and unique approach to learning and generating data. This paper serves as a comprehensive tutorial on applying GDMs in network optimization tasks. We delve into the strengths of GDMs, emphasizing their wide applicability across various domains, such as vision, text, and audio generation. We detail how GDMs can be effectively harnessed to solve complex optimization problems inherent in networks. The paper first provides a basic background of GDMs and their applications in network optimization. This is followed by a series of case studies, showcasing the integration of GDMs with Deep Reinforcement Learning (DRL), incentive mechanism design, Semantic Communications (SemCom), Internet of Vehicles (IoV) networks, etc. These case studies underscore the practicality and efficacy of GDMs in real-world scenarios, offering insights into network design. We conclude with a discussion on potential future directions for GDM research and applications, providing major insights into how they can continue to shape the future of network optimization.",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Retrieval at the Edge",
+  "authors": [
+   "Mikołaj Jankowski",
+   "Denız Gündüz",
+   "Krystian Mikolajczyk"
+  ],
+  "year": 2020,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2020.3036955",
+  "arxiv": "2007.10915",
+  "openalex": "W3044258868",
+  "cited_by": 270,
+  "abstract": "We study the image retrieval problem at the wireless edge, where an edge device captures an image, which is then used to retrieve similar images from an edge server. These can be images of the same person or a vehicle taken from other cameras at different times and locations. Our goal is to maximize the accuracy of the retrieval task under power and bandwidth constraints over the wireless link. Due to the stringent delay constraint of the underlying application, sending the whole image at a sufficient quality is not possible. We propose two alternative schemes based on digital and analog communications, respectively. In the digital approach, we first propose a deep neural network (DNN) aided retrieval-oriented image compression scheme, whose output bit sequence is transmitted over the channel using conventional channel codes. In the analog joint source and channel coding (JSCC) approach, the feature vectors are directly mapped into channel symbols. We evaluate both schemes on image based re-identification (re-ID) tasks under different channel conditions, including both static and fading channels. We show that the JSCC scheme significantly increases the end-to-end accuracy, speeds up the encoding process, and provides graceful degradation with channel conditions. The proposed architecture is evaluated through extensive simulations on different datasets and channel conditions, as well as through ablation studies.",
+  "source": "openalex"
+ },
+ {
+  "title": "Predictive and Adaptive Deep Coding for Wireless Image Transmission in Semantic Communication",
+  "authors": [
+   "Wenyu Zhang",
+   "Haijun Zhang",
+   "Hui Ma",
+   "Hua Shao",
+   "Ning Wang",
+   "Victor C. M. Leung"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2023.3234408",
+  "arxiv": null,
+  "openalex": "W4315630799",
+  "cited_by": 267,
+  "abstract": "Semantic communication is a newly emerged communication paradigm that exploits deep learning (DL) models to realize communication processes like source coding and channel coding. Recent advances have demonstrated that DL-based joint source-channel coding (DeepJSCC) can achieve exciting data compression and noise-resiliency performances for wireless image transmission tasks, especially in environments with low channel signal-to-noises (SNRs). However, existing DeepJSCC-based semantic communication frameworks still cannot achieve adaptive code rates for different channel SNRs and image contents, which reduces its flexibility and bandwidth efficiency. In this paper, we propose a predictive and adaptive deep coding (PADC) framework for realizing flexible code rate optimization with a given target transmission quality requirement. PADC is realized by a variable code length enabled DeepJSCC (DeepJSCC-V) model for realizing flexible code length adjustment, an Oracle Network (OraNet) model for predicting peak-signal-to-noise (PSNR) value for an image transmission task according to its contents, channel signal to noise ratio (SNR) and the compression ratio (CR) value, and a CR optimizer aims at finding the minimal data-level or instance-level CR with a PSNR quality constraint. By using the above three modules, PADC can transmit the image data with minimal CR, which greatly increases bandwidth efficiency. Simulation results demonstrate that the proposed DeepJSCC-V model can achieve similar PSNR performances compared with the state-of-the-art Attention-based DeepJSCC (ADJSCC) model, and the proposed OraNet model is able to predict high-quality PSNR values with an average error lower than 0.5dB. Results also demonstrate that the proposed PADC can use nearly minimal bandwidth consumption for wireless image transmission tasks with different channel SNR and image contents, at the same time guaranteeing the PSNR constraint for each image data.",
+  "source": "openalex"
+ },
+ {
+  "title": "Mobile Edge Intelligence for Large Language Models: A Contemporary Survey",
+  "authors": [
+   "Guanqiao Qu",
+   "Qiyuan Chen",
+   "Wei Wei",
+   "Zheng Lin",
+   "Xianhao Chen",
+   "Kaibin Huang"
+  ],
+  "year": 2025,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2025.3527641",
+  "arxiv": "2407.18921",
+  "openalex": "W4406207083",
+  "cited_by": 266,
+  "abstract": "On-device large language models (LLMs), referring to running LLMs on edge devices, have raised considerable interest owing to their superior privacy, reduced latency, and bandwidth saving. Nonetheless, the capabilities of on-device LLMs are intrinsically constrained by the limited capacity of edge devices compared to the much more powerful cloud centers. To bridge the gap between cloud-based and on-device AI, mobile edge intelligence (MEI) presents a viable solution to this problem by provisioning AI capabilities within the edge of mobile networks with improved privacy and latency relative to cloud computing. MEI sits between on-device AI and cloud-based AI, featuring wireless communications and more powerful computing resources than end devices. This article provides a contemporary survey on harnessing MEI for LLMs. We first cover the preliminaries of LLMs, starting with LLMs and MEI, followed by resource-efficient LLM techniques. We then illustrate several killer applications to demonstrate the need for deploying LLMs at the network edge and present an architectural overview of MEI for LLMs (MEI4LLM). Subsequently, we delve into various aspects of MEI4LLM, extensively covering edge LLM caching and delivery, edge LLM training, and edge LLM inference. Finally, we identify future research opportunities. We aim to inspire researchers in the field to leverage mobile edge computing to facilitate LLM deployment in close proximity to users, thereby unleashing the potential of LLMs across various privacy-and delay-sensitive applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Learning-Enabled Semantic Communication Systems With Task-Unaware Transmitter and Dynamic Data",
+  "authors": [
+   "Hongwei Zhang",
+   "Shuo Shao",
+   "Meixia Tao",
+   "Xiaoyan Bi",
+   "Khaled B. Letaief"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221991",
+  "arxiv": "2205.00271",
+  "openalex": "W4312050893",
+  "cited_by": 258,
+  "abstract": "Existing deep learning-enabled semantic communication systems often rely on shared background knowledge between the transmitter and receiver that includes empirical data and their associated semantic information. In practice, the semantic information is defined by the pragmatic task of the receiver and cannot be known to the transmitter. The actual observable data at the transmitter can also have non-identical distribution with the empirical data in the shared background knowledge library. To address these practical issues, this paper proposes a new neural network-based semantic communication system for image transmission, where the task is unaware at the transmitter and the data environment is dynamic. The system consists of two main parts, namely the semantic coding (SC) network and the data adaptation (DA) network. The SC network learns how to extract and transmit the semantic information using a receiver-leading training process. By using the domain adaptation technique from transfer learning, the DA network learns how to convert the data observed into a similar form of the empirical data that the SC network can process without re-training. Numerical experiments show that the proposed method can be adaptive to observable datasets while keeping high performance in terms of both data recovery and task execution.",
+  "source": "openalex"
+ },
+ {
+  "title": "Pushing AI to wireless network edge: an overview on integrated sensing, communication, and computation towards 6G",
+  "authors": [
+   "Guangxu Zhu",
+   "Zhonghao Lyu",
+   "Xiang Jiao",
+   "Peixi Liu",
+   "Mingzhe Chen",
+   "Jie Xu",
+   "Shuguang Robert Cui",
+   "Ping Zhang"
+  ],
+  "year": 2023,
+  "venue": "Science China Information Sciences",
+  "doi": "10.1007/s11432-022-3652-2",
+  "arxiv": "2211.02574",
+  "openalex": "W4321618026",
+  "cited_by": 246,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Overview of AI and communication for 6G network: fundamentals, challenges, and future research opportunities",
+  "authors": [
+   "Qimei Cui",
+   "Xiaohu You",
+   "Wei Ni",
+   "Guoshun Nan",
+   "Xuefei Zhang",
+   "Jianhua Zhang",
+   "Xinchen Lyu",
+   "Ming Ai",
+   "Xiaofeng Tao",
+   "Zhiyong Feng",
+   "Ping Zhang",
+   "Qingqing Wu",
+   "Meixia Tao",
+   "Yongming Huang",
+   "Chongwen Huang",
+   "Guangyi Liu",
+   "Chenghui Peng",
+   "Zhiwen Pan",
+   "Tao Sun",
+   "Dusit Tao Niyato",
+   "Tao Chen",
+   "Muhammad Khurram Khan",
+   "Abbas Jamalipour",
+   "Mohsen Guizani",
+   "Chau Yuen"
+  ],
+  "year": 2025,
+  "venue": "Science China Information Sciences",
+  "doi": "10.1007/s11432-024-4337-1",
+  "arxiv": "2412.14538",
+  "openalex": "W4409190069",
+  "cited_by": 244,
+  "abstract": "Abstract With the growing demand for seamless connectivity and intelligent communication, the integration of artificial intelligence (AI) and sixth-generation (6G) communication networks has emerged as a transformative paradigm. By embedding AI capabilities across various network layers, this integration enables optimized resource allocation, improved efficiency, and enhanced system robust performance. This paper presents a comprehensive overview of AI and communication for 6G networks, with a focus on their foundational principles, inherent challenges, and future research opportunities. We first review the integration of AI and communications in the context of 6G, exploring the driving factors behind incorporating AI into wireless communications, as well as the vision for the convergence of AI and 6G. The discourse then transitions to a detailed exposition of the envisioned integration of AI within 6G networks, divided into three progressive stages. The first stage, AI for network, focuses on employing AI to augment network performance, optimize efficiency, and enhance user service experiences. The second stage, network for AI, highlights the role of the network in facilitating and buttressing AI operations and presents key enabling technologies. We compare wireless network large models with conventional large language models (LLMs), and identify key design principles and components for building wireless network architectures. In the final stage, AI as a service, it is anticipated that future 6G networks will innately provide AI functions as services, supporting application scenarios like immersive communication and intelligent industrial robots. Specifically, we define the quality of AI service, which refers to a framework for measuring AI services within the network. We further summarize the standardization process of AI for wireless networks, highlighting key milestones and ongoing efforts. In addition, we analyze the critical challenges faced by the integration of AI and communications in 6G. Finally, we outline promising future research opportunities that are expected to drive the development and refinement of AI and 6G communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Unified Multi-Task Semantic Communication System for Multimodal Data",
+  "authors": [
+   "Guangyi Zhang",
+   "Qiyu Hu",
+   "Zhijin Qin",
+   "Yunlong Cai",
+   "Guanding Yu",
+   "Xiaoming Tao"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2024.3364990",
+  "arxiv": "2209.07689",
+  "openalex": "W4391677749",
+  "cited_by": 233,
+  "abstract": "Task-oriented semantic communications have achieved significant performance gains. However, the employed deep neural networks in semantic communications have to be updated when the task is changed or multiple models need to be stored for performing different tasks. To address this issue, we develop a unified deep learning-enabled semantic communication system (U-DeepSC), where a unified end-to-end framework can serve many different tasks with multiple modalities of data. As the number of required features varies from task to task, we propose a vector-wise dynamic scheme that can adjust the number of transmitted symbols for different tasks. Moreover, our dynamic scheme can also adaptively adjust the number of transmitted features under different channel conditions to optimize the transmission efficiency. Particularly, we devise a lightweight feature selection module (FSM) to evaluate the importance of feature vectors, which can hierarchically drop redundant feature vectors and significantly accelerate the inference. To reduce the transmission overhead, we then design a unified codebook for feature representation to serve multiple tasks, where only the indices of these task-specific features in the codebook are transmitted. According to the simulation results, the proposed U-DeepSC achieves comparable performance to the task-oriented semantic communication system designed for a specific task but with significant reduction in both transmission overhead and model size.",
+  "source": "openalex"
+ },
+ {
+  "title": "SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2024.3424842",
+  "arxiv": "2308.09361",
+  "openalex": "W4400409682",
+  "cited_by": 227,
+  "abstract": "As one of the key techniques to realize semantic communications, end-to-end optimized neural joint source-channel coding (JSCC) has made great progress over the past few years. A general trend in many recent works pushing the model adaptability or the application diversity of neural JSCC is based on the convolutional neural network (CNN) backbone, whose model capacity is yet limited, inherently leading to inferior system coding gain against traditional coded transmission systems. In this paper, we establish a new neural JSCC backbone that can also adapt flexibly to diverse channel conditions and transmission rates within a single model, our open-source project aims to promote the research in this field. Specifically, we show that with elaborate design, neural JSCC codec built on the emerging Swin Transformer backbone achieves superior performance than conventional neural JSCC codecs built upon CNN, while also requiring lower end-to-end processing latency. Paired with two spatial modulation modules that scale latent representations based on the channel state information and target transmission rate, our baseline SwinJSCC can further upgrade to a versatile version, which increases its capability to adapt to diverse channel conditions and rate configurations. Extensive experimental results show that our SwinJSCC achieves better or comparable performance versus the state-of-the-art engineered BPG + 5G LDPC coded transmission system with much faster end-to-end coding speed, especially for high-resolution images, in which case traditional CNN-based JSCC yet falls behind due to its limited model capacity.",
+  "source": "openalex"
+ },
+ {
+  "title": "WITT: A Wireless Image Transmission Transformer for Semantic Communications",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Jincheng Dai",
+   "Kailin Tan",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2023,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp49357.2023.10094735",
+  "arxiv": "2211.00937",
+  "openalex": "W4372348936",
+  "cited_by": 226,
+  "abstract": "In this paper, we aim to redesign the vision Transformer (ViT) as a new backbone to realize semantic image transmission, termed wireless image transmission transformer (WITT). Previous works build upon convolutional neural networks (CNNs), which are inefficient in capturing global dependencies, resulting in degraded end-to-end transmission performance especially for high-resolution images. To tackle this, the proposed WITT employs Swin Transformers as a more capable backbone to extract long-range information. Different from ViTs in image classification tasks, WITT is highly optimized for image transmission while considering the effect of the wireless channel. Specifically, we propose a spatial modulation module to scale the latent representations according to channel state information, which enhances the ability of a single model to deal with various channel conditions. As a result, extensive experiments verify that our WITT attains better performance for different image resolutions, distortion metrics, and channel conditions. The code is available at https://github.com/KeYang8/WITT.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic-Preserved Communication System for Highly Efficient Speech Transmission",
+  "authors": [
+   "Tianxiao Han",
+   "Qianqian Yang",
+   "Zhiguo Shi",
+   "Shibo He",
+   "Zhaoyang Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3221952",
+  "arxiv": "2205.12727",
+  "openalex": "W4313350185",
+  "cited_by": 220,
+  "abstract": "Deep learning (DL) based semantic communication methods have been explored for the efficient transmission of images, text, and speech in recent years. In contrast to traditional wireless communication methods that focus on the transmission of abstract symbols, semantic communication approaches attempt to achieve better transmission efficiency by only sending the semantic-related information of the source data. In this paper, we consider semantic-oriented speech transmission which transmits only the semantic-relevant information over the channel for the speech recognition task, and a compact additional set of semantic-irrelevant information for the speech reconstruction task. We propose a novel end-to-end DL-based transceiver which extracts and encodes the semantic information from the input speech spectrums at the transmitter and outputs the corresponding transcriptions from the decoded semantic information at the receiver. In particular, we employ a soft alignment module and a redundancy removal module to extract only the text-related semantic features while dropping semantically redundant content, greatly reducing the amount of semantic redundancy compared to existing methods. We also propose a semantic correction module to further correct the predicted transcription with semantic knowledge by leveraging a pretrained language model. For the speech to speech transmission, we further include a CTC alignment module that extracts a small number of additional semantic-irrelevant but speech-related information, such as duration, pitch, power and speaker identification of the speech for the better reconstruction of the original speech signals at the receiver. We also introduce a two-stage training scheme which speeds up the training of the proposed DL model. The simulation results confirm that our proposed method outperforms current methods in terms of the accuracy of the predicted text for the speech to text transmission and the quality of the recovered speech signals for the speech to speech transmission, and significantly improves transmission efficiency. More specifically, the proposed method only sends 16% of the amount of the transmitted symbols required by the existing methods while achieving about a 10% reduction in WER for the speech to text transmission. For the speech to speech transmission, it results in an even more remarkable improvement in terms of transmission efficiency with only 0.2% of the amount of the transmitted symbols required by the existing method while preserving the comparable quality of the reconstructed speech signals.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning for Large-Scale Optimization in 6G Wireless Networks",
+  "authors": [
+   "Yandong Shi",
+   "Lixiang Lian",
+   "Yuanming Shi",
+   "Zixin Wang",
+   "Yong Zhou",
+   "Liqun Fu",
+   "Lin Bai",
+   "Jun Zhang",
+   "Wei Zhang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3300664",
+  "arxiv": "2301.03377",
+  "openalex": "W4385453555",
+  "cited_by": 218,
+  "abstract": "The sixth generation (6G) wireless systems are envisioned to enable the paradigm shift from “connected things” to “connected intelligence”, featured by ultra high density, large-scale, dynamic heterogeneity, diversified functional requirements, and machine learning capabilities, which leads to a growing need for highly efficient intelligent algorithms. The classic optimization-based algorithms usually require highly precise mathematical model of data links and suffer from poor performance with high computational cost in realistic 6G applications. Based on domain knowledge (e.g., optimization models and theoretical tools), machine learning (ML) stands out as a promising and viable methodology for many complex large-scale optimization problems in 6G, due to its superior performance, computational efficiency, scalability, and generalizability. In this paper, we systematically review the most representative “learning to optimize\" techniques in diverse domains of 6G wireless networks by identifying the inherent feature of the underlying optimization problem and investigating the specifically designed ML frameworks from the perspective of optimization. In particular, we will cover algorithm unrolling, learning to branch-and-bound, graph neural network for structured optimization, deep reinforcement learning for stochastic optimization, end-to-end learning for semantic optimization, as well as wireless federated learning for distributed optimization, which are capable of addressing challenging large-scale problems arising from a variety of crucial wireless applications. Through the in-depth discussion, we shed light on the excellent performance of ML-based optimization algorithms with respect to the classical methods, and provide insightful guidance to develop advanced ML techniques in 6G networks. Neural network design, theoretical tools of different ML methods, implementation issues, as well as challenges and future research directions are also discussed to support the practical use of the ML model in 6G wireless networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning in the Air",
+  "authors": [
+   "Denız Gündüz",
+   "Paul de Kerret",
+   "Nicholas D. Sidiropoulos",
+   "David Gesbert",
+   "Chandra R. Murthy",
+   "Mihaela van der Schaar"
+  ],
+  "year": 2019,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2019.2933969",
+  "arxiv": "1904.12385",
+  "openalex": "W2940798501",
+  "cited_by": 217,
+  "abstract": "Thanks to the recent advances in processing speed, data acquisition and storage, machine learning (ML) is penetrating every facet of our lives, and transforming research in many areas in a fundamental manner. Wireless communications is another success story - ubiquitous in our lives, from handheld devices to wearables, smart homes, and automobiles. While recent years have seen a flurry of research activity in exploiting ML tools for various wireless communication problems, the impact of these techniques in practical communication systems and standards is yet to be seen. In this paper, we review some of the major promises and challenges of ML in wireless communication systems, focusing mainly on the physical layer. We present some of the most striking recent accomplishments that ML techniques have achieved with respect to classical approaches, and point to promising research directions where ML is likely to make the biggest impact in the near future. We also highlight the complementary problem of designing physical layer techniques to enable distributed ML at the wireless network edge, which further emphasizes the need to understand and connect ML with fundamental concepts in wireless communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepWiVe: Deep-Learning-Aided Wireless Video Transmission",
+  "authors": [
+   "Tze-Yang Tung",
+   "Denız Gündüz"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3191354",
+  "arxiv": "2111.13034",
+  "openalex": "W3216777582",
+  "cited_by": 213,
+  "abstract": "We presentDeepWiVe, the first-ever end-to-end joint source-channel coding (JSCC) video transmission scheme that leverages the power of deep neural networks (DNNs) to directly map video signals to channel symbols, combining video compression, channel coding, and modulation steps into a single neural transform. Our DNN decoder predicts residuals without distortion feedback, which improves the video quality by accounting for occlusion/disocclusion and camera movements. We simultaneously train different bandwidth allocation networks for the frames to allow variable bandwidth transmission. Then, we train a bandwidth allocation network using reinforcement learning (RL) that optimizes the allocation of limited available channel bandwidth among video frames to maximize the overall visual quality. Our results show thatDeepWiVecan overcome thecliff-effect, which is prevalent in conventional separation-based digital communication schemes, and achieve graceful degradation with the mismatch between the estimated and actual channel qualities.DeepWiVeoutperforms H.264 video compression followed by low-density parity check (LDPC) codes in all channel conditions by up to 0.0485 in terms of the multi-scale structural similarity index measure (MS-SSIM), and H.265+ LDPC by up to 0.0069 on average. We also illustrate the importance of optimizing bandwidth allocation in JSCC video transmission by showing that our optimal bandwidth allocation policy is superior to uniform allocation as well as a heuristic policy benchmark.",
+  "source": "openalex"
+ },
+ {
+  "title": "Task-Oriented Communications for 6G: Vision, Principles, and Technologies",
+  "authors": [
+   "Yuanming Shi",
+   "Yong Hao Zhou",
+   "Dingzhu Wen",
+   "Youlong Wu",
+   "Chunxiao Jiang",
+   "Khaled B. Letaief"
+  ],
+  "year": 2023,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.002.2200468",
+  "arxiv": "2303.10920",
+  "openalex": "W4384158407",
+  "cited_by": 199,
+  "abstract": "Driven by the interplay among artificial intelligence, digital twin, and wireless networks, 6G is envisaged to go beyond data-centric services to provide intelligent and immersive experiences. To efficiently support intelligent tasks with customized service requirements, it becomes critical to develop novel information compression and transmission technologies, which typically involve coupled sensing, communication, and computation processes. To this end, task-oriented communication stands out as a disruptive technology for 6G system design by exploiting the task-specific information structures and folding the communication goals into the design of task-level transmission strategies. In this article, by developing task-oriented information extraction and network resource orchestration strategies, we demonstrate the effectiveness of task-oriented communication principles for typical intelligent tasks, including federated learning, edge inference, and semantic communication.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission with Adaptive Rate Control",
+  "authors": [
+   "Mingyu Yang",
+   "Hun-Seok Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp43922.2022.9746335",
+  "arxiv": null,
+  "openalex": "W3207494168",
+  "cited_by": 198,
+  "abstract": "We present a novel adaptive deep joint source-channel coding (JSCC) scheme for wireless image transmission. The proposed scheme supports multiple rates using a single deep neural network (DNN) model and learns to dynamically control the rate based on the channel condition and image contents. Specifically, a policy network is introduced to exploit the tradeoff space between the rate and signal quality. To train the policy network, the Gumbel-Softmax trick is adopted to make the policy network differentiable and hence the whole JSCC scheme can be trained end-to-end. To the best of our knowledge, this is the first deep JSCC scheme that can automatically adjust its rate using a single network model. Experiments show that our scheme successfully learns a reasonable policy that decreases channel bandwidth utilization for high SNR scenarios or simple image contents. For an arbitrary target rate, our rate-adaptive scheme using a single model achieves similar performance compared to an optimized model specifically trained for that fixed target rate. To reproduce our results, we make the source code publicly available at https://github.com/mingyuyng/Dynamic_JSCC.",
+  "source": "openalex"
+ },
+ {
+  "title": "OFDM-Guided Deep Joint Source Channel Coding for Wireless Multipath Fading Channels",
+  "authors": [
+   "Mingyu Yang",
+   "Chenghong Bian",
+   "Hun-Seok Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2022.3151935",
+  "arxiv": "2109.05194",
+  "openalex": "W3201394241",
+  "cited_by": 195,
+  "abstract": "We investigate joint source channel coding (JSCC) for wireless image transmission over multipath fading channels. Inspired by recent works on deep learning based JSCC and model-based learning methods, we combine an autoencoder with orthogonal frequency division multiplexing (OFDM) to cope with multipath fading. The proposed encoder and decoder use convolutional neural networks (CNNs) and directly map the source images to complex-valued baseband samples for OFDM transmission. The multipath channel and OFDM are represented by non-trainable (deterministic) but differentiable layers so that the system can be trained end-to-end. Furthermore, our JSCC decoder further incorporates explicit channel estimation, equalization, and additional subnets to enhance the performance. The proposed method exhibits 2.5 – 4 dB SNR gain for the equivalent image quality compared to conventional schemes that employ state-of-the-art but separate source and channel coding such as Better Portable Graphics (BPG) and Low-Density Parity-Check (LDPC) schemes. The performance further improves when the system incorporates the channel state information (CSI) feedback. The proposed scheme is robust against OFDM signal clipping and parameter mismatch for the channel model used in training and evaluation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative Joint Source-Channel Coding for Semantic Image Transmission",
+  "authors": [
+   "Ecenaz Erdemir",
+   "Tze-Yang Tung",
+   "Pier Luigi Dragotti",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3288243",
+  "arxiv": "2211.13772",
+  "openalex": "W4381785967",
+  "cited_by": 194,
+  "abstract": "Recent works have shown that joint source-channel coding (JSCC) schemes using deep neural networks (DNNs), called DeepJSCC, provide promising results in wireless image transmission. However, these methods mostly focus on the distortion of the reconstructed signals with respect to the input image, rather than their perception by humans. However, focusing on traditional distortion metrics alone does not necessarily result in high perceptual quality, especially in extreme physical conditions, such as very low bandwidth compression ratio (BCR) and low signal-to-noise ratio (SNR) regimes. In this work, we propose two novel JSCC schemes that leverage the perceptual quality of deep generative models (DGMs) for wireless image transmission, namely InverseJSCC and GenerativeJSCC. While the former is an inverse problem approach to DeepJSCC, the latter is an end-to-end optimized JSCC scheme. In both, we optimize a weighted sum of mean squared error (MSE) and learned perceptual image patch similarity (LPIPS) losses, which capture more semantic similarities than other distortion metrics. InverseJSCC performs denoising on the distorted reconstructions of a DeepJSCC model by solving an inverse optimization problem using the pre-trained style-based generative adversarial network (StyleGAN). Our simulation results show that InverseJSCC significantly improves the state-of-the-art DeepJSCC in terms of perceptual quality in edge cases. In GenerativeJSCC, we carry out end-to-end training of an encoder and a StyleGAN-based decoder, and show that GenerativeJSCC significantly outperforms DeepJSCC both in terms of distortion and perceptual quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+  "authors": [
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2021.3090048",
+  "arxiv": "2009.12480",
+  "openalex": "W3089229692",
+  "cited_by": 193,
+  "abstract": "We propose deep learning based communication methods for adaptive-bandwidth transmission of images over wireless channels. We consider the scenario in which images are transmitted progressively in layers over time or frequency, and such layers can be aggregated by receivers in order to increase the quality of their reconstructions. We investigate two scenarios, one in which the layers are sent sequentially, and incrementally contribute to the refinement of a reconstruction, and another in which the layers are independent and can be retrieved in any order. Those scenarios correspond to the well known problems ofsuccessive refinementandmultiple descriptions, respectively, in the context of joint source-channel coding (JSCC). We propose DeepJSCC-$l$, an innovative solution that uses convolutional autoencoders, and present three architectures with different complexity trade-offs. To the best of our knowledge, this is the first practical multiple-description JSCC scheme developed and tested for practical information sources and channels. Numerical results show that DeepJSCC-$l$can learn to transmit the source progressively with negligible losses in the end-to-end performance compared with a single transmission. Moreover, DeepJSCC-$l$has comparable performance with state of the art digital progressive transmission schemes in the challenging low signal-to-noise ratio (SNR) and small bandwidth regimes, with the additional advantage of graceful degradation with channel SNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "Generative AI for Integrated Sensing and Communication: Insights From the Physical Layer Perspective",
+  "authors": [
+   "Jiacheng Wang",
+   "Hongyang Du",
+   "Dusit Tao Niyato",
+   "Jiawen Kang",
+   "Shuguang Robert Cui",
+   "Xuemin Shen",
+   "Ping Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.013.2300485",
+  "arxiv": "2310.01036",
+  "openalex": "W4400644893",
+  "cited_by": 173,
+  "abstract": "As generative artificial intelligence (GAl) models continue to evolve, their generative capabilities are increasingly enhanced, and being used exten-sively in content generation. Furthermore, GAl also excels in data modeling and analysis, benefiting wireless communication systems. In this article, we investigate applications of GAI in the physical layer and analyze its support for integrated sensing and communications (ISAC) systems. Specifically, we first provide an overview of GAI and ISAC, touching on GAl's potential support across multi-ple layers of ISAC. We then thoroughly investigate GAl's applications in the physical layer, such as channel estimation, which demonstrates the benefits that GAl-enhanced physical layer technologies bring to ISAC systems. Finally, in the case study, we present a diffusion model-based method for estimating signal direction of arrival in near-field scenarios using uniform linear arrays with antenna spacing over half the wavelength. With a mean square error of 1.03 degrees, the method confirms GAl's support for the physical layer in near-field sensing and communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nine Challenges in Artificial Intelligence and Wireless Communications for 6G",
+  "authors": [
+   "Wen Tong",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2022,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.006.2100543",
+  "arxiv": "2109.11320",
+  "openalex": "W3199651421",
+  "cited_by": 169,
+  "abstract": "In recent years, artificial intelligence (AI) techniques, especially machine learning (ML), have been successfully applied in various areas, leading to a widespread belief that AI will collectively play an important role in future wireless communications. To accomplish the aspiration, we present nine challenges to be addressed by the interdisciplinary areas of AI/ML and wireless communications, with particular focus on the sixth generation (6G) wireless networks. Specifically, this article classifies the nine challenges into computation in AI, distributed neural networks and learning, and semantic communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Communication-Computation Trade-off in Resource-Constrained Edge Inference",
+  "authors": [
+   "Jiawei Shao",
+   "Jun Zhang"
+  ],
+  "year": 2020,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.001.2000373",
+  "arxiv": "2006.02166",
+  "openalex": "W3120615301",
+  "cited_by": 160,
+  "abstract": "The recent breakthrough in artificial intelligence (AI), especially deep neural networks (DNNs), has affected every branch of science and technology. Particularly, edge AI has been envisioned as a major application scenario to provide DNN-based services at edge devices. This article presents effective methods for edge inference at resource-constrained devices. It focuses on device-edge co-inference, assisted by an edge computing server, and investigates a critical trade-off among the computational cost of the on-device model and the communication overhead of forwarding the intermediate feature to the edge server. A general three-step framework is proposed for the effective inference: model split point selection to determine the on-device model, communication-aware model compression to reduce the on-device computation and the resulting communication overhead simultaneously, and task-oriented encoding of the intermediate feature to further reduce the communication overhead. Experiments demonstrate that our proposed framework achieves a better tradeoff and significantly reduces the inference latency than baseline methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantics-Empowered Communications: A Tutorial-Cum-Survey",
+  "authors": [
+   "Zhilin Lu",
+   "Rongpeng Li",
+   "Kun Lu",
+   "Xianfu Chen",
+   "Ekram Hossain",
+   "Zhifeng Zhao",
+   "Honggang Zhang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3333342",
+  "arxiv": "2212.08487",
+  "openalex": "W4388739236",
+  "cited_by": 157,
+  "abstract": "Along with the springing up of the semantics-empowered communication (SemCom) research, it is now witnessing an unprecedentedly growing interest towards a wide range of aspects (e.g., theories, applications, metrics and implementations) in both academia and industry. In this work, we primarily aim to provide a comprehensive survey on both the background and research taxonomy, as well as a detailed technical tutorial. Specifically, we start by reviewing the literature and answering the “what” and “why” questions in semantic transmissions. Afterwards, we present the ecosystems of SemCom, including history, theories, metrics, datasets and toolkits, on top of which the taxonomy for research directions is presented. Furthermore, we propose to categorize the critical enabling techniques by explicit and implicit reasoning-based methods, and elaborate on how they evolve and contribute to modern content & channel semantics-empowered communications. Besides reviewing and summarizing the latest efforts in SemCom, we discuss the relations with other communication levels (e.g., conventional communications) from a holistic and unified viewpoint. Subsequently, in order to facilitate future developments and industrial applications, we also highlight advanced practical techniques for boosting semantic accuracy, robustness, and large-scale scalability, just to mention a few. Finally, we discuss the technical challenges that shed light on future research opportunities.",
+  "source": "openalex"
+ },
+ {
+  "title": "CDDM: Channel Denoising Diffusion Models for Wireless Semantic Communications",
+  "authors": [
+   "Tong Wu",
+   "Zhiyong Chen",
+   "Dazhi He",
+   "Liang Qian",
+   "Yin Xu",
+   "Meixia Tao",
+   "Wenjun Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2024.3379244",
+  "arxiv": "2309.08895",
+  "openalex": "W4393252833",
+  "cited_by": 156,
+  "abstract": "Diffusion models (DM) can gradually learn to remove noise, which have been widely used in artificial intelligence generated content (AIGC) in recent years. The property of DM for eliminating noise leads us to wonder whether DM can be applied to wireless communications to help the receiver mitigate the channel noise. To address this, we propose channel denoising diffusion models (CDDM) for semantic communications over wireless channels in this paper. CDDM can be applied as a new physical layer module after the channel equalization to learn the distribution of the channel input signal, and then utilizes this learned knowledge to remove the channel noise. We derive corresponding training and sampling algorithms of CDDM according to the forward diffusion process specially designed to adapt the channel models and theoretically prove that the well-trained CDDM can effectively reduce the conditional entropy of the received signal under small sampling steps. Moreover, we apply CDDM to a semantic communications system based on joint source-channel coding (JSCC) for image transmission and design a three-stage training algorithm for combining them. Extensive experimental results demonstrate that CDDM can further reduce the mean square error (MSE) after minimum mean square error (MMSE) equalizer, and the joint CDDM and JSCC system achieves better performance than the JSCC system, the traditional JPEG2000 with low-density parity-check (LDPC) code approach and other benchmarks in diverse scenarios.",
+  "source": "openalex"
+ },
+ {
+  "title": "Adaptable Semantic Compression and Resource Allocation for Task-Oriented Communications",
+  "authors": [
+   "Chuanhong Liu",
+   "Caili Guo",
+   "Yang Yang",
+   "Nan Jiang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Cognitive Communications and Networking",
+  "doi": "10.1109/tccn.2023.3346481",
+  "arxiv": "2204.08910",
+  "openalex": "W4390357418",
+  "cited_by": 155,
+  "abstract": "Task-oriented communication is a new paradigm that aims at providing efficient connectivity for accomplishing intelligent tasks rather than reception of every transmitted bit. This paper proposes task-oriented communication architecture for end-to-end semantics transmission, where extracted semantics is compressed by the proposed adaptable semantic compression (ASC) method. However, accommodating multiple users in a delay-intolerant system poses a challenge. Higher compression ratios conserve channel resources but cause semantic distortion, while lower ratios demand more resources and may lead to transmission failure due to delay constraints. To address this, we optimize both compression ratio and resource allocation to maximize task success probability. Specifically, we propose a compression ratio and resource allocation (CRRA) algorithm that separates the problem into two subproblems and solving them iteratively. Furthermore, for scenarios with varying service levels among users, a compression ratio, resource allocation, and user selection (CRRAUS) algorithm is proposed, adaptively selecting users through branch and bound method. Simulation results show that ASC approach can reduce the size of transmitted data by up to 80% without compromising task success probability. Furthermore, numerical results clearly demonstrate that both the proposed CRRA and CRRAUS algorithms lead to substantial improvements in terms of success gains when compared to the baselines.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications for Image Recovery and Classification via Deep Joint Source and Channel Coding",
+  "authors": [
+   "Zhonghao Lyu",
+   "Guangxu Zhu",
+   "Jie Xu",
+   "Bo Ai",
+   "Shuguang Robert Cui"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2023.3349330",
+  "arxiv": "2304.02317",
+  "openalex": "W4390722043",
+  "cited_by": 149,
+  "abstract": "With the recent advancements in edge artificial intelligence (AI), future sixth-generation (6G) networks need to support new AI tasks such as classification and clustering apart from data recovery. Motivated by the success of deep learning, the semantic-aware and task-oriented communications with deep joint source and channel coding (JSCC) have emerged as new paradigm shifts in 6G from the conventional data-oriented communications with separate source and channel coding (SSCC). However, most existing works focused on the deep JSCC designs for one task of data recovery or AI task execution independently, which cannot be transferred to other unintended tasks. Differently, this paper investigates the JSCC semantic communications to support multi-task services, by performing the image data recovery and classification task execution simultaneously. First, we propose a new end-to-end deep JSCC framework by unifying the coding rate reduction maximization and the mean square error (MSE) minimization in the loss function. Here, the coding rate reduction maximization facilitates the learning of discriminative features for enabling to perform classification tasks directly in the feature space, and the MSE minimization helps the learning of informative features for high-quality image data recovery. Next, to further improve the robustness against variational wireless channels, we propose a new gated deep JSCC design, in which a gated net is incorporated for adaptively pruning the output features to adjust their dimensions based on channel conditions. Finally, we present extensive numerical experiments to validate the performance of our proposed deep JSCC designs as compared to various benchmark schemes. It is shown that our proposed designs simultaneously provide efficient multi-task services, and the proposed gated deep JSCC framework efficiently reduces the communication overhead with only marginal performance loss. It is also shown that performing the classification task on the feature space via coding rate reduction maximization is able to better defend the label corruption than the traditional label-fitting methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+  "authors": [
+   "Tze-Yang Tung",
+   "David Burth Kurka",
+   "Mikołaj Jankowski",
+   "Denız Gündüz"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "doi": "10.1109/jsait.2022.3231042",
+  "arxiv": "2111.13042",
+  "openalex": "W4312539031",
+  "cited_by": 149,
+  "abstract": "Recent works have shown that modern machine learning techniques can provide an alternative approach to the long-standing joint source-channel coding (JSCC) problem. Very promising initial results, superior to popular digital schemes that utilize separate source and channel codes, have been demonstrated for wireless image and video transmission using deep neural networks (DNNs). However, end-to-end training of such schemes requires a differentiable channel input representation; hence, prior works have assumed that any complex value can be transmitted over the channel. This can prevent the application of these codes in scenarios where the hardware or protocol can only admit certain sets of channel inputs, prescribed by a digital constellation. Herein, we propose DeepJSCC-Q, an end-to-end optimized JSCC solution for wireless image transmission using a finite channel input alphabet. We show that DeepJSCC-Q can achieve similar performance to prior works that allow any complex valued channel input, especially when high modulation orders are available, and that the performance asymptotically approaches that of unconstrained channel input as the modulation order increases. Importantly, DeepJSCC-Q preserves the graceful degradation of image quality in unpredictable channel conditions, a desirable property for deployment in mobile systems with rapidly changing channel conditions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jialong Xu",
+   "Tze-Yang Tung",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Yuxuan Sun",
+   "Denız Gündüz"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.004.2200819",
+  "arxiv": "2211.08747",
+  "openalex": "W4388937137",
+  "cited_by": 148,
+  "abstract": "Semantic communications is considered a promising technology that will increase the efficiency of next-generation communication systems, particularly human-machine and machine-type communications. In contrast to the source-agnostic approach of conventional wireless communication systems, semantic communications seek to ensure that only relevant information for the underlying task is communicated to the receiver. Considering most semantic communication applications have strict latency, bandwidth, and power constraints, a prominent approach is to model them as a joint source-channel coding (JSCC) problem. Although JSCC has been a long-standing open problem in communication and coding theory, remarkable performance gains have been made recently over existing separate source and channel coding systems, particularly in low-la-tency and low-power scenarios. Recent progress has been made thanks to the adoption of deep learning techniques for joint source-channel code design that outperform the concatenation of state-of-the-art compression and channel coding schemes, which are the result of decades-long research efforts. In this article, we present an adaptive deep learning based JSCC (DeepJSCC) architecture for semantic communications, introduce its design principles, highlight its benefits, and outline future research challenges that lie ahead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Task-Oriented Image Transmission for Scene Classification in Unmanned Aerial Systems",
+  "authors": [
+   "Xu Kang",
+   "Bin Song",
+   "Jie Guo",
+   "Zhijin Qin",
+   "Fei Richard Yu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2022.3182325",
+  "arxiv": "2112.10948",
+  "openalex": "W4226047696",
+  "cited_by": 145,
+  "abstract": "The vigorous developments of the Internet of Things make it possible to extend its computing and storage capabilities to computing tasks in the aerial system with the collaboration of cloud and edge, especially for artificial intelligence (AI) tasks based on deep learning (DL). Collecting a large amount of image/video data, unmanned aerial vehicles (UAVs) can only hand over intelligent analysis tasks to the back-end mobile edge computing (MEC) server due to their limited storage and computing capabilities. How to efficiently transmit the most correlated information for the AI model is a challenging topic. Inspired by task-oriented communication in recent years, we propose a new aerial image transmission paradigm for the scene classification task. A lightweight model is developed on the front-end UAV for semantic block transmission with the perception of images and channel states. To achieve the tradeoff between transmission latency and classification accuracy, deep reinforcement learning (DRL) is applied to explore the semantic blocks which have the greatest contribution to the back-end classifier under various channel states. Experimental results show that the proposed method can significantly improve classification accuracy by more than 4% under the same conditions, compared to other semantic saliency learning methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence",
+  "authors": [
+   "Abdulkadir Çelik",
+   "Ahmed M. Eltawil"
+  ],
+  "year": 2024,
+  "venue": "IEEE Open Journal of the Communications Society",
+  "doi": "10.1109/ojcoms.2024.3362271",
+  "arxiv": "2402.18587",
+  "openalex": "W4391547794",
+  "cited_by": 144,
+  "abstract": "As we transition from the 5G epoch, a new horizon beckons with the advent of 6G, seeking a profound fusion with novel communication paradigms and emerging technological trends, bringing once-futuristic visions to life along with added technical intricacies. Although analytical models lay the foundations and offer systematic insights, we have recently witnessed a noticeable surge in research suggesting machine learning (ML) and artificial intelligence (AI) can efficiently deal with complex problems by complementing or replacing model-based approaches. The majority of data-driven wireless research leans heavily on discriminative AI (DAI) that requires vast real-world datasets. Unlike the DAI, Generative AI (GenAI) pertains to generative models (GMs) capable of discerning the underlying data distribution, patterns, and features of the input data. This makes GenAI a crucial asset in wireless domain wherein real-world data is often scarce, incomplete, costly to acquire, and hard to model or comprehend. With these appealing attributes, GenAI can replace or supplement DAI methods in various capacities. Accordingly, this combined tutorial-survey paper commences with preliminaries of 6G and wireless intelligence by outlining candidate 6G applications and services, presenting a taxonomy of state-of-the-art DAI models, exemplifying prominent DAI use cases, and elucidating the multifaceted ways through which GenAI enhances DAI. Subsequently, we present a tutorial on GMs by spotlighting seminal examples such as generative adversarial networks, variational autoencoders, flow-based GMs, diffusion-based GMs, generative transformers, large language models, autoregressive GMs, to name a few. Contrary to the prevailing belief that GenAI is a nascent trend, our exhaustive review of approximately 120 technical papers demonstrates the scope of research across core wireless research areas, including 1) physical layer design; 2) network optimization, organization, and management; 3) network traffic analytics; 4) cross-layer network security; and 5) localization & positioning. Furthermore, we outline the central role of GMs in pioneering areas of 6G network research, including semantic communications, integrated sensing and communications, THz communications, extremely large antenna arrays, near-field communications, digital twins, AI-generated content services, mobile edge computing and edge AI, adversarial ML, and trustworthy AI. Lastly, we shed light on the multifarious challenges ahead, suggesting potential strategies and promising remedies. Given its depth and breadth, we are confident that this tutorial-cum-survey will serve as a pivotal reference for researchers and professionals delving into this dynamic and promising domain.",
+  "source": "openalex"
+ },
+ {
+  "title": "Large Generative AI Models for Telecom: The Next Big Thing?",
+  "authors": [
+   "Lina Bariah",
+   "Qiyang Zhao",
+   "Hang Zou",
+   "Yu Ting Tian",
+   "Faouzi Bader",
+   "Merouane Abdelkader Debbah"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Magazine",
+  "doi": "10.1109/mcom.001.2300364",
+  "arxiv": "2306.10249",
+  "openalex": "W4390660070",
+  "cited_by": 141,
+  "abstract": "The evolution of generative artificial intelligence (GenAI) constitutes a turning point in reshaping the future of technology in different aspects. Wireless networks in particular, with the blooming of self-evolving networks, represent a rich field for exploiting GenAI and reaping several benefits that can fundamentally change the way how wireless networks are designed and operated nowadays. To be specific, large language models (LLMs), a subfield of GenAI, are envisioned to open up a new era of autonomous wireless networks, in which a multimodal large model trained over various Telecom data, can be fine-tuned to perform several downstream tasks, eliminating the need for dedicated AI models for each task and paving the way for the realization of artificial general intelligence (AGI)-empowered wireless networks. In this article, we aim to unfold the opportunities that can be reaped from integrating LLMs into the Telecom domain. In particular, we aim to put a forward-looking vision on a new realm of possibilities and applications of LLMs in future wireless networks, defining directions for designing, training, testing, and deploying Telecom LLMs, and reveal insights on the associated theoretical and practical challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rethinking Modern Communication from Semantic Coding to Semantic Communication",
+  "authors": [
+   "Kun Lu",
+   "Qingyang Zhou",
+   "Rongpeng Li",
+   "Zhifeng Zhao",
+   "Xianfu Chen",
+   "Jianjun Wu",
+   "Honggang Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Wireless Communications",
+  "doi": "10.1109/mwc.013.2100642",
+  "arxiv": "2110.08496",
+  "openalex": "W3206899736",
+  "cited_by": 140,
+  "abstract": "Modern communications are usually designed to pursue a higher bit-level precision and fewer bits while transmitting a message. This article rethinks these two major features and introduces the concept and advantage of semantics that characterizes a new kind of semantics-aware communication framework, incorporating both the semantic encoding and the semantic communication problem. After analyzing the underlying defects of existing semantics-aware techniques, we establish a confidence-based distillation mechanism for the joint semantics-noise coding (JSNC) problem and a reinforcement learning (RL) powered semantic communication paradigm that endows a system the ability to convey the semantics instead of pursuing the bit level accuracy. On top of these technical contributions, this work provides a new insight to understand how the semantics are processed and represented in a semantics-aware coding and communication system, and verifies the significant benefits of doing so. Targeted on the next generation's semantics-aware communication, some critical concerns and open challenges, such as the information overhead, semantic security, and implementation cost are also discussed and envisioned.",
+  "source": "openalex"
+ },
+ {
+  "title": "Next Generation Advanced Transceiver Technologies for 6G and Beyond",
+  "authors": [
+   "Changsheng You",
+   "Yunlong Cai",
+   "Yuanwei Liu",
+   "Marco Di Renzo",
+   "Tolga M. Duman",
+   "Aylin Yener",
+   "Arnold Lee Swindlehurst"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2025.3536557",
+  "arxiv": "2403.16458",
+  "openalex": "W4406948532",
+  "cited_by": 133,
+  "abstract": "To accommodate new applications such as extended reality, fully autonomous vehicular networks and the metaverse, next generation wireless networks are going to be subject to much more stringent performance requirements than the fifth-generation (5G) in terms of data rates, reliability, latency, and connectivity. It is thus necessary to develop next generation advanced transceiver (NGAT) technologies for efficient signal transmission and reception. In this tutorial, we explore the evolution of NGAT from three different perspectives. Specifically, we first provide an overview of new-field NGAT technology, which shifts from conventional far-field channel models to new near-field channel models. Then, three new-form NGAT technologies and their design challenges are presented, including reconfigurable intelligent surfaces, flexible antennas, and holographic multi-input multi-output (MIMO) systems. Subsequently, we discuss recent advances in semantic-aware NGAT technologies, which can utilize new metrics for advanced transceiver designs. Finally, we point out other promising transceiver technologies for future research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Deep Joint Source-channel Coding for Wireless Image Transmission",
+  "authors": [
+   "Eirina Bourtsoulatze",
+   "David Burth Kurka",
+   "Denız Gündüz"
+  ],
+  "year": 2019,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp.2019.8683463",
+  "arxiv": null,
+  "openalex": "W3103412725",
+  "cited_by": 132,
+  "abstract": "We propose a novel joint source and channel coding (JSCC) scheme for wireless image transmission that departs from the conventional use of explicit source and channel codes for compression and error correction, and directly maps the image pixel values to the complex-valued channel input signal. Our encoder-decoder pair form an autoencoder with a non-trainable layer in the middle, which represents the noisy communication channel. Our results show that the proposed deep JSCC scheme outperforms separation-based digital transmission at low signal-to-noise ratio (SNR) and low channel bandwidth regimes in the presence of additive white Gaussian noise (AWGN). More strikingly, deep JSCC does not suffer from the \"cliff effect\" as the channel SNR varies with respect to the SNR value assumed during training. In the case of a slow Rayleigh fading channel, deep JSCC can learn to communicate without explicit pilot signals or channel estimation, and significantly outperforms separation-based digital communication at all SNR and channel bandwidth values.",
+  "source": "openalex"
+ }
+]

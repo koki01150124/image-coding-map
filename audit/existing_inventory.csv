@@ -1,0 +1,45 @@
+id,kind,short_name,title,doi,arxiv,year,formal_venue,formal_year,domains
+adjscc,paper,ADJSCC,Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules,10.1109/tcsvt.2021.3082521,2012.00533,2020,IEEE Transactions on Circuits and Systems for Video Technology,2021,analog_jscc
+balle_e2e,paper,Ballé 2017 (Factorized),End-to-end Optimized Image Compression,10.48550/arxiv.1611.01704,1611.01704,2016,International Conference on Learning Representations（ICLR）,2017,lic
+bfr_cae,unpublished,BFR-CAE,Bit-Flip Robust Compressive Autoencoder（BFR-CAE）,,,2026,,,digital_jscc|lic
+blindsc,paper,BlindSC,Blind Training for Channel-Adaptive Digital Semantic Communications,10.1109/tcomm.2025.3585587,2501.02273,2025,IEEE Transactions on Communications,2025,digital_jscc
+bpg,software,BPG,BPG Image format,,,2014,,,traditional
+cae,paper,CAE (Theis),Lossy Image Compression with Compressive Autoencoders,10.48550/arxiv.1703.00395,1703.00395,2017,International Conference on Learning Representations（ICLR）,2017,lic
+cdc,paper,CDC (Yang & Mandt),Lossy Image Compression with Conditional Diffusion Models,10.52202/075280-2835,2209.06950,2022,neural information processing systems,2023,generative|lic
+channel_ar,paper,Channel-wise AR (Minnen 2020),Channel-Wise Autoregressive Entropy Models for Learned Image Compression,10.1109/icip40778.2020.9190935,2007.08739,2020,Proceedings - International Conference on Image Processing,2020,lic
+checkerboard,paper,Checkerboard Context,Checkerboard Context Model for Efficient Learned Image Compression,10.1109/cvpr46437.2021.01453,2103.15306,2021,IEEE Computer Society Conference on Computer Vision and Pattern Recognition,2021,lic
+cheng2020,paper,Cheng 2020 (GMM+Attn),Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules,10.1109/cvpr42600.2020.00796,2001.01568,2020,IEEE Computer Society Conference on Computer Vision and Pattern Recognition,2020,lic
+d2jscc,paper,D²-JSCC,D²-JSCC: Digital Deep Joint Source-Channel Coding for Semantic Communications,10.1109/jsac.2025.3531546,,2024,IEEE Journal on Selected Areas in Communications,2025,digital_jscc|sscc
+ddcm,paper,DDCM,Compressed Image Generation with Denoising Diffusion Codebook Models,10.48550/arxiv.2502.01189,2502.01189,2025,International Conference on Machine Learning（ICML）,2025,generative
+ddpm,paper,DDPM,Denoising Diffusion Probabilistic Models,10.48550/arxiv.2006.11239,2006.11239,2020,Conference on Neural Information Processing Systems（NeurIPS）,2020,generative
+deepjscc,paper,DeepJSCC (Bourtsoulatze),Deep Joint Source-Channel Coding for Wireless Image Transmission,10.1109/tccn.2019.2919300,1809.01733,2018,IEEE Transactions on Cognitive Communications and Networking,2019,analog_jscc
+deepjscc_f,paper,DeepJSCC-f,DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback,10.1109/jsait.2020.2987203,1911.11174,2019,IEEE Journal on Selected Areas in Information Theory,2020,analog_jscc
+deepjscc_l,paper,DeepJSCC-l,Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding,10.1109/twc.2021.3090048,2009.12480,2020,IEEE Transactions on Wireless Communications,2021,analog_jscc
+deepjscc_q,paper,DeepJSCC-Q,DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding,10.1109/jsait.2022.3231042,2111.13042,2021,IEEE Journal on Selected Areas in Information Theory,2022,digital_jscc
+elic,paper,ELIC,ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding,10.1109/cvpr52688.2022.00563,2203.10886,2022,IEEE Computer Society Conference on Computer Vision and Pattern Recognition,2022,lic
+esc_mvq,paper,ESC-MVQ,ESC-MVQ: End-to-End Semantic Communication With Multi-Codebook Vector Quantization,10.1109/twc.2025.3605838,2504.11709,2025,IEEE Transactions on Wireless Communications,2025,digital_jscc
+gallager_ldpc,paper,LDPC (Gallager),Low-density parity-check codes,10.1109/tit.1962.1057683,,1962,IEEE Transactions on Information Theory,1962,channel_coding
+hevc,standard,HEVC,Overview of the High Efficiency Video Coding (HEVC) Standard,10.1109/tcsvt.2012.2221191,,2012,IEEE Transactions on Circuits and Systems for Video Technology,2012,traditional
+hific,paper,HiFiC,High-Fidelity Generative Image Compression,10.48550/arxiv.2006.09965,2006.09965,2020,Conference on Neural Information Processing Systems（NeurIPS）,2020,generative|lic
+iabf,paper,IABF,Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip,10.1609/aaai.v34i04.6041,2004.01454,2020,Proceedings of the AAAI Conference on Artificial Intelligence,2020,digital_jscc
+jcm,paper,JCM,Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder,10.1109/tcomm.2024.3386577,2310.06690,2023,IEEE Transactions on Communications,2024,digital_jscc
+jpeg,standard,JPEG,The JPEG still picture compression standard,10.1109/30.125072,,1991,IEEE Transactions on Consumer Electronics,1992,traditional
+jpeg2000,standard,JPEG 2000,The JPEG 2000 still image compression standard,10.1109/79.952804,,2001,IEEE Signal Processing Magazine,2001,traditional
+mackay_ldpc,paper,LDPC (MacKay),Good error-correcting codes based on very sparse matrices,10.1109/18.748992,,1999,IEEE Transactions on Information Theory,1999,channel_coding
+minnen_joint,paper,Minnen 2018 (Joint AR),Joint Autoregressive and Hierarchical Priors for Learned Image Compression,10.48550/arxiv.1809.02736,1809.02736,2018,Conference on Neural Information Processing Systems（NeurIPS）,2018,lic
+necst,paper,NECST,Neural Joint Source-Channel Coding,10.48550/arxiv.1811.07557,1811.07557,2018,International Conference on Machine Learning（ICML）,2019,digital_jscc
+ntscc,paper,NTSCC,Nonlinear Transform Source-Channel Coding for Semantic Communications,10.1109/jsac.2022.3180802,2112.10961,2021,IEEE Journal on Selected Areas in Communications,2022,analog_jscc|lic
+oshea_phy,paper,DL for PHY (O'Shea),An Introduction to Deep Learning for the Physical Layer,10.1109/tccn.2017.2758370,1702.00832,2017,IEEE Transactions on Cognitive Communications and Networking,2017,channel_coding
+polar,paper,Polar Code,Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels,10.1109/tit.2009.2021379,0807.3917,2008,IEEE Transactions on Information Theory,2009,channel_coding
+robust_turbo_ddcm,paper,Robust Turbo-DDCM,On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors,10.48550/arxiv.2604.05743,2604.05743,2026,IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops（CVPRW）,2026,generative
+scale_hyperprior,paper,Scale Hyperprior,Variational image compression with a scale hyperprior,10.48550/arxiv.1802.01436,1802.01436,2018,International Conference on Learning Representations（ICLR）,2018,lic
+shannon1948,paper,Shannon 1948,A Mathematical Theory of Communication,10.1002/j.1538-7305.1948.tb01338.x,,1948,Bell System Technical Journal,1948,channel_coding
+sscc_bpg_ldpc,scheme,BPG＋LDPC,,,,2019,,,sscc|traditional|channel_coding
+sscc_jpeg_ldpc,scheme,JPEG＋LDPC,,,,2025,,,sscc|traditional|channel_coding
+sscc_lic_ldpc,scheme,LIC＋LDPC,,,,2018,,,sscc|lic|channel_coding
+swinjscc,paper,SwinJSCC,SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding,10.1109/tccn.2024.3424842,2308.09361,2023,IEEE Transactions on Cognitive Communications and Networking,2024,analog_jscc
+tcm,paper,TCM (Liu 2023),Learned Image Compression with Mixed Transformer-CNN Architectures,10.1109/cvpr52729.2023.01383,2303.14978,2023,IEEE Computer Society Conference on Computer Vision and Pattern Recognition,2023,lic
+toderici_rnn,paper,RNN圧縮 (Toderici),Variable Rate Image Compression with Recurrent Neural Networks,10.48550/arxiv.1511.06085,1511.06085,2015,International Conference on Learning Representations（ICLR）,2016,lic
+turbo,paper,Turbo Code,Near Shannon limit error-correcting coding and decoding: Turbo-codes. 1,10.1109/icc.1993.397441,,1993,IEEE International Conference on Communications（ICC）,1993,channel_coding
+turbo_ddcm,paper,Turbo-DDCM,Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression,10.48550/arxiv.2511.06424,2511.06424,2025,International Conference on Learning Representations（ICLR）,2026,generative
+vvc,standard,VVC,Overview of the Versatile Video Coding (VVC) Standard and its Applications,10.1109/tcsvt.2021.3101953,,2021,IEEE Transactions on Circuits and Systems for Video Technology,2021,traditional

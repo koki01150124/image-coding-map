@@ -1,0 +1,891 @@
+[
+ {
+  "title": "Context-adaptive Entropy Model for End-to-end Optimized Image Compression",
+  "authors": [
+   "Jooyoung Lee",
+   "Seung-Hyun Cho",
+   "Seungkwon Beack"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1809.10452",
+  "arxiv": "1809.10452",
+  "openalex": "W2893920456",
+  "cited_by": 344,
+  "abstract": "We propose a context-adaptive entropy model for use in end-to-end optimized image compression. Our model exploits two types of contexts, bit-consuming contexts and bit-free contexts, distinguished based upon whether additional bit allocation is required. Based on these contexts, we allow the model to more accurately estimate the distribution of each latent representation with a more generalized form of the approximation models, which accordingly leads to an enhanced compression performance. Based on the experimental results, the proposed method outperforms the traditional image codecs, such as BPG and JPEG2000, as well as other previous artificial-neural-network (ANN) based approaches, in terms of the peak signal-to-noise ratio (PSNR) and multi-scale structural similarity (MS-SSIM) index.",
+  "source": "openalex"
+ },
+ {
+  "title": "Spatial-Channel Context-Based Entropy Modeling for End-to-end Optimized Image Compression",
+  "authors": [
+   "Chongxin Li",
+   "Jixiang Luo",
+   "Wenrui Dai",
+   "Chenglin Li",
+   "Junni Zou",
+   "Hongkai Xiong"
+  ],
+  "year": 2020,
+  "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+  "doi": "10.1109/vcip49819.2020.9301882",
+  "arxiv": null,
+  "openalex": "W3117424156",
+  "cited_by": 4,
+  "abstract": "End-to-end optimized image compression has emerged as a disruptive technique to reduce the spatial redundancies with an improved reconstruction quality. However, existing entropy model for latent representations cannot sufficiently exploit their spatial and channel-wise correlations. In this paper, we propose a novel entropy model based on spatial-channel contexts for end-to-end optimized image compression. The proposed model jointly leverages spatial structural dependencies and channel-wise correlations to improve the probabilistic estimation of latent representations. Instead of complex autoregressive hyperprior network, shallow artificial neural networks (ANNs) incorporating 3-D masks are developed to efficiently realize the entropy model with a guarantee of causality. Experimental results demonstrate that the proposed model achieves competitive rate-distortion performance and reduces model complexity in comparison to recent end-to-end optimized methods for image compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Extended End-to-End optimized Image Compression Method based on a Context-Adaptive Entropy Model",
+  "authors": [
+   "Jooyoung Lee",
+   "Seung-Hyun Cho",
+   "Seyoon Jeong",
+   "Hyoungjin Kwon",
+   "Hyunsuk Ko",
+   "Hui Yong Kim",
+   "Jin Soo Choi"
+  ],
+  "year": 2019,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W2969569226",
+  "cited_by": 10,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-end Optimized Image Compression",
+  "authors": [
+   "Johannes Ballé",
+   "Valero Laparra",
+   "Eero P. Simoncelli"
+  ],
+  "year": 2016,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1611.01704",
+  "arxiv": "1611.01704",
+  "openalex": "W2552465432",
+  "cited_by": 1475,
+  "abstract": "We describe an image compression method, consisting of a nonlinear analysis transformation, a uniform quantizer, and a nonlinear synthesis transformation. The transforms are constructed in three successive stages of convolutional linear filters and nonlinear activation functions. Unlike most convolutional neural networks, the joint nonlinearity is chosen to implement a form of local gain control, inspired by those used to model biological neurons. Using a variant of stochastic gradient descent, we jointly optimize the entire model for rate-distortion performance over a database of training images, introducing a continuous proxy for the discontinuous loss function arising from the quantizer. Under certain conditions, the relaxed loss function may be interpreted as the log likelihood of a generative model, as implemented by a variational autoencoder. Unlike these models, however, the compression model must operate at any given point along the rate-distortion curve, as specified by a trade-off parameter. Across an independent set of test images, we find that the optimized method generally exhibits better rate-distortion performance than the standard JPEG and JPEG 2000 compression methods. More importantly, we observe a dramatic improvement in visual quality for all images at all bit rates, which is supported by objective quality estimates using MS-SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Optimized ROI Image Compression",
+  "authors": [
+   "Chunlei Cai",
+   "Li Chen",
+   "Xiaoyun Zhang",
+   "Zhiyong Gao"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2019.2960869",
+  "arxiv": null,
+  "openalex": "W2997454254",
+  "cited_by": 108,
+  "abstract": "Compressing an image with more bits automatically allocated to the region of interest (ROI) than to the background can both protect key information and reduce substantial redundancy. This paper models ROI image compression as an optimization problem of minimizing a weighted sum of the rate of the image and distortion of the ROI. The traditional framework solves this problem by cascading ROI prediction and ROI coding, through which achieving the optimized solution is impossible. To improve coding performance, we propose a novel deep-learning-based unified framework that can achieve rate distortion optimization for ROI compression. Specifically, the proposed framework includes a pair of ROI encoder and decoder convolutional neural networks and a learned entropy codec. The encoder network simultaneously generates multiscale representations that support efficient rate allocation and an implicit ROI mask that guides rate allocation. The proposed framework can automatically complete ROI image compression, and it can be optimized from data in an end-to-end manner. To effectively train the framework by back propagation, we develop a soft-to-hard ROI prediction scheme to make the entire framework differential. To improve visual quality, we propose a hierarchical distortion loss function to protect both pixel-level fidelity for ROI and structural similarity for the entire image. The proposed framework is implemented in two scenarios: salient-target and face-target ROI compression. Comparative experiments demonstrate the advantages of the proposed framework over the traditional framework, including considerably better subjective visual quality, significantly higher objective ROI compression performance and execution efficiency.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Optimized Versatile Image Compression With Wavelet-Like Transform",
+  "authors": [
+   "Haichuan Ma",
+   "Dong Liu",
+   "Ning Yan",
+   "Houqiang Li",
+   "Feng Wu"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2020.3026003",
+  "arxiv": null,
+  "openalex": "W3088142143",
+  "cited_by": 202,
+  "abstract": "Built on deep networks, end-to-end optimized image compression has made impressive progress in the past few years. Previous studies usually adopt a compressive auto-encoder, where the encoder part first converts image into latent features, and then quantizes the features before encoding them into bits. Both the conversion and the quantization incur information loss, resulting in a difficulty to optimally achieve arbitrary compression ratio. We propose iWave++ as a new end-to-end optimized image compression scheme, in which iWave, a trained wavelet-like transform, converts images into coefficients without any information loss. Then the coefficients are optionally quantized and encoded into bits. Different from the previous schemes, iWave++ is versatile: a single model supports both lossless and lossy compression, and also achieves arbitrary compression ratio by simply adjusting the quantization scale. iWave++ also features a carefully designed entropy coding engine to encode the coefficients progressively, and a de-quantization module for lossy compression. Experimental results show that lossy iWave++ achieves state-of-the-art compression efficiency compared with deep network-based methods; on the Kodak dataset, lossy iWave++ leads to 17.34 percent bits saving over BPG; lossless iWave++ achieves comparable or better performance than FLIF. Our code and models are available at https://github.com/mahaichuan/Versatile-Image-Compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Learnt Image Compression via Non-Local Attention Optimization and Improved Context Modeling",
+  "authors": [
+   "Tong Chen",
+   "Haojie Liu",
+   "Zhan Ma",
+   "Qiu Shen",
+   "Xun Cao",
+   "Yao Wang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2021.3058615",
+  "arxiv": "1910.06244",
+  "openalex": "W3131427579",
+  "cited_by": 350,
+  "abstract": "This article proposes an end-to-end learnt lossy image compression approach, which is built on top of the deep nerual network (DNN)-based variational auto-encoder (VAE) structure with Non-Local Attention optimization and Improved Context modeling (NLAIC). Our NLAIC 1) embeds non-local network operations as non-linear transforms in both main and hyper coders for deriving respective latent features and hyperpriors by exploiting both local and global correlations, 2) applies attention mechanism to generate implicit masks that are used to weigh the features for adaptive bit allocation, and 3) implements the improved conditional entropy modeling of latent features using joint 3D convolutional neural network (CNN)-based autoregressive contexts and hyperpriors. Towards the practical application, additional enhancements are also introduced to speed up the computational processing (e.g., parallel 3D CNN-based context prediction), decrease the memory consumption (e.g., sparse non-local processing) and reduce the implementation complexity (e.g., a unified model for variable rates without re-training). The proposed model outperforms existing learnt and conventional (e.g., BPG, JPEG2000, JPEG) image compression methods, on both Kodak and Tecnick datasets with the state-of-the-art compression efficiency, for both PSNR and MS-SSIM quality measurements. We have made all materials publicly accessible at https://njuvision.github.io/NIC for reproducible research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning End-to-End Lossy Image Compression: A Benchmark",
+  "authors": [
+   "Yueyu Hu",
+   "Wenhan Yang",
+   "Zhan Ma",
+   "Jiaying Liu"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2021.3065339",
+  "arxiv": "2002.03711",
+  "openalex": "W3134748538",
+  "cited_by": 186,
+  "abstract": "Image compression is one of the most fundamental techniques and commonly used applications in the image and video processing field. Earlier methods built a well-designed pipeline, and efforts were made to improve all modules of the pipeline by handcrafted tuning. Later, tremendous contributions were made, especially when data-driven methods revitalized the domain with their excellent modeling capacities and flexibility in incorporating newly designed modules and constraints. Despite great progress, a systematic benchmark and comprehensive analysis of end-to-end learned image compression methods are lacking. In this paper, we first conduct a comprehensive literature survey of learned image compression methods. The literature is organized based on several aspects to jointly optimize the rate-distortion performance with a neural network, i.e., network architecture, entropy model and rate control. We describe milestones in cutting-edge learned image-compression methods, review a broad range of existing works, and provide insights into their historical development routes. With this survey, the main challenges of image compression methods are revealed, along with opportunities to address the related issues with recent advanced learning methods. This analysis provides an opportunity to take a further step towards higher-efficiency image compression. By introducing a coarse-to-fine hyperprior model for entropy estimation and signal reconstruction, we achieve improved rate-distortion performance, especially on high-resolution images. Extensive benchmark experiments demonstrate the superiority of our model in rate-distortion performance and time complexity on multi-core CPUs and GPUs.",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient and Effective Context-Based Convolutional Entropy Modeling for Image Compression",
+  "authors": [
+   "Mu Li",
+   "Kede Ma",
+   "Jane You",
+   "David D. Zhang",
+   "Wangmeng Zuo"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2020.2985225",
+  "arxiv": "1906.10057",
+  "openalex": "W3017235483",
+  "cited_by": 84,
+  "abstract": "Precise estimation of the probabilistic structure of natural images plays an essential role in image compression. Despite the recent remarkable success of end-to-end optimized image compression, the latent codes are usually assumed to be fully statistically factorized in order to simplify entropy modeling. However, this assumption generally does not hold true and may hinder compression performance. Here we present contextbased convolutional networks (CCNs) for efficient and effective entropy modeling. In particular, a 3D zigzag scanning order and a 3D code dividing technique are introduced to define proper coding contexts for parallel entropy decoding, both of which boil down to place translation-invariant binary masks on convolution filters of CCNs. We demonstrate the promise of CCNs for entropy modeling in both lossless and lossy image compression. For the former, we directly apply a CCN to the binarized representation of an image to compute the Bernoulli distribution of each code for entropy estimation. For the latter, the categorical distribution of each code is represented by a discretized mixture of Gaussian distributions, whose parameters are estimated by three CCNs. We then jointly optimize the CCNbased entropy model along with analysis and synthesis transforms for rate-distortion performance. Experiments on the Kodak and Tecnick datasets show that our methods powered by the proposed CCNs generally achieve comparable compression performance to the state-of-the-art while being much faster.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reducing The Amortization Gap of Entropy Bottleneck In End-to-End Image Compression",
+  "authors": [
+   "Muhammet Balcılar",
+   "Bharath Bhushan Damodaran",
+   "Pierre Hellier J"
+  ],
+  "year": 2022,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs56426.2022.10018064",
+  "arxiv": "2209.00964",
+  "openalex": "W4317555471",
+  "cited_by": 7,
+  "abstract": "End-to-end deep trainable models are about to exceed the performance of the traditional handcrafted compression techniques on videos and images. The core idea is to learn a non-linear transformation, modeled as a deep neural network, mapping input image into latent space, jointly with an entropy model of the latent distribution. The decoder is also learned as a deep trainable network, and the reconstructed image measures the distortion. These methods enforce the latent to follow some prior distributions. Since these priors are learned by optimization over the entire training set, the performance is optimal in average. However, it cannot fit exactly on every single new instance, hence damaging the compression performance by enlarging the bit-stream. In this paper, we propose a simple yet efficient instance-based parameterization method to reduce this amortization gap at a minor cost. The proposed method is applicable to any end-to-end compressing methods, improving the compression bitrate by 1% without any impact on the reconstruction quality.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-end optimized image compression with the frequency-oriented transform",
+  "authors": [
+   "Yuefeng Zhang",
+   "Kai Lin"
+  ],
+  "year": 2024,
+  "venue": "Machine Vision and Applications",
+  "doi": "10.1007/s00138-023-01507-x",
+  "arxiv": "2401.08194",
+  "openalex": "W4391593909",
+  "cited_by": 6,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "Saurabh Singh"
+  ],
+  "year": 2020,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip40778.2020.9190935",
+  "arxiv": "2007.08739",
+  "openalex": "W3042579794",
+  "cited_by": 483,
+  "abstract": "In learning-based approaches to image compression, codecs are developed by optimizing a computational model to minimize a rate-distortion objective. Currently, the most effective learned image codecs take the form of an entropy-constrained autoencoder with an entropy model that uses both forward and backward adaptation. Forward adaptation makes use of side information and can be efficiently integrated into a deep neural network. In contrast, backward adaptation typically makes predictions based on the causal context of each symbol, which requires serial processing that prevents efficient GPU / TPU utilization. We introduce two enhancements, channel-conditioning and latent residual prediction, that lead to network architectures with better rate-distortion performance than existing context-adaptive models while minimizing serial processing. Empirically, we see an average rate savings of 6.7% on the Kodak image set and 11.4% on the Tecnick image set compared to a context-adaptive baseline model. At low bit rates, where the improvements are most effective, our model saves up to 18% over the baseline and outperforms hand-engineered codecs like BPG by up to 25%.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Optimized Image Compression With Deep Gaussian Process Regression",
+  "authors": [
+   "Maida Cao",
+   "Wenrui Dai",
+   "Shaohui Li",
+   "Chenglin Li",
+   "Junni Zou",
+   "Ying Chen",
+   "Hongkai Xiong"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2022.3209661",
+  "arxiv": null,
+  "openalex": "W4297095237",
+  "cited_by": 14,
+  "abstract": "End-to-end optimization via deep neural networks has facilitated lossy image compression. Existing neural network-based entropy models for end-to-end optimized image compression are limited by parameterized Gaussian distributions with deterministic mean and variance and cannot achieve accurate rate estimation for bottleneck representation with varying statistics. In this paper, we propose a novel entropy model based on deep Gaussian process regression (DGPR) to address this problem. Specifically, the proposed entropy model leverages autoregressive DGPR to flexibly predict the channel-wise posterior distributions of high-dimensional bottleneck representation for entropy coding. Consequently, we develop a well-established bit-rate estimation scheme via posterior inference of DGPR using the learned probabilistic distribution. Furthermore, scalable training is achieved via tensor train decomposition and Monte Carlo sampling to enable tractable variational inference of DGPR. To our best knowledge, this paper is the first attempt to develop the learnable probabilistic model for flexible parameter estimation in entropy modeling. Experimental results show that the proposed model outperforms conventional image compression methods (e.g., JPEG2000 and BPG) as well as recent end-to-end optimized methods on the Kodak and Tecnick datasets in terms of rate-distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Reduced-Complexity End-to-End Variational Autoencoder for on Board Satellite Image Compression",
+  "authors": [
+   "Vinícius Alves de Oliveira",
+   "Marie Chabert",
+   "Thomas Oberlin",
+   "Charly Poulliat",
+   "Mickaël Bruno",
+   "Christophe Latry",
+   "Mikaël Carlavan",
+   "Simon Henrot",
+   "Frédéric Falzon",
+   "Roberto Camarero"
+  ],
+  "year": 2021,
+  "venue": "Remote Sensing",
+  "doi": "10.3390/rs13030447",
+  "arxiv": null,
+  "openalex": "W3127964924",
+  "cited_by": 62,
+  "abstract": "Recently, convolutional neural networks have been successfully applied to lossy image compression. End-to-end optimized autoencoders, possibly variational, are able to dramatically outperform traditional transform coding schemes in terms of rate-distortion trade-off; however, this is at the cost of a higher computational complexity. An intensive training step on huge databases allows autoencoders to learn jointly the image representation and its probability distribution, possibly using a non-parametric density model or a hyperprior auxiliary autoencoder to eliminate the need for prior knowledge. However, in the context of on board satellite compression, time and memory complexities are submitted to strong constraints. The aim of this paper is to design a complexity-reduced variational autoencoder in order to meet these constraints while maintaining the performance. Apart from a network dimension reduction that systematically targets each parameter of the analysis and synthesis transforms, we propose a simplified entropy model that preserves the adaptability to the input image. Indeed, a statistical analysis performed on satellite images shows that the Laplacian distribution fits most features of their representation. A complex non parametric distribution fitting or a cumbersome hyperprior auxiliary autoencoder can thus be replaced by a simple parametric estimation. The proposed complexity-reduced autoencoder outperforms the Consultative Committee for Space Data Systems standard (CCSDS 122.0-B) while maintaining a competitive performance, in terms of rate-distortion trade-off, in comparison with the state-of-the-art learned image compression schemes.",
+  "source": "openalex"
+ },
+ {
+  "title": "Ensemble Learning-Based Rate-Distortion Optimization for End-to-End Image Compression",
+  "authors": [
+   "Yefei Wang",
+   "Dong Liu",
+   "Siwei Ma",
+   "Feng Wu",
+   "Wen Gao"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2020.3000331",
+  "arxiv": null,
+  "openalex": "W3033326602",
+  "cited_by": 51,
+  "abstract": "End-to-end image compression using trained deep networks as encoding/decoding models has been developed substantially in the recent years. Previous work is limited in using a single encoding/decoding model, whereas we explore the usage of multiple encoding/decoding models as an ensemble. We propose several methods to obtain multiple models. First, we adopt the boosting strategy to train multiple networks with diversity as an ensemble. Second, we train an ensemble of multiple probability distribution models to reduce the distribution gap for efficient entropy coding. Third, we present a geometric transform-based self-ensemble method. The multiple models can be regarded as the multiple coding modes, similar to those in non-deep video coding schemes. We further adopt block-level model/mode selection at the encoder side to pursue rate-distortion optimization, where we use hierarchical block partitioning to improve the adaptation ability. Compared with single-model end-to-end compression, our proposed method improves the compression efficiency significantly, leading to 21% BD-rate reduction on the Kodak dataset, without increasing the decoding complexity. On the other hand, when keeping the same compression efficiency, our method can use much simplified decoding models, where the floating-point operations are reduced by 70%.",
+  "source": "openalex"
+ },
+ {
+  "title": "An End-to-End Face Compression and Recognition Framework Based on Entropy Coding Model",
+  "authors": [
+   "Bo Lei",
+   "Feng Liang",
+   "Haisheng Fu"
+  ],
+  "year": 2021,
+  "venue": "International Conference on Cloud Computing and Big Data Analytics (ICCCBDA)",
+  "doi": "10.1109/icccbda51879.2021.9442596",
+  "arxiv": null,
+  "openalex": "W3167520715",
+  "cited_by": 2,
+  "abstract": "Recent years, more and more image/video data were produced, which brings great challenge to data storage and transmission. For face recognition and video surveillance scenario, images/videios need to be compressed and transmitted to intelligent back end for analysis. While general image codecs only extract the feature towards pixel or perceptual similarity, ignoring the Rate-Accuracy performance. In this paper, we proposed an learned end-to-end face compression framework based on entropy coding model, jointly optimize face recognition and image compression performance. Compared with traditional codings, such as JPEG and JPEG2000, better Rate-Accuracy and Rate-Distrotion performance can be achieved by the proposed scheme in LFW(Labeled Faces in the Wild) dataset, especially at low bit rate.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End optimized image compression for machines, a study",
+  "authors": [
+   "Lahiru D. Chamain",
+   "Fabien Racapé",
+   "Jean Bégaint",
+   "Akshay Pushparaja",
+   "Simon Feltman"
+  ],
+  "year": 2021,
+  "venue": "DCC",
+  "doi": "10.1109/dcc50243.2021.00024",
+  "arxiv": "2011.06409",
+  "openalex": "W3105128802",
+  "cited_by": 88,
+  "abstract": "An increasing share of image and video content is analyzed by machines rather than viewed by humans, and therefore it becomes relevant to optimize codecs for such applications where the analysis is performed remotely. Unfortunately, conventional coding tools are challenging to specialize for machine tasks as they were originally designed for human perception. However, neural network based codecs can be jointly trained end-to-end with any convolutional neural network (CNN)-based task model. In this paper, we propose to study an end-to-end framework enabling efficient image compression for remote machine task analysis, using a chain composed of a compression module and a task algorithm that can be optimized end-to-end. We show that it is possible to significantly improve the task accuracy when fine-tuning jointly the codec and the task networks, especially at low bitrates. Depending on training or deployment constraints, selective fine-tuning can be applied only on the encoder, decoder or task network and still achieve rate-accuracy improvements over an off-the-shelf codec and task network. Our results also demonstrate the flexibility of end-to-end pipelines for practical applications.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Autoregressive and Hierarchical Priors for Learned Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "Johannes Ballé",
+   "George D. Toderici"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1809.02736",
+  "arxiv": "1809.02736",
+  "openalex": "W2892278106",
+  "cited_by": 1008,
+  "abstract": "Recent models for learned image compression are based on autoencoders, learning approximately invertible mappings from pixels to a quantized latent representation. These are combined with an entropy model, a prior on the latent representation that can be used with standard arithmetic coding algorithms to yield a compressed bitstream. Recently, hierarchical entropy models have been introduced as a way to exploit more structure in the latents than simple fully factorized priors, improving compression performance while maintaining end-to-end optimization. Inspired by the success of autoregressive priors in probabilistic generative models, we examine autoregressive, hierarchical, as well as combined priors as alternatives, weighing their costs and benefits in the context of image compression. While it is well known that autoregressive models come with a significant computational penalty, we find that in terms of compression performance, autoregressive and hierarchical priors are complementary and, together, exploit the probabilistic structure in the latents better than all previous learned models. The combined model yields state-of-the-art rate--distortion performance, providing a 15.8% average reduction in file size over the previous state-of-the-art method based on deep learning, which corresponds to a 59.8% size reduction over JPEG, more than 35% reduction compared to WebP and JPEG2000, and bitstreams 8.4% smaller than BPG, the current state-of-the-art image codec. To the best of our knowledge, our model is the first learning-based method to outperform BPG on both PSNR and MS-SSIM distortion metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "Simplified entropy model for reduced-complexity end-to-end variational autoencoder with application to on-board satellite image compression",
+  "authors": [
+   "Vinícius Alves de Oliveira",
+   "Thomas Oberlin",
+   "Marie Chabert",
+   "Charly Poulliat",
+   "Mickaël Bruno",
+   "Christophe Latry",
+   "Mikaël Carlavan",
+   "Simon Henrot",
+   "Frédéric Falzon",
+   "Roberto Camarero"
+  ],
+  "year": 2020,
+  "venue": "Open Archive Toulouse Archive Ouverte (University of Toulouse)",
+  "doi": null,
+  "arxiv": null,
+  "openalex": "W3129726516",
+  "cited_by": 1,
+  "abstract": "In recent years, neural networks have emerged as data-driven tools to solve problems which were previously addressed with model-based methods. In particular, image processing has been largely impacted by convolutional neural networks (CNNs). Recently, CNN-based auto-encoders have been successfully employed for lossy image compression [1,2,3,4]. These end-to-end optimized architectures are able to dramatically outperform traditional compression schemes in terms of rate-distortion trade-off. The auto-encoder is composed of an encoder and a decoder both learned from the data. The encoder is applied to the input data to produce a latent representation with minimum entropy after quantization. The latent representation, derived through several convolutional layers composed of filters and activation functions, is multi-channel (the output of a particular filter is called a channel or a feature) and non-linear. The representation is then quantized to produce a discrete-valued vector. A standard entropy coding method uses the entropy model inferred from the representation to losslessly compress this discrete-valued vector. A key element of these frameworks is the entropy model. In earlier works [1,2,3], the learned representation was assumed independent and identically distributed within each channel and the channels were assumed independent of each other, resulting in a fully-factorized entropy model. Moreover, a fixed entropy model was learned once, from the training set, preventing any adaptation to the input image during the operational phase. The variational auto-encoder proposed in [4] proposed to use a hyperprior auxiliary network. This network estimates the hyper-parameters of the representation distribution, for each input image. Thus, it does not require the assumption of a fully-factorized model which conflicts with the need for context modeling. This variational auto-encoder achieves compression performance close to the one of BPG (Better Portable Graphics) at the expense of a considerable increase in complexity.However, in the context of on-board compression, a trade-off between compression performance and complexity has to be considered to take into account the strong computational constraints. For this reason, the CCSDS (Consultative Committee for Space Data Systems) lossy compression standard has been designed as a highly simplified version of JPEG2000. This work follows the same logic, however in the context of learned image compression. The aim of this paper is to design a simplified version of the variational auto-encoder proposed in [4] in order to meet the on-board constraints in terms of complexity while preserving high performance in terms of rate-distortion. Apart from straightforward simplifications of the transform (e.g. reduction of the number of filters in the convolutional layers), we mainly propose a simplified entropy model that preserves the adaptability to the input image.A preliminary reduction of the number of filters re",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Optimized 360° Image Compression",
+  "authors": [
+   "Mu Li",
+   "Jinxing Li",
+   "Shuhang Gu",
+   "Feng He Wu",
+   "David D. Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Image Processing",
+  "doi": "10.1109/tip.2022.3208429",
+  "arxiv": null,
+  "openalex": "W4297489864",
+  "cited_by": 31,
+  "abstract": "The 360° image that offers a 360-degree scenario of the world is widely used in virtual reality and has drawn increasing attention. In 360° image compression, the spherical image is first transformed into a planar image with a projection such as equirectangular projection (ERP) and then saved with the existing codecs. The ERP images that represent different circles of latitude with the same number of pixels suffer from the unbalance sampling problem, resulting in inefficiency using planar compression methods, especially for the deep neural network (DNN) based codecs. To tackle this problem, we introduce a latitude adaptive coding scheme for DNNs by allocating variant numbers of codes for different regions according to the latitude on the sphere. Specifically, taking both the number of allocated codes for each region and their entropy into consideration, we introduce a flexible regional adaptive rate loss for region-wise rate controlling. Latitude adaptive constraints are then introduced to prevent spending too many codes on the over-sampling regions. Furthermore, we introduce viewport-based distortion loss by calculating the average distortion on a set of viewports. We optimize and test our model on a large 360° dataset containing 19,790 images collected from the Internet. The experiment results demonstrate the superiority of the proposed latitude adaptive coding scheme. On the whole, our model outperforms the existing image compression standards, including JPEG, JPEG2000, HEVC Intra Coding, and VVC Intra Coding, and helps to save around 15% bits compared to the baseline learned image compression model for planar images.",
+  "source": "openalex"
+ },
+ {
+  "title": "Entroformer: A Transformer-based Entropy Model for Learned Image Compression",
+  "authors": [
+   "Qian, Yichen",
+   "Lin, Ming",
+   "Xiuyu Sun",
+   "Zhiyu Tan",
+   "Rong Jin"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2202.05492",
+  "arxiv": "2202.05492",
+  "openalex": "W4221147755",
+  "cited_by": 110,
+  "abstract": "One critical component in lossy deep image compression is the entropy model, which predicts the probability distribution of the quantized latent representation in the encoding and decoding modules. Previous works build entropy models upon convolutional neural networks which are inefficient in capturing global dependencies. In this work, we propose a novel transformer-based entropy model, termed Entroformer, to capture long-range dependencies in probability distribution estimation effectively and efficiently. Different from vision transformers in image classification, the Entroformer is highly optimized for image compression, including a top-k self-attention and a diamond relative position encoding. Meanwhile, we further expand this architecture with a parallel bidirectional context model to speed up the decoding process. The experiments show that the Entroformer achieves state-of-the-art performance on image compression while being time-efficient.",
+  "source": "openalex"
+ },
+ {
+  "title": "Entropy-Constrained Implicit Neural Representations for Deep Image Compression",
+  "authors": [
+   "Soonbin Lee",
+   "Jong-Beom Jeong",
+   "Eun‐Seok Ryu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Signal Processing Letters",
+  "doi": "10.1109/lsp.2023.3279780",
+  "arxiv": null,
+  "openalex": "W4377971328",
+  "cited_by": 17,
+  "abstract": "Implicit neural representations (INRs) for various data types have gained popularity in the field of deep learning owing to their effectiveness. However, previous studies on INRs have only focused on recovering original representations. This paper investigated an image compression model based on INRs using a model compression technique for entropy-constrained neural networks. Specifically, the proposed model trains a multilayer perceptron (MLP) to overfit a single image and then uses its weights to optimize its compressed representation using additive uniform noise. Accordingly, the proposed model efficiently minimizes the size of the model weight in an end-to-end manner. This training optimization process is fairly desirable for adjusting the rate of distortion for image compression. In contrast to other model compression techniques, the proposed model is implemented without additional training process or memory cost. By introducing entropy loss, this paper demonstrated that the proposed model can be used to preserve high image quality while maintaining smaller model size. The experimental results demonstrated that the proposed model achieved comparable performance to conventional image compression models without incurring high storage costs.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Unified End-to-End Framework for Efficient Deep Image Compression",
+  "authors": [
+   "Jiaheng Liu",
+   "Guo Sheng Lu",
+   "Zhihao Hu",
+   "Dong Xu"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2002.03370",
+  "arxiv": "2002.03370",
+  "openalex": "W3004685385",
+  "cited_by": 88,
+  "abstract": "Image compression is a widely used technique to reduce the spatial redundancy in images. Recently, learning based image compression has achieved significant progress by using the powerful representation ability from neural networks. However, the current state-of-the-art learning based image compression methods suffer from the huge computational cost, which limits their capacity for practical applications. In this paper, we propose a unified framework called Efficient Deep Image Compression (EDIC) based on three new technologies, including a channel attention module, a Gaussian mixture model and a decoder-side enhancement module. Specifically, we design an auto-encoder style network for learning based image compression. To improve the coding efficiency, we exploit the channel relationship between latent representations by using the channel attention module. Besides, the Gaussian mixture model is introduced for the entropy model and improves the accuracy for bitrate estimation. Furthermore, we introduce the decoder-side enhancement module to further improve image compression performance. Our EDIC method can also be readily incorporated with the Deep Video Compression (DVC) framework to further improve the video compression performance. Simultaneously, our EDIC method boosts the coding performance significantly while bringing slightly increased computational cost. More importantly, experimental results demonstrate that the proposed approach outperforms the current state-of-the-art image compression methods and is up to more than 150 times faster in terms of decoding speed when compared with Minnen's method. The proposed framework also successfully improves the performance of the recent deep video compression system DVC. Our code will be released at https://github.com/liujiaheng/compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "MLIC: Multi-Reference Entropy Model for Learned Image Compression",
+  "authors": [
+   "Wei Jiang",
+   "Jiayu Yang",
+   "Yongqi Zhai",
+   "Peirong Ning",
+   "Feng Gao",
+   "Ronggang Wang"
+  ],
+  "year": 2023,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "doi": "10.1145/3581783.3611694",
+  "arxiv": "2211.07273",
+  "openalex": "W4309134821",
+  "cited_by": 122,
+  "abstract": "Recently, learned image compression has achieved remarkable performance. The entropy model, which estimates the distribution of the latent representation, plays a crucial role in boosting rate-distortion performance. However, most entropy models only capture correlations in one dimension, while the latent representation contains channel-wise, local spatial, and global spatial correlations. To tackle this issue, we propose the Multi-Reference Entropy Model (MEM) and the advanced version, MEM+. These models capture the different types of correlations present in latent representation. Specifically, we first divide the latent representation into slices. When decoding the current slice, we use previously decoded slices as context and employ the attention map of the previously decoded slice to predict global correlations in the current slice. To capture local contexts, we introduce two enhanced checkerboard context capturing techniques that avoids performance degradation. Based on MEM and MEM+, we propose image compression models MLIC and MLIC+. Extensive experimental evaluations demonstrate that our MLIC and MLIC+ models achieve state-of-the-art performance, reducing BD-rate by 8.05% and 11.39% on the Kodak dataset compared to VTM-17.0 when measured in PSNR.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-end optimized image compression with competition of prior distributions",
+  "authors": [
+   "Benoit Brummer",
+   "Christophe De Vleeschouwer"
+  ],
+  "year": 2021,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "doi": "10.1109/cvprw53098.2021.00212",
+  "arxiv": "2111.09172",
+  "openalex": "W3176758896",
+  "cited_by": 7,
+  "abstract": "Convolutional autoencoders are now at the forefront of image compression research. To improve their entropy coding, encoder output is typically analyzed with a second autoencoder to generate per-variable parametrized prior probability distributions. We instead propose a compression scheme that uses a single convolutional autoencoder and multiple learned prior distributions working as a competition of experts. Trained prior distributions are stored in a static table of cumulative distribution functions. During inference, this table is used by an entropy coder as a look-up-table to determine the best prior for each spatial location. Our method offers rate-distortion performance comparable to that obtained with a predicted parametrized prior with only a fraction of its entropy coding and decoding complexity.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Optimized Lossless Hyperspectral Image Compression With Bit Partition",
+  "authors": [
+   "Qizhi Huang",
+   "Zhe Zhang",
+   "Zhenzhong Chen"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+  "doi": "10.1109/tgrs.2026.3667533",
+  "arxiv": null,
+  "openalex": "W7131290969",
+  "cited_by": 2,
+  "abstract": "Lossless compression of hyperspectral images (HSI) is crucial in applications such as scientific archiving, geological exploration, and material identification, where spectral fidelity must be strictly preserved. However, the extremely high bit-depth and strong spectral redundancy of HSI make existing learning-based image compression methods mainly designed for RGB images ineffective, as they fail to model high-dimensional dependencies and suffer from inefficiency under high bit-depth sampling. To address these challenges, we propose LHIC-BP, the first end-to-end optimized lossless compression framework specifically tailored for hyperspectral data. The core idea is to optimize bitrate directly through conditional probability modeling, using a discrete logistic mixture model to estimate pixel-level probability distributions. To efficiently handle high-bit-depth hyperspectral inputs, LHIC-BP introduces a bit partition strategy that decomposes the image into Most Significant Plane (MSP) and Least Significant Plane (LSP). The MSP captures dominant intensity structures with low complexity, while the LSP retains fine-grained residual details that require stronger contextual modeling. To further enhance compression efficiency, we design a dedicated entropy model that leverages both spatial and spectral priors to refine conditional probability estimation for MSP and LSP. In the spatial dimension, a Parallel Spatial Condition Aggregation Module is introduced to efficiently eliminate local redundancy. Meanwhile, in the spectral dimension, an RWKV-guided Spectral Condition Extraction Module is used to capture long-range inter-band dependencies with linear complexity. Extensive experiments on the HyspecNet-11K datasets show that LHIC-BP consistently surpasses state-of-the-art methods, achieving superior compression ratios and validating its effectiveness for hyperspectral lossless compression.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image Compression Based on Compressive Sensing: End-to-End Comparison With JPEG",
+  "authors": [
+   "Xin Yuan",
+   "Raziel Haimi-Cohen"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Multimedia",
+  "doi": "10.1109/tmm.2020.2967646",
+  "arxiv": "1706.01000",
+  "openalex": "W2999283151",
+  "cited_by": 90,
+  "abstract": "We present an end-to-end image compression system based on compressive sensing. The presented system integrates the conventional scheme of compressive sampling (on the entire image) and reconstruction with quantization and entropy coding. The compression performance, in terms of decoded image quality versus data rate, is shown to be comparable with JPEG and significantly better at the low rate range. We study the parameters that influence the system performance, including (i) the choice of sensing matrix, (ii) the trade-off between quantization and compression ratio, and (iii) the reconstruction algorithms. We propose an effective method to select, among all possible combinations of quantization step and compression ratio, the ones that yield the near-best quality at any given bit rate. Furthermore, our proposed image compression system can be directly used in the compressive sensing camera, e.g., the single pixel camera, to construct a hardware compressive sampling system.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Efficient End-To-End Image Compression Transformer",
+  "authors": [
+   "Afsana Ahsan Jeny",
+   "Masum Shah Junayed",
+   "Md Baharul Islam"
+  ],
+  "year": 2022,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip46576.2022.9897663",
+  "arxiv": null,
+  "openalex": "W4308237909",
+  "cited_by": 3,
+  "abstract": "Image and video compression received significant research attention and expanded their applications. Existing entropy estimation-based methods combine with hyperprior and local context, limiting their efficacy. This paper introduces an efficient end-to-end transformer-based image compression model, which generates a global receptive field to tackle the long-range correlation issues. A hyper encoder-decoder-based transformer block employs a multi-head spatial reduction self-attention (MHSRSA) layer to minimize the computational cost of the self-attention layer and enable rapid learning of multi-scale and high-resolution features. A Casual Global Anticipation Module (CGAM) is designed to construct highly informative adjacent contexts utilizing channel-wise linkages and identify global reference points in the latent space for end-to-end rate-distortion optimization (RDO). Experimental results demonstrate the effectiveness and competitive performance of the KODAK dataset.",
+  "source": "openalex"
+ },
+ {
+  "title": "Optimizing Learned Image Compression On Scalar and Entropy-Constraint Quantization",
+  "authors": [
+   "Florian Borzechowski",
+   "Michael Schäfer",
+   "Heiko Schwarz",
+   "Jonathan Pfaff",
+   "Detlev Marpe",
+   "Thomas Wiegand"
+  ],
+  "year": 2024,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip51287.2024.10648254",
+  "arxiv": "2506.08662",
+  "openalex": "W4402915979",
+  "cited_by": 1,
+  "abstract": "The continuous improvements on image compression with variational autoencoders have lead to learned codecs competitive with conventional approaches in terms of rate-distortion efficiency. Nonetheless, taking the quantization into account during the training process remains a problem, since it produces zero derivatives almost everywhere and needs to be replaced with a differentiable approximation which allows end-to-end optimization. Though there are different methods for approximating the quantization, none of them model the quantization noise correctly and thus, result in suboptimal networks. Hence, we propose an additional finetuning training step: After conventional end-to-end training, parts of the network are retrained on quantized latents obtained at the inference stage. For entropy-constraint quantizers like Trellis-Coded Quantization, the impact of the quantizer is particularly difficult to approximate by rounding or adding noise as the quantized latents are interdependently chosen through a trellis search based on both the entropy model and a distortion measure. We show that retraining on correctly quantized data consistently yields additional coding gain for both uniform scalar and especially for entropy-constraint quantization, without increasing inference complexity. For the Kodak test set, we obtain average savings between $1 \\%$ and $2 \\%$, and for the TecNick test set up to $2.2 \\%$ in terms of Bjøntegaard-Delta bitrate.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image-Dependent Local Entropy Models for Learned Image Compression",
+  "authors": [
+   "David C. Minnen",
+   "George D. Toderici",
+   "Saurabh Singh",
+   "Sung Jin Hwang",
+   "Michele Covell"
+  ],
+  "year": 2018,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip.2018.8451502",
+  "arxiv": "1805.12295",
+  "openalex": "W2805673305",
+  "cited_by": 36,
+  "abstract": "The leading approach for image compression with artificial neural networks (ANNs) is to learn a nonlinear transform and a fixed entropy model that are optimized for rate-distortion performance. We show that this approach can be significantly improved by incorporating spatially local, image-dependent entropy models. The key insight is that existing ANN-based methods learn an entropy model that is shared between the encoder and decoder, but they do not transmit any side information that would allow the model to adapt to the structure of a specific image. We present a method for augmenting ANN-based image coders with image-dependent side information that leads to a 17.8% rate reduction over a state-of-the-art ANN-based baseline model on a standard evaluation set, and 70-98% reductions on images with low visual complexity that are poorly captured by a fixed, global entropy model.",
+  "source": "openalex"
+ },
+ {
+  "title": "An End-to-End Compression Framework Based on Convolutional Neural Networks",
+  "authors": [
+   "Feng Jiang",
+   "Tao Wen",
+   "Shaohui Liu",
+   "Jie Ren",
+   "Xun Guo",
+   "Debin Zhao"
+  ],
+  "year": 2017,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2017.2734838",
+  "arxiv": "1708.00838",
+  "openalex": "W2740336064",
+  "cited_by": 235,
+  "abstract": "Deep learning, e.g., convolutional neural networks (CNNs), has achieved great success in image processing and computer vision especially in high-level vision applications, such as recognition and understanding. However, it is rarely used to solve low-level vision problems such as image compression studied in this paper. Here, we move forward a step and propose a novel compression framework based on CNNs. To achieve high-quality image compression at low bit rates, two CNNs are seamlessly integrated into an end-to-end compression framework. The first CNN, named compact convolutional neural network (ComCNN), learns an optimal compact representation from an input image, which preserves the structural information and is then encoded using an image codec (e.g., JPEG, JPEG2000, or BPG). The second CNN, named reconstruction convolutional neural network (RecCNN), is used to reconstruct the decoded image with high quality in the decoding end. To make two CNNs effectively collaborate, we develop a unified end-to-end learning algorithm to simultaneously learn ComCNN and RecCNN, which facilitates the accurate reconstruction of the decoded image using RecCNN. Such a design also makes the proposed compression framework compatible with existing image coding standards. Experimental results validate that the proposed compression framework greatly outperforms several compression frameworks that use existing image coding standards with the state-of-the-art deblocking or denoising post-processing methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Conditional Probability Models for Deep Image Compression",
+  "authors": [
+   "Fabian Mentzer",
+   "Eirikur Agustsson",
+   "Michael Tschannen",
+   "Radu Timofte",
+   "Luc Van Gool"
+  ],
+  "year": 2018,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2018.00462",
+  "arxiv": "1801.04260",
+  "openalex": "W2782637256",
+  "cited_by": 499,
+  "abstract": "Deep Neural Networks trained as image auto-encoders have recently emerged as a promising direction for advancing the state-of-the-art in image compression. The key challenge in learning such networks is twofold: To deal with quantization, and to control the trade-off between reconstruction error (distortion) and entropy (rate) of the latent image representation. In this paper, we focus on the latter challenge and propose a new technique to navigate the rate-distortion trade-off for an image compression auto-encoder. The main idea is to directly model the entropy of the latent representation by using a context model: A 3D-CNN which learns a conditional probability model of the latent distribution of the auto-encoder. During training, the auto-encoder makes use of the context model to estimate the entropy of its representation, and the context model is concurrently updated to learn the dependencies between the symbols in the latent representation. Our experiments show that this approach, when measured in MS-SSIM, yields a state-of-the-art image compression system based on a simple convolutional auto-encoder.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning Accurate Entropy Model with Global Reference for Image Compression",
+  "authors": [
+   "Yichen Qian",
+   "Zhiyu Tan",
+   "Xiuyu Sun",
+   "Ming Lin",
+   "Dongyang Li",
+   "Zhenhong Sun",
+   "Hao Li",
+   "Rong Jin"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2010.08321",
+  "arxiv": "2010.08321",
+  "openalex": "W3092877102",
+  "cited_by": 60,
+  "abstract": "In recent deep image compression neural networks, the entropy model plays a critical role in estimating the prior distribution of deep image encodings. Existing methods combine hyperprior with local context in the entropy estimation function. This greatly limits their performance due to the absence of a global vision. In this work, we propose a novel Global Reference Model for image compression to effectively leverage both the local and the global context information, leading to an enhanced compression rate. The proposed method scans decoded latents and then finds the most relevant latent to assist the distribution estimating of the current latent. A by-product of this work is the innovation of a mean-shifting GDN module that further improves the performance. Experimental results demonstrate that the proposed model outperforms the rate-distortion performance of most of the state-of-the-art methods in the industry.",
+  "source": "openalex"
+ },
+ {
+  "title": "An end‐to‐end joint learning scheme of image compression and quality enhancement with improved entropy minimization",
+  "authors": [
+   "Jooyoung Lee",
+   "Seung-Hyun Cho",
+   "Munchurl Kim"
+  ],
+  "year": 2024,
+  "venue": "ETRI Journal",
+  "doi": "10.4218/etrij.2023-0275",
+  "arxiv": "1912.12817",
+  "openalex": "W4287978630",
+  "cited_by": 47,
+  "abstract": "Abstract Recently, learned image compression methods based on entropy minimization have achieved superior results compared with conventional image codecs such as BPG and JPEG2000. However, they leverage single Gaussian models, which have a limited ability to approximate various irregular distributions of transformed latent representations, resulting in suboptimal coding efficiency. Furthermore, existing methods focus on constructing effective entropy models, rather than utilizing modern architectural techniques. In this paper, we propose a novel joint learning scheme called JointIQ‐Net that incorporates image compression and quality enhancement technologies with improved entropy minimization based on a newly adopted Gaussian mixture model. We also exploit global context to estimate the distributions of latent representations precisely. The results of extensive experiments demonstrate that JointIQ‐Net achieves remarkable performance improvements in terms of coding efficiency compared with existing learned image compression methods and conventional codecs. To the best of our knowledge, ours is the first learned image compression method that outperforms VVC intra‐coding in terms of both PSNR and MS‐SSIM.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learned Image Compression with Dictionary-Based Entropy Model",
+  "authors": [
+   "Jingbo Lu",
+   "Leheng Zhang",
+   "Xingyu Zhou",
+   "Mu Li",
+   "Wen Li",
+   "Shuhang Gu"
+  ],
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52734.2025.01199",
+  "arxiv": "2504.00496",
+  "openalex": "W4413145954",
+  "cited_by": 32,
+  "abstract": "Learned image compression methods have attracted great research interest and exhibited superior rate-distortion performance to the best classical image compression standards of the present. The entropy model plays a key role in learned image compression, which estimates the probability distribution of the latent representation for further entropy coding. Most existing methods employed hyper-prior and auto-regressive architectures to form their entropy models. However, they only aimed to explore the internal dependencies of latent representation while neglecting the importance of extracting prior from training data. In this work, we propose a novel entropy model named Dictionary-Based Cross Attention Entropy model, which introduces a learnable dictionary to summarize the typical structures occurring in the training dataset to enhance the entropy model. Extensive experimental results have demonstrated that the proposed model strikes a better balance between performance and latency, achieving state-of-the-art results on various benchmark datasets.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lossy Image Compression with Conditional Diffusion Models",
+  "authors": [
+   "Ruihan Yang",
+   "Stephan Mandt"
+  ],
+  "year": 2023,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/075280-2835",
+  "arxiv": "2209.06950",
+  "openalex": "W7133192149",
+  "cited_by": 82,
+  "abstract": "This paper outlines an end-to-end optimized lossy image compression framework using diffusion generative models. The approach relies on the transform coding paradigm, where an image is mapped into a latent space for entropy coding and, from there, mapped back to the data space for reconstruction. In contrast to VAE-based neural compression, where the (mean) decoder is a deterministic neural network, our decoder is a conditional diffusion model. Our approach thus introduces an additional ``content'' latent variable on which the reverse diffusion process is conditioned and uses this variable to store information about the image. The remaining ``texture'' variables characterizing the diffusion process are synthesized at decoding time. We show that the model's performance can be tuned toward perceptual metrics of interest. Our extensive experiments involving multiple datasets and image quality assessment metrics show that our approach yields stronger reported FID scores than the GAN-based model, while also yielding competitive performance with VAE-based models in several distortion metrics. Furthermore, training the diffusion with $\\mathcal{X}$-parameterization enables high-quality reconstructions in only a handful of decoding steps, greatly affecting the model's practicality. Our code is available at: \\url{https://github.com/buggyyang/CDC_compression}",
+  "source": "openalex"
+ },
+ {
+  "title": "Multi-scale and Context-adaptive Entropy Model for Image Compression",
+  "authors": [
+   "Jing Zhou",
+   "Wen, Sihan",
+   "Nakagawa, Akira",
+   "Kazui, Kimihiko",
+   "Tan, Zhiming"
+  ],
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1910.07844",
+  "arxiv": "1910.07844",
+  "openalex": "W2971854868",
+  "cited_by": 28,
+  "abstract": "We propose an end-to-end trainable image compression framework with a multi-scale and context-adaptive entropy model, especially for low bitrate compression. Due to the success of autoregressive priors in probabilistic generative model, the complementary combination of autoregressive and hierarchical priors can estimate the distribution of each latent representation accurately. Based on this combination, we firstly propose a multi-scale masked convolutional network as our autoregressive model. Secondly, for the significant computational penalty of generative model, we focus on decoded representations covered by receptive field, and skip full zero latents in arithmetic codec. At last, according to the low-rate compression's constraint in CLIC-2019, we use a method to maximize MS-SSIM by allocating bitrate for each image.",
+  "source": "openalex"
+ },
+ {
+  "title": "Causal Contextual Prediction for Learned Image Compression",
+  "authors": [
+   "Zongyu Guo",
+   "Zhizheng Zhang",
+   "Runsen Feng",
+   "Zhibo Chen"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3089491",
+  "arxiv": "2011.09704",
+  "openalex": "W3116647679",
+  "cited_by": 165,
+  "abstract": "Over the past several years, we have witnessed impressive progress in the field of learned image compression. Recent learned image codecs are commonly based on autoencoders, that first encode an image into low-dimensional latent representations and then decode them for reconstruction purposes. To capture spatial dependencies in the latent space, prior works exploit hyperprior and spatial context model to build an entropy model, which estimates the bit-rate for end-to-end rate-distortion optimization. However, such an entropy model is suboptimal from two aspects: (1) It fails to capture global-scope spatial correlations among the latents. (2) Cross-channel relationships of the latents remain unexplored. In this paper, we propose the concept of separate entropy coding to leverage a serial decoding process for causal contextual entropy prediction in the latent space. Acausal context modelis proposed that separates the latents across channels and makes use of channel-wise relationships to generate highly informative adjacent contexts. Furthermore, we propose acausal global prediction modelto find global reference points for accurate predictions of undecoded points. Both these two models facilitate entropy estimation without the transmission of overhead. In addition, we further adopt a new group-separated attention module to build more powerful transform networks. Experimental results demonstrate that our full image compression model outperforms standard VVC/H.266 codec on Kodak dataset in terms of both PSNR and MS-SSIM, yielding the state-of-the-art rate-distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Volumetric End-to-End Optimized Compression for Brain Images",
+  "authors": [
+   "Shuo Gao",
+   "Yueyi Zhang",
+   "Dong Liu",
+   "Zhiwei Xiong"
+  ],
+  "year": 2020,
+  "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+  "doi": "10.1109/vcip49819.2020.9301767",
+  "arxiv": null,
+  "openalex": "W3116368165",
+  "cited_by": 8,
+  "abstract": "The amount of volumetric brain image increases rapidly, which requires a vast amount of resources for storage and transmission, so it's urgent to explore an efficient volumetric compression method. Recent years have witnessed the progress of deep learning-based approaches for two-dimensional (2D) natural image compression, but the field of learned volumetric image compression still remains unexplored. In this paper, we propose the first end-to-end learning framework for volumetric image compression by extending the advanced techniques of 2D image compression to volumetric images. Specifically, a convolutional autoencoder is used to compress 3D image cubes, and the non-local attention models are embedded in the convolutional autoencoder to jointly capture local and global correlations. Both hyperprior and autoregressive models are used to perform the conditional probability estimation in entropy coding. To reduce model complexity, we introduce a convolutional long short-term memory network for the autoregressive model based on channel-wise prediction. Experimental results on volumetric mouse brain images show that the proposed method outperforms JPEG2000-3D, HEVC and state-of-the-art 2D methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "Entropy Modeling via Gaussian Process Regression for Learned Image Compression",
+  "authors": [
+   "Maida Cao",
+   "Wenrui Dai",
+   "Shaohui Li",
+   "Chenglin Li",
+   "Junni Zou",
+   "Ying Chen",
+   "Hongkai Xiong"
+  ],
+  "year": 2022,
+  "venue": "DCC",
+  "doi": "10.1109/dcc52660.2022.00024",
+  "arxiv": null,
+  "openalex": "W4283810549",
+  "cited_by": 2,
+  "abstract": "Existing entropy models in learned image compression are cumbersome to generate fixed mean and variance for estimating Gaussian distributions for latent representation. In this paper, we propose a novel entropy model based on Gaussian process regression (GPR) that flexibly predicts the mean of Gaussians with posterior distributions characterized by covari-ance functions spanned in the high-dimensional feature space. Furthermore, we develop the rate-distortion optimization based on the proposed entropy model by approximating the bitrates with the evidence lower bound (ELBO) derived via variational inference for GPR. The proposed model can be seamlessly integrated into existing end-to-end optimized frame-works by substituting the masked convolution based autoregressive models. Experimental results demonstrate that the proposed model outperforms conventional image compression methods such as JPEG2000 and BPG, as well as recent learning based methods on the Kodak dataset in terms of rate-distortion performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "Towards End-to-End Image Compression and Analysis with Transformers",
+  "authors": [
+   "Yuanchao Bai",
+   "Yang Xu",
+   "Xianming Liu",
+   "Junjun Jiang",
+   "Yaowei Wang",
+   "Xiangyang Ji",
+   "Wen Gao"
+  ],
+  "year": 2022,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v36i1.19884",
+  "arxiv": "2112.09300",
+  "openalex": "W4225619305",
+  "cited_by": 68,
+  "abstract": "We propose an end-to-end image compression and analysis model with Transformers, targeting to the cloud-based image classification application. Instead of placing an existing Transformer-based image classification model directly after an image codec, we aim to redesign the Vision Transformer (ViT) model to perform image classification from the compressed features and facilitate image compression with the long-term information from the Transformer. Specifically, we first replace the patchify stem (i.e., image splitting and embedding) of the ViT model with a lightweight image encoder modelled by a convolutional neural network. The compressed features generated by the image encoder are injected convolutional inductive bias and are fed to the Transformer for image classification bypassing image reconstruction. Meanwhile, we propose a feature aggregation module to fuse the compressed features with the selected intermediate features of the Transformer, and feed the aggregated features to a deconvolutional neural network for image reconstruction. The aggregated features can obtain the long-term information from the self-attention mechanism of the Transformer and improve the compression performance. The rate-distortion-accuracy optimization problem is finally solved by a two-step training strategy. Experimental results demonstrate the effectiveness of the proposed model in both the image compression and the classification tasks.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Learnable Multi-Scale Feature Compression for VCM",
+  "authors": [
+   "Yeongwoong Kim",
+   "Hyewon Jeong",
+   "Janghyun Yu",
+   "Younhee Kim",
+   "Jooyoung Lee",
+   "Seyoon Jeong",
+   "Hui Yong Kim"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2023.3302858",
+  "arxiv": "2306.16670",
+  "openalex": "W4385627414",
+  "cited_by": 38,
+  "abstract": "The proliferation of deep learning-based machine vision applications has given rise to a new type of compression, so called video coding for machine (VCM). VCM differs from traditional video coding in that it is optimized for machine vision performance instead of human visual quality. In the feature compression track of MPEG-VCM, multi-scale features extracted from images are subject to compression. Recent feature compression works have demonstrated that the versatile video coding (VVC) standard-based approach can achieve a BD-rate reduction of up to 96% against MPEG-VCM feature anchor. However, it is still sub-optimal as VVC was not designed for extracted features but for natural images. Moreover, the high encoding complexity of VVC makes it difficult to design a lightweight encoder without sacrificing performance. To address these challenges, we propose a novel multi-scale feature compression method that enables both the end-to-end optimization on the extracted features and the design of lightweight encoders. The proposed model combines a learnable compressor with a multi-scale feature fusion network so that the redundancy in the multi-scale features is effectively removed. Instead of simply cascading the fusion network and the compression network, we integrate the fusion and encoding processes in an interleaved way. Our model first encodes a larger-scale feature to obtain a latent representation and then fuses the latent with a smaller-scale feature. This process is successively performed until the smallest-scale feature is fused and then the encoded latent at the final stage is entropy-coded for transmission. The results show that our model outperforms previous approaches by at least 52% BD-rate reduction and has$\\times 5$to$\\times 27$times less encoding time for object detection. It is noteworthy that our model can attain near-lossless task performance with only 0.002-0.003% of the uncompressed feature data size.",
+  "source": "openalex"
+ },
+ {
+  "title": "Practical Full Resolution Learned Lossless Image Compression",
+  "authors": [
+   "Fabian Mentzer",
+   "Eirikur Agustsson",
+   "Michael Tschannen",
+   "Radu Timofte",
+   "Luc Van Gool"
+  ],
+  "year": 2019,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2019.01088",
+  "arxiv": "1811.12817",
+  "openalex": "W2903347507",
+  "cited_by": 231,
+  "abstract": "We propose the first practical learned lossless image compression system, L3C, and show that it outperforms the popular engineered codecs, PNG, WebP and JPEG 2000. At the core of our method is a fully parallelizable hierarchical probabilistic model for adaptive entropy coding which is optimized end-to-end for the compression task. In contrast to recent autoregressive discrete probabilistic models such as PixelCNN, our method i) models the image distribution jointly with learned auxiliary representations instead of exclusively modeling the image distribution in RGB space, and ii) only requires three forward-passes to predict all pixel probabilities instead of one for each pixel. As a result, L3C obtains over two orders of magnitude speedups when sampling compared to the fastest PixelCNN variant (Multiscale-PixelCNN). Furthermore, we find that learning the auxiliary representation is crucial and outperforms predefined auxiliary representations such as an RGB pyramid significantly.",
+  "source": "openalex"
+ },
+ {
+  "title": "DVC: An End-To-End Deep Video Compression Framework",
+  "authors": [
+   "Guo Sheng Lu",
+   "Wanli Ouyang",
+   "Dong Xu",
+   "Xiaoyun Zhang",
+   "Chunlei Cai",
+   "Zhiyong Gao"
+  ],
+  "year": 2019,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr.2019.01126",
+  "arxiv": "1812.00101",
+  "openalex": "W2969260367",
+  "cited_by": 765,
+  "abstract": "Conventional video compression approaches use the predictive coding architecture and encode the corresponding motion information and residual information. In this paper, taking advantage of both classical architecture in the conventional video compression method and the powerful non-linear representation ability of neural networks, we propose the first end-to-end video compression deep model that jointly optimizes all the components for video compression. Specifically, learning based optical flow estimation is utilized to obtain the motion information and reconstruct the current frames. Then we employ two auto-encoder style neural networks to compress the corresponding motion and residual information. All the modules are jointly learned through a single loss function, in which they collaborate with each other by considering the trade-off between reducing the number of compression bits and improving quality of the decoded video. Experimental results show that the proposed approach can outperform the widely used video coding standard H.264 in terms of PSNR and be even on par with the latest standard H.265 in terms of MS-SSIM. Code is released at https://github.com/GuoLusjtu/DVC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Variational image compression with a scale hyperprior",
+  "authors": [
+   "Johannes Ballé",
+   "David C. Minnen",
+   "Singh, Saurabh",
+   "Sung Jin Hwang",
+   "Nick Johnston"
+  ],
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.1802.01436",
+  "arxiv": "1802.01436",
+  "openalex": "W2785562966",
+  "cited_by": 1555,
+  "abstract": "We describe an end-to-end trainable model for image compression based on variational autoencoders. The model incorporates a hyperprior to effectively capture spatial dependencies in the latent representation. This hyperprior relates to side information, a concept universal to virtually all modern image codecs, but largely unexplored in image compression using artificial neural networks (ANNs). Unlike existing autoencoder compression methods, our model trains a complex prior jointly with the underlying autoencoder. We demonstrate that this model leads to state-of-the-art image compression when measuring visual quality using the popular MS-SSIM index, and yields rate-distortion performance surpassing published ANN-based methods when evaluated using a more traditional metric based on squared error (PSNR). Furthermore, we provide a qualitative comparison of models trained for different distortion metrics.",
+  "source": "openalex"
+ },
+ {
+  "title": "3-D Context Entropy Model for Improved Practical Image Compression",
+  "authors": [
+   "Zongyu Guo",
+   "Yaojun Wu",
+   "Runsen Feng",
+   "Zhizheng Zhang",
+   "Zhibo Chen"
+  ],
+  "year": 2020,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "doi": "10.1109/cvprw50498.2020.00066",
+  "arxiv": "2004.08273",
+  "openalex": "W3035294152",
+  "cited_by": 35,
+  "abstract": "In this paper, we present our image compression framework designed for CLIC 2020 competition. Our method is based on Variational AutoEncoder (VAE) architecture which is strengthened with residual structures. In short, we make three noteworthy improvements here. First, we propose a 3-D context entropy model which can take advantage of known latent representation in current spatial locations for better entropy estimation. Second, a light-weighted residual structure is adopted for feature learning during entropy estimation. Finally, an effective training strategy is introduced for practical adaptation with different resolutions. Experiment results indicate our image compression method achieves 0.9775 MS-SSIM on CLIC validation set and 0.9809 MS-SSIM on test set.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End Deep ROI Image Compression",
+  "authors": [
+   "Hiroaki Akutsu",
+   "Takahiro Naruko"
+  ],
+  "year": 2020,
+  "venue": "IEICE Transactions on Information and Systems",
+  "doi": "10.1587/transinf.2019edp7264",
+  "arxiv": null,
+  "openalex": "W3023951674",
+  "cited_by": 4,
+  "abstract": "In this paper, we present the effectiveness of image compression based on a convolutional auto encoder (CAE) with region of interest (ROI) for quality control. We propose a method that adapts image quality for prioritized parts and non-prioritized parts for CAE-based compression. The proposed method uses annotation information for the distortion weights of the MS-SSIM-based loss function. We show experimental results using a road damage image dataset that is used to check damaged parts and an image dataset with segmentation data (ADE20K). The experimental results reveals that the proposed weighted loss function with CAE-based compression from F. Mentzer et al. learns some characteristics and preferred bit allocations of the prioritized parts by end-to-end training. In the case of using road damage image dataset, our method reduces bpp by 31% compared to the original method while meeting quality requirements that an average weighted MS-SSIM for the road damaged parts be larger than 0.97 and an average weighted MS-SSIM for the other parts be larger than 0.95.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-End RGB-IR Joint Image Compression with Channel-Wise Cross-Modality Entropy Model",
+  "authors": [
+   "Haofeng Wang",
+   "Fangtao Zhou",
+   "Qi Zhang",
+   "Tiange Zhang",
+   "Jiayu Chen",
+   "Xiaofeng Huang",
+   "Zhao Wang",
+   "Siwei Ma"
+  ],
+  "year": 2026,
+  "venue": "DCC",
+  "doi": "10.1109/dcc66757.2026.00097",
+  "arxiv": "2506.21851",
+  "openalex": "W4416260482",
+  "cited_by": 2,
+  "abstract": "RGB-IR(RGB-Infrared) image pairs are frequently applied simultaneously in various applications like intelligent surveillance. However, as the number of modalities increases, the required data storage and transmission costs also double. Therefore, efficient RGB-IR data compression is essential. This work proposes a joint compression framework for RGB-IR image pair. Specifically, to fully utilize cross-modality prior information for accurate context probability modeling within and between modalities, we propose a Channel-wise Cross-modality Entropy Model (CCEM). Among CCEM, a Low-frequency Context Extraction Block (LCEB) and a Low-frequency Context Fusion Block (LCFB) are designed for extracting and aggregating the global low-frequency information from both modalities, which assist the model in predicting entropy parameters more accurately. Experimental results demonstrate that our approach outperforms existing RGB-IR image pair and single-modality compression methods on LLVIP and KAIST datasets. For instance, the proposed framework achieves a 23.1% bit rate saving on LLVIP dataset compared to the state-of-the-art RGB-IR image codec presented at CVPR 2022.",
+  "source": "openalex"
+ },
+ {
+  "title": "End-to-end optimization of nonlinear transform codes for perceptual quality",
+  "authors": [
+   "Johannes Ballé",
+   "Valero Laparra",
+   "Eero P. Simoncelli"
+  ],
+  "year": 2016,
+  "venue": "Picture Coding Symposium",
+  "doi": "10.1109/pcs.2016.7906310",
+  "arxiv": "1607.05006",
+  "openalex": "W2490784316",
+  "cited_by": 265,
+  "abstract": "We introduce a general framework for end-to-end optimization of the rate-distortion performance of nonlinear transform codes assuming scalar quantization. The framework can be used to optimize any differentiable pair of analysis and synthesis transforms in combination with any differentiable perceptual metric. As an example, we consider a code built from a linear transform followed by a form of multi-dimensional local gain control. Distortion is measured with a state-of-the-art perceptual metric. When optimized over a large database of images, this representation offers substantial improvements in bitrate and perceptual appearance over fixed (DCT) codes, and over linear transform codes optimized for mean squared error.",
+  "source": "openalex"
+ },
+ {
+  "title": "Learning True Rate-Distortion-Optimization for End-To-End Image Compression",
+  "authors": [
+   "Fabian Brand",
+   "Kristian Fischer",
+   "Alexander Kopte",
+   "André Kaup"
+  ],
+  "year": 2022,
+  "venue": "DCC",
+  "doi": "10.1109/dcc52660.2022.00054",
+  "arxiv": "2201.01586",
+  "openalex": "W4283821816",
+  "cited_by": 6,
+  "abstract": "Even though rate-distortion optimization is a crucial part of traditional image and video compression, not many approaches exist which transfer this concept to end-to-end-trained image compression. Most frameworks contain static compression and decompression models which are fixed after training, so efficient rate-distortion optimization is not possible. In a previous work, we proposed RDONet [1], which enables an RDO approach comparable to adaptive block partitioning in HEVC. In this paper, we enhance the training and boost the model performance by introducing low-complexity estimations of the RDO result into the training. It is well known that the setup during the training should be as close as possible to the setup during inference. Since including an RDO search into the training is computationally not feasible, we propose a fast variance-based criterion which we can use to approximate the RDO behavior during training. Additionally, we use the same criterion to propose a variance-adaptive RDO initialization which converges faster, needs fewer RDO passes. We can therefore decrease the inference runtime significantly. With our novel training method, we achieve average Bjøntegaard rate savings of 19.6% in MS-SSIM over the previous RDONet model [1], which equals rate savings of 27.3% over a comparable conventional deep image coder, similar to [2]. With our novel initialization method, we can reduce the number of RDO passes to one. Therefore, we need only half the time for RDO, while still saving 26.8% rate. When we do not perform an RDO search but instead only rely on the initial estimation, we still obtain remarkable rate-savings of 23.6%, needing no additional time for an RDO search. The full paper is available on arXiv [3].",
+  "source": "openalex"
+ }
+]

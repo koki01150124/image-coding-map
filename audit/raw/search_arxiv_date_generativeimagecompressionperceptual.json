@@ -1,0 +1,729 @@
+[
+ {
+  "title": "CLEAR: Color-Texture Latent Alignment for Single Image Reflection Removal",
+  "authors": [
+   "Tu Vo",
+   "Sheir A. Zaheer",
+   "Chan Y. Park"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.05969",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Single Image Reflection Removal (SIRR) seeks to recover the transmitted scene from a photograph captured through glass. Recent latent restoration methods use pretrained generative priors, but many recover detail by feeding high-frequency features from the degraded input back into the decoder. This works for degradations such as blur, noise, or haze, where input detail mostly belongs to the scene. It is less suitable for SIRR, where reflections add a second structured layer: directly reusing the input's skip connections can sharpen the image while also bringing reflection edges back. Latent compression also introduces color drift and fine-detail loss. We propose CLEAR (Color-Texture LatEnt Alignment for Single Image Reflection Removal), a deterministic, single-timestep, non-iterative latent framework that uses a pretrained latent diffusion backbone as a natural-image prior. A physics-guided separator organizes the prediction around the transmission, reflection, and residue formation model and outputs coarse layer latents in one forward pass. The Hybrid Feature Alignment Module (HFAM) then treats input-derived skips as contaminated layer-mixture features. It rectifies their high-frequency content with a clean-transmission-aligned color query, learned from the input features themselves under ground-truth feature supervision, keeping transmission-consistent texture while attenuating reflection-colored detail. CLEAR achieves the best average across fidelity and perceptual metrics on six real-world benchmarks and the lowest LPIPS on every dataset, with the largest gains on the hardest benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space",
+  "authors": [
+   "Wenjie Li",
+   "Du Chen",
+   "Hui Wang",
+   "Linlong Fan",
+   "Youwei Lv",
+   "Zeyi Chen",
+   "Zehan Chen",
+   "Jinwei Chen",
+   "Heng Guo",
+   "Zhanyu Ma",
+   "Qingnan Fan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.35515",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion-based real-world image super-resolution suffers from limited reconstruction fidelity due to information loss in VAE-based latent representations. Recently, pixel-space diffusion models offer a promising high-faithfulness alternative by avoiding latent compression, but adapting them to Real-ISR remains challenging due to inherent patch boundary artifacts and degraded generative capability. To address the issues and maximize the potential of pretrained pixel-space diffusion models, we propose HiFiPix, a pixel-space Real-ISR framework capable of ultra high-fidelity reconstruction and fine-grained visual generation effects. To suppress patch boundary artifacts, we penalize unrealistic high-frequency periodic components with a Cross-Scale Wavelet Discriminator (CWSD) for image-level supervision, and Mixup Contrastive Self-Distillation (MixCSD) for intermediate representation regularization. Furthermore, we uncover a heterogeneous generation-fidelity trade-off across low-rank adapters (LoRA) and propose Selective LoRA Pruning (LoRA-SP) to adaptively prune LoRA layers, enhancing generative capability with minimal deterioration of reconstruction fidelity. Extensive experiments demonstrate that HiFiPix consistently outperforms existing state-of-the-art latent space methods in terms of both restoration accuracy and perceptual quality by a large margin. Code and models will be released.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Rethinking Video Autoencoders for Interactive World Models",
+  "authors": [
+   "Adrien Ramanana Rahary",
+   "Yutong Bai",
+   "Nicolas Dufour",
+   "Patrick Pérez",
+   "David Picard"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.30129",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often reuse the autoencoders of text-to-video generators, built for offline generation with no agent waiting and, without their training data and code, not retrainable at another compression. We therefore ask how, where and how much a world model should compress. We build CADRE, an open family of causal diffusion representation autoencoders spanning multiple spatio-temporal compressions. Its members differ only in a small bottleneck on frozen features and share a diffusion decoder self-distilled to one or a few steps. We train the same world model on each autoencoder in two domains, manipulation and navigation, with two environments each. CADRE forms most of the latency-quality frontier, especially with a moving camera. Our study also leads to four findings. At strong compression, a diffusion decoder is sharper than perceptual regression. In robot manipulation, temporal compression is more effective in the autoencoder than in the world model. Manipulation and navigation call for opposite compressions: temporal compression costs little when the camera is still, and spatial compression when it moves. Surprisingly, with a still camera, coarser spatial tokens hurt motion far more than image quality. Code, models and a live demo are at https://kyutai.org/blog/2026-10-21-cadre",
+  "source": "arxiv"
+ },
+ {
+  "title": "Efficient Generative Image Compression with Quantized Latents Refinement",
+  "authors": [
+   "Hao Cao",
+   "Yinhuan Huang",
+   "Wenqi Guo",
+   "Zhijin Qin",
+   "Jungong Han"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29691",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative image compression (GIC) delivers strong perceptual quality at low bitrates. However, GIC methods with strong perceptual quality often rely on pretrained diffusion models with high latency, while recent lightweight GIC methods reduce latency but deliver lower perceptual quality. We observe that, for lightweight GIC methods at low bitrates, coarse deterministic quantization can collapse nearby encoder latents corresponding to different fine details to the same point, making these details difficult to recover. Motivated by this, we propose GR-GIC, an efficient GIC that delivers competitive reconstruction performance with fast inference. For better performance, we introduce Guided Refinement (GR), which combines latent refinement guided by entropy context with adaptive perturbations for training regularization, jointly improving reconstruction at low bitrates. For fast inference, we introduce reorganized projected residual vector quantization (P-RVQ), which equivalently reorganizes residual updates into low-dimensional lookups to expose greater parallelism and reduce sequential computation. Experiments on Kodak show that for performance, compared with OneDC, GR-GIC achieves BD-rate savings of 23.19%, 37.71%, 22.30%, and 22.14% for LPIPS, DISTS, PSNR, and FID, respectively. For fast inference, the highly optimized implementation of GR-GIC encodes and decodes in 4.60 and 5.98 ms on an NVIDIA A100. Specifically, the reorganized P-RVQ implementation achieves a $3.14\\times$ average speedup over the original implementation under the same FP32 setting. On an NVIDIA Jetson Orin NX, GR-GIC achieves latency comparable to lightweight GIC methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PerQ: Inverse Generative Modeling for Neural Image Compression via Quantization Error Compensation",
+  "authors": [
+   "Tianhao Peng",
+   "Ho Man Kwan",
+   "Fan Zhang",
+   "Shan Liu",
+   "Dave Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27374",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Neural image codecs face a fundamental trade-off between pixel fidelity and perceptual quality. Distortion-optimized codecs preserve pixel-wise fidelity but produce blurred reconstructions at low bitrates, whereas generative codecs leverage learned priors to improve perceptual quality but tend to exhibit saturating PSNR at higher bitrates and require separate models for different bitrate targets. We propose PerQ, which reframes perceptual reconstruction as inverse generative modeling with bounded support. Specifically, we define the quantization cell as the set of latents that yield the same transmitted symbols and derive a transport bound showing that reconstructions from this cell remain within a rate-determined radius of the codec output. This motivates performing generative reconstruction within the codec-induced quantization cell, rather than sampling from an unconstrained image prior. PerQ implements this principle by attaching a rate-conditioned flow-matching compensator to a frozen, multi-rate distortion-optimized backbone, enabling perceptual enhancement while preserving the backbone's coding performance. Experiments on Kodak and CLIC2020 show that PerQ achieves perceptual performance comparable to generative codecs such as MS-ILLM in LPIPS and FID, while maintaining competitive PSNR relative to distortion-optimized codecs such as ELIC. A single model checkpoint supports a wide bitrate range with fast decoding, and the compensator provides consistent gains across three different backbones. The implementation is available at https://jasminepp.github.io/PerQ/.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BiNar: Bitstream Native Restorer for Bitstream-corrupted Image Restoration",
+  "authors": [
+   "Fangcheng Li",
+   "Zhen Yu",
+   "Kejun Wu",
+   "Tianyi Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.24094",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Bitstream-corrupted image restoration (BCIR) aims to reconstruct faithful images from corrupted compressed bitstreams. However, corruption occurs in bitstream-domain may lead to unpredictable error propagation and distortion amplification in pixel-domain, and even result in complete undecodability by standard decoders, posing significant challenge to existing image restoration paradigms. To address this challenge, we propose Bitstream Native Restorer (BiNar), a generative restoration framework that leverages fine-grained bitstream-native semantics to guide bitstream-corrupted image restoration. In BiNar, Bitstream Semantic Modeling (BSeM) extracts robust informative semantics and models sequential bytes directly from corrupted bitstream, enabling to generate fine-grained bitstream descriptions without relying on pixel decoding. Based on the descriptions,the Corruption-adaptive Multimodal Semantic Aggregation (CMSA) further extracts adaptive visual modal cues in decoded corrupted images and aggregates to bitstream descriptions. The multimodal aggregated fine-grained descriptions can serve as coherent restoration guidance. Finally, Blind Corruption Localization (BCoL) exploits the segmentation prior of visual foundation models to identify and locate error regions that requires recovery in corrupted images. The located error regions and the fine-grained descriptions jointly serve as visual prompt and language prompt of diffusion models image restoration, respectively. Extensive experiments under diverse bitstream corruption conditions show that BiNar outperforms all State-of-the-arts image restoration models regardless of perceptual quality or objective quality. Ablation studies demonstrate the effectiveness of fine-grained bitstream-native semantics in BCIR task.",
+  "source": "arxiv"
+ },
+ {
+  "title": "H-DDCM: Hadamard Codebooks for Fast Generative Image and Video Compression",
+  "authors": [
+   "Or Ronai",
+   "Vladimir Kulikov",
+   "Tomer Michaeli"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.18125",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Training-free diffusion-based compression methods repurpose the generative priors of a diffusion or a flow model to compress data without retraining them as task-specific codecs. Recent codebook-based approaches such as Turbo-DDCM achieve strong perceptual quality at ultra-low bitrates, but their reliance on dense Gaussian codebooks remains costly in both memory and computation, and scales poorly with the large latent dimensions of modern image and video generators. Their combinatorial bitstream encoding further becomes computationally heavy at this scale. We introduce H-DDCM, a scalable generative compression framework that replaces Gaussian codebooks with implicit randomized Hadamard dictionaries. The fast Walsh-Hadamard transform allows for implicitly synthesizing full-dimensional dictionaries with $O(d \\log d)$ compute for projection and reconstruction and $O(d)$ memory, without materializing the full-dimensional dictionary. We further introduce an efficient table-free lexicographic coding scheme that makes combinatorial encoding practical at larger dimensions. Beyond images, we adapt the framework to an autoregressive video flow model and develop a streaming compression scheme that periodically re-encodes recently reconstructed frames into a fresh KV-cache prefix, preserving temporal context across segments at no additional transmitted bits. This enables long-form, close to real-time generative video compression on a single GPU. Across image and video benchmarks, H-DDCM achieves competitive rate-distortion-perception performance while substantially reducing the memory and computational overhead of codebook-based training-free generative compression.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ProxyEraseAgent: Blind Watermark Removal in the Wild",
+  "authors": [
+   "Jun Yao",
+   "Chao Wang",
+   "Yupeng Qiu",
+   "Zehua Ma",
+   "Weiming Zhang",
+   "Bin Liu",
+   "Han Fang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.11290",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Invisible image watermark removal has received growing attention. Despite substantial progress, existing attacks face a tension between practicality and specificity. Attacks exploiting detector outputs, decoder responses, or paired images can be tailored to the watermark decision boundary, but require information rarely available in realistic scenarios. Conversely, attacks based on compression, geometric distortion, or reconstruction are easily deployed from a single watermarked image, but remain largely open-loop: they apply generic transformations without knowing if the image is moving toward watermark failure. Thus, the key challenge in single-image blind watermark removal is not merely how to transform the image, but how to obtain a useful removal direction without accessing the hidden decoder. To bridge this gap, we propose ProxyEraseAgent, an agent-driven framework recovering attack specificity through proxy decoder responses. Publicly available watermarking schemes provide a natural knowledge base of candidate decoders, where some are informative for a given unknown image. Our insight is that a decoder producing a strong calibrated response to the query image likely shares a nearby decoding boundary with the hidden target mechanism. ProxyEraseAgent ranks these decoders by calibrated response strength and uses the top ones as proxy boundary estimators. Their responses then guide a progressive search over heterogeneous removal operations (e.g., geometric distortion, JPEG compression, image reconstruction, and gradient perturbation) under perceptual-quality constraints. Experiments across 11 watermarking systems show ProxyEraseAgent achieves a 94.8% attack success rate, demonstrating the effectiveness of response-guided proxy retrieval and feedback-driven sequential planning for blind watermark removal.",
+  "source": "arxiv"
+ },
+ {
+  "title": "JLD: Perceptual Distance Through A Jacobian Lens",
+  "authors": [
+   "Shreshth Saini",
+   "Balu Adsumilli",
+   "Alan C. Bovik"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.05967",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Image compression, restoration, and generation all require a way to measure how different two images look to a person. Pixel error ignores how people see, while the most accurate perceptual distances are typically fitted to human judgments, tying them to a fixed data and resolution. For example, when image resolution is doubled, the correlation of DISTS with human scores on TID2013 drops from 0.815 to 0.717. We introduce the Jacobian Lens Distance (JLD), which derives its perceptual geometry from a frozen vision encoder rather than from human labels. JLD combines the locality of early patch features with the perceptual sensitivity captured by later encoder representations. Specifically, we use the encoder Jacobian to identify directions in the early feature space that most strongly affect the encoder output, producing a fixed metric tensor, $E[J^\\top J]$, which we call the Jacobian lens. The lens is fitted only once from 100 unlabeled images, taking about 35 seconds. Locally, this construction defines a pullback metric in pixel space, giving JLD a clear geometric interpretation that can be directly analyzed on real images. Across four standard perceptual databases, JLD achieves state-of-the-art performance and consistently outperforms LPIPS, DISTS, PieAPP, and DreamSim. JLD is also robust to changes in image resolution, on TID2013, its lens-term correlation remains nearly unchanged when the resolution is doubled, decreasing only from 0.850 to 0.845. We further introduce JLD-fast, which is $4\\times$ faster than LPIPS-VGG while achieving a mean correlation of 0.911. Finally, JLD naturally extends to video, reaching a correlation of 0.786 on Waterloo IVC 4K compared with 0.611 for VMAF.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResARC: Residual-Aware AutoRegressive Coding for Ultra-Low Bitrate Image Compression",
+  "authors": [
+   "Qin Yan",
+   "Ruixiao Dong",
+   "Yutao Xie",
+   "Li Li",
+   "Ying Chen",
+   "Kai Li",
+   "Daowen Li",
+   "Houqiang Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.39451",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Progressive autoregressive image codecs provide an appealing paradigm for generative compression by quantizing continuous latents into discrete tokens, transmitting coarse-to-fine prefix tokens and generating the remaining suffix tokens at the decoder. However, their reconstruction quality is fundamentally limited by two residuals introduced along this pipeline: the quantization residual, arising from information loss during discrete tokenization, and the generation residual, resulting from imperfect autoregressive generation of the suffix tokens. To address these limitations, we introduce ResARC, a residual-aware autoregressive codec that explicitly compensates for both residuals at the decoder. Specifically, we generate the quantization residual with a diffusion transformer conditioned on the autoregressive decoding context, while requiring no additional side information. In parallel, we compute the generation residual at the encoder and employ a learned Generation Residual Codec to efficiently compress and transmit it for decoder-side correction. The recovered residuals are then integrated with the reconstructed latent representation and decoded through an adapted VAE decoder. Extensive experiments demonstrate that ResARC achieves competitive perceptual similarity while substantially improving distributional fidelity over leading generative codecs across the ultra-low bitrate regime. Code and models will be released soon.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Gen2-VC: Unlocking Generative Priors for Video Compression",
+  "authors": [
+   "Yinhuan Huang",
+   "Jingkai Ying",
+   "Pu Chen",
+   "Zhijin Qin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.34725",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Under stringent bitrate constraints, existing video codecs struggle to balance source fidelity and perceptual realism. Distortion-oriented codecs often oversmooth details, while generative codecs risk introducing content and structural deviations and rely on codec-specific designs. This motivates a question: Can existing codecs achieve a better distortion--perception trade-off through simple, reusable adaptation? Our insight is that native codec reconstructions provide a shared interface through which generative refinement is anchored to source content while remaining decoupled from codec-specific representations. We therefore propose Gen2-VC, a generative video compression framework that enhances the outputs of learned and conventional codecs with a pretrained video prior, leaving their bitstreams and reference update processes unchanged. With the codec, VAE, and generative backbone frozen, lightweight LoRA adapters refine codec reconstruction through single-frame spatial adaptation followed by multi-frame temporal adaptation with the video prior. Using Wan2.1-T2V-1.3B, Gen2-VC-DCVC-UF outperforms previous leading codecs in LPIPS/DISTS and, to our knowledge, is the first generative video codec to surpass VTM-23.0 in both PSNR and MS-SSIM at low bitrates, based on BD-rates averaged over six datasets. Compared to VTM-23.0, it reduces bitrate by an average of 86.65% and 94.24% at matched LPIPS and DISTS, respectively. Adapters trained only on DCVC-UF improve perceptual quality on DCVC-RT, ECM, VTM, and HM without retraining.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Image Compression Using Quantum Wavelet Transform and Quantum Convolutional Networks",
+  "authors": [
+   "Harshdeep Jadhav",
+   "Sreeraj Rajan Warrier",
+   "Jayasri Dontabhaktuni"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.28387",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This paper presents a hybrid quantum-classical framework for grayscale image compression and decompression, leveraging the strengths of quantum computing and deep learning. The compression pipeline integrates a Variational Quantum Daubechies Wavelet Transform (V-QDWT) and a trainable Quantum Convolutional Neural Network (QCNN) optimized end-to-end to achieve efficient, image-adaptive multi-resolution analysis and entanglement-based feature reduction. Input images are encoded using the Normal Arbitrary Superposition State (NASS) representation, enabling compact and scalable quantum storage. For decompression, we implement inverse QCNN and V-QDWT circuits to reconstruct coarse image features natively, followed by a classical Super-Resolution Generative Adversarial Network (SRGAN) to enhance perceptual quality. Experimental evaluations on benchmark grayscale datasets demonstrate the efficacy of our hybrid approach. By jointly training the quantum layers, the base quantum pipeline closely rivals classical JPEG2000 standards. Subsequent SRGAN refinement substantially pushes the boundaries of the reconstruction, achieving superior structural fidelity (PSNR: 30.0667 dB, SSIM: 0.8744, Histogram Correlation: 0.9244). Histogram analysis and qualitative comparisons further validate the restoration of fine textures and intensity distributions. Our findings highlight the potential of combining variational quantum compression with classical deep learning to enable efficient, scalable, and perceptually-aware image processing in quantum-enhanced computing environments.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SpaceDiffusion: Over-the-Orbit Diffusion for Space Generate-and-Forward Communications",
+  "authors": [
+   "Jianhao Huang",
+   "Zhanwei Wang",
+   "Khaled B. Letaief",
+   "Kaibin Huang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.20899",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Satellite communications are an essential component of sixth-generation (6G) mobile networks, which provide ubiquitous connectivity for global services. However, the satellite uplink remains a critical bottleneck for ground devices: their limited transmit power and antenna apertures result in low data rates and high packet errors. To overcome this bottleneck, this paper advocates a novel relaying paradigm termed generate-and-forward (GF) communications, where satellites exploit on-orbit generative artificial intelligence (AI) to robustly reconstruct corrupted data prior to forwarding. Specifically, we propose SpaceDiffusion, an over-the-orbit diffusion framework for satellite-assisted image transmission. The core of this framework is a channel-distortion-aware diffusion theory developed using the following approach. By formulating the recovery of compressed and lost image tokens as an inverse problem, this theory incorporates a channel-distortion correction term directly into the conventional denoising diffusion implicit model (DDIM) update. As a result, this design enables a single pretrained diffusion model to adapt dynamically to varying packet-loss patterns and compression distortions without retraining. Furthermore, we analytically characterize the progressive token-reconstruction error and derive a diffusion-step activation threshold that predicts when SpaceDiffusion is expected to outperform conventional decode-and-forward (DF) relaying. Building on these theoretical insights, we further develop an energy-aware early-exit policy to efficiently deploy SpaceDiffusion in orbit. Experimental results demonstrate that SpaceDiffusion achieves lower end-to-end latency compared to DF scheme with retransmission protocol and saves approximately 15 dB of uplink transmit power at a target perceptual quality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "An Overview of Rate-Distortion-Perception Theory",
+  "authors": [
+   "Jun Chen",
+   "Ashish Khisti"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.15580",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "This paper provides a comprehensive overview of the rate-distortion-perception framework, tracing its evolution from mathematical theory to practical deployment. We review the mathematical definition of the the mathematical definition of the Blau--Michaeli function and the associated coding theorems, examine computational methods for its evaluation, and discuss alternative formulations of the framework. Operational principles and design guidelines for modern image and video coding are also presented, highlighting the rate-distortion-perception framework as a rigorous foundation for developing next-generation perceptual compression systems.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Foundation Models for Generalizable Semantic and Goal-Oriented Communication",
+  "authors": [
+   "Boliang Liu",
+   "Wint Yi Poe",
+   "Riccardo Trivisonno",
+   "Giuseppe Caire"
+  ],
+  "year": 2026,
+  "venue": "2026 IEEE International Conference on Communications (ICC), pp. 1-6, 2026",
+  "doi": "10.1109/icc59461.2026.11588119",
+  "arxiv": "2609.07853",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic and goal-oriented communication is increasingly studied for 6G, but generalization beyond seen data remains a key weakness under tight rate budgets. Many existing systems overfit their training data and degrade sharply at very low bit rates because they attempt to compress the entire signal. We introduce Foundation Model-Guided Semantic and Goal-Oriented Communication (FMSGOC), a framework that uses broad visual-linguistic Foundation Model priors to mitigate overfitting. It further improves rate efficiency by concentrating bits on sparse, goal-aligned anchors and relying on generative foundation-model priors to reconstruct the masked regions. By decoupling what to send from how to reconstruct, a vision-language foundation model selects and transmits a sparse set of semantic anchors, while a pretrained diffusion model, fine-tuned for masked completion, reconstructs the image at the receiver. In our experiments, FMSGOC reaches 0.039 bits per pixel (BPP), maintains high semantic fidelity (cosine similarity 0.87-0.90 on CIFAR-10), remains robust on previously unseen inputs (0.83-0.86 on ImageNet), and shows good perceptual similarity (0.1278/0.1558, CIFAR-10/ImageNet), outperforming strong end-to-end baselines at lower bit rates.",
+  "source": "arxiv"
+ },
+ {
+  "title": "From Explicit References to Scene Manifolds: Distributional Fidelity and Realism for Radiance Field Quality Assessment",
+  "authors": [
+   "Saeed Mahmoudpour",
+   "Gi-Mun Um",
+   "Hyon-Gon Choo",
+   "Peter Schelkens"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.07346",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Radiance field representations such as 3D Gaussian Splatting (3DGS) enable high-quality novel view synthesis but can introduce complex, view-dependent artifacts from reconstruction, rendering, and compression. Reliable perceptual quality assessment (QA) is thus essential for evaluating rendered views and guiding the design of perceptually faithful scene representations. Existing full-reference QA metrics require an aligned reference image, while recent cross-reference metrics relax this requirement by comparing a test view with non-aligned references. However, under wide-baseline radiance field settings, selecting a reliable nearby reference can be difficult, particularly when evaluating views along arbitrary trajectories and poses. We propose SCODA, a lightweight scene-conditioned objective QA method that shifts QA from explicit image-to-image comparison to scene-manifold modeling. High-quality observations of each scene are represented as a multivariate Gaussian distribution in deep feature space, producing a semantic fidelity score that measures deviation from the scene distribution. A weakly-supervised distortion-aware patch discriminator provides a complementary realism signal, and both cues are combined through an unsupervised bounded fusion strategy. Experiments on multiple benchmarks show strong agreement with human judgments and robust generalization across GS- and NeRF-generated views and trajectories. Code is publicly available at https://gitlab.com/saeedmp/scoda.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FlowSem: Flow Matching for Adaptive Wireless Image Transmission in Semantic Communication",
+  "authors": [
+   "Arnab Emon",
+   "Eslam Eldeeb"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.21651",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Wireless image transmission becomes challenging under poor channel conditions and stringent bandwidth constraints, as the receiver needs to preserve both pixel-level fidelity and meaningful visual structure. Classical separation-based systems, such as better portable graphics with low-density parity-check coding (BPG+LDPC), may suffer from cliff-effect behavior. While deep joint source-channel coding (DeepJSCC) provides graceful degradation as channel conditions worsen, its reconstructions may lose fine details under strong compression and severe channel distortion. To address this limitation, this paper proposes a two-stage flow matching-based semantic communication framework, termed FlowSem. In the first stage, a signal-to-noise ratio (SNR)-adaptive DeepJSCC model maps the source image into channel symbols and produces a coarse reconstruction at the receiver. In the second stage, a conditional flow matching model generates the final image from Gaussian noise conditioned on the DeepJSCC reconstruction and channel SNR. The proposed framework is evaluated on the Cityscapes dataset under additive white Gaussian noise (AWGN) and Rayleigh fading channels using a fixed channel-symbol budget. The baselines include a rate-matched BPG+LDPC system, DeepJSCC, a denoising diffusion probabilistic model (DDPM), and a denoising diffusion implicit model (DDIM). Results show that FlowSem achieves competitive pixel-level fidelity and improved structural and perceptual reconstruction quality over the considered generative baselines across different channel conditions. FlowSem provides up to 60% lower Fréchet Inception Distance (FID) than the diffusion baselines at low SNRs. Moreover, FlowSem reaches high reconstruction quality using only a few ODE integration steps, providing a favorable quality-latency tradeoff compared with standard DDPM and accelerated DDIM sampling.",
+  "source": "arxiv"
+ },
+ {
+  "title": "MDFI: A Multi-Domain Features Integration for Compressed Video Quality Enhancement",
+  "authors": [
+   "Sang NguyenQuang",
+   "Hieu Bui Minh",
+   "Dang BuiDinh",
+   "Xiem HoangVan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.21495",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The latest video coding standard, H.266/VVC, has demonstrated significant improvements in compression efficiency compared to H.265/HEVC. Despite its advanced coding techniques, H.266/VVC still faces challenges in meeting the increasing demand for higher perceptual quality and enhanced compression performance. To address these limitations, we propose MDFI (Multi-Domain Features Integration), a compressed video quality enhancement approach that features a novel Frame-Prediction Feature Transform (FPFT) module to process prediction information. Moreover, MDFI integrates a multi-domain feature fusion strategy that effectively combines spatiotemporal characteristics, cross-frequency representations, and compressed-domain prediction information to enhance decoded video quality. Additionally, we introduce a comprehensive dataset that encompasses uncompressed video sequences, corresponding reconstructed versions at multiple QP levels, and predicted frames generated from H.266/VVC compressed bitstreams, providing essential resources for developing and benchmarking video enhancement approaches. Extensive experiments demonstrate that our MDFI approach achieves superior performance to state-of-the-art methods in both objective metrics and visual quality, effectively mitigating video compression artifacts. The code is available at: https://github.com/dangdinh17/MDFI.git.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+  "authors": [
+   "Shengshi Yao",
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Guo Lu",
+   "Kai Niu",
+   "Wenjun Xu",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.19590",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In extreme-low bandwidth network scenarios, generative semantic codecs have emerged as promising solutions to reduce bandwidth cost for visual communications. However, these learned codecs are usually optimized solely for compression efficiency and thus not robust against transmission errors. Corruptions due to packet-loss among these highly compact generative latent representations often cause more critical degradation in fidelity and realism, intensified by the severe error propagation across the latent contexts and multi-step decoding process. In this paper, we propose ResiGLC, a novel loss-resilient generative latent coding framework designed for robust semantic communication over extreme-low bandwidth packet-loss networks. Motivated by the inherent goal-consistency between generation and compression, we sufficiently exploit the impressive in-context predictive capabilities of language models. Integrated with the masked learning strategy, our model supports arbitrary context modeling of latent codes, which could mitigate the error propagation and handle unpredictable packet loss patterns. At the receiver, a progressive resilient decoding pipeline is presented, which leverages both the contextual relationship of the latent codes and the multi-modal semantic prior in the generative latent space, separately. By jointly optimizing toward both compression efficiency and packet-loss resilience, our proposed progressive decoding mechanism offers graceful performance when dealing with dynamic packet losses. Through extensive experimental evaluations, we establish that under packet-loss network conditions, ResiGLC can effectively improve the loss-resilience in terms of perceptual fidelity and realism qualities with extreme-low bandwidth cost.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Energy-Aware Compression-Computation Co-Adaptation for Latency Minimization in Multi-User Semantic Communication",
+  "authors": [
+   "Loc X. Nguyen",
+   "Yumin Park",
+   "Avi Deb Raha",
+   "Huy Q. Le",
+   "Zhu Han",
+   "Eui-Nam Huh",
+   "Choong Seon Hong"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.13632",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Deep joint source-channel coding-enabled (DeepJSCC) semantic communication (SemCom) has excelled at delivering high perceptual quality at low channel-bandwidth ratios, which positions it as a pillar for next-generation wireless networks. However, the existing works have difficulty accommodating user heterogeneity in terms of communication channel quality, expected quality-of-service (QoS) targets, and the available local energy. Therefore, in this paper, we explicitly reflect the heterogeneity of user devices in terms of the differences in expected QoS, channel condition, and local energy, and then mathematically formulate the problem. Next, we propose an energy-aware compression-computation co-adaptation (CoCo) framework, in which the base station can meet the expected user QoS by transmitting a longer signal or offloading the task to a local device. The user has to dedicate energy to denoising the signal to recover higher-fidelity latent features before feeding it to the semantic decoder. To solve the formulated problem, we first decompose it into two sub-problems: parameter optimization and resource allocation problems. Specifically, we propose a robust codec that effectively works under a diversity of compression rates and channel noise without re-training, while the greedy sub-carrier allocation lowers the communication time. Finally, we present simulation results on standard image datasets over additive white Gaussian noise to demonstrate the effectiveness of CoCo, which reduces total latency relative to rate-only adaptive DeepJSCC or denoising-only, thereby ensuring the demands of each individual user are met.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Lossy Compression, Realism, and Coordination",
+  "authors": [
+   "Yassine Hamdi",
+   "Deniz Gündüz"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": "10.1109/mbits.2026.3712694",
+  "arxiv": "2608.12222",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Classical rate-distortion theory characterizes the fundamental limits of lossy compression under fidelity constraints, but minimizing distortion often yields perceptually unsatisfying reconstructions - blurry images, over-smoothed textures, and unnatural artifacts. This has motivated a growing body of work on compression with realism constraints, which require reconstructions to be statistically indistinguishable from natural signals, giving rise to the three-way rate-distortion-perception (RDP) trade-off. This paper provides an accessible overview of this emerging area and reveals deep connections to another fundamental problem: distributed coordination under rate-limited communication. Under strong distribution matching formulations, both problems lead to nearly identical information-theoretic characterizations, both require common randomness (CR) for optimal performance, and both rely on similar analytical tools such as the soft covering lemma. Beyond a unifying perspective, we survey recent developments in formalizing realism, including batched critics and algorithmic realism, and propose to transfer such paradigms to coordination - illustrating how the connection continues to generate new problems.",
+  "source": "arxiv"
+ },
+ {
+  "title": "When Latents Forget Pixels: Restoring Fidelity in Diffusion Transformer Super-Resolution",
+  "authors": [
+   "Yu Shi",
+   "Yuyao Zhang",
+   "Yu-wing Tai"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.09133",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Image super-resolution (SR) with large generative models has recently achieved remarkable perceptual quality, yet maintaining fidelity to the LR observation remains challenging. In particular, we observe that diffusion transformers (DiTs) built on latent representations suffer from a critical limitation: the compression bottleneck of the VAE weakens fine-grained spatial information, leading to hallucinated details that are weakly grounded in the input image. In this work, we revisit generative SR from a representation perspective and propose a pixel-grounded super-resolution (PGSR) framework that preserves LR-observed pixel evidence before VAE compression and reuses it throughout restoration. Instead of relying solely on the compressed latent condition, PGSR extracts pre-VAE pixel evidence from the upsampled LR image and reuses it at two stages. First, Condition-Side Trajectory Guidance fuses LR-derived pixel evidence with the latent LR condition to guide the latent restoration trajectory. Second, Decoder-Side Pixel Grounding injects multi-scale pixel features into the frozen VAE decoder to ground the final rendering with LR-observed cues. To efficiently adapt large pretrained DiT models, we keep the latent autoencoder and main flow-matching backbone frozen, and train only lightweight restoration modules. We further study an efficient local-window attention variant for improved high-resolution efficiency and scalability. Extensive experiments demonstrate that PGSR improves the realism--fidelity trade-off and produces more faithful, visually convincing results than existing latent generative SR approaches.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Bit Allocation Transfer for Perceptual Quality Enhancement of Traditional Video Codecs",
+  "authors": [
+   "Runyu Yang",
+   "Ivan V. Bajić"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.07799",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Traditional block-based video codecs, such as H.264/AVC, H.265/HEVC and H.266/VVC, rely on hand-crafted Rate-Distortion Optimization (RDO) processes that primarily minimize Mean Squared Error (MSE), which correlates poorly with human perceptual quality. While neural video compression methods can easily optimize perceptually aligned metrics like MS-SSIM, their high computational complexity limits practical deployment. This paper proposes a novel bit allocation transfer framework that bridges these two paradigms to enhance the perceptual quality of conventional video codecs. Specifically, we train a quantization step generation model using a perceptual loss within a neural video compression framework (DCVC-FM). The model takes the original frame and a motion-compensated prediction as input and outputs a quantization step map. We then derive a block-wise bit ratio from this map and convert it into a Quantization Parameter (QP) map for a traditional video codec. Experimental results on the HEVC B$\\sim$D dataset demonstrate that our method achieves 20.20\\%, 8.25\\%, and 8.37\\% bitrate savings in terms of MS-SSIM compared with the standard reference software JM-19.0, HM-16.20, and VTM-23.0, respectively, with additional gains when utilizing predicted frames. Our approach effectively transfers the implicit perceptual importance learned by neural video compression models to guide block-level bit allocation in traditional video codecs without modifying their core decoding syntax.",
+  "source": "arxiv"
+ },
+ {
+  "title": "FDIR: Harmonizing Fidelity and Human-Machine Preference in Lossy Compression Image Restoration",
+  "authors": [
+   "Kuan-Yen Chen",
+   "Fang-Yi Su",
+   "Philip Chikontwe",
+   "Jung-Hsien Chiang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2608.00111",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Image restoration quality can be evaluated along three complementary facets: pixel-level fidelity, human perception, and downstream machine preference. However, existing lossy compression restoration methods optimize for at most one of these criteria: fidelity-oriented models often regress toward conditional means and produce over-smoothed outputs, while generative approaches hallucinate plausible but factually incorrect textures that degrade both ground-truth fidelity and downstream task accuracy. To navigate this three-way tradeoff, we propose FDIR, a two-stage architecture that decouples the conflicting demands through complementary inductive biases: Quality-Guided One-Step Flow Matching (QO-Flow) recovers global semantic structure in latent space via a single forward pass, while Flow-Conditioned Detail Refinement (FCDR) deterministically restores high-frequency textures and suppresses generative hallucinations in pixel space. Extensive experiments demonstrate that FDIR achieves superior fidelity, with a favorable perceptual-fidelity balance and competitive machine preference.",
+  "source": "arxiv"
+ },
+ {
+  "title": "AtlasLC: Fast Codec-Ready Compression of Object-Centric 3D Gaussian Splatting",
+  "authors": [
+   "ByungHyun Kim",
+   "Jinwoo Jeon",
+   "Woontack Woo"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.26525",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis with real-time rendering, but deploying compressed object-centric 3DGS in XR requires more than image-space rate-distortion. In practical XR asset pipelines, reusable objects are repeatedly packaged, transmitted, decoded, and instantiated, making asset-preparation cost, codec compatibility, decoding latency, and preservation of depth and silhouette cues first-class concerns. Existing 3DGS compression methods are largely developed for scene-scale captures and often rely on heavy layout generation or aggressive global pruning, assumptions that transfer poorly to semantically concentrated foreground objects. We present AtlasLC, a source-free, training-free compression pipeline for object-centric 3DGS that operates directly on released Gaussian assets, without original images, camera poses, or per-asset optimization. AtlasLC couples local-competition pruning with deterministic atlas packing to remove the mapping/remapping bottleneck while preserving object-wide foreground support; a lightweight single-pass sort-based conditional transport is used as a shared coordinate backbone for these stages. Across the evaluated assets, AtlasLC reduces atlas-preparation time by up to a factor of 25 and end-to-end compression time by up to a factor of 5, while offering a favorable deployment-aware balance of payload, decode latency, runtime FPS, and 3D geometry relative to the evaluated compressed baselines. Relative to similarly compact structured baselines, it uses about 6 to 8 percent fewer bits while maintaining comparable perceptual and geometric quality. These results show that object-centric 3DGS compression should be optimized for a deployment-aware operating point enabling scalable XR asset libraries.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Codebook Capacity Governs Perceptual Quality Across Resolutions in Hierarchical Discrete Video Compression",
+  "authors": [
+   "Manikanta Kotthapalli",
+   "Banafsheh Rekabdar"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.23366",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned video codecs based on continuous latent representations typically require resolution-specific retraining or rate-distortion (RD) recalibration when scaling to new spatial resolutions, because entropy models and Lagrangian weights are tightly coupled to the operating point. We investigate whether hierarchical discrete latent codecs exhibit the same sensitivity. Using a controlled empirical study of MS-VQ-VAE video compression across codebook sizes $K \\in \\{128,256,512,1024\\}$ and resolutions $64\\times64$, $128\\times128$, and $256\\times256$ on UCF101, we show that perceptual quality (LPIPS) depends strongly on codebook capacity but only negligibly on spatial resolution. Fitting a log-linear model $Q(K,r) = α\\log_2 K + β\\log_2 r + γ$ to all 12 operating points yields $α=-0.0094$ ($t=-6.6$, $p<0.001$) and $β=-0.0009$ ($t=-0.43$, $p=0.68$, not significant), with $R^2=0.82$. Codebook capacity is therefore roughly $10\\times$ more influential than spatial resolution per log-unit increase. In parallel, bottom-level entropy efficiency $η=H(z)/\\log_2 K$ remains stable or improves with resolution (84-87% at $64\\times64$; 92-94% at $256\\times256$), confirming that larger spatial grids are utilized more efficiently rather than less. Across all resolutions and codebook sizes, our models outperform H.264 on LPIPS at matched or lower bitrate, with gains of 25-52% at $128\\times128$ and 21-37% over H.265 at $256\\times256$. These findings suggest that codebook size $K$, not spatial resolution, is the dominant design variable governing perceptual compression quality in hierarchical discrete video codecs -- a property that may simplify multi-resolution deployment and inform the design of scalable discrete tokenizers for generative video models.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Generative Video Compression with Adaptive Score Distillation",
+  "authors": [
+   "Naifu Xue",
+   "Zhaoyang Jia",
+   "Haosen Li",
+   "Zihan Zheng",
+   "Jiahao Li",
+   "Bin Li",
+   "Xiaoyi Zhang",
+   "Qi Meng",
+   "Yuan Zhang",
+   "Yan Lu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.22772",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models provide strong generative capabilities for video compression at ultra-low bitrates. Existing diffusion-based video codecs adapt base models originally developed for text-conditioned generation, whereas diffusion models designed and trained specifically for compression remain unexplored. To fill this gap, we introduce our Generative Video Codec (GenVC), built on a video diffusion model trained from scratch for compression. To our knowledge, this is the first compression-oriented video diffusion model. We realize this model directly in pixel space with a global-to-local hierarchy that recovers fine spatio-temporal details, enabling high-quality generative reconstruction from compressed representations. To accelerate inference, we distill the multi-step model into one step using distribution matching distillation (DMD). Applying DMD directly, however, drives the student toward motion-stalled reconstructions. We trace this to a teacher-side guidance failure: once student-induced perturbations leave the frozen teacher's training region, its guidance can become misleading, causing DMD updates to reinforce rather than correct the student drift. To break the resulting feedback loop, we propose Adaptive Score Distillation, which gates DMD updates according to their alignment with the ground-truth direction, enabling high-quality reconstruction with coherent motion. Experimental results show that GenVC achieves state-of-the-art perceptual quality at ultra-low bitrates, with average bitrate savings of 62.5% at matched LPIPS and 71.3% at matched FID over GLVC. Unlike prior codecs that inherit billion-scale pretrained backbones, our diffusion model has only 478.0M parameters and decodes 1080p video in a single step at 15.1 fps on an A100 GPU.",
+  "source": "arxiv"
+ },
+ {
+  "title": "RealVDeblur: One-Step Diffusion for Generalizable Real-World Video Deblurring",
+  "authors": [
+   "Renbiao Jin",
+   "Mingxin Yang",
+   "Yutian Chen",
+   "Junhao Zhuang",
+   "Xin Cai",
+   "Mulin Yu",
+   "Linning Xu",
+   "Wenxian Yu",
+   "Danping Zou",
+   "Shi Guo",
+   "Tianfan Xue"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.20628",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Real-world video deblurring remains challenging due to diverse motion patterns, complex degradations, and the scarcity of realistic training data, yet robust restoration is critical for downstream pipelines such as mobile imaging and 3D reconstruction. This work presents \\textbf{RealVDeblur}, an efficient generative framework designed to improve in-the-wild robustness under diverse real capture conditions. First, a large-scale, physically grounded blur synthesis pipeline is constructed from scene-level 3D Gaussian Splatting (3DGS) assets and high-frame-rate videos, providing realistic training data covering both camera-induced and object-motion blur. Second, a video diffusion prior is leveraged for restoration; to better accommodate frame-dependent blur variations, temporal compression in the VAE is disabled and a frame-wise encoding scheme is adopted. For practical deployment on long videos, multi-step diffusion sampling is distilled into an efficient one-step generator, and a training-free Temporal Window Mask stabilizes inference beyond the training horizon with constant memory usage. Extensive experiments on diverse real-world benchmarks demonstrate strong perceptual quality, semantic fidelity, and temporal consistency on unseen videos, as well as improved robustness in downstream 3D reconstruction under severe motion blur. Project page: https://rbjin.github.io/RealVDeblur",
+  "source": "arxiv"
+ },
+ {
+  "title": "Importance-Aware OBS Pruning for Diffusion Models",
+  "authors": [
+   "Ba-Thinh Lam",
+   "Srijan Das",
+   "Hieu Le"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.20048",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We propose importance-aware pruning for diffusion models, a training-free framework that prioritizes preserving parameters critical to semantically salient image regions. To do so, we incorporate spatial importance maps -- derived from conditioning signals or model attention -- into the pruning objective. This produces parameter rankings aligned with perceptual relevance rather than uniform reconstruction error. On MS-COCO dataset, our proposed approach consistently retains subject fidelity and structural correctness at high compression ratios where conventional pruning causes visible degradation. These results demonstrate that content-aware objectives are key to perceptually faithful compression of generative models.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Group-of-Latents: Perceptual Video Compression at Extreme Bitrates via Masked Latent Generative Modeling",
+  "authors": [
+   "Shaokang Wang",
+   "Jinchang Xu",
+   "Peidong Jia",
+   "Zhijian Hao",
+   "Siyuan Qian",
+   "Fei Zhao",
+   "Rui Ma",
+   "Xiaozhu Ju",
+   "Jian Tang",
+   "Xiaodong Xie",
+   "Shanghang Zhang",
+   "Huizhu Jia"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.19437",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Most existing video compression algorithms follow a paradigm of transformation and quantization, optimizing the trade-off between distortion and bitrate. However, extremely low-bitrate compression remains an underexplored frontier where perceptual quality optimization under severely constrained coding resources has not been adequately addressed. In this paper, we propose a unified generative framework that leverages pre-trained Diffusion Transformer (DiT) priors to achieve high perceptual quality at extremely low bitrates. We first introduce a flexible Group-of-Latents (GoL) strategy within the latent space of a causal tokenizer, explicitly partitioning the latent stream into intra $I$-latents and inter $P$-latents. The Deep Compression Module (I-DCM) then encodes key $I$-latents to preserve perceptual anchors with minimal overhead. Building upon these anchors, the DiT-based Unified Latent Denoising Module (U-LDM) refines intra-frame textures and synthesizes $P$-latents from noise, reconstructing temporal dynamics at zero additional bitrate cost. Extensive experiments demonstrate that our method uniquely operates in the extreme-low-bitrate regime (e.g., (<0.005) bpp), achieving state-of-the-art perceptual fidelity with rich spatial details and robust temporal consistency. The code will be made publicly available.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DiffUE: Enhancing Utility-Unlearnability Trade-off of Unlearnable Examples via Diffusion Autoencoders",
+  "authors": [
+   "Syed Irfan Ali Meerza",
+   "Oktay Ozturk",
+   "Amir Sadovnik",
+   "Jian Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.10580",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "AI models are increasingly trained on personal images scraped from social media and public platforms, often without consent, leading to serious privacy violations, such as unauthorized facial recognition and targeted advertising. To counter this, researchers have developed unlearnable examples (UEs), images modified with imperceptible noise to prevent AI models from extracting meaningful information. However, existing UE methods primarily rely on pixel-space noise, which can be bypassed by relearning strategies such as adversarial training, image transformation, and compression. While some techniques improve robustness, they often come at the expense of significant degradation in image utility and perceptual quality. In this paper, we introduce DiffUE to overcome these limitations by injecting noise into the semantic space of images instead of the pixel space. Instead of corrupting pixel values, DiffUE modifies high-level semantic features of images, ensuring robust unlearnability while preserving visual quality and utility. By leveraging a diffusion-based autoencoder framework to manipulate semantic features, DiffUE generates purposeful, natural-looking modifications that effectively resist advanced relearning strategies. Extensive experiments on four datasets, CIFAR-10, CIFAR-100, CelebA-HQ, and ImageNet, as well as a subjective user study, demonstrate that DiffUE significantly enhances the trade-off between image quality and unlearnability, offering a more robust and effective solution for safeguarding personal data in an increasingly exploitative AI landscape.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DICT: Data Injection and Contrastive Trajectory Refinement for Conditional Image Generation with Diffusion Models",
+  "authors": [
+   "Chunnan Shang",
+   "Xin Zhang",
+   "Zhizhong Wang",
+   "Hongwei Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2607.03899",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have become a dominant paradigm for conditional image generation, yet existing approaches generally follow two directions: task-specific designs that can improve performance but limit generalization, and training-free loss guidance that compresses rich conditions into scalar objectives and applies stepwise guidance, leading to information bottlenecks and error accumulation along the sampling trajectory. Given the urgent need for an effective unified framework across diverse conditional image generation tasks, we propose Data Injection and Contrastive Trajectory Refinement (DICT), a training-free inference method that enhances conditional image generation without introducing task-dependent architectures. DICT introduces Data Injection, where noise-perturbed conditional signals are integrated into early denoising stages; by performing guided denoising on these injected signals, DICT adaptively selects and distills task-salient information from the raw condition, effectively preserving spatial richness and ensuring precise condition-to-generation alignment. Furthermore, DICT applies Contrastive Trajectory Refinement across adjacent denoising states, enabling pairwise comparisons that progressively improve sample quality. These designs keep inference simple while improving cross-task transfer under a unified diffusion formulation. Extensive experiments on conditional image generation tasks (e.g., style transfer, image super-resolution, and image deblurring) show consistent gains in fidelity and perceptual quality over representative task-specific and loss-guided baselines.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Towards a Joint Task-Oriented and Generative Semantic Communication Framework for 6G Networks",
+  "authors": [
+   "Soheyb Ribouh",
+   "Phil Polo Ditsia Di Ngoma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.31426",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Semantic Communication (SC) has emerged as a key enabler for 6G wireless systems by transmitting task-relevant meaning rather than raw data, thereby significantly reducing bandwidth consumption while preserving communication intent. In this work, we propose an end-to-end OFDM-based semantic communication framework that integrates a semantic encoder-decoder pipeline with a neural receiver operating over a 3GPP vehicular channel. The semantic encoder extracts the underlying meaning of a visual scene by transforming it into a graph-based representation consisting of object-level features and relational structure. At the receiver, the reconstructed scene graph is processed by a spatio-temporal graph neural network (ST-GNN)-based module for collision-risk estimation, enabling task-oriented inference. In parallel, a diffusion-based semantic decoder reconstructs the visual scene from the recovered semantics, providing dual functionality: safety prediction and image reconstruction. The proposed framework is evaluated in a MIMO configuration under varying SNR conditions. Experimental results show that it achieves up to 99.1% data compression relative to pixel-domain transmission, outperforming conventional compression-based methods (JPEG and HEVC) while preserving downstream inference performance. Furthermore, the diffusion-based reconstruction attains significantly lower frechet inception distance (FID) scores than existing semantic communication approaches, reflecting superior semantic and perceptual fidelity.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ZeroGVC: Zero-Shot Generative Video Compression with Autoregressive Diffusion Priors",
+  "authors": [
+   "Yixin Gao",
+   "Xiaohan Pan",
+   "Lin Liu",
+   "Xin Li",
+   "Zhibo Chen",
+   "Qi Tian"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.22371",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent generative video compression methods leverage powerful generative priors to achieve perceptually pleasing reconstructions. However, most existing approaches require additional training to adapt generative models to produce realistic reconstructions from compact representations. In this paper, we propose ZeroGVC, a zero-shot generative video compression framework that leverages pretrained autoregressive diffusion priors for low-delay video reconstruction. ZeroGVC encodes the first frame of each group of pictures (GOP) with an image codec and represents subsequent P-frames through Codebook-Guided Autoregressive Latent Compression. This design is motivated by our observation that the compression scheme of denoising diffusion codebook models is effective in few-step consistency sampling. By selecting compact combinations of reproducible codebook noise vectors, ZeroGVC steers the latent denoising trajectory toward the target P-frame while allowing the decoder to reproduce the same trajectory in only a few denoising steps. In addition, we design an optional bidirectional reference mode that mitigates error propagation by leveraging the next I-frame context without introducing any additional bitrate overhead. Extensive experiments on standard video compression benchmarks demonstrate that ZeroGVC achieves superior perceptual reconstruction quality at ultra-low bitrates without any additional training.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Gen2-IC: Bridging Generative Models and Image Codecs through Latent Transport",
+  "authors": [
+   "Yinhuan Huang",
+   "Hao Cao",
+   "Pu chen",
+   "Wenqi Guo",
+   "Jungong Han",
+   "Zhijin Qin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.21030",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion-based image compression has achieved strong perceptual quality at ultra-low bitrates. However, existing codecs are often tied to specific backbones and specialized components, making diverse, rapidly evolving generative models difficult to reuse. This raises a natural question: Can modern generative foundation models be connected to image compression through a simple and extensible interface? Two insights guide our design: stronger generative priors make a simpler codec interface viable, and generation and compression can be intrinsically linked through latent transport. We therefore propose Gen2-IC with two stages: (1) Latent Compression maps clean image latents to entropy-constrained latents; and (2) Latent Transport refines them with one near-terminal update based on the pretrained model. Gen2-IC requires neither auxiliary conditioning signals nor task-specific backbone modifications. With lightweight adaptation and no distillation, it supports fast encoding and one-step decoding across multiple bitrates. We validate Gen2-IC on SD-2.1, SANA-1.5, FLUX.1-dev, and Qwen-Image-2512, spanning U-Net and Transformer architectures as well as diffusion and flow-matching formulations. With stronger priors, Gen2-IC delivers gains below 0.05 bpp: the Qwen variant leads diffusion-based generative codecs in reconstruction fidelity (PSNR), perceptual similarity (LPIPS and DISTS), and recognizer-based semantic fidelity (OCR CER/WER and face-ROI similarity) across four benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Avatar V: Scaling Video-Reference Avatar Video Generation",
+  "authors": [
+   "Benjamin Liang",
+   "Ce Chen",
+   "Desmond Lin",
+   "Ivan Somov",
+   "Jiajun Zhao",
+   "Jiewei Yuan",
+   "Jingfeng Zhang",
+   "Junhao Huang",
+   "Nik Nolte",
+   "Pedram Haqiqi",
+   "Penghan Wang",
+   "Rong Yan",
+   "Rui Zhang",
+   "Sam Prokopchuk",
+   "Sivan Wang",
+   "Viktor Goriachko",
+   "Yi Ren",
+   "Yuanming Li",
+   "Yutao Chen",
+   "Zhenhui Ye",
+   "Zhibin Hong",
+   "Zilong Nie",
+   "Zujin Guo"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.13872",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generating avatar videos that are not merely visually similar to a target individual but behaviorally recognizable, faithfully reproducing their talking rhythm, gestural tendencies, and expression dynamics, remains an open challenge. Existing methods predominantly condition on single static images, which provide insufficient identity information and cannot capture dynamic motion traits, while standard pixel-level objectives underserve the perceptually critical facial regions that determine avatar fidelity. We present Avatar V, a production-scale framework that addresses these limitations through video-reference-conditioned identity modeling. Rather than compressing identity into fixed-size embeddings, the model conditions directly on the full token sequence of a reference video, learning to reproduce both static identity attributes (facial geometry, skin texture) and dynamic behavioral patterns (talking rhythm, micro-expressions) through attention over the reference context. We introduce Sparse Reference Attention, an asymmetric mechanism achieving linear-complexity conditioning on arbitrarily long references; a motion representation stream enabling closed-loop talking style transfer; and an identity-aware super-resolution refiner inheriting the full reference conditioning. These are supported by a data engine curating 100M+ training clips from 50M raw videos, and a five-stage training pipeline with flow matching pre-training, personality fine-tuning, two-phase distillation (>10x acceleration), and RLHF alignment, deployed across thousands of GPUs. Avatar V generates 1080p videos of unlimited duration, achieving state-of-the-art identity preservation, lip synchronization, and generation quality on our cross-scene benchmark, consistently outperforming leading systems including Seedance 2.0, Kling O3 Pro, Veo 3.1, and OmniHuman 1.5 in both automated metrics and human evaluation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compressing Image Style Training into a Single Model Forward",
+  "authors": [
+   "Zhongjie Duan",
+   "Yingda Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.13809",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion-based style transfer must balance inference efficiency with stylization fidelity. Adapter-based methods are efficient, but they inject style as an external condition and can either weaken reference-specific appearance or copy reference semantics into the generated image. Optimization-based personalization methods such as LoRA internalize style more effectively, but require a separate training process for every new style. We introduce i2L (image-to-LoRA), a framework that amortizes style LoRA training into a single forward pass. Given one or more reference images, i2L predicts LoRA weights for a text-to-image model, enabling immediate style instantiation without per-style optimization. The architecture combines an image encoder, learnable LoRA queries, and compressed decoding heads that generate adapted matrices. Training on semantically diverse style pairs encourages the predictor to preserve appearance cues while suppressing reference-content copying. Experiments on Z-Image, FLUX.2, and Hidream-O1 show that i2L improves style fidelity, prompt alignment, and perceptual quality over existing baselines. Because i2L produces explicit LoRA weights, it also supports asymmetric classifier-free guidance, multi-reference style fusion, and composition with controllable-generation modules.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Oklch+: A Three-Parameter Extension of Oklab for Improved Color Difference Prediction",
+  "authors": [
+   "Naoyuki Uchida"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.05255",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Oklab and its cylindrical representation Oklch are widely adopted in interpolation and design workflows as perceptually motivated color spaces, but their color difference prediction accuracy falls short of CIEDE2000. We propose Oklch+, a three-parameter extension of Oklab comprising a power transformation on the L-axis and a Naka-Rushton compression on the C-axis, with Euclidean distance computed in the resulting transformed Oklab coordinates. The Naka-Rushton function is bounded in [0,1], reflecting the saturating nature of chroma sensitivity at high colorimetric values. Evaluated on COMBVD -- 3,813 suprathreshold color difference pairs spanning six independent experimental datasets -- Oklch+ achieves STRESS = 29.09, closely matching CIEDE2000 (29.13; difference = 0.04), using only three parameters optimized against color difference data compared to approximately 17 for CIEDE2000. Cross-validation on a held-out BFD-P D65 subset (2,028 pairs) confirms generalization (STRESS = 26.14), with Oklch+ substantially outperforming Oklab (51.45) and achieving STRESS comparable to CIEDE2000 (24.12) on the held-out set. Improvement over Oklab (47.35) is confirmed across all six COMBVD sub-datasets. Because Oklch+ defines a coordinate system in which Euclidean distance approximates perceptual distance, linear interpolation in the transformed space offers substantially improved perceptual uniformity relative to Oklab. Current evaluation is limited to the sRGB-centered COMBVD dataset; validation in high-chroma regions with empirical observer-rated discrimination data remains future work.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ChannelTok: Efficient Flexible-Length Vision Tokenization",
+  "authors": [
+   "Sukriti Paul",
+   "Arpit Bansal",
+   "Tom Goldstein"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.04461",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Leading flexible vision tokenizers achieve SOTA quality at an extreme cost, relying on parameter-heavy backbones and slow, multi-step generative decoders. We depart from this complex, spatial-token paradigm and introduce a simple, lightweight, and fast channel-wise flexible-length tokenizer. Our method treats each latent channel as a visual token, enabling a parameter-efficient CNN-Transformer hybrid backbone. Furthermore, employing a stochastic tail-dropping paradigm during training naturally forces channels to organize by semantic importance. This allows for flexible compression at inference by simply retaining the first $k$ channels, and naturally enables variable-length autoregressive image generation. We validate our approach through extensive experiments on ImageNet, demonstrating consistent quality across diverse token budgets. The results establish a new quality-efficiency frontier: our model achieves state-of-the-art perceptual quality (rFID 2.92) while being $8.6\\times$ faster in decoding and $2.1\\times$ smaller (159M params) than the next-best alternative. Our work establishes channel-wise tokenization as a powerful and practical paradigm for efficient visual representation. Project page: https://channeltok.github.io",
+  "source": "arxiv"
+ },
+ {
+  "title": "Restoring Initial Noise Sensitivity in Text-to-Image Distillation via Geometric Alignment",
+  "authors": [
+   "Huayang Huang",
+   "Ruoyu Wang",
+   "Jinhui Zhao",
+   "Wei Deng",
+   "Daiguo Zhou",
+   "Jian Luan",
+   "Yu Wu",
+   "Ye Zhu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2606.01651",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative distillation significantly accelerates text-to-image (T2I) generation by compressing multi-step trajectories into few-step student models while preserving perceptual quality. However, existing methods primarily optimize efficiency and output fidelity, often neglecting critical properties of the original trajectory. In this work, we identify a key missing property: sensitivity to initial noise, whose degradation impairs downstream control methods relying on noise-based optimization and manipulation. We trace this issue to standard distillation objectives that enforce pointwise output alignment, inadvertently flattening the input-output landscape and suppressing the teacher's local geometric structure. To address this, we propose Geometry-Aware Distillation (GAD), a sensitivity-preserving framework that aligns the local functional behavior of teacher and student models. Specifically, GAD matches Jacobian-vector products with respect to input noise, enabling the student to reproduce the teacher's differential response to perturbations. Extensive experiments across multiple T2I paradigms and noise-driven control tasks demonstrate that GAD significantly restores sensitivity and improves diversity while maintaining high visual fidelity. Code is available at https://github.com/Hannah1102/GAD.",
+  "source": "arxiv"
+ }
+]

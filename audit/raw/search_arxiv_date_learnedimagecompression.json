@@ -1,0 +1,758 @@
+[
+ {
+  "title": "Evolutionary Design of Interpretable Spatial Descriptors for Structure-Property Relationship Discovery",
+  "authors": [
+   "Aditya Raghavan",
+   "Sergei V Kalinin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.06811",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Structure property prediction is a classical task in machine learning, ranging from molecular activity and materials properties to local functional responses measured in microscopy. For image-based regression, two choices define the information available to the predictor: the size of the image neighborhood and the spatial resolution retained within it. A small neighborhood can omit relevant surrounding structure, whereas a large, finely sampled neighborhood can introduce redundant or irrelevant information. Here, we develop a framework for constructing spatial descriptors for prediction of local spectra and hysteresis loops. We benchmark regression models, use SHAP maps to examine their spatial attribution, and explore the effect of the patch size and compression to establish the relationship between predictive accuracy and descriptor dimensionality. We then use a genetic algorithm to optimize spatial partitions and the assignment of mean, minimum, and maximum pooling operations. Each retained region contributes an explicit measurement of the image, allowing the search to balance prediction error against the number of descriptor values. Cartesian and polar constructions provide complementary ways to organize this information. The resulting descriptors make it possible to examine where spatial detail is needed, where regional summaries are sufficient, and how these choices depend on the predictor and the measured response. The same approach can be used for molecules and solids once the genetic algorithm rules for these are established.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BudgetSplat: Budget-Controllable Generalizable Gaussian Splatting",
+  "authors": [
+   "Yuxi Hu",
+   "Jun Zhang",
+   "Wei Mao",
+   "Yuchen Rao",
+   "Friedrich Fraundorfer"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.06593",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Feed-forward 3D Gaussian Splatting enables efficient generalizable novel view synthesis, but existing pixel-aligned methods often generate highly redundant Gaussian primitives, causing the final representation size and rendering cost to grow rapidly with image resolution and the number of input views. We propose BudgetSplat, a budget-controllable feed-forward framework that adapts the final Gaussian representation to a user-specified preservation ratio. Rather than treating compaction as simple importance ranking, we formulate it as a joint problem of importance estimation, spatial coverage, and cross-view redundancy. A single trained model supports varying numbers of context views and multiple test-time budgets without per-budget retraining or per-scene compression. To realize this formulation, Intra-Cross Mask Supervision provides structure-, coverage-, and redundancy-aware guidance for learning Gaussian importance, while budget-conditioned feature modulation adapts Gaussian opacity and attributes to the requested preservation ratio. Coverage-Aware Budget Selection further combines patch-wise pre-selection, view-wise opacity ranking, and 3D redundancy suppression to construct compact yet spatially distributed Gaussian representations. Experiments on indoor reconstruction and cross-dataset generalization demonstrate consistent quality--size trade-offs across different input view counts and preservation ratios, substantially reducing final representation storage and rendering cost while preserving rendering quality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CLEAR: Color-Texture Latent Alignment for Single Image Reflection Removal",
+  "authors": [
+   "Tu Vo",
+   "Sheir A. Zaheer",
+   "Chan Y. Park"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.05969",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Single Image Reflection Removal (SIRR) seeks to recover the transmitted scene from a photograph captured through glass. Recent latent restoration methods use pretrained generative priors, but many recover detail by feeding high-frequency features from the degraded input back into the decoder. This works for degradations such as blur, noise, or haze, where input detail mostly belongs to the scene. It is less suitable for SIRR, where reflections add a second structured layer: directly reusing the input's skip connections can sharpen the image while also bringing reflection edges back. Latent compression also introduces color drift and fine-detail loss. We propose CLEAR (Color-Texture LatEnt Alignment for Single Image Reflection Removal), a deterministic, single-timestep, non-iterative latent framework that uses a pretrained latent diffusion backbone as a natural-image prior. A physics-guided separator organizes the prediction around the transmission, reflection, and residue formation model and outputs coarse layer latents in one forward pass. The Hybrid Feature Alignment Module (HFAM) then treats input-derived skips as contaminated layer-mixture features. It rectifies their high-frequency content with a clean-transmission-aligned color query, learned from the input features themselves under ground-truth feature supervision, keeping transmission-consistent texture while attenuating reflection-colored detail. CLEAR achieves the best average across fidelity and perceptual metrics on six real-world benchmarks and the lowest LPIPS on every dataset, with the largest gains on the hardest benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Policy Network Diffusion",
+  "authors": [
+   "Jiate Liu",
+   "Deheng Ye"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04614",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have shown remarkable progress in AI-generated content, including images and videos. In this paper, we explore whether diffusion models can generate the parameters of policy networks in reinforcement learning (RL), and whether the generated policies exhibit generalization capabilities. To achieve this, we propose Diffusion-based Conditional Policy Network Parameter Generation (DPPG), which consists of a Transformer-based autoencoder and a task-conditioned diffusion model. The autoencoder achieves a high compression rate by patchifying network parameters, while the task-conditioned diffusion model generates corresponding parameters conditioned on different environments. Our experiments demonstrate that, with a single unified DPPG model, we can synthesize high-quality policies across a diverse set of tasks from different environment domains, including Classic Control, Atari games, and MuJoCo. Additionally, our method can generate networks with a larger number of parameters compared to previous approaches. Furthermore, we find that in previously unseen environments, DPPG can generate parameters that achieve faster convergence and reach competitive performance, showcasing the potential future applications of parameter generation via diffusion.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation",
+  "authors": [
+   "Jimmy Wang",
+   "Yifan Chou",
+   "Kaifeng Zhang",
+   "Yixuan Wang",
+   "Binghao Huang",
+   "Tao Yu",
+   "Saleh Nabi",
+   "Yunzhu Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04492",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Predicting how the world evolves in response to robot actions is central to policy learning, evaluation, and planning. However, many action-conditioned world models predict future observations in 2D image or video space without explicitly modeling the underlying 3D scene, making spatial consistency across viewpoints and over long-horizon interactions challenging. We introduce 3D World Simulator, an action-conditioned multimodal world modeling framework that jointly predicts appearance, geometry, and tactile observations from a unified 3D representation. Our approach combines a hybrid particle-voxel autoencoder that compresses point clouds into compact 3D voxel latents with an action-conditioned latent dynamics model that predicts their evolution. The shared 3D representation supports geometrically consistent rendering from arbitrary viewpoints and flexible integration of spatially aligned tactile signals. Our experiments demonstrate interactive, long-horizon, multimodal prediction at 50 Hz. We then show how our model enables scalable data generation for policy training and evaluation using tactile and multi-view visual observations, including wrist-mounted and novel camera views. Furthermore, we scale our method to large datasets containing diverse objects and demonstrate model-based planning with unseen objects and robot configurations. Together, these results highlight the potential of hybrid particle-voxel dynamics as a foundation for multimodal 3D world simulation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+  "authors": [
+   "Chenru Wang",
+   "Xuanyang Zhang",
+   "Yucheng Han",
+   "Wenbo Nie",
+   "Wei Cheng",
+   "Xianfang Zeng",
+   "Gang YU",
+   "Chi Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04386",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "A deployable text-to-image diffusion model must hold several capabilities at once, such as instruction following, text rendering and human preference, and must sample in a few steps. Capabilities and few-step sampling are built in separate stages: a full-step model first consolidates capabilities through multi-teacher on-policy distillation, then serves as a fixed teacher for step distillation. Every full-step model we evaluate scores lower once compressed, and the second stage cannot begin until the first finishes. We introduce StepX-OPD, which merges the two stages: one student acquires every capability while learning to sample in a few steps, so frozen specialists supervise it on the states its own rollout visits rather than on a longer trajectory it never runs. Because a decomposition of the rollout's KL weights velocity mismatch most heavily near the clean end, we also regress the student's velocity on the low-noise part of the rollout. Separately, we find that capability integration makes models write prompt words into images on prompts that never asked for text, and we give a variant that lowers it. We evaluate on SD3.5-Medium and FLUX.1-dev across instruction following, text rendering, image quality and human preference. On both architectures, StepX-OPD attains the highest normalized average score among the four-step methods compared and exceeds the forty-step Flow-OPD model, and on SD3.5-Medium it trains with about 37% fewer GPU-hours than sequential DiffusionOPD followed by step distillation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ELiCv2: Learned LiDAR Geometry Compression under Real-Time Embedded Constraints",
+  "authors": [
+   "Soowoong Kim",
+   "Junsik Kim",
+   "Gun Bang",
+   "Jinsoo Choi"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04174",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Improving learned LiDAR compression increasingly relies on heavier inference, making it harder to meet the constraints of real-time embedded systems. We present ELiCv2, which removes two sources of redundant computation in progressive coding. Its discrete entropy interface selects a precomputed integer CDF instead of materializing one from a per-voxel distribution, while its occupancy-driven kernel-map builder derives finer-level sparse-convolution kernel-maps directly from the decoded hierarchy, eliminating coordinate-based neighbor search. ELiCv2 reinvests the recovered computation budget in lightweight ego-motion-aware temporal conditioning that gathers local occupancy context from the aligned previous reconstruction. On four LiDAR datasets and an NVIDIA Jetson Thor, ELiCv2 achieves a mean BD-rate reduction of 30.97% over G-PCC with channel width C=32 while sustaining the 20Hz nuScenes capture rate. Increasing the channel width to C=64 improves the mean reduction to 35.22%.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Bayesian Sequential Optimal Experimental Design for Single-Pixel Imaging using Reinforcement Learning",
+  "authors": [
+   "Marcos Antonio Obando",
+   "Tianyuan Wang",
+   "Tanja Tarvainen",
+   "Tristan van Leeuwen",
+   "Felix Lucka"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.03042",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Adaptive compressed sensing (CS) aims to select the most informative measurements sequentially, which is crucial for many modern imaging systems. This task can be formulated as a Bayesian sequential optimal experimental design (sOED) problem, where each new acquisition is chosen to maximally reduce uncertainty about the unknown image given prior information and subsequent data provided by acquisitions. However, in single-pixel imaging (SPI), the large design space consists of all possible binary illumination patterns. Directly optimizing the Bayesian sOED objective over this space using conventional methods is generally challenging. In this work, we reformulate sOED for SPI as a reinforcement learning (RL) problem. In RL, an agent learns a policy through repeated experimental trials to maximize a reward, here given as the expected information gain, the most complete measure of uncertainty reduction in Bayesian OED. This avoids the need to directly optimize complex information-theoretic objectives during a measurement to obtain the next design. Instead, the result is a learned policy function that directly maps the current posterior belief about the image to the next optimal binary measurement pattern, in a computationally efficient way. Using a simple yet representative SPI imaging scenario, this work evaluates the scalability of the learned policy under two different policy parameterizations. Furthermore, we investigate how performance deteriorates when only approximate posterior information is available or the measurements are impaired by noise, and propose several strategies to introduce additional design constraints motivated by biomedical applications. The numerical experiments demonstrate that the proposed Bayesian sOED-RL framework remains robust and can be extended to more complex, large-scale SPI scenarios.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Prior-Guided Physics-Informed Deep Learning for Fast 4D MRI Reconstruction",
+  "authors": [
+   "Mojtaba Safari",
+   "Parag J. Parikh",
+   "Shansong Wang",
+   "Mingzhe Hu",
+   "Philip Connell",
+   "Stanley L. Liauw",
+   "Ralph R. Weichselbaum",
+   "Zhen Tian",
+   "Xiaofeng Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.01888",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Background and purpose: We propose PGPI4MR (prior-guided, physics-informed 4D MRI reconstruction), a deep learning method that leverages information from other respiratory phases or a setup scan, the first 30 s of the same scan, to improve 4D MRI reconstruction without extra scan time. Materials and methods: PGPI4MR is an unrolled network that reconstructs 16 respiratory phases from 60, 30, or 15 s of data, and single 3D volumes, each from 0.29-0.49 s of data, using a setup-scan image. The networks were trained once, on other volunteers, and were not retrained for new volunteers. We evaluated PGPI4MR on measured k-space from three datasets: free-breathing MR-linac (1.5T) and abdominal (3T) scans, and thigh scans with cuff compression (1.5T). All methods, including comparative models, received identical samples and were scored similarly. Results: In vivo, PGPI4MR had the lowest held-out error for 4D MRI at every scan time, and its 16 phases were ready a median of 7.5-13 s after the scan on the 2 GPUs tested. Coupling the 16 respiratory phases reduced the error at 60 s by 9.1% compared with reconstructing each phase alone. For sub-second MRI, the error at 0.49 s was 15.5% lower than that of the best comparison method, classical reconstruction toward the same prior, and on the faster GPU, every 0.29 s window was acquired and reconstructed within 0.5 s. Without retraining, PGPI4MR matched the best methods on the 3T abdominal scans but not on the thigh scans; after retraining on thigh data, it reduced the held-out error by 6.6% relative to the best comparison method. Conclusion: Prior information allowed PGPI4MR to reconstruct 4D and sub-second MRI more accurately than compressed sensing and a published 4D network, within seconds and without extra scan time. This could support 4D MRI for treatment planning and 3D motion monitoring during MR-guided radiotherapy.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Learned optical compression for single-pixel quantitative phase imaging",
+  "authors": [
+   "Ary Portes",
+   "Yuntian Wang",
+   "Che-Yung Shen",
+   "Shiqi Chen",
+   "Aydogan Ozcan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.01675",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Quantitative phase imaging (QPI) reveals optical path-length variations in transparent objects but typically relies on spatially resolved intensity measurements. Here we numerically and experimentally demonstrate learned optical compression for single-pixel QPI, jointly optimizing a diffractive encoder and a digital neural decoder to concentrate reconstruction-relevant phase information into a compact measurement vector. A single reconfigurable phase-modulation plane sequentially displays the learned encoding patterns, which are independent of the input object, each yielding one scalar intensity measurement. Operating at a visible wavelength, the experimental system reconstructs quantitative phase images of unknown objects with ~40-fold dimensional compression, using only 2.55% as many intensity measurements as reconstructed pixels. Experimental blind testing on handwritten digits and grating-like phase objects achieves mean Pearson correlation coefficients of 0.945 and 0.848, respectively. Benchmarking under the same measurement budget demonstrates substantially higher reconstruction fidelity than other encoding strategies, highlighting the advantages of learned optical compression. With the optical encoder fixed, decoder-only neural adaptation enables experimental transfer to previously unseen data distributions, extending the utility of the learned measurement representation. These results establish learned optical compression as a measurement-efficient and reusable framework for QPI, integrating phase-information compression into single-pixel intensity measurements while retaining adaptability to new data. This approach paves the way for low-data-rate phase imaging and sensing, with the potential to extend QPI to spectral regions where high-quality detector arrays are costly or unavailable.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Spend the Bits Where the Tiny Objects Are: Rate-Utility Region Coding for Aerial Detection",
+  "authors": [
+   "Yanliang Qi",
+   "Jiacheng Ding",
+   "Cong Guo",
+   "Peihua Mai"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.01573",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Bandwidth-limited aerial cameras must compress their images before a remote detector can find the many tiny objects in them. Threshold-based region-of-interest (ROI) coding sends only confidently detected regions, and because tiny objects provide limited visual evidence and often score low, it can discard the regions that contain them. We propose rate-utility region coding (RUO), which sends a region when its expected detection utility justifies its measured byte cost, choosing to drop it or to send it at low or high quality with one multiplier shared across images. RUO trains no model, uses a standard image codec and decodes in a few milliseconds. On all 1,610 VisDrone-DET test-dev images, RUO uses 42.4% fewer bits than a tuned threshold-based ROI coder, averaged over their shared tiny-object average precision (AP) range. RUO also needs fewer bits for tiny objects than the AV1 Image File Format (AVIF), High Efficiency Video Coding (HEVC) and three published learned codecs, and its advantage over threshold-based ROI coding persists when the sender and receiver use different detectors. For AP over all object sizes RUO needs 25.4% more bits than the tuned ROI coder, because its allocation drops large regions first at low rates, so it suits tasks that target tiny objects. We plan to release the code.",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Rate-Distortion Optimized Skip Mode Coding Framework for Neural Video Compression in AVS",
+  "authors": [
+   "Yuntian Jiang",
+   "Shuai Li",
+   "Yanbo Gao",
+   "Jinglin Zhang",
+   "Hui Yuan",
+   "Mao Ye"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.00181",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "With the development of deep learning, neural video compression (NVC) is gaining increasing interest and is currently under standardization in the AVS (Audio Video Coding Standard). Skip mode coding, a crucial component in the traditional video compression, is also adopted in AVS NVC. Although the skip mode takes a large portion in encoding the motion and residual features in the NVC, there is a lack of investigation on the rate distortion performance of the skip mode coding. In this paper, we first thoroughly investigate the rate and distortion distribution in the skip mode coding within a spatial frame and under different temporal reference qualities, and demonstrate that distortion distribution changes spatially and temporally. Therefore, a rate-distortion optimized skip mode coding (RDOSkip) framework is proposed, where the rate and distortion in the skip mode coding is formulated based on a statistical distribution predicted by the hyperprior and the Bayes' theorem. An adaptive skip mode decision method based on spatial-temporal joint RD optimization is developed for the skip mode coding among channels and frames in a group of pictures. It addresses the limitation of the rigid fixed-distortion distribution assumption in skip mode coding within the existing methods that rely on a fixed skip threshold. The temporal skip mode decision method has been adopted in the ongoing AVS NVC standard and incorporated into the reference software. The proposed RDOSkip can be directly used in the inference without any training and with negligible complexity increase. Experimental results further demonstrate that the proposed RDOSkip can improve the performance by 0.90% and 1.29% on AVS and HEVC datasets, respectively, in terms of BD-rate saving.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SCOPE: Semantic COdec Pre-Editing for Object-Preserving Compression",
+  "authors": [
+   "Silvia Dani",
+   "Leonardo Galteri",
+   "Marco Bertini"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.39778",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Image compression is increasingly used before machine vision systems, yet standard codecs are mainly optimized for human perception rather than downstream task accuracy. We propose SCOPE (Semantic COdec Pre-Editing), a conditional image pre-editor that modifies images before compression to improve the bitrate and detection accuracy trade-off. The model is conditioned on the codec family and compression severity, allowing a single trained network to adapt to multiple compression settings without retraining or loading codec-specific weights. Instead of uniformly preserving the whole image, the pre-editor learns to protect task-relevant regions while simplifying less important background content to improve compressibility. The resulting rate-accuracy curves show consistent gains across different codec families and detector architectures, together with strong transferability to unseen learned and wavelet-based compression families.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CalibCause: A Quality-Gated, Interpretable and Calibrated Deep Learning Framework for Diabetic Retinopathy Grading",
+  "authors": [
+   "Sohaib Sulman",
+   "Muhammad Atif Saeed",
+   "Akhtar Jamil",
+   "Alaa Ali Hameed",
+   "Roland Aydin"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.40699",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Most deep learning systems for diabetic retinopathy (DR) grading are evaluated on a single data source, with limited evidence of cross-site generalisation, uncertainty calibration, and interpretability. We propose CalibCause, a quality-gated mixture-of-experts framework that combines per-expert visual explanations, label-free image-quality conditioning, knowledge distillation, and calibrated confidence with deferral. We evaluated the framework using 51,310 fundus images from EyePACS, DDR, and APTOS 2019, with IDRiD and DeepDRiD for external testing. Evaluation included pooled testing, leave-one-environment-out experiments, paired bootstrap confidence intervals, and local grade-threshold adaptation. On the pooled test split, the label-free distilled student achieved quadratic weighted kappa (QWK) of 0.863 and accuracy of 0.865 with 27.8 million parameters, 52% fewer than its teacher. Across held-out environments, the label-free model achieved mean QWK of 0.741 compared with 0.743 for a plain ConvNeXt-Tiny baseline, while adversarial invariance did not improve cross-site grading accuracy. Refitting grade thresholds using 200 labelled images increased held-out EyePACS QWK from 0.533 to 0.621 for the label-free model. After vector scaling, expected calibration error ranged from 0.025 to 0.036 across CalibCause variants, and deferring the least confident 20% of images increased student accuracy from 0.865 to 0.923 on the remaining images. These findings demonstrate that quality-aware grading, interpretable expert routing, model compression, and calibrated deferral can be integrated without sacrificing cross-site performance relative to a plain baseline, although reliable deployment still requires local validation and adaptation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Low-rank MERA Decomposition of 3D OCT Image Volume for Compression, Denoising, Feature Extraction and Diagnosis of Retinal Diseases",
+  "authors": [
+   "Ivica Kopriva",
+   "Fei Shi",
+   "Marija Štanfel",
+   "Qin Peng",
+   "Jianhao Bao",
+   "Gaowei Li",
+   "Xinjian Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.35271",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Optical coherence tomography (OCT) is a non-invasive imaging modality used for visualization of retinal tissue. However, OCT volumes are affected by speckle noise, which degrades image contrast and obscures fine structural details. Furthermore, modern clinical practice requires large field-of-view, high-resolution OCT volumes, whose storage and transmission are demanding for archiving and teleophthalmology applications. To address aforementioned challenges, we propose a low-rank multi-scale entanglement renormalization ansatz (MERA) tensor network approximation of 3D OCT image volume, where the image volume is represented as contractions of a top core factor encoding global features and multiple interacting low-rank orthogonal or semi-orthogonal factors modeling inter- and intra-B scan correlations. This representation jointly enables compression, denoising, and feature extraction. Unlike deep learning approaches, the proposed approach is training-free and processes each OCT volume independently. We evaluate the proposed framework on OCT image volumes acquired by two different scanners and demonstrate improved visual quality and reduced retinal layer segmentation errors in comparison with several competing methods. We also extract MERA features from two clinical OCT volume datasets. They are subsequently classified using a Grassmann-manifold nearest-subspace classifier. With the subspace dimension as its only hyperparameter, the classifier is theoretically shown to be robust in small-sample clinical scenario. We demonstrate competitive accuracy of classification of retinal diseases in these small-sample settings, where deep learning methods are often limited by the scarcity of labeled data. The proposed structure-aware model-driven representation learning for high-dimensional data under limited supervision provides good generalization performance while maintaining high interpretability.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Semantic-Guided Frequency Modulation for Learned Image Compression",
+  "authors": [
+   "Gangyi Tian",
+   "Wen Ji",
+   "Alireza Furutanpey",
+   "Mingxuan Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.33616",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "High-frequency attenuation can reduce the rate of learned image codecs but also remove object boundaries and fine detail. We propose Semantic-Guided Adaptive Latent-Frequency Modulation (SG-AFM), which uses a semantic structural prior to guide attenuation of encoder latents. SG-AFM applies a Haar wavelet transform and combines a fixed semantic-frequency multiplier with a bounded learned correction to modulate high-frequency subbands. The semantic prior is computed only at the encoder. No semantic map is transmitted, and no decoder modules are added. Across six datasets, SG-AFM reduces PSNR-based BD-rate relative to TCM by an average of 13.17%. It achieves the best BD-rate among the compared methods on ExDark, NightCity, and OnePlus, with a mean reduction of 16.80%. An ablation on OnePlus demonstrates the benefit of spatially aligned semantic guidance, and visual comparisons illustrate improved reconstruction of local structures.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Patch-Derived or Register Tokens? Comparing Variable-Length Image Tokenizers",
+  "authors": [
+   "Philipp Schenkel",
+   "Tobias Schürmann",
+   "Omer Sahin Tas"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.33540",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Image tokenizers convert pixels into compact latent sequences for efficient generative modeling. Most approaches arrange latents on a downsampled two-dimensional grid, tying sequence length to image resolution. We compare two variable-length strategies: computationally efficient patch-derived tokens, which inherit explicit spatial organization, and more demanding register tokens, which have no predefined spatial layout. Our reconstruction results reveal that patch-derived tokens perform substantially better under extreme compression, whereas register tokens achieve slightly better reconstruction quality at intermediate budgets. At high token budgets, both approaches achieve similar reconstruction quality. For downstream generative tasks, register tokens outperform patch-derived tokens. Adding representation alignment with external pretrained visual encoders substantially improves the generative performance of patch-derived tokens, allowing them to match or outperform register tokens depending on the token budget. We further find that both approaches learn spatially localized representations. Patch-derived tokens largely retain their explicitly imposed spatial organization, while register tokens develop an implicit two-dimensional spatial structure despite having no predefined layout. Representation alignment reduces this spatial organizational constraint, enabling individual tokens to exert a stronger non-local influence.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Real Time Motion Detection in Video Inspired by Photonic Time Stretch",
+  "authors": [
+   "Callen MacPhee",
+   "Yiming Zhou",
+   "Bahram Jalali"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.33351",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Motion perception is fundamental to computer vision and physical AI, and plays a central role in robotics, autonomous vehicles, human-computer interaction, and video compression. Traditional approaches such as background subtraction, frame-differencing and optical flow algorithms often struggle in complex or dynamic scenes, typically sacrificing spatial resolution for computational tractability. Here we introduce MoViD (Motion estimation via Virtual dispersion and phase Detection), a physics-inspired algorithm grounded in the principles that govern photonic time stretch - a highly successful ultrafast realtime data acquisition platform. Drawing inspiration from the optical physics therein, MoViD treats video as a collection of optical time series waveforms associated with pixels. Motion of an object through a pixel broadens the time series spectrum and, after group delay dispersion, induces a temporal phase that exists only if there is motion. Spatiotemporal group delay dispersion templates, corresponding to dielectric functions, classify specific motion trajectories. Unlike conventional empirical phase-based motion-analysis pipelines that require narrow-band spatial channelization and pyramid reconstruction, the physics-based MoViD operates directly on the broadband video signal, vastly increasing its computational speed. The resulting algorithm achieves unprecedented performance in both motion characterization and motion magnification, providing full-resolution motion mapping in real time at nearly 200 frames per second at 4K resolution and 70 frames per second for 8K video - orders of magnitude faster than classical optical flow approaches or learning-based methods. Notably, such extreme performance enables real time motion analysis at ultrahigh resolution for motion detection and compensation in robotics and other autonomous devices.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Compression of Vision Foundation Models for Retinal OCT via Growing-Neural-Gas Codebooks and Graph-Guided Masked Image Modeling",
+  "authors": [
+   "Ali Yavari",
+   "Tilman Schmoll",
+   "Rainer A. Leitgeb",
+   "Wolfgang Drexler",
+   "Thomas Schlegl"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.33340",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Vision foundation models for retinal imaging are large and computationally demanding, limiting point-of-care deployment. We ask how much of such a model's downstream utility survives compression into a smaller network. We propose a topology-aware discretization framework that distills a continuous foundation model into a discrete codebook, then uses it as the reconstruction target for masked image modeling (MIM). It combines gradient-free codebook learning via Growing Neural Gas, which yields an adjacency graph over the codes, with a graph-distance soft cross-entropy loss that replaces one-hot MIM targets with topologically graded supervision. With student pretraining on 383 public Duke iAMD optical coherence tomography (OCT) volumes, the pipeline distills an 86M-parameter teacher into a 22M-parameter student with at least 3.6x fewer FLOPs. The student performs close to, and in some settings above, its teacher across three classification and two segmentation benchmarks, with the magnitude and direction of the difference depending on the teacher, task, metric, and student capacity. On the external OLIVES benchmark, it surpasses its MIRAGE teacher on every metric (98.06% vs. 95.22% balanced accuracy). It works with two Vision Transformer (ViT-Base) teachers, retinal (MIRAGE) and natural-image (DINOv3); with the out-of-domain teacher, the student outperforms it on retinal-layer segmentation, indicating that the added value of retina-specific pretraining is task-dependent: largest for segmentation, while a general-domain teacher is competitive for classification. These results yield compact retinal models potentially suitable for deployment, transferring across OCT datasets, devices, and clinical tasks, including three datasets not used in the student's pretraining.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CompMVR: Compression-Aware Multi-View Restoration Using Diffusion Models for Geometrically Consistent 3D Reconstruction",
+  "authors": [
+   "Dong-hwi Kim",
+   "Chaewon Moon",
+   "Hojun Song",
+   "Dongbeom Kim",
+   "Junyeong Jang",
+   "Aro Kim",
+   "Gahyeon Kim",
+   "Heejung Choi",
+   "Jehee Kim",
+   "Gianella Cravioto",
+   "Sohyun Lee",
+   "Gyeongjin Choi",
+   "EunHye Jeong",
+   "Soo Ye Kim",
+   "Jaehyup Lee",
+   "Sang-hyo Park"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.32800",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Real-world 3D reconstruction pipelines often rely on multi-view images degraded by lossy compression. While compression artifacts have been extensively studied in single-image or video restoration, their impact on multi-view geometry remains largely overlooked. In this work, we identify compression-induced cross-view geometric inconsistency as a critical failure mode, where view-dependent artifacts disrupt feature matching, dense correspondence, camera parameter estimation, and downstream 3D reconstruction tasks such as novel view synthesis. To address this problem, we propose CompMVR, a compression-aware multi-view diffusion restoration framework that jointly refines compressed views while preserving cross-view consistency, and construct compressed datasets for systematic evaluation. Unlike conventional restoration methods that optimize each image independently for 2D perceptual quality, CompMVR leverages learned compression priors and cross-view correspondence to recover visual details while improving geometric reliability across views. Experiments across diverse datasets, codecs, and compression levels demonstrate gains in restoration quality and downstream 3D tasks, including novel-view synthesis, camera pose estimation, and view matching. These results establish compressed multi-view restoration as a distinct problem and highlight its importance for 3D reconstruction under lossy compression. Code and data for this paper are available at https://mchaewon.github.io/CompMVR-project-page/.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HEALPix-Based Implicit Neural Compression of Omnidirectional Images",
+  "authors": [
+   "Yulong Cheng",
+   "Youneng Bao",
+   "Junfeng Zhou",
+   "Mu Li",
+   "Jie Wen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.32561",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Real-time decoding of omnidirectional images is essential for immersive virtual reality (VR) experiences. Compared with conventional transform-based learned image compression (LIC), overfitted codecs offer lower decoding complexity by representing each image with a lightweight implicit neural representation (INR). However, existing approaches typically operate on the equirectangular projection (ERP), which introduces nonuniform spherical sampling and spatial distortion, leading to redundant sampling near the poles and latitude-dependent receptive fields. To address these limitations, we propose a spherical overfitted codec based on a multi-scale Hierarchical Equal Area isoLatitude Pixelization (HEALPix) representation, which enables equal-area sampling and efficient hierarchical modeling of spherical signals. Building on this representation, we develop a Spherical Inter-Scale Conditional entropy model that exploits spatial dependencies and cross-scale correlations among HEALPix latents to improve coding efficiency. We further introduce a Multi-Ring Spherical Convolution that aggregates neighboring pixels over a nearly uniform spherical receptive field across latitudes. Experiments on a public omnidirectional image dataset demonstrate BD-rate reductions of 16.3%, 26.5%, and 19.5% over VVC in terms of V-PSNR, V-MS-SSIM, and V-LPIPS, respectively. Our method also achieves a 13.1% BD-rate reduction over ERP-based Cool-Chic 5.0 in terms of V-PSNR, while providing 2.6-3.6x faster decoding than the evaluated learned autoencoder codecs.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Spectra: Multi-Scale Implicit Decomposition for Deepfake Detection",
+  "authors": [
+   "Dhananjaya Jayasundara",
+   "Kartik Narayan",
+   "Vishal M. Patel"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.31979",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Deepfakes increasingly undermine trust in digital media, yet existing detectors often struggle to generalize across unseen manipulation techniques, compression levels, and dataset shifts. Most approaches rely on RGB appearance, frequency-domain artifacts, or their combination, learning cues present in the final synthesized image. While effective in-distribution, such cues are frequently generator-specific and can diminish as synthesis models evolve. We argue that a complementary perspective can be obtained through implicit neural representations (INRs), which expose how an image is reconstructed rather than merely how it appears. By fitting an INR to an image and analyzing its internal activations, one can reveal reconstruction dynamics that are difficult to observe in the image domain alone and may capture more intrinsic differences between genuine and synthetic content. To this end, we propose Spectra, a deepfake detection framework that combines semantic visual representations with artifact-aware cues derived from INR reconstruction. Spectra extracts multi-level reconstruction heatmaps from image-specific INRs and jointly models them with semantic features through a bidirectional fusion mechanism. This enables direct interaction between image semantics and reconstruction artifacts, allowing the model to identify forgery cues that are less dependent on specific generation pipelines. Extensive experiments on multiple deepfake benchmarks demonstrate improved robustness and cross-dataset generalization, consistently outperforming detectors based solely on RGB appearance or semantic representations. Furthermore, we show that the proposed representation extends beyond deepfake detection to face presentation attack detection, highlighting its potential as a unified framework for facial attack detection.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Look Beyond the Question: Preserve-Focus-Fuse for Whole-Slide Image Question Answering",
+  "authors": [
+   "Xiangyu Li",
+   "Jincheng Li",
+   "Tianle Du",
+   "Yanheng Li",
+   "Haoxuan Che",
+   "Yuxin Sun",
+   "Long Bai",
+   "Liangliang Liu",
+   "Ran Su"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29431",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "A question about a whole-slide image rarely names every morphological finding needed to answer it. Question-guided patch selection can therefore overlook supporting morphology, while slide-level compression can dilute focal evidence. Inspired by how pathologists combine broad slide review, question-directed examination, and integration of their findings, we introduce BEYONDPATH, a Preserve-Focus-Fuse framework for whole-slide image question answering. Preserve learns a question-agnostic Morphology Bank through answer supervision across multiple questions about each training slide. Focus retrieves questionspecific evidence from all foreground patches, including regions outside the Bank. Fuse integrates the preserved morphology at the retrieved evidence positions through Morphology-on-Visual-Evidence Fusion, producing a fixed 96-token visual prefix. On WSI-Bench, BEYONDPATH achieves an Avg-9 of 0.769 and leads all eight reported report-generation metrics using the same checkpoint. It also achieves 0.639 zero-shot overall accuracy on SlideBench-BCNB. Controlled ablations show complementary benefits from morphology preservation and question-directed retrieval, and support cross-question supervision and fusion at the evidence positions. These results support looking beyond the question's explicit cues: preserving broader slide morphology while retaining the ability to seek evidence for each question.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Two for One: Privileged Learning for Resource-Constrained Screening",
+  "authors": [
+   "Lisa Y. W. Tang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29126",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Machine learning systems are often developed under data-rich conditions but deployed when only incomplete information is available. A natural example arises in colour fundus photography (CFP), where both eyes are commonly imaged because they can provide complementary information for ocular disease assessment. Prior approaches that exploit bilateral information either fuse both eyes in a single model or use knowledge distillation to compress a dual-eye teacher into a lightweight student that still requires both images at test time. However, bilateral acquisition may not always be feasible. We thus propose a privileged learning framework in which a teacher model has access to bilateral CFP images during training and learns representations informed by information from both eyes, while the student is trained to transfer this knowledge from the bilateral teacher using only a single-eye image as input. At inference, the student operates exclusively on this single-eye input and does not require the contralateral image. Experimental results show consistent improvements in area under the receiver operating characteristic curve over conventional monocular training, with the largest gains observed for left-eye images for the detection of age-related macular degeneration (0.931 vs. 0.966) and diabetic retinopathy (0.789 vs. 0.836).%, while requiring only a single-eye image at inference. By enabling models to benefit from bilateral information during training while requiring only a single-eye image at inference, our approach may support more reliable deployment in resource-constrained clinical and screening environments.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PLaCA: Learning Patch-Level Future Latent Change for Action Generation",
+  "authors": [
+   "Zhan Yi",
+   "Yuchen Wang",
+   "Chao Li",
+   "Lei Hong",
+   "Boyuan Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27657",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Vision-Language-Action (VLA) models generate robot actions from visual observations and language instructions, but effective manipulation also requires anticipating how the environment will change. Existing world-action models explore future image prediction and latent dynamics modeling. However, generating complete future images can be computationally expensive, while highly compressed latent representations may obscure local changes. To address these challenges, we propose PLaCA, a world-to-action framework built around future latent change. PLaCA directly predicts spatially structured patch-level future latent change from the current multimodal input, preserving local information about expected environmental changes. We introduce patch-level change-aware supervision to emphasize regions undergoing larger changes and a future-to-action interface that explicitly incorporates predicted future latent change into action generation. Experiments on LIBERO-Long show that PLaCA achieves a 79.0% success rate, improving upon the Action-only baseline by 5.0 percentage points. On CALVIN, PLaCA improves the average sequence length from 2.784 to 3.564. These improvements are achieved while updating only 2.95% of the model parameters during the second training stage, demonstrating the effectiveness of future latent change modeling for downstream robotic manipulation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PerQ: Inverse Generative Modeling for Neural Image Compression via Quantization Error Compensation",
+  "authors": [
+   "Tianhao Peng",
+   "Ho Man Kwan",
+   "Fan Zhang",
+   "Shan Liu",
+   "Dave Bull"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27374",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Neural image codecs face a fundamental trade-off between pixel fidelity and perceptual quality. Distortion-optimized codecs preserve pixel-wise fidelity but produce blurred reconstructions at low bitrates, whereas generative codecs leverage learned priors to improve perceptual quality but tend to exhibit saturating PSNR at higher bitrates and require separate models for different bitrate targets. We propose PerQ, which reframes perceptual reconstruction as inverse generative modeling with bounded support. Specifically, we define the quantization cell as the set of latents that yield the same transmitted symbols and derive a transport bound showing that reconstructions from this cell remain within a rate-determined radius of the codec output. This motivates performing generative reconstruction within the codec-induced quantization cell, rather than sampling from an unconstrained image prior. PerQ implements this principle by attaching a rate-conditioned flow-matching compensator to a frozen, multi-rate distortion-optimized backbone, enabling perceptual enhancement while preserving the backbone's coding performance. Experiments on Kodak and CLIC2020 show that PerQ achieves perceptual performance comparable to generative codecs such as MS-ILLM in LPIPS and FID, while maintaining competitive PSNR relative to distortion-optimized codecs such as ELIC. A single model checkpoint supports a wide bitrate range with fast decoding, and the compensator provides consistent gains across three different backbones. The implementation is available at https://jasminepp.github.io/PerQ/.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Channel-Level Mask Guidance for Slimmable Image Compression",
+  "authors": [
+   "Chen Chen",
+   "Chenggang Wu",
+   "Yongbiao Chen",
+   "Weidong Qiu",
+   "Zhengwei Qi",
+   "Haibing Guan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27037",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Learned image compression (LIC) has achieved promising rate-distortion performance, but most methods lack scalability for diverse platforms with varying computational and storage constraints. Existing slimmable LIC methods achieve flexible complexity via consecutive-channel activation but suffer from two limitations: forced consecutive-channel selection degrades narrow-model performance at low bitrates, and the lack of stable variable-rate control limits adaptability to varying bandwidth. We propose a channel-level mask-guided slimmable image compression method. A learnable channel-wise mask with sparsity-promoting regularization enables non-contiguous top-w channel selection, letting narrow models use the most informative channels. After training, mask merging and channel reordering convert the model into a standard slimmable network via Mask-to-Slimmable (M2S) conversion, enabling efficient inference without architectural changes. For variable-rate control, we combine lambda- and width-conditioned modulation with quantization-step scaling and a progressive training pipeline stabilized by a freeze-then-fine-tune strategy. Experiments on Kodak across E2E, Hyperprior, and Checkerboard backbones show superior rate-distortion performance across widths and bitrates, with large gains for narrow models at low bitrates. At w=48, it achieves up to 19.22%, 24.11%, and 22.76% BD-rate savings over the same-width Slimmable baseline on E2E, Hyperprior, and CKBD, respectively. A single VBR model replaces 40 independent models, reducing storage by 14.8x to 15.9x. Code: https://github.com/sjtu-tcloud/MGSIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CheckDistill: Adaptive Checklist Distillation for Efficient Distributional Reward Modeling in Image Editing",
+  "authors": [
+   "Yaqi Cai",
+   "Zuan Gao",
+   "Mengting Chen",
+   "Wei Li",
+   "Bo Zheng"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.26740",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Reinforcement learning for instruction-guided image editing requires reward models that provide reliable, accurate, and efficient feedback. Direct scalar prediction compresses multidimensional editing preferences, whereas generative evaluators can expose their judgment through explicit reasoning. However, broad scoring criteria do not specify all instance-dependent editing and preservation constraints, and generating long reasoning trajectories is costly for online optimization. We introduce CheckDistill, a pointwise reward modeling framework that internalizes instruction-adaptive checklists. We decompose each editing condition into atomic, independently verifiable requirements and construct four-dimensional scoring labels together with structured verification evidence. After supervised score initialization, a privileged teacher conditions on checklists, item-level judgments, and dimension-level rationales to supervise the student's own scoring trajectories. A reliability-weighted on-policy self-distillation objective adjusts supervision at score tokens according to agreement between the teacher's expected scores and reference labels, while retaining candidate probability weights in a truncated token support. The deployed student directly predicts four score distributions without checklist inputs or explicit reasoning and aggregates their expectations into a scalar reward. CheckDistill achieves aggregate accuracies of 72.30%, 56.67% and 82.90% on MMRB2, MER-Bench and EditReward-Bench, respectively, exceeding the compared open-source baselines on all three metrics.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Learning the Dose Manifold: A Latent Diffusion Framework for Volumetric Dose Prediction in Automated Radiotherapy Treatment Planning",
+  "authors": [
+   "J. Boyer-Chammard",
+   "R. Vauclin",
+   "M. C. Biston",
+   "P. Maury",
+   "M. Gau",
+   "S. Stathakis",
+   "V. Grégoire",
+   "N. Paragios",
+   "E. Deutsch",
+   "N. Komodakis"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.26064",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Automated treatment planning (ATP) aims to reduce the unwarranted inter-planner variability of manual planning, while improving treatment quality and efficiency. Most ATP pipelines rely on the prediction of the achievable three-dimensional dose distribution for a given anatomy and the subsequent optimization of machine parameters to reproduce it. Diffusion-based methods are largely slice-wise due to the high dimensionality of radiotherapy data, and assume a one-to-one mapping between anatomy and optimal dose despite the multi-objective nature of treatment planning. They are evaluated on their ability to match reference doses and rarely on their integration in ATP frameworks. We present LaDose, a latent diffusion framework for fully volumetric dose prediction. An autoencoder learned on dose distributions, trained so that perturbed latents decode to plausible doses, compresses dose maps 128-fold and enables 3D diffusion on a single GPU. Prescription values are represented as exact scalar vectors that bypass the image encoder, avoiding resampling and latent compression. Multiscale classifier-free guidance allows for the modulation of clinical trade-offs at inference, without retraining or additional labeled data. On 900 clinically delivered head-and-neck volumetric modulated arc therapy plans from five centers, LaDose reached a median absolute error of 1.18 Gy (1.4--1.8\\% of the prescription) and was the only one of six frameworks free of systematic bias with respect to the reference distribution. Guidance scales acted predictably on target coverage and organ-at-risk sparing. Integrated with direct aperture optimization, the pipeline generated plans in 15.2 minutes; in a blinded review, senior clinicians rated 14 of 15 plans acceptable without editing.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Shengjie Wu",
+   "Lingjin Kong",
+   "Nan Li",
+   "Haitao Zhao",
+   "Dongtang Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25682",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Codec-Compatible Learned Compression for 3D Gaussian Splatting",
+  "authors": [
+   "Feiyang Yu",
+   "Qi Yang",
+   "Wenjie Huang",
+   "Yunfeng Guan",
+   "Yiling Xu",
+   "Zhu Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.26920",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Video-based 3D Gaussian Splatting (3DGS) compression methods provide a practical route by representing Gaussian attributes as 2D maps and coding them with standard video codecs. Among these maps, high-dimensional non-DC spherical harmonics (SH-AC) maps contain the largest number of channels and account for a dominant portion of the bitstream. However, their statistics differ substantially from those of natural images, and the nonlinear dependencies among SH-AC coefficients remain insufficiently exploited. To address these issues, we propose CCT-GS, a Codec-Compatible learned Transform framework for 3DGS compression. CCT-GS first learns a generalized SH-AC transform that captures cross-scene regularities and converts SH-AC maps into compact codec-friendly bottleneck maps. It further introduces LoRA-based scene adaptation to recover scene-specific appearance details with lightweight side information. Experiments on MPEG GSC sequences demonstrate that CCT-GS consistently outperforms representative video-based baselines, achieving an average BD-rate reduction of 51.30% over the video-based anchor.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Bridging Compressed Communication and Local Steps via Spectral Method in Federated Learning",
+  "authors": [
+   "Dmitriy Bystrov",
+   "George Chirkov",
+   "Daniil Medyakov",
+   "Dmitry Bylinkin",
+   "Aleksandr Beznosikov"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.23434",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Federated Learning (FL) enables collaborative training of complex models across large-scale networks of edge devices while keeping data localized. However, data heterogeneity and high communication overhead remain fundamental bottlenecks. Recently, the spectral optimizer Muon has demonstrated remarkable advantages over Adam-like methods in centralized training. While recent efforts have attempted to transition Muon to FL, naive integrations into traditional architectures fail short. Crucially, existing approaches do not support the the communication compression and local steps --- the two foundational techniques of efficient FL. To address this limitation, we introduce a novel spectral FL method that utilizes both local updates and compression. We establish rigorous convergence guarantees under mild assumptions, notably eliminating the restrictive bounded heterogeneity condition. Empirical evaluation on standard image classification benchmarks validates the efficiency and robustness of our approach.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Nonlinear Dynamical Systems as Scalable and Efficient Physical Neural Networks",
+  "authors": [
+   "Tyler King",
+   "Magnus Saebo",
+   "Jeremie Laydevant",
+   "Haoting Zhen",
+   "Maxwell G. Anderson",
+   "Tatsuhiro Onodera",
+   "Peter L. McMahon"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.40471",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The rapid growth in the size of state-of-the-art machine-learning (ML) models has led to increasing compute demands, spurring the development of energy-efficient hardware accelerators. Physical systems trained to perform ML inference, known as physical neural networks, have been proposed as accelerators in part because of their potential to be highly energy efficient. However, the ML inference accuracies reported in most investigations of physical neural networks have been substantially below the state of the art for conventional digital neural networks. In this work, we show in simulation studies that by applying modern ML training practices, including model compression, various candidate physical neural networks based on nonlinear dynamical systems can achieve accuracies as high as 99.2% on MNIST handwritten-digit recognition. We also show for one dynamical system that using it as the core building block of a parameter-efficient ML architecture inspired by MLP-Mixers enables accuracies of up to 86.4% on CIFAR-10 image classification (92.2% with pretraining and knowledge distillation), compared with 64% for the same system without the mixer architecture. The mixer approach achieved its accuracy while using $>5\\times$ fewer trainable parameters than the baseline. Finally, we present back-of-the-envelope estimates for inference energy efficiency and speed when using an example physical dynamical system, suggesting that orders of magnitude improvements may be possible over digital-electronic neural networks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "UltraDiff: Transferring High-Fidelity Priors to Compressed Latent Spaces for High-Resolution Image Generation",
+  "authors": [
+   "Jingjing Ren",
+   "Haitian Zheng",
+   "Haoyu Chen",
+   "Connelly Barnes",
+   "Zhifei Zhang",
+   "Yuqian Zhou",
+   "Zhe Lin",
+   "Lei Zhu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.21202",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "High-resolution synthesis with Latent Diffusion Models (LDMs) faces a fundamental trade-off between computational cost and generative fidelity. This trade off is largely governed by the latent compression factor f (e.g. f8 denotes f=8 and f32 f=32). While aggressive compression (f32) significantly improves efficiency, it suffers from severe information loss and ambiguity compared to standard f8 models. We propose UltraDiff, a framework that reformulates this challenge as joint latent diffusion learning followed by marginal score distillation. We introduce MixTeacher, a dual branch DiT that models the joint f8-f32 distribution, utilizing shared attention to resolve the ambiguity of the compressed space with high fidelity f8 priors. Crucially, we propose vector field distillation in the native f32 space. Theoretically, this compels the student to learn the conditional expectation of the teacher trajectory, effectively filtering out compression artifacts. Across the evaluated 1K to 4K settings, UltraDiff approaches f8 level quality while preserving f32 efficiency. With 20 sampling steps on a single A100 GPU, it generates a 2K image in 6.2 seconds over 40 times faster than our f8 baseline.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Tokenized Joint Source-Network Coding for Loss-Resilient Video Streaming",
+  "authors": [
+   "Ke Yang",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Guo Lu",
+   "Jincheng Dai",
+   "Wenjun Zhang",
+   "Ping Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.21166",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "For decades, conventional video streaming systems have relied on packet-level forward error correction (FEC) codes and retransmissions to ensure reliable video delivery. However, in real-time communications, FEC is inherently inefficient under unknown and time-varying packet-loss conditions, while retransmission can incur excessive latency and fail to meet stringent playout deadlines. Emerging deep joint source-channel coding (DeepJSCC) provides an alternative by learning channel-noise-resilient representations, yet its tight coupling with the physical layer makes it difficult to integrate into today's layered network architectures and protocols. In this paper, we propose TokJSNC, a simple-but-effective tokenized joint source-network coding paradigm for packet-loss-resilient video streaming. Rather than first compressing video into a compact bitstream and then protecting it with packet-level FEC, TokJSNC directly encodes video into variable-length discrete token-stream, whose transmission rate is jointly adapted to video content complexity and network conditions. By exploiting the spatiotemporal correlations among learned video tokens, TokJSNC enables robust video reconstruction over a wide range of packet-loss rates without explicit FEC or retransmissions. Consequently, TokJSNC brings the JSCC-like graceful degradation property to the network layer while remaining compatible with existing network architectures and transport protocols. Experimental results show that TokJSNC maintains an average playback frame rate above 22 fps even at a 70% packet-loss rate, whereas the best-performing baseline drops below 12 fps. Overall, TokJSNC establishes a practical pathway for repurposing modern generative video tokenizers for loss-resilient streaming, while providing a fundamental framework for video token communications.",
+  "source": "arxiv"
+ },
+ {
+  "title": "End-to-End Learned Image Coding: From Rate-Distortion Optimization to Practical Deployment",
+  "authors": [
+   "Ming Lu",
+   "Junqi Shi",
+   "Zhan Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.22421",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "End-to-end learned image coding (LIC) has achieved substantial improvements in rate--distortion (R--D) performance, yet practical deployment requires addressing a broader set of system-level constraints. This article provides a deployment-oriented review of LIC, with particular attention to the transition from high-performance neural compression models to practical codecs. We first summarize the basic end-to-end coding framework, including learned transforms, quantization, entropy modeling, and R--D optimization. We then review practical extensions that are increasingly important for deployment, including variable-rate coding and rate control, integer-precision inference and cross-platform consistency, robustness and communication resilience, lightweight and hardware-aware implementation, and standardization and interoperability. To study these issues under a common setting, we further introduce TinyLIC as an open benchmark and reproducible case study for rate--distortion--complexity analysis. Experimental results illustrate the trade-offs among compression efficiency, computational complexity, numerical consistency, and robustness. In particular, TinyLIC with approximately 10 KMACs/pixel decoding complexity substantially outperforms the H.265/HEVC image-profile anchor on Kodak, while the 50 KMACs/pixel configuration achieves performance comparable to the H.266/VVC image-profile anchor on several test sets. The review highlights practical constraints and design trade-offs that remain central to the deployment and interoperability of learned image codecs. Materials are accessible at https://njuvision.github.io/TinyLIC.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Defining and Generating Compositional Structure",
+  "authors": [
+   "Eric Elmoznino",
+   "Tejas Kasetty",
+   "Blaise Agüera y Arcas",
+   "Yoshua Bengio",
+   "Guillaume Lajoie"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.20922",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Compositional structure is pervasive in nature and across scales: atoms combine into molecules, molecules into cells, and cells into organisms, while further compositional hierarchies appear within each level. More broadly, compositionality, the reuse and recombination of parts into novel structures, is a fundamental source of interesting complexity in both natural and artificial systems. Yet despite its importance, and despite our apparent ease in recognizing it, mathematical accounts capturing what we intuitively mean by compositional structure remain limited. Here, we fill this gap by formalizing a simple idea: compositional structure emerges when parts, considered together, reveal shared structure that is not captured when those parts are modeled separately. We express this idea using algorithmic information theory, the mathematics of information and compression, which provides a natural way to identify structure in arbitrary data without specifying in advance what that structure must look like. Applied across scales, our definition informs where and how compositional structure emerges within an object. Using tractable approximations, we then invert the framework to generate compositional objects: we specify the desired form of their compositional structure without prescribing their particular content, and optimize directly over strings and images. The resulting objects exhibit readily recognizable hierarchical reuse and part-whole organization, suggesting that the definition captures compositional structure rather than merely complexity, regularity, or shared information. Finally, we discuss implications for machine learning, including a new perspective on depth in neural architectures and principles for constructing compositional data curricula capable of supporting open-ended learning.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Feed-Forward Multi-View Feature Coding for 3D Gaussian Splatting",
+  "authors": [
+   "Seungmi Choi",
+   "Ji-Hyoun Choi",
+   "Suhyun Jo",
+   "Tae-Gwon Park",
+   "Hui Yong Kim"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.20590",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Feed-forward 3D Gaussian Splatting (3DGS) methods enable efficient reconstruction of 3D scenes from sparse multi-view images in a single forward pass, without scene-specific optimization. However, existing feed-forward scene-coding pipelines follow a \"generate-then-compress\" framework, first generating a Gaussian representation and then encoding its geometry and appearance through separate coding paths, complicating codec design and limiting the exploitation of cross-attribute redundancy. We propose multi-view feature coding for Gaussian splatting (MFGS), an end-to-end feed-forward framework for scene coding. Instead of compressing an explicit Gaussian representation, MFGS extracts multi-view features from the input images and encodes them into a compact bitstream. Through end-to-end rate-distortion training, MFGS learns a compact latent representation of multi-view features that jointly represents geometry and appearance, enabling the receiver to predict Gaussian attributes from the decoded features. We further introduce importance-guided Gaussian selection to accommodate different rendering budgets, allowing the receiver to adjust the number of Gaussians used for rendering from the same bitstream. Across RE10K, ACID, and DL3DV, MFGS achieves 99.76-99.86% bitrate savings over the generate-then-compress pipeline, as measured by BD-rate, while reducing total GMACs by 52-55% and providing an approximately 12 times end-to-end speedup.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BluePixel: Toward Native 4K Agentic Image Editing",
+  "authors": [
+   "Shanyan Guan",
+   "Shiyu Li",
+   "Xin Li",
+   "Zhizhou Chen",
+   "Yunzhe Xu",
+   "Yuehao Liu",
+   "Ruixue Shen",
+   "Shiju Zhang",
+   "Min Jin",
+   "Qiang Liu",
+   "Junbo Liu",
+   "Penggang Shi",
+   "Sheng Sun",
+   "Xiao Wang",
+   "Yong Zhang",
+   "Zhongang Qi",
+   "Wei Li",
+   "Chao Ma",
+   "Ying Tai",
+   "Yanhao Ge"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.19882",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Instruction-driven image editing has reached native 4K, yet how such editors are trained remains undisclosed, and pretraining one from scratch is beyond most teams. The task itself compounds the difficulty: a single end-to-end editor cannot make precise parametric adjustments, match specialized experts, or interpret the vague instructions users actually write. We argue that 4K editing is a system problem rather than a single-model problem, and present BluePixel, which couples a native-4K editing model with an agent harness; the complete training recipe is disclosed in this paper. The model makes 4K training practical: it turns a 1K-pretrained editor into a native-4K one through progressive VAE adaptation that keeps 4K training as affordable as 1K, absorbs a long tail of vertical editing skills through continual learning, and refines the aesthetic-fidelity trade-off with reinforcement learning. Distillation via source-anchored target projection (SATP) then compresses 50 denoising steps to 4, completing a 4K edit in 8.7 s on a single Kunlunxin P800 XPU while preserving task success rate and background consistency. The harness, BluePixel Agent, makes editing controllable: it decomposes user instructions into specialist and general operations, verifies every result with the same reward model that guided training, and retries within bounded attempts. On VINS-4KEval++ (3,305 native-4K cases), BluePixel ranks second among seven models, behind only GPT Image 2 in non-edited-region consistency.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver",
+  "authors": [
+   "Ze Zheng",
+   "Xiaoyan Wu",
+   "Hang Xu",
+   "Jingzheng Huang",
+   "Tailong Xiao",
+   "Guihua Zeng"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.19778",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Computational compressive imaging, such as single-pixel imaging and lensless imaging, is a promising imaging technique, enabling the reconstruction of objects from under-sampled measurements through compressed sensing algorithms or deep learning methods. However, the demand for electronic computational resources grows rapidly when recovering high-resolution and multi-dimensional images and training neural networks with numerous parameters, which has become a bottleneck for the widespread adoption of this technique. Here, we propose a physics-driven reconstruction framework that formulates imaging inverse problems as Ising models and directly recovers target objects through the self-evolution of non-von Neumann Ising machines toward the ground state of the Hamiltonian. We employ a simulated-annealing-based Ising solver to demonstrate this proof-of-concept by reconstructing objects in both single-pixel imaging and a lensless diffuser camera at sampling rates ranging from 1% to 25%. By further incorporating a foreground-sparsity constraint and a smoothness constraint, the reconstruction quality of our method is comparable to or even better than that of mainstream algorithms. This approach has the potential to substantially reduce the electronic computational burden of inverse reconstruction, paving the way for real-time, low-power computational imaging.",
+  "source": "arxiv"
+ }
+]

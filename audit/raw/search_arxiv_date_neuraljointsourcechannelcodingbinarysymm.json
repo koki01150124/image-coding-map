@@ -1,0 +1,20 @@
+[
+ {
+  "title": "Transformer-based Joint Source Channel Coding for Textual Semantic Communication",
+  "authors": [
+   "Shicong Liu",
+   "Zhen Gao",
+   "Gaojie Chen",
+   "Yu Su",
+   "Lu Peng"
+  ],
+  "year": 2023,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2307.12266",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The Space-Air-Ground-Sea integrated network calls for more robust and secure transmission techniques against jamming. In this paper, we propose a textual semantic transmission framework for robust transmission, which utilizes the advanced natural language processing techniques to model and encode sentences. Specifically, the textual sentences are firstly split into tokens using wordpiece algorithm, and are embedded to token vectors for semantic extraction by Transformer-based encoder. The encoded data are quantized to a fixed length binary sequence for transmission, where binary erasure, symmetric, and deletion channels are considered for transmission. The received binary sequences are further decoded by the transformer decoders into tokens used for sentence reconstruction. Our proposed approach leverages the power of neural networks and attention mechanism to provide reliable and efficient communication of textual data in challenging wireless environments, and simulation results on semantic similarity and bilingual evaluation understudy prove the superiority of the proposed model in semantic transmission.",
+  "source": "arxiv"
+ }
+]

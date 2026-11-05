@@ -1,0 +1,899 @@
+[
+ {
+  "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
+  "authors": [
+   "Vaisman, Amit",
+   "Ohayon, Guy",
+   "Manor, Hila",
+   "Michael Elad",
+   "Michaeli, Tomer"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.06424",
+  "arxiv": "2511.06424",
+  "openalex": "W7104959326",
+  "cited_by": 1,
+  "abstract": "While zero-shot diffusion-based compression methods have seen significant progress in recent years, they remain notoriously slow and computationally demanding. This paper presents an efficient zero-shot diffusion-based compression method that runs substantially faster than existing methods, while maintaining performance that is on par with the state-of-the-art techniques. Our method builds upon the recently proposed Denoising Diffusion Codebook Models (DDCMs) compression scheme. Specifically, DDCM compresses an image by sequentially choosing the diffusion noise vectors from reproducible random codebooks, guiding the denoiser's output to reconstruct the target image. We modify this framework with Turbo-DDCM, which efficiently combines a large number of noise vectors at each denoising step, thereby significantly reducing the number of required denoising operations. This modification is also coupled with an improved encoding protocol. Furthermore, we introduce two flexible variants of Turbo-DDCM, a priority-aware variant that prioritizes user-specified regions and a distortion-controlled variant that compresses an image based on a target PSNR rather than a target BPP. Comprehensive experiments position Turbo-DDCM as a compelling, practical, and flexible image compression scheme.",
+  "source": "openalex"
+ },
+ {
+  "title": "Trajectory-Consistent Denoising Diffusion Codebook Models for Zero-Shot High-Fidelity Image Compression at Ultra-Low Bitrates",
+  "authors": [
+   "Fang Zhang",
+   "Linli Xu"
+  ],
+  "year": 2026,
+  "venue": "International Joint Conference on Artificial Intelligence",
+  "doi": "10.24963/ijcai.2026/230",
+  "arxiv": null,
+  "openalex": "W7213431530",
+  "cited_by": 0,
+  "abstract": "Denoising Diffusion Codebook Models (DDCM) have emerged as a promising framework for zero-shot image compression by replacing stochastic sampling with discrete selection from a reproducible Gaussian codebook. By greedily picking noise vectors that best match the target image, DDCM encodes the generative trajectory into a compact sequence of indices for image compression. However, the target-guided noise selection provides only coarse guidance as the discrepancy between the denoiser's output and the target image is substantial. This discrepancy inevitably results in trajectory drift, necessitating massive codebooks to span the enlarged search space and extensive inference steps to gradually compensate for the deviation. In this paper, we propose the Trajectory-Consistent Diffusion Codebook Model (TC-DDCM) to address these inefficiencies. Rather than approximating the distant target, TC-DDCM navigates the generative process by strictly tracking a pre-computed inversion trajectory. This paradigm shift yields two critical advantages: 1) By minimizing the deviation to the proximal reference state along the trajectory, the search space is drastically shrunk, resulting in significantly smaller codebooks. 2) By aligning the generative steps with inversion methods, TC-DDCM achieves optimal reconstruction in a few inference steps. Extensive experiments demonstrate that TC-DDCM significantly outperforms state-of-the-art zero-shot methods in rate-distortion-perception performance at ultra-low bitrates, making zero-shot diffusion-based compression practical.",
+  "source": "openalex"
+ },
+ {
+  "title": "ZeroGVC: Zero-Shot Generative Video Compression with Autoregressive Diffusion Priors",
+  "authors": [
+   "Yixin Gao",
+   "Xiaohan Pan",
+   "Lin Liu",
+   "Xin Li",
+   "Zhibo Chen",
+   "Qi Tian"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2606.22371",
+  "arxiv": "2606.22371",
+  "openalex": "W7165681593",
+  "cited_by": 1,
+  "abstract": "Recent generative video compression methods leverage powerful generative priors to achieve perceptually pleasing reconstructions. However, most existing approaches require additional training to adapt generative models to produce realistic reconstructions from compact representations. In this paper, we propose ZeroGVC, a zero-shot generative video compression framework that leverages pretrained autoregressive diffusion priors for low-delay video reconstruction. ZeroGVC encodes the first frame of each group of pictures (GOP) with an image codec and represents subsequent P-frames through Codebook-Guided Autoregressive Latent Compression. This design is motivated by our observation that the compression scheme of denoising diffusion codebook models is effective in few-step consistency sampling. By selecting compact combinations of reproducible codebook noise vectors, ZeroGVC steers the latent denoising trajectory toward the target P-frame while allowing the decoder to reproduce the same trajectory in only a few denoising steps. In addition, we design an optional bidirectional reference mode that mitigates error propagation by leveraging the next I-frame context without introducing any additional bitrate overhead. Extensive experiments on standard video compression benchmarks demonstrate that ZeroGVC achieves superior perceptual reconstruction quality at ultra-low bitrates without any additional training.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Medical Image Translation via Frequency-Guided Diffusion Models",
+  "authors": [
+   "Yunxiang Li",
+   "Hua‐Chieh Shao",
+   "Xiao Huan Liang",
+   "Liyuan Chen",
+   "Ruiqi Li",
+   "Steve B Jiang",
+   "Jing Wang",
+   "You Zhang"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Medical Imaging",
+  "doi": "10.1109/tmi.2023.3325703",
+  "arxiv": "2304.02742",
+  "openalex": "W4387757480",
+  "cited_by": 115,
+  "abstract": "Recently, the diffusion model has emerged as a superior generative model that can produce high quality and realistic images. However, for medical image translation, the existing diffusion models are deficient in accurately retaining structural information since the structure details of source domain images are lost during the forward diffusion process and cannot be fully recovered through learned reverse diffusion, while the integrity of anatomical structures is extremely important in medical images. For instance, errors in image translation may distort, shift, or even remove structures and tumors, leading to incorrect diagnosis and inadequate treatments. Training and conditioning diffusion models using paired source and target images with matching anatomy can help. However, such paired data are very difficult and costly to obtain, and may also reduce the robustness of the developed model to out-of-distribution testing data. We propose a frequency-guided diffusion model (FGDM) that employs frequency-domain filters to guide the diffusion model for structure-preserving image translation. Based on its design, FGDM allows zero-shot learning, as it can be trained solely on the data from the target domain, and used directly for source-to-target domain translation without any exposure to the source-domain data during training. We evaluated it on three cone-beam CT (CBCT)-to-CT translation tasks for different anatomical sites, and a cross-institutional MR imaging translation task. FGDM outperformed the state-of-the-art methods (GAN-based, VAE-based, and diffusion-based) in metrics of Fréchet Inception Distance (FID), Peak Signal-to-Noise Ratio (PSNR), and Structural Similarity Index Measure (SSIM), showing its significant advantages in zero-shot medical image translation.",
+  "source": "openalex"
+ },
+ {
+  "title": "ZSDA-ICM: Zero-Shot Domain Adaptation of Image Compression for Machines in Diverse Scenes",
+  "authors": [
+   "G Wang",
+   "Wen Tan",
+   "Fanyang Meng",
+   "Xuanrui Lu",
+   "Jihe Wu",
+   "Yongsheng Liang"
+  ],
+  "year": 2026,
+  "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+  "doi": "10.1109/icassp55912.2026.11461236",
+  "arxiv": null,
+  "openalex": "W7155050835",
+  "cited_by": 0,
+  "abstract": "Image Compression for Machines (ICM) has recently demonstrated strong performance across various downstream tasks. However, its effectiveness significantly degrades when applied to images from domains with distributions different from the training data. To address this issue, we propose a zero-shot domain adaptation framework to improve the generalization capability of ICM models in unseen scenes. Inspired by style transfer techniques, we introduce a diffusion-based zero-shot style transfer module, which transforms source do-main images into target-domain styles (e.g., rainy or snowy conditions) for adaptation. To further enhance cross-domain consistency, we incorporate a domain alignment loss that con-strains the semantic alignment between compressed images and their target descriptions. The proposed method is compatible with various state-of-the-art compression models and achieves significant performance gains in diverse scenarios without requiring access to any target domain images.",
+  "source": "openalex"
+ },
+ {
+  "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Shengjie Wu",
+   "Lingjin Kong",
+   "Nan Li",
+   "Haitao Zhao",
+   "Dongtang Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2610.25682",
+  "arxiv": "2610.25682",
+  "openalex": "W7223070425",
+  "cited_by": 0,
+  "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Noise Constrained Diffusion (NC-Diffusion) Framework for High-Fidelity Image Compression",
+  "authors": [
+   "Zhenyu Du",
+   "Yanbo Gao",
+   "Shuai Li",
+   "Yiyang Li",
+   "Hui Yuan",
+   "Mao Ye"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2025.3642340",
+  "arxiv": "2604.06568",
+  "openalex": "W7113894771",
+  "cited_by": 2,
+  "abstract": "With the great success of diffusion models in image generation, diffusion-based image compression is attracting increasing interests. However, due to the random noise introduced in the diffusion learning, they usually produce reconstructions with deviation from the original images, leading to suboptimal compression results. To address this problem, in this paper, we propose a Noise Constrained Diffusion (NC-Diffusion) framework for high fidelity image compression. Unlike existing diffusion-based compression methods that add random Gaussian noise and direct the noise into the image space, the proposed NC-Diffusion formulates the quantization noise originally added in the learned image compression as the noise in the forward process of diffusion. Then a noise constrained diffusion process is constructed from the ground-truth image to the initial compression result generated with quantization noise. The NC-Diffusion overcomes the problem of noise mismatch between compression and diffusion, significantly improving the inference efficiency. In addition, an adaptive frequency-domain filtering module is developed to enhance the skip connections in the U-Net based diffusion architecture, in order to enhance high-frequency details. Moreover, a zero-shot sample-guided enhancement method is designed to further improve the fidelity of the image. Experiments on multiple benchmark datasets demonstrate that our method can achieve the best performance compared with existing methods.",
+  "source": "openalex"
+ },
+ {
+  "title": "AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model",
+  "authors": [
+   "Teng Hu",
+   "Jiangning Zhang",
+   "Ran Yi",
+   "Yuzhen Du",
+   "Xu Chen",
+   "Liang Liu",
+   "Yabiao Wang",
+   "Chengjie Wang"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "doi": "10.1609/aaai.v38i8.28696",
+  "arxiv": "2312.05767",
+  "openalex": "W4393159787",
+  "cited_by": 164,
+  "abstract": "Anomaly inspection plays an important role in industrial manufacture. Existing anomaly inspection methods are limited in their performance due to insufficient anomaly data. Although anomaly generation methods have been proposed to augment the anomaly data, they either suffer from poor generation authenticity or inaccurate alignment between the generated anomalies and masks. To address the above problems, we propose AnomalyDiffusion, a novel diffusion-based few-shot anomaly generation model, which utilizes the strong prior information of latent diffusion model learned from large-scale dataset to enhance the generation authenticity under few-shot training data. Firstly, we propose Spatial Anomaly Embedding, which consists of a learnable anomaly embedding and a spatial embedding encoded from an anomaly mask, disentangling the anomaly information into anomaly appearance and location information. Moreover, to improve the alignment between the generated anomalies and the anomaly masks, we introduce a novel Adaptive Attention Re-weighting Mechanism. Based on the disparities between the generated anomaly image and normal sample, it dynamically guides the model to focus more on the areas with less noticeable generated anomalies, enabling generation of accurately-matched anomalous image-mask pairs. Extensive experiments demonstrate that our model significantly outperforms the state-of-the-art methods in generation authenticity and diversity, and effectively improves the performance of downstream anomaly inspection tasks. The code and data are available in https://github.com/sjtuplayer/anomalydiffusion.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Low Light Image Enhancement with Diffusion Prior",
+  "authors": [
+   "J. Yohan Cho",
+   "Aghajanzadeh, Sara",
+   "Zhen Zhu",
+   "David Alexander Forsyth"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2412.13401",
+  "arxiv": "2412.13401",
+  "openalex": "W4405626117",
+  "cited_by": 3,
+  "abstract": "In this paper, we present a simple yet highly effective \"free lunch\" solution for low-light image enhancement (LLIE), which aims to restore low-light images as if acquired in well-illuminated environments. Our method necessitates no optimization, training, fine-tuning, text conditioning, or hyperparameter adjustments, yet it consistently reconstructs low-light images with superior fidelity. Specifically, we leverage a pre-trained text-to-image diffusion prior, learned from training on a large collection of natural images, and the features present in the model itself to guide the inference, in contrast to existing methods that depend on customized constraints. Comprehensive quantitative evaluations demonstrate that our approach outperforms SOTA methods on established datasets, while qualitative analyses indicate enhanced color accuracy and the rectification of subtle chromatic deviations. Furthermore, additional experiments reveal that our method, without any modifications, achieves SOTA-comparable performance in the auto white balance (AWB) task.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Composed Image Retrieval with Textual Inversion",
+  "authors": [
+   "Alberto Baldrati",
+   "Lorenzo Agnolucci",
+   "Marco Bertini",
+   "Alberto Del Bimbo"
+  ],
+  "year": 2023,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51070.2023.01407",
+  "arxiv": "2303.15247",
+  "openalex": "W4390873539",
+  "cited_by": 142,
+  "abstract": "Composed Image Retrieval (CIR) aims to retrieve a target image based on a query composed of a reference image and a relative caption that describes the difference between the two images. The high effort and cost required for labeling datasets for CIR hamper the widespread usage of existing methods, as they rely on supervised learning. In this work, we propose a new task, Zero-Shot CIR (ZS-CIR), that aims to address CIR without requiring a labeled training dataset. Our approach, named zero-Shot composEd imAge Retrieval with textuaL invErsion (SEARLE), maps the visual features of the reference image into a pseudo-word token in CLIP token embedding space and integrates it with the relative caption. To support research on ZS-CIR, we introduce an open-domain benchmarking dataset named Composed Image Retrieval on Common Objects in context (CIRCO), which is the first dataset for CIR containing multiple ground truths for each query. The experiments show that SEARLE exhibits better performance than the baselines on the two main datasets for CIR tasks, FashionIQ and CIRR, and on the proposed CIRCO. The dataset, the code and the model are publicly available at https://github.com/miccunifi/SEARLE.",
+  "source": "openalex"
+ },
+ {
+  "title": "SemAID: Zero-Shot Semantic-Aware Image Communication with Adaptive Sampling and Diffusion-based Signal Recovery",
+  "authors": [
+   "Mingxuan Xie",
+   "Zhikai Fang",
+   "Nan Cheng"
+  ],
+  "year": 2026,
+  "venue": "International Conference on Communications",
+  "doi": "10.1109/icc59461.2026.11587790",
+  "arxiv": null,
+  "openalex": "W7168319750",
+  "cited_by": 0,
+  "abstract": "The paradigm of semantic communication prioritizes the recovery of semantically meaningful information over pixel-level fidelity, which is crucial for bandwidth-constrained and extreme environments such as deep-space exploration and disaster response. However, existing deep learning-based approaches often rely on task-specific training and struggle with the compound distortion of aggressive compression and severe channel noise. In this paper, we formulate semantic-aware image transmission as a signal recovery problem from incomplete and noisy measurements, guided by semantic importance. We propose SemAID, a novel framework that integrates an adaptive, semantic-driven non-uniform sampler at the transmitter and a generative diffusion-based Bayesian estimator at the receiver. The transmitter dynamically masks pixels based on saliency and edge information, effectively implementing content-aware compression. The receiver, leveraging a pre-trained diffusion model as a strong generative prior, solves the corresponding inverse problem via posterior sampling without any retraining. Extensive experiments demonstrate that SemAID achieves superior performance in both perceptual quality and reconstruction fidelity under low-SNR conditions, showcasing remarkable generalization across varying channel states and unseen data distributions. This work validates the potent efficacy of generative priors for semantic signal recovery under the compound challenge of non-uniform sampling and channel noise, offering a practical zero-shot solution for extreme communication environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "CoD: A Diffusion Foundation Model for Image Compression",
+  "authors": [
+   "Jia, Zhaoyang",
+   "Zheng, Zihan",
+   "Xue, Naifu",
+   "Li, Jiahao",
+   "Li, Bin",
+   "Guo, Zongyu",
+   "Zhang, Xiaoyi",
+   "Li, Houqiang",
+   "Lu, Yan"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.18706",
+  "arxiv": "2511.18706",
+  "openalex": "W7106699451",
+  "cited_by": 1,
+  "abstract": "Existing diffusion codecs typically build on text-to-image diffusion foundation models like Stable Diffusion. However, text conditioning is suboptimal from a compression perspective, hindering the potential of downstream diffusion codecs, particularly at ultra-low bitrates. To address it, we introduce \\textbf{CoD}, the first \\textbf{Co}mpression-oriented \\textbf{D}iffusion foundation model, trained from scratch to enable end-to-end optimization of both compression and generation. CoD is not a fixed codec but a general foundation model designed for various diffusion-based codecs. It offers several advantages: \\textbf{High compression efficiency}, replacing Stable Diffusion with CoD in downstream codecs like DiffC achieves SOTA results, especially at ultra-low bitrates (e.g., 0.0039 bpp); \\textbf{Low-cost and reproducible training}, 300$\\times$ faster training than Stable Diffusion ($\\sim$ 20 vs. $\\sim$ 6,250 A100 GPU days) on entirely open image-only datasets; \\textbf{Providing new insights}, e.g., We find pixel-space diffusion can achieve VTM-level PSNR with high perceptual quality and can outperform GAN-based codecs using fewer parameters. We hope CoD lays the foundation for future diffusion codec research. Codes are released at https://github.com/microsoft/GenCodec/tree/main/CoD.",
+  "source": "openalex"
+ },
+ {
+  "title": "VLIC: Vision-Language Models As Perceptual Judges for Human-Aligned Image Compression",
+  "authors": [
+   "Kyle Sargent",
+   "Gao, Ruiqi",
+   "Philipp Henzler",
+   "Herrmann, Charles",
+   "Holynski, Aleksander",
+   "Li Fei-Fei",
+   "Jiajun Wu",
+   "Zhang, Jason"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2512.15701",
+  "arxiv": "2512.15701",
+  "openalex": "W7116061275",
+  "cited_by": 0,
+  "abstract": "Evaluations of image compression performance which include human preferences have generally found that naive distortion functions such as MSE are insufficiently aligned to human perception. In order to align compression models to human perception, prior work has employed differentiable perceptual losses consisting of neural networks calibrated on large-scale datasets of human psycho-visual judgments. We show that, surprisingly, state-of-the-art vision-language models (VLMs) can replicate binary human two-alternative forced choice (2AFC) judgments zero-shot when asked to reason about the differences between pairs of images. Motivated to exploit the powerful zero-shot visual reasoning capabilities of VLMs, we propose Vision-Language Models for Image Compression (VLIC), a diffusion-based image compression system designed to be post-trained with binary VLM judgments. VLIC leverages existing techniques for diffusion model post-training with preferences, rather than distilling the VLM judgments into a separate perceptual loss network. We show that calibrating this system on VLM judgments produces competitive or state-of-the-art performance on human-aligned visual compression depending on the dataset, according to perceptual metrics and large-scale user studies. We additionally conduct an extensive analysis of the VLM-based reward design and training procedure and share important insights. More visuals are available at https://kylesargent.github.io/vlic",
+  "source": "openalex"
+ },
+ {
+  "title": "PSC: Posterior Sampling-Based Compression",
+  "authors": [
+   "Noam Elata",
+   "Tomer Michaeli",
+   "Michael Elad"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2407.09896",
+  "arxiv": "2407.09896",
+  "openalex": "W4400703131",
+  "cited_by": 1,
+  "abstract": "Diffusion models have transformed the landscape of image generation and now show remarkable potential for image compression. Most of the recent diffusion-based compression methods require training and are tailored for a specific bit-rate. In this work, we propose Posterior Sampling-based Compression (PSC) - a zero-shot compression method that leverages a pre-trained diffusion model as its sole neural network component, thus enabling the use of diverse, publicly available models without additional training. Our approach is inspired by transform coding methods, which encode the image in some pre-chosen transform domain. However, PSC constructs a transform that is adaptive to the image. This is done by employing a zero-shot diffusion-based posterior sampler so as to progressively construct the rows of the transform matrix. Each new chunk of rows is chosen to reduce the uncertainty about the image given the quantized measurements collected thus far. Importantly, the same adaptive scheme can be replicated at the decoder, thus avoiding the need to encode the transform itself. We demonstrate that even with basic quantization and entropy coding, PSC's performance is comparable to established training-based methods in terms of rate, distortion, and perceptual quality. This is while providing greater flexibility, allowing to choose at inference time any desired rate or distortion.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-shot class conditioned image colorization by using pretrained diffusion models",
+  "authors": [
+   "Ryuta Nishio",
+   "Takamichi Miyata"
+  ],
+  "year": 2025,
+  "venue": "Nonlinear Theory and Its Applications IEICE",
+  "doi": "10.1587/nolta.16.896",
+  "arxiv": null,
+  "openalex": "W4414639830",
+  "cited_by": 0,
+  "abstract": "Many zero-shot image restoration methods have been proposed by leveraging pre-trained image diffusion models. These methods are capable of performing various image restoration tasks without the need for task-specific training. In general, such methods tend to improve restoration performance by using conditional image diffusion models, such as those based on classes. However, the challenge has been that a separate method is required to determine the appropriate class from degraded images. In this study, we focus on image colorization and propose a method in which the classification of the input grayscale image is performed by applying CLIP, a type of vision-language model, and the resulting class is used as the class condition for a conditional image diffusion models. Through experiments, it was confirmed that the proposed method enables high-precision colorization compared to conventional zero-shot image restoration methods without class conditions, as well as deep neural networks specifically trained for image colorization.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent Resonance: Auditable Zero-Shot Generative Image Provenance and Compression Resilience for Web-Scale Media Platforms",
+  "authors": [
+   "Debdip Bandyopadhyay"
+  ],
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "doi": "10.5281/zenodo.23463357",
+  "arxiv": null,
+  "openalex": "W7222980809",
+  "cited_by": 0,
+  "abstract": "The viral dissemination of photorealistic latent diffusion imageryacross web platforms, social media, and online journalism presentsacute threats to public trust, intellectual property, and contentintegrity. Web-scale content moderation requires forensic attribution tools that are computationally lightweight, mathematicallyauditable, robust to lossy web compression pipelines, and strictlycompliant with user data privacy standards. Existing deep learningclassifiers fail on the web because they overfit to specific training prompts, deteriorate under routine CDN recompression, andoperate as unexplainable black boxes.This paper presents Latent Resonance, a zero-shot, trainingfree forensic framework engineered for web-scale media provenance. Grounded in the physical and architectural asymmetries between optical CMOS camera capture and generative latent autoencoders, Latent Resonance projects candidate web images througha deterministic autoencoder (𝜎 = 0). While synthetic diffusionimages resonate on the decoder manifold with minimal spatial displacement (PSNR = 37.15 ± 0.60 dB), authentic optical photos losesemiconductor Photo-Response Non-Uniformity (PRNU) acrossthe 8× spatial bottleneck (PSNR = 33.28 ± 0.96 dB, Δ = +3.88 dB,Cohen’s 𝑑 = 4.84, 𝑝 = 2.88 × 10−165). In the frequency domain,azimuthally averaged 2D Fast Fourier Transform (2D-FFT) analysisidentifies transposed-convolution harmonic lattice spikes (3.655×vs 1.144×), while Laplacian inter-channel correlation on spatialreconstruction residuals reveals severe chromatic coupling in neural tensors (𝜌RGB = 0.981) versus independent silicon photodiodes(𝜌RGB = 0.000).Under controlled physical sensor and PRNU calibration benchmarks (𝑁 = 1, 000), Latent Resonance achieves an ideal 100.00%AUROC with 0.00% False Accusation Rate (FAR), validating thetheoretical physics of decoder manifold projection. Crucially, onreal-world in-the-wild web benchmarks comprising diverse out-ofbank and non-latent architectures (the NeurIPS GenImage benchmark with ImageNet captures vs 8 generators, 𝑁 = 1, 000), the zeroshot Triad fusion achieves 68.9% AUROC (𝑝 = 1.76×10−25, Cohen’s𝑑 = 0.64) powered by a +21.10× surge in 2D-FFT azimuthal harmonic lattice spikes (𝑝 < 10−24), establishing an auditable, trainingfree baseline across all generative paradigms. Under aggressivesocial media perturbations (JPEG 𝑄 ∈ {95, 85, 75}, bicubic spatialresampling 384 → 512, and Gaussian blur 𝜎 = 0.8), the multi-signaltriad maintains decisive separation margins (Δ ≥ +1.81 dB). Operating with a sub-2s latency (1, 669 ms on NVIDIA T4; 11.7 msbatched) under an ephemeral zero-retention memory architecture,the framework enables scalable, privacy-preserving web verification. Finally, we formalize the Autoencoder TransparencyMandate (ATM) as an open governance standard requiring generative AI providers to escrow lightweight autoencoders for public verification without compromising proprietary diffusion backbones. Complete datasets, source code, and a l",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Model Compression for Image-to-Image Translation",
+  "authors": [
+   "Geonung Kim",
+   "Beomsu Kim",
+   "Eunhyeok Park",
+   "Sunghyun Cho"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-981-96-0917-8_9",
+  "arxiv": "2401.17547",
+  "openalex": "W4405141576",
+  "cited_by": 3,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Lora Diffusion: Zero-Shot Lora Synthesis for Diffusion Model Personalization",
+  "authors": [
+   "Ethan Smith",
+   "Rami Seid",
+   "Alberto Hojel",
+   "Paramita Mishra",
+   "Jianbo Wu"
+  ],
+  "year": 2024,
+  "venue": "International Journal of Current Research in Science Engineering & Technology",
+  "doi": "10.30967/ijcrset/alberto-hojel/151",
+  "arxiv": "2412.02352",
+  "openalex": "W4406131513",
+  "cited_by": 2,
+  "abstract": "Low-Rank Adaptation (LoRA) and other parameter-efficient fine-tuning (PEFT) methods provide low-memory, storage-efficient solutions for personalizing text-to-image models. However, these methods offer little to no improvement in wall-clock training time or the number of steps needed for convergence compared to full model fine-tuning. While PEFT methods assume that shifts in generated distributions (from base to fine-tuned models) can be effectively modeled through weight changes in a low-rank subspace, they fail to leverage knowledge of common use cases, which typically focus on capturing specific styles or identities. Observing that desired outputs often comprise only a small subset of the possible domain covered by LoRA training, we propose reducing the search space by incorporating a prior over regions of interest. We demonstrate that training a hypernetwork model to generate LoRA weights can achieve competitive quality for specific domains while enabling near-instantaneous conditioning on user input, in contrast to traditional training methods that require thousands of steps.",
+  "source": "openalex"
+ },
+ {
+  "title": "Ground-A-Video: Zero-shot Grounded Video Editing using Text-to-image Diffusion Models",
+  "authors": [
+   "Hyeonho Jeong",
+   "Jong Chul Ye"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2310.01107",
+  "arxiv": "2310.01107",
+  "openalex": "W4387322716",
+  "cited_by": 18,
+  "abstract": "Recent endeavors in video editing have showcased promising results in single-attribute editing or style transfer tasks, either by training text-to-video (T2V) models on text-video data or adopting training-free methods. However, when confronted with the complexities of multi-attribute editing scenarios, they exhibit shortcomings such as omitting or overlooking intended attribute changes, modifying the wrong elements of the input video, and failing to preserve regions of the input video that should remain intact. To address this, here we present a novel grounding-guided video-to-video translation framework called Ground-A-Video for multi-attribute video editing. Ground-A-Video attains temporally consistent multi-attribute editing of input videos in a training-free manner without aforementioned shortcomings. Central to our method is the introduction of Cross-Frame Gated Attention which incorporates groundings information into the latent representations in a temporally consistent fashion, along with Modulated Cross-Attention and optical flow guided inverted latents smoothing. Extensive experiments and applications demonstrate that Ground-A-Video's zero-shot capacity outperforms other baseline methods in terms of edit-accuracy and frame consistency. Further results and code are available at our project page (http://ground-a-video.github.io).",
+  "source": "openalex"
+ },
+ {
+  "title": "NaturalSpeech 3: Zero-Shot Speech Synthesis with Factorized Codec and Diffusion Models",
+  "authors": [
+   "Zeqian Ju",
+   "Yuancheng Wang",
+   "Kai Shen",
+   "Xu Tan",
+   "Detai Xin",
+   "Dongchao Yang",
+   "Yanqing Liu",
+   "Yichong Leng",
+   "Kaitao Song",
+   "Siliang Tang",
+   "Zhizheng Wu",
+   "Tao Qin",
+   "Xiangyang Li",
+   "Wei Ye",
+   "Shikun Zhang",
+   "Jiang Bian",
+   "Lei He",
+   "Jinyu Li",
+   "Zhao, Sheng"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2403.03100",
+  "arxiv": "2403.03100",
+  "openalex": "W4392538788",
+  "cited_by": 69,
+  "abstract": "While recent large-scale text-to-speech (TTS) models have achieved significant progress, they still fall short in speech quality, similarity, and prosody. Considering speech intricately encompasses various attributes (e.g., content, prosody, timbre, and acoustic details) that pose significant challenges for generation, a natural idea is to factorize speech into individual subspaces representing different attributes and generate them individually. Motivated by it, we propose NaturalSpeech 3, a TTS system with novel factorized diffusion models to generate natural speech in a zero-shot way. Specifically, 1) we design a neural codec with factorized vector quantization (FVQ) to disentangle speech waveform into subspaces of content, prosody, timbre, and acoustic details; 2) we propose a factorized diffusion model to generate attributes in each subspace following its corresponding prompt. With this factorization design, NaturalSpeech 3 can effectively and efficiently model intricate speech with disentangled subspaces in a divide-and-conquer way. Experiments show that NaturalSpeech 3 outperforms the state-of-the-art TTS systems on quality, similarity, prosody, and intelligibility, and achieves on-par quality with human recordings. Furthermore, we achieve better performance by scaling to 1B parameters and 200K hours of training data.",
+  "source": "openalex"
+ },
+ {
+  "title": "NaturalSpeech 2: Latent Diffusion Models are Natural and Zero-Shot Speech and Singing Synthesizers",
+  "authors": [
+   "Kai Shen",
+   "Zeqian Ju",
+   "Xu Tan",
+   "Liu, Yanqing",
+   "Yichong Leng",
+   "Lei He",
+   "Tao Qin",
+   "Sheng Zhao",
+   "Jiang Bian"
+  ],
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2304.09116",
+  "arxiv": "2304.09116",
+  "openalex": "W4366460484",
+  "cited_by": 91,
+  "abstract": "Scaling text-to-speech (TTS) to large-scale, multi-speaker, and in-the-wild datasets is important to capture the diversity in human speech such as speaker identities, prosodies, and styles (e.g., singing). Current large TTS systems usually quantize speech into discrete tokens and use language models to generate these tokens one by one, which suffer from unstable prosody, word skipping/repeating issue, and poor voice quality. In this paper, we develop NaturalSpeech 2, a TTS system that leverages a neural audio codec with residual vector quantizers to get the quantized latent vectors and uses a diffusion model to generate these latent vectors conditioned on text input. To enhance the zero-shot capability that is important to achieve diverse speech synthesis, we design a speech prompting mechanism to facilitate in-context learning in the diffusion model and the duration/pitch predictor. We scale NaturalSpeech 2 to large-scale datasets with 44K hours of speech and singing data and evaluate its voice quality on unseen speakers. NaturalSpeech 2 outperforms previous TTS systems by a large margin in terms of prosody/timbre similarity, robustness, and voice quality in a zero-shot setting, and performs novel zero-shot singing synthesis with only a speech prompt. Audio samples are available at https://speechresearch.github.io/naturalspeech2.",
+  "source": "openalex"
+ },
+ {
+  "title": "Prompting Diffusion Models for Zero-Shot Instance Segmentation",
+  "authors": [
+   "Irem Zeynep Alagöz",
+   "Nils Morbitzer",
+   "Andrea Ramazzina",
+   "Nassir Navab",
+   "Federico Tombari",
+   "Stefano Gasperini"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2606.22660",
+  "arxiv": "2606.22660",
+  "openalex": "W7165680545",
+  "cited_by": 0,
+  "abstract": "Several disruptive research directions have recently emerged in computer vision, including foundation models achieving previously unseen zero-shot performance in scene understanding, even interactively, and generative models that synthesize extremely realistic images. The latter have also been shown to be highly effective in scene understanding tasks thanks to their rich priors. However, for promptable segmentation, foundation models struggle with accurately segmenting an object's region, leading to false positives and over-segmentation. Notably, early attempts that leverage generative priors use prompts only during post-processing, yielding suboptimal segments because the process is agnostic to the user input. In this paper, we target these limitations with Prompt2Seg, a spatial conditioning framework for diffusion-based segmentation. Prompt2Seg augments a frozen diffusion segmentation model with a conditioning branch. Our approach takes spatial prompts, represented as 2D Gaussians or confidence maps, as explicit input signals, training the model to respond directly to user intent. Fine-tuned on a deliberately constrained set of object categories drawn from Hypersim and Virtual KITTI 2, Prompt2Seg generalizes zero-shot to a wide range of unseen object types and visual domains. We evaluate on seven datasets ranging from standard benchmarks to more challenging domains, including paintings, egocentric views, and X-ray data. Furthermore, we demonstrate that Prompt2Seg consistently outperforms the underlying diffusion segmentation backbone across all benchmarks. Our results suggest that the rich priors encoded in generative pretraining, combined with principled spatial conditioning, offer a compelling path toward broadly generalizing interactive segmentation without large-scale mask supervision.",
+  "source": "openalex"
+ },
+ {
+  "title": "Are Image-to-Video Models Good Zero-Shot Image Editors?",
+  "authors": [
+   "Zhang, Zechuan",
+   "Chen, Zhenyuan",
+   "Yang, Zongxin",
+   "Yi Yang"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2511.19435",
+  "arxiv": "2511.19435",
+  "openalex": "W7106678352",
+  "cited_by": 2,
+  "abstract": "Large-scale video diffusion models show strong world simulation and temporal reasoning abilities, but their use as zero-shot image editors remains underexplored. We introduce IF-Edit, a tuning-free framework that repurposes pretrained image-to-video diffusion models for instruction-driven image editing. IF-Edit addresses three key challenges: prompt misalignment, redundant temporal latents, and blurry late-stage frames. It includes (1) a chain-of-thought prompt enhancement module that transforms static editing instructions into temporally grounded reasoning prompts; (2) a temporal latent dropout strategy that compresses frame latents after the expert-switch point, accelerating denoising while preserving semantic and temporal coherence; and (3) a self-consistent post-refinement step that sharpens late-stage frames using a short still-video trajectory. Experiments on four public benchmarks, covering non-rigid editing, physical and temporal reasoning, and general instruction edits, show that IF-Edit performs strongly on reasoning-centric tasks while remaining competitive on general-purpose edits. Our study provides a systematic view of video diffusion models as image editors and highlights a simple recipe for unified video-image generative reasoning.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Video Deraining with Video Diffusion Models",
+  "authors": [
+   "Tuomas Varanka",
+   "Juan Luis Gonzalez",
+   "Hyeongwoo Kim",
+   "Pablo Garrido",
+   "Xu Yao"
+  ],
+  "year": 2026,
+  "venue": "IEEE Winter Conference on Applications of Computer Vision",
+  "doi": "10.1109/wacv61042.2026.00073",
+  "arxiv": "2511.18537",
+  "openalex": "W7160329060",
+  "cited_by": 0,
+  "abstract": "Existing video deraining methods are often trained on paired datasets, either synthetic, which limits their ability to generalize to real-world rain, or captured by static cameras, which restricts their effectiveness in dynamic scenes with background and camera motion. Furthermore, recent works in fine-tuning diffusion models have shown promising results, but the fine-tuning tends to weaken the generative prior, limiting generalization to unseen cases. In this paper, we introduce the first zero-shot video deraining method for complex dynamic scenes that does not require synthetic data nor model fine-tuning, by leveraging a pretrained text-to-video diffusion model that demonstrates strong generalization capabilities. By inverting an input video into the latent space of diffusion models, its reconstruction process can be intervened and pushed away from the model’s concept of rain using negative prompting. At the core of our approach is an attention switching mechanism that we found is crucial for maintaining dynamic backgrounds as well as structural consistency between the input and the derained video, mitigating artifacts introduced by naive negative prompting. Our approach is validated through extensive experiments on real-world rain datasets, demonstrating substantial improvements over prior methods and showcasing robust generalization without the need for supervised training.",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent Resonance: Zero-Shot Autoencoder Inversion and Azimuthal Spectral Forensics for Diffusion Image Attribution",
+  "authors": [
+   "Debdip Bandyopadhyay"
+  ],
+  "year": 2026,
+  "venue": "SSRN Electronic Journal",
+  "doi": "10.2139/ssrn.7452278",
+  "arxiv": null,
+  "openalex": "W7213353627",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Detection of AI-Generated Images",
+  "authors": [
+   "Davide Cozzolino",
+   "Giovanni Poggi",
+   "Matthias Nießner",
+   "Luisa Verdoliva"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2409.15875",
+  "arxiv": "2409.15875",
+  "openalex": "W4403786860",
+  "cited_by": 2,
+  "abstract": "Detecting AI-generated images has become an extraordinarily difficult challenge as new generative architectures emerge on a daily basis with more and more capabilities and unprecedented realism. New versions of many commercial tools, such as DALLE, Midjourney, and Stable Diffusion, have been released recently, and it is impractical to continually update and retrain supervised forensic detectors to handle such a large variety of models. To address this challenge, we propose a zero-shot entropy-based detector (ZED) that neither needs AI-generated training data nor relies on knowledge of generative architectures to artificially synthesize their artifacts. Inspired by recent works on machine-generated text detection, our idea is to measure how surprising the image under analysis is compared to a model of real images. To this end, we rely on a lossless image encoder that estimates the probability distribution of each pixel given its context. To ensure computational efficiency, the encoder has a multi-resolution architecture and contexts comprise mostly pixels of the lower-resolution version of the image.Since only real images are needed to learn the model, the detector is independent of generator architectures and synthetic training data. Using a single discriminative feature, the proposed detector achieves state-of-the-art performance. On a wide variety of generative models it achieves an average improvement of more than 3% over the SoTA in terms of accuracy. Code is available at https://grip-unina.github.io/ZED/.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Paragraph-level Handwriting Imitation with Latent Diffusion Models",
+  "authors": [
+   "Martin Mayr",
+   "Marcel Dreier",
+   "Florian Kordon",
+   "Mathias Seuret",
+   "Jochen Zöllner",
+   "Fei Wu",
+   "Andreas Maier",
+   "Vincent Christlein"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Computer Vision",
+  "doi": "10.1007/s11263-025-02525-0",
+  "arxiv": "2409.00786",
+  "openalex": "W4412357756",
+  "cited_by": 13,
+  "abstract": "Abstract The imitation of cursive handwriting is mainly limited to generating handwritten words or lines. Multiple synthetic outputs must be stitched together to create paragraphs or whole pages, whereby consistency and layout information are lost. To close this gap, we propose a method for imitating handwriting at the paragraph level that also works for unseen writing styles. Therefore, we introduce a modified latent diffusion model that enriches the encoder-decoder mechanism with specialized loss functions that explicitly preserve the style and content. We enhance the attention mechanism of the diffusion model with adaptive 2D positional encoding and the conditioning mechanism to work with two modalities simultaneously: a style image and the target text. This significantly improves the realism of the generated handwriting. We set a new benchmark in our comprehensive evaluation, achieving 61 % mAP and 56 % top-1 accuracy in style preservation, significantly outperforming the previous best method (37 % mAP, 30 % top-1). We are making our code publicly available for reproducibility, supporting research in this area and research into potential countermeasures: https://github.com/M4rt1nM4yr/paragraph_handwriting_imitation_ldm",
+  "source": "openalex"
+ },
+ {
+  "title": "Latent Resonance: Zero-Shot Autoencoder Inversion and Azimuthal Spectral Forensics for Diffusion Image Attribution",
+  "authors": [
+   "Debdip Bandyopadhyay"
+  ],
+  "year": 2026,
+  "venue": "SSRN Electronic Journal",
+  "doi": "10.2139/ssrn.7454039",
+  "arxiv": null,
+  "openalex": "W7212381155",
+  "cited_by": 0,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Noise Crystallization and Liquid Noise: Zero-shot Video Generation using Image Diffusion Models",
+  "authors": [
+   "Khan, Muhammad Haaris",
+   "Hadrien Reynaud",
+   "Bernhard Kainz"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2410.05322",
+  "arxiv": "2410.05322",
+  "openalex": "W4403346101",
+  "cited_by": 0,
+  "abstract": "Although powerful for image generation, consistent and controllable video is a longstanding problem for diffusion models. Video models require extensive training and computational resources, leading to high costs and large environmental impacts. Moreover, video models currently offer limited control of the output motion. This paper introduces a novel approach to video generation by augmenting image diffusion models to create sequential animation frames while maintaining fine detail. These techniques can be applied to existing image models without training any video parameters (zero-shot) by altering the input noise in a latent diffusion model. Two complementary methods are presented. Noise crystallization ensures consistency but is limited to large movements due to reduced latent embedding sizes. Liquid noise trades consistency for greater flexibility without resolution limitations. The core concepts also allow other applications such as relighting, seamless upscaling, and improved video style transfer. Furthermore, an exploration of the VAE embedding used for latent diffusion models is performed, resulting in interesting theoretical insights such as a method for human-interpretable latent spaces.",
+  "source": "openalex"
+ },
+ {
+  "title": "InvFusion: Bridging Supervised and Zero-shot Diffusion for Inverse Problems",
+  "authors": [
+   "Noam Elata",
+   "Hyungjin Chung",
+   "Jong Chul Ye",
+   "Tomer Michaeli",
+   "Miki Elad"
+  ],
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "doi": "10.52202/085713-1203",
+  "arxiv": "2504.01689",
+  "openalex": "W7196941422",
+  "cited_by": 0,
+  "abstract": "Diffusion Models have demonstrated remarkable capabilities in handling inverse problems, offering high-quality posterior-sampling-based solutions. Despite significant advances, a fundamental trade-off persists regarding the way the conditioned synthesis is employed: Zero-shot approaches can accommodate any linear degradation but rely on approximations that reduce accuracy. In contrast, training-based methods model the posterior correctly, but cannot adapt to the degradation at test-time. Here we introduce InvFusion, the first training-based degradation-aware posterior sampler. InvFusion combines the best of both worlds -- the strong performance of supervised approaches and the flexibility of zero-shot methods. This is achieved through a novel architectural design that seamlessly integrates the degradation operator directly into the diffusion denoiser. We compare InvFusion against existing general-purpose posterior samplers, both degradation-aware zero-shot techniques and blind training-based methods. Experiments on the FFHQ and ImageNet datasets demonstrate state-of-the-art performance. Beyond posterior sampling, we further demonstrate the applicability of our architecture, operating as a general Minimum Mean Square Error predictor, and as a Neural Posterior Principal Component estimator.",
+  "source": "openalex"
+ },
+ {
+  "title": "Manifold Induced Biases for Zero-shot and Few-shot Detection of Generated Images",
+  "authors": [
+   "Jonathan Brokman",
+   "Amit Giloni",
+   "Omer Hofman",
+   "Roman Vainshtein",
+   "Kojima, Hisashi",
+   "Guy Gilboa"
+  ],
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2504.15470",
+  "arxiv": "2504.15470",
+  "openalex": "W4414631013",
+  "cited_by": 1,
+  "abstract": "Distinguishing between real and AI-generated images, commonly referred to as 'image detection', presents a timely and significant challenge. Despite extensive research in the (semi-)supervised regime, zero-shot and few-shot solutions have only recently emerged as promising alternatives. Their main advantage is in alleviating the ongoing data maintenance, which quickly becomes outdated due to advances in generative technologies. We identify two main gaps: (1) a lack of theoretical grounding for the methods, and (2) significant room for performance improvements in zero-shot and few-shot regimes. Our approach is founded on understanding and quantifying the biases inherent in generated content, where we use these quantities as criteria for characterizing generated images. Specifically, we explore the biases of the implicit probability manifold, captured by a pre-trained diffusion model. Through score-function analysis, we approximate the curvature, gradient, and bias towards points on the probability manifold, establishing criteria for detection in the zero-shot regime. We further extend our contribution to the few-shot setting by employing a mixture-of-experts methodology. Empirical results across 20 generative models demonstrate that our method outperforms current approaches in both zero-shot and few-shot settings. This work advances the theoretical understanding and practical usage of generated content biases through the lens of manifold analysis.",
+  "source": "openalex"
+ },
+ {
+  "title": "Contour-Guided diffusion Model For Zero-Shot CT to MRI Synthesis",
+  "authors": [
+   "Shubham Jha",
+   "Govind Bansal",
+   "Vaibhav Sharma",
+   "Swati Hira"
+  ],
+  "year": 2026,
+  "venue": "Procedia Computer Science",
+  "doi": "10.1016/j.procs.2026.06.207",
+  "arxiv": null,
+  "openalex": "W7167672927",
+  "cited_by": 0,
+  "abstract": "Computed Tomography (CT) and Magnetic Resonance Imaging (MRI) provide complementary diagnostic information, but direct acquisition of MRI is often limited by cost and availability. In this paper we utilize a contour-guided, zero-shot, image-space diffusion framework that synthesizes MR-like images from previously unseen CT slices while explicitly preserving anatomical boundaries. We train a conditional denoising diffusion probabilistic model (DDPM) on MRI images only, and binary contour maps are extracted from the MRI training set using the Canny edge detector and concatenated as an extra channel to the noisy image at every reverse step. At inference, a CT slice is preprocessed with its contour, and reverse diffusion conditioned on it yields candidate MR samples; an ensemble of stochastic samples is generated, and a mask-alignment criterion selects the final output, providing both improved robustness and empirical uncertainty estimates. We evaluate ContourDiff on a publicly available dataset containing 389 paired MRI and CT slices and report a mean PSNR of 32.0 dB and SSIM of 0.91 for synthesized MR slices compared to reference MR. Compared with representative baselines (CycleGAN and Pix2Pix), ContourDif achieves a relative improvement in quantitative metrics and shows a better perceptual result in qualitative assessment as well.",
+  "source": "openalex"
+ },
+ {
+  "title": "Lossy Compression with Gaussian Diffusion",
+  "authors": [
+   "Lucas Theis",
+   "Tim Salimans",
+   "Matthew D. Hoffman",
+   "Fabian Mentzer"
+  ],
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2206.08889",
+  "arxiv": "2206.08889",
+  "openalex": "W4283220513",
+  "cited_by": 37,
+  "abstract": "We consider a novel lossy compression approach based on unconditional diffusion generative models, which we call DiffC. Unlike modern compression schemes which rely on transform coding and quantization to restrict the transmitted information, DiffC relies on the efficient communication of pixels corrupted by Gaussian noise. We implement a proof of concept and find that it works surprisingly well despite the lack of an encoder transform, outperforming the state-of-the-art generative compression method HiFiC on ImageNet 64x64. DiffC only uses a single model to encode and denoise corrupted pixels at arbitrary bitrates. The approach further provides support for progressive coding, that is, decoding from partial bit streams. We perform a rate-distortion analysis to gain a deeper understanding of its performance, providing analytical results for multivariate Gaussian data as well as theoretic bounds for general distributions. Furthermore, we prove that a flow-based reconstruction achieves a 3 dB gain over ancestral sampling at high bitrates.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-shot realistic image deblurring with consistency model",
+  "authors": [
+   "Zhaohan Wang",
+   "Chengjun Chen",
+   "Chenggang Dai"
+  ],
+  "year": 2025,
+  "venue": "Complex & Intelligent Systems",
+  "doi": "10.1007/s40747-025-02138-7",
+  "arxiv": null,
+  "openalex": "W4416892956",
+  "cited_by": 0,
+  "abstract": "At present, diffusion-based image deblurring methods rely on paired blurry-clear datasets for training, and the types of blur causes in image synthesis cannot yet be determined with sufficient precision to model real-world scene blur datasets. Furthermore, diffusion models are computationally expensive and may generate distort images during deblurring. To solve the above problems, this paper proposes image deblurring with consistency distillation models (ID-CDM) to restore blurred images in real scenes without training for image deblurring tasks. Specifically, this paper proposes a diffusion coefficient-dominated score model (DCSM), which ignores the impact of the drift term on the forward stochastic differential equation (SDE) adding Gaussian noise, thus simplifying the deblurring network architecture and reducing the computational complexity. The score model is integrated as a distillation model into the consistency model, aiming to enhance the quality of image deblurring while significantly reducing image sampling time. Besides, this paper employs the method of invertible linear transformation to highly compress the blurred image into the latent space for zero-shot processing, and iterative sampling is utilized to improve image accuracy and reduce additional artifact details generated by deblurring images. Finally, to verify the effectiveness of the proposed method, comparative analyses were conducted with classical deblurring methods on the synthetic blurring dataset HIDE and the real scene blurring dataset RealBlur. Analysis results indicate that ID-CDM is a highly competitive deblurring scheme.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion-OAMP for Joint Image Compression and Wireless Transmission",
+  "authors": [
+   "Wentao Hou",
+   "Yimin Bai",
+   "Zelei Luo",
+   "Jiadong Hong",
+   "Lei Liu (5074)"
+  ],
+  "year": 2026,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC)",
+  "doi": "10.1109/iccc70295.2026.11680088",
+  "arxiv": "2604.27952",
+  "openalex": "W7159641409",
+  "cited_by": 0,
+  "abstract": "Joint image compression and wireless transmission remain relatively underexplored compared to generic image restoration, despite its importance in practical communication systems. We formulate this problem under an equivalent linear model, and propose Diffusion-OAMP, a training-free reconstruction framework that embeds a pre-trained diffusion model into the OAMP algorithm. In Diffusion-OAMP, the OAMP linear estimator produces pseudo-AWGN observations, while the diffusion model serves as a nonlinear estimator under an SNR-matching rule. This framework offers a way to incorporate multiple generative priors into OAMP. Experiments with varying compression ratios and noise levels show that Diffusion-OAMP performs favorably against classic methods in the evaluated settings.",
+  "source": "openalex"
+ },
+ {
+  "title": "LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting",
+  "authors": [
+   "Yuhan Chen",
+   "Wenxuan Yu",
+   "Guofa Li",
+   "Yijun Xu",
+   "Ying Fang",
+   "Y.Q. Shi",
+   "Long Cao",
+   "Wenbo Chu",
+   "Keqiang Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2601.15772",
+  "arxiv": "2601.15772",
+  "openalex": "W7125486271",
+  "cited_by": 1,
+  "abstract": "2D Gaussian Splatting (2DGS) is an emerging explicit scene representation method with significant potential for image compression due to high fidelity and high compression ratios. However, existing low-light enhancement algorithms operate predominantly within the pixel domain. Processing 2DGS-compressed images necessitates a cumbersome decompression-enhancement-recompression pipeline, which compromises efficiency and introduces secondary degradation. To address these limitations, we propose LL-GaussianImage, the first zero-shot unsupervised framework designed for low-light enhancement directly within the 2DGS compressed representation domain. Three primary advantages are offered by this framework. First, a semantic-guided Mixture-of-Experts enhancement framework is designed. Dynamic adaptive transformations are applied to the sparse attribute space of 2DGS using rendered images as guidance to enable compression-as-enhancement without full decompression to a pixel grid. Second, a multi-objective collaborative loss function system is established to strictly constrain smoothness and fidelity during enhancement, suppressing artifacts while improving visual quality. Third, a two-stage optimization process is utilized to achieve reconstruction-as-enhancement. The accuracy of the base representation is ensured through single-scale reconstruction and network robustness is enhanced. High-quality enhancement of low-light images is achieved while high compression ratios are maintained. The feasibility and superiority of the paradigm for direct processing within the compressed representation domain are validated through experimental results.",
+  "source": "openalex"
+ },
+ {
+  "title": "Stable Diffusion-Driven Semantic Coding Method for Image Transmission Under Low SNR Conditions",
+  "authors": [
+   "Sili Liu",
+   "Rong Lv",
+   "Zhixi Yang",
+   "Junxiang Qin",
+   "Yonggang Zhu"
+  ],
+  "year": 2026,
+  "venue": "Electronics",
+  "doi": "10.3390/electronics15112459",
+  "arxiv": null,
+  "openalex": "W7163551286",
+  "cited_by": 1,
+  "abstract": "With the advancement of wireless communication technologies, especially the emergence of mobile communication technologies such as satellite internet and sensor networks, the rapid proliferation of communication facilities has given rise to challenges such as the scarcity of spectrum bandwidth resources, heightened channel interference, and increased noise. Consequently, traditional image source coding technologies urgently require further improvements in their compression ratio and anti-interference capability. Targeting image transmission scenarios characterized by low signal-to-noise ratios and constrained channel bandwidths, this paper proposes an image semantic coding method based on the pre-trained Stable Diffusion model, producing a zero-shot universal image compressor. This compressor leverages the denoising network of the Stable Diffusion model, with feedback from channel SNR, to further enhance the adaptability of transmitted data to channel interference. Additionally, by designing quantization and entropy coding methods for feature tensors in the semantic space, the compression ratio of the image coding process is further improved. Simulation results demonstrate that the proposed method not only achieves superior compression performance but also ensures relatively high similarity between the decoded reconstructed image and the original. Notably, it delivers a significant improvement in the perceptual similarity of human visual quality. Furthermore, the method can adapt to Gaussian noise channels, Rician fading channels, and Rayleigh fading channels with low SNR, exhibiting broad application prospects in the field of wireless communication coding methods, where the electromagnetic environment is growing increasingly complex.",
+  "source": "openalex"
+ },
+ {
+  "title": "Few-Shot Image Generation by Conditional Relaxing Diffusion Inversion",
+  "authors": [
+   "Yu Cao",
+   "Shaogang Gong"
+  ],
+  "year": 2024,
+  "venue": "Lecture notes in computer science",
+  "doi": "10.1007/978-3-031-72907-2_2",
+  "arxiv": "2407.07249",
+  "openalex": "W4403888326",
+  "cited_by": 4,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Unlocking Diffusion Hierarchies: Adaptive Timestep Selection for Zero-Shot Segmentation",
+  "authors": [
+   "Ramin Nakhli",
+   "Mahesh Ramachandran",
+   "Luca Ballan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2606.15590",
+  "arxiv": "2606.15590",
+  "openalex": "W7164916579",
+  "cited_by": 0,
+  "abstract": "Zero-shot segmentation has recently shown notable improvement by leveraging the rich visual priors in large-scale text-to-image diffusion models, such as Stable Diffusion. However, current diffusion-based methods often face limitations due to the trade-off between spatial resolution and contextual information, as well as their reliance on a single static timestep for feature extraction. To overcome these challenges, our work introduces two key advancements. First, our Contextual Similarity Maps fuse high-resolution attention maps with rich U-Net encoder features, providing both fine-grained and robust per-pixel representations. Second, we identify an emergent hierarchical semantic progression within the denoising process of various diffusion models: representations transition from part-level abstractions at earlier timesteps to object-level abstractions at later stages. Leveraging this insight, we introduce a mechanism to adaptively select the optimal timestep for each pixel. Extensive experiments demonstrate that our method consistently outperforms existing zero-shot segmentation baselines, validating the efficacy of combining contextual features with dynamic, hierarchical timestep selection.",
+  "source": "openalex"
+ },
+ {
+  "title": "Physics-Preserving Latent Compression for Zero-Shot Resolution Transfer in 3D Turbulence",
+  "authors": [
+   "Y Sophia Dai",
+   "Yiming Sun",
+   "Yiheng Chen",
+   "Ziyi Wang",
+   "Shengyu Chen",
+   "Xiaowei Jia",
+   "Runlong Yu"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2606.21781",
+  "arxiv": "2606.21781",
+  "openalex": "W7165639387",
+  "cited_by": 0,
+  "abstract": "High-resolution turbulence modeling is essential for scientific computing, but remains constrained by the cost of direct numerical simulation and the scarcity of full-resolution data. Existing scientific compressors reduce storage but typically operate on per-frame representations, whereas learned compressors yield compact latents that are often resolution-dependent and weakly aligned with the physics of turbulence. This raises the need for a compression framework that reduces data size, preserves physical diagnostics, and transfers from low-resolution training fields to high-resolution test fields without retraining. In this paper, we propose Physics-Preserving Latent Compression (PPLC), a patch-local latent compressor for three-dimensional turbulence. Motivated by inertial-range scale similarity, PPLC treats fixed-size patches as transferable units and applies a shared variational autoencoder independently of the global grid size. It combines exact mean preservation, zero-mean fluctuation encoding, an invertible Haar wavelet front-end, shift-consistency regularization, and overlap-aware reconstruction. Instantiated on forced isotropic turbulence, PPLC is trained only on stride-downsampled 256^3 fields and transfers zero-shot to 1024^3 fields. Experiments show that PPLC improves the balance between reconstruction accuracy and physical fidelity over classical and learned baselines, keeping diagnostics such as dissipation, enstrophy, energy spectra, and incompressibility closer to the ground truth. Beyond turbulence compression, PPLC offers a general strategy for physics-preserving latent representations that support data-efficient scientific surrogate modeling.",
+  "source": "openalex"
+ },
+ {
+  "title": "Rate-Adaptive One-Step Diffusion Compression for AIGC Images",
+  "authors": [
+   "Nitiz Khanal"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2609.31795",
+  "arxiv": "2609.31795",
+  "openalex": "W7214807453",
+  "cited_by": 0,
+  "abstract": "We describe our entry to the LoViF 2026 AIGC Image Compression Challenge, a benchmark for ultra-low-bitrate coding of AI-generated images under a strict global rate budget of 0.025 bits per pixel (BPP). Generated imagery poses a distinct challenge for compression: it frequently contains rendered typography, synthetic edges, repeated motifs, UI-like layout, and stylized micro-texture that conventional distortion-oriented codecs erase at this rate, while unconstrained generative decoders can restore plausible-looking detail that no longer matches the source geometry or symbols. We treat this as a rate-perception allocation problem. Our system fine-tunes four rate-specialized checkpoints of the AEIC one-step diffusion codec, generates per-image candidates from all four, including one latent refined through encoder-side test-time optimization (TTO) with periodic entropy-conditioning refresh, entropy-codes every candidate with practical rANS coding, and selects exactly one bitstream per image with an exact multiple-choice knapsack solved over true coded file sizes. A fixed, zero-additional-bit residual restoration network is applied at decode time. Every submitted bitstream is independently decodable by the shipped decoder, which uses no source image or external side information. We report the full pipeline, an ablation history spanning 77 logged experiments, and a set of negative results, including why PSNR could not be pushed to parity with rate-distortion-oriented competitors under this architecture, useful to future participants. This is a challenge report: our entry scored 31.527739 (PSNR 27.02 dB, MS-SSIM 0.9176, LPIPS 0.0778, DISTS 0.0390 at 0.02495 BPP), the second-best DISTS on the leaderboard, ranking 5th on the final test-phase leaderboard announced August 4, 2026.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Video Semantic Segmentation based on Pre-Trained Diffusion Models",
+  "authors": [
+   "Qian Wang",
+   "Abdelrahman Eldesokey",
+   "Mohit Mendiratta",
+   "Fangneng Zhan",
+   "Adam Kortylewski",
+   "Christian Theobalt",
+   "Peter Wonka"
+  ],
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2405.16947",
+  "arxiv": "2405.16947",
+  "openalex": "W4399116160",
+  "cited_by": 1,
+  "abstract": "We introduce the first zero-shot approach for Video Semantic Segmentation (VSS) based on pre-trained diffusion models. A growing research direction attempts to employ diffusion models to perform downstream vision tasks by exploiting their deep understanding of image semantics. Yet, the majority of these approaches have focused on image-related tasks like semantic correspondence and segmentation, with less emphasis on video tasks such as VSS. Ideally, diffusion-based image semantic segmentation approaches can be applied to videos in a frame-by-frame manner. However, we find their performance on videos to be subpar due to the absence of any modeling of temporal information inherent in the video data. To this end, we tackle this problem and introduce a framework tailored for VSS based on pre-trained image and video diffusion models. We propose building a scene context model based on the diffusion features, where the model is autoregressively updated to adapt to scene changes. This context model predicts per-frame coarse segmentation maps that are temporally consistent. To refine these maps further, we propose a correspondence-based refinement strategy that aggregates predictions temporally, resulting in more confident predictions. Finally, we introduce a masked modulation approach to upsample the coarse maps to the full resolution at a high quality. Experiments show that our proposed approach outperforms existing zero-shot image semantic segmentation approaches significantly on various VSS benchmarks without any training or fine-tuning. Moreover, it rivals supervised VSS approaches on the VSPW dataset despite not being explicitly trained for VSS.",
+  "source": "openalex"
+ },
+ {
+  "title": "Efficient Zero-Shot AI-Generated Image Detection",
+  "authors": [
+   "Ryosuke Sonoda",
+   "Ramya Srinivasan"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.21619",
+  "arxiv": "2603.21619",
+  "openalex": "W7140172717",
+  "cited_by": 0,
+  "abstract": "The rapid progress of text-to-image models has made AI-generated images increasingly realistic, posing significant challenges for accurate detection of generated content. While training-based detectors often suffer from limited generalization to unseen images, training-free approaches offer better robustness, yet struggle to capture subtle discrepancies between real and synthetic images. In this work, we propose a training-free AI-generated image detection method that measures representation sensitivity to structured frequency perturbations, enabling detection of minute manipulations. The proposed method is computationally lightweight, as perturbation generation requires only a single Fourier transform for an input image. As a result, it achieves one to two orders of magnitude faster inference than most training-free detectors.Extensive experiments on challenging benchmarks demonstrate the efficacy of our method over state-of-the-art (SoTA). In particular, on OpenFake benchmark, our method improves AUC by nearly $10\\%$ compared to SoTA, while maintaining substantially lower computational cost.",
+  "source": "openalex"
+ },
+ {
+  "title": "GVCC: Zero-Shot Video Compression via Codebook-Driven Stochastic Rectified Flow",
+  "authors": [
+   "Ziyue Zeng",
+   "Xun Jia Su",
+   "Haoyuan Liu",
+   "Bingyu Lu",
+   "Yui Tatsumi",
+   "Hiroshi Watanabe"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2603.26571",
+  "arxiv": "2603.26571",
+  "openalex": "W7143483064",
+  "cited_by": 0,
+  "abstract": "At ultra-low bitrates, high-fidelity reconstruction requires sampling plausible videos from the posterior rather than regressing to oversmoothed conditional means. We propose Generative Video Codebook Codec (GVCC), a zero-shot framework in which a pretrained video generative model serves directly as the decoder, and the transmitted bitstream specifies its generation trajectory. Modern rectified-flow video models are typically sampled with deterministic ODE solvers, which leave no per-step stochastic channel for transmitting compressed information. GVCC addresses this by converting the deterministic flow sampler into an equivalent marginal-preserving stochastic process, so that information can be transmitted by encoding the per-step stochastic innovations. Unlike images, videos introduce longer temporal dependencies and more diverse conditioning modes. We instantiate GVCC in three practical modes: Text-to-Video (T2V) without a reference frame, autoregressive Image-to-Video (I2V) with tail latent correction, and First-Last-Frame-to-Video (FLF2V) with boundary-sharing Group of Pictures (GOP) chaining. On the seven-sequence UVG dataset, local atom-count sweeps characterize the rate--quality behavior of all three variants. We report full-dataset perceptual and fidelity metrics together with temporal diagnostics, without inferring matched-rate or global RD improvements from these limited local sweeps.",
+  "source": "openalex"
+ },
+ {
+  "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+  "authors": [
+   "Amit Vaisman",
+   "Gal Pomerants",
+   "Raz Lapid"
+  ],
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2604.05743",
+  "arxiv": "2604.05743",
+  "openalex": "W7151818635",
+  "cited_by": 0,
+  "abstract": "Modern image compression methods are typically optimized for the rate--distortion--perception trade-off, whereas their robustness to bit-level corruption is rarely examined. We show that diffusion-based compressors built on the Reverse Channel Coding (RCC) paradigm are substantially more robust to bit flips than classical and learned codecs. We further introduce a more robust variant of Turbo-DDCM that significantly improves robustness while only minimally affecting the rate--distortion--perception trade-off. Our findings suggest that RCC-based compression can yield more resilient compressed representations, potentially reducing reliance on error-correcting codes in highly noisy environments.",
+  "source": "openalex"
+ },
+ {
+  "title": "Zero-Shot Novel View and Depth Synthesis with Multi-View Geometric Diffusion",
+  "authors": [
+   "Vitor Guizilini",
+   "Muhammad Zubair Irshad",
+   "Dian Chen",
+   "Gregory Shakhnarovich",
+   "Rareş Ambruş"
+  ],
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "doi": "10.1109/cvpr52734.2025.00080",
+  "arxiv": "2501.18804",
+  "openalex": "W4413146214",
+  "cited_by": 1,
+  "abstract": "Current methods for 3D scene reconstruction from sparse posed images employ intermediate 3D representations such as neural fields, voxel grids, or 3D Gaussians, to achieve multi-view consistent scene appearance and geometry. In this paper we introduce MVGD, a diffusion-based architecture capable of direct pixel-level generation of images and depth maps from novel viewpoints, given an arbitrary number of input views. Our method uses raymap conditioning to both augment visual features with spatial information from different viewpoints, as well as to guide the generation of images and depth maps from novel views. A key aspect of our approach is the multi-task generation of images and depth maps, using learnable task embeddings to guide the diffusion process towards specific modalities. We train this model on a collection of more than 60 million multi-view samples from publicly available datasets, and propose techniques to enable efficient and consistent learning in such diverse conditions. We also propose a novel strategy that enables the efficient training of larger models by incrementally fine-tuning smaller ones, with promising scaling behavior. Through extensive experiments, we report state-of-the-art results in multiple novel view synthesis benchmarks, as well as multi-view stereo and video depth estimation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Diffusion Models Beat GANs on Image Synthesis",
+  "authors": [
+   "Prafulla Dhariwal",
+   "Alex Nichol"
+  ],
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "doi": "10.48550/arxiv.2105.05233",
+  "arxiv": "2105.05233",
+  "openalex": "W3162926177",
+  "cited_by": 3577,
+  "abstract": "We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128$\\times$128, 4.59 on ImageNet 256$\\times$256, and 7.72 on ImageNet 512$\\times$512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256$\\times$256 and 3.85 on ImageNet 512$\\times$512. We release our code at https://github.com/openai/guided-diffusion",
+  "source": "openalex"
+ },
+ {
+  "title": "iSEARLE: Improving Textual Inversion for Zero-Shot Composed Image Retrieval",
+  "authors": [
+   "Lorenzo Agnolucci",
+   "Alberto Baldrati",
+   "Alberto Del Bimbo",
+   "Marco Bertini"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/tpami.2025.3593539",
+  "arxiv": "2405.02951",
+  "openalex": "W4412722575",
+  "cited_by": 22,
+  "abstract": "Given a query consisting of a reference image and a relative caption, Composed Image Retrieval (CIR) aims to retrieve target images visually similar to the reference one while incorporating the changes specified in the relative caption. The reliance of supervised methods on labor-intensive manually labeled datasets hinders their broad applicability to CIR. In this work, we introduce a new task, Zero-Shot CIR (ZS-CIR), that addresses CIR without the need for a labeled training dataset. We propose an approach, named iSEARLE (improved zero-Shot composEd imAge Retrieval with textuaL invErsion), that involves mapping the visual information of the reference image into a pseudo-word token in the CLIP token embedding space and combining it with the relative caption. To foster research on ZS-CIR, we present an open-domain benchmarking dataset named CIRCO (Composed Image Retrieval on Common Objects in context), the first CIR dataset where each query is labeled with multiple ground truths and a semantic categorization. The experimental results illustrate that iSEARLE obtains state-of-the-art performance on three different CIR datasets - FashionIQ, CIRR, and the proposed CIRCO - and two additional evaluation settings, namely domain conversion and object composition.",
+  "source": "openalex"
+ },
+ {
+  "title": "DIRE for Diffusion-Generated Image Detection",
+  "authors": [
+   "Zhendong Wang",
+   "Jianmin Bao",
+   "Wengang Zhou",
+   "Weilun Wang",
+   "Hezhen Hu",
+   "Hong Chen",
+   "Houqiang Li"
+  ],
+  "year": 2023,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "doi": "10.1109/iccv51070.2023.02051",
+  "arxiv": "2303.09295",
+  "openalex": "W4390873235",
+  "cited_by": 366,
+  "abstract": "Diffusion models have shown remarkable success in visual synthesis, but have also raised concerns about potential abuse for malicious purposes. In this paper, we seek to build a detector for telling apart real images from diffusion-generated images. We find that existing detectors struggle to detect images generated by diffusion models, even if we include generated images from a specific diffusion model in their training data. To address this issue, we propose a novel image representation called DIffusion Reconstruction Error (DIRE), which measures the error between an input image and its reconstruction counterpart by a pre-trained diffusion model. We observe that diffusion-generated images can be approximately reconstructed by a diffusion model while real images cannot. It provides a hint that DIRE can serve as a bridge to distinguish generated and real images. DIRE provides an effective way to detect images generated by most diffusion models, and it is general for detecting generated images from unseen diffusion models and robust to various perturbations. Furthermore, we establish a comprehensive diffusion-generated benchmark including images generated by various diffusion models to evaluate the performance of diffusion-generated image detectors. Extensive experiments on our collected benchmark demonstrate that DIRE exhibits superiority over previous generated-image detectors. The code, models, and dataset are available at https://github.com/ZhendongWang6/DIRE.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantics-Guided Generative Image Compression",
+  "authors": [
+   "Chenglin Wu",
+   "Hyomin Choi",
+   "Ivan V. Bajić"
+  ],
+  "year": 2025,
+  "venue": "Proceedings - International Conference on Image Processing",
+  "doi": "10.1109/icip55913.2025.11084711",
+  "arxiv": "2505.24015",
+  "openalex": "W4413278284",
+  "cited_by": 1,
+  "abstract": "Advancements in text-to-image generative AI with large multimodal models are spreading into the field of image compression, creating high-quality representation of images at extremely low bit rates. This work introduces novel components to the existing multimodal image semantic compression (MISC) approach, enhancing the quality of the generated images in terms of PSNR and perceptual metrics. The new components include semantic segmentation guidance for the generative decoder, as well as content-adaptive diffusion, which controls the number of diffusion steps based on image characteristics. The results show that our newly introduced methods significantly improve the baseline MISC model while also decreasing the complexity. As a result, both the encoding and decoding time are reduced by more than 36%. Moreover, the proposed compression framework outperforms mainstream codecs in terms of perceptual similarity and quality. The code and visual examples are available.1",
+  "source": "openalex"
+ }
+]

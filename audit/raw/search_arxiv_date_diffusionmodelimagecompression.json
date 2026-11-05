@@ -1,0 +1,749 @@
+[
+ {
+  "title": "CLEAR: Color-Texture Latent Alignment for Single Image Reflection Removal",
+  "authors": [
+   "Tu Vo",
+   "Sheir A. Zaheer",
+   "Chan Y. Park"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.05969",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Single Image Reflection Removal (SIRR) seeks to recover the transmitted scene from a photograph captured through glass. Recent latent restoration methods use pretrained generative priors, but many recover detail by feeding high-frequency features from the degraded input back into the decoder. This works for degradations such as blur, noise, or haze, where input detail mostly belongs to the scene. It is less suitable for SIRR, where reflections add a second structured layer: directly reusing the input's skip connections can sharpen the image while also bringing reflection edges back. Latent compression also introduces color drift and fine-detail loss. We propose CLEAR (Color-Texture LatEnt Alignment for Single Image Reflection Removal), a deterministic, single-timestep, non-iterative latent framework that uses a pretrained latent diffusion backbone as a natural-image prior. A physics-guided separator organizes the prediction around the transmission, reflection, and residue formation model and outputs coarse layer latents in one forward pass. The Hybrid Feature Alignment Module (HFAM) then treats input-derived skips as contaminated layer-mixture features. It rectifies their high-frequency content with a clean-transmission-aligned color query, learned from the input features themselves under ground-truth feature supervision, keeping transmission-consistent texture while attenuating reflection-colored detail. CLEAR achieves the best average across fidelity and perceptual metrics on six real-world benchmarks and the lowest LPIPS on every dataset, with the largest gains on the hardest benchmarks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Pixel-space video generation with U-JiT",
+  "authors": [
+   "Théophane Vallaeys",
+   "Jakob Verbeek",
+   "Matthieu Cord"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04764",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Latent diffusion and flow matching models are ubiquitous in state-of-the-art generative video models. While highly effective, relying on pretrained autoencoders to compress the data into a lower-dimensional latent space also comes with drawbacks. First, training proceeds in two stages: autoencoder pretraining, with compression and reconstruction objectives, followed by latent generative model training, precluding fully end-to-end training. Second, autoencoders also lead to an inherent loss of signal, and the trade-off between reconstruction quality and generative performance in the latent space is still an active area of research. In this paper we explore the viability of generative video models directly in pixel space. We analyze recent approaches in pixel-space generative modeling of images that rely on basic transformer designs, and identify several shortcomings that limit their effectiveness for the high-dimensional pixel-space video generation. To overcome these limitations, we propose a UNet-like transformer architecture along with improvements to the training recipe and sampling strategy. We conduct controlled experiments, training latent and pixel-space models from scratch on Kinetics-600. For the standard frames-to-video task at 128 resolution, our U-JiT model improves generative FVD by 27% over prior state-of-the-art results, and by 14% against the JiT pixel-space baseline. Scaling to higher 256 resolution, we find the improvement over pixel-space and latent-based models grows as we increase the spatiotemporal compression rate up to $64 \\times 64 \\times 8$. Finally, we find that U-JiT improves per-frame FID by 27% over latent models and 61% over pixel-space models on class-to-video generation, with respectively 9% and 56% reduction in FVD.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Policy Network Diffusion",
+  "authors": [
+   "Jiate Liu",
+   "Deheng Ye"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04614",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have shown remarkable progress in AI-generated content, including images and videos. In this paper, we explore whether diffusion models can generate the parameters of policy networks in reinforcement learning (RL), and whether the generated policies exhibit generalization capabilities. To achieve this, we propose Diffusion-based Conditional Policy Network Parameter Generation (DPPG), which consists of a Transformer-based autoencoder and a task-conditioned diffusion model. The autoencoder achieves a high compression rate by patchifying network parameters, while the task-conditioned diffusion model generates corresponding parameters conditioned on different environments. Our experiments demonstrate that, with a single unified DPPG model, we can synthesize high-quality policies across a diverse set of tasks from different environment domains, including Classic Control, Atari games, and MuJoCo. Additionally, our method can generate networks with a larger number of parameters compared to previous approaches. Furthermore, we find that in previously unseen environments, DPPG can generate parameters that achieve faster convergence and reach competitive performance, showcasing the potential future applications of parameter generation via diffusion.",
+  "source": "arxiv"
+ },
+ {
+  "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+  "authors": [
+   "Chenru Wang",
+   "Xuanyang Zhang",
+   "Yucheng Han",
+   "Wenbo Nie",
+   "Wei Cheng",
+   "Xianfang Zeng",
+   "Gang YU",
+   "Chi Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2611.04386",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "A deployable text-to-image diffusion model must hold several capabilities at once, such as instruction following, text rendering and human preference, and must sample in a few steps. Capabilities and few-step sampling are built in separate stages: a full-step model first consolidates capabilities through multi-teacher on-policy distillation, then serves as a fixed teacher for step distillation. Every full-step model we evaluate scores lower once compressed, and the second stage cannot begin until the first finishes. We introduce StepX-OPD, which merges the two stages: one student acquires every capability while learning to sample in a few steps, so frozen specialists supervise it on the states its own rollout visits rather than on a longer trajectory it never runs. Because a decomposition of the rollout's KL weights velocity mismatch most heavily near the clean end, we also regress the student's velocity on the low-noise part of the rollout. Separately, we find that capability integration makes models write prompt words into images on prompts that never asked for text, and we give a variant that lowers it. We evaluate on SD3.5-Medium and FLUX.1-dev across instruction following, text rendering, image quality and human preference. On both architectures, StepX-OPD attains the highest normalized average score among the four-step methods compared and exceeds the forty-step Flow-OPD model, and on SD3.5-Medium it trains with about 37% fewer GPU-hours than sequential DiffusionOPD followed by step distillation.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space",
+  "authors": [
+   "Wenjie Li",
+   "Du Chen",
+   "Hui Wang",
+   "Linlong Fan",
+   "Youwei Lv",
+   "Zeyi Chen",
+   "Zehan Chen",
+   "Jinwei Chen",
+   "Heng Guo",
+   "Zhanyu Ma",
+   "Qingnan Fan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.35515",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion-based real-world image super-resolution suffers from limited reconstruction fidelity due to information loss in VAE-based latent representations. Recently, pixel-space diffusion models offer a promising high-faithfulness alternative by avoiding latent compression, but adapting them to Real-ISR remains challenging due to inherent patch boundary artifacts and degraded generative capability. To address the issues and maximize the potential of pretrained pixel-space diffusion models, we propose HiFiPix, a pixel-space Real-ISR framework capable of ultra high-fidelity reconstruction and fine-grained visual generation effects. To suppress patch boundary artifacts, we penalize unrealistic high-frequency periodic components with a Cross-Scale Wavelet Discriminator (CWSD) for image-level supervision, and Mixup Contrastive Self-Distillation (MixCSD) for intermediate representation regularization. Furthermore, we uncover a heterogeneous generation-fidelity trade-off across low-rank adapters (LoRA) and propose Selective LoRA Pruning (LoRA-SP) to adaptively prune LoRA layers, enhancing generative capability with minimal deterioration of reconstruction fidelity. Extensive experiments demonstrate that HiFiPix consistently outperforms existing state-of-the-art latent space methods in terms of both restoration accuracy and perceptual quality by a large margin. Code and models will be released.",
+  "source": "arxiv"
+ },
+ {
+  "title": "HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget",
+  "authors": [
+   "Harish Santhanalakshmi Ganesan",
+   "Hariharan M. S.",
+   "Prabhurajhan R"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.34582",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "We describe HobbyLM, a family of small sparse Mixture-of-Experts (MoE) models trained from scratch with a few hundred to a few thousand dollars of rented GPU time. The core is a decoder-only transformer with fine-grained experts, sigmoid routing with auxiliary-loss-free load balancing, grouped-query attention with per-head QK-normalization, and aMuon/AdamW optimizer split. Each of these choices was selected with a single-variable ablation suite at 130M parameters. On this architecture we train a 500M-parameter model (169M active) on 40B FineWeb tokens and post-train it into a chat model, a masked-diffusion language model, a function-calling and computer-use agent, and a single \"omni\" checkpoint that reads text, images, video, sound and speech through frozen encoders and small projectors. We run these models on a laptop CPU with a from-scratch Rust inference engine. Two of the authors then adopted the architecture without architectural changes to build HobbyLM-1B (1.04B total, 305M active parameters), trained on a 100B-token curated mixture with a high-quality anneal. HobbyLM-1B reaches a 47.5 average on seven zero-shot benchmarks, and its builders also release an instruction-tuned model and an on-device macOS computer-use adapter. Finally, we describe HobbyLM-Image, a 333M-parameter flow-matching diffusion transformer that generates 1024x1024 images in a 32x-compressed latent space, together with a dependency-light CPU implementation of the full text-to-image pipeline. We report what worked, what did not, and where the small-scale ceilings lie. We also state for each component which author designed or built it.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Extended Target Imaging in Non-Ideal Distributed ISAC Systems: A Hierarchical Off-Grid Approach",
+  "authors": [
+   "Xin Tong",
+   "Yu Ge",
+   "Alireza Pourafzal",
+   "Dario Tagliaferri",
+   "Henk Wymeersch"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.33500",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "In future integrated sensing and communication (ISAC) systems, distributed multiple-input multiple-output (MIMO) architectures offer high-resolution imaging capabilities. However, reconstructing real-world extended targets is physically challenging due to continuous anisotropic surface scattering and complex occlusions, especially in the presence of system synchronization errors. To overcome these limitations, this paper proposes a hierarchical two-stage computational imaging framework for extended target reconstruction. In Phase I, an incoherent coarse imaging process is performed to serve as a reliable initializer for subsequent high-resolution coherent image generation. By performing line-of-sight (LOS) interference suppression and leveraging network-wide topological constraints, timing and phase offsets are calibrated. This enables image construction by back-projection (BP) and the coarse identification of target contours using the probabilistic Hough transform (PHT). In Phase II, a joint target position and orientation off-grid compensation model is established, capturing Lambertian diffuse and specular reflections on continuous facets via a first-order Taylor expansion. To tackle severe occlusion and spatial grid mismatches, we propose the bilinear off-grid approximate message passing (BiOG-AMP) algorithm. BiOG-AMP iteratively updates surface visibility and dictionary matrices, enforcing physical consistency across distributed transceiver views. Theoretical analysis derives compressed sensing error bounds, Fisher information limits, and linearization error scaling. Simulation results demonstrate that the proposed framework effectively eliminates imaging artifacts and exhibits superior robustness against synchronization offsets and grid mismatches compared to state-of-the-art baselines.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CompMVR: Compression-Aware Multi-View Restoration Using Diffusion Models for Geometrically Consistent 3D Reconstruction",
+  "authors": [
+   "Dong-hwi Kim",
+   "Chaewon Moon",
+   "Hojun Song",
+   "Dongbeom Kim",
+   "Junyeong Jang",
+   "Aro Kim",
+   "Gahyeon Kim",
+   "Heejung Choi",
+   "Jehee Kim",
+   "Gianella Cravioto",
+   "Sohyun Lee",
+   "Gyeongjin Choi",
+   "EunHye Jeong",
+   "Soo Ye Kim",
+   "Jaehyup Lee",
+   "Sang-hyo Park"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.32800",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Real-world 3D reconstruction pipelines often rely on multi-view images degraded by lossy compression. While compression artifacts have been extensively studied in single-image or video restoration, their impact on multi-view geometry remains largely overlooked. In this work, we identify compression-induced cross-view geometric inconsistency as a critical failure mode, where view-dependent artifacts disrupt feature matching, dense correspondence, camera parameter estimation, and downstream 3D reconstruction tasks such as novel view synthesis. To address this problem, we propose CompMVR, a compression-aware multi-view diffusion restoration framework that jointly refines compressed views while preserving cross-view consistency, and construct compressed datasets for systematic evaluation. Unlike conventional restoration methods that optimize each image independently for 2D perceptual quality, CompMVR leverages learned compression priors and cross-view correspondence to recover visual details while improving geometric reliability across views. Experiments across diverse datasets, codecs, and compression levels demonstrate gains in restoration quality and downstream 3D tasks, including novel-view synthesis, camera pose estimation, and view matching. These results establish compressed multi-view restoration as a distinct problem and highlight its importance for 3D reconstruction under lossy compression. Code and data for this paper are available at https://mchaewon.github.io/CompMVR-project-page/.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Rethinking Video Autoencoders for Interactive World Models",
+  "authors": [
+   "Adrien Ramanana Rahary",
+   "Yutong Bai",
+   "Nicolas Dufour",
+   "Patrick Pérez",
+   "David Picard"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.30129",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often reuse the autoencoders of text-to-video generators, built for offline generation with no agent waiting and, without their training data and code, not retrainable at another compression. We therefore ask how, where and how much a world model should compress. We build CADRE, an open family of causal diffusion representation autoencoders spanning multiple spatio-temporal compressions. Its members differ only in a small bottleneck on frozen features and share a diffusion decoder self-distilled to one or a few steps. We train the same world model on each autoencoder in two domains, manipulation and navigation, with two environments each. CADRE forms most of the latency-quality frontier, especially with a moving camera. Our study also leads to four findings. At strong compression, a diffusion decoder is sharper than perceptual regression. In robot manipulation, temporal compression is more effective in the autoencoder than in the world model. Manipulation and navigation call for opposite compressions: temporal compression costs little when the camera is still, and spatial compression when it moves. Surprisingly, with a still camera, coarser spatial tokens hurt motion far more than image quality. Code, models and a live demo are at https://kyutai.org/blog/2026-10-21-cadre",
+  "source": "arxiv"
+ },
+ {
+  "title": "SAKURA: Serving Attention Key-Value State Under Rate Adaptation for Private Image Editing on Phones",
+  "authors": [
+   "Shuncheng Jie",
+   "Desen Sun",
+   "Ri Hong",
+   "Yuyang Tian",
+   "Hong Zhang",
+   "Sihang Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29733",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion transformers are widely used in image-editing services. To preserve both efficiency and privacy, existing systems commonly rely on cloud-device collaboration. Keeping request-specific inference on the device avoids sending personal images and prompts to the cloud. These workloads often use common templates, such as in face swapping and virtual try-on, enabling KV state to be precomputed and reused across requests. However, this reusable state is large and scales with the number of templates, making it impractical to store all of them on mobile devices. Storing them in the cloud addresses this capacity issue, but cache transfer is placed onto the inference path and can even be slower than on-device computation, especially under fluctuating mobile networks. We introduce SAKURA, a cloud-edge architecture that delivers reusable attention state to mobile devices under a bandwidth budget. It first uses a fine-grained token-importance-aware compression method to preserve image quality under limited transfer budgets. At runtime, SAKURA adaptively selects the cache representation for each upcoming shard based on network bandwidth. To enable efficient execution, we develop a pipelined runtime that overlaps cache transfer and reconstruction with on-device execution. We evaluate SAKURA using three editing tasks and two diffusion models, using a Snapdragon 8 Elite Gen 5 phone. SAKURA reduces latency by 1.82x and 3.27x over CacheGen adapted to DiT and on-device generation, respectively. It also reduces cache storage by 3.06x over uncompressed cache, while preserving image quality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Efficient Generative Image Compression with Quantized Latents Refinement",
+  "authors": [
+   "Hao Cao",
+   "Yinhuan Huang",
+   "Wenqi Guo",
+   "Zhijin Qin",
+   "Jungong Han"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.29691",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative image compression (GIC) delivers strong perceptual quality at low bitrates. However, GIC methods with strong perceptual quality often rely on pretrained diffusion models with high latency, while recent lightweight GIC methods reduce latency but deliver lower perceptual quality. We observe that, for lightweight GIC methods at low bitrates, coarse deterministic quantization can collapse nearby encoder latents corresponding to different fine details to the same point, making these details difficult to recover. Motivated by this, we propose GR-GIC, an efficient GIC that delivers competitive reconstruction performance with fast inference. For better performance, we introduce Guided Refinement (GR), which combines latent refinement guided by entropy context with adaptive perturbations for training regularization, jointly improving reconstruction at low bitrates. For fast inference, we introduce reorganized projected residual vector quantization (P-RVQ), which equivalently reorganizes residual updates into low-dimensional lookups to expose greater parallelism and reduce sequential computation. Experiments on Kodak show that for performance, compared with OneDC, GR-GIC achieves BD-rate savings of 23.19%, 37.71%, 22.30%, and 22.14% for LPIPS, DISTS, PSNR, and FID, respectively. For fast inference, the highly optimized implementation of GR-GIC encodes and decodes in 4.60 and 5.98 ms on an NVIDIA A100. Specifically, the reorganized P-RVQ implementation achieves a $3.14\\times$ average speedup over the original implementation under the same FP32 setting. On an NVIDIA Jetson Orin NX, GR-GIC achieves latency comparable to lightweight GIC methods.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PixelSR: Pixel-Space Orthogonal Flow Decoupling for Real-World Image Super-Resolution",
+  "authors": [
+   "Xiang Lv",
+   "Kai Zhao",
+   "Qiang Wang",
+   "Qiao Mo",
+   "Chao Zhou",
+   "Mingwen Shao"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.27759",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Latent diffusion models have recently achieved remarkable progress in Real-world Image Super-Resolution (Real-SR). However, existing methods consistently exhibit a persistent seesaw effect: enhancing perceptual realism compromises structural fidelity. This effect, we argue, is not intrinsic to diffusion models, but largely stems from the architectural constraints of prevailing two-stage frameworks. To address this challenge, we propose PixelSR, a novel single-stage Pixel Diffusion Transformer for Real-SR that operates directly in pixel space. Specifically, PixelSR consists of two core designs: Pixel-space Conditional Diffusion and Orthogonal Flow Decoupling. The former establishes an effective pixel-space restoration framework by integrating spatially aligned LR conditioning, visual semantic guidance, and lightweight texture refinement, thereby bypassing VAE compression and enabling end-to-end optimization directly in RGB space. Complementarily, the latter decomposes the asymmetric flow target into a low-rank semantic component and a noise-free orthogonal texture component. By routing these components to specialized branches, it achieves decoupled optimization with reduced mutual interference. Benefiting from these designs, our PixelSR restores perceptually realistic details while faithfully preserving structural content. Extensive experiments across multiple benchmarks demonstrate that PixelSR not only achieves competitive performance, but also effectively mitigates the fidelity--realism seesaw effect.",
+  "source": "arxiv"
+ },
+ {
+  "title": "TamedFlow: Trajectory-Aware Distillation for Teacher-Assisted Diffusion Sampling",
+  "authors": [
+   "Shuaiqi Cheng",
+   "Jiahao Zhang",
+   "Boyuan Gu",
+   "Yuxi Chen",
+   "Haiying Xu",
+   "Zexin Lu",
+   "Huiyu Zhou",
+   "Xuming Hu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.26025",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion Transformers (DiTs) deliver high-fidelity image and video generation, but inference requires many sequential model evaluations. Two acceleration strategies are increasingly important: model compression makes each evaluation cheaper, while adaptive inference avoids selected teacher computation through reuse, forecasting, or speculative execution. Their combination, however, is brittle: directly applying the evaluated adaptive methods to a compressed student can degrade quality, an observed failure mode we call the \\textbf{Combination Gap}. We link this gap to a mismatch between pointwise distillation and short-horizon execution: a student trained at teacher states need not remain reliable when its own predictions are chained. We propose \\textbf{TamedFlow}, which trains a compressed DiT for this deployed role through cross-architecture feature alignment, a near-identity Velocity Alignment Head, and randomized rollout supervision. At inference, a lightweight Learnable Trajectory Estimator routes completed drafts: accepted drafts bypass the teacher, while rejected drafts roll back and receive one teacher rescue step. Distilling DiT-XL/2 into DiT-B/2, TamedFlow reaches FID $2.58$ at $2.25\\times$ measured speedup over DDIM-50 on ImageNet $256\\times256$. Ablations support trajectory supervision, and routing controls favor LTE over random decisions at nearly matched latency. Evaluations on ImageNet $512\\times512$, MS-COCO, and Latte/FaceForensics extend the empirical scope.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Functional Cross-layer Experts Routing for One-step Diffusion Distillation",
+  "authors": [
+   "Zile Huang",
+   "Ser-nam Lim"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25742",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "One-step distillation compresses diffusion trajectories into a single forward evaluation, yet how internal capacity should be structured within that remaining pass remains largely unexplored. In this setting, identical parameters must simultaneously preserve general generative priors and resolve prompt-specific details without iterative refinement. We formalize this challenge as functional allocation. Our analysis reveals that decoupling representations is beneficial only when expert interference outweighs shared transfer, favoring an always-active shared backbone augmented with conditionally routed residuals over standard isolated MoE architectures. We propose DeMoE, which pairs a persistent shared expert with conditionally routed expert slices across image FFNs, trained under a one-step distribution-matching objective with executed-route supervision. On one-step FLUX.2-4B generation, DeMoE achieves a GenEval score of 0.8220 while activating only 80.5% of the image-FFN width, substantially outperforming dense one-step baselines, matching the 50-step teacher overall, and surpassing it on complex composition and counting. Across COCO-10K, DeMoE establishes state-of-the-art fidelity and diversity among single-step models, demonstrating that structured internal computation reallocation provides a superior compression paradigm for diffusion models. Code is available at https://github.com/toffeecat/demoe-ttt-router.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BitFlat: Error-Localized Bitstream Design for Robust Diffusion Image Compression",
+  "authors": [
+   "Xinfeng Deng",
+   "Li Zhou",
+   "Haitao Chen",
+   "Shengjie Wu",
+   "Lingjin Kong",
+   "Nan Li",
+   "Haitao Zhao",
+   "Dongtang Ma"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.25682",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Zero-shot diffusion image compression based on reverse channel coding achieves high perceptual quality at low bitrates without retraining, yet its bitstream remains vulnerable to bit flips. Prior work has shown that a joint combinatorial representation can amplify a single bit flip into substitutions of multiple atoms and that indexing each atom independently confines this error propagation. However, independent indexing reduces the number of atoms that fit within the bit budget and gives the decoder no indication of which atoms are corrupted. To address these issues, we propose BitFlat, a training-free error-localizing bitstream framework with two components. Blockwise Locality Alignment (BLA) decomposes the globally coupled atom selection at each diffusion step into independent selection units, each describing one signed atom from a dedicated codebook with a fixed-width field, so that any bit error affects only the unit in which it occurs. Reliability-Aware Diffusion Control (RADC) uses the bits saved by BLA to impose structured valid-codeword constraints within each field and converts the decoding state of each field into a binary reliability gate, which turns detected corrupted atoms into erasures at known positions and excludes them from noise synthesis. BitFlat requires neither target residuals nor additional network forward passes and leaves the diffusion model unchanged. Experiments on Kodak, DIV2K, and CLIC2020 show that BitFlat outperforms conventional, learned, and diffusion-based codecs at bit error rates from $10^{-4}$ to $10^{-2}$ and, even with $26.7\\%$ fewer bits, surpasses Robust Turbo-DDCM.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BiNar: Bitstream Native Restorer for Bitstream-corrupted Image Restoration",
+  "authors": [
+   "Fangcheng Li",
+   "Zhen Yu",
+   "Kejun Wu",
+   "Tianyi Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.24094",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Bitstream-corrupted image restoration (BCIR) aims to reconstruct faithful images from corrupted compressed bitstreams. However, corruption occurs in bitstream-domain may lead to unpredictable error propagation and distortion amplification in pixel-domain, and even result in complete undecodability by standard decoders, posing significant challenge to existing image restoration paradigms. To address this challenge, we propose Bitstream Native Restorer (BiNar), a generative restoration framework that leverages fine-grained bitstream-native semantics to guide bitstream-corrupted image restoration. In BiNar, Bitstream Semantic Modeling (BSeM) extracts robust informative semantics and models sequential bytes directly from corrupted bitstream, enabling to generate fine-grained bitstream descriptions without relying on pixel decoding. Based on the descriptions,the Corruption-adaptive Multimodal Semantic Aggregation (CMSA) further extracts adaptive visual modal cues in decoded corrupted images and aggregates to bitstream descriptions. The multimodal aggregated fine-grained descriptions can serve as coherent restoration guidance. Finally, Blind Corruption Localization (BCoL) exploits the segmentation prior of visual foundation models to identify and locate error regions that requires recovery in corrupted images. The located error regions and the fine-grained descriptions jointly serve as visual prompt and language prompt of diffusion models image restoration, respectively. Extensive experiments under diverse bitstream corruption conditions show that BiNar outperforms all State-of-the-arts image restoration models regardless of perceptual quality or objective quality. Ablation studies demonstrate the effectiveness of fine-grained bitstream-native semantics in BCIR task.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation",
+  "authors": [
+   "SeungJu Cha",
+   "Ye-Chan Kim",
+   "HyunGee Kim",
+   "Sungho Koh",
+   "Dong-Jin Kim"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.22370",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Token merging has emerged as an effective training-free strategy for accelerating diffusion models by reducing redundant token computation while minimizing generation degradation. A key challenge is determining which tokens can be safely merged and which should be preserved for subsequent computation. Existing method addresses this by preserving prompt-aligned foreground regions, thereby protecting semantically relevant structures. However, this text-relevance criterion overlooks background objects, local details that are not explicitly mentioned in the prompt, leading to degraded structural coherence. In this work, we propose Dynamics-aware Token Merging (DaTMe), a training-free framework that grounds token merging in the underlying diffusion dynamics. Our key insight is that token importance should reflect whether a token remains unresolved during denoising and whether it carries structural information. To this end, DaTMe constructs a dynamics- aware importance map from the Tweedie denoised estimate. The map combines a temporal signal, measuring inter-step changes in the predicted clean image, with a structural signal, capturing local high-frequency content such as boundaries and fine details. Using this map, DaTMe adaptively assigns tokens into merging roles under a given compression ratio: important tokens are preserved as anchors, while tokens that are both temporally stabilized and structurally homogeneous are selected as safe merge candidates. Experiments on PixArt-a and FLUX demonstrate that DaTMe maintains visual fidelity across the entire image, highlighting diffusion dynamics as an effective token-level merging decision in efficient generation. Our code is available at https://github.com/SeungJuCha/DaTMe.",
+  "source": "arxiv"
+ },
+ {
+  "title": "UltraDiff: Transferring High-Fidelity Priors to Compressed Latent Spaces for High-Resolution Image Generation",
+  "authors": [
+   "Jingjing Ren",
+   "Haitian Zheng",
+   "Haoyu Chen",
+   "Connelly Barnes",
+   "Zhifei Zhang",
+   "Yuqian Zhou",
+   "Zhe Lin",
+   "Lei Zhu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.21202",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "High-resolution synthesis with Latent Diffusion Models (LDMs) faces a fundamental trade-off between computational cost and generative fidelity. This trade off is largely governed by the latent compression factor f (e.g. f8 denotes f=8 and f32 f=32). While aggressive compression (f32) significantly improves efficiency, it suffers from severe information loss and ambiguity compared to standard f8 models. We propose UltraDiff, a framework that reformulates this challenge as joint latent diffusion learning followed by marginal score distillation. We introduce MixTeacher, a dual branch DiT that models the joint f8-f32 distribution, utilizing shared attention to resolve the ambiguity of the compressed space with high fidelity f8 priors. Crucially, we propose vector field distillation in the native f32 space. Theoretically, this compels the student to learn the conditional expectation of the teacher trajectory, effectively filtering out compression artifacts. Across the evaluated 1K to 4K settings, UltraDiff approaches f8 level quality while preserving f32 efficiency. With 20 sampling steps on a single A100 GPU, it generates a 2K image in 6.2 seconds over 40 times faster than our f8 baseline.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Computational compressive imaging reconstruction with a simulated-annealing-based Ising solver",
+  "authors": [
+   "Ze Zheng",
+   "Xiaoyan Wu",
+   "Hang Xu",
+   "Jingzheng Huang",
+   "Tailong Xiao",
+   "Guihua Zeng"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.19778",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Computational compressive imaging, such as single-pixel imaging and lensless imaging, is a promising imaging technique, enabling the reconstruction of objects from under-sampled measurements through compressed sensing algorithms or deep learning methods. However, the demand for electronic computational resources grows rapidly when recovering high-resolution and multi-dimensional images and training neural networks with numerous parameters, which has become a bottleneck for the widespread adoption of this technique. Here, we propose a physics-driven reconstruction framework that formulates imaging inverse problems as Ising models and directly recovers target objects through the self-evolution of non-von Neumann Ising machines toward the ground state of the Hamiltonian. We employ a simulated-annealing-based Ising solver to demonstrate this proof-of-concept by reconstructing objects in both single-pixel imaging and a lensless diffuser camera at sampling rates ranging from 1% to 25%. By further incorporating a foreground-sparsity constraint and a smoothness constraint, the reconstruction quality of our method is comparable to or even better than that of mainstream algorithms. This approach has the potential to substantially reduce the electronic computational burden of inverse reconstruction, paving the way for real-time, low-power computational imaging.",
+  "source": "arxiv"
+ },
+ {
+  "title": "SaTPO: Text-to-Image Safety Alignment via Transition Preference Optimization",
+  "authors": [
+   "Ziyi Fang",
+   "Jingzhi Li",
+   "Xiaojun Jia",
+   "Xingxing Wei",
+   "Wenqi Ren",
+   "Haijun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.19563",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Safety alignment of text-to-image diffusion models aims to suppress harmful content without compromising useful generation capabilities. However, preferences over completed images compress multidimensional generation factors into a coarse signal, potentially driving changes beyond those required for safety. To address this, we propose Safety Transition Preference Optimization (SaTPO), which enforces step-wise alignment during denoising. SaTPO leverages the insight that an unsafe prompt and its safe rewrite naturally form a tightly coupled preference pair when conditioned on a shared parent state and noise realization. By anchoring optimization on identical parent states, SaTPO eliminates historical trajectory divergence, confining safety adaptation to an incremental alignment while preserving task-relevant semantics. Multi-scale drift constraints and benign replay further limit behavioral deviation and preserve ordinary generation. We additionally construct CoProPV, a refined dataset ensuring visually verified contrasts. Experiments on Stable Diffusion v1.5 and SDXL demonstrate improved safety-quality trade-offs. Compared with AlignGuard, PerspectiveVision unsafe-detection rates on Inappropriate Image Prompts decrease from 12.70% to 6.00% and from 15.04% to 9.30%, respectively, while FID improves from 32.28 to 25.95 and from 36.50 to 27.51. Warning: this paper includes potentially offensive content.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DeBoneDiT: Depth-Driven Conditional Bridge Diffusion Transformers for Bone Suppression in Chest X-Ray Images",
+  "authors": [
+   "Yifei Sun",
+   "Fenglei Fan",
+   "Junhao Jia",
+   "Wenming Deng",
+   "Hongxia Xu",
+   "Changmiao Wang",
+   "Ruiquan Ge"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.19466",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Chest X-Ray (CXR) is a primary modality for diagnosing pulmonary diseases, yet the overlap of bony structures often obscures critical radiographic findings, increasing the risk of diagnostic uncertainty. While Dual-Energy Subtraction (DES) is the clinical benchmark for bone suppression, its widespread adoption is primarily hindered by specialized hardware requirements and increased radiation exposure. Recently, diffusion-based generative models have shown promise for this task, yet they are still constrained by reconstruction-biased latent compression, prior-induced domain gap, and a scarcity of high-quality paired datasets. To address these challenges, we propose DeBoneDiT, a depth-driven conditional bridge diffusion Transformer architecture for efficient high-resolution bone suppression. We first introduce Depth Auto-Encoder (DAE), a structure-aware vision tokenizer for latent compression. By incorporating a multi-level depth feature loss derived from the pretrained Depth Anything V2 encoder, DAE preserves both visual fidelity and structural consistency. Second, we formulate bone suppression as a source-conditioned Brownian bridge diffusion process, leveraging CXRs as both the diffusion prior and structural guidance to narrow the source-to-target domain gap and maintain anatomical plausibility. Furthermore, we have constructed and released SZCH-X-Rays, the largest publicly available high-quality paired dataset for bone suppression to date, comprising 741 pairs of CXR and DES soft tissue images. Extensive experiments and downstream evaluation demonstrate that DeBoneDiT achieves superior bone suppression performance with reduced computational overhead.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Recasting DiT for Extreme Image Compression with Hierarchical Visual Priors",
+  "authors": [
+   "Yunuo Chen",
+   "Jingnan Gao",
+   "Bing He",
+   "Jinjing Zhao",
+   "Chuqin Zhou",
+   "Xiaoyue Ling",
+   "Li Song",
+   "Guo Lu",
+   "Wenjun Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.18607",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Pretrained diffusion models provide powerful generative priors for extreme image compression, but their stochastic, iterative generation processes are not designed to decode compressed representations directly. We present PrismCodec, which recasts a pretrained Diffusion Transformer (DiT) as a bitstream-grounded one-step generative decoder. PrismCodec uses the decoded representation in two complementary roles: a projected codec state defines the starting state for generation, while hierarchical visual priors derived from the same decoded latent provide semantic and structural guidance. To bridge the gap between stochastic, iterative generation and deterministic one-step decoding, we develop a progressive adaptation strategy. We first learn codec-conditioned transport from a noisy neighborhood centered on the codec state, distill it into a one-step mapping, and finally anneal the source perturbation to zero during end-to-end optimization. The resulting decoder reconstructs deterministically from the received representation without additional conditioning bits. Across Kodak, CLIC, and DIV2K, PrismCodec consistently improves rate-perception performance over prior generative codecs, achieving BD-rate reductions of 70-75% in LPIPS and 75-81% in DISTS over StableCodec. Code will be released upon acceptance.",
+  "source": "arxiv"
+ },
+ {
+  "title": "H-DDCM: Hadamard Codebooks for Fast Generative Image and Video Compression",
+  "authors": [
+   "Or Ronai",
+   "Vladimir Kulikov",
+   "Tomer Michaeli"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.18125",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Training-free diffusion-based compression methods repurpose the generative priors of a diffusion or a flow model to compress data without retraining them as task-specific codecs. Recent codebook-based approaches such as Turbo-DDCM achieve strong perceptual quality at ultra-low bitrates, but their reliance on dense Gaussian codebooks remains costly in both memory and computation, and scales poorly with the large latent dimensions of modern image and video generators. Their combinatorial bitstream encoding further becomes computationally heavy at this scale. We introduce H-DDCM, a scalable generative compression framework that replaces Gaussian codebooks with implicit randomized Hadamard dictionaries. The fast Walsh-Hadamard transform allows for implicitly synthesizing full-dimensional dictionaries with $O(d \\log d)$ compute for projection and reconstruction and $O(d)$ memory, without materializing the full-dimensional dictionary. We further introduce an efficient table-free lexicographic coding scheme that makes combinatorial encoding practical at larger dimensions. Beyond images, we adapt the framework to an autoregressive video flow model and develop a streaming compression scheme that periodically re-encodes recently reconstructed frames into a fresh KV-cache prefix, preserving temporal context across segments at no additional transmitted bits. This enables long-form, close to real-time generative video compression on a single GPU. Across image and video benchmarks, H-DDCM achieves competitive rate-distortion-perception performance while substantially reducing the memory and computational overhead of codebook-based training-free generative compression.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Attributing HOW, Not Just WHICH: Counterfactual Response Trajectories for Diffusion Models",
+  "authors": [
+   "Haoqian Zhang",
+   "Ziyuan Yang",
+   "Zerui Shao",
+   "Yi Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.11238",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models have achieved remarkable success in image generation, yet tracing their outputs to individual training examples remains challenging. Existing attribution methods often compress factor-specific effects into scalar responses, making distinct internal changes indistinguishable. This is particularly limiting for diffusion models, where semantic factors emerge through evolving representation dynamics during denoising. We therefore reformulate diffusion data attribution as attributing factor-induced internal response trajectories. In this paper, we propose a novel Concept Attribution method through Dynamic Trajectories(CADT). We argue that attribution should therefore ask not only \\emph{which} examples matter, but also \\emph{how} their influence unfolds during generation. Specifically, we construct matched counterfactual pairs at identical noisy states to isolate factor-specific representation displacements, and model their directional and magnitude evolution across denoising as dynamic attribution signatures. For each training example and generated query, CADT extracts stage-wise feature vectors and integrates them along the denoising process to form a trajectory descriptor. Applying the same construction across the training set yields a bank of factor-specific trajectory descriptors. The covariance statistics of this bank are then used to construct . CADT uses this covariance-aware positive-semidefinite kernel to calibrate the query and training representations, and compares the calibrated query trajectory with each training trajectory to produce the final training-sample attribution scores. Experiments on multiple public datasets show consistent improvements over existing diffusion attribution baselines across hierarchical, compositional, and style attribution.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Omni-Diffusion-Distill: Few-Step Distillation of Unified Multimodal Diffusion Large Language Models",
+  "authors": [
+   "Hong Huang",
+   "Chenhongyi Yang",
+   "Junzhe Sun",
+   "Animesh Sinha",
+   "Wuyang Chen",
+   "Yifan Jiang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.10990",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Unified multimodal diffusion large language models (dLLMs) offer a single architecture for both image generation and multimodal understanding, but their iterative decoding requires tens to hundreds of forward passes. Existing few-step distillation methods largely focus on either image generation or text generation, making it unclear how to compress a fully discrete multimodal dLLM into a single efficient student while preserving both generation and understanding. We introduce Omni-Diffusion-Distill, a unified two-stage distillation framework that retains strong generation and understanding capabilities while substantially reducing the inference cost of a unified multimodal dLLM. Omni-Diffusion-Distill aligns the distillation of both generation and understanding, for both images and text, in the discrete token space. In the first stage, the student is trained to skip decoding steps by replaying cached teacher trajectories, and in the second stage the student is refined on intermediate states along its own rollouts. We further remedy two sources of degradation in unified distillation with a pairwise collision penalty that reduces repetition under parallel text decoding, and entropy-matched guidance that prevents entropy collapse caused by fitting the sharpened teacher distribution in image generation. Omni-Diffusion-Distill achieves state-of-the-art trade-offs between decoding efficiency and generation and understanding performance for multimodal dLLMs, reducing image generation from 128 to 8 decoding steps and multimodal understanding from 512 to 64, giving 18.2x and 21.2x wall-clock speedups. Under these budgets, it scores 0.828 on GenEval and 83.0 on DPG-Bench for text-to-image generation, while reaching GPT judge scores of 20.0 on MM-Vet and 57.2 on COCO captioning (twice the teacher's 28.4 at the same steps) for multimodal understanding.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Unified Multi-plane Autoregressive Diffusion for 3D Multi-contrast MRI Synthesis",
+  "authors": [
+   "Yejee Shin",
+   "Geonhui Son",
+   "Jinglu Wang",
+   "Minwoo Jung",
+   "Yan Lu",
+   "Dosik Hwang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026. Lecture Notes in Computer Science, vol 17034. Springer, Cham",
+  "doi": "10.1007/978-3-032-37450-9_16",
+  "arxiv": "2610.09376",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Acquiring a complete set of magnetic resonance imaging (MRI) contrasts is time-intensive and uncomfortable for patients, despite the diagnostic value of multi-contrast imaging. This motivates synthesizing missing contrasts from those already acquired, which is an inherently 3D problem requiring anatomical coherence across axial, sagittal, and coronal planes. However, fully 3D generative models are often impracti- cal under computational resources that scale cubically with volume size. We propose a unified Multi-Plane Autoregressive Diffusion (MPAD), a latent diffusion framework that achieves full-volume 3D synthesis using efficient plane-wise 2D operations while preserving volumetric coherence. A 3D autoencoder first compresses MRI scans into an isotropic 3D la- tent representation. A 2D diffusion model is then trained to reconstruct masked latent slices of the target contrast, conditioned on both source- contrast slices and unmasked target-contrast slices. During inference, we introduce plane-wise autoregressive synthesis with inter-plane priors. Slices are generated autoregressively in random order within one plane orientation to maintain intra-plane continuity, then propagated as con- ditioning priors to orthogonal plane orientations to enforce inter-plane consistency. Compared to 3D latent diffusion baselines, MPAD reduces training and inference FLOPs by 7x and 3x, respectively, while also lowering inference time and peak memory consumption. Experiments on multiple datasets demonstrate that MPAD achieves superior perfor- mance, generating high-fidelity 3D volumes and supporting one-to-many translation within a single unified model.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Pooling Representation Autoencoders for Efficient Diffusion",
+  "authors": [
+   "Ramón Calvo-González",
+   "Youssef Saied",
+   "François Fleuret"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.09242",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Representation Autoencoders (RAEs) generate images from pre-trained visual fea- tures, but their dense token grids make generative modeling expensive. Motivated by local feature correlations, we introduce PoolDINO, a learned affine pooling operator that merges neighboring tokens. Training the pooling operator jointly with the RGB decoder preserves the standard two-stage RAE procedure without a separate feature auto-encoder. On ImageNet-256, 4x token compression retains comparable generation quality under internal guidance, while 16x compression trades some quality for greater efficiency. At a fixed budget of 100 sampling steps, latent-sampling throughput increases by 3.7x and 9.0x, respectively, relative to the unpooled baseline. Classification and dense prediction evaluations show that comparable guided generation quality can coexist with weaker performance on other tasks.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Personalize at Test Time: Learning User Preferences for Image Generation",
+  "authors": [
+   "Jiamu Bai",
+   "Jiaming Hu",
+   "Yanhong Wu",
+   "Zellux Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.09015",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models can generate high-quality images, yet aligning their outputs with individual user preferences remains challenging. A key bottleneck is accurately modeling diverse user preferences from limited feedback. Existing approaches often rely on labor-intensive manual preference annotations or vision-language models (VLM) to extract preference information from user interaction histories, introducing substantial annotation or computational costs that limit scalability. We propose an approach that learns personalized reward models directly from users' historical image preference pairs. First, we use an autoencoder to compress hundreds of visual attributes into 50 attribute-anchored preference dimensions and train an evaluator to score images along these dimensions. We then represent each user's preferences as a linear combination of the shared dimension scores, estimating the user-specific weights by maximizing the likelihood of their observed pairwise preferences under the Bradley-Terry model. This formulation reduces per-user adaptation to optimizing a low-dimensional weight vector, simplifying optimization and enabling data-efficient personalization from sparse feedback. The learned personalized rewards guide image generation at inference time while keeping the diffusion model frozen. Experiments on real-user preference data show that our approach achieves approximately 77% held-out pairwise preference prediction accuracy and improves the alignment of generated images with individual user preferences.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Diffusion Meets Unrolling: Compressive SAR Image Reconstruction with Interleaved Learned Corrections",
+  "authors": [
+   "Odysseas Pappas",
+   "Andrew C. M. Austin",
+   "Perla Mayo",
+   "Mohammad Golbabaee",
+   "Alin Achim"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.06107",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Compressive Synthetic Aperture Radar (SAR) imaging, typically formulated as an inverse problem and solved with traditional iterative optimisation methods, can be very computationally expensive. We investigate the use of denoising diffusion probabilistic models (DDPMs) for compressive SAR image reconstruction, where the diffusion model is guided by a poor initial reconstruction from sub-sampled data obtained via standard imaging methods. We augment this data-driven method with model-driven interleaved refinement processes, inspired by traditional compressed sensing (CS) methods, to enhance sparsity and heavy tails in SAR images. Experimental results on real ERS-1 SAR datasets demonstrate consistent improvements over baseline DDPM and state-of-the-art methods, with notable gains in reconstruction fidelity and structural similarity, while incurring only modest computational overhead. The proposed hybrid framework effectively combines the representational power and efficiency of diffusion models with the interpretability and robustness of model-based optimisation, enabling accurate compressive SAR imaging.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Depth as Time in One-Step Generative Models",
+  "authors": [
+   "Arnold Caleb Asiimwe",
+   "William Yang",
+   "Sanghyuk Chun",
+   "Esin Tureci",
+   "Olga Russakovsky"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.03626",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The recent wave of one-step generative models, which compress the multi-step trajectory of diffusion via either distillation or learned flow maps, has reached an inflection point where they can generate high-quality images. Here, we ask a natural question that follows from these advances: what happens to the denoising trajectory of multi-step diffusion when generation is compressed into a single forward pass? We offer an empirical observation we call \\textit{depth as time}: the denoising computation that multi-step diffusion performs across sampling steps appears to unfold across the depth of a single forward pass, and can be recovered by decoding intermediate layers with the model's own output head. Most interestingly, we show that this depthwise computation depends on the transport task a flow map is trained to solve. The most surprising case is MeanFlow, where probing shorter transport intervals reveals both denoising and renoising within a single network evaluation. In contrast, generators trained without a time-indexed transport task, such as drifting models, do not exhibit the same depthwise denoising. Consequently, we show that models that exhibit the depthwise denoising phenomenon are more compressible across the layerwise computation: a MeanFlow \\texttt{SiT-L/2} model can be compressed by $16.6\\times$ in parameters into a single time-conditioned block. We offer an explanation for this denoise-then-renoise behavior and show that, when we treat the layerwise computation explicitly as a flow, a single time-conditioned block can be trained to denoise across layers, compressing a MeanFlow \\texttt{SiT-L/2} model by $16.6\\times$ in parameters. Together, these results suggest that the temporal computation of diffusion is not eliminated by one-step generation, but reorganized across network depth.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Controlling Polar Exposure to Delay Memorization in Diffusion Models",
+  "authors": [
+   "Xuanchen Wang",
+   "Heng Wang",
+   "Weidong Cai"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2610.02780",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models can reach useful sample quality before copying training examples, but fast optimization can compress this generalization window by accelerating sample-specific fitting. We investigate this effect through update geometry and propose Quality-Gated De-whitening (QGD), a controller that retains a fast polar-update prefix and progressively restores fixed-gain momentum. Our random-feature analysis separates covariance-controlled, curvature-equalized and amplitude-controlled memorization clocks. Under aligned spectral assumptions, it establishes a finite-exposure condition under which a fixed-gain tail recovers a delay proportional to dataset size. QGD implements this principle with a confirmed quality gate, a bounded decay envelope and causal copy feedback. Immediate switching is the conservative limit; gradual control balances delayed copying against continued quality improvement. We pair QGD with Copy-Budgeted Selection (CBS), which applies simultaneous binomial calibration to a frozen checkpoint family, followed by a fresh evaluation of the released checkpoint. On 2,000-image CIFAR-10 subsets, QGD preserves the polar baseline's quality-arrival time while expanding its useful interval by 8.32x and reducing common-checkpoint copying by 75.9%. With identical calibration and independent quality evaluation, QGD achieves FID 75.56 versus 79.37 for SGD with the same selector. Exposure-matched controls, independent detector audits and transfer to flow matching and dance generation support adaptive exposure control as a practical way to improve the quality-copying tradeoff.",
+  "source": "arxiv"
+ },
+ {
+  "title": "BTC3D: Blended Tile Conditioning for Detail-Enhancing Image-to-3D Generation",
+  "authors": [
+   "Junyu Li",
+   "Qiuyu Chen",
+   "Pengcheng Wang",
+   "Shiqi Yang",
+   "Alexandra Gomez-Villa",
+   "Joost van de Weijer",
+   "Ruilin Li",
+   "Kai Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.39709",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Recent diffusion-based pipelines have achieved promising progress in image-to-3D synthesis. However, generating high-fidelity details remains challenging, especially when the input image contains rich details. Existing approaches often rely on globally encoded conditioning features, which compress spatial information and limit the model to reproduce fine-grained details. This common design often leads to a phenomenon we term detail attenuation. Moreover, improving image-to-3D synthesis quality typically requires retraining or fine-tuning large diffusion models, which can be computationally expensive and impractical for complex 3D pipelines. In this work, we present Blended Tile Conditioning for image-to-3D generation (BTC3D), a training-free inference time framework that enhances fine-grained detail preservation in image-to-3D diffusion pipelines. To alleviate detail attenuation, we first examine the image feature additivity in image-to-3D models. Based on this property, we introduce a blended tile embedding that extracts local conditioning signals from split image regional patches, allowing the diffusion model to better preserve fine-grained visual details. To integrate the global and local conditioning guidance stably, we propose a dynamic conditioning schedule that gradually increases the influence of tile-level conditioning during later low-noise stages of diffusion. Our proposed method BTC3D operates entirely at inference time and can be seamlessly integrated into existing image-to-3D diffusion pipelines. Experimental results demonstrate that the proposed approach significantly improves texture quality and visual fidelity of the base model while maintaining global structural consistency in a training-free manner.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ResARC: Residual-Aware AutoRegressive Coding for Ultra-Low Bitrate Image Compression",
+  "authors": [
+   "Qin Yan",
+   "Ruixiao Dong",
+   "Yutao Xie",
+   "Li Li",
+   "Ying Chen",
+   "Kai Li",
+   "Daowen Li",
+   "Houqiang Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.39451",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Progressive autoregressive image codecs provide an appealing paradigm for generative compression by quantizing continuous latents into discrete tokens, transmitting coarse-to-fine prefix tokens and generating the remaining suffix tokens at the decoder. However, their reconstruction quality is fundamentally limited by two residuals introduced along this pipeline: the quantization residual, arising from information loss during discrete tokenization, and the generation residual, resulting from imperfect autoregressive generation of the suffix tokens. To address these limitations, we introduce ResARC, a residual-aware autoregressive codec that explicitly compensates for both residuals at the decoder. Specifically, we generate the quantization residual with a diffusion transformer conditioned on the autoregressive decoding context, while requiring no additional side information. In parallel, we compute the generation residual at the encoder and employ a learned Generation Residual Codec to efficiently compress and transmit it for decoder-side correction. The recovered residuals are then integrated with the reconstructed latent representation and decoded through an adapted VAE decoder. Extensive experiments demonstrate that ResARC achieves competitive perceptual similarity while substantially improving distributional fidelity over leading generative codecs across the ultra-low bitrate regime. Code and models will be released soon.",
+  "source": "arxiv"
+ },
+ {
+  "title": "Rethinking Generative Image Compression at Extremely Low Bitrates",
+  "authors": [
+   "Tianyu Zhang",
+   "Zhaoyang Jia",
+   "Houqiang Li",
+   "Dong Liu"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.39315",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Generative image compression produces visually plausible reconstructions at low bitrates, yet their behavior as the rate approaches zero remains largely unexplored. When pushed below normal operating rates, representative codecs undergo semantic collapse: rather than gracefully losing source-specific detail, they produce malformed or unrecognizable content. Our analysis identifies two factors. As the bitrate decreases, reconstruction losses increasingly conflict with semantic objectives on gradients and visual results, while pixel-space and reconstruction-oriented VAE diffusion models become less efficient on semantic preservation. Guided by these findings, we introduce RAE-CoD, a compression-oriented diffusion (CoD) built in a representation autoencoder (RAE) space with direct alignment between compressed and source representations, preserving recognizable, naturally structured content for a $256\\times256$ image with as few as 16 bits. We evaluate this framework using five vision foundation models (VFM) and a blinded vision-language model protocol. On MSCOCO-30K, RAE-CoD stands out from all evaluation. At 0.001-0.008 bpp, it reduces relative VFM feature MSE and Fréchet Distance ratio by at least 25.7% and 69.1% over the best competitors. Meanwhile, semantic recognizability and quality of the reconstructions remain nearly constant while source consistency falls smoothly, replacing abrupt semantic collapse with a graceful transition toward unconditional generation. Code will be released at https://github.com/LuizScarlet/RAE-CoD.",
+  "source": "arxiv"
+ },
+ {
+  "title": "DC-SAE: Deep Compression Semantic Autoencoder for Faster Diffusion Convergence",
+  "authors": [
+   "Xu Huang",
+   "Ye Huang",
+   "Zijun Liao",
+   "Yuwei Niu",
+   "Xiaojie Li",
+   "Menghan Zhou",
+   "De Wen Soh",
+   "Xiaotong Li",
+   "Daquan Zhou"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.39222",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "High-compression tokenizers are essential for scaling latent image generative models. However, aggressive compression creates a fundamental tradeoff between reconstruction fidelity and generation efficiency: high compression image encoder always increases the learning difficulty of diffusion training, resulting in slow model convergence. Recent representation autoencoders speed up the diffusion training by improving the latent feature's expressive capability by replacing VAE encoders with pretrained semantic encoders, yet they are typically limited to moderate compression and lose pixel-level details necessary for faithful reconstruction. To achieve both high compression and fast diffusion training, we propose DC-SAE, a Decoupled Compact Semantic Autoencoder designed for high-compression image generation with accelerated diffusion model convergence. DC-SAE consists of two key components: (1) a macro-level architecture design that leverages semantic encoders to enable higher compression ratios, and (2) a pixel-level encoder that preserves low-level details, ensuring high-fidelity image reconstruction. We empirically demonstrate that DC-SAE performs strongly on image generation tasks, achieving both compact latent representations and efficient training dynamics. Specifically, on the ImageNet dataset with $512 \\times 512$ resolution, DC-SAE achieves $32\\times$ spatial compression, with 29.79 PSNR and 3.37 gFID, substantially outperforming the previous state-of-the-art high-compression tokenizer baselines DC-AE by 13.5% and 54.9% on PSNR and gFID, respectively, maintaining comparable throughput and faster diffusion model training convergence. Beyond class-conditional generation, a $1.6$B-parameter DiT using DC-SAE achieves 0.84 on GenEval and 86.007 on DPG-Bench for text-to-image generation at $1024\\times1024$ resolution.",
+  "source": "arxiv"
+ },
+ {
+  "title": "A Pre-trained Variational Autoencoder for Gyrokinetic Plasma Turbulence Surrogate Modeling",
+  "authors": [
+   "Minglei Yang",
+   "Marshall Nicholson",
+   "Diego Del-Castillo-Negrete",
+   "David Hatch",
+   "Guannan Zhang"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.38438",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Machine learning surrogate models offer a promising path toward accelerating plasma turbulence simulations. We present PreVAE-Turb, a surrogate modeling framework that leverages pre-trained variational autoencoders (VAEs) from the Stable Diffusion image generation model for efficient spatial compression of turbulence fields. The pre-trained VAE is fine-tuned on turbulence data using a physics-informed loss function that includes a spectral loss operating in Fourier space to enforce spectral accuracy across scales. The VAE is combined with convolutional long short-term memory (ConvLSTM) networks to learn temporal dynamics in latent space, with a manifold consistency error metric that monitors encode--decode consistency during autoregressive rollouts. We validate the framework on two-dimensional Hasegawa-Wakatani drift-wave turbulence and extend it to gyrokinetic turbulence from the GENE code, where a four-channel adaptation simultaneously predicts electrostatic potential, density, and parallel/perpendicular temperature fluctuations without requiring architecture redesign. Once trained, inference generates thousands of time steps in seconds on a single GPU, providing substantial computational acceleration compared to direct numerical simulation. The pre-trained approach offers a transferable methodology broadly applicable to various turbulence simulation codes.",
+  "source": "arxiv"
+ },
+ {
+  "title": "PCaPaint: Prostate Cancer Inpainting by Mitigating Shortcut Learning",
+  "authors": [
+   "Levente Lippenszky",
+   "Hongxu Yang",
+   "Marcell Dömötör",
+   "Krisztian Koos",
+   "László Ruskó"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.37350",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "The development of AI systems for tumor-specific applications is limited by the scarcity of labeled data. Synthetic tumor inpainting offers a promising approach but faces challenges for prostate cancer MRI which contains high-resolution multi-sequence data. Although methods leveraging latent diffusion models (LDMs) enable large-volume synthesis, they are prone to shortcut learning, simply reproducing the condition image created by masking the lesion region. In this work, we introduce PCaPaint, a prostate cancer inpainting method based on LDMs that explicitly addresses this failure mode. To overcome shortcut learning that compromises synthetic tumor texture, we propose a simple yet efficient conditioning strategy in which the condition image is filled with Gaussian noise, and we provide theoretical justification. In addition, we propose a novel training objective for LDM that emphasizes the error within the lesion region. Furthermore, we introduce a multi-sequence latent design, in which T2w scans and DWI&ADC scans are compressed using two separate autoencoders to preserve their distinct frequency characteristics. Extensive experiments demonstrate that the generated synthetic data improves downstream performance in prostate lesion segmentation, patient-level classification and lesion-level detection. Furthermore, our method significantly outperforms a recent state-of-the-art LDM-based tumor inpainting method both in downstream performance and in synthetic image quality.",
+  "source": "arxiv"
+ },
+ {
+  "title": "ControlTrace: Recovering Control Fields for Hidden-Content Recognition",
+  "authors": [
+   "Zijian Liu",
+   "Yaoguang Chen",
+   "Liwei Liu",
+   "Weixi Wu",
+   "Hanming Zhang",
+   "Jiashui Wang",
+   "Na Ruan"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.34807",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Spatially conditioned diffusion models can embed words and contours in natural-looking images, but vision-language models (VLMs) may fail to recognize the hidden content. Transformation-based recovery depends on parameter and view selection. To evaluate hidden-content recovery and recognition, we construct FreqBlind, a 6,000-image benchmark spanning contours, real words and non-words across three conditioning strengths. The evaluated transformation-based methods show limited recognition of contour patterns and weakly conditioned hidden content. To address this limitation, we propose ControlTrace to recover the grayscale control field used during generation. An 8.4M-parameter U-Net predicts this field from the carrier image, and a VLM then identifies its content. With Qwen2.5-VL-7B-Instruct, ControlTrace achieves 60.2% open-ended contour recognition accuracy across the three conditioning strengths, exceeding the best of the three evaluated prior methods by 26.9 percentage points. On an A100 GPU, the complete pipeline adds only 7.4 ms (5.3%) to direct VLM inference. Recovered fields have lower pixel errors and higher structural similarity than the evaluated transformation views. Across four evaluated VLMs, ControlTrace retains its overall contour recognition advantage. Recognition remains stable under the tested JPEG compression, Gaussian noise and downsampling. These results support control-field recovery for hidden-content recognition in the evaluated setting.",
+  "source": "arxiv"
+ },
+ {
+  "title": "EntroPack: Fast and Accurate Entropy-Coded Weight Compression at Arbitrary Bitrates",
+  "authors": [
+   "Hong Zhang",
+   "Zhongjie Duan",
+   "Yingda Chen"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.34185",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Weight compression helps large neural networks fit deployment memory budgets, but common fixed-width formats offer only coarse storage choices. Entropy coding supports finer rates, yet the achieved size depends on the quantized weight distribution and coding overhead. Exploiting this flexibility requires accurate rate selection and efficient weight reconstruction for inference. We present EntroPack, an entropy-coded weight compressor that supports arbitrary target bitrates without activation calibration or fine-tuning. It combines row-normalized $E_8$ lattice quantization with a conditional probability model of lattice coordinates. Sampled storage estimates select the quantization resolution without repeated full-stream encoding. The final coordinates are entropy-coded in independently decodable tiles, enabling fast, fused symbol decoding and numerical weight reconstruction on the GPU. EntroPack supports floating-point and integer weight containers, such as BF16, FP16, FP8, and INT8, with storage bitrate controlled independently of numerical precision. Online decoding adds latency that grows with weight count, making the method well suited to compute-intensive workloads such as diffusion denoising and Transformer prefill. Experiments demonstrate fast encoding and modest inference overhead in these settings. When compressing the linear-layer weights of the image generator Z-Image-Turbo, EntroPack achieves substantially lower weight and denoiser output errors than fixed-width formats at comparable storage rates, with modest denoising-step overhead. Targeting 4 bits per parameter, it achieves lower weight and denoiser output errors than NF4, including about 24% lower relative $L_2$ weight error, with less storage. Source code is available at https://github.com/modelscope/entropack.",
+  "source": "arxiv"
+ },
+ {
+  "title": "CLIMB-flow: Coupled Linear Inverse posterior sampling via Multiscale-Based flow",
+  "authors": [
+   "Zeqiu Yu",
+   "Ruizhi Yuan",
+   "Mathews Jacob"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "doi": null,
+  "arxiv": "2609.33834",
+  "openalex": null,
+  "cited_by": null,
+  "abstract": "Diffusion models are now widely used in Bayesian inverse problems in imaging as priors, where latent diffusion models are often used for larger scale problems to keep the computational complexity and model-size manageable. Unfortunately, the auto-encoder based compression results in loss of spatial detail. In addition, the optimization is converted to a non-linear problem. In this paper, we introduce a posterior sampling algorithm customized for the pyramidal/cascaded architecture, which relies on a coarse to fine hierarchical strategy to generate images in the pixel domain. We present CLIMB-Flow which alternates between three steps: an end-point estimation from the current coarse and noisy image, data-consistent update of the clean image, and re-noising it back to the level the network expects. Together these steps sample the posterior at that scale using an approximate Gibbs sampling from two conditional distributions. Experiments on ImageNet, CelebA, AFHQ and fastMRI span inpainting, deblurring, super-resolution and accelerated MRI, with PSNR gains of 1.37-7.66 dB over the strongest competing method on CelebA and pixel-domain reconstruction up to 512x512.",
+  "source": "arxiv"
+ }
+]

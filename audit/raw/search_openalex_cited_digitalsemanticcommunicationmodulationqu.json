@@ -1,0 +1,966 @@
+[
+ {
+  "title": "A Metaverse: Taxonomy, Components, Applications, and Open Challenges",
+  "authors": [
+   "Sangmin Park",
+   "Young‐Gab Kim"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2021.3140175",
+  "arxiv": null,
+  "openalex": "W4206484811",
+  "cited_by": 1925,
+  "abstract": "Unlike previous studies on the Metaverse based on Second Life, the current Metaverse is based on the social value of Generation Z that online and offline selves are not different. With the technological development of deep learning-based high-precision recognition models and natural generation models, Metaverse is being strengthened with various factors, from mobile-based always-on access to connectivity with reality using virtual currency. The integration of enhanced social activities and neural-net methods requires a new definition of Metaverse suitable for the present, different from the previous Metaverse. This paper divides the concepts and essential techniques necessary for realizing the Metaverse into three components (i.e., hardware, software, and contents) and three approaches (i.e., user interaction, implementation, and application) rather than marketing or hardware approach to conduct a comprehensive analysis. Furthermore, we describe essential methods based on three components and techniques to Metaverse’s representative Ready Player One, Roblox, and Facebook research in the domain of films, games, and studies. Finally, we summarize the limitations and directions for implementing the immersive Metaverse as social influences, constraints, and open challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Proceedings of the 28th International Conference on Computational Linguistics",
+  "authors": [],
+  "year": 2020,
+  "venue": null,
+  "doi": "10.18653/v1/2020.coling-main",
+  "arxiv": null,
+  "openalex": "W4365799947",
+  "cited_by": 1436,
+  "abstract": "Only eighteen months ago, I joined Leo, Horacio, Mónica, and Nuria on a tour of the delights that the Barcelona venue would be offering us in September 2020.Together with Chengqing, we made great plans for a fantastic intellectual and social gathering with our colleagues from far and wide, Catalanstyle.We held on to this plan for as long as we could but the second wave of the COVID-19 pandemic eventually put paid to that idea, and the conference is now a virtual one.We also received a record 2195 submissions -eclipsing by double the already record-breaking number at our last COLING in 2018 in Santa Fe.For these reasons, COLING2020 will be remembered for the conference that forced us to innovate and do things differently.Transforming our well-made plans to become a virtual conference has obviously involved introducing a de facto disruptive innovation, one that has taken us far out of our comfort zone of experience.The Organising Committee thoroughly embraced this challenge, doing everything that they could and more; I am in awe of them and of the exciting offering that they have created for COLING2020.We now have before us a rich programme of over 653 papers, 7 tutorials, and 22 workshops.I want to take this opportunity to thank the entire Organising Committee for their extraordinary effort in helping to make this virtual COLING2020 possible.The PC Chairs (Núria Bel, Chengqing Zong) and Local Organisation Chairs (Leo Wanner, Horacio Saggion, Mónica Domínguez) bore the brunt of the organisational burden and worked tirelessly despite the other unexpected demands to their professional and personal lives.Enormous efforts were made by Workshop Chairs (",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+  "authors": [
+   "Amir Gholami",
+   "Sehoon Kim",
+   "Zhen Dong",
+   "Zhewei Yao",
+   "Michael W. Mahoney",
+   "Kurt Keutzer"
+  ],
+  "year": 2022,
+  "venue": "Chapman & Hall/CRC eBooks",
+  "doi": "10.1201/9781003162810-13",
+  "arxiv": null,
+  "openalex": "W3137147200",
+  "cited_by": 1237,
+  "abstract": "This chapter provides approaches to the problem of quantizing the numerical values in deep Neural Network computations, covering the advantages/disadvantages of current methods. Over the past decade, people have observed significant improvements in the accuracy of Neural Networks (NNs) for a wide range of problems, often achieved by highly over-parameterized models. Achieving efficient, real-time NNs with optimal accuracy requires rethinking the design, training, and deployment of NN models. Model distillation involves training a large model and then using it as a teacher to train a more compact model. Loosely related to NN quantization is work in neuroscience that suggests that the human brain stores information in a discrete/quantized form, rather than in a continuous form. Gray and Neuhoff have written a very nice survey of the history of quantization up to 1998.",
+  "source": "openalex"
+ },
+ {
+  "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+  "authors": [
+   "Stefania Sardellitti",
+   "Gesualdo Scutari",
+   "Sergio Barbarossa"
+  ],
+  "year": 2015,
+  "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+  "doi": "10.1109/tsipn.2015.2448520",
+  "arxiv": "1412.8416",
+  "openalex": "W1904504745",
+  "cited_by": 889,
+  "abstract": "Migrating computational intensive tasks from mobile devices to more resourceful cloud servers is a promising technique to increase the computational capacity of mobile devices while saving their battery energy. In this paper, we consider a MIMO multicell system where multiple mobile users (MUs) ask for computation offloading to a common cloud server. We formulate the offloading problem as the joint optimization of the radio resources-the transmit precoding matrices of the MUs-and the computational resources-the CPU cycles/second assigned by the cloud to each MU-in order to minimize the overall users' energy consumption, while meeting latency constraints. The resulting optimization problem is nonconvex (in the objective function and constraints). Nevertheless, in the single-user case, we are able to express the global optimal solution in closed form. In the more challenging multiuser scenario, we propose an iterative algorithm, based on a novel successive convex approximation technique, converging to a local optimal solution of the original nonconvex problem. Then, we reformulate the algorithm in a distributed and parallel implementation across the radio access points, requiring only a limited coordination/signaling with the cloud. Numerical results show that the proposed schemes outperform disjoint optimization algorithms.",
+  "source": "openalex"
+ },
+ {
+  "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+  "authors": [
+   "Khaled B. Letaief",
+   "Yuanming Shi",
+   "Jianmin Lu",
+   "Jianhua Lü"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3126076",
+  "arxiv": "2111.12444",
+  "openalex": "W3212941463",
+  "cited_by": 860,
+  "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Comprehensive Review of Artificial Neural Network Applications to Pattern Recognition",
+  "authors": [
+   "Oludare Isaac Abiodun",
+   "Muhammad Ubale Kiru",
+   "Aman Jantan",
+   "Abiodun Esther Omolara",
+   "Kemi Victoria Dada",
+   "Abubakar Malah Umar",
+   "Uchenwa Linus Okafor",
+   "Humaira Arshad",
+   "Abdullahi Aminu Kazaure",
+   "Usman Mohammed Gana"
+  ],
+  "year": 2019,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2019.2945545",
+  "arxiv": null,
+  "openalex": "W2979040987",
+  "cited_by": 770,
+  "abstract": "The era of artificial neural network (ANN) began with a simplified application in many fields and remarkable success in pattern recognition (PR) even in manufacturing industries. Although significant progress achieved and surveyed in addressing ANN application to PR challenges, nevertheless, some problems are yet to be resolved like whimsical orientation (the unknown path that cannot be accurately calculated due to its directional position). Other problem includes; object classification, location, scaling, neurons behavior analysis in hidden layers, rule, and template matching. Also, the lack of extant literature on the issues associated with ANN application to PR seems to slow down research focus and progress in the field. Hence, there is a need for state-of-the-art in neural networks application to PR to urgently address the above-highlights problems for more successes. The study furnishes readers with a clearer understanding of the current, and new trend in ANN models that effectively addresses PR challenges to enable research focus and topics. Similarly, the comprehensive review reveals the diverse areas of the success of ANN models and their application to PR. In evaluating the performance of ANN models, some statistical indicators for measuring the performance of the ANN model in many studies were adopted. Such as the use of mean absolute percentage error (MAPE), mean absolute error (MAE), root mean squared error (RMSE), and variance of absolute percentage error (VAPE). The result shows that the current ANN models such as GAN, SAE, DBN, RBM, RNN, RBFN, PNN, CNN, SLP, MLP, MLNN, Reservoir computing, and Transformer models are performing excellently in their application to PR tasks. Therefore, the study recommends the research focus on current models and the development of new models concurrently for more successes in the field.",
+  "source": "openalex"
+ },
+ {
+  "title": "Advancing Neuromorphic Computing With Loihi: A Survey of Results and Outlook",
+  "authors": [
+   "Mike Davies",
+   "Andreas Wild",
+   "Garrick Orchard",
+   "Yulia Sandamirskaya",
+   "G. A. Fonseca Guerra",
+   "Prasad Joshi",
+   "Philipp Plank",
+   "Sumedh R. Risbud"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the IEEE",
+  "doi": "10.1109/jproc.2021.3067593",
+  "arxiv": null,
+  "openalex": "W3139657805",
+  "cited_by": 703,
+  "abstract": "Deep artificial neural networks apply principles of the brain's information processing that led to breakthroughs in machine learning spanning many problem domains. Neuromorphic computing aims to take this a step further to chips more directly inspired by the form and function of biological neural circuits, so they can process new knowledge, adapt, behave, and learn in real time at low power levels. Despite several decades of research, until recently, very few published results have shown that today's neuromorphic chips can demonstrate quantitative computational value. This is now changing with the advent of Intel's Loihi, a neuromorphic research processor designed to support a broad range of spiking neural networks with sufficient scale, performance, and features to deliver competitive results compared to state-of-the-art contemporary computing architectures. This survey reviews results that are obtained to date with Loihi across the major algorithmic domains under study, including deep learning approaches and novel approaches that aim to more directly harness the key features of spike-based neuromorphic hardware. While conventional feedforward deep neural networks show modest if any benefit on Loihi, more brain-inspired networks using recurrence, precise spike-timing relationships, synaptic plasticity, stochasticity, and sparsity perform certain computation with orders of magnitude lower latency and energy compared to state-of-the-art conventional approaches. These compelling neuromorphic networks solve a diverse range of problems representative of brain-like computation, such as event-based data processing, adaptive control, constrained optimization, sparse feature regression, and graph search.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communications for Future Internet: Fundamentals, Applications, and Challenges",
+  "authors": [
+   "Wanting Yang",
+   "Hongyang Du",
+   "Zi Qin Liew",
+   "Wei Yang Bryan Lim",
+   "Zehui Xiong",
+   "Dusit Tao Niyato",
+   "Xuefen Chi",
+   "Xuemin Shen",
+   "Chunyan Miao"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3223224",
+  "arxiv": "2207.00427",
+  "openalex": "W4312766166",
+  "cited_by": 696,
+  "abstract": "With the increasing demand for intelligent services, the sixth-generation (6G) wireless networks will shift from a traditional architecture that focuses solely on a high transmission rate to a new architecture that is based on the intelligent connection of everything. Semantic communication (SemCom), a revolutionary architecture that integrates user as well as application requirements and the meaning of information into data processing and transmission, is predicted to become a new core paradigm in 6G. While SemCom is expected to progress beyond the classical Shannon paradigm, several obstacles need to be overcome on the way to a SemCom-enabled smart Internet. In this paper, we first highlight the motivations and compelling reasons for SemCom in 6G. Then, we provide an overview of SemCom-related theory development. After that, we introduce three types of SemCom, i.e., semantic-oriented communication, goal-oriented communication, and semantic-aware communication. Following that, we organize the design of the communication system into three dimensions, i.e., semantic information (SI) extraction, SI transmission, and SI metrics. For each dimension, we review existing techniques and discuss their benefits and limitations, as well as the remaining challenges. Then, we introduce the potential applications of SemCom in 6G and portray the vision of future SemCom-empowered network architecture. Finally, we outline future research opportunities. In a nutshell, this paper provides a holistic review of the fundamentals of SemCom, its applications in 6G networks, and the existing challenges and open issues with insights for further in-depth investigations.",
+  "source": "openalex"
+ },
+ {
+  "title": "Semantic Communication Systems for Speech Transmission",
+  "authors": [
+   "Zhenzi Weng",
+   "Zhijin Qin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2021.3087240",
+  "arxiv": "2102.12605",
+  "openalex": "W3166791908",
+  "cited_by": 677,
+  "abstract": "Semantic communications could improve the transmission efficiency significantly by exploring the semantic information. In this paper, we make an effort to recover the transmitted speech signals in the semantic communication systems, which minimizes the error at the semantic level rather than the bit or symbol level. Particularly, we design a deep learning (DL)-enabled semantic communication system for speech signals, named DeepSC-S. In order to improve the recovery accuracy of speech signals, especially for the essential information, DeepSC-S is developed based on an attention mechanism by utilizing a squeeze-and-excitation (SE) network. The motivation behind the attention mechanism is to identify the essential speech information by providing higher weights to them when training the neural network. Moreover, in order to facilitate the proposed DeepSC-S for dynamic channel environments, we find a general model to cope with various channel conditions without retraining. Furthermore, we investigate DeepSC-S in telephone systems as well as multimedia transmission systems to verify the model adaptation in practice. The simulation results demonstrate that our proposed DeepSC-S outperforms the traditional communications in both cases in terms of the speech signals metrics, such as signal-to-distortion ration and perceptual evaluation of speech distortion. Besides, DeepSC-S is more robust to channel variations, especially in the low signal-to-noise (SNR) regime.",
+  "source": "openalex"
+ },
+ {
+  "title": "Spiking Neural Networks and Their Applications: A Review",
+  "authors": [
+   "Kashu Yamazaki",
+   "Viet-Khoa Vo-Ho",
+   "Darshan Bulsara",
+   "Ngan Le"
+  ],
+  "year": 2022,
+  "venue": "Brain Sciences",
+  "doi": "10.3390/brainsci12070863",
+  "arxiv": null,
+  "openalex": "W4283749998",
+  "cited_by": 653,
+  "abstract": "The past decade has witnessed the great success of deep neural networks in various domains. However, deep neural networks are very resource-intensive in terms of energy consumption, data requirements, and high computational costs. With the recent increasing need for the autonomy of machines in the real world, e.g., self-driving vehicles, drones, and collaborative robots, exploitation of deep neural networks in those applications has been actively investigated. In those applications, energy and computational efficiencies are especially important because of the need for real-time responses and the limited energy supply. A promising solution to these previously infeasible applications has recently been given by biologically plausible spiking neural networks. Spiking neural networks aim to bridge the gap between neuroscience and machine learning, using biologically realistic models of neurons to carry out the computation. Due to their functional similarity to the biological neural network, spiking neural networks can embrace the sparsity found in biology and are highly compatible with temporal code. Our contributions in this work are: (i) we give a comprehensive review of theories of biological neurons; (ii) we present various existing spike-based neuron models, which have been studied in neuroscience; (iii) we detail synapse models; (iv) we provide a review of artificial neural networks; (v) we provide detailed guidance on how to train spike-based neuron models; (vi) we revise available spike-based neuron frameworks that have been developed to support implementing spiking neural networks; (vii) finally, we cover existing spiking neural network applications in computer vision and robotics domains. The paper concludes with discussions of future perspectives.",
+  "source": "openalex"
+ },
+ {
+  "title": "Salient object detection: A survey",
+  "authors": [
+   "Ali Borji",
+   "Ming-Ming Cheng",
+   "Qibin Hou",
+   "Huaizu Jiang",
+   "Jia Li"
+  ],
+  "year": 2019,
+  "venue": "Computational Visual Media",
+  "doi": "10.1007/s41095-019-0149-9",
+  "arxiv": "1411.5878",
+  "openalex": "W2160613239",
+  "cited_by": 614,
+  "abstract": "Detecting and segmenting salient objects from natural scenes, often referred to as salient object detection, has attracted great interest in computer vision. While many models have been proposed and several applications have emerged, a deep understanding of achievements and issues remains lacking. We aim to provide a comprehensive review of recent progress in salient object detection and situate this field among other closely related areas such as generic scene segmentation, object proposal generation, and saliency for fixation prediction. Covering 228 publications, we survey i) roots, key concepts, and tasks, ii) core techniques and main modeling trends, and iii) datasets and evaluation metrics for salient object detection. We also discuss open problems such as evaluation metrics and dataset bias in model performance, and suggest future research directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "Quantum computing: A taxonomy, systematic review and future directions",
+  "authors": [
+   "Sukhpal Singh Gill",
+   "Adarsh Kumar",
+   "Harvinder Singh",
+   "Manmeet Singh",
+   "Kamalpreet Kaur",
+   "Muhammad Usman",
+   "Rajkumar Buyya"
+  ],
+  "year": 2021,
+  "venue": "Software Practice and Experience",
+  "doi": "10.1002/spe.3039",
+  "arxiv": "2010.15559",
+  "openalex": "W3095846505",
+  "cited_by": 531,
+  "abstract": "Abstract Quantum computing (QC) is an emerging paradigm with the potential to offer significant computational advantage over conventional classical computing by exploiting quantum‐mechanical principles such as entanglement and superposition. It is anticipated that this computational advantage of QC will help to solve many complex and computationally intractable problems in several application domains such as drug design, data science, clean energy, finance, industrial chemical development, secure communications, and quantum chemistry. In recent years, tremendous progress in both quantum hardware development and quantum software/algorithm has brought QC much closer to reality. Indeed, the demonstration of quantum supremacy marks a significant milestone in the Noisy Intermediate Scale Quantum (NISQ) era—the next logical step being the quantum advantage whereby quantum computers solve a real‐world problem much more efficiently than classical computing. As the quantum devices are expected to steadily scale up in the next few years, quantum decoherence and qubit interconnectivity are two of the major challenges to achieve quantum advantage in the NISQ era. QC is a highly topical and fast‐moving field of research with significant ongoing progress in all facets. A systematic review of the existing literature on QC will be invaluable to understand the state‐of‐the‐art of this emerging field and identify open challenges for the QC community to address in the coming years. This article presents a comprehensive review of QC literature and proposes taxonomy of QC. The proposed taxonomy is used to map various related studies to identify the research gaps. A detailed overview of quantum software tools and technologies, post‐quantum cryptography, and quantum computer hardware development captures the current state‐of‐the‐art in the respective areas. The article identifies and highlights various open challenges and promising future directions for research and innovation in QC.",
+  "source": "openalex"
+ },
+ {
+  "title": "Security and Privacy for 6G: A Survey on Prospective Technologies and Challenges",
+  "authors": [
+   "Van-Linh Nguyen",
+   "Po‐Ching Lin",
+   "Bo‐Chao Cheng",
+   "Ren‐Hung Hwang",
+   "Ying–Dar Lin"
+  ],
+  "year": 2021,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2021.3108618",
+  "arxiv": "2108.11861",
+  "openalex": "W3195333310",
+  "cited_by": 530,
+  "abstract": "Sixth-generation (6G) mobile networks will have to cope with diverse threats on a space-air-ground integrated network environment, novel technologies, and an accessible user information explosion. However, for now, security and privacy issues for 6G remain largely in concept. This survey provides a systematic overview of security and privacy issues based on prospective technologies for 6G in the physical, connection, and service layers, as well as through lessons learned from the failures of existing security architectures and state-of-the-art defenses. Two key lessons learned are as follows. First, other than inheriting vulnerabilities from the previous generations, 6G has new threat vectors from new radio technologies, such as the exposed location of radio stripes in ultra-massive MIMO systems at Terahertz bands and attacks against pervasive intelligence. Second, physical layer protection, deep network slicing, quantum-safe communications, artificial intelligence (AI) security, platform-agnostic security, real-time adaptive security, and novel data protection mechanisms such as distributed ledgers and differential privacy are the top promising techniques to mitigate the attack magnitude and personal data breaches substantially.",
+  "source": "openalex"
+ },
+ {
+  "title": "A comprehensive survey on applications of transformers for deep learning tasks",
+  "authors": [
+   "Saidul Islam",
+   "Hanae Elmekki",
+   "Ahmed Elsebai",
+   "Jamal Bentahar",
+   "Nagat Drawel",
+   "Gaith Rjoub",
+   "Witold Pedrycz"
+  ],
+  "year": 2023,
+  "venue": "Expert Systems with Applications",
+  "doi": "10.1016/j.eswa.2023.122666",
+  "arxiv": "2306.07303",
+  "openalex": "W4388923662",
+  "cited_by": 521,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+  "authors": [
+   "Jialong Xu",
+   "Bo Ai",
+   "Wei Ren Chen",
+   "Ang Yang",
+   "Peng Sun",
+   "Miguel R. D. Rodrigues"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2021.3082521",
+  "arxiv": "2012.00533",
+  "openalex": "W3107617916",
+  "cited_by": 517,
+  "abstract": "Recent research on joint source channel coding (JSCC) for wireless communications has achieved great success owing to the employment of deep learning (DL). However, the existing work on DL based JSCC usually trains the designed network to operate under a specific signal-to-noise ratio (SNR) regime, without taking into account that the SNR level during the deployment stage may differ from that during the training stage. A number of networks are required to cover the scenario with a broad range of SNRs, which is computational inefficiency (in the training stage) and requires large storage. To overcome these drawbacks our paper proposes a novel method called Attention DL based JSCC (ADJSCC) that can successfully operate with different SNR levels during transmission. This design is inspired by the resource assignment strategy in traditional JSCC, which dynamically adjusts the compression ratio in source coding and the channel coding rate according to the channel SNR. This is achieved by resorting to attention mechanisms because these are able to allocate computing resources to more critical tasks. Instead of applying the resource allocation strategy in traditional JSCC, the ADJSCC uses the channel-wise soft attention to scaling features according to SNR conditions. We compare the ADJSCC method with the state-of-the-art DL based JSCC method through extensive experiments to demonstrate its adaptability, robustness and versatility. Compared with the existing methods, the proposed method takes less storage and is more robust in the presence of channel mismatch.",
+  "source": "openalex"
+ },
+ {
+  "title": "Seven Defining Features of Terahertz (THz) Wireless Systems: A Fellowship of Communication and Sensing",
+  "authors": [
+   "Christina Chaccour",
+   "Mehdi Naderi Soorki",
+   "Walid Saad",
+   "Mehdi Bennis",
+   "Petar Popovski",
+   "Merouane Abdelkader Debbah"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3143454",
+  "arxiv": "2102.07668",
+  "openalex": "W3130559101",
+  "cited_by": 509,
+  "abstract": "Wireless communication at the terahertz (THz) frequency bands (0.1–10 THz) is viewed as one of the cornerstones of tomorrow’s 6G wireless systems. Owing to the large amount of available bandwidth, if properly deployed, THz frequencies can potentially provide significant wireless capacity performance gains and enable high-resolution environment sensing. However, operating a wireless system at high-frequency bands such as THz is limited by a highly uncertain and dynamic channel. Effectively, these channel limitations lead to unreliable intermittent links as a result of an inherently short communication range, and a high susceptibility to blockage and molecular absorption. Consequently, such impediments could disrupt the THz band’s promise ofhigh-rate communications and high-resolution sensingcapabilities. In this context, this paper panoramically examines the steps needed to efficiently and reliably deploy and operate next-generation THz wireless systems that will synergistically support a fellowship of communication and sensing services. For this purpose, we first set the stage by describing the fundamentals of the THz frequency band. Based on these fundamentals, we characterize and comprehensively investigateseven unique defining features of THz wireless systems: 1) Quasi-opticality of the band, 2) THz-tailored wireless architectures, 3) Synergy with lower frequency bands, 4) Joint sensing and communication systems, 5) PHY-layer procedures, 6) Spectrum access techniques, and 7) Real-time network optimization. These seven defining features allow us to shed light on how to re-engineer wireless systems as we know them today so as to make them ready to support THz bands and their unique environments. On the one hand, THz systems benefit from their quasi-opticality andcan turn every communication challenge into a sensing opportunity, thus contributing to a new generation ofversatile wireless systemsthat can perform multiple functions beyond basic communications. On the other hand, THz systems can capitalize on the role of intelligent surfaces, lower frequency bands, and machine learning (ML) tools to guarantee a robust system performance. We conclude our exposition by presenting the key THz 6G use cases along with their associated major challenges and open problems. Ultimately, the goal of this article is to chart a forward-looking roadmap that exposes the necessary solutions and milestones for enabling THz frequencies to realize their potential as a game changer for next-generation wireless systems.",
+  "source": "openalex"
+ },
+ {
+  "title": "Image and Video Compression With Neural Networks: A Review",
+  "authors": [
+   "Siwei Ma",
+   "Xinfeng Zhang",
+   "Chuanmin Jia",
+   "Zhenghui Zhao",
+   "Shiqi Wang",
+   "Shanshe Wang"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "doi": "10.1109/tcsvt.2019.2910119",
+  "arxiv": "1904.03567",
+  "openalex": "W2935381027",
+  "cited_by": 466,
+  "abstract": "In recent years, the image and video coding technologies have advanced by leaps and bounds. However, due to the popularization of image and video acquisition devices, the growth rate of image and video data is far beyond the improvement of the compression ratio. In particular, it has been widely recognized that there are increasing challenges of pursuing further coding performance improvement within the traditional hybrid coding framework. Deep convolution neural network which makes the neural network resurge in recent years and has achieved great success in both artificial intelligent and signal processing fields, also provides a novel and promising solution for image and video compression. In this paper, we provide a systematic, comprehensive and up-to-date review of neural network-based image and video compression techniques. The evolution and development of neural network-based compression methodologies are introduced for images and video respectively. More specifically, the cutting-edge video coding techniques by leveraging deep learning and HEVC framework are presented and discussed, which promote the state-of-the-art video coding performance substantially. Moreover, the end-to-end image and video coding frameworks based on neural networks are also reviewed, revealing interesting explorations on next generation image and video coding frameworks/standards. The most significant research works on the image and video coding related topics using neural networks are highlighted, and future trends are also envisioned. In particular, the joint compression on semantic and visual information is tentatively explored to formulate high efficiency signal representation structure for both human vision and machine vision, which are the two dominant signal receptors in the age of artificial intelligence.",
+  "source": "openalex"
+ },
+ {
+  "title": "Internet of Underwater Things and Big Marine Data Analytics—A Comprehensive Survey",
+  "authors": [
+   "Mohammad Jahanbakht",
+   "Wei Xiang",
+   "Lajos Hanzo",
+   "Mostafa Rahimi Azghadi"
+  ],
+  "year": 2021,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2021.3053118",
+  "arxiv": "2012.06712",
+  "openalex": "W3113072632",
+  "cited_by": 453,
+  "abstract": "The Internet of Underwater Things (IoUT) is an emerging communication ecosystem developed for connecting underwater objects in maritime and underwater environments. The IoUT technology is intricately linked with intelligent boats and ships, smart shores and oceans, automatic marine transportations, positioning and navigation, underwater exploration, disaster prediction and prevention, as well as with intelligent monitoring and security. The IoUT has an influence at various scales ranging from a small scientific observatory, to a mid-sized harbor, and to covering global oceanic trade. The network architecture of IoUT is intrinsically heterogeneous and should be sufficiently resilient to operate in harsh environments. This creates major challenges in terms of underwater communications, whilst relying on limited energy resources. Additionally, the volume, velocity, and variety of data produced by sensors, hydrophones, and cameras in IoUT is enormous, giving rise to the concept of Big Marine Data (BMD), which has its own processing challenges. Hence, conventional data processing techniques will falter, and bespoke Machine Learning (ML) solutions have to be employed for automatically learning the specific BMD behavior and features facilitating knowledge extraction and decision support. The motivation of this article is to comprehensively survey the IoUT, BMD, and their synthesis. It also aims for exploring the nexus of BMD with ML. We set out from underwater data collection and then discuss the family of IoUT data communication techniques with an emphasis on the state-of-the-art research challenges. We then review the suite of ML solutions suitable for BMD handling and analytics. We treat the subject deductively from an educational perspective, critically appraising the material surveyed. Accordingly, the reader will become familiar with the pivotal issues of IoUT and BMD processing, whilst gaining an insight into the state-of-the-art applications, tools, and techniques. Finally, we analyze the architectural challenges of the IoUT, followed by proposing a range of promising direction for research and innovation in the broad areas of IoUT and BMD. Our hope is to inspire researchers, engineers, data scientists, and governmental bodies to further progress the field, to develop new tools and techniques, as well as to make informed decisions and set regulations related to the maritime and underwater environments around the world.",
+  "source": "openalex"
+ },
+ {
+  "title": "Visual-Based Defect Detection and Classification Approaches for Industrial Applications—A SURVEY",
+  "authors": [
+   "Tamás Czimmermann",
+   "Gastone Ciuti",
+   "Mario Milazzo",
+   "Marcello Chiurazzi",
+   "Stefano Roccella",
+   "Calogero Maria Oddo",
+   "Paolo Dario"
+  ],
+  "year": 2020,
+  "venue": "Sensors",
+  "doi": "10.3390/s20051459",
+  "arxiv": null,
+  "openalex": "W3009635072",
+  "cited_by": 452,
+  "abstract": "This paper reviews automated visual-based defect detection approaches applicable to various materials, such as metals, ceramics and textiles. In the first part of the paper, we present a general taxonomy of the different defects that fall in two classes: visible (e.g., scratches, shape error, etc.) and palpable (e.g., crack, bump, etc.) defects. Then, we describe artificial visual processing techniques that are aimed at understanding of the captured scenery in a mathematical/logical way. We continue with a survey of textural defect detection based on statistical, structural and other approaches. Finally, we report the state of the art for approaching the detection and classification of defects through supervised and non-supervised classifiers and deep learning.",
+  "source": "openalex"
+ },
+ {
+  "title": "5G-Advanced Toward 6G: Past, Present, and Future",
+  "authors": [
+   "Wanshi Chen",
+   "Xingqin Lin",
+   "Juho Lee",
+   "Antti Toskala",
+   "Shu Dong Sun",
+   "Carla Fabiana Chiasserini",
+   "Lingjia Liu"
+  ],
+  "year": 2023,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2023.3274037",
+  "arxiv": "2303.07456",
+  "openalex": "W4381331133",
+  "cited_by": 429,
+  "abstract": "Since the start of 5G work in 3GPP in early 2016, tremendous progress has been made in both standardization and commercial deployments. 3GPP is now entering the second phase of 5G standardization, known as5G-Advanced, built on the 5G baseline in 3GPP Releases 15, 16, and 17. 3GPP Release 18, the start of 5G-Advanced, includes a diverse set of features that cover both device and network evolutions, providing balanced mobile broadband evolution and further vertical domain expansion and accommodating both immediate and long-term commercial needs. 5G-Advanced will significantly expand 5G capabilities, address many new use cases, transform connectivity experiences, and serve as an essential step in developing mobile communications towards 6G. This paper provides a comprehensive overview of the 3GPP 5G-Advanced development, introducing the prominent state-of-the-art technologies investigated in 3GPP and identifying key evolution directions for future research and standardization.",
+  "source": "openalex"
+ },
+ {
+  "title": "Snapshot Compressive Imaging: Theory, Algorithms, and Applications",
+  "authors": [
+   "Xin Yuan",
+   "David J. Brady",
+   "Aggelos K. Katsaggelos"
+  ],
+  "year": 2021,
+  "venue": "IEEE Signal Processing Magazine",
+  "doi": "10.1109/msp.2020.3023869",
+  "arxiv": "2103.04421",
+  "openalex": "W3134510327",
+  "cited_by": 424,
+  "abstract": "Capturing high-dimensional (HD) data is a long-term challenge in signal processing and related fields. Snapshot compressive imaging (SCI) uses a 2D detector to capture HD (≥3D) data in a snapshot measurement. Via novel optical designs, the 2D detector samples the HD data in a compressive manner; following this, algorithms are employed to reconstruct the desired HD data cube. SCI has been used in hyperspectral imaging, video, holography, tomography, focal depth imaging, polarization imaging, microscopy, and so on. Although the hardware has been investigated for more than a decade, the theoretical guarantees have only recently been derived. Inspired by deep learning, various deep neural networks have also been developed to reconstruct the HD data cube in spectral SCI and video SCI. This article reviews recent advances in SCI hardware, theory, and algorithms, including both optimizationbased and deep learning-based algorithms. Diverse applications and the outlook for SCI are also discussed.",
+  "source": "openalex"
+ },
+ {
+  "title": "Advancements in Generative AI: A Comprehensive Review of GANs, GPT, Autoencoders, Diffusion Model, and Transformers",
+  "authors": [
+   "Staphord Bengesi",
+   "Hoda El-Sayed",
+   "Md Kamruzzaman Sarker",
+   "Yao Houkpati",
+   "John Irungu",
+   "Timothy Oladunni"
+  ],
+  "year": 2024,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2024.3397775",
+  "arxiv": "2311.10242",
+  "openalex": "W4396685186",
+  "cited_by": 417,
+  "abstract": "The launch of ChatGPT in 2022 garnered global attention, marking a significant milestone in the Generative Artificial Intelligence (GAI) field. While GAI has been in effect for the past decade, the introduction of ChatGPT sparked a new wave of research and innovation in the Artificial Intelligence (AI) domain. This surge has led to the development and release of numerous cutting-edge tools, such as Bard, Stable Diffusion, DALL-E, Make-A-Video, Runway ML, and Jukebox, among others. These tools exhibit remarkable capabilities, encompassing tasks ranging from text generation and music composition, image creation, video production, code generation, and even scientific work. They are built upon various state-of-the-art models, including Stable Diffusion, transformer models like GPT-3 (recent GPT-4), variational autoencoders, and generative adversarial networks. This advancement in GAI presents a wealth of exciting opportunities across various sectors, such as business, healthcare, education, entertainment, and media. However, concurrently, it poses unprecedented challenges such as impersonation, job displacement, privacy breaches, security vulnerabilities, and misinformation. To addressing these challenges requires a new direction for research to develop solutions and refine existing products. In our endeavor to contribute profound insights to society and advance research on GAI, we present a comprehensive journal which explores the theoretical and mathematical foundations of GAI state-of-the-art models, exploring the diverse spectrum of tasks they can perform, examining the challenges they entail, and discussing the promising prospects for the future of GAI.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Comprehensive Survey on TinyML",
+  "authors": [
+   "Youssef Abadade",
+   "Anas Temouden",
+   "Hatim Bamoumen",
+   "Nabil Benamar",
+   "Yousra Chtouki",
+   "Abdelhakim Senhaji Hafid"
+  ],
+  "year": 2023,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2023.3294111",
+  "arxiv": null,
+  "openalex": "W4383751021",
+  "cited_by": 393,
+  "abstract": "Recent spectacular progress in computational technologies has led to an unprecedented boom in the field of Artificial Intelligence (AI). AI is now used in a plethora of research areas and has demonstrated its capability to bring new approaches and solutions to various research problems. However, the extensive computation required to train AI algorithms comes with a cost. Driven by the need to reduce the energy consumption, the carbon footprint and the cost of computers running machine learning algorithms, TinyML is nowadays considered as a promising AI alternative focusing on technologies and applications for extremely low-profile devices. This paper presents the results of a literature survey of all TinyML applications and related research efforts. Our survey builds a taxonomy of TinyML techniques that have been used so far to bring new solutions to various domains, such as healthcare, smart farming, environment, and anomaly detection. Finally, this survey highlights the remaining challenges and points out possible future research directions. We anticipate that this survey will motivate further discussions on the various fields of applications of TinyML and the synergy of resource-constrained devices and edge intelligence.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Near-Field XL-MIMO Communications Toward 6G",
+  "authors": [
+   "Haiquan Lu",
+   "Yong Zeng",
+   "Changsheng You",
+   "Yu Han",
+   "Jiayi Zhang",
+   "Zhe Wang",
+   "Zhenjun Dong",
+   "Shi Jin",
+   "Cheng‐Xiang Wang",
+   "Tao Jiang",
+   "Xiaohu You",
+   "Rui Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3387749",
+  "arxiv": "2310.11044",
+  "openalex": "W4394744873",
+  "cited_by": 385,
+  "abstract": "Extremely large-scale multiple-input multiple-output (XL-MIMO) is a promising technology for the sixth-generation (6G) mobile communication networks. By significantly boosting the antenna number or size to at least an order of magnitude beyond current massive MIMO systems, XL-MIMO is expected to unprecedentedly enhance the spectral efficiency and spatial resolution for wireless communication. The evolution from massive MIMO to XL-MIMO is not simply an increase in the array size, but faces new design challenges, in terms of near-field channel modeling, performance analysis, channel estimation, and practical implementation. In this article, we give a comprehensive tutorial overview on near-field XL-MIMO communications, aiming to provide useful guidance for tackling the above challenges. First, the basic near-field modeling for XL-MIMO is established, by considering the new characteristics of non-uniform spherical wave (NUSW) and spatial non-stationarity. Next, based on the near-field modeling, the performance analysis of XL-MIMO is presented, including the near-field signal-to-noise ratio (SNR) scaling laws, beam focusing pattern, achievable rate, and degrees-of-freedom (DoF). Furthermore, various XL-MIMO design issues such as near-field beam codebook, beam training, channel estimation, and delay alignment modulation (DAM) transmission are elaborated. Finally, we point out promising directions to inspire future research on near-field XL-MIMO communications.",
+  "source": "openalex"
+ },
+ {
+  "title": "An Overview of Voice Conversion and Its Challenges: From Statistical Modeling to Deep Learning",
+  "authors": [
+   "Berrak Şişman",
+   "Junichi Yamagishi",
+   "Simon King",
+   "Haizhou Li"
+  ],
+  "year": 2020,
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "doi": "10.1109/taslp.2020.3038524",
+  "arxiv": "2008.03648",
+  "openalex": "W3098557217",
+  "cited_by": 374,
+  "abstract": "Speaker identity is one of the important characteristics of human speech. In voice conversion, we change the speaker identity from one to another, while keeping the linguistic content unchanged. Voice conversion involves multiple speech processing techniques, such as speech analysis, spectral conversion, prosody conversion, speaker characterization, and vocoding. With the recent advances in theory and practice, we are now able to produce human-like voice quality with high speaker similarity. In this article, we provide a comprehensive overview of the state-of-the-art of voice conversion techniques and their performance evaluation methods from the statistical approaches to deep learning, and discuss their promise and limitations. We will also report the recent Voice Conversion Challenges (VCC), the performance of the current state of technology, and provide a summary of the available resources for voice conversion research.",
+  "source": "openalex"
+ },
+ {
+  "title": "Superpixel-Based Fast Fuzzy C-Means Clustering for Color Image Segmentation",
+  "authors": [
+   "Tao Lei",
+   "Xiaohong Jia",
+   "Yanning Zhang",
+   "Shigang Liu",
+   "Hongying Meng",
+   "Asoke Kumar Nandi"
+  ],
+  "year": 2018,
+  "venue": "IEEE Transactions on Fuzzy Systems",
+  "doi": "10.1109/tfuzz.2018.2889018",
+  "arxiv": null,
+  "openalex": "W2905621769",
+  "cited_by": 372,
+  "abstract": "A great number of improved fuzzy c-means (FCM) clustering algorithms have been widely used for grayscale and color image segmentation. However, most of them are time-consuming and unable to provide desired segmentation results for color images due to two reasons. The first one is that the incorporation of local spatial information often causes a high computational complexity due to the repeated distance computation between clustering centers and pixels within a local neighboring window. The other one is that a regular neighboring window usually breaks up the real local spatial structure of images and thus leads to a poor segmentation. In this work, we propose a superpixel-based fast FCM clustering algorithm that is significantly faster and more robust than stateof-the-art clustering algorithms for color image segmentation. To obtain better local spatial neighborhoods, we first define a multiscale morphological gradient reconstruction operation to obtain a superpixel image with accurate contour. In contrast to traditional neighboring window of fixed size and shape, the superpixel image provides better adaptive and irregular local spatial neighborhoods that are helpful for improving color image segmentation. Second, based on the obtained superpixel image, the original color image is simplified efficiently and its histogram is computed easily by counting the number of pixels in each region of the superpixel image. Finally, we implement FCM with histogram parameter on the superpixel image to obtain the final segmentation result. Experiments performed on synthetic images and real images demonstrate that the proposed algorithm provides better segmentation results and takes less time than state-of-the-art clustering algorithms for color image segmentation.",
+  "source": "openalex"
+ },
+ {
+  "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+  "authors": [
+   "Jincheng Dai",
+   "Sixian Wang",
+   "Kailin Tan",
+   "Zhongwei Si",
+   "Xiaoqi Qin",
+   "Kai Niu",
+   "Ping Zhang"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "10.1109/jsac.2022.3180802",
+  "arxiv": "2112.10961",
+  "openalex": "W4226042246",
+  "cited_by": 369,
+  "abstract": "In this paper, we propose a class of high-efficiency deep joint source-channel coding methods that can closely adapt to the source distribution under the nonlinear transform, it can be collected under the name nonlinear transform source-channel coding (NTSCC). In the considered model, the transmitter first learns a nonlinear analysis transform to map the source data into latent space, then transmits the latent representation to the receiver via deep joint source-channel coding. Our model incorporates the nonlinear transform as a strong prior to effectively extract the source semantic features and provide side information for source-channel coding. Unlike existing conventional deep joint source-channel coding methods, the proposed NTSCC essentially learns both the source latent representation and an entropy model as the prior on the latent representation. Accordingly, novel adaptive rate transmission and hyperprior-aided codec refinement mechanisms are developed to upgrade deep joint source-channel coding. The whole system design is formulated as an optimization problem whose goal is to minimize the end-to-end transmission rate-distortion performance under established perceptual quality metrics. Across test image sources with various resolutions, we find that the proposed NTSCC transmission method generally outperforms both the analog transmission using the standard deep joint source-channel coding and the classical separation-based digital transmission. Notably, the proposed NTSCC method can potentially support future semantic communications due to its content-aware ability and perceptual optimization goal.",
+  "source": "openalex"
+ },
+ {
+  "title": "Chaos-Based Image Encryption: Review, Application, and Challenges",
+  "authors": [
+   "Bowen Zhang",
+   "Lingfeng Liu"
+  ],
+  "year": 2023,
+  "venue": "Mathematics",
+  "doi": "10.3390/math11112585",
+  "arxiv": null,
+  "openalex": "W4379518973",
+  "cited_by": 368,
+  "abstract": "Chaos has been one of the most effective cryptographic sources since it was first used in image-encryption algorithms. This paper closely examines the development process of chaos-based image-encryption algorithms from various angles, including symmetric and asymmetric algorithms, block ciphers and stream ciphers, and integration with other technologies. The unique attributes of chaos, such as sensitivity to initial conditions, topological transitivity, and pseudo-randomness, are conducive to cross-referencing with other disciplines and improving image-encryption methods. Additionally, this paper covers practical application scenarios and current challenges of chaotic image encryption, thereby encouraging researchers to continue developing and complementing existing situations, and may also serve as a basis of future development prospects for chaos-based image encryption.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Fluid Antenna System for 6G Networks: Encompassing Communication Theory, Optimization Methods and Hardware Designs",
+  "authors": [
+   "Wee Kiat New",
+   "Kai‐Kit Wong",
+   "Hao Xu",
+   "Chao Wang",
+   "Farshad Rostami Ghadi",
+   "Jichen Zhang",
+   "Junhui Rao",
+   "Ross Murch",
+   "Pablo Ramirez‐Espinosa",
+   "David Morales‐Jiménez",
+   "Chan‐Byoung Chae",
+   "Kin‐Fai Tong"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3498855",
+  "arxiv": "2407.03449",
+  "openalex": "W4404410614",
+  "cited_by": 351,
+  "abstract": "The advent of the sixth-generation (6G) networks presents another round of revolution for the mobile communication landscape, promising an immersive experience, robust reliability, minimal latency, extreme connectivity, ubiquitous coverage, and capabilities beyond communication, including intelligence and sensing. To achieve these ambitious goals, it is apparent that 6G networks need to incorporate the state-of-the-art technologies. One of the technologies that has garnered rising interest is fluid antenna system (FAS) which represents any software-controllable fluidic, conductive, or dielectric structure capable of dynamically changing its shape and position to reconfigure essential radio-frequency (RF) characteristics. Compared to traditional antenna systems (TASs) with fixed-position radiating elements, the core idea of FAS revolves around the unique flexibility of reconfiguring the radiating elements within a given space. One recent driver of FAS is the recognition of its position-flexibility as a new degree of freedom (dof) to harness diversity and multiplexing gains. In this paper, we provide a comprehensive tutorial, covering channel modeling, signal processing and estimation methods, information-theoretic insights, new multiple access techniques, and hardware designs. Moreover, we delineate the challenges of FAS and explore the potential of using FAS to improve the performance of other contemporary technologies. By providing insights and guidance, this tutorial paper serves to inspire researchers to explore new horizons and fully unleash the potential of FAS.",
+  "source": "openalex"
+ },
+ {
+  "title": "Transformers in Time-Series Analysis: A Tutorial",
+  "authors": [
+   "Sabeen Ahmed",
+   "Ian E. Nielsen",
+   "Aakash Gireesh Tripathi",
+   "Shamoon Siddiqui",
+   "Ravi P. Ramachandran",
+   "Ghulam Rasool"
+  ],
+  "year": 2023,
+  "venue": "Circuits Systems and Signal Processing",
+  "doi": "10.1007/s00034-023-02454-8",
+  "arxiv": "2205.01138",
+  "openalex": "W4385258623",
+  "cited_by": 334,
+  "abstract": "",
+  "source": "openalex"
+ },
+ {
+  "title": "Multimedia Internet of Things: A Comprehensive Survey",
+  "authors": [
+   "Ali Nauman",
+   "Yazdan Ahmad Qadri",
+   "Muhammad Faisal Amjad",
+   "Yousaf Bin Zikria",
+   "Muhammad Khalil Afzal",
+   "Sung Won Kim"
+  ],
+  "year": 2020,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2020.2964280",
+  "arxiv": null,
+  "openalex": "W3000651374",
+  "cited_by": 333,
+  "abstract": "The immense increase in multimedia-on-demand traffic that refers to audio, video, and images, has drastically shifted the vision of the Internet of Things (IoT) from scalar to Multimedia Internet of Things (M-IoT). IoT devices are constrained in terms of energy, computing, size, and storage memory. Delay-sensitive and bandwidth-hungry multimedia applications over constrained IoT networks require revision of IoT architecture for M-IoT. This paper provides a comprehensive survey of M-IoT with an emphasis on architecture, protocols, and applications. This article starts by providing a horizontal overview of the IoT. Then, we discuss the issues considering the characteristics of multimedia and provide a summary of related M-IoT architectures. Various multimedia applications supported by IoT are surveyed, and numerous use cases related to road traffic management, security, industry, and health are illustrated to show how different M-IoT applications are revolutionizing human life. We explore the importance of Quality-of-Experience (QoE) and Quality-of-Service (QoS) for multimedia transmission over IoT. Moreover, we explore the limitations of IoT for multimedia computing and present the relationship between the M-IoT and emerging technologies including event processing, feature extraction, cloud computing, Fog/Edge computing and Software-Defined-Networks (SDNs). We also present the need for better routing and Physical-Medium Access Control (PHY-MAC) protocols for M-IoT. Finally, we present a detailed discussion on the open research issues and several potential research areas related to emerging multimedia communication in IoT.",
+  "source": "openalex"
+ },
+ {
+  "title": "Toward Wisdom-Evolutionary and Primitive-Concise 6G: A New Paradigm of Semantic Communication Networks",
+  "authors": [
+   "Ping Zhang",
+   "Wenjun Xu",
+   "Hui Gao",
+   "Kai Niu",
+   "Xiaodong Xu",
+   "Xiaoqi Qin",
+   "Caixia Yuan",
+   "Zhijin Qin",
+   "Haitao Zhao",
+   "Jibo Wei",
+   "Fangwei Zhang"
+  ],
+  "year": 2021,
+  "venue": "Engineering",
+  "doi": "10.1016/j.eng.2021.11.003",
+  "arxiv": null,
+  "openalex": "W3213872105",
+  "cited_by": 318,
+  "abstract": "The sixth generation (6G) mobile networks will reshape the world by offering instant, efficient, and intelligent hyper-connectivity, as envisioned by the previously proposed Ubiquitous-X 6G networks. Such hyper-massive and global connectivity will introduce tremendous challenges into the operation and management of 6G networks, calling for revolutionary theories and technological innovations. To this end, we propose a new route to boost network capabilities toward a wisdom-evolutionary and primitive-concise network (WePCN) vision for the Ubiquitous-X 6G network. In particular, we aim to concretize the evolution path toward the WePCN by first conceiving a new semantic representation framework, namely semantic base, and then establishing an intelligent and efficient semantic communication (IE-SC) network architecture. In the IE-SC architecture, a semantic intelligence plane is employed to interconnect the semantic-empowered physical-bearing layer, network protocol layer, and application-intent layer via semantic information flows. The proposed architecture integrates artificial intelligence and network technologies to enable intelligent interactions among various communication objects in 6G. It features a lower bandwidth requirement, less redundancy, and more accurate intent identification. We also present a brief review of recent advances in semantic communications and highlight potential use cases, complemented by a range of open challenges for 6G.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Environment-Aware Communications via Channel Knowledge Map for 6G",
+  "authors": [
+   "Yong Zeng",
+   "Junting Chen",
+   "Jie Xu",
+   "Di Wu",
+   "Xiaoli Xu",
+   "Shi Jin",
+   "Xiqi Gao",
+   "David Gesbert",
+   "Shuguang Robert Cui",
+   "Rui Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3364508",
+  "arxiv": "2309.07460",
+  "openalex": "W4391697040",
+  "cited_by": 315,
+  "abstract": "Sixth-generation (6G) mobile communication networks are expected to have dense infrastructures, large antenna size, wide bandwidth, cost-effective hardware, diversified positioning methods, and enhanced intelligence. Such trends bring both new challenges and opportunities for the practical design of 6G. On one hand, acquiring channel state information (CSI) in real time for all wireless links becomes quite challenging in 6G. On the other hand, there would be numerous data sources in 6G containing high-quality location-tagged channel data, e.g., the estimated channels or beams between base station (BS) and user equipment (UE), making it possible to better learn the local wireless environment. By exploiting this new opportunity and for tackling the CSI acquisition challenge, there is a promising paradigm shift from the conventional environment-unaware communications to the new environment-aware communications based on the novel approach of channel knowledge map (CKM). This article aims to provide a comprehensive overview on environment-aware communications enabled by CKM to fully harness its benefits for 6G. First, the basic concept of CKM is presented, followed by the comparison of CKM with various existing channel inference techniques. Next, the main techniques for CKM construction are discussed, including both environment model-free and environment model-assisted approaches. Furthermore, a general framework is presented for the utilization of CKM to achieve environment-aware communications, followed by some typical CKM-aided communication scenarios. Finally, important open problems in CKM research are highlighted and potential solutions are discussed to inspire future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "Impact of word embedding models on text analytics in deep learning environment: a review",
+  "authors": [
+   "Deepak Suresh Asudani",
+   "Naresh Kumar Nagwani",
+   "Pradeep Singh"
+  ],
+  "year": 2023,
+  "venue": "Artificial Intelligence Review",
+  "doi": "10.1007/s10462-023-10419-1",
+  "arxiv": null,
+  "openalex": "W4321497407",
+  "cited_by": 314,
+  "abstract": "The selection of word embedding and deep learning models for better outcomes is vital. Word embeddings are an n-dimensional distributed representation of a text that attempts to capture the meanings of the words. Deep learning models utilize multiple computing layers to learn hierarchical representations of data. The word embedding technique represented by deep learning has received much attention. It is used in various natural language processing (NLP) applications, such as text classification, sentiment analysis, named entity recognition, topic modeling, etc. This paper reviews the representative methods of the most prominent word embedding and deep learning models. It presents an overview of recent research trends in NLP and a detailed understanding of how to use these models to achieve efficient results on text analytics tasks. The review summarizes, contrasts, and compares numerous word embedding and deep learning models and includes a list of prominent datasets, tools, APIs, and popular publications. A reference for selecting a suitable word embedding and deep learning approach is presented based on a comparative analysis of different techniques to perform text analytics tasks. This paper can serve as a quick reference for learning the basics, benefits, and challenges of various word representation approaches and deep learning models, with their application to text analytics and a future outlook on research. It can be concluded from the findings of this study that domain-specific word embedding and the long short term memory model can be employed to improve overall text analytics task performance.",
+  "source": "openalex"
+ },
+ {
+  "title": "A comprehensive survey on radio frequency (RF) fingerprinting: Traditional approaches, deep learning, and open challenges",
+  "authors": [
+   "Anu Jagannath",
+   "Jithin Jagannath",
+   "Prem Sagar Pattanshetty Vasanth Kumar"
+  ],
+  "year": 2022,
+  "venue": "Computer Networks",
+  "doi": "10.1016/j.comnet.2022.109455",
+  "arxiv": "2201.00680",
+  "openalex": "W4308655556",
+  "cited_by": 308,
+  "abstract": "Fifth generation (5G) network and beyond envision massive Internet of Things (IoT) rollout to support disruptive applications such as extended reality (XR), augmented/virtual reality (AR/VR), industrial automation, autonomous driving, and smart everything which brings together massive and diverse IoT devices occupying the radio frequency (RF) spectrum. Along with the spectrum crunch and throughput challenges, such a massive scale of wireless devices exposes unprecedented threat surfaces. RF fingerprinting is heralded as a candidate technology that can be combined with cryptographic and zero-trust security measures to ensure data privacy, confidentiality, and integrity in wireless networks. Motivated by the relevance of this subject in the future communication networks, in this work, we present a comprehensive survey of RF fingerprinting approaches ranging from a traditional view to the most recent deep learning (DL)-based algorithms. Existing surveys have mostly focused on a constrained presentation of the wireless fingerprinting approaches, however, many aspects remain untold. In this work, however, we mitigate this by addressing every aspect – background on signal intelligence (SIGINT), applications, relevant DL algorithms, systematic literature review of RF fingerprinting techniques spanning the past two decades, discussion on datasets, and potential research avenues – necessary to elucidate this topic to the reader in an encyclopedic manner.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Review on Machine Learning Styles in Computer Vision—Techniques and Future Directions",
+  "authors": [
+   "Supriya V. Mahadevkar",
+   "Bharti Khemani",
+   "Shruti Patil",
+   "Ketan V. Kotecha",
+   "Deepali Rahul Vora",
+   "Ajith Abraham",
+   "Lubna A. Gabralla"
+  ],
+  "year": 2022,
+  "venue": "IEEE Access",
+  "doi": "10.1109/access.2022.3209825",
+  "arxiv": null,
+  "openalex": "W4297094728",
+  "cited_by": 304,
+  "abstract": "Computer applications have considerably shifted from single data processing to machine learning in recent years due to the accessibility and availability of massive volumes of data obtained through the internet and various sources. Machine learning is automating human assistance by training an algorithm on relevant data. Supervised, Unsupervised, and Reinforcement Learning are the three fundamental categories of machine learning techniques. In this paper, we have discussed the different learning styles used in the field of Computer vision, Deep Learning, Neural networks, and machine learning. Some of the most recent applications of machine learning in computer vision include object identification, object classification, and extracting usable information from images, graphic documents, and videos. Some machine learning techniques frequently include zero-shot learning, active learning, contrastive learning, self-supervised learning, life-long learning, semi-supervised learning, ensemble learning, sequential learning, and multi-view learning used in computer vision until now. There is a lack of systematic reviews about all learning styles. This paper presents literature analysis of how different machine learning styles evolved in the field of Artificial Intelligence (AI) for computer vision. This research examines and evaluates machine learning applications in computer vision and future forecasting. This paper will be helpful for researchers working with learning styles as it gives a deep insight into future directions.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey of Beam Management for mmWave and THz Communications Towards 6G",
+  "authors": [
+   "Qing Xue",
+   "Chengwang Ji",
+   "Shaodan Ma",
+   "Jiajia Guo",
+   "Yongjun Xu",
+   "Qianbin Chen",
+   "Wei Zhang"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3361991",
+  "arxiv": "2308.02135",
+  "openalex": "W4391547876",
+  "cited_by": 296,
+  "abstract": "Communication in millimeter wave (mmWave) and even terahertz (THz) frequency bands is ushering in a new era of wireless communications. Beam management, namely initial access and beam tracking, has been recognized as an essential technique to ensure robust mmWave/THz communications, especially for mobile scenarios. However, narrow beams at higher carrier frequency lead to huge beam measurement overhead, which has a negative impact on beam acquisition and tracking. In addition, the beam management process is further complicated by the fluctuation of mmWave/THz channels, the random movement patterns of users, and the dynamic changes in the environment. For mmWave and THz communications toward 6G, we have witnessed a substantial increase in research and industrial attention on artificial intelligence (AI), reconfigurable intelligent surface (RIS), and integrated sensing and communications (ISAC). The introduction of these enabling technologies presents both open opportunities and unique challenges for beam management. In this paper, we present a comprehensive survey on mmWave and THz beam management. Further, we give some insights on technical challenges and future research directions in this promising area.",
+  "source": "openalex"
+ },
+ {
+  "title": "Twelve Scientific Challenges for 6G: Rethinking the Foundations of Communications Theory",
+  "authors": [
+   "Marwa Chafii",
+   "Lina Bariah",
+   "Sami Muhaidat",
+   "Merouane Abdelkader Debbah"
+  ],
+  "year": 2023,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2023.3243918",
+  "arxiv": "2207.01843",
+  "openalex": "W4320018468",
+  "cited_by": 295,
+  "abstract": "The research in the sixth generation of wireless networks needs to tackle new challenges in order to meet the requirements of emerging applications in terms of high data rate, low latency, high reliability, and massive connectivity. To this end, the entire communication chain needs to be optimized, including the channel and the surrounding environment, as it is no longer sufficient to control the transmitter and/or the receiver only. Investigating large intelligent surfaces, ultra-massive multiple-input-multiple-output, and smart constructive environments will ultimately contribute to this direction. In addition, to allow the exchange of high dimensional sensing data between connected intelligent devices, semantic and goal-oriented communications need to be considered for a more efficient and context-aware information encoding. In particular, for multi-agent systems, where agents are collaborating together to achieve a complex task, emergent communication, instead of hard-coded communication, can be learned for more efficient task execution and communication resources use. Moreover, new physical phenomena, such as the thermodynamics of communication and the interaction between information theory and electromagnetism should be exploited to better understand the physical limitations of different technologies, e.g., holographic communications. Another new communication paradigm is to consider the end-to-end communication system optimization instead of block-by-block optimization, which requires exploiting machine learning theory, non-linear signal processing theory, and non-coherent communications theory. Within this context, we identify and investigate twelve scientific challenges for rebuilding the theoretical foundation of communications. Furthermore, we present an overview of each of the challenges, along with their respective research opportunities and associated challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "6G Enabled Smart Infrastructure for Sustainable Society: Opportunities, Challenges, and Research Roadmap",
+  "authors": [
+   "Agbotiname Lucky Imoize",
+   "Oluwadara Adedeji",
+   "Nistha Tandiya",
+   "Sachin S. Shetty"
+  ],
+  "year": 2021,
+  "venue": "Sensors",
+  "doi": "10.3390/s21051709",
+  "arxiv": null,
+  "openalex": "W3133651327",
+  "cited_by": 294,
+  "abstract": "The 5G wireless communication network is currently faced with the challenge of limited data speed exacerbated by the proliferation of billions of data-intensive applications. To address this problem, researchers are developing cutting-edge technologies for the envisioned 6G wireless communication standards to satisfy the escalating wireless services demands. Though some of the candidate technologies in the 5G standards will apply to 6G wireless networks, key disruptive technologies that will guarantee the desired quality of physical experience to achieve ubiquitous wireless connectivity are expected in 6G. This article first provides a foundational background on the evolution of different wireless communication standards to have a proper insight into the vision and requirements of 6G. Second, we provide a panoramic view of the enabling technologies proposed to facilitate 6G and introduce emerging 6G applications such as multi-sensory-extended reality, digital replica, and more. Next, the technology-driven challenges, social, psychological, health and commercialization issues posed to actualizing 6G, and the probable solutions to tackle these challenges are discussed extensively. Additionally, we present new use cases of the 6G technology in agriculture, education, media and entertainment, logistics and transportation, and tourism. Furthermore, we discuss the multi-faceted communication capabilities of 6G that will contribute significantly to global sustainability and how 6G will bring about a dramatic change in the business arena. Finally, we highlight the research trends, open research issues, and key take-away lessons for future research exploration in 6G wireless communication.",
+  "source": "openalex"
+ },
+ {
+  "title": "Robust Semantic Communications With Masked VQ-VAE Enabled Codebook",
+  "authors": [
+   "Qiyu Hu",
+   "Guangyi Zhang",
+   "Zhijin Qin",
+   "Yunlong Cai",
+   "Guanding Yu",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Wireless Communications",
+  "doi": "10.1109/twc.2023.3265201",
+  "arxiv": "2206.04011",
+  "openalex": "W4365420366",
+  "cited_by": 288,
+  "abstract": "Although semantic communications have exhibited satisfactory performance on a large number of tasks, the impact of semantic noise and the robustness of the systems have not been well investigated. Semantic noise refers to the misleading between the intended semantic symbols and received ones, thus causes the failure of tasks. In this paper, we first propose a framework for the robust end-to-end semantic communication systems to combat the semantic noise. In particular, we analyze sample-dependent and sample-independent semantic noise. To combat the semantic noise, the adversarial training with weight perturbation is developed to incorporate the samples with semantic noise in the training dataset. Then, we propose to mask a portion of the input, where the semantic noise appears frequently, and design the masked vector quantized-variational autoencoder (VQ-VAE) with the noise-related masking strategy. We use a discrete codebook shared by the transmitter and the receiver for encoded feature representation. To further improve the system robustness, we develop a feature importance module (FIM) to suppress the noise-related and task-unrelated features. Thus, the transmitter simply needs to transmit the indices of these important task-related features in the codebook. Simulation results show that the proposed method can be applied in many downstream tasks and significantly improve the robustness against semantic noise with remarkable reduction on the transmission overhead.",
+  "source": "openalex"
+ },
+ {
+  "title": "Overview of Deep Learning-Based CSI Feedback in Massive MIMO Systems",
+  "authors": [
+   "Jiajia Guo",
+   "Chao-Kai Wen",
+   "Shi Jin",
+   "Geoffrey Ye Li"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "10.1109/tcomm.2022.3217777",
+  "arxiv": "2206.14383",
+  "openalex": "W4312050602",
+  "cited_by": 285,
+  "abstract": "Many performance gains achieved by massive multiple-input and multiple-output depend on the accuracy of the downlink channel state information (CSI) at the transmitter (base station), which is usually obtained by estimating at the receiver (user equipment) and feeding back to the transmitter. The overhead of CSI feedback occupies substantial uplink bandwidth resources, especially when the number of transmit antennas is large. Deep learning (DL)-based CSI feedback refers to CSI compression and reconstruction by a DL-based autoencoder and can greatly reduce feedback overhead. In this paper, a comprehensive overview of state-of-the-art research on this topic is provided, beginning with basic DL concepts widely used in CSI feedback and then categorizing and describing some existing DL-based feedback works. The focus is on novel neural network architectures and utilization of communication expert knowledge to improve CSI feedback accuracy. Works on joint design of CSI feedback with other communication modules are also introduced, and some practical issues, including bitstream generation, multirate feedback, imperfect feedback, NN complexity, training dataset collection, online training, and standardization effect, are discussed. At the end of the paper, some challenges and potential research directions associated with DL-based CSI feedback in future wireless communication systems are identified.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Tutorial on Terahertz-Band Localization for 6G Communication Systems",
+  "authors": [
+   "Hui Chen",
+   "Hadi Sarieddeen",
+   "Tarig Ballal",
+   "Henk Wymeersch",
+   "Mohamed‐Slim Alouini",
+   "Tareq Y. Al-Naffouri"
+  ],
+  "year": 2022,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2022.3178209",
+  "arxiv": "2110.08581",
+  "openalex": "W3206511420",
+  "cited_by": 280,
+  "abstract": "Terahertz (THz) communications are celebrated as key enablers for converged localization and sensing in future sixth-generation (6G) wireless communication systems and beyond. Instead of being a byproduct of the communication system, localization in 6G is indispensable for location-aware communications. Towards this end, we aim to identify the prospects, challenges, and requirements of THz localization techniques. We first review the history and trends of localization methods and discuss their objectives, constraints, and applications in contemporary communication systems. We then detail the latest advances in THz communications and introduce THz-specific channel and system models. Afterward, we formulate THz-band localization as a 3D position/orientation estimation problem, detailing geometry-based localization techniques and describing potential THz localization and sensing extensions. We further formulate the offline design and online optimization of THz localization systems, provide numerical simulation results, and conclude by providing lessons learned and future research directions. Preliminary results illustrate that under the same transmission power and array footprint, THz-based localization outperforms millimeter wave-based localization. In other words, the same level of localization performance can be achieved at THz-band with less transmission power or a smaller footprint.",
+  "source": "openalex"
+ },
+ {
+  "title": "Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities",
+  "authors": [
+   "Hao Zhou",
+   "Chengming Hu",
+   "Ye Yuan",
+   "Yufei Cui",
+   "Yili Jin",
+   "Can Chen",
+   "Haolun Wu",
+   "Dun Yuan",
+   "Li Jiang",
+   "Di Wu",
+   "Xue Liu",
+   "Jianzhong Zhang",
+   "Xianbin Wang",
+   "Jiangchuan Liu"
+  ],
+  "year": 2024,
+  "venue": "IEEE Communications Surveys & Tutorials",
+  "doi": "10.1109/comst.2024.3465447",
+  "arxiv": "2405.10825",
+  "openalex": "W4402742293",
+  "cited_by": 277,
+  "abstract": "Large language models (LLMs) have received considerable attention recently due to their outstanding comprehension and reasoning capabilities, leading to great progress in many fields. The advancement of LLM techniques also offers promising opportunities to automate many tasks in the telecommunication (telecom) field. After pre-training and fine-tuning, LLMs can perform diverse downstream tasks based on human instructions, paving the way to artificial general intelligence (AGI)-enabled 6G. Given the great potential of LLM technologies, this work aims to provide a comprehensive overview of LLM-enabled telecom networks. In particular, we first present LLM fundamentals, including model architecture, pre-training, fine-tuning, inference and utilization, model evaluation, and telecom deployment. Then, we introduce LLM-enabled key techniques and telecom applications in terms of generation, classification, optimization, and prediction problems. Specifically, the LLM-enabled generation applications include telecom domain knowledge, code, and network configuration generation. After that, the LLM-based classification applications involve network security, text, image, and traffic classification problems. Moreover, multiple LLM-enabled optimization techniques are introduced, such as automated reward function design for reinforcement learning and verbal reinforcement learning. Furthermore, for LLM-aided prediction problems, we discussed time-series prediction models and multi-modality prediction problems for telecom. Finally, we highlight the challenges and identify the future directions of LLM-enabled telecom networks.",
+  "source": "openalex"
+ },
+ {
+  "title": "Spiking Neural Networks Hardware Implementations and Challenges",
+  "authors": [
+   "Maxence Bouvier",
+   "Alexandre Valentian",
+   "Thomas Mesquida",
+   "François Rummens",
+   "Marina Reyboz",
+   "Elisa Vianello",
+   "Édith Beigné"
+  ],
+  "year": 2019,
+  "venue": "ACM Journal on Emerging Technologies in Computing Systems",
+  "doi": "10.1145/3304103",
+  "arxiv": "2005.01467",
+  "openalex": "W2939020224",
+  "cited_by": 274,
+  "abstract": "Neuromorphic computing is henceforth a major research field for both academic and industrial actors. As opposed to Von Neumann machines, brain-inspired processors aim at bringing closer the memory and the computational elements to efficiently evaluate machine learning algorithms. Recently, spiking neural networks, a generation of cognitive algorithms employing computational primitives mimicking neuron and synapse operational principles, have become an important part of deep learning. They are expected to improve the computational performance and efficiency of neural networks, but they are best suited for hardware able to support their temporal dynamics. In this survey, we present the state of the art of hardware implementations of spiking neural networks and the current trends in algorithm elaboration from model selection to training mechanisms. The scope of existing solutions is extensive; we thus present the general framework and study on a case-by-case basis the relevant particularities. We describe the strategies employed to leverage the characteristics of these event-driven algorithms at the hardware level and discuss their related advantages and challenges.",
+  "source": "openalex"
+ },
+ {
+  "title": "Audio Surveillance",
+  "authors": [
+   "Marco Crocco",
+   "Marco Cristani",
+   "Andrea Trucco",
+   "Vittorio Murino"
+  ],
+  "year": 2016,
+  "venue": "ACM Computing Surveys",
+  "doi": "10.1145/2871183",
+  "arxiv": "1409.7787",
+  "openalex": "W1844944916",
+  "cited_by": 271,
+  "abstract": "Despite surveillance systems becoming increasingly ubiquitous in our living environment, automated surveillance, currently based on video sensory modality and machine intelligence, lacks most of the time the robustness and reliability required in several real applications. To tackle this issue, audio sensory devices have been incorporated, both alone or in combination with video, giving birth in the past decade, to a considerable amount of research. In this article, audio-based automated surveillance methods are organized into a comprehensive survey: A general taxonomy, inspired by the more widespread video surveillance field, is proposed to systematically describe the methods covering background subtraction, event classification, object tracking, and situation analysis. For each of these tasks, all the significant works are reviewed, detailing their pros and cons and the context for which they have been proposed. Moreover, a specific section is devoted to audio features, discussing their expressiveness and their employment in the above-described tasks. Differing from other surveys on audio processing and analysis, the present one is specifically targeted to automated surveillance, highlighting the target applications of each described method and providing the reader with a systematic and schematic view useful for retrieving the most suited algorithms for each specific requirement.",
+  "source": "openalex"
+ },
+ {
+  "title": "Text Recognition in the Wild",
+  "authors": [
+   "Xiaoxue Chen",
+   "Lianwen Jin",
+   "Yuanzhi Zhu",
+   "Canjie Luo",
+   "Tianwei Wang"
+  ],
+  "year": 2021,
+  "venue": "ACM Computing Surveys",
+  "doi": "10.1145/3440756",
+  "arxiv": "2005.03492",
+  "openalex": "W3134064484",
+  "cited_by": 264,
+  "abstract": "The history of text can be traced back over thousands of years. Rich and precise semantic information carried by text is important in a wide range of vision-based application scenarios. Therefore, text recognition in natural scenes has been an active research topic in computer vision and pattern recognition. In recent years, with the rise and development of deep learning, numerous methods have shown promising results in terms of innovation, practicality, and efficiency. This article aims to (1) summarize the fundamental problems and the state-of-the-art associated with scene text recognition, (2) introduce new insights and ideas, (3) provide a comprehensive review of publicly available resources, and (4) point out directions for future work. In summary, this literature review attempts to present an entire picture of the field of scene text recognition. It provides a comprehensive reference for people entering this field and could be helpful in inspiring future research. Related resources are available at our GitHub repository: https://github.com/HCIILAB/Scene-Text-Recognition.",
+  "source": "openalex"
+ },
+ {
+  "title": "Machine Learning Technologies for Secure Vehicular Communication in Internet of Vehicles: Recent Advances and Applications",
+  "authors": [
+   "Elmustafa Sayed Ali",
+   "Mohammad Kamrul Hasan",
+   "Rosilah Binti Hassan",
+   "Rashid Abdelhaleem Saeed",
+   "Mona Bakri Hassan",
+   "Shayla Islam",
+   "Nazmus Shaker Nafi",
+   "Savitri Bevinakoppa"
+  ],
+  "year": 2021,
+  "venue": "Security and Communication Networks",
+  "doi": "10.1155/2021/8868355",
+  "arxiv": null,
+  "openalex": "W3136945043",
+  "cited_by": 262,
+  "abstract": "Recently, interest in Internet of Vehicles’ (IoV) technologies has significantly emerged due to the substantial development in the smart automobile industries. Internet of Vehicles’ technology enables vehicles to communicate with public networks and interact with the surrounding environment. It also allows vehicles to exchange and collect information about other vehicles and roads. IoV is introduced to enhance road users’ experience by reducing road congestion, improving traffic management, and ensuring the road safety. The promised applications of smart vehicles and IoV systems face many challenges, such as big data collection in IoV and distribution to attractive vehicles and humans. Another challenge is achieving fast and efficient communication between many different vehicles and smart devices called Vehicle-to-Everything (V2X). One of the vital questions that the researchers need to address is how to effectively handle the privacy of large groups of data and vehicles in IoV systems. Artificial Intelligence technology offers many smart solutions that may help IoV networks address all these questions and issues. Machine learning (ML) is one of the highest efficient AI tools that have been extensively used to resolve all mentioned problematic issues. For example, ML can be used to avoid road accidents by analyzing the driving behavior and environment by sensing data of the surrounding environment. Machine learning mechanisms are characterized by the time change and are critical to channel modeling in-vehicle network scenarios. This paper aims to provide theoretical foundations for machine learning and the leading models and algorithms to resolve IoV applications’ challenges. This paper has conducted a critical review with analytical modeling for offloading mobile edge-computing decisions based on machine learning and Deep Reinforcement Learning (DRL) approaches for the Internet of Vehicles (IoV). The paper has assumed a Secure IoV edge-computing offloading model with various data processing and traffic flow. The proposed analytical model considers the Markov decision process (MDP) and ML in offloading the decision process of different task flows of the IoV network control cycle. In the paper, we focused on buffer and energy aware in ML-enabled Quality of Experience (QoE) optimization, where many recent related research and methods were analyzed, compared, and discussed. The IoV edge computing and fog-based identity authentication and security mechanism were presented as well. Finally, future directions and potential solutions for secure ML IoV and V2X were highlighted.",
+  "source": "openalex"
+ },
+ {
+  "title": "What is Semantic Communication? A View on Conveying Meaning in the Era of Machine Intelligence",
+  "authors": [
+   "Qiao Lan",
+   "Dingzhu Wen",
+   "Zezhong Zhang",
+   "Qunsong Zeng",
+   "Xu Chen",
+   "Petar Popovski",
+   "Kaibin Huang"
+  ],
+  "year": 2021,
+  "venue": "Journal of Communications and Information Networks",
+  "doi": "10.23919/jcin.2021.9663101",
+  "arxiv": "2110.00196",
+  "openalex": "W3202895480",
+  "cited_by": 258,
+  "abstract": "In the 1940s, Claude Shannon developed the information theory focusing on quantifying the maximum data rate that can be supported by a communication channel. Guided by this fundamental work, the main theme of wireless system design up until the fifth generation (5G) was the data rate maximization. In Shannon's theory, the semantic aspect and meaning of messages were treated as largely irrelevant to communication. The classic theory started to reveal its limitations in the modern era of machine intelligence, consisting of the synergy between Internet-of-things (IoT) and artificial intelligence (AI). By broadening the scope of the classic communication-theoretic framework, in this article, we present a view of semantic communication (SemCom) and conveying meaning through the communication systems. We address three communication modalities: human-to-human (H2H), human-to-machine (H2M), and machine-to-machine (M2M) communications. The latter two represent the paradigm shift in communication and computing, and define the main theme of this article. H2M SemCom refers to semantic techniques for conveying meanings understandable not only by humans but also by machines so that they can have interaction and \"dialogue\". On the other hand, M2M SemCom refers to effective techniques for efficiently connecting multiple machines such that they can effectively execute a specific computation task in a wireless network. The first part of this article focuses on introducing the SemCom principles including encoding, layered system architecture, and two design approaches: 1) layer-coupling design; and 2) end-to-end design using a neural network. The second part focuses on the discussion of specific techniques for different application areas of H2M SemCom [including human and AI symbiosis, recommendation, human sensing and care, and virtual reality (VR)/augmented reality (AR)] and M2M SemCom (including distributed learning, split inference, distributed consensus, and machine-vision cameras). Finally, we discuss the approach for designing SemCom systems based on knowledge graphs. We believe that this comprehensive introduction will provide a useful guide into the emerging area of SemCom that is expected to play an important role in sixth generation (6G) featuring connected intelligence and integrated sensing, computing, communication, and control.",
+  "source": "openalex"
+ },
+ {
+  "title": "A Survey on Graph Representation Learning Methods",
+  "authors": [
+   "Shima Khoshraftar",
+   "Aijun An"
+  ],
+  "year": 2023,
+  "venue": "ACM Transactions on Intelligent Systems and Technology",
+  "doi": "10.1145/3633518",
+  "arxiv": "2204.01855",
+  "openalex": "W4389098833",
+  "cited_by": 245,
+  "abstract": "Graph representation learning has been a very active research area in recent years. The goal of graph representation learning is to generate graph representation vectors that capture the structure and features of large graphs accurately. This is especially important because the quality of the graph representation vectors will affect the performance of these vectors in downstream tasks such as node classification, link prediction and anomaly detection. Many techniques have been proposed for generating effective graph representation vectors, which generally fall into two categories: traditional graph embedding methods and graph neural network (GNN)–based methods. These methods can be applied to both static and dynamic graphs. A static graph is a single fixed graph, whereas a dynamic graph evolves over time and its nodes and edges can be added or deleted from the graph. In this survey, we review the graph-embedding methods in both traditional and GNN-based categories for both static and dynamic graphs and include the recent papers published until the time of submission. In addition, we summarize a number of limitations of GNNs and the proposed solutions to these limitations. Such a summary has not been provided in previous surveys. Finally, we explore some open and ongoing research directions for future work.",
+  "source": "openalex"
+ },
+ {
+  "title": "Overview of AI and communication for 6G network: fundamentals, challenges, and future research opportunities",
+  "authors": [
+   "Qimei Cui",
+   "Xiaohu You",
+   "Wei Ni",
+   "Guoshun Nan",
+   "Xuefei Zhang",
+   "Jianhua Zhang",
+   "Xinchen Lyu",
+   "Ming Ai",
+   "Xiaofeng Tao",
+   "Zhiyong Feng",
+   "Ping Zhang",
+   "Qingqing Wu",
+   "Meixia Tao",
+   "Yongming Huang",
+   "Chongwen Huang",
+   "Guangyi Liu",
+   "Chenghui Peng",
+   "Zhiwen Pan",
+   "Tao Sun",
+   "Dusit Tao Niyato",
+   "Tao Chen",
+   "Muhammad Khurram Khan",
+   "Abbas Jamalipour",
+   "Mohsen Guizani",
+   "Chau Yuen"
+  ],
+  "year": 2025,
+  "venue": "Science China Information Sciences",
+  "doi": "10.1007/s11432-024-4337-1",
+  "arxiv": "2412.14538",
+  "openalex": "W4409190069",
+  "cited_by": 244,
+  "abstract": "Abstract With the growing demand for seamless connectivity and intelligent communication, the integration of artificial intelligence (AI) and sixth-generation (6G) communication networks has emerged as a transformative paradigm. By embedding AI capabilities across various network layers, this integration enables optimized resource allocation, improved efficiency, and enhanced system robust performance. This paper presents a comprehensive overview of AI and communication for 6G networks, with a focus on their foundational principles, inherent challenges, and future research opportunities. We first review the integration of AI and communications in the context of 6G, exploring the driving factors behind incorporating AI into wireless communications, as well as the vision for the convergence of AI and 6G. The discourse then transitions to a detailed exposition of the envisioned integration of AI within 6G networks, divided into three progressive stages. The first stage, AI for network, focuses on employing AI to augment network performance, optimize efficiency, and enhance user service experiences. The second stage, network for AI, highlights the role of the network in facilitating and buttressing AI operations and presents key enabling technologies. We compare wireless network large models with conventional large language models (LLMs), and identify key design principles and components for building wireless network architectures. In the final stage, AI as a service, it is anticipated that future 6G networks will innately provide AI functions as services, supporting application scenarios like immersive communication and intelligent industrial robots. Specifically, we define the quality of AI service, which refers to a framework for measuring AI services within the network. We further summarize the standardization process of AI for wireless networks, highlighting key milestones and ongoing efforts. In addition, we analyze the critical challenges faced by the integration of AI and communications in 6G. Finally, we outline promising future research opportunities that are expected to drive the development and refinement of AI and 6G communications.",
+  "source": "openalex"
+ }
+]
