@@ -1,0 +1,72 @@
+{
+  "id": "deepjscc",
+  "kind": "paper",
+  "short_name": "DeepJSCC (Bourtsoulatze)",
+  "aliases": [
+    "Deep JSCC",
+    "Bourtsoulatze 2019"
+  ],
+  "bib_key": "bourtsoulatze2019deep",
+  "bibliography": {
+    "title": "Deep Joint Source-Channel Coding for Wireless Image Transmission",
+    "authors": [
+      "Eirina Bourtsoulatze",
+      "David Burth Kurka",
+      "Denız Gündüz"
+    ],
+    "year": 2019,
+    "venue": "IEEE Transactions on Cognitive Communications and Networking",
+    "doi": "10.1109/tccn.2019.2919300",
+    "arxiv": "1809.01733",
+    "url": "https://doi.org/10.1109/tccn.2019.2919300",
+    "source": "survey/library.json"
+  },
+  "year": 2019,
+  "domains": [
+    "analog_jscc"
+  ],
+  "source_representation": "画素から直接写像した複素数値の通信路シンボル",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "圧縮・誤り訂正の明示的な符号を用いず，画素値を複素数値の通信路入力シンボルへ直接写像する JSCC を提案した",
+    "符号化器・復号器を2つの CNN とし，学習不可能な通信路層を挟んだ自己符号化器として共同学習した"
+  ],
+  "training": "通信路層（AWGN・フェージング）を含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "SSIM"
+  ],
+  "strengths": [
+    "低 SNR・狭帯域で JPEG/JPEG 2000＋容量達成符号を上回る（要旨）",
+    "崖効果が無く，SNR の変化に対して緩やかに劣化する（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "jpeg",
+      "type": "compared_with",
+      "note": "JPEG と容量達成符号を連結したデジタル伝送と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: outperforms digital transmission concatenating JPEG or JPEG2000 compression with a capacity achieving channel code"
+      }
+    },
+    {
+      "target": "jpeg2000",
+      "type": "compared_with",
+      "note": "JPEG 2000 と容量達成符号を連結したデジタル伝送と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: concatenating JPEG or JPEG2000 compression with a capacity achieving channel code"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

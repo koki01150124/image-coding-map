@@ -1,0 +1,273 @@
+[
+  {
+    "type": "add",
+    "query": "add:title:The JPEG still picture compression standard",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:51:57"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Overview of the High Efficiency Video Coding (HEVC) Standard",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:52:20"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Variable Rate Image Compression with Recurrent Neural Networks",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:52:39"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:53:49"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:53:52"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Checkerboard Context Model for Efficient Learned Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:53:58"
+  },
+  {
+    "type": "add",
+    "query": "add:title:ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:54:15"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Learned Image Compression with Mixed Transformer-CNN Architectures",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:54:20"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Compressed Image Generation with Denoising Diffusion Codebook Models",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:55:14"
+  },
+  {
+    "type": "add",
+    "query": "add:title:On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:55:23"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Low-density parity-check codes",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:55:46"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Good error-correcting codes based on very sparse matrices",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:03"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Near Shannon limit error-correcting coding and decoding: Turbo-codes",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:05"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:12"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Deep Joint Source-Channel Coding for Wireless Image Transmission",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:38"
+  },
+  {
+    "type": "add",
+    "query": "add:title:DeepJSCC-f: Deep Joint Source-Channel Coding of Images With Feedback",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:48"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:56:51"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Nonlinear Transform Source-Channel Coding for Semantic Communications",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:57:10"
+  },
+  {
+    "type": "add",
+    "query": "add:title:SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:57:13"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:57:40"
+  },
+  {
+    "type": "add",
+    "query": "add:title:DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:57:44"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:58:03"
+  },
+  {
+    "type": "search",
+    "source": "openalex",
+    "query": "BlindSC digital semantic communication bit flip",
+    "from_year": null,
+    "to_year": null,
+    "sort": "relevance",
+    "limit": 8,
+    "n_results": 2,
+    "n_new": 2,
+    "at": "2026-11-05 13:58:49"
+  },
+  {
+    "type": "add",
+    "query": "add:title:The JPEG 2000 still image compression standard",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:58:58"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Overview of the Versatile Video Coding (VVC) Standard and its Applications",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:59:06"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Lossy Image Compression with Compressive Autoencoders",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:59:18"
+  },
+  {
+    "type": "add",
+    "query": "add:title:End-to-end Optimized Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:59:22"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Variational image compression with a scale hyperprior",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:59:27"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Joint Autoregressive and Hierarchical Priors for Learned Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 13:59:32"
+  },
+  {
+    "type": "add",
+    "query": "add:title:High-Fidelity Generative Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:00:20"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Denoising Diffusion Probabilistic Models",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:00:27"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Lossy Image Compression with Conditional Diffusion Models",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:00:32"
+  },
+  {
+    "type": "add",
+    "query": "add:title:A Mathematical Theory of Communication",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:00:37"
+  },
+  {
+    "type": "add",
+    "query": "add:title:An Introduction to Deep Learning for the Physical Layer",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:00:47"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:01:19"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Neural Joint Source-Channel Coding",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:01:26"
+  },
+  {
+    "type": "add",
+    "query": "add:title:D²-JSCC: Digital Deep Joint Source-channel Coding for Semantic Communications",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:02:27"
+  },
+  {
+    "type": "add",
+    "query": "add:title:Turbo-DDCM: Fast and Flexible Zero-shot Diffusion-based Image Compression",
+    "n_results": 1,
+    "n_new": 1,
+    "at": "2026-11-05 14:02:31"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "id": "deepjscc_q",
+  "kind": "paper",
+  "short_name": "DeepJSCC-Q",
+  "aliases": [
+    "Constellation Constrained"
+  ],
+  "bib_key": "tung2022deepjsccq",
+  "bibliography": {
+    "title": "DeepJSCC-Q: Constellation Constrained Deep Joint Source-Channel Coding",
+    "authors": [
+      "Tze-Yang Tung",
+      "David Burth Kurka",
+      "Mikołaj Jankowski",
+      "Denız Gündüz"
+    ],
+    "year": 2022,
+    "venue": "IEEE Journal on Selected Areas in Information Theory",
+    "doi": "10.1109/jsait.2022.3231042",
+    "arxiv": "2111.13042",
+    "url": "https://doi.org/10.1109/jsait.2022.3231042",
+    "source": "survey/library.json"
+  },
+  "year": 2022,
+  "domains": [
+    "digital_jscc"
+  ],
+  "source_representation": "有限の変調シンボル集合（デジタル変調の信号点）",
+  "channel_models": [
+    "AWGN"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "有限の通信路入力アルファベット（デジタル変調の信号点）を用いる DeepJSCC-Q を提案した"
+  ],
+  "training": "信号点への量子化を含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "SSIM"
+  ],
+  "strengths": [
+    "高次変調で連続値入力の場合に近い性能（要旨）",
+    "通信路条件の変化に対する緩やかな劣化を保つ（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc",
+      "type": "derived_from",
+      "note": "DeepJSCC [2] を有限の信号点の制約下へ拡張した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: wireless image transmission using DNNs was first demonstrated in [2], and dubbed DeepJSCC"
+      }
+    },
+    {
+      "target": "adjscc",
+      "type": "builds_on",
+      "note": "[14] の AF モジュールを用いて SNR に適応させた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: We adopt the AF module proposed by [14]（[14] = Xu et al.）"
+      }
+    },
+    {
+      "target": "sscc_bpg_ldpc",
+      "type": "compared_with",
+      "note": "BPG＋LDPC と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: compared to capacity-achieving low density parity check (LDPC) codes [7] with BPG compression [8]"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．アナログ型からデジタル型への発展の例である．"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "cheng2020",
+  "kind": "paper",
+  "short_name": "Cheng 2020 (GMM+Attn)",
+  "aliases": [
+    "Discretized Gaussian Mixture",
+    "Attention"
+  ],
+  "bib_key": "cheng2020learned",
+  "bibliography": {
+    "title": "Learned Image Compression With Discretized Gaussian Mixture Likelihoods and Attention Modules",
+    "authors": [
+      "Zhengxue Cheng",
+      "Heming Sun",
+      "Masaru Takeuchi",
+      "Jiro Katto"
+    ],
+    "year": 2020,
+    "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+    "doi": "10.1109/cvpr42600.2020.00796",
+    "arxiv": "2001.01568",
+    "url": "https://doi.org/10.1109/cvpr42600.2020.00796",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "離散化ガウス混合尤度でモデル化した潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "潜在表現の分布を離散化ガウス混合尤度でパラメータ化し，より正確で柔軟なエントロピーモデルを提案した",
+    "注意機構を変換のネットワークに導入した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "学習型圧縮として初めて VVC と同等の性能を報告した（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "minnen_joint",
+      "type": "derived_from",
+      "note": "ハイパープライアと自己回帰のコンテキストを組み合わせたエントロピーモデルを発展させた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: Our method are based on the development of these recent entropy model techniques（hyperprior と autoregressive model を併用する [21] を挙げる）"
+      }
+    },
+    {
+      "target": "vvc",
+      "type": "compared_with",
+      "note": "VVC と同等の性能を報告した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: comparable performance with latest compression standard Versatile Video Coding (VVC)"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の記述を照合した．改良元の引用番号 [21] が Minnen et al. であることは文脈から判断した．"
+  }
+}

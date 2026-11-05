@@ -1,0 +1,62 @@
+{
+  "id": "cdc",
+  "kind": "paper",
+  "short_name": "CDC (Yang & Mandt)",
+  "aliases": [
+    "Conditional Diffusion Compression",
+    "条件付き拡散"
+  ],
+  "bib_key": "yang2023lossy",
+  "bibliography": {
+    "title": "Lossy Image Compression with Conditional Diffusion Models",
+    "authors": [
+      "Ruihan Yang",
+      "Stephan Mandt"
+    ],
+    "year": 2023,
+    "venue": "neural information processing systems",
+    "doi": "10.52202/075280-2835",
+    "arxiv": "2209.06950",
+    "url": "https://doi.org/10.52202/075280-2835",
+    "source": "survey/library.json"
+  },
+  "year": 2023,
+  "domains": [
+    "generative",
+    "lic"
+  ],
+  "source_representation": "エントロピー符号化される content 潜在変数（復号は条件付き拡散モデル）",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "変換符号化の枠組みで，復号器を条件付き拡散モデルとするエンドツーエンドの非可逆圧縮を提案した",
+    "X-パラメータ化により少数の復号ステップで高品質な再構成を可能にした"
+  ],
+  "training": "エンドツーエンド学習（知覚指標へ調整可能）",
+  "metrics": [
+    "FID",
+    "LPIPS",
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "GAN に基づくモデルより良い FID を報告（要旨）"
+  ],
+  "limitations": null,
+  "code_url": "https://github.com/buggyyang/CDC_compression",
+  "relations": [
+    {
+      "target": "ddpm",
+      "type": "builds_on",
+      "note": "拡散モデル（Ho et al., 2020 など）を復号器に用いる",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: diffusion models ... (Ho et al., 2020; Song et al., 2021b,a)"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

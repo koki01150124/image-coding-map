@@ -1,0 +1,78 @@
+{
+  "id": "ddcm",
+  "kind": "paper",
+  "short_name": "DDCM",
+  "aliases": [
+    "Denoising Diffusion Codebook Models"
+  ],
+  "bib_key": "ohayon2025compressed",
+  "bibliography": {
+    "title": "Compressed Image Generation with Denoising Diffusion Codebook Models",
+    "authors": [
+      "Guy Ohayon",
+      "Manor, Hila",
+      "Tomer Michaeli",
+      "Michael Elad"
+    ],
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2502.01189",
+    "arxiv": "2502.01189",
+    "url": "https://arxiv.org/abs/2502.01189",
+    "source": "survey/library.json"
+  },
+  "year": 2025,
+  "domains": [
+    "generative"
+  ],
+  "source_representation": "各拡散ステップで符号帳から選んだ雑音ベクトルのインデックス列",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "逆拡散の雑音を固定した i.i.d. ガウスベクトルの符号帳からの選択に置き換えた DDCM を提案した",
+    "画像に最も合う雑音を選ぶことで，生成モデルをそのまま非可逆画像コーデックとして用いた"
+  ],
+  "training": "事前学習済み拡散モデルを用いる（追加学習なしのゼロショット圧縮）",
+  "metrics": [
+    "PSNR",
+    "LPIPS",
+    "FID"
+  ],
+  "strengths": [
+    "知覚的な画像圧縮で当時の最高性能を報告（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "ddpm",
+      "type": "builds_on",
+      "note": "DDPM（Ho et al., 2020）の生成過程を前提とする",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: stochastic diffusion generative process with T = 1000 sampling steps (e.g., DDPM (Ho et al., 2020))"
+      }
+    },
+    {
+      "target": "bpg",
+      "type": "compared_with",
+      "note": "BPG と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: compare our results to BPG (Bellard, 2018), HiFiC (Mentzer et al., 2020)"
+      }
+    },
+    {
+      "target": "hific",
+      "type": "compared_with",
+      "note": "HiFiC と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: compare our results to BPG (Bellard, 2018), HiFiC (Mentzer et al., 2020)"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

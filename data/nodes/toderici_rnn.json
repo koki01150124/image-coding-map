@@ -1,0 +1,73 @@
+{
+  "id": "toderici_rnn",
+  "kind": "paper",
+  "short_name": "RNN圧縮 (Toderici)",
+  "aliases": [
+    "Variable Rate RNN",
+    "LSTM compression"
+  ],
+  "bib_key": "toderici2015variable",
+  "bibliography": {
+    "title": "Variable Rate Image Compression with Recurrent Neural Networks",
+    "authors": [
+      "George D. Toderici",
+      "Sean M. O’Malley",
+      "Sung Jin Hwang",
+      "Damien Vincent",
+      "David C. Minnen",
+      "Shumeet Baluja",
+      "Michele Covell",
+      "Rahul Sukthankar"
+    ],
+    "year": 2015,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1511.06085",
+    "arxiv": "1511.06085",
+    "url": "https://arxiv.org/abs/1511.06085",
+    "source": "survey/library.json"
+  },
+  "year": 2015,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "畳み込み LSTM による反復的な二値符号",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "畳み込み・逆畳み込み LSTM に基づく可変レートの画像圧縮の枠組みを提案した",
+    "画像サイズ・圧縮率によらず一度の学習で済み，送るビットが増えるほど再構成が改善する漸進的な符号を実現した"
+  ],
+  "training": "再構成誤差による学習（1つのモデルで可変レート）",
+  "metrics": [
+    "SSIM",
+    "PSNR"
+  ],
+  "strengths": [
+    "1つのネットワークで可変レート・漸進的な復元が可能（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "jpeg",
+      "type": "compared_with",
+      "note": "JPEG，JPEG 2000，WebP と視覚品質を比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: better visual quality than (headerless) JPEG, JPEG2000 and WebP"
+      }
+    },
+    {
+      "target": "jpeg2000",
+      "type": "compared_with",
+      "note": "JPEG 2000 と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: better visual quality than (headerless) JPEG, JPEG2000 and WebP"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の比較対象の記述を照合した．"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "elic",
+  "kind": "paper",
+  "short_name": "ELIC",
+  "aliases": [
+    "Unevenly grouped space-channel context"
+  ],
+  "bib_key": "he2022elic",
+  "bibliography": {
+    "title": "ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding",
+    "authors": [
+      "Dailan He",
+      "Ziming Yang",
+      "Weikun Peng",
+      "Rui Ma",
+      "Hongwei Qin",
+      "Yan Wang"
+    ],
+    "year": 2022,
+    "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+    "doi": "10.1109/cvpr52688.2022.00563",
+    "arxiv": "2203.10886",
+    "url": "https://doi.org/10.1109/cvpr52688.2022.00563",
+    "source": "survey/library.json"
+  },
+  "year": 2022,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "不均一なチャネル群と空間コンテキストで条件付けた潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "エネルギー集中の観察に基づく不均一なチャネル条件付き適応符号化を提案した",
+    "既存の空間コンテキストモデルと組み合わせた空間・チャネルのコンテキストモデルと，効率的な主変換を備えた ELIC を提案した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM",
+    "実行速度"
+  ],
+  "strengths": [
+    "高速なプレビュー復号と漸進的復号に対応（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "channel_ar",
+      "type": "derived_from",
+      "note": "チャネル条件付きモデル [40] のチャネル分割を不均一なグループに改良した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: channel-conditional models [40]（[40] = Minnen and Singh）"
+      }
+    },
+    {
+      "target": "checkerboard",
+      "type": "builds_on",
+      "note": "チェッカーボードの空間コンテキストモデル [24] と組み合わせた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: He et al. [24] proposes to adopt checkerboard convolution as a parallel replacement"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の参考文献番号を照合した．"
+  }
+}

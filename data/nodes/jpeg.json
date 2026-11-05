@@ -1,0 +1,43 @@
+{
+  "id": "jpeg",
+  "kind": "standard",
+  "short_name": "JPEG",
+  "aliases": [
+    "JPEG Baseline",
+    "DCT"
+  ],
+  "bib_key": "wallace1992jpeg",
+  "bibliography": {
+    "title": "The JPEG still picture compression standard",
+    "authors": [
+      "Gregory K. Wallace"
+    ],
+    "year": 1992,
+    "venue": "IEEE Transactions on Consumer Electronics",
+    "doi": "10.1109/30.125072",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/30.125072",
+    "source": "survey/library.json"
+  },
+  "year": 1992,
+  "domains": [
+    "traditional"
+  ],
+  "source_representation": "8×8 ブロックの離散コサイン変換（DCT）係数",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "連続階調静止画像の国際標準 JPEG の概要と，DCT に基づく非可逆圧縮の Baseline 方式を解説した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": [
+    "Baseline 方式は最も広く実装され，多くの応用に十分である（要旨）"
+  ],
+  "limitations": null,
+  "relations": [],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "標準規格の解説論文．要旨のみ確認．"
+  }
+}

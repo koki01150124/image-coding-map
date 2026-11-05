@@ -1,0 +1,61 @@
+{
+  "id": "checkerboard",
+  "kind": "paper",
+  "short_name": "Checkerboard Context",
+  "aliases": [
+    "CCM",
+    "チェッカーボード"
+  ],
+  "bib_key": "he2021checkerboard",
+  "bibliography": {
+    "title": "Checkerboard Context Model for Efficient Learned Image Compression",
+    "authors": [
+      "Dailan He",
+      "Yaoyan Zheng",
+      "Baocheng Sun",
+      "Yan Wang",
+      "Hongwei Qin"
+    ],
+    "year": 2021,
+    "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+    "doi": "10.1109/cvpr46437.2021.01453",
+    "arxiv": "2103.15306",
+    "url": "https://doi.org/10.1109/cvpr46437.2021.01453",
+    "source": "survey/library.json"
+  },
+  "year": 2021,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "2パスのチェッカーボード順で復号する潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "並列化可能なチェッカーボード・コンテキストモデルを提案し，復号順序を再編成した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM",
+    "復号時間"
+  ],
+  "strengths": [
+    "復号を40倍以上高速化し，レート・歪み性能はほぼ同等（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "minnen_joint",
+      "type": "derived_from",
+      "note": "自己回帰モデル [26] の逐次的なコンテキストモデルをチェッカーボード・コンテキストモデルに置き換えた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: we adapt the structure of the autoregressive model [26] by replacing its serial context model with proposed checkerboard context model"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

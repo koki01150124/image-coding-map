@@ -1,0 +1,52 @@
+{
+  "id": "oshea_phy",
+  "kind": "paper",
+  "short_name": "DL for PHY (O'Shea)",
+  "aliases": [
+    "Autoencoder communication",
+    "End-to-end learning of communications"
+  ],
+  "bib_key": "oshea2017introduction",
+  "bibliography": {
+    "title": "An Introduction to Deep Learning for the Physical Layer",
+    "authors": [
+      "Timothy J. O’Shea",
+      "Jakob Hoydis"
+    ],
+    "year": 2017,
+    "venue": "IEEE Transactions on Cognitive Communications and Networking",
+    "doi": "10.1109/tccn.2017.2758370",
+    "arxiv": "1702.00832",
+    "url": "https://doi.org/10.1109/tccn.2017.2758370",
+    "source": "survey/library.json"
+  },
+  "year": 2017,
+  "domains": [
+    "channel_coding"
+  ],
+  "tags": [
+    "End-to-end学習"
+  ],
+  "source_representation": "送受信機をニューラルネットワークで表した自己符号化器",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "通信システムを自己符号化器として解釈し，送信機と受信機を一括して最適化する設計の考え方を示した",
+    "radio transformer network と，IQ サンプルを用いた CNN による変調方式の分類を示した"
+  ],
+  "training": "送受信機を再構成誤差でエンドツーエンドに学習",
+  "metrics": [
+    "ブロック誤り率",
+    "分類精度"
+  ],
+  "strengths": null,
+  "limitations": null,
+  "relations": [],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の用語を照合した．"
+  }
+}

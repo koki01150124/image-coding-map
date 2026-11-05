@@ -1,0 +1,56 @@
+{
+  "id": "jpeg2000",
+  "kind": "standard",
+  "short_name": "JPEG 2000",
+  "aliases": [
+    "JPEG2000",
+    "wavelet"
+  ],
+  "bib_key": "skodras2001jpeg",
+  "bibliography": {
+    "title": "The JPEG 2000 still image compression standard",
+    "authors": [
+      "Athanassios N. Skodras",
+      "Charilaos A. Christopoulos",
+      "Touradj Ebrahimi"
+    ],
+    "year": 2001,
+    "venue": "IEEE Signal Processing Magazine",
+    "doi": "10.1109/79.952804",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/79.952804",
+    "source": "survey/library.json"
+  },
+  "year": 2001,
+  "domains": [
+    "traditional"
+  ],
+  "source_representation": "離散ウェーブレット変換係数",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "JPEG 2000 Part I の構成（タイル分割，色成分変換，ウェーブレット変換，量子化，エントロピー符号化）を解説した",
+    "関心領域符号化，スケーラビリティ，誤り耐性などの機能を紹介した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": [
+    "関心領域符号化・スケーラビリティ・誤り耐性を備える（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "jpeg",
+      "type": "related",
+      "note": "同じ ISO/IEC JTC1/SC29/WG1（JPEG 委員会）による静止画像符号化の標準である．技術的な派生関係ではない",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: coordinated by the JTCI/SC29/WG1 of the ISO/IEC"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "標準規格の解説論文．要旨のみ確認．"
+  }
+}

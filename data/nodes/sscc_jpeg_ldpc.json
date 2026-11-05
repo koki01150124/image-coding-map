@@ -1,0 +1,72 @@
+{
+  "id": "sscc_jpeg_ldpc",
+  "kind": "scheme",
+  "short_name": "JPEG＋LDPC",
+  "aliases": [
+    "JPEG+LDPC",
+    "分離設計"
+  ],
+  "bib_key": null,
+  "bibliography": {
+    "title": null,
+    "authors": null,
+    "year": null,
+    "venue": null,
+    "doi": null,
+    "arxiv": null,
+    "url": null,
+    "source": "構成例のため書誌情報なし．比較対象として用いた論文: BlindSC（Oh et al., 2025）"
+  },
+  "year": 2025,
+  "year_note": "構成例であり発表年を持たない．マップ上は比較対象として用いた論文（BlindSC）の年に置いた．",
+  "domains": [
+    "sscc",
+    "traditional",
+    "channel_coding"
+  ],
+  "source_representation": "JPEG のビット列を LDPC 符号で保護",
+  "channel_models": null,
+  "transmission": "digital",
+  "contributions": [
+    "情報源符号化（JPEG）と通信路符号化（LDPC）を独立に設計して連結する分離設計の具体例である"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": null,
+  "limitations": [
+    "BlindSC との比較で分離設計の限界が示された（BlindSC の本文）"
+  ],
+  "relations": [
+    {
+      "target": "jpeg",
+      "type": "builds_on",
+      "note": "情報源符号化に JPEG を用いる",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "BlindSC の本文: JPEG+LDPC: This framework utilizes a separate source-channel coding"
+      }
+    },
+    {
+      "target": "gallager_ldpc",
+      "type": "builds_on",
+      "note": "通信路符号化に LDPC 符号を用いる",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "BlindSC の本文: JPEG+LDPC"
+      }
+    },
+    {
+      "target": "shannon1948",
+      "type": "builds_on",
+      "note": "情報源と通信路の分離設計に基づく",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "BlindSC の本文: separate source-channel coding"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "SSCC の構成例．論文ではない．"
+  }
+}

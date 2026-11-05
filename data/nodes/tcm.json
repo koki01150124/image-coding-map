@@ -1,0 +1,61 @@
+{
+  "id": "tcm",
+  "kind": "paper",
+  "short_name": "TCM (Liu 2023)",
+  "aliases": [
+    "Transformer-CNN Mixture",
+    "SWAtten",
+    "LIC_TCM"
+  ],
+  "bib_key": "liu2023learned",
+  "bibliography": {
+    "title": "Learned Image Compression with Mixed Transformer-CNN Architectures",
+    "authors": [
+      "Jinming Liu",
+      "Heming Sun",
+      "Jiro Katto"
+    ],
+    "year": 2023,
+    "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition",
+    "doi": "10.1109/cvpr52729.2023.01383",
+    "arxiv": "2303.14978",
+    "url": "https://doi.org/10.1109/cvpr52729.2023.01383",
+    "source": "survey/library.json"
+  },
+  "year": 2023,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "Transformer と CNN の混合ブロックによる潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "CNN の局所性と Transformer の非局所性を組み合わせる並列の Transformer-CNN 混合（TCM）ブロックを提案した",
+    "Swin Transformer に基づく注意機構（SWAtten）を持つチャネル方向のエントロピーモデルを提案した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "Kodak，Tecnick，CLIC で当時の最高性能を報告（要旨）"
+  ],
+  "limitations": null,
+  "code_url": "https://github.com/jmliu206/LIC_TCM",
+  "relations": [
+    {
+      "target": "channel_ar",
+      "type": "derived_from",
+      "note": "チャネル方向の自己回帰エントロピーモデル [27] に SWAtten を導入した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: they [27] proposed a parallel channel-wise autoregressive entropy model by splitting the latent to 10 slices"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

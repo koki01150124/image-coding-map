@@ -1,0 +1,70 @@
+{
+  "id": "cae",
+  "kind": "paper",
+  "short_name": "CAE (Theis)",
+  "aliases": [
+    "Compressive Autoencoder",
+    "圧縮自己符号化器"
+  ],
+  "bib_key": "theis2017lossy",
+  "bibliography": {
+    "title": "Lossy Image Compression with Compressive Autoencoders",
+    "authors": [
+      "Lucas Theis",
+      "Wenzhe Shi",
+      "Cunningham, Andrew",
+      "Ferenc Huszár"
+    ],
+    "year": 2017,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1703.00395",
+    "arxiv": "1703.00395",
+    "url": "https://arxiv.org/abs/1703.00395",
+    "source": "survey/library.json"
+  },
+  "year": 2017,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "量子化した潜在表現（サブピクセル構造の自己符号化器）",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "量子化による非微分性を損失の最小限の変更で扱い，深い自己符号化器を非可逆圧縮向けに最適化する方法を提案した",
+    "サブピクセル構造により高解像度画像にも適用できる計算効率を実現した"
+  ],
+  "training": "レート・歪みの目的関数による学習（量子化の勾配を近似）",
+  "metrics": [
+    "PSNR",
+    "SSIM",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "JPEG 2000 と同等で，RNN に基づく手法を上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "toderici_rnn",
+      "type": "compared_with",
+      "note": "RNN に基づく手法を上回ると報告した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "要旨・本文: outperforming recently proposed approaches based on RNNs（本文で Toderici et al. を引用）"
+      }
+    },
+    {
+      "target": "jpeg2000",
+      "type": "compared_with",
+      "note": "JPEG 2000 と同等の性能を報告した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: competitive with JPEG 2000"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の比較対象の記述を照合した．"
+  }
+}

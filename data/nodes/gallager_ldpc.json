@@ -1,0 +1,53 @@
+{
+  "id": "gallager_ldpc",
+  "kind": "paper",
+  "short_name": "LDPC (Gallager)",
+  "aliases": [
+    "LDPC",
+    "低密度パリティ検査符号",
+    "Gallager code"
+  ],
+  "bib_key": "gallager1962lowdensity",
+  "bibliography": {
+    "title": "Low-density parity-check codes",
+    "authors": [
+      "Robert G. Gallager"
+    ],
+    "year": 1962,
+    "venue": "IEEE Transactions on Information Theory",
+    "doi": "10.1109/tit.1962.1057683",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/tit.1962.1057683",
+    "source": "survey/library.json"
+  },
+  "year": 1962,
+  "domains": [
+    "channel_coding"
+  ],
+  "source_representation": "疎なパリティ検査行列で定義される線形ブロック符号",
+  "channel_models": [
+    "BSC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "各列・各行の1の個数が少数に固定された疎なパリティ検査行列で定義される低密度パリティ検査（LDPC）符号を提案した",
+    "通信路の事後確率から直接動作する簡易な復号法を示した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": [
+    "復号誤り確率",
+    "最小距離"
+  ],
+  "strengths": [
+    "固定した符号化率で最小距離が符号長に比例して増加する（典型的な符号）",
+    "復号器の装置規模が符号長にほぼ比例する"
+  ],
+  "limitations": [
+    "示された復号法は最適ではない（nonoptimum）"
+  ],
+  "relations": [],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "要旨のみ確認．"
+  }
+}

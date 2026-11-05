@@ -1,0 +1,60 @@
+{
+  "id": "vvc",
+  "kind": "standard",
+  "short_name": "VVC",
+  "aliases": [
+    "H.266",
+    "Versatile Video Coding",
+    "VTM"
+  ],
+  "bib_key": "bross2021overview",
+  "bibliography": {
+    "title": "Overview of the Versatile Video Coding (VVC) Standard and its Applications",
+    "authors": [
+      "Benjamin Bross",
+      "Ye-Kui Wang",
+      "Yan Ye",
+      "Shan Liu",
+      "Jianle Chen",
+      "Gary J. Sullivan",
+      "Jens-Rainer Ohm"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "doi": "10.1109/tcsvt.2021.3101953",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/tcsvt.2021.3101953",
+    "source": "survey/library.json"
+  },
+  "year": 2021,
+  "domains": [
+    "traditional"
+  ],
+  "source_representation": "ブロック単位の予測残差の変換係数",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "2020年に策定された映像符号化標準 VVC の新機能と中核の圧縮技術を概説した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": [
+    "同じ映像品質で HEVC より約50%のビットレート削減（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "hevc",
+      "type": "derived_from",
+      "note": "HEVC の後継となる標準として策定された",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: over its predecessor, the High Efficiency Video Coding (HEVC) standard"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "標準規格の解説論文．要旨のみ確認．"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "deepjscc_l",
+  "kind": "paper",
+  "short_name": "DeepJSCC-l",
+  "aliases": [
+    "Bandwidth-Agile",
+    "successive refinement",
+    "multiple description"
+  ],
+  "bib_key": "kurka2021bandwidthagile",
+  "bibliography": {
+    "title": "Bandwidth-Agile Image Transmission With Deep Joint Source-Channel Coding",
+    "authors": [
+      "David Burth Kurka",
+      "Denız Gündüz"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/twc.2021.3090048",
+    "arxiv": "2009.12480",
+    "url": "https://doi.org/10.1109/twc.2021.3090048",
+    "source": "survey/library.json"
+  },
+  "year": 2021,
+  "domains": [
+    "analog_jscc"
+  ],
+  "source_representation": "層ごとに送る連続値の通信路シンボル",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "画像を層に分けて漸進的に送る適応帯域の伝送（逐次改良・多重記述）を扱う DeepJSCC-l を提案した"
+  ],
+  "training": "通信路を含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "単一の伝送に比べた損失が小さい漸進的伝送を実現（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc",
+      "type": "derived_from",
+      "note": "DeepJSCC [17] を層ごとの伝送へ拡張した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: all the properties present in single-layer transmission with DeepJSCC [17]（[17] = Bourtsoulatze et al.）"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

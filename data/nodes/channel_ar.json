@@ -1,0 +1,68 @@
+{
+  "id": "channel_ar",
+  "kind": "paper",
+  "short_name": "Channel-wise AR (Minnen 2020)",
+  "aliases": [
+    "Channel-wise autoregressive",
+    "チャネル方向自己回帰",
+    "latent residual prediction"
+  ],
+  "bib_key": "minnen2020channelwise",
+  "bibliography": {
+    "title": "Channel-Wise Autoregressive Entropy Models for Learned Image Compression",
+    "authors": [
+      "David C. Minnen",
+      "Saurabh Singh"
+    ],
+    "year": 2020,
+    "venue": "Proceedings - International Conference on Image Processing",
+    "doi": "10.1109/icip40778.2020.9190935",
+    "arxiv": "2007.08739",
+    "url": "https://doi.org/10.1109/icip40778.2020.9190935",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "チャネル方向のスライスに分割した潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "チャネル条件付けと潜在残差予測を導入し，逐次処理を抑えつつ性能を改善した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "Kodak で平均6.7%，Tecnick で11.4%のレート削減（要旨）",
+    "低レートで BPG を最大25%上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "minnen_joint",
+      "type": "derived_from",
+      "note": "コンテキスト適応型のベースライン（空間方向の逐次処理）を，チャネル方向の条件付けで置き換えた",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: compared to a context-adaptive baseline model（He et al. 2021 の本文も [26] の逐次処理を最小化する手法として紹介）"
+      }
+    },
+    {
+      "target": "bpg",
+      "type": "compared_with",
+      "note": "BPG と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: outperforms hand-engineered codecs like BPG by up to 25%"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

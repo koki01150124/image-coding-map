@@ -1,0 +1,54 @@
+name: Validate, build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools (versions from requirements_tools.txt)
+        run: pip install $(grep -E '^(jsonschema|pytest|playwright)==' requirements_tools.txt)
+      - name: Check bibliography against survey/library.json
+        run: python tools/sync_bibliography.py --check
+      - name: Validate node data (schema, IDs, references, edge types, cycles)
+        run: python tools/validate_data.py
+      - name: Build site/data/graph.json
+        run: python tools/build_graph.py
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Tests (data validation and site rendering)
+        run: python -m pytest -q tests
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

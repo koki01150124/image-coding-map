@@ -1,0 +1,99 @@
+{
+  "id": "robust_turbo_ddcm",
+  "kind": "paper",
+  "short_name": "Robust Turbo-DDCM",
+  "bib_key": "vaisman2026robustness",
+  "bibliography": {
+    "title": "On the Robustness of Diffusion-Based Image Compression to Bit-Flip Errors",
+    "authors": [
+      "Amit Vaisman",
+      "Gal Pomerants",
+      "Raz Lapid"
+    ],
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2604.05743",
+    "arxiv": "2604.05743",
+    "url": "https://arxiv.org/abs/2604.05743",
+    "source": "survey/library.json"
+  },
+  "year": 2026,
+  "domains": [
+    "generative"
+  ],
+  "tags": [
+    "ビット誤り耐性"
+  ],
+  "source_representation": "原子ごとに個別符号化した Turbo-DDCM のビット列",
+  "channel_models": [
+    "BSC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "Reverse Channel Coding（RCC）に基づく拡散型圧縮が，従来型・学習型のコーデックよりビット反転に頑健であることを示した",
+    "レート・歪み・知覚への影響を抑えつつ頑健性を高めた Turbo-DDCM の変種を提案した"
+  ],
+  "training": "事前学習済み拡散モデルを用いる（通信路を含む学習は行わない）",
+  "metrics": [
+    "PSNR",
+    "LPIPS",
+    "FID"
+  ],
+  "strengths": [
+    "ビット反転に対して最先端の頑健性（本文）"
+  ],
+  "limitations": [
+    "通信路を含めた符号化器・復号器の共同学習ではないため，DeepJSCC には分類しない"
+  ],
+  "relations": [
+    {
+      "target": "turbo_ddcm",
+      "type": "derived_from",
+      "note": "Turbo-DDCM の頑健な変種を提案した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: We further introduce a more robust variant of Turbo-DDCM"
+      }
+    },
+    {
+      "target": "ddcm",
+      "type": "compared_with",
+      "note": "DDCM のビット反転耐性を評価した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文 p.4 の実験で DDCM [27] を評価"
+      }
+    },
+    {
+      "target": "hific",
+      "type": "compared_with",
+      "note": "HiFiC のビット反転耐性を評価した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文 p.4 の実験で HiFiC [23] を評価"
+      }
+    },
+    {
+      "target": "jpeg",
+      "type": "compared_with",
+      "note": "JPEG のビット反転耐性を評価した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文 p.4 の実験で JPEG [36] を評価"
+      }
+    },
+    {
+      "target": "bpg",
+      "type": "compared_with",
+      "note": "BPG のビット反転耐性を評価した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文 p.4 の実験で BPG [6] を評価"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "ローカルの論文PDF（../robust-turbo-ddcm/reference/）の本文を照合した．評価では BSC によりビット反転を模擬している．"
+  }
+}

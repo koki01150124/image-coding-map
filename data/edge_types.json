@@ -1,0 +1,6 @@
+[
+  {"id": "derived_from", "label": "技術的改良・発展", "directed": true, "lineage": true, "description": "対象の手法を直接改良・拡張した関係．論文中で改良元として明示されている場合に限る", "order": 1},
+  {"id": "builds_on", "label": "技術・モデルの利用", "directed": true, "lineage": true, "description": "対象の手法・モデル・構成要素を部品や前提として利用した関係", "order": 2},
+  {"id": "related", "label": "共通研究課題", "directed": false, "lineage": false, "description": "直接の派生関係は確認できないが，同じ研究課題（例: ビット誤り耐性）を扱う関係", "order": 3},
+  {"id": "compared_with", "label": "比較対象", "directed": true, "lineage": false, "description": "論文の実験で比較対象（ベースライン）として評価した関係", "order": 4}
+]

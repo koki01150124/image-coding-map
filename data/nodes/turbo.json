@@ -1,0 +1,59 @@
+{
+  "id": "turbo",
+  "kind": "paper",
+  "short_name": "Turbo Code",
+  "aliases": [
+    "ターボ符号",
+    "Turbo-codes"
+  ],
+  "bib_key": "berrou2002near",
+  "bibliography": {
+    "title": "Near Shannon limit error-correcting coding and decoding: Turbo-codes. 1",
+    "authors": [
+      "Claude Berrou",
+      "Alain Glavieux",
+      "Punya Thitimajshima"
+    ],
+    "year": 2002,
+    "venue": "International Conference on Communications",
+    "doi": "10.1109/icc.1993.397441",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/icc.1993.397441",
+    "source": "survey/library.json"
+  },
+  "year": 1993,
+  "year_note": "OpenAlex の発行年は 2002 であるが，DOI（10.1109/icc.1993.397441）が ICC 1993 の論文を指すため 1993 とした．",
+  "domains": [
+    "channel_coding"
+  ],
+  "source_representation": "2つの再帰的組織畳み込み符号の並列連接",
+  "channel_models": null,
+  "transmission": "digital",
+  "contributions": [
+    "2つの再帰的組織畳み込み符号を並列連接したターボ符号を提案した",
+    "フィードバック型の復号規則による反復復号器を構成した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": [
+    "ビット誤り率（BER）"
+  ],
+  "strengths": [
+    "BER 性能がシャノン限界に近い（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "shannon1948",
+      "type": "related",
+      "note": "シャノン限界に近い誤り率を目標とする",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: performances in terms of bit error rate (BER) are close to the Shannon limit"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "要旨のみ確認．評価した通信路モデルは要旨に記載が無いため未確認とした．"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "ntscc",
+  "kind": "paper",
+  "short_name": "NTSCC",
+  "aliases": [
+    "Nonlinear Transform Source-Channel Coding"
+  ],
+  "bib_key": "dai2022nonlinear",
+  "bibliography": {
+    "title": "Nonlinear Transform Source-Channel Coding for Semantic Communications",
+    "authors": [
+      "Jincheng Dai",
+      "Sixian Wang",
+      "Kailin Tan",
+      "Zhongwei Si",
+      "Xiaoqi Qin",
+      "Kai Niu",
+      "Ping Zhang"
+    ],
+    "year": 2022,
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "doi": "10.1109/jsac.2022.3180802",
+    "arxiv": "2112.10961",
+    "url": "https://doi.org/10.1109/jsac.2022.3180802",
+    "source": "survey/library.json"
+  },
+  "year": 2022,
+  "domains": [
+    "analog_jscc",
+    "lic"
+  ],
+  "source_representation": "非線形解析変換の潜在表現（ハイパープライアをサイド情報とする）",
+  "channel_models": [
+    "AWGN"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "非線形変換で得た潜在表現を DeepJSCC で送る NTSCC を提案した",
+    "潜在表現のエントロピーモデルを学習し，適応レート伝送とハイパープライアを用いた符号の改良を導入した"
+  ],
+  "training": "伝送のレート・歪みを目的とするエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM",
+    "LPIPS"
+  ],
+  "strengths": [
+    "標準的な DeepJSCC のアナログ伝送と分離設計の両方を概ね上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "scale_hyperprior",
+      "type": "builds_on",
+      "note": "LIC のハイパープライア（サイド情報）を DeepJSCC に導入した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: current deep JSCC methods do not incorporate any hyperprior as side information, a concept widely used in modern image codecs"
+      }
+    },
+    {
+      "target": "deepjscc",
+      "type": "compared_with",
+      "note": "標準的な DeepJSCC のアナログ伝送と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: outperforms both the analog transmission using the standard deep JSCC"
+      }
+    },
+    {
+      "target": "sscc_bpg_ldpc",
+      "type": "compared_with",
+      "note": "BPG＋LDPC と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: marked as \"BPG + LDPC\" and \"BPG + Capacity\""
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．LIC と DeepJSCC の両分野に属する例である．"
+  }
+}

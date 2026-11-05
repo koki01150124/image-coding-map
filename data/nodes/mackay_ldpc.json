@@ -1,0 +1,69 @@
+{
+  "id": "mackay_ldpc",
+  "kind": "paper",
+  "short_name": "LDPC (MacKay)",
+  "aliases": [
+    "MN code",
+    "Gallager codes",
+    "sum-product"
+  ],
+  "bib_key": "mackay1999good",
+  "bibliography": {
+    "title": "Good error-correcting codes based on very sparse matrices",
+    "authors": [
+      "David Mackay"
+    ],
+    "year": 1999,
+    "venue": "IEEE Transactions on Information Theory",
+    "doi": "10.1109/18.748992",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/18.748992",
+    "source": "survey/library.json"
+  },
+  "year": 1999,
+  "domains": [
+    "channel_coding"
+  ],
+  "source_representation": "非常に疎な行列で定義される符号",
+  "channel_models": [
+    "BSC",
+    "AWGN"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "Gallager 符号と MN 符号が最適復号の下でシャノン限界まで到達する符号系列を持つことを示した",
+    "実用的な sum-product 復号で畳み込み符号・連接符号を大きく上回る性能を実験で示した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": [
+    "復号誤り率"
+  ],
+  "strengths": [
+    "性能がターボ符号と同程度にシャノン限界に近い（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "gallager_ldpc",
+      "type": "derived_from",
+      "note": "Gallager（1962）の LDPC 符号を再評価し，sum-product 復号と性能の理論・実験を与えた",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: \"Gallager codes\" were first investigated in 1962, but appear to have been largely forgotten"
+      }
+    },
+    {
+      "target": "turbo",
+      "type": "compared_with",
+      "note": "性能がターボ符号と同程度にシャノン限界に近いと述べている",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: almost as close to the Shannon limit as that of turbo codes"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "要旨のみ確認．要旨の「Gaussian channels」を AWGN として記録した．"
+  }
+}

@@ -1,0 +1,21 @@
+# API tokens
+tokens.json
+tokens.json.enc
+# Python
+.venv_*/
+__pycache__/
+*.py[cod]
+# Jupyter
+.ipynb_checkpoints/
+# Test
+.pytest_cache/
+# Machine Learning
+datasets/
+outputs/
+# VS Code
+.vscode/*
+!.vscode/settings.json
+# WSL
+*.Identifier
+# Generated site data (built by tools/build_graph.py and in CI)
+site/data/graph.json

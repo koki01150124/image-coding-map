@@ -1,0 +1,62 @@
+{
+  "id": "minnen_joint",
+  "kind": "paper",
+  "short_name": "Minnen 2018 (Joint AR)",
+  "aliases": [
+    "Mean-Scale Hyperprior",
+    "context model",
+    "自己回帰コンテキスト"
+  ],
+  "bib_key": "minnen2018joint",
+  "bibliography": {
+    "title": "Joint Autoregressive and Hierarchical Priors for Learned Image Compression",
+    "authors": [
+      "David C. Minnen",
+      "Johannes Ballé",
+      "George D. Toderici"
+    ],
+    "year": 2018,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1809.02736",
+    "arxiv": "1809.02736",
+    "url": "https://arxiv.org/abs/1809.02736",
+    "source": "survey/library.json"
+  },
+  "year": 2018,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "ハイパー潜在と自己回帰コンテキストで条件付けた潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "自己回帰事前分布と階層的（ハイパープライア）事前分布を組み合わせたエントロピーモデルを提案した",
+    "両者が相補的であることを示した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "従来の深層学習手法に比べ平均15.8%のファイルサイズ削減（要旨）"
+  ],
+  "limitations": [
+    "自己回帰モデルは大きな計算コストを伴う（要旨）"
+  ],
+  "relations": [
+    {
+      "target": "scale_hyperprior",
+      "type": "derived_from",
+      "note": "ハイパープライアに条件付けられた GSM の階層的エントロピーモデルに自己回帰事前分布を組み合わせた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: scale parameters are conditioned on a hyperprior ... combined priors"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の改良元の記述を照合した．"
+  }
+}

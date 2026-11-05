@@ -1,0 +1,72 @@
+{
+  "id": "adjscc",
+  "kind": "paper",
+  "short_name": "ADJSCC",
+  "aliases": [
+    "Attention DL based JSCC",
+    "SNR適応"
+  ],
+  "bib_key": "xu2021wireless",
+  "bibliography": {
+    "title": "Wireless Image Transmission Using Deep Source Channel Coding With Attention Modules",
+    "authors": [
+      "Jialong Xu",
+      "Bo Ai",
+      "Wei Ren Chen",
+      "Ang Yang",
+      "Peng Sun",
+      "Miguel R. D. Rodrigues"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "doi": "10.1109/tcsvt.2021.3082521",
+    "arxiv": "2012.00533",
+    "url": "https://doi.org/10.1109/tcsvt.2021.3082521",
+    "source": "survey/library.json"
+  },
+  "year": 2021,
+  "domains": [
+    "analog_jscc"
+  ],
+  "source_representation": "SNR に応じてチャネル方向の注意でスケールした連続値の特徴",
+  "channel_models": [
+    "AWGN"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "チャネル方向のソフト注意で SNR に応じて特徴をスケールし，1つのモデルで異なる SNR に対応する ADJSCC を提案した"
+  ],
+  "training": "SNR を入力とする注意モジュールを含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "SSIM"
+  ],
+  "strengths": [
+    "SNR ごとに複数のネットワークを学習・保存する必要がない（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc_f",
+      "type": "builds_on",
+      "note": "[31] の JSCC 構造を基本の BDJSCC として用いた",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: JSCC architecture used in [31] as the basic DL based JSCC (BDJSCC) architecture（[31] は通信路出力を利用する方式）"
+      }
+    },
+    {
+      "target": "deepjscc",
+      "type": "related",
+      "note": "SNR 適応を DeepJSCC の課題として扱い，[29] として引用している",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文の参考文献 [29] Bourtsoulatze et al."
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．[31] の書誌は抽出できなかったため，本文の説明（channel output symbols を取り込む方式）から DeepJSCC-f と判断した．"
+  }
+}

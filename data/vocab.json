@@ -1,0 +1,36 @@
+{
+  "kind": {
+    "paper": "論文",
+    "standard": "標準規格（解説論文）",
+    "software": "公開ソフトウェア",
+    "scheme": "構成例（ベースライン）",
+    "unpublished": "未公開の研究"
+  },
+  "transmission": {
+    "analog": "アナログ（連続値シンボル）",
+    "digital": "デジタル（ビット・有限シンボル）",
+    "not_applicable": "通信路を扱わない"
+  },
+  "channel_models": {
+    "AWGN": "加法性白色ガウス雑音通信路（AWGN）",
+    "Rayleigh": "レイリーフェージング通信路",
+    "BSC": "二元対称通信路（BSC）",
+    "BEC": "二元消失通信路（BEC）",
+    "B-DMC": "二元入力離散無記憶通信路（B-DMC）",
+    "feedback": "通信路出力のフィードバック",
+    "general": "一般の雑音のある通信路"
+  },
+  "evidence": {
+    "abstract": "要旨",
+    "full_text": "本文",
+    "official_page": "公式ページ",
+    "source_code": "ソースコード",
+    "project_doc": "プロジェクト文書"
+  },
+  "read_level": {
+    "abstract": "要旨のみ確認",
+    "full_text_scan": "本文の該当箇所を照合",
+    "official_page": "公式ページ・ソースを確認",
+    "project_doc": "研究プロジェクトの文書を確認"
+  }
+}

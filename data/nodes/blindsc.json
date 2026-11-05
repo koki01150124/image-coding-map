@@ -1,0 +1,85 @@
+{
+  "id": "blindsc",
+  "kind": "paper",
+  "short_name": "BlindSC",
+  "aliases": [
+    "Blind Training",
+    "BlindSC-P",
+    "BlindSC-MP"
+  ],
+  "bib_key": "oh2025blind",
+  "bibliography": {
+    "title": "Blind Training for Channel-Adaptive Digital Semantic Communications",
+    "authors": [
+      "Yongjeong Oh",
+      "Joohyuk Park",
+      "Jinho Choi",
+      "Jihong Park",
+      "Yo–Seb Jeon"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Communications",
+    "doi": "10.1109/tcomm.2025.3585587",
+    "arxiv": "2501.02273",
+    "url": "https://doi.org/10.1109/tcomm.2025.3585587",
+    "source": "survey/library.json"
+  },
+  "year": 2025,
+  "domains": [
+    "digital_jscc"
+  ],
+  "tags": [
+    "ビット誤り耐性"
+  ],
+  "source_representation": "並列 BSC を通す二値の符号化器出力",
+  "channel_models": [
+    "BSC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "BSC を一般のデジタル通信の普遍的な表現とし，並列 BSC で符号化器出力と復号器入力の関係をモデル化した",
+    "BSC のビット反転確率を学習可能なパラメータとし，推論時は誤り率を学習値に合わせる電力・変調の選択を行う"
+  ],
+  "training": "ビット反転確率を学習可能とした並列 BSC を含むエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "SSIM"
+  ],
+  "strengths": [
+    "既存の学習方法よりタスク性能と消費電力の両面で優れる（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "necst",
+      "type": "compared_with",
+      "note": "NECST（多ビット）を比較対象とした",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: NECST (Multi-bit): This framework extends the quantization process"
+      }
+    },
+    {
+      "target": "deepjscc_q",
+      "type": "compared_with",
+      "note": "DeepJSCC-Q を比較対象とした",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: DeepJSCC-Q: This is the digital SC framework in [15]"
+      }
+    },
+    {
+      "target": "sscc_jpeg_ldpc",
+      "type": "compared_with",
+      "note": "JPEG＋LDPC を比較対象とした",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: JPEG+LDPC: This framework utilizes a separate source-channel coding"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と arXiv:2501.02273 の本文を照合した．名称 BlindSC は本文中の呼称である．"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "scale_hyperprior",
+  "kind": "paper",
+  "short_name": "Scale Hyperprior",
+  "aliases": [
+    "Ballé 2018",
+    "hyperprior",
+    "超事前分布"
+  ],
+  "bib_key": "balle2018variational",
+  "bibliography": {
+    "title": "Variational image compression with a scale hyperprior",
+    "authors": [
+      "Johannes Ballé",
+      "David C. Minnen",
+      "Singh, Saurabh",
+      "Sung Jin Hwang",
+      "Nick Johnston"
+    ],
+    "year": 2018,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1802.01436",
+    "arxiv": "1802.01436",
+    "url": "https://arxiv.org/abs/1802.01436",
+    "source": "survey/library.json"
+  },
+  "year": 2018,
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "量子化した潜在表現と，そのスケールを表すハイパー潜在（サイド情報）",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "潜在表現の空間的な依存関係を捉えるハイパープライア（サイド情報）を導入した",
+    "複雑な事前分布を自己符号化器と同時に学習する変分自己符号化器型の圧縮モデルを提案した"
+  ],
+  "training": "レート・歪みのエンドツーエンド学習（事前分布も同時に学習）",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "MS-SSIM で当時の最高性能，PSNR でも既存の ANN 手法を上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "balle_e2e",
+      "type": "derived_from",
+      "note": "完全分解の事前分布を持つ Ballé et al.（2017）のモデルをハイパープライアで拡張した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: we extend the model presented in Ballé et al. (2017), which has a fully factorized prior, with a hyperprior"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の改良元の記述を照合した．"
+  }
+}

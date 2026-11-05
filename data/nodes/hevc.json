@@ -1,0 +1,46 @@
+{
+  "id": "hevc",
+  "kind": "standard",
+  "short_name": "HEVC",
+  "aliases": [
+    "H.265",
+    "High Efficiency Video Coding"
+  ],
+  "bib_key": "sullivan2012overview",
+  "bibliography": {
+    "title": "Overview of the High Efficiency Video Coding (HEVC) Standard",
+    "authors": [
+      "Gary J. Sullivan",
+      "Jens-Rainer Ohm",
+      "Woo-Jin Han",
+      "Thomas Wiegand"
+    ],
+    "year": 2012,
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+    "doi": "10.1109/tcsvt.2012.2221191",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/tcsvt.2012.2221191",
+    "source": "survey/library.json"
+  },
+  "year": 2012,
+  "domains": [
+    "traditional"
+  ],
+  "source_representation": "ブロック単位の予測残差の変換係数",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "映像符号化標準 HEVC の技術的特徴を概説した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": [
+    "既存の標準に比べ同じ主観品質で約50%のビットレート削減を目標とする（要旨）"
+  ],
+  "limitations": null,
+  "relations": [],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "標準規格の解説論文．要旨のみ確認．"
+  }
+}

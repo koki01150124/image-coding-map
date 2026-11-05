@@ -1,0 +1,9 @@
+[
+  {"id": "generative", "label": "生成・拡散型画像圧縮", "short": "生成・拡散", "description": "GAN・拡散モデルなどの生成モデルを復号や符号化に用いる画像圧縮．DeepJSCC の下位分類ではない", "color": {"light": "#2a78d6", "dark": "#3987e5"}, "order": 1},
+  {"id": "lic", "label": "学習型画像圧縮（LIC）", "short": "LIC", "description": "ニューラルネットワークの変換とエントロピーモデルをレート・歪みの目的関数で学習する画像圧縮（Learned Image Compression，LIC）", "color": {"light": "#eb6834", "dark": "#d95926"}, "order": 2},
+  {"id": "traditional", "label": "従来型画像圧縮", "short": "従来型", "description": "JPEG，JPEG 2000，HEVC/BPG，VVC など，手設計の変換・量子化・エントロピー符号化による画像・映像圧縮方式", "color": {"light": "#1baf7a", "dark": "#199e70"}, "order": 3},
+  {"id": "sscc", "label": "情報源・通信路分離符号化（SSCC）", "short": "SSCC", "description": "情報源符号化と通信路符号化を独立に設計して連結する構成（Separate Source-Channel Coding，SSCC）．JPEG＋LDPC はその具体例である", "color": {"light": "#eda100", "dark": "#c98500"}, "order": 4},
+  {"id": "channel_coding", "label": "通信路符号化・関連技術", "short": "通信路符号", "description": "LDPC 符号，Turbo 符号，Polar 符号などの通信路符号と，情報理論・学習型の物理層などの関連技術", "color": {"light": "#e87ba4", "dark": "#d55181"}, "order": 5},
+  {"id": "digital_jscc", "label": "デジタル型DeepJSCC", "short": "デジタルJSCC", "description": "ビット列・有限の変調シンボルなど離散的な通信路入力を用い，通信路（BSC 等）を含めて符号化器・復号器を共同学習する DeepJSCC", "color": {"light": "#008300", "dark": "#008300"}, "order": 6},
+  {"id": "analog_jscc", "label": "アナログ型DeepJSCC", "short": "アナログJSCC", "description": "画像を連続値の通信路シンボルへ直接写像し，通信路を含めて学習する深層結合情報源・通信路符号化（Deep Joint Source-Channel Coding，DeepJSCC）", "color": {"light": "#6250d6", "dark": "#9085e9"}, "order": 7}
+]

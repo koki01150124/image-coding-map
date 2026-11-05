@@ -1,0 +1,79 @@
+{
+  "id": "deepjscc_f",
+  "kind": "paper",
+  "short_name": "DeepJSCC-f",
+  "aliases": [
+    "feedback"
+  ],
+  "bib_key": "kurka2020deepjscc",
+  "bibliography": {
+    "title": "DeepJSCC- f : Deep Joint Source-Channel Coding of Images With Feedback",
+    "authors": [
+      "David Burth Kurka",
+      "Denız Gündüz"
+    ],
+    "year": 2020,
+    "venue": "IEEE Journal on Selected Areas in Information Theory",
+    "doi": "10.1109/jsait.2020.2987203",
+    "arxiv": "1911.11174",
+    "url": "https://doi.org/10.1109/jsait.2020.2987203",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "analog_jscc"
+  ],
+  "source_representation": "連続値の通信路シンボル（フィードバックに応じて追加送信）",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh",
+    "feedback"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "通信路出力のフィードバックを利用する自己符号化器型の JSCC（DeepJSCC-f）を提案した"
+  ],
+  "training": "通信路とフィードバックを含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "SSIM",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "固定長伝送で再構成品質，可変長伝送で平均遅延を改善（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc",
+      "type": "derived_from",
+      "note": "[42] の全畳み込み自己符号化器型 DeepJSCC をフィードバックに拡張した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: In [42] the authors propose a fully convolutional autoencoder architecture（比較: DeepJSCC (no feedback)）"
+      }
+    },
+    {
+      "target": "sscc_bpg_ldpc",
+      "type": "compared_with",
+      "note": "BPG＋LDPC と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: the concatenation of BPG codec followed by LDPC channel coding"
+      }
+    },
+    {
+      "target": "oshea_phy",
+      "type": "related",
+      "note": "学習による通信システムの設計という研究課題を共有し，本文で引用している",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文の参考文献 [26] T. O'Shea and J. Hoydis"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "esc_mvq",
+  "kind": "paper",
+  "short_name": "ESC-MVQ",
+  "aliases": [
+    "Multi-codebook VQ"
+  ],
+  "bib_key": "shin2025escmvq",
+  "bibliography": {
+    "title": "ESC-MVQ: End-to-End Semantic Communication With Multi-Codebook Vector Quantization",
+    "authors": [
+      "Junyong Shin",
+      "Yongjeong Oh",
+      "Jinsung Park",
+      "Joohyuk Park",
+      "Yo–Seb Jeon"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/twc.2025.3605838",
+    "arxiv": "2504.11709",
+    "url": "https://doi.org/10.1109/twc.2025.3605838",
+    "source": "survey/library.json"
+  },
+  "year": 2025,
+  "domains": [
+    "digital_jscc"
+  ],
+  "source_representation": "複数の VQ 符号帳のインデックス（並列 BSC で伝送）",
+  "channel_models": [
+    "BSC",
+    "AWGN",
+    "Rayleigh"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "通信路を学習可能なビット反転確率を持つ並列 BSC としてモデル化し，複数の VQ 符号帳とビット反転確率を1組の符号化器・復号器で共同学習した",
+    "符号帳の割り当て・適応変調・電力配分を共同最適化する通信戦略を示した"
+  ],
+  "training": "並列 BSC を含むエンドツーエンド学習（複数符号帳）",
+  "metrics": [
+    "PSNR"
+  ],
+  "strengths": [
+    "1組の符号化器・復号器で既存のデジタル意味通信を性能・メモリ効率で上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "blindsc",
+      "type": "builds_on",
+      "note": "学習可能なビット反転確率を持つ並列 BSC のモデルを用いる",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: models a channel transfer function as parallel binary symmetric channels (BSCs) with trainable bit-flip probabilities"
+      }
+    },
+    {
+      "target": "blindsc",
+      "type": "compared_with",
+      "note": "BlindSC を比較対象とした",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: BlindSC: This is the conventional digital semantic communication framework"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

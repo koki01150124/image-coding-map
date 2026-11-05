@@ -1,0 +1,61 @@
+{
+  "id": "jcm",
+  "kind": "paper",
+  "short_name": "JCM",
+  "aliases": [
+    "Joint Coding-Modulation"
+  ],
+  "bib_key": "bo2024joint",
+  "bibliography": {
+    "title": "Joint Coding-Modulation for Digital Semantic Communications via Variational Autoencoder",
+    "authors": [
+      "Yufei Bo",
+      "Yiheng Duan",
+      "Shuo Shao",
+      "Meixia Tao"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Communications",
+    "doi": "10.1109/tcomm.2024.3386577",
+    "arxiv": "2310.06690",
+    "url": "https://doi.org/10.1109/tcomm.2024.3386577",
+    "source": "survey/library.json"
+  },
+  "year": 2024,
+  "domains": [
+    "digital_jscc"
+  ],
+  "source_representation": "離散的な信号点への遷移確率",
+  "channel_models": [
+    "AWGN"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "情報源データから離散的な信号点への遷移確率を学習する VAE に基づく符号化・変調の共同設計（JCM）を提案した",
+    "情報理論的な意味を持つ整合損失を導出した"
+  ],
+  "training": "VAE による符号化・変調のエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "分類精度"
+  ],
+  "strengths": [
+    "量子化に基づくデジタルの符号化・変調法を上回る（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc_q",
+      "type": "compared_with",
+      "note": "DeepJSCC-Q を比較対象とした",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: DeepJSCC-Q method: This method jointly trains coding and modulation"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "polar",
+  "kind": "paper",
+  "short_name": "Polar Code",
+  "aliases": [
+    "ポーラ符号",
+    "Channel Polarization",
+    "通信路分極"
+  ],
+  "bib_key": "arkan2009channel",
+  "bibliography": {
+    "title": "Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels",
+    "authors": [
+      "Erdal Arıkan"
+    ],
+    "year": 2009,
+    "venue": "IEEE Transactions on Information Theory",
+    "doi": "10.1109/tit.2009.2021379",
+    "arxiv": "0807.3917",
+    "url": "https://doi.org/10.1109/tit.2009.2021379",
+    "source": "survey/library.json"
+  },
+  "year": 2009,
+  "domains": [
+    "channel_coding"
+  ],
+  "source_representation": "通信路分極により選んだ情報ビット位置",
+  "channel_models": [
+    "B-DMC",
+    "BEC",
+    "BSC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "二元入力離散無記憶通信路の対称容量を達成する符号系列を構成する通信路分極を提案した",
+    "逐次除去復号におけるブロック誤り率の上界を示した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": [
+    "ブロック誤り率"
+  ],
+  "strengths": [
+    "任意の B-DMC で対称容量を達成することを証明した（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "shannon1948",
+      "type": "related",
+      "note": "通信路容量を達成する符号の構成を扱う",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: construct code sequences that achieve the symmetric capacity"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の用語（BEC，BSC）を照合した．"
+  }
+}

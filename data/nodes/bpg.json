@@ -1,0 +1,53 @@
+{
+  "id": "bpg",
+  "kind": "software",
+  "short_name": "BPG",
+  "aliases": [
+    "Better Portable Graphics"
+  ],
+  "bib_key": null,
+  "bibliography": {
+    "title": "BPG Image format",
+    "authors": [
+      "Fabrice Bellard"
+    ],
+    "year": 2014,
+    "venue": "Web（bellard.org）",
+    "doi": null,
+    "arxiv": null,
+    "url": "https://bellard.org/bpg/",
+    "source": "公式ページ https://bellard.org/bpg/ と libbpg-0.9.8 のソース（2026-11-05 確認）"
+  },
+  "year": 2014,
+  "year_note": "論文が無いため，libbpg のソースの著作権表記（Copyright (c) 2014 Fabrice Bellard）の年とした．",
+  "domains": [
+    "traditional"
+  ],
+  "source_representation": "HEVC のイントラ符号化（変換係数）",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "HEVC のサブセットに基づく静止画像形式を提供した"
+  ],
+  "training": "学習なし（手設計の符号化方式）",
+  "metrics": null,
+  "strengths": [
+    "JPEG より同等の品質でファイルが小さい（公式ページ）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "hevc",
+      "type": "builds_on",
+      "note": "HEVC のサブセットに基づく",
+      "evidence": {
+        "kind": "official_page",
+        "detail": "公式ページ: Based on a subset of the HEVC open video compression standard"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "official_page",
+    "notes": "論文ではなく公開ソフトウェアである．書誌情報は公式ページから記入した．"
+  }
+}

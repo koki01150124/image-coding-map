@@ -1,0 +1,71 @@
+{
+  "id": "balle_e2e",
+  "kind": "paper",
+  "short_name": "Ballé 2017 (Factorized)",
+  "aliases": [
+    "End-to-end Optimized Image Compression",
+    "GDN",
+    "factorized prior",
+    "Ballé 2017"
+  ],
+  "bib_key": "balle2016endtoend",
+  "bibliography": {
+    "title": "End-to-end Optimized Image Compression",
+    "authors": [
+      "Johannes Ballé",
+      "Valero Laparra",
+      "Eero P. Simoncelli"
+    ],
+    "year": 2016,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1611.01704",
+    "arxiv": "1611.01704",
+    "url": "https://arxiv.org/abs/1611.01704",
+    "source": "survey/library.json"
+  },
+  "year": 2016,
+  "year_note": "arXiv 初出（2016）を用いた．会議（ICLR 2017）の年とは異なる．",
+  "domains": [
+    "lic"
+  ],
+  "source_representation": "非線形解析変換（GDN）の出力を一様量子化した潜在表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "非線形解析変換・一様量子化器・非線形合成変換からなる画像圧縮を提案した",
+    "量子化の連続的な代理を導入し，モデル全体をレート・歪みで一括最適化した"
+  ],
+  "training": "量子化の連続近似を用いたレート・歪みのエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "JPEG・JPEG 2000 よりレート・歪み性能が概ね良い（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "jpeg",
+      "type": "compared_with",
+      "note": "JPEG と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: better rate-distortion performance than the standard JPEG and JPEG 2000"
+      }
+    },
+    {
+      "target": "jpeg2000",
+      "type": "compared_with",
+      "note": "JPEG 2000 と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: better rate-distortion performance than the standard JPEG and JPEG 2000"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の評価指標を照合した．"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "hific",
+  "kind": "paper",
+  "short_name": "HiFiC",
+  "aliases": [
+    "High-Fidelity Generative Image Compression",
+    "GAN compression"
+  ],
+  "bib_key": "mentzer2020highfidelity",
+  "bibliography": {
+    "title": "High-Fidelity Generative Image Compression",
+    "authors": [
+      "Fabian Mentzer",
+      "George D. Toderici",
+      "Michael Tschannen",
+      "Eirikur Agustsson"
+    ],
+    "year": 2020,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2006.09965",
+    "arxiv": "2006.09965",
+    "url": "https://arxiv.org/abs/2006.09965",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "generative",
+    "lic"
+  ],
+  "source_representation": "ハイパープライアを持つ学習型圧縮の潜在表現（GAN で復号）",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "GAN と学習型圧縮を組み合わせ，正規化層・生成器・識別器・学習戦略・知覚損失を体系的に検討した",
+    "レート・歪み・知覚のトレードオフの理論と実践を，知覚指標と被験者実験で結び付けた"
+  ],
+  "training": "レート・歪みに敵対的損失と知覚損失を加えた学習",
+  "metrics": [
+    "LPIPS",
+    "FID",
+    "PSNR",
+    "被験者実験"
+  ],
+  "strengths": [
+    "2倍以上のビットレートを用いる従来手法よりも被験者に好まれた（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "minnen_joint",
+      "type": "compared_with",
+      "note": "Mean & Scale Hyperprior を同じ構成のベースラインとして比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: \"M&S\" is the Mean & Scale Hyperprior MSE-optimized baseline ... reported in [32]"
+      }
+    },
+    {
+      "target": "bpg",
+      "type": "compared_with",
+      "note": "BPG と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: BPG [7] を比較対象として記載"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "swinjscc",
+  "kind": "paper",
+  "short_name": "SwinJSCC",
+  "aliases": [
+    "Swin Transformer JSCC"
+  ],
+  "bib_key": "yang2024swinjscc",
+  "bibliography": {
+    "title": "SwinJSCC: Taming Swin Transformer for Deep Joint Source-Channel Coding",
+    "authors": [
+      "Ke Yang",
+      "Sixian Wang",
+      "Jincheng Dai",
+      "Xiaoqi Qin",
+      "Kai Niu",
+      "Ping Zhang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Cognitive Communications and Networking",
+    "doi": "10.1109/tccn.2024.3424842",
+    "arxiv": "2308.09361",
+    "url": "https://doi.org/10.1109/tccn.2024.3424842",
+    "source": "survey/library.json"
+  },
+  "year": 2024,
+  "domains": [
+    "analog_jscc"
+  ],
+  "source_representation": "Swin Transformer による連続値の潜在表現",
+  "channel_models": [
+    "AWGN",
+    "Rayleigh"
+  ],
+  "transmission": "analog",
+  "contributions": [
+    "Swin Transformer を骨格とする neural JSCC を構築した",
+    "通信路状態と目標レートに応じて潜在表現をスケールする2つの空間変調モジュールで，1つのモデルを多様な条件に適応させた"
+  ],
+  "training": "通信路を含めたエンドツーエンド学習",
+  "metrics": [
+    "PSNR",
+    "MS-SSIM"
+  ],
+  "strengths": [
+    "BPG＋5G LDPC と同等以上の性能で，符号化が高速（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc",
+      "type": "compared_with",
+      "note": "CNN に基づく deep JSCC [6] と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: compare our proposed SwinJSCC scheme with the CNN-based deep JSCC scheme [6]"
+      }
+    },
+    {
+      "target": "adjscc",
+      "type": "compared_with",
+      "note": "ADJSCC と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文 Fig. 1: ADJSCC Xu et al."
+      }
+    },
+    {
+      "target": "sscc_bpg_ldpc",
+      "type": "compared_with",
+      "note": "BPG＋5G LDPC と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: versus the state-of-the-art engineered BPG + 5G LDPC coded transmission system"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．"
+  }
+}

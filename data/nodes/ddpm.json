@@ -1,0 +1,48 @@
+{
+  "id": "ddpm",
+  "kind": "paper",
+  "short_name": "DDPM",
+  "aliases": [
+    "Denoising Diffusion Probabilistic Models",
+    "拡散モデル"
+  ],
+  "bib_key": "ho2020denoising",
+  "bibliography": {
+    "title": "Denoising Diffusion Probabilistic Models",
+    "authors": [
+      "Jonathan Ho",
+      "Jain, Ajay",
+      "Pieter Abbeel"
+    ],
+    "year": 2020,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2006.11239",
+    "arxiv": "2006.11239",
+    "url": "https://arxiv.org/abs/2006.11239",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "generative"
+  ],
+  "source_representation": "（画像生成モデル）ガウス雑音から段階的に除去する潜在変数モデル",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "拡散確率モデルによる高品質な画像生成を示した",
+    "雑音除去スコアマッチングとの関係に基づく重み付き変分下界で学習した",
+    "自己回帰的な復号を一般化した漸進的な非可逆の伸長の解釈を示した"
+  ],
+  "training": "重み付き変分下界による学習",
+  "metrics": [
+    "FID",
+    "Inception Score"
+  ],
+  "strengths": null,
+  "limitations": null,
+  "relations": [],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "survey/library.json の要旨（OpenAlex）は別の文献の内容に置き換わっている誤りがある．arXiv:2006.11239 の要旨ページと本文で内容を確認した．画像圧縮の手法ではなく，拡散型圧縮の基盤技術として収録した．"
+  }
+}

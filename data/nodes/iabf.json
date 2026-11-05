@@ -1,0 +1,61 @@
+{
+  "id": "iabf",
+  "kind": "paper",
+  "short_name": "IABF",
+  "aliases": [
+    "Infomax Adversarial Bit Flip"
+  ],
+  "bib_key": "song2020infomax",
+  "bibliography": {
+    "title": "Infomax Neural Joint Source-Channel Coding via Adversarial Bit Flip",
+    "authors": [
+      "Yuxuan Song",
+      "Minkai Xu",
+      "Lantao Yu",
+      "Hao Zhou",
+      "Shuo Shao",
+      "Yong Hai Yu"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "doi": "10.1609/aaai.v34i04.6041",
+    "arxiv": "2004.01454",
+    "url": "https://doi.org/10.1609/aaai.v34i04.6041",
+    "source": "survey/library.json"
+  },
+  "year": 2020,
+  "domains": [
+    "digital_jscc"
+  ],
+  "tags": [
+    "ビット誤り耐性"
+  ],
+  "source_representation": "二値の潜在符号",
+  "channel_models": [
+    "BSC",
+    "BEC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "符号語とデータの相互情報量の最大化と，敵対的なビット反転による復号器の正則化（IABF）で NECST の頑健性を改善した"
+  ],
+  "training": "相互情報量の最大化と敵対的ビット反転の正則化を加えた学習",
+  "metrics": null,
+  "strengths": null,
+  "limitations": null,
+  "relations": [
+    {
+      "target": "necst",
+      "type": "derived_from",
+      "note": "NECST の頑健性を改善する正則化を提案した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: neural joint source-channel coding (NECST) (Choi et al. 2018) ... we propose a novel regularization method"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文の用語を照合した．評価指標は未確認．"
+  }
+}

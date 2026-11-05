@@ -1,0 +1,74 @@
+{
+  "id": "necst",
+  "kind": "paper",
+  "short_name": "NECST",
+  "aliases": [
+    "Neural Joint Source-Channel Coding"
+  ],
+  "bib_key": "choi2018neural",
+  "bibliography": {
+    "title": "Neural Joint Source-Channel Coding",
+    "authors": [
+      "Kristy Choi",
+      "Kedar Tatwawadi",
+      "Aditya Grover",
+      "Tsachy Weissman",
+      "Stefano Ermon"
+    ],
+    "year": 2018,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.1811.07557",
+    "arxiv": "1811.07557",
+    "url": "https://arxiv.org/abs/1811.07557",
+    "source": "survey/library.json"
+  },
+  "year": 2018,
+  "domains": [
+    "digital_jscc"
+  ],
+  "source_representation": "離散 VAE の二値の潜在符号",
+  "channel_models": [
+    "BSC",
+    "BEC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "離散的な変分自己符号化器で符号化・復号を共同学習する NECST を提案した",
+    "学習時に潜在符号へ雑音を加えて通信路を模擬し，圧縮と誤り訂正を同時に学習した"
+  ],
+  "training": "通信路雑音（BSC・BEC）を加えた離散 VAE の学習",
+  "metrics": [
+    "再構成誤差",
+    "分類精度（下流タスク）",
+    "復号時間"
+  ],
+  "strengths": [
+    "分離設計の複数の方式と競合する性能（要旨）",
+    "反復の確率伝播復号より約1桁高速な復号（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "sscc_lic_ldpc",
+      "type": "compared_with",
+      "note": "VAE＋LDPC などの分離設計と比較した",
+      "evidence": {
+        "kind": "full_text",
+        "detail": "本文: compression (WebP, VAE) and channel coding (ideal code, LDPC (Gallager (1962)))"
+      }
+    },
+    {
+      "target": "gallager_ldpc",
+      "type": "compared_with",
+      "note": "LDPC の確率伝播復号と復号速度を比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: compared to standard decoding methods based on iterative belief propagation"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "ローカルの論文PDF（../necst/reference/）の本文を照合した．"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "bfr_cae",
+  "kind": "unpublished",
+  "short_name": "BFR-CAE",
+  "aliases": [
+    "Bit-Flip Robust Compressive Autoencoder"
+  ],
+  "bib_key": null,
+  "bibliography": {
+    "title": "Bit-Flip Robust Compressive Autoencoder（BFR-CAE）",
+    "authors": null,
+    "year": null,
+    "venue": "未公開（研究コード）",
+    "doi": null,
+    "arxiv": null,
+    "url": null,
+    "source": "研究プロジェクトの文書（autoencoder/README.md，bfr-cae-research/document.md）"
+  },
+  "year": 2026,
+  "year_note": "未公開のため発表年が無い．マップ上は研究基盤を整備した年（2026）に置いた．",
+  "domains": [
+    "digital_jscc",
+    "lic"
+  ],
+  "tags": [
+    "ビット誤り耐性"
+  ],
+  "source_representation": "Sigmoid と STE で二値化した潜在ビット列（H/8×W/8×C）",
+  "channel_models": [
+    "BSC"
+  ],
+  "transmission": "digital",
+  "contributions": [
+    "二値の潜在表現を BSC に通し，クリーンな復元とビット反転後の復元の両方に対する損失で符号化器・復号器を共同学習する"
+  ],
+  "training": "BSC（ビット反転）を含めた共同学習．クリーンとビット反転後の MSE の合成損失",
+  "metrics": [
+    "PSNR",
+    "SSIM",
+    "MS-SSIM",
+    "bpp"
+  ],
+  "strengths": null,
+  "limitations": [
+    "論文として未公開であり，第三者による評価は無い"
+  ],
+  "relations": [
+    {
+      "target": "robust_turbo_ddcm",
+      "type": "related",
+      "note": "ビット誤り耐性という共通課題を持つ．直接の派生関係は無い",
+      "evidence": {
+        "kind": "project_doc",
+        "detail": "BFR-CAE の研究文書と Robust Turbo-DDCM の論文の課題設定"
+      }
+    },
+    {
+      "target": "necst",
+      "type": "related",
+      "note": "二値の潜在符号を BSC を含めて学習する点が共通する．直接の派生関係は確認していない",
+      "evidence": {
+        "kind": "project_doc",
+        "detail": "bfr-cae-research/document.md の計算仕様（BSC，STE）"
+      }
+    },
+    {
+      "target": "blindsc",
+      "type": "related",
+      "note": "BSC を含めたデジタル伝送の学習という課題が共通する．直接の派生関係は確認していない",
+      "evidence": {
+        "kind": "project_doc",
+        "detail": "bfr-cae-research/document.md の計算仕様"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "project_doc",
+    "notes": "未公開の研究コード（../autoencoder/）．BSC を含めた共同学習を行う条件の下でデジタル型 DeepJSCC に位置付けた．Theis et al. の CAE との直接の関係は確認していない．"
+  }
+}

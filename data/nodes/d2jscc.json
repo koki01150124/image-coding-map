@@ -1,0 +1,58 @@
+{
+  "id": "d2jscc",
+  "kind": "paper",
+  "short_name": "D²-JSCC",
+  "aliases": [
+    "D2-JSCC",
+    "Digital Deep JSCC"
+  ],
+  "bib_key": "huang2025d2jscc",
+  "bibliography": {
+    "title": "D²-JSCC: Digital Deep Joint Source-Channel Coding for Semantic Communications",
+    "authors": [
+      "Jianhao Huang",
+      "Kai Yuan",
+      "Chuan Zhen Huang",
+      "Kaibin Huang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "doi": "10.1109/jsac.2025.3531546",
+    "arxiv": null,
+    "url": "https://doi.org/10.1109/jsac.2025.3531546",
+    "source": "survey/library.json"
+  },
+  "year": 2025,
+  "domains": [
+    "digital_jscc",
+    "sscc"
+  ],
+  "source_representation": "適応的な事前分布を持つ深層情報源符号化の出力を通信路符号で保護",
+  "channel_models": null,
+  "transmission": "digital",
+  "contributions": [
+    "デジタルの情報源符号化と通信路符号化を共同で最適化する D²-JSCC を提案した",
+    "エンドツーエンドの歪みを情報源・通信路のレートの関数として特徴付け，SNR に応じてレートを制御する2段階のアルゴリズムを示した"
+  ],
+  "training": null,
+  "metrics": null,
+  "strengths": [
+    "従来の deep JSCC を上回り，崖効果と頭打ちを緩和（要旨）"
+  ],
+  "limitations": null,
+  "relations": [
+    {
+      "target": "deepjscc",
+      "type": "related",
+      "note": "アナログの DeepJSCC が既存のデジタル通信と互換でない点を課題とし，従来の deep JSCC と比較した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: outperforms classic deep JSCC（どの手法かは要旨で特定できない）"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "要旨のみ確認（arXiv 版を特定していない）．用いた通信路符号・通信路モデルは未確認．"
+  }
+}

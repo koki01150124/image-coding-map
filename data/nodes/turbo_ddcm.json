@@ -1,0 +1,60 @@
+{
+  "id": "turbo_ddcm",
+  "kind": "paper",
+  "short_name": "Turbo-DDCM",
+  "bib_key": "amit2025turboddcm",
+  "bibliography": {
+    "title": "Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression",
+    "authors": [
+      "Vaisman, Amit",
+      "Ohayon, Guy",
+      "Manor, Hila",
+      "Michael Elad",
+      "Michaeli, Tomer"
+    ],
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2511.06424",
+    "arxiv": "2511.06424",
+    "url": "https://arxiv.org/abs/2511.06424",
+    "source": "survey/library.json"
+  },
+  "year": 2025,
+  "domains": [
+    "generative"
+  ],
+  "source_representation": "各拡散ステップで多数の符号帳ベクトルを組み合わせる疎な表現",
+  "channel_models": [],
+  "transmission": "not_applicable",
+  "contributions": [
+    "各雑音除去ステップで多数の雑音ベクトルを効率的に組み合わせ，必要な雑音除去の回数を大幅に削減した",
+    "改良した符号化プロトコルと，優先領域・目標 PSNR を指定できる変種を提案した"
+  ],
+  "training": "事前学習済み拡散モデルを用いるゼロショット圧縮",
+  "metrics": [
+    "PSNR",
+    "LPIPS",
+    "FID",
+    "符号化時間"
+  ],
+  "strengths": [
+    "既存手法より大幅に高速で，最先端手法と同等の性能（要旨）"
+  ],
+  "limitations": null,
+  "code_url": "https://github.com/AmitVaisman/Turbo-DDCM",
+  "relations": [
+    {
+      "target": "ddcm",
+      "type": "derived_from",
+      "note": "DDCM の圧縮方式を高速化・改良した",
+      "evidence": {
+        "kind": "abstract",
+        "detail": "要旨: Our method builds upon the recently proposed Denoising Diffusion Codebook Models (DDCMs)"
+      }
+    }
+  ],
+  "verification": {
+    "read_level": "full_text_scan",
+    "notes": "要旨と本文を照合した．library.json の引用キー（amit2025turboddcm）は第一著者の名から生成されている（第一著者は Vaisman）．"
+  }
+}

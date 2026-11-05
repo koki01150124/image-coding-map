@@ -1,0 +1,48 @@
+{
+  "id": "shannon1948",
+  "kind": "paper",
+  "short_name": "Shannon 1948",
+  "aliases": [
+    "情報理論",
+    "分離定理",
+    "A Mathematical Theory of Communication"
+  ],
+  "bib_key": "shannon1948mathematical",
+  "bibliography": {
+    "title": "A Mathematical Theory of Communication",
+    "authors": [
+      "Claude E. Shannon"
+    ],
+    "year": 1948,
+    "venue": "Bell System Technical Journal",
+    "doi": "10.1002/j.1538-7305.1948.tb01338.x",
+    "arxiv": null,
+    "url": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+    "source": "survey/library.json"
+  },
+  "year": 1948,
+  "domains": [
+    "channel_coding",
+    "sscc"
+  ],
+  "tags": [
+    "情報理論"
+  ],
+  "source_representation": null,
+  "channel_models": [
+    "general"
+  ],
+  "transmission": "not_applicable",
+  "contributions": [
+    "雑音のある通信路の影響と，情報源の統計的構造による節約を含む一般的な通信理論を構築した"
+  ],
+  "training": "学習なし（理論）",
+  "metrics": null,
+  "strengths": null,
+  "limitations": null,
+  "relations": [],
+  "verification": {
+    "read_level": "abstract",
+    "notes": "要旨（OpenAlex）のみ確認．情報源・通信路の分離に関する定理の詳細は要旨に記載が無いため記入していない．"
+  }
+}
