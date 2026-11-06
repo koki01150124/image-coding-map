@@ -59,6 +59,47 @@
   "limitations": [
     "通信路を含めた符号化器・復号器の共同学習ではないため，DeepJSCC には分類しない"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "error_robustness",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: レート・歪み・知覚への影響を抑えつつ頑健性を高めた Turbo-DDCM の変種を提案した"
+          },
+          "from": "turbo_ddcm"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "diffusion_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 事前学習済み拡散モデルを用いる（通信路を含む学習は行わない）"
+          }
+        },
+        {
+          "id": "pretrained_zero_shot",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 事前学習済み拡散モデルを用いる（通信路を含む学習は行わない）"
+          }
+        },
+        {
+          "id": "codebook",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → turbo_ddcm）: Turbo-DDCM の頑健な変種を提案した（根拠: 要旨: We further introduce a more robust variant of Turbo-DDCM）"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "turbo_ddcm",

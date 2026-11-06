@@ -57,6 +57,53 @@
     "量子化に基づくデジタルの符号化・変調法を上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "digital_constraint",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 情報源データから離散的な信号点への遷移確率を学習する VAE に基づく符号化・変調の共同設計（JCM）を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: VAE による符号化・変調のエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "variational_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: VAE による符号化・変調のエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "digital_modulation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 情報源データから離散的な信号点への遷移確率を学習する VAE に基づく符号化・変調の共同設計（JCM）を提案した"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: VAE による符号化・変調のエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "deepjscc_q",

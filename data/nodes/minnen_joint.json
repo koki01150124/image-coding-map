@@ -58,6 +58,47 @@
   "limitations": [
     "自己回帰モデルは大きな計算コストを伴う（要旨）"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 自己回帰事前分布と階層的（ハイパープライア）事前分布を組み合わせたエントロピーモデルを提案した"
+          },
+          "from": "scale_hyperprior"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 自己回帰事前分布と階層的（ハイパープライア）事前分布を組み合わせたエントロピーモデルを提案した"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 自己回帰事前分布と階層的（ハイパープライア）事前分布を組み合わせたエントロピーモデルを提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "scale_hyperprior",

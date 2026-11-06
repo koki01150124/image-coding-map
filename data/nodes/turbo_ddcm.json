@@ -56,6 +56,54 @@
   ],
   "limitations": null,
   "code_url": "https://github.com/AmitVaisman/Turbo-DDCM",
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 各雑音除去ステップで多数の雑音ベクトルを効率的に組み合わせ，必要な雑音除去の回数を大幅に削減した"
+          },
+          "from": "ddcm"
+        },
+        {
+          "id": "rate_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 改良した符号化プロトコルと，優先領域・目標 PSNR を指定できる変種を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "diffusion_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 各雑音除去ステップで多数の雑音ベクトルを効率的に組み合わせ，必要な雑音除去の回数を大幅に削減した"
+          }
+        },
+        {
+          "id": "pretrained_zero_shot",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 事前学習済み拡散モデルを用いるゼロショット圧縮"
+          }
+        },
+        {
+          "id": "codebook",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 各拡散ステップで多数の符号帳ベクトルを組み合わせる疎な表現"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "ddcm",

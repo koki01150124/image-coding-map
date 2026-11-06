@@ -57,6 +57,40 @@
     "固定長伝送で再構成品質，可変長伝送で平均遅延を改善（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "progressive_feedback",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 通信路出力のフィードバックを利用する自己符号化器型の JSCC（DeepJSCC-f）を提案した"
+          },
+          "from": "deepjscc"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 通信路出力のフィードバックを利用する自己符号化器型の JSCC（DeepJSCC-f）を提案した"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 通信路とフィードバックを含めたエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "deepjscc",

@@ -49,6 +49,7 @@ def build_graph(nodes, vocab):
         "domains": sorted(vocab["domains"], key=lambda d: d["order"]),
         "edge_types": sorted(vocab["edge_types"], key=lambda t: t["order"]),
         "vocab": vocab["vocab"],
+        "patterns": vocab["patterns"],
         "nodes": public_nodes,
         "edges": build_edges(nodes, vocab["edge_types"]),
     }

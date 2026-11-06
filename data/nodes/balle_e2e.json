@@ -57,6 +57,39 @@
     "JPEG・JPEG 2000 よりレート・歪み性能が概ね良い（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "learned_transform_coding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 量子化の連続的な代理を導入し，モデル全体をレート・歪みで一括最適化した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 非線形解析変換・一様量子化器・非線形合成変換からなる画像圧縮を提案した"
+          }
+        },
+        {
+          "id": "quantization_proxy",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 量子化の連続的な代理を導入し，モデル全体をレート・歪みで一括最適化した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "jpeg",

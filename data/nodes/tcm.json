@@ -57,6 +57,54 @@
   ],
   "limitations": null,
   "code_url": "https://github.com/jmliu206/LIC_TCM",
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "transform_architecture",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: CNN の局所性と Transformer の非局所性を組み合わせる並列の Transformer-CNN 混合（TCM）ブロックを提案した"
+          }
+        },
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: Swin Transformer に基づく注意機構（SWAtten）を持つチャネル方向のエントロピーモデルを提案した"
+          },
+          "from": "channel_ar"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "attention_transformer",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: CNN の局所性と Transformer の非局所性を組み合わせる並列の Transformer-CNN 混合（TCM）ブロックを提案した"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: Swin Transformer に基づく注意機構（SWAtten）を持つチャネル方向のエントロピーモデルを提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "channel_ar",

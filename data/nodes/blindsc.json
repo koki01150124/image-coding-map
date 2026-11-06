@@ -63,6 +63,53 @@
     "既存の学習方法よりタスク性能と消費電力の両面で優れる（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "channel_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: BSC のビット反転確率を学習可能なパラメータとし，推論時は誤り率を学習値に合わせる電力・変調の選択を行う"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: ビット反転確率を学習可能とした並列 BSC を含むエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "binary_latent",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 並列 BSC を通す二値の符号化器出力"
+          }
+        },
+        {
+          "id": "digital_modulation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: BSC のビット反転確率を学習可能なパラメータとし，推論時は誤り率を学習値に合わせる電力・変調の選択を行う"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: ビット反転確率を学習可能とした並列 BSC を含むエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "necst",

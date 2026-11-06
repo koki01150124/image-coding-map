@@ -58,6 +58,47 @@
     "高速なプレビュー復号と漸進的復号に対応（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: エネルギー集中の観察に基づく不均一なチャネル条件付き適応符号化を提案した"
+          },
+          "from": "channel_ar"
+        },
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 既存の空間コンテキストモデルと組み合わせた空間・チャネルのコンテキストモデルと，効率的な主変換を備えた ELIC を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 既存の空間コンテキストモデルと組み合わせた空間・チャネルのコンテキストモデルと，効率的な主変換を備えた ELIC を提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "channel_ar",

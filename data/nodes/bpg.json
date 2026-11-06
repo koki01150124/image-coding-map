@@ -45,6 +45,25 @@
     "JPEG より同等の品質でファイルが小さい（公式ページ）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "not_applicable",
+      "note": "既存の規格（HEVC）を静止画像の形式として提供するソフトウェアであり，新しい改良を主張する論文ではない",
+      "items": []
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "handcrafted_transform",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: HEVC のイントラ符号化（変換係数）"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "hevc",

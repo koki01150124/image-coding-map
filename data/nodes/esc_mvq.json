@@ -59,6 +59,53 @@
     "1組の符号化器・復号器で既存のデジタル意味通信を性能・メモリ効率で上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "channel_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 符号帳の割り当て・適応変調・電力配分を共同最適化する通信戦略を示した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 通信路を学習可能なビット反転確率を持つ並列 BSC としてモデル化し，複数の VQ 符号帳とビット反転確率を1組の符号化器・復号器で共同学習した"
+          }
+        },
+        {
+          "id": "codebook",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 複数の VQ 符号帳のインデックス（並列 BSC で伝送）"
+          }
+        },
+        {
+          "id": "digital_modulation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 符号帳の割り当て・適応変調・電力配分を共同最適化する通信戦略を示した"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 並列 BSC を含むエンドツーエンド学習（複数符号帳）"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "blindsc",

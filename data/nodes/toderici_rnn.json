@@ -60,6 +60,46 @@
     "1つのネットワークで可変レート・漸進的な復元が可能（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "learned_transform_coding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 畳み込み・逆畳み込み LSTM に基づく可変レートの画像圧縮の枠組みを提案した"
+          }
+        },
+        {
+          "id": "rate_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 画像サイズ・圧縮率によらず一度の学習で済み，送るビットが増えるほど再構成が改善する漸進的な符号を実現した"
+          }
+        },
+        {
+          "id": "progressive_feedback",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 画像サイズ・圧縮率によらず一度の学習で済み，送るビットが増えるほど再構成が改善する漸進的な符号を実現した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 畳み込み・逆畳み込み LSTM に基づく可変レートの画像圧縮の枠組みを提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "jpeg",

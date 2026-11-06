@@ -58,6 +58,46 @@
   ],
   "limitations": null,
   "code_url": "https://github.com/buggyyang/CDC_compression",
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "perceptual_generative",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 変換符号化の枠組みで，復号器を条件付き拡散モデルとするエンドツーエンドの非可逆圧縮を提案した"
+          }
+        },
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: X-パラメータ化により少数の復号ステップで高品質な再構成を可能にした"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 変換符号化の枠組みで，復号器を条件付き拡散モデルとするエンドツーエンドの非可逆圧縮を提案した"
+          }
+        },
+        {
+          "id": "diffusion_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 変換符号化の枠組みで，復号器を条件付き拡散モデルとするエンドツーエンドの非可逆圧縮を提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "ddpm",

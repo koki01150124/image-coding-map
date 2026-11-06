@@ -57,6 +57,39 @@
     "任意の B-DMC で対称容量を達成することを証明した（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "code_construction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 二元入力離散無記憶通信路の対称容量を達成する符号系列を構成する通信路分極を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "error_correcting_code",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 二元入力離散無記憶通信路の対称容量を達成する符号系列を構成する通信路分極を提案した"
+          }
+        },
+        {
+          "id": "probabilistic_decoding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 逐次除去復号におけるブロック誤り率の上界を示した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "shannon1948",

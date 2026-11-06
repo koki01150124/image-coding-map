@@ -55,6 +55,48 @@
     "低レートで BPG を最大25%上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: チャネル条件付けと潜在残差予測を導入し，逐次処理を抑えつつ性能を改善した"
+          },
+          "from": "minnen_joint"
+        },
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: チャネル条件付けと潜在残差予測を導入し，逐次処理を抑えつつ性能を改善した"
+          },
+          "from": "minnen_joint"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: チャネル条件付けと潜在残差予測を導入し，逐次処理を抑えつつ性能を改善した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "minnen_joint",

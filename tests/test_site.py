@@ -5,6 +5,7 @@ site/ を GitHub Pages と同じくサブパス（/image-coding-map/）の静的
 事前に python tools/build_graph.py で site/data/graph.json を生成しておく．
 """
 import functools
+import sys
 import http.server
 import json
 import threading
@@ -355,3 +356,139 @@ def test_zoom_by_wheel(page, base_url):
     pg.mouse.wheel(0, -400)
     pg.wait_for_timeout(300)
     assert pg.get_attribute("g.zoom-root", "transform") != before
+
+
+# ---------------------------------------------------------------- パターン表
+
+sys.path.insert(0, str(ROOT / "tools"))
+from patterns import count_table  # noqa: E402
+
+
+def read_table(pg):
+    """表示中のパターン表のセルの値を読む．
+
+    Args:
+        pg (Page): ページ．
+    Returns:
+        dict[tuple[str, str], tuple[int, int]]: (パターン, 分野) → (該当数, 未判定数)．
+    """
+    cells = pg.eval_on_selector_all(".pattern-table button[data-pattern]", "els => els.map(e => [e.dataset.pattern, e.dataset.domain, +e.dataset.count, +e.dataset.unknown])")
+    return {(p, d): (c, u) for p, d, c, u in cells}
+
+
+def expected_table(graph, axis, kinds=("paper",), year_min=None, domains=None):
+    """Python の集計（tools/patterns.py）で期待値を求める．
+
+    Args:
+        graph (dict): graph.json．
+        axis (str): 軸．
+        kinds (tuple[str]): 集計対象の種別．
+        year_min (int | None): 表示期間の開始年．
+        domains (list[str] | None): 列．
+    Returns:
+        dict[tuple[str, str], tuple[int, int]]: (パターン, 分野) → (該当数, 未判定数)．
+    """
+    doms = domains or [d["id"] for d in graph["domains"]]
+    nodes = [n for n in graph["nodes"] if n["kind"] in kinds and (year_min is None or n["year"] >= year_min)
+             and any(d in doms for d in n["domains"])]
+    t = count_table(nodes, graph["patterns"], axis, doms)
+    pats = next(a for a in graph["patterns"]["axes"] if a["id"] == axis)["patterns"]
+    return {(p["id"], d): (len(t["cells"].get((p["id"], d), {"yes": []})["yes"]), len(t["cells"].get((p["id"], d), {"unknown": []})["unknown"]))
+            for p in pats for d in doms}
+
+
+@pytest.mark.parametrize("axis", ["improvements", "techniques"])
+def test_pattern_table_counts_match_data(page, base_url, graph, axis):
+    """パターン表の全セル（該当数・未判定数）が元データの集計と一致する．"""
+    pg, errors = page
+    open_map(pg, base_url)
+    pg.click("#btn-patterns")
+    pg.click(f"button[data-axis={axis}]")
+    assert read_table(pg) == expected_table(graph, axis)
+    assert pg.locator(".pattern-table").get_attribute("data-axis") == axis
+    assert "重複集計" in pg.inner_text("#pattern-view") and "存在しないことを意味しない" in pg.inner_text("#pattern-view")
+    assert errors == []
+
+
+def test_pattern_kinds_toggle(page, base_url, graph):
+    """初期は論文のみを集計し，未公開研究を含めると BFR-CAE が計上される．"""
+    pg, _ = page
+    open_map(pg, base_url)
+    pg.click("#btn-patterns")
+    assert read_table(pg)[("error_robustness", "lic")][0] == 0
+    pg.check("input[data-kinds=unpublished]")
+    assert read_table(pg)[("error_robustness", "lic")][0] == 1
+    assert read_table(pg) == expected_table(graph, "improvements", kinds=("paper", "unpublished"))
+
+
+def test_pattern_cell_list_and_map_highlight(page, base_url):
+    """セルの選択で該当論文の一覧を表示し，マップ上で強調する（複数分野の NTSCC を LIC に含む）．"""
+    pg, errors = page
+    open_map(pg, base_url)
+    pg.click("#btn-patterns")
+    pg.click("button[data-pattern=entropy_model][data-domain=lic]")
+    detail = pg.inner_text("#pattern-detail")
+    assert "該当 7 件" in detail and "NTSCC" in detail and "Scale Hyperprior" in detail
+    pg.click("#btn-pattern-highlight")
+    assert pg.locator("#pattern-view").is_hidden()
+    assert pg.locator("g.node.match").count() == 7
+    assert pg.locator("g.node.match[data-id=ntscc]").count() == 1
+    assert "エントロピーモデルの高精度化" in pg.inner_text("#focus-note")
+    assert errors == []
+
+
+def test_pattern_table_follows_filters(page, base_url, graph):
+    """表示期間と分野の絞り込みをパターン表に反映する．"""
+    pg, _ = page
+    open_map(pg, base_url)
+    pg.select_option("#period-select", "2020")
+    pg.click("button[data-domain=generative]")
+    pg.click("#btn-patterns")
+    doms = [d["id"] for d in graph["domains"] if d["id"] != "generative"]
+    assert pg.locator(".pattern-table button[data-domain=generative]").count() == 0
+    assert read_table(pg) == expected_table(graph, "improvements", year_min=2020, domains=doms)
+    assert "2020年以降" in pg.inner_text("#pattern-view")
+
+
+def test_panel_shows_patterns(page, base_url):
+    """詳細パネルに改良パターンと採用技術を表示する．"""
+    pg, _ = page
+    open_map(pg, base_url + "#necst")
+    pg.wait_for_selector("#panel:not([hidden])")
+    body = pg.inner_text("#panel-body")
+    assert "改良パターン" in body and "通信路を含む共同学習への置き換え" in body
+    assert "採用技術" in body and "二値の潜在符号の直接伝送" in body and "部分判定" in body
+
+
+@pytest.mark.parametrize("scheme", ["light", "dark"])
+def test_pattern_table_theme_contrast(page, base_url, scheme):
+    """ライト・ダークでセルの文字と背景の対比が 4.5 以上である．"""
+    pg, errors = page
+    pg.emulate_media(color_scheme=scheme)
+    open_map(pg, base_url)
+    pg.click("#btn-patterns")
+    ratios = pg.eval_on_selector_all(".pt-cell button", r"""els => {
+      const lum = (c) => { const v = c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((x) => x / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
+        return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]; };
+      const surface = getComputedStyle(document.querySelector('#pattern-view')).backgroundColor;
+      return els.filter((e) => +e.dataset.count > 0).map((e) => {
+        const cs = getComputedStyle(e); const bg = cs.backgroundColor.startsWith('rgba(0, 0, 0, 0)') ? surface : cs.backgroundColor;
+        const count = getComputedStyle(e.querySelector('.pt-count')).color;
+        const [a, b] = [lum(count), lum(bg)].sort((x, y) => y - x); return (a + 0.05) / (b + 0.05); });
+    }""")
+    assert ratios and min(ratios) >= 4.5
+    assert errors == []
+
+
+def test_pattern_table_mobile(page, base_url):
+    """スマートフォンの幅で表を横スクロールでき，セルを選択できる．"""
+    pg, errors = page
+    pg.set_viewport_size({"width": 390, "height": 844})
+    open_map(pg, base_url)
+    pg.click("#btn-patterns")
+    box = pg.eval_on_selector(".pt-scroll", "e => [e.scrollWidth, e.clientWidth]")
+    assert box[0] > box[1]
+    pg.locator("button[data-pattern=code_construction][data-domain=channel_coding]").scroll_into_view_if_needed()
+    pg.click("button[data-pattern=code_construction][data-domain=channel_coding]")
+    assert "該当 4 件" in pg.inner_text("#pattern-detail")
+    assert errors == []

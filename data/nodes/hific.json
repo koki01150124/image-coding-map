@@ -59,6 +59,46 @@
     "2倍以上のビットレートを用いる従来手法よりも被験者に好まれた（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "perceptual_generative",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: GAN と学習型圧縮を組み合わせ，正規化層・生成器・識別器・学習戦略・知覚損失を体系的に検討した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みに敵対的損失と知覚損失を加えた学習"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ハイパープライアを持つ学習型圧縮の潜在表現（GAN で復号）"
+          }
+        },
+        {
+          "id": "adversarial_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みに敵対的損失と知覚損失を加えた学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "minnen_joint",

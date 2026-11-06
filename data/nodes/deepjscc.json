@@ -59,6 +59,39 @@
     "崖効果が無く，SNR の変化に対して緩やかに劣化する（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "joint_channel_learning",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 符号化器・復号器を2つの CNN とし，学習不可能な通信路層を挟んだ自己符号化器として共同学習した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 符号化器・復号器を2つの CNN とし，学習不可能な通信路層を挟んだ自己符号化器として共同学習した"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 通信路層（AWGN・フェージング）を含めたエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "jpeg",

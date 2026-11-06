@@ -46,6 +46,7 @@ D3.js で描画し，GitHub Pages で公開する．
 | 比較 | 詳細パネルの「比較に追加」で最大3件を選び，「比較」で項目ごとの比較表を表示する |
 | 経路 | 比較画面に2件ずつの経路を表示し，「マップ上で表示」で強調する．「技術的系譜」（初期状態）と「関連経路」を切り替えられる（下表） |
 | 一覧表 | 表示中の論文を表形式で表示する |
+| パターン表 | 「パターン表」で，行＝改良パターン（または採用技術），列＝研究分野の対応表を表示する（下記） |
 | 書き出し | 「書き出し」からマップ全体を SVG／PNG で保存する |
 | 配色 | 「配色」で 自動 → ライト → ダーク を切り替える |
 | 直接リンク | `#necst` のように ID を付けた URL で，その論文を選択した状態で開く．`#compare=necst,blindsc,deepjscc` で比較画面を開く |
@@ -58,6 +59,21 @@ D3.js で描画し，GitHub Pages で公開する．
 | 関連経路 | 4種類すべて（向きは無視） | 最短のつながりを示し，各段の関係の種類を明示する．比較対象・共通研究課題の段は「派生関係ではない」と表示する | 紫（関係ごとの線種を保持） |
 
 例えば BlindSC と DeepJSCC（Bourtsoulatze）の間には技術的系譜が無く，関連経路では「DeepJSCC → DeepJSCC-Q（改良・発展）」と「BlindSC が DeepJSCC-Q を比較対象とした」の2段として示される．
+
+## パターン表
+
+「パターン表」は，論文・手法に付与した**改良パターン**（先行方式に対して何を改良したか）と**採用技術**（方式を構成する技術要素）を，研究分野ごとに集計する表である．分類の設計は `docs/pattern_taxonomy.md`，定義は `data/patterns.json` にある．
+
+- 「改良パターン表」と「採用技術表」を切り替えられる．行の名前にマウスを重ねると定義と判断基準を表示する．
+- セルの数は該当する論文・手法の数であり，件数に応じて色が濃くなる．行・列の「合計」は重複を除いた件数である．
+- 複数分野に属する論文は各分野に計上する（重複集計）．
+- セルの「0」は確認済みのデータに該当例が無いことを示し，その研究が存在しないことを意味しない．「未判定 n」は根拠が不足して判定していないノードの数であり，非該当とは区別する．
+- 初期状態では論文（`kind: paper`）のみを集計する．「集計対象」で標準規格・ソフトウェア，構成例，未公開研究を加えられる．
+- マップの表示期間・年スライダー・分野の絞り込みを反映する（非表示の分野は列から除く）．
+- セル（または行の名前）を選ぶと該当する論文の一覧と根拠を表示し，「研究マップ上で強調」で該当する論文をマップ上で強調する．
+- 詳細パネルにも，その論文の改良パターン・採用技術と根拠，判定の状態を表示する．
+
+ノードとパターンの組は「該当」「非該当」「未判定」の3値で判定する．該当は根拠つきで付与したもの，非該当は判定済み（`assessed`）の軸で付与していないもの・対象外（`not_applicable`）の軸・定義の非該当の条件（例: 学習を行わない方式に学習型の技術は該当しない）に一致するもの，それ以外は未判定である．
 
 ## 年の扱い
 
@@ -83,6 +99,7 @@ D3.js で描画し，GitHub Pages で公開する．
 │   ├── edge_types.json         # エッジ種別（向き，系譜かどうか）
 │   ├── vocab.json              # 種別・通信路モデル・根拠・年の基準などの表示名
 │   ├── classification_rules.json # 分類の規則（検証で用いる）
+│   ├── patterns.json           # 改良パターン・採用技術の定義（パターン表）
 │   └── schema/node.schema.json # ノードの JSON スキーマ
 ├── survey/
 │   ├── library.json            # API から取得した書誌情報（surveykit.py のみが編集する）
@@ -91,6 +108,7 @@ D3.js で描画し，GitHub Pages で公開する．
 │   ├── index.html
 │   ├── assets/app.js           # 描画・操作
 │   ├── assets/layout.js        # 配置の計算
+│   ├── assets/patterns.js      # パターンの判定と集計（tools/patterns.py と同じ規則）
 │   ├── assets/style.css        # 配色（ライト／ダーク）とレイアウト
 │   ├── vendor/                 # D3.js v7.9.0 とそのライセンス
 │   └── data/graph.json         # 生成物（Git 管理外，CI で生成）
@@ -98,6 +116,7 @@ D3.js で描画し，GitHub Pages で公開する．
 │   ├── common.py               # 読み込みの共通処理
 │   ├── sync_bibliography.py    # library.json の書誌情報をノードへ転記・照合
 │   ├── validate_data.py        # データ検証
+│   ├── patterns.py             # パターンの判定と集計
 │   └── build_graph.py          # data/ → site/data/graph.json
 ├── tests/
 │   ├── test_validate_data.py   # 検証・生成のテスト
@@ -127,6 +146,7 @@ D3.js で描画し，GitHub Pages で公開する．
 | `contributions`，`training`，`metrics`，`strengths`，`limitations` | 主要な技術的貢献，学習方法，評価指標，長所，制約・弱点 |
 | `relations` | 関係 `{target, type, note, evidence: {kind, detail}}` の配列．`kind` は `abstract`，`full_text`，`official_page`，`source_code`，`project_doc` |
 | `verification` | 確認した範囲（`read_level`）と注記 |
+| `patterns` | `improvements`（改良パターン）と `techniques`（採用技術）．それぞれ判定の状態 `assessment`（`assessed`／`partial`／`not_applicable`／`unassessed`），理由 `note`，項目 `items`（`{id, evidence: {kind, detail}, from?}`）．`from` は改良元のノード（系譜の関係にあるもの） |
 
 エッジ種別の意味と向きは以下の通りである．関係は新しい側（関係を登録するノード）から参照先へ書く．
 
@@ -188,6 +208,7 @@ python3 -m http.server 8000 -d site
 - 年代軸の年と `year_basis`・初出・正式掲載・arXiv ID の整合，構成例の年
 - 同じ論文の重複（`bib_key`，arXiv ID，DOI，タイトル）
 - 分類の規則（`data/classification_rules.json`）
+- パターン定義（`data/patterns.json`）の重複 ID・書式と，ノードの参照（未定義・重複の ID，対象外の軸の項目，改良元，非該当の条件との矛盾）
 
 `tests/test_site.py` は，GitHub Pages と同じサブパス（`/image-coding-map/`）でサイトを配信し，全ノード・エッジの描画（初期表示は系譜のエッジのみ），URL による選択，初出年と正式掲載年の表示，未公開研究の年の表示，検索，分野・エッジ・期間・年の絞り込み，比較，技術的系譜と関連経路（全ての論文の組で，技術的系譜に比較対象・共通研究課題が含まれないこと），ノードとラベルの重なりと文字の対比（ライト・ダーク），配色の切り替え，SVG／PNG の書き出し，ホイールによる拡大を確認する．
 

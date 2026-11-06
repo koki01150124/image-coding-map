@@ -59,6 +59,46 @@
     "SNR ごとに複数のネットワークを学習・保存する必要がない（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "channel_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: チャネル方向のソフト注意で SNR に応じて特徴をスケールし，1つのモデルで異なる SNR に対応する ADJSCC を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: SNR を入力とする注意モジュールを含めたエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "attention_transformer",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: チャネル方向のソフト注意で SNR に応じて特徴をスケールし，1つのモデルで異なる SNR に対応する ADJSCC を提案した"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: SNR を入力とする注意モジュールを含めたエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "deepjscc_f",

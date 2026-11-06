@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "axes": [
+    {
+      "id": "improvements",
+      "label": "改良パターン",
+      "description": "先行方式に対して何を改良したか．ノードの検証済みの主要な貢献と，確認済みの改良関係（derived_from）から判断する．方式を構成する部品（採用技術）とは区別する．",
+      "patterns": [
+        {
+          "id": "learned_transform_coding",
+          "label": "変換符号化の学習化",
+          "order": 1,
+          "definition": "手設計の変換・量子化・符号化の連結を，学習した非線形変換と量子化の近似によるレート・歪みの一括最適化に置き換える．",
+          "criteria": "主要な貢献として，変換符号化の全体を学習可能にする方法（量子化の非微分性の扱いを含む）を提案している．既存の学習型コーデックの部分的な改良は含めない．"
+        },
+        {
+          "id": "entropy_model",
+          "label": "エントロピーモデルの高精度化",
+          "order": 2,
+          "definition": "潜在表現の確率モデル（事前分布・コンテキスト・サイド情報）をより正確にし，符号長を減らす．",
+          "criteria": "主要な貢献が，ハイパープライア，自己回帰・チャネル方向のコンテキスト，混合分布など，確率モデルの構造の変更である．JSCC へのエントロピーモデルの導入も含む．"
+        },
+        {
+          "id": "transform_architecture",
+          "label": "変換・骨格の構造の改良",
+          "order": 3,
+          "definition": "解析・合成変換（符号化器・復号器）のネットワーク構造を改良する．",
+          "criteria": "主要な貢献として，注意機構，Transformer，混合ブロックなど，変換の骨格の構造の変更を挙げている．"
+        },
+        {
+          "id": "complexity_reduction",
+          "label": "計算量・逐次処理の削減",
+          "order": 4,
+          "definition": "符号化・復号の計算量，逐次処理，反復回数を減らし，速度を改善する．",
+          "criteria": "並列化，ステップ数の削減，効率的な構造などにより，計算量・速度の改善を主要な貢献または主要な結果として示している．"
+        },
+        {
+          "id": "perceptual_generative",
+          "label": "生成モデルによる知覚品質の向上",
+          "order": 5,
+          "definition": "GAN・拡散モデルなどの生成モデルを復号に用い，歪みの指標ではなく知覚的な品質を改善する．",
+          "criteria": "生成モデルを復号器または符号化の手段として用い，知覚品質（知覚指標・被験者評価）の改善を主張している．"
+        },
+        {
+          "id": "rate_adaptation",
+          "label": "レートの可変化・配分",
+          "order": 6,
+          "definition": "1つのモデルで複数のレートに対応する，または内容・通信路に応じてレート（情報源・通信路の符号化率）を配分する．",
+          "criteria": "可変レート，適応レート伝送，目標品質・目標レートの指定，情報源と通信路のレートの配分を主要な貢献として示している．"
+        },
+        {
+          "id": "progressive_feedback",
+          "label": "漸進的伝送・フィードバックの利用",
+          "order": 7,
+          "definition": "送る量に応じて再構成が改善する漸進的・階層的な伝送，または受信側からのフィードバックを利用する．",
+          "criteria": "漸進的な符号，逐次改良・多重記述，スケーラビリティ，通信路出力のフィードバックの利用を主要な貢献として示している．"
+        },
+        {
+          "id": "joint_channel_learning",
+          "label": "通信路を含む共同学習への置き換え",
+          "order": 8,
+          "definition": "情報源符号化と通信路符号化の分離設計（または通信路を考慮しない学習）を，通信路を含めた符号化器・復号器の共同学習に置き換える．",
+          "criteria": "通信路（雑音・ビット反転）を学習に含めて送受信を一括して学習する枠組みを主要な貢献として提案している．既存の DeepJSCC の部分的な改良は含めない．"
+        },
+        {
+          "id": "channel_adaptation",
+          "label": "通信路条件への適応",
+          "order": 9,
+          "definition": "SNR・通信路の種類・変調などの通信路条件の変化に，単一のモデルや通信戦略で適応する．",
+          "criteria": "異なる SNR・通信路・変調への適応，または通信路条件に合わせた変調・電力・レートの選択を主要な貢献として示している．"
+        },
+        {
+          "id": "digital_constraint",
+          "label": "離散的な通信路入力への対応",
+          "order": 10,
+          "definition": "連続値の通信路シンボルを用いるアナログ型の JSCC を，有限の信号点・ビット列など既存のデジタル通信と互換な入力に置き換える．",
+          "criteria": "アナログ型の写像がデジタル通信と互換でない点を課題とし，有限の入力アルファベットやデジタルの符号化を用いる方式を主要な貢献として提案している．"
+        },
+        {
+          "id": "error_robustness",
+          "label": "誤りへの頑健性の強化",
+          "order": 11,
+          "definition": "ビット誤り・通信路誤りに対する再構成品質の劣化を抑える．",
+          "criteria": "ビット反転・通信路誤りに対する頑健性・誤り耐性の改善を主要な貢献として示している．"
+        },
+        {
+          "id": "code_construction",
+          "label": "通信路符号の構成・復号の改良",
+          "order": 12,
+          "definition": "誤り訂正符号の新しい構成，または復号法・性能解析の改良により，通信路容量に近い性能を得る．",
+          "criteria": "新しい符号の族，符号の構成法，復号アルゴリズム，その性能の解析を主要な貢献としている．"
+        },
+        {
+          "id": "coding_tool_extension",
+          "label": "手設計の符号化ツールの拡張",
+          "order": 13,
+          "definition": "標準規格の改訂などにより，手設計の予測・変換・符号化ツールを追加・拡張して符号化効率を高める．",
+          "criteria": "先行規格に対する符号化ツールの拡張と，同じ品質でのビットレート削減を示している．"
+        }
+      ]
+    },
+    {
+      "id": "techniques",
+      "label": "採用技術",
+      "description": "方式を構成する技術要素．その論文が新しく提案したかどうかを問わず，方式の構成に含まれるかで判断する．",
+      "patterns": [
+        {
+          "id": "handcrafted_transform",
+          "label": "手設計の変換・予測",
+          "order": 1,
+          "definition": "DCT・ウェーブレット・ブロック予測など，学習を用いない変換・予測．",
+          "criteria": "情報源表現が手設計の変換係数・予測残差である．"
+        },
+        {
+          "id": "learned_autoencoder",
+          "label": "学習型の符号化器・復号器",
+          "order": 2,
+          "definition": "解析・合成変換（符号化器・復号器）をニューラルネットワークで構成し，データから学習する．",
+          "criteria": "符号化器・復号器の両方を学習している（事前学習済みの生成モデルのみを用いるゼロショット方式は含めない）．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "attention_transformer",
+          "label": "注意機構・Transformer",
+          "order": 3,
+          "definition": "注意機構または Transformer を変換・エントロピーモデルに用いる．",
+          "criteria": "主要な貢献・構成の説明に注意機構・Transformer の利用が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "quantization_proxy",
+          "label": "量子化・二値化の微分可能な近似",
+          "order": 4,
+          "definition": "量子化・二値化・信号点への写像を，学習時に雑音の付加や STE などの微分可能な近似で扱う．",
+          "criteria": "学習方法の説明に量子化の連続近似・勾配の近似・STE が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "hyperprior",
+          "label": "ハイパープライア（サイド情報）",
+          "order": 5,
+          "definition": "潜在表現の確率モデルのパラメータを，別に符号化したハイパー潜在（サイド情報）から推定する．",
+          "criteria": "情報源表現・構成の説明にハイパープライア・サイド情報が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "context_model",
+          "label": "コンテキストモデル（自己回帰・チャネル方向）",
+          "order": 6,
+          "definition": "復号済みの潜在の要素（空間・チャネル方向）を条件として確率モデルを推定する．",
+          "criteria": "情報源表現・構成の説明に自己回帰・空間・チャネル方向のコンテキストが明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "variational_model",
+          "label": "変分自己符号化器（VAE）",
+          "order": 7,
+          "definition": "符号化・復号を変分自己符号化器（確率的な潜在変数モデル）として定式化する．",
+          "criteria": "構成・学習方法の説明に VAE・変分推論が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "adversarial_training",
+          "label": "敵対的学習",
+          "order": 8,
+          "definition": "識別器・敵対的な摂動などを用いた敵対的な学習を行う．",
+          "criteria": "学習方法の説明に GAN・敵対的な正則化が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "diffusion_model",
+          "label": "拡散モデル",
+          "order": 9,
+          "definition": "雑音除去の拡散過程による生成モデルを用いる．",
+          "criteria": "構成の説明に拡散モデル（雑音除去の逆過程）の利用が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "pretrained_zero_shot",
+          "label": "事前学習済みモデルのゼロショット利用",
+          "order": 10,
+          "definition": "圧縮のための追加学習を行わず，事前学習済みの生成モデルをそのまま符号化・復号に用いる．",
+          "criteria": "学習方法が「事前学習済みモデルを用いる（追加学習なし）」と確認されている．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "codebook",
+          "label": "符号帳・ベクトル量子化",
+          "order": 11,
+          "definition": "固定または学習した符号帳のベクトルのインデックスで表現を伝送する．",
+          "criteria": "情報源表現が符号帳のインデックス・ベクトル量子化である．"
+        },
+        {
+          "id": "binary_latent",
+          "label": "二値の潜在符号の直接伝送",
+          "order": 12,
+          "definition": "学習した符号化器が出力する二値（ビット）の潜在符号を，エントロピー符号化を介さずに伝送・保存する．",
+          "criteria": "情報源表現が二値の潜在符号・ビット列であり，それ自体を通信路に送る構成である．",
+          "not_applicable_if": [
+            {
+              "field": "training",
+              "prefix": "学習なし"
+            }
+          ]
+        },
+        {
+          "id": "channel_in_training",
+          "label": "通信路のモデルを含む学習",
+          "order": 13,
+          "definition": "AWGN・フェージング・BSC などの通信路のモデルを学習の順伝播に含める．",
+          "criteria": "joint_channel_training が true と確認されている．",
+          "not_applicable_if": [
+            {
+              "field": "joint_channel_training",
+              "equals": false
+            }
+          ]
+        },
+        {
+          "id": "digital_modulation",
+          "label": "デジタル変調・信号点",
+          "order": 14,
+          "definition": "QAM・BPSK などの有限の信号点への写像（変調）を方式の構成に含める．",
+          "criteria": "構成の説明に有限の信号点・変調方式の選択が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "transmission",
+              "in": [
+                "analog",
+                "not_applicable"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "error_correcting_code",
+          "label": "誤り訂正符号",
+          "order": 15,
+          "definition": "LDPC・Polar・ターボ符号などの誤り訂正符号を方式の構成に含める．",
+          "criteria": "構成の説明に誤り訂正符号（通信路符号）の利用が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "transmission",
+              "in": [
+                "analog",
+                "not_applicable"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "probabilistic_decoding",
+          "label": "確率的・逐次的な通信路復号",
+          "order": 16,
+          "definition": "確率伝播（sum-product），反復復号，逐次除去復号など，通信路符号の復号アルゴリズム．",
+          "criteria": "主要な貢献・構成に通信路符号の復号法が明示されている．",
+          "not_applicable_if": [
+            {
+              "field": "transmission",
+              "in": [
+                "analog",
+                "not_applicable"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "assessed": "判定済み: 確認した主要な貢献・構成の範囲で全パターンを判定した．挙げていないパターンは非該当",
+    "partial": "部分判定: 挙げたパターンは確認済み．挙げていないパターンは，非該当の条件に一致するものを除き未判定",
+    "not_applicable": "対象外: この軸のパターンを適用しない（理論・構成例・生成モデルの基礎研究など）．全て非該当として扱う",
+    "unassessed": "未判定: 根拠が不足しており判定していない"
+  },
+  "condition_syntax": "not_applicable_if は条件の配列であり，いずれかの条件に一致するノードはそのパターンが非該当となる．条件は field（ノードのキー）と，prefix（文字列の前方一致），equals（一致），in（いずれかに一致）のいずれか1つからなる．"
+}

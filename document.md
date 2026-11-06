@@ -11,6 +11,9 @@
 | `data/domains.json` | 研究分野の定義（ラベル，説明，ライト／ダークの色，列の順） |
 | `data/edge_types.json` | エッジ種別の定義（向き，系譜かどうか） |
 | `data/vocab.json` | 種別・通信路モデル・根拠・確認範囲・年の基準の表示名 |
+| `data/patterns.json` | 改良パターン（13種）・採用技術（16種）の定義（ID，表示名，定義，判断基準，非該当の条件） |
+| `docs/pattern_taxonomy.md` | パターンの分類体系の設計（検討した案，採用案，判断基準，点検） |
+| `tools/patterns.py`，`site/assets/patterns.js` | パターンの判定（該当／非該当／未判定）と集計．同じ規則を Python と JavaScript で実装し，テストで照合する |
 | `data/classification_rules.json` | 分類の規則（DeepJSCC の条件，アナログ／デジタル，構成例，年の基準）．`validate_data.py` が用いる |
 | `data/schema/node.schema.json` | ノードの JSON スキーマ（Draft 2020-12） |
 | `survey/library.json` | OpenAlex・arXiv・Crossref から取得した書誌情報（44件．採録39件，除外5件）．`surveykit.py` のみが編集する |
@@ -104,7 +107,7 @@ uv pip install -p .venv_tools -r requirements_tools.txt
 .venv_tools/bin/python tools/sync_bibliography.py          # 書誌情報の転記（--check で照合のみ）
 .venv_tools/bin/python tools/validate_data.py              # データ検証
 .venv_tools/bin/python tools/build_graph.py                # site/data/graph.json の生成
-.venv_tools/bin/python -m pytest -q tests                  # テスト（43件）
+.venv_tools/bin/python -m pytest -q tests                  # テスト（63件）
 python3 -m http.server 8000 -d site                        # http://localhost:8000/ で確認
 ```
 

@@ -57,6 +57,46 @@
     "JPEG 2000 と同等で，RNN に基づく手法を上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "learned_transform_coding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 量子化による非微分性を損失の最小限の変更で扱い，深い自己符号化器を非可逆圧縮向けに最適化する方法を提案した"
+          }
+        },
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: サブピクセル構造により高解像度画像にも適用できる計算効率を実現した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 量子化による非微分性を損失の最小限の変更で扱い，深い自己符号化器を非可逆圧縮向けに最適化する方法を提案した"
+          }
+        },
+        {
+          "id": "quantization_proxy",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みの目的関数による学習（量子化の勾配を近似）"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "toderici_rnn",

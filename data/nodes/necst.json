@@ -61,6 +61,60 @@
     "反復の確率伝播復号より約1桁高速な復号（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "joint_channel_learning",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 学習時に潜在符号へ雑音を加えて通信路を模擬し，圧縮と誤り訂正を同時に学習した"
+          }
+        },
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "strengths[1]: 反復の確率伝播復号より約1桁高速な復号（要旨）"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 離散的な変分自己符号化器で符号化・復号を共同学習する NECST を提案した"
+          }
+        },
+        {
+          "id": "variational_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 離散的な変分自己符号化器で符号化・復号を共同学習する NECST を提案した"
+          }
+        },
+        {
+          "id": "binary_latent",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 離散 VAE の二値の潜在符号"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 通信路雑音（BSC・BEC）を加えた離散 VAE の学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "sscc_lic_ldpc",

@@ -50,6 +50,60 @@
   "limitations": [
     "論文として未公開であり，第三者による評価は無い"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "joint_channel_learning",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 二値の潜在表現を BSC に通し，クリーンな復元とビット反転後の復元の両方に対する損失で符号化器・復号器を共同学習する"
+          }
+        },
+        {
+          "id": "error_robustness",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 二値の潜在表現を BSC に通し，クリーンな復元とビット反転後の復元の両方に対する損失で符号化器・復号器を共同学習する"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 二値の潜在表現を BSC に通し，クリーンな復元とビット反転後の復元の両方に対する損失で符号化器・復号器を共同学習する"
+          }
+        },
+        {
+          "id": "quantization_proxy",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: Sigmoid と STE で二値化した潜在ビット列（H/8×W/8×C）"
+          }
+        },
+        {
+          "id": "binary_latent",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: Sigmoid と STE で二値化した潜在ビット列（H/8×W/8×C）"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: BSC（ビット反転）を含めた共同学習．クリーンとビット反転後の MSE の合成損失"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "robust_turbo_ddcm",

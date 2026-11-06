@@ -53,6 +53,39 @@
     "関心領域符号化・スケーラビリティ・誤り耐性を備える（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "progressive_feedback",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 関心領域符号化，スケーラビリティ，誤り耐性などの機能を紹介した"
+          }
+        },
+        {
+          "id": "error_robustness",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 関心領域符号化，スケーラビリティ，誤り耐性などの機能を紹介した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "handcrafted_transform",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 離散ウェーブレット変換係数"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "jpeg",

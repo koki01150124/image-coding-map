@@ -3,6 +3,7 @@
 // data/graph.json のみを読み込み，論文の内容・分野・エッジ種別は全てデータから決まる．
 // 論文を追加する場合に本ファイルを変更する必要は無い．
 import { computeLayout, regionPath, edgePath, LAYOUT } from "./layout.js";
+import { patternStatus, countTable, heatLevel } from "./patterns.js";
 
 const d3 = window.d3;
 const MAX_COMPARE = 3;
@@ -22,6 +23,10 @@ const state = {
   compare: [],
   path: null,
   matches: null,
+  matchLabel: null,
+  patternAxis: "improvements",
+  patternKinds: new Set(["paper"]),
+  patternCell: null,
   themeMode: "auto",
   zoom: null,
   playTimer: null,
@@ -34,6 +39,7 @@ const els = {
   domainLegend: $("domain-legend"), edgeLegend: $("edge-legend"), year: $("year-slider"), yearOut: $("year-out"),
   play: $("btn-play"), focusNote: $("focus-note"), list: $("list-view"), compare: $("compare-view"),
   btnList: $("btn-list"), btnCompare: $("btn-compare"), btnTheme: $("btn-theme"),
+  patterns: $("pattern-view"), btnPatterns: $("btn-patterns"),
 };
 
 // ---------------------------------------------------------------- 汎用
@@ -296,6 +302,7 @@ function renderAll() {
   renderEdges();
   renderNodes();
   applyFocus();
+  if (els.patterns && !els.patterns.hidden) renderPatterns();
 }
 
 // ---------------------------------------------------------------- 強調・選択
@@ -351,7 +358,7 @@ function updateFocusNote() {
   let text = null;
   if (state.path) text = state.path.label;
   else if (state.selected) text = `選択中: ${state.byId.get(state.selected).short_name}（直接の関係のみ強調）`;
-  else if (state.matches) text = `検索: ${state.matches.size} 件を強調`;
+  else if (state.matches) text = state.matchLabel ?? `検索: ${state.matches.size} 件を強調`;
   note.hidden = !text;
   if (!text) return;
   note.append(text, el("button", { type: "button", onclick: clearFocus }, "解除"));
@@ -361,6 +368,7 @@ function updateFocusNote() {
 function clearFocus() {
   state.path = null;
   state.matches = null;
+  state.matchLabel = null;
   els.search.value = "";
   els.searchCount.textContent = "";
   select(null);
@@ -562,6 +570,7 @@ function renderPanel() {
     el("h3", {}, "長所"), bulletList(n.strengths),
     el("h3", {}, "制約・弱点"), bulletList(n.limitations),
     ...relationSections(n),
+    ...patternSections(n),
     el("h3", {}, "確認した範囲"),
     el("p", { class: "note" }, `${vocabLabel("read_level", n.verification.read_level)}．${n.verification.notes}`),
     el("p", { class: "note" }, `書誌情報の出典: ${b.source}`),
@@ -716,6 +725,7 @@ function setupSearch() {
     if (exact) { state.matches = null; els.searchCount.textContent = ""; select(exact.id, { zoomTo: true }); return; }
     const terms = q.split(/\s+/);
     state.matches = new Set(state.graph.nodes.filter((n) => terms.every((t) => searchText(n).includes(t))).map((n) => n.id));
+    state.matchLabel = null;
     els.searchCount.textContent = `${state.matches.size} 件`;
     state.selected = null;
     state.path = null;
@@ -963,10 +973,175 @@ function renderList() {
 function setView(view) {
   els.list.hidden = view !== "list";
   els.compare.hidden = view !== "compare";
+  els.patterns.hidden = view !== "patterns";
   els.btnList.setAttribute("aria-pressed", String(view === "list"));
   els.btnCompare.setAttribute("aria-pressed", String(view === "compare"));
+  els.btnPatterns.setAttribute("aria-pressed", String(view === "patterns"));
   if (view === "list") renderList();
   if (view === "compare") renderCompare();
+  if (view === "patterns") renderPatterns();
+}
+
+// ---------------------------------------------------------------- パターン表
+
+/** パターン表で選べる種別の区分．@type {Array<[string, string[]]>} */
+const PATTERN_KIND_GROUPS = [["論文", ["paper"]], ["標準規格・ソフトウェア", ["standard", "software"]], ["構成例", ["scheme"]], ["未公開研究", ["unpublished"]]];
+
+/** パターン表の軸の定義．@param {string} id @returns {object} */
+const patternAxis = (id) => state.graph.patterns.axes.find((a) => a.id === id);
+
+/**
+ * パターン表の集計対象（マップの年・期間・分野の絞り込みと，種別の選択を反映）．
+ * @returns {{nodes: object[], domains: object[]}}
+ */
+function patternScope() {
+  return {
+    nodes: state.graph.nodes.filter((n) => isNodeVisible(n) && state.patternKinds.has(n.kind)),
+    domains: state.graph.domains.filter((d) => !state.hiddenDomains.has(d.id)),
+  };
+}
+
+/** 現在の絞り込みの説明．@returns {string} */
+function filterSummary() {
+  const parts = [];
+  if (Number.isFinite(state.yearMin)) parts.push(`${state.yearMin}年以降`);
+  if (state.yearMax !== Infinity) parts.push(`${state.yearMax}年まで`);
+  if (state.hiddenDomains.size) parts.push(`非表示の分野 ${state.hiddenDomains.size} 件`);
+  return parts.length ? `マップの絞り込みを反映: ${parts.join("，")}` : "マップの絞り込み: なし（全期間・全分野）";
+}
+
+/**
+ * パターン表を描く．
+ * @returns {void}
+ */
+function renderPatterns() {
+  const axis = patternAxis(state.patternAxis);
+  const { nodes, domains } = patternScope();
+  const table = countTable(nodes, axis, domains.map((d) => d.id));
+  const axisButtons = el("div", { class: "path-mode", role: "radiogroup", "aria-label": "表の種類" },
+    ...state.graph.patterns.axes.map((a) => el("button", { type: "button", "data-axis": a.id, "aria-pressed": String(a.id === axis.id), title: a.description,
+      onclick: () => { state.patternAxis = a.id; state.patternCell = null; renderPatterns(); } }, a.id === "improvements" ? "改良パターン表" : "採用技術表")));
+  const kindBoxes = el("div", { class: "kind-filter" }, el("span", { class: "legend-title" }, "集計対象"),
+    ...PATTERN_KIND_GROUPS.map(([label, kinds]) => {
+      const box = el("input", { type: "checkbox", "data-kinds": kinds.join(","), checked: kinds.every((k) => state.patternKinds.has(k)) });
+      box.addEventListener("change", () => { for (const k of kinds) { if (box.checked) state.patternKinds.add(k); else state.patternKinds.delete(k); } state.patternCell = null; renderPatterns(); });
+      return el("label", {}, box, ` ${label}（${state.graph.nodes.filter((n) => kinds.includes(n.kind)).length}）`);
+    }));
+  const notes = el("ul", { class: "note pattern-notes" },
+    el("li", {}, axis.description),
+    el("li", {}, "複数分野に属する論文は各分野に計上する（重複集計）．行・列の合計は重複を除いた件数である．"),
+    el("li", {}, "セルの数は確認済みのデータに基づく該当件数である．0 は確認済みのデータに該当例が無いことを示し，その研究が存在しないことを意味しない．"),
+    el("li", {}, "「未判定 n」は，根拠が不足して判定できないノードの数である（非該当とは区別する）．"),
+    el("li", {}, filterSummary()));
+  const head = el("tr", {}, el("th", { scope: "col", class: "pt-rowhead" }, axis.label),
+    ...domains.map((d) => el("th", { scope: "col" }, el("span", { class: "swatch", style: `background:${domainColor(d.id)}` }), ` ${d.short}`)),
+    el("th", { scope: "col" }, "合計"));
+  const rows = [...axis.patterns].sort((x, y) => x.order - y.order).map((p) => el("tr", {},
+    el("th", { scope: "row", class: "pt-rowhead" }, el("button", { type: "button", class: "pt-label", title: `${p.definition}\n判断基準: ${p.criteria}`,
+      onclick: () => selectPatternCell(p.id, null) }, p.label)),
+    ...domains.map((d) => patternCell(table, p, d)),
+    el("td", { class: "pt-total" }, String(table.rowTotal.get(p.id) ?? 0))));
+  const foot = el("tr", { class: "pt-foot" }, el("th", { scope: "row", class: "pt-rowhead" }, "合計（重複を除く）"),
+    ...domains.map((d) => el("td", { class: "pt-total" }, String(table.colTotal.get(d.id) ?? 0))),
+    el("td", { class: "pt-total" }, String(table.total)));
+  els.patterns.replaceChildren(
+    el("div", { class: "compare-head" }, el("strong", {}, "パターン表"), axisButtons),
+    kindBoxes, notes,
+    el("div", { class: "pt-scroll" }, el("table", { class: "pattern-table", "data-axis": axis.id }, el("thead", {}, head), el("tbody", {}, rows, foot))),
+    el("div", { id: "pattern-detail" }));
+  if (state.patternCell) renderPatternDetail();
+}
+
+/**
+ * パターン表の1セルを作る．
+ * @param {object} table - countTable の結果．
+ * @param {object} p - パターン定義．
+ * @param {object} d - 分野．
+ * @returns {HTMLElement}
+ */
+function patternCell(table, p, d) {
+  const c = table.cells.get(`${p.id}|${d.id}`) ?? { yes: [], unknown: [] };
+  const n = c.yes.length, u = c.unknown.length;
+  const selected = state.patternCell && state.patternCell.pattern === p.id && state.patternCell.domain === d.id;
+  return el("td", { class: `pt-cell heat-${heatLevel(n)}${selected ? " pt-selected" : ""}` },
+    el("button", { type: "button", "data-pattern": p.id, "data-domain": d.id, "data-count": String(n), "data-unknown": String(u),
+      "aria-label": `${p.label} × ${d.label}: 該当 ${n} 件，未判定 ${u} 件`, onclick: () => selectPatternCell(p.id, d.id) },
+      el("span", { class: "pt-count" }, String(n)), u ? el("span", { class: "pt-unknown" }, `未判定 ${u}`) : null));
+}
+
+/**
+ * セル（または行）を選択して該当論文の一覧を表示する．
+ * @param {string} pattern - パターン ID．
+ * @param {string|null} domain - 分野 ID（null は表示中の全分野）．
+ * @returns {void}
+ */
+function selectPatternCell(pattern, domain) {
+  state.patternCell = { pattern, domain };
+  renderPatterns();
+  $("pattern-detail")?.scrollIntoView({ block: "nearest" });
+}
+
+/**
+ * 選択したセルの該当・未判定の論文一覧を描く．
+ * @returns {void}
+ */
+function renderPatternDetail() {
+  const axis = patternAxis(state.patternAxis);
+  const p = axis.patterns.find((x) => x.id === state.patternCell.pattern);
+  const { nodes, domains } = patternScope();
+  const doms = state.patternCell.domain ? [state.patternCell.domain] : domains.map((d) => d.id);
+  const inScope = nodes.filter((n) => n.domains.some((d) => doms.includes(d)));
+  const yes = inScope.filter((n) => patternStatus(n, axis.id, p) === "yes");
+  const unknown = inScope.filter((n) => patternStatus(n, axis.id, p) === "unknown");
+  const where = state.patternCell.domain ? domainOf(state.patternCell.domain).label : "表示中の全分野";
+  const item = (n) => {
+    const it = n.patterns[axis.id].items.find((x) => x.id === p.id);
+    return el("li", {}, el("a", { onclick: () => { setView(null); select(n.id, { zoomTo: true }); } }, n.short_name), `（${yearLabel(n)}）`,
+      it ? el("span", { class: "ev" }, ` 根拠: ${it.evidence.detail}${it.from ? `（改良元: ${state.byId.get(it.from).short_name}）` : ""}`) : null);
+  };
+  $("pattern-detail").replaceChildren(el("div", { class: "path-box pattern-detail" },
+    el("strong", {}, `${p.label} × ${where}`), el("p", { class: "note" }, `定義: ${p.definition} 判断基準: ${p.criteria}`),
+    el("h3", {}, `該当 ${yes.length} 件`), yes.length ? el("ul", { class: "pt-list" }, yes.map(item)) : el("p", { class: "note" }, "確認済みのデータに該当例は無い（研究の不存在を意味しない）．"),
+    unknown.length ? el("details", {}, el("summary", {}, `未判定 ${unknown.length} 件`), el("ul", { class: "pt-list" }, unknown.map((n) => el("li", {}, n.short_name)))) : null,
+    yes.length ? el("button", { type: "button", id: "btn-pattern-highlight", onclick: () => highlightPattern(yes.map((n) => n.id), `パターン: ${p.label} × ${where}（${yes.length} 件）`) }, "研究マップ上で強調") : null));
+}
+
+/**
+ * パターン表で選んだ論文をマップ上で強調する．
+ * @param {string[]} ids - ノード ID．
+ * @param {string} label - 注記の文．
+ * @returns {void}
+ */
+function highlightPattern(ids, label) {
+  state.path = null;
+  state.selected = null;
+  state.matches = new Set(ids);
+  state.matchLabel = label;
+  renderPanel();
+  setView(null);
+  applyFocus();
+  zoomToNodes(ids, 1.3);
+}
+
+/**
+ * 詳細パネルの改良パターン・採用技術の欄を作る．
+ * @param {object} n - ノード．
+ * @returns {HTMLElement[]}
+ */
+function patternSections(n) {
+  const out = [];
+  for (const axis of state.graph.patterns.axes) {
+    const a = n.patterns?.[axis.id];
+    const status = state.graph.patterns.assessment[a?.assessment ?? "unassessed"];
+    const items = (a?.items ?? []).map((it) => {
+      const p = axis.patterns.find((x) => x.id === it.id);
+      return el("li", { class: "rel-item" }, el("span", { class: "tag" }, p?.label ?? it.id), " ",
+        el("span", { class: "ev" }, `${it.evidence.detail}${it.from ? `（改良元: ${state.byId.get(it.from)?.short_name ?? it.from}）` : ""}`));
+    });
+    out.push(el("h3", {}, axis.label), el("p", { class: "note" }, `${status}${a?.note ? `．${a.note}` : ""}`),
+      items.length ? el("ul", { class: "pattern-items" }, items) : el("p", { class: "note" }, "該当として挙げたパターンは無い．"));
+  }
+  return out;
 }
 
 // ---------------------------------------------------------------- 書き出し
@@ -1108,6 +1283,7 @@ async function main() {
   $("btn-fit").addEventListener("click", () => zoomToNodes([]));
   els.btnList.addEventListener("click", () => setView(els.list.hidden ? "list" : null));
   els.btnCompare.addEventListener("click", () => setView(els.compare.hidden ? "compare" : null));
+  els.btnPatterns.addEventListener("click", () => setView(els.patterns.hidden ? "patterns" : null));
   $("btn-svg").addEventListener("click", exportSvg);
   $("btn-png").addEventListener("click", exportPng);
   $("panel-close").addEventListener("click", () => select(null));

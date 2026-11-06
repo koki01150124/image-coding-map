@@ -40,6 +40,32 @@
   "metrics": null,
   "strengths": null,
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "not_applicable",
+      "note": "構成例であり，改良を主張しない",
+      "items": []
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 学習型圧縮（VAE 等）の量子化した潜在表現を LDPC 符号で保護"
+          }
+        },
+        {
+          "id": "error_correcting_code",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 学習型圧縮（VAE 等）の量子化した潜在表現を LDPC 符号で保護"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "gallager_ldpc",

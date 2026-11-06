@@ -56,6 +56,40 @@
     "性能がターボ符号と同程度にシャノン限界に近い（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "code_construction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 実用的な sum-product 復号で畳み込み符号・連接符号を大きく上回る性能を実験で示した"
+          },
+          "from": "gallager_ldpc"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "error_correcting_code",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: Gallager 符号と MN 符号が最適復号の下でシャノン限界まで到達する符号系列を持つことを示した"
+          }
+        },
+        {
+          "id": "probabilistic_decoding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 実用的な sum-product 復号で畳み込み符号・連接符号を大きく上回る性能を実験で示した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "gallager_ldpc",

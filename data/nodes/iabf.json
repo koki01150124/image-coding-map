@@ -57,6 +57,54 @@
   "metrics": null,
   "strengths": null,
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "error_robustness",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 符号語とデータの相互情報量の最大化と，敵対的なビット反転による復号器の正則化（IABF）で NECST の頑健性を改善した"
+          },
+          "from": "necst"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → necst）: NECST の頑健性を改善する正則化を提案した（根拠: 要旨: neural joint source-channel coding (NECST) (Choi et al. 2018) ... we propose a novel regularization method）"
+          }
+        },
+        {
+          "id": "binary_latent",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 二値の潜在符号"
+          }
+        },
+        {
+          "id": "adversarial_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 相互情報量の最大化と敵対的ビット反転の正則化を加えた学習"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 相互情報量の最大化と敵対的ビット反転の正則化を加えた学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "necst",

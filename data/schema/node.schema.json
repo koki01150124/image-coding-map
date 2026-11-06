@@ -25,7 +25,8 @@
     "strengths",
     "limitations",
     "relations",
-    "verification"
+    "verification",
+    "patterns"
   ],
   "properties": {
     "id": {
@@ -384,6 +385,149 @@
         },
         "notes": {
           "type": "string"
+        }
+      }
+    },
+    "patterns": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "improvements",
+        "techniques"
+      ],
+      "description": "改良パターンと採用技術（定義は data/patterns.json）．判定の状態は data/patterns.json の assessment を参照",
+      "properties": {
+        "improvements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "assessment",
+            "items"
+          ],
+          "properties": {
+            "assessment": {
+              "enum": [
+                "assessed",
+                "partial",
+                "not_applicable",
+                "unassessed"
+              ]
+            },
+            "note": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "evidence"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$"
+                  },
+                  "from": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind",
+                      "detail"
+                    ],
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "node_field",
+                          "relation",
+                          "abstract",
+                          "full_text",
+                          "official_page",
+                          "project_doc"
+                        ]
+                      },
+                      "detail": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "techniques": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "assessment",
+            "items"
+          ],
+          "properties": {
+            "assessment": {
+              "enum": [
+                "assessed",
+                "partial",
+                "not_applicable",
+                "unassessed"
+              ]
+            },
+            "note": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "evidence"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$"
+                  },
+                  "from": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind",
+                      "detail"
+                    ],
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "node_field",
+                          "relation",
+                          "abstract",
+                          "full_text",
+                          "official_page",
+                          "project_doc"
+                        ]
+                      },
+                      "detail": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

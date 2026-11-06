@@ -10,6 +10,7 @@
     7. 論文の書誌情報が survey/library.json と一致すること
     8. プレプリントと正式掲載版などの重複（arXiv ID，DOI，タイトル）
     9. 分類の規則（data/classification_rules.json）
+    10. 改良パターン・採用技術の定義（data/patterns.json）とノードの参照の整合
 
 使い方:
     python tools/validate_data.py   # エラーがあれば終了コード1
@@ -18,6 +19,7 @@ import sys
 from collections import defaultdict
 
 from common import DATA, load_library, load_node_files, load_vocab, read_json
+from patterns import condition_matches
 from sync_bibliography import diff_bibliography
 
 
@@ -299,6 +301,87 @@ def rule_errors(nodes, rules):
                 errors.append(msg)
     return errors, warnings
 
+PATTERN_KEYS = ("id", "label", "definition", "criteria", "order")
+CONDITION_OPS = ("prefix", "equals", "in")
+
+
+def pattern_definition_errors(defs):
+    """パターン定義の構造・重複 ID・条件の書式を検査する．
+
+    Args:
+        defs (dict): data/patterns.json の内容．
+    Returns:
+        list[str]: エラーのリスト．
+    """
+    errors = []
+    axis_ids = [a.get("id") for a in defs.get("axes", [])]
+    if sorted(axis_ids) != ["improvements", "techniques"]:
+        errors.append(f"patterns.json: 軸は improvements と techniques の2つとする（現在 {axis_ids}）")
+    for axis in defs.get("axes", []):
+        seen = set()
+        for p in axis.get("patterns", []):
+            missing = [k for k in PATTERN_KEYS if not p.get(k) and p.get(k) != 0]
+            if missing:
+                errors.append(f"patterns.json: {axis['id']}.{p.get('id')} に {missing} が無い")
+            if p.get("id") in seen:
+                errors.append(f"patterns.json: {axis['id']} のパターン ID '{p.get('id')}' が重複")
+            seen.add(p.get("id"))
+            for cond in p.get("not_applicable_if", []):
+                ops = [k for k in CONDITION_OPS if k in cond]
+                if "field" not in cond or len(ops) != 1 or set(cond) - {"field", *CONDITION_OPS}:
+                    errors.append(f"patterns.json: {axis['id']}.{p['id']} の非該当の条件の書式が不正: {cond}")
+    return errors
+
+
+def pattern_errors(nodes, defs, edge_types):
+    """ノードの改良パターン・採用技術の参照を検査する．
+
+    - 未定義のパターン ID，同じノード内の重複
+    - 対象外（not_applicable）・未判定（unassessed）の軸に該当を挙げていないこと
+    - 改良元（from）が系譜の関係の参照先であること
+    - 該当として挙げたパターンが，定義の非該当の条件に一致しないこと
+
+    Args:
+        nodes (list[tuple[Path, dict]]): ノードのファイルと内容．
+        defs (dict): パターン定義．
+        edge_types (list[dict]): エッジ種別の定義．
+    Returns:
+        tuple[list[str], list[str]]: (エラー, 警告)．
+    """
+    errors, warnings = pattern_definition_errors(defs), []
+    lineage = {t["id"] for t in edge_types if t["lineage"]}
+    by_axis = {a["id"]: {p["id"]: p for p in a["patterns"]} for a in defs.get("axes", [])}
+    used = {a: set() for a in by_axis}
+    for path, n in nodes:
+        for axis_id, pats in by_axis.items():
+            axis = n.get("patterns", {}).get(axis_id)
+            if axis is None:
+                continue
+            ids = [it["id"] for it in axis["items"]]
+            for pid in ids:
+                if pid not in pats:
+                    errors.append(f"{path.name}: 未定義の{axis_id}のパターン '{pid}'")
+            for pid in {i for i in ids if ids.count(i) > 1}:
+                errors.append(f"{path.name}: {axis_id} のパターン '{pid}' が重複")
+            if axis["assessment"] in ("not_applicable", "unassessed") and ids:
+                errors.append(f"{path.name}: {axis_id} は {axis['assessment']} であるが該当を挙げている")
+            if axis["assessment"] in ("not_applicable", "unassessed") and not axis.get("note"):
+                errors.append(f"{path.name}: {axis_id} の {axis['assessment']} の理由（note）が無い")
+            if axis["assessment"] == "assessed" and not ids:
+                warnings.append(f"{path.name}: {axis_id} は判定済みで該当が無い（全て非該当）")
+            for it in axis["items"]:
+                used[axis_id].add(it["id"])
+                if it.get("from") and not any(r["target"] == it["from"] and r["type"] in lineage for r in n["relations"]):
+                    errors.append(f"{path.name}: {axis_id}.{it['id']} の改良元 '{it['from']}' が系譜の関係に無い")
+                p = pats.get(it["id"])
+                if p and any(condition_matches(n, c) for c in p.get("not_applicable_if", [])):
+                    errors.append(f"{path.name}: {axis_id}.{it['id']} は該当とされているが，定義の非該当の条件に一致する")
+    for axis_id, pats in by_axis.items():
+        for pid in pats:
+            if pid not in used[axis_id]:
+                warnings.append(f"patterns.json: {axis_id}.{pid} を用いるノードが無い")
+    return errors, warnings
+
 
 def validate(nodes, vocab, schema, library):
     """全ての検証を実行する．
@@ -326,7 +409,8 @@ def validate(nodes, vocab, schema, library):
     errors += year_errors(nodes, vocab["rules"], vocab["edge_types"])
     errors += duplicate_errors(nodes)
     r_errors, r_warnings = rule_errors(nodes, vocab["rules"])
-    return errors + r_errors, warnings + r_warnings
+    p_errors, p_warnings = pattern_errors(nodes, vocab["patterns"], vocab["edge_types"]) if "patterns" in vocab else ([], [])
+    return errors + r_errors + p_errors, warnings + r_warnings + p_warnings
 
 
 def main():

@@ -53,6 +53,32 @@
     "既存の標準に比べ同じ主観品質で約50%のビットレート削減を目標とする（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "coding_tool_extension",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "strengths[0]: 既存の標準に比べ同じ主観品質で約50%のビットレート削減を目標とする（要旨）"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "handcrafted_transform",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ブロック単位の予測残差の変換係数"
+          }
+        }
+      ]
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "abstract",

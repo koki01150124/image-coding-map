@@ -50,6 +50,25 @@
     "Baseline 方式は最も広く実装され，多くの応用に十分である（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "unassessed",
+      "note": "要旨のみの確認であり，先行方式に対する改良の内容を確認していない",
+      "items": []
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "handcrafted_transform",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 8×8 ブロックの離散コサイン変換（DCT）係数"
+          }
+        }
+      ]
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "abstract",

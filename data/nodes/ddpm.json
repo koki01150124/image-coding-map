@@ -54,6 +54,25 @@
   ],
   "strengths": null,
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "not_applicable",
+      "note": "画像生成モデルの基礎研究であり，画像の符号化・伝送の方式ではない",
+      "items": []
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "diffusion_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 拡散確率モデルによる高品質な画像生成を示した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "full_text_scan",

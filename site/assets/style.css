@@ -15,6 +15,8 @@
   --edge-compared: #a3a199;
   --highlight: #d23f3f;
   --path-related: #7a4fd0;
+  --heat-1: #cde2fb; --heat-2: #9ec5f4; --heat-3: #256abf; --heat-4: #0d366b;
+  --heat-text-1: #1f1f1d; --heat-text-2: #1f1f1d; --heat-text-3: #ffffff; --heat-text-4: #ffffff;
   --shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
 @media (prefers-color-scheme: dark) {
@@ -34,6 +36,8 @@
     --edge-compared: #77766f;
     --highlight: #ff7070;
     --path-related: #b9a0ff;
+    --heat-1: #184f95; --heat-2: #1c5cab; --heat-3: #6da7ec; --heat-4: #b7d3f6;
+    --heat-text-1: #f0efec; --heat-text-2: #f0efec; --heat-text-3: #0d1b2e; --heat-text-4: #0d1b2e;
     --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
   }
 }
@@ -53,6 +57,8 @@
   --edge-compared: #77766f;
   --highlight: #ff7070;
   --path-related: #b9a0ff;
+  --heat-1: #184f95; --heat-2: #1c5cab; --heat-3: #6da7ec; --heat-4: #b7d3f6;
+  --heat-text-1: #f0efec; --heat-text-2: #f0efec; --heat-text-3: #0d1b2e; --heat-text-4: #0d1b2e;
   --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -221,4 +227,42 @@ button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px 
 @media (max-width: 760px) {
   .panel { top: auto; height: 55vh; }
   .shape-legend { display: none; }
+}
+
+/* パターン表 */
+.kind-filter { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin: 4px 0 6px; font-size: 13px; }
+.pattern-notes { margin: 4px 0 10px; padding-left: 1.3em; line-height: 1.6; }
+.pt-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--grid); border-radius: 8px; }
+.overlay-view table.pattern-table { width: auto; min-width: 100%; border-collapse: separate; border-spacing: 2px; }
+.pattern-table th { text-align: center; white-space: nowrap; font-size: 12px; }
+.pattern-table th.pt-rowhead { text-align: left; position: sticky; left: 0; z-index: 1; background: var(--surface-1); min-width: 11em; }
+.pattern-table thead th.pt-rowhead { z-index: 2; }
+.pt-label { border: none; background: none; padding: 2px 0; text-align: left; font-size: 13px; color: var(--text-primary); cursor: pointer; }
+.pt-label:hover { color: var(--accent); text-decoration: underline; }
+.pattern-table td { padding: 0; border: none; text-align: center; min-width: 64px; }
+.pt-cell button { width: 100%; min-height: 40px; border: 1px solid var(--grid); border-radius: 4px; padding: 3px 4px; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.2; }
+.pt-cell button:hover { outline: 2px solid var(--accent); }
+.pt-count { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pt-unknown { font-size: 10.5px; color: var(--text-muted); }
+.heat-0 button { color: var(--text-muted); }
+.heat-1 button { background: var(--heat-1); color: var(--heat-text-1); }
+.heat-2 button { background: var(--heat-2); color: var(--heat-text-2); }
+.heat-3 button { background: var(--heat-3); color: var(--heat-text-3); }
+.heat-4 button { background: var(--heat-4); color: var(--heat-text-4); }
+.heat-1 .pt-unknown, .heat-2 .pt-unknown, .heat-3 .pt-unknown, .heat-4 .pt-unknown { color: inherit; opacity: 0.85; }
+.pt-selected button { outline: 3px solid var(--highlight); outline-offset: -1px; }
+.pattern-table .pt-total, .pattern-table th.pt-rowhead { vertical-align: middle; }
+.pt-total { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text-secondary); font-size: 13px; }
+.pt-foot th, .pt-foot td { border-top: 2px solid var(--grid); padding-top: 4px; }
+.pattern-detail { margin-top: 12px; }
+.pt-list { margin: 4px 0; padding-left: 1.3em; font-size: 13px; line-height: 1.7; }
+.pt-list a { color: var(--accent); cursor: pointer; }
+.pt-list .ev, .pattern-items .ev { color: var(--text-muted); font-size: 12px; }
+.pattern-items { margin: 2px 0; padding-left: 1.1em; font-size: 12.5px; }
+@media (max-width: 760px) {
+  .toolbar-buttons button, .toolbar-buttons summary { padding: 3px 7px; font-size: 13px; }
+  .overlay-view { padding: 10px 8px; }
+  .pattern-table th.pt-rowhead { min-width: 8.5em; }
+  .pt-label { font-size: 12px; }
+  .pattern-table td { min-width: 52px; }
 }

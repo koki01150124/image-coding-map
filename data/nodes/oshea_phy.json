@@ -58,6 +58,39 @@
   ],
   "strengths": null,
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "joint_channel_learning",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 通信システムを自己符号化器として解釈し，送信機と受信機を一括して最適化する設計の考え方を示した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 送受信機をニューラルネットワークで表した自己符号化器"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 送受信機を再構成誤差でエンドツーエンドに学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "full_text_scan",

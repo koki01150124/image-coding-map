@@ -61,6 +61,60 @@
   "limitations": [
     "通信路の誤りを学習の順伝播に含めるかは本文の照合では確認できていない"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "digital_constraint",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: デジタルの情報源符号化と通信路符号化を共同で最適化する D²-JSCC を提案した"
+          }
+        },
+        {
+          "id": "rate_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: エンドツーエンドの歪みを情報源・通信路のレートの関数として特徴付け，SNR に応じてレートを制御する2段階のアルゴリズム（学習済みモデルの表からの選択と，情報源符号化器の再学習）を示した"
+          }
+        },
+        {
+          "id": "channel_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: エンドツーエンドの歪みを情報源・通信路のレートの関数として特徴付け，SNR に応じてレートを制御する2段階のアルゴリズム（学習済みモデルの表からの選択と，情報源符号化器の再学習）を示した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ハイパープライアモデル [25] による深層情報源符号化のビット列を，ブロック符号（実験では Polar 符号）で保護"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ハイパープライアモデル [25] による深層情報源符号化のビット列を，ブロック符号（実験では Polar 符号）で保護"
+          }
+        },
+        {
+          "id": "error_correcting_code",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ハイパープライアモデル [25] による深層情報源符号化のビット列を，ブロック符号（実験では Polar 符号）で保護"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "scale_hyperprior",

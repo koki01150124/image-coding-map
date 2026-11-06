@@ -59,6 +59,39 @@
   "limitations": [
     "示された復号法は最適ではない（nonoptimum）"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "code_construction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 各列・各行の1の個数が少数に固定された疎なパリティ検査行列で定義される低密度パリティ検査（LDPC）符号を提案した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "error_correcting_code",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 各列・各行の1の個数が少数に固定された疎なパリティ検査行列で定義される低密度パリティ検査（LDPC）符号を提案した"
+          }
+        },
+        {
+          "id": "probabilistic_decoding",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 通信路の事後確率から直接動作する簡易な復号法を示した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "abstract",

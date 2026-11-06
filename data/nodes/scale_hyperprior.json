@@ -58,6 +58,47 @@
     "MS-SSIM で当時の最高性能，PSNR でも既存の ANN 手法を上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 潜在表現の空間的な依存関係を捉えるハイパープライア（サイド情報）を導入した"
+          },
+          "from": "balle_e2e"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 複雑な事前分布を自己符号化器と同時に学習する変分自己符号化器型の圧縮モデルを提案した"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 潜在表現の空間的な依存関係を捉えるハイパープライア（サイド情報）を導入した"
+          }
+        },
+        {
+          "id": "variational_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 複雑な事前分布を自己符号化器と同時に学習する変分自己符号化器型の圧縮モデルを提案した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "balle_e2e",

@@ -57,6 +57,33 @@
     "同じ映像品質で HEVC より約50%のビットレート削減（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "coding_tool_extension",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "strengths[0]: 同じ映像品質で HEVC より約50%のビットレート削減（要旨）"
+          },
+          "from": "hevc"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "handcrafted_transform",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: ブロック単位の予測残差の変換係数"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "hevc",

@@ -56,6 +56,46 @@
     "知覚的な画像圧縮で当時の最高性能を報告（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "perceptual_generative",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 画像に最も合う雑音を選ぶことで，生成モデルをそのまま非可逆画像コーデックとして用いた"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "diffusion_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 逆拡散の雑音を固定した i.i.d. ガウスベクトルの符号帳からの選択に置き換えた DDCM を提案した"
+          }
+        },
+        {
+          "id": "pretrained_zero_shot",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 事前学習済み拡散モデルを用いる（追加学習なしのゼロショット圧縮）"
+          }
+        },
+        {
+          "id": "codebook",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 各拡散ステップで符号帳から選んだ雑音ベクトルのインデックス列"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "ddpm",

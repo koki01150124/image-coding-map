@@ -57,6 +57,40 @@
     "復号を40倍以上高速化し，レート・歪み性能はほぼ同等（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "complexity_reduction",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 並列化可能なチェッカーボード・コンテキストモデルを提案し，復号順序を再編成した"
+          },
+          "from": "minnen_joint"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 並列化可能なチェッカーボード・コンテキストモデルを提案し，復号順序を再編成した"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "minnen_joint",

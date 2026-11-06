@@ -57,6 +57,47 @@
     "通信路条件の変化に対する緩やかな劣化を保つ（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "digital_constraint",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 有限の通信路入力アルファベット（デジタル変調の信号点）を用いる DeepJSCC-Q を提案した"
+          },
+          "from": "deepjscc"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → deepjscc）: DeepJSCC [2] を有限の信号点の制約下へ拡張した（根拠: 本文: wireless image transmission using DNNs was first demonstrated in [2], and dubbed DeepJSCC）"
+          }
+        },
+        {
+          "id": "digital_modulation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 有限の変調シンボル集合（デジタル変調の信号点）"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 信号点への量子化を含めたエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "deepjscc",

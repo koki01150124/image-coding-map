@@ -56,6 +56,61 @@
     "学習型圧縮として初めて VVC と同等の性能を報告した（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 潜在表現の分布を離散化ガウス混合尤度でパラメータ化し，より正確で柔軟なエントロピーモデルを提案した"
+          },
+          "from": "minnen_joint"
+        },
+        {
+          "id": "transform_architecture",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 注意機構を変換のネットワークに導入した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: レート・歪みのエンドツーエンド学習"
+          }
+        },
+        {
+          "id": "attention_transformer",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 注意機構を変換のネットワークに導入した"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → minnen_joint）: ハイパープライアと自己回帰のコンテキストを組み合わせたエントロピーモデルを発展させた（根拠: 本文: [20] proposed a more accurate entropy model, which jointly utilize an autoregressive context model ... and a mean an）"
+          }
+        },
+        {
+          "id": "context_model",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → minnen_joint）: ハイパープライアと自己回帰のコンテキストを組み合わせたエントロピーモデルを発展させた（根拠: 本文: [20] proposed a more accurate entropy model, which jointly utilize an autoregressive context model ... and a mean an）"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "minnen_joint",

@@ -20,6 +20,7 @@
       <div class="toolbar-buttons">
         <button type="button" id="btn-fit" title="全体を表示">全体表示</button>
         <button type="button" id="btn-list" aria-pressed="false" title="表示中の論文を一覧表で表示">一覧表</button>
+        <button type="button" id="btn-patterns" aria-pressed="false" title="改良パターン・採用技術 × 研究分野の対応表">パターン表</button>
         <button type="button" id="btn-compare" aria-pressed="false" title="選んだ論文（最大3件）の比較と系譜の経路">比較（0）</button>
         <details class="menu" id="export-menu">
           <summary title="マップを画像として保存">書き出し</summary>
@@ -57,6 +58,7 @@
     <main class="stage">
       <div id="graph" class="graph" aria-label="研究系譜マップ"></div>
       <div id="list-view" class="overlay-view" hidden></div>
+      <div id="pattern-view" class="overlay-view" hidden></div>
       <div id="compare-view" class="overlay-view" hidden></div>
       <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
       <div class="shape-legend" aria-label="ノードの形">

@@ -61,6 +61,18 @@
   "limitations": [
     "Theorem 11 の証明は純粋な存在証明ではないが，理想的な符号化に近づく具体的な方法を与えない点で存在証明と同様の欠点を持つ（本文 Sec. 14）"
   ],
+  "patterns": {
+    "improvements": {
+      "assessment": "not_applicable",
+      "note": "情報理論の基礎研究であり，符号化方式の改良ではない",
+      "items": []
+    },
+    "techniques": {
+      "assessment": "not_applicable",
+      "note": "情報理論の基礎研究であり，方式の構成要素を持たない",
+      "items": []
+    }
+  },
   "relations": [],
   "verification": {
     "read_level": "full_text_scan",

@@ -57,6 +57,40 @@
     "単一の伝送に比べた損失が小さい漸進的伝送を実現（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "progressive_feedback",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 画像を層に分けて漸進的に送る適応帯域の伝送（逐次改良・多重記述）を扱う DeepJSCC-l を提案した"
+          },
+          "from": "deepjscc"
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "relation",
+            "detail": "relations（derived_from → deepjscc）: DeepJSCC [17] を層ごとの伝送へ拡張した（根拠: 本文: all the properties present in single-layer transmission with DeepJSCC [17]（[17] = Bourtsoulatze et al.））"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 通信路を含めたエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "deepjscc",

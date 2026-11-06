@@ -62,6 +62,53 @@
     "標準的な DeepJSCC のアナログ伝送と分離設計の両方を概ね上回る（要旨）"
   ],
   "limitations": null,
+  "patterns": {
+    "improvements": {
+      "assessment": "assessed",
+      "items": [
+        {
+          "id": "entropy_model",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 潜在表現のエントロピーモデルを学習し，適応レート伝送とハイパープライアを用いた符号の改良を導入した"
+          }
+        },
+        {
+          "id": "rate_adaptation",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[1]: 潜在表現のエントロピーモデルを学習し，適応レート伝送とハイパープライアを用いた符号の改良を導入した"
+          }
+        }
+      ]
+    },
+    "techniques": {
+      "assessment": "partial",
+      "items": [
+        {
+          "id": "learned_autoencoder",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "contributions[0]: 非線形変換で得た潜在表現を DeepJSCC で送る NTSCC を提案した"
+          }
+        },
+        {
+          "id": "hyperprior",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "source_representation: 非線形解析変換の潜在表現（ハイパープライアをサイド情報とする）"
+          }
+        },
+        {
+          "id": "channel_in_training",
+          "evidence": {
+            "kind": "node_field",
+            "detail": "training: 伝送のレート・歪みを目的とするエンドツーエンド学習"
+          }
+        }
+      ]
+    }
+  },
   "relations": [
     {
       "target": "scale_hyperprior",
