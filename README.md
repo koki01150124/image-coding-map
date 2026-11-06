@@ -218,7 +218,7 @@ python3 -m http.server 8000 -d site
 2. Settings → Pages の Source を **GitHub Actions** にする．
 3. `main` への push で `.github/workflows/pages.yml` が書誌情報の照合，データ検証，`graph.json` の生成，テストを行い，`site/` をデプロイする．プルリクエストでは検証とテストのみを行う．
 
-サイトは相対パスのみを用いるため，リポジトリ名（公開時のサブパス）に依存しない．
+サイトは相対パスのみを用いるため，リポジトリ名（公開時のサブパス）に依存しない．JS・CSS の参照には，ビルド時に内容のハッシュ（`assets/app.js?v=…`）を付ける（`tools/stamp_assets.py`）．GitHub Pages はファイルを10分間キャッシュさせるため，ハッシュが無いと更新直後の再読み込みで新しい HTML と古い JS が組み合わさり，新しいボタンが反応しないことがある．`site/` の JS・CSS を変更した後は `python tools/build_graph.py` を実行して参照を更新する．
 
 ## 注意事項
 

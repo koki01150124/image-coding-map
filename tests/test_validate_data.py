@@ -247,3 +247,14 @@ def test_academic_constraints(base):
     assert all(n["bib_key"] is None for n in by_id.values() if n["kind"] == "scheme")
     # 未公開研究は発表年を持たない
     assert by_id["bfr_cae"]["year_basis"] == "unpublished_placement" and by_id["bfr_cae"]["publication"]["first_public"] is None
+
+
+def test_assets_are_stamped():
+    """index.html と app.js の JS・CSS の参照に，現在の内容のハッシュが付いている（古いファイルのキャッシュ対策）．"""
+    import stamp_assets
+    html = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    app = (ROOT / "site" / "assets" / "app.js").read_text(encoding="utf-8")
+    for name in ("app.js", "style.css"):
+        assert f'assets/{name}?v={stamp_assets.short_hash(ROOT / "site" / "assets" / name)}"' in html
+    for name in ("layout.js", "patterns.js"):
+        assert f'"./{name}?v={stamp_assets.short_hash(ROOT / "site" / "assets" / name)}"' in app

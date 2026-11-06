@@ -1,4 +1,5 @@
 """data/ のノードを統合し，サイトが読み込む site/data/graph.json を生成する．
+併せて tools/stamp_assets.py で JS・CSS の参照に内容のハッシュを付ける．
 
 描画コードはこの graph.json のみを読むため，論文の追加時に JavaScript を変更する必要は無い．
 
@@ -8,6 +9,7 @@
 import sys
 from datetime import date
 
+import stamp_assets
 from common import ROOT, load_node_files, load_vocab, write_json
 
 OUT = ROOT / "site" / "data" / "graph.json"
@@ -66,7 +68,7 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     write_json(OUT, graph)
     print(f"[build] {OUT.relative_to(ROOT)}: nodes={len(graph['nodes'])} edges={len(graph['edges'])}")
-    return 0
+    return stamp_assets.main()  # JS・CSS の参照に内容のハッシュを付ける（ブラウザのキャッシュ対策）
 
 
 if __name__ == "__main__":

@@ -2,8 +2,8 @@
 //
 // data/graph.json のみを読み込み，論文の内容・分野・エッジ種別は全てデータから決まる．
 // 論文を追加する場合に本ファイルを変更する必要は無い．
-import { computeLayout, regionPath, edgePath, LAYOUT } from "./layout.js";
-import { patternStatus, countTable, heatLevel } from "./patterns.js";
+import { computeLayout, regionPath, edgePath, LAYOUT } from "./layout.js?v=de27881eab";
+import { patternStatus, countTable, heatLevel } from "./patterns.js?v=8d51b283bf";
 
 const d3 = window.d3;
 const MAX_COMPARE = 3;

@@ -22,6 +22,7 @@
 | `tools/sync_bibliography.py` | `library.json` の書誌情報をノードの `bibliography` へ転記する．`--check` で照合のみ行う |
 | `tools/validate_data.py` | データ検証（スキーマ，ID，参照，エッジ種別，循環，書誌情報，年，重複，分類の規則） |
 | `tools/build_graph.py` | `data/` を統合して `site/data/graph.json` を生成する |
+| `tools/stamp_assets.py` | `index.html`・`app.js` の JS・CSS の参照に内容のハッシュ（`?v=`）を付ける．`build_graph.py` から呼ばれる．GitHub Pages のキャッシュ（max-age=600）で更新直後に古い JS が使われる問題を防ぐ |
 | `site/index.html`，`site/assets/*` | 配信するサイト（D3.js による描画と操作） |
 | `site/vendor/` | D3.js v7.9.0（ISC License）とそのライセンス |
 | `tests/test_validate_data.py` | 検証・生成と，学術的な分類の約束のテスト |
