@@ -1,4 +1,4 @@
-# Report 003：GitHub Pages の configure-pages エラーの調査
+# report_003：GitHub Pages の configure-pages エラーの調査
 
 ## 確認した事実
 
