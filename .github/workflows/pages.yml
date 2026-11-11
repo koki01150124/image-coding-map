@@ -18,21 +18,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Playwright 公式イメージ（Ubuntu 24.04，Python 3.12）．Chromium とそのシステム依存パッケージを
+    # イメージに含むため，実行時に apt（Ubuntu のミラー）へ接続しない．
+    # タグの版は requirements_tools.txt の playwright と一致させる（tests/test_workflow.py で検査）．
+    container:
+      image: mcr.microsoft.com/playwright/python:v1.49.1-noble
+      options: --ipc=host
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
       - name: Install tools (versions from requirements_tools.txt)
-        run: pip install $(grep -E '^(jsonschema|pytest|playwright)==' requirements_tools.txt)
+        run: python -m pip install --no-cache-dir $(grep -E '^(jsonschema|pytest|playwright)==' requirements_tools.txt)
       - name: Check bibliography against survey/library.json
         run: python tools/sync_bibliography.py --check
       - name: Validate node data (schema, IDs, references, edge types, cycles)
         run: python tools/validate_data.py
       - name: Build site/data/graph.json
         run: python tools/build_graph.py
-      - name: Install Chromium
-        run: python -m playwright install --with-deps chromium
+      - name: Check Chromium in the image matches the installed Playwright
+        timeout-minutes: 2
+        run: |
+          python --version
+          python -m playwright --version
+          python - <<'EOF'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              path = p.chromium.executable_path
+              if not Path(path).exists():
+                  raise SystemExit(f"Chromium がイメージに無い（Playwright とイメージの版の不一致）: {path}")
+              p.chromium.launch().close()
+              print(f"Chromium OK: {path}")
+          EOF
       - name: Tests (data validation and site rendering)
         run: python -m pytest -q tests
       - uses: actions/configure-pages@v5

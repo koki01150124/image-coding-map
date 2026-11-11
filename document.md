@@ -30,7 +30,8 @@
 | `site/vendor/` | D3.js v7.9.0（ISC License）とそのライセンス |
 | `tests/test_validate_data.py` | 検証・生成と，学術的な分類の約束のテスト |
 | `tests/test_site.py` | Playwright（Chromium）による表示テスト |
-| `.github/workflows/pages.yml` | 検証 → 生成 → テスト → GitHub Pages へのデプロイ |
+| `tests/test_workflow.py` | ワークフローの構成のテスト（Playwright 公式イメージの版と `requirements_tools.txt` の一致，実行時に apt を用いないこと，ブラウザテストを省略しないこと） |
+| `.github/workflows/pages.yml` | 検証 → 生成 → テスト → GitHub Pages へのデプロイ．build ジョブは Playwright 公式イメージ（`mcr.microsoft.com/playwright/python:v1.49.1-noble`）のコンテナで実行する |
 | `requirements_tools.txt` | ツール・テスト用の Python ライブラリ |
 | `programs/audit_coverage/collect.py` | 収録範囲の監査の文献収集（既存ノードの台帳，横断検索，スノーボーリング，優先確認論文・本文の参考文献の照合） |
 | `programs/audit_coverage/build_candidates.py` | 収集結果の重複排除・関連性の一次判定・優先度付けと，`audit/decisions.json` の人手の判断の反映 |
@@ -111,7 +112,7 @@ uv pip install -p .venv_tools -r requirements_tools.txt
 .venv_tools/bin/python tools/sync_bibliography.py          # 書誌情報の転記（--check で照合のみ）
 .venv_tools/bin/python tools/validate_data.py              # データ検証
 .venv_tools/bin/python tools/build_graph.py                # site/data/graph.json の生成
-.venv_tools/bin/python -m pytest -q tests                  # テスト（87件）
+.venv_tools/bin/python -m pytest -q tests                  # テスト（91件）
 python3 -m http.server 8000 -d site                        # http://localhost:8000/ で確認
 ```
 
@@ -139,6 +140,7 @@ cd programs/audit_coverage && ../../.venv_tools/bin/python build_candidates.py
 - 書誌情報の取得（OpenAlex，arXiv，Crossref）に API キーは不要である．`SURVEYKIT_MAILTO` を設定すると OpenAlex・Crossref の polite pool を利用できる．
 - `tokens.json` は本プロジェクトでは使用しない（`.gitignore` 済み）．
 - GitHub Pages は Settings → Pages の Source を GitHub Actions にする．
+- CI の build ジョブは Playwright 公式イメージのコンテナで実行し，Chromium とそのシステム依存パッケージはイメージに含まれるものを用いる（実行時に Ubuntu のミラーへ接続しない）．`requirements_tools.txt` の `playwright` の版を変更する場合は，`.github/workflows/pages.yml` のイメージのタグ（`v<版>-noble`）も同じ版に変更する．不一致は `tests/test_workflow.py` と，ワークフローの Chromium の確認のステップで検出する．
 
 ## Git 管理上の注意
 

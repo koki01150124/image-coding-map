@@ -1,4 +1,4 @@
-# Report 007：研究分野樹形図の設計と実装
+# report_007：研究分野樹形図の設計と実装
 
 本レポートは，order_007 に基づき，Image Coding Map に研究分野の分類を階層で表示する「研究分野樹形図」を追加した結果をまとめたものである．分類の詳細は `docs/research_taxonomy.md` に記載した．commit・push・デプロイは行っていない．
 

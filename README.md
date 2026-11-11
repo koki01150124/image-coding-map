@@ -136,7 +136,8 @@ D3.js で描画し，GitHub Pages で公開する．
 │   └── build_graph.py          # data/ → site/data/graph.json
 ├── tests/
 │   ├── test_validate_data.py   # 検証・生成のテスト
-│   └── test_site.py            # ブラウザによる表示テスト（Playwright）
+│   ├── test_site.py            # ブラウザによる表示テスト（Playwright）
+│   └── test_workflow.py        # ワークフローの構成のテスト
 ├── .github/workflows/pages.yml # 検証 → 生成 → テスト → Pages へデプロイ
 └── requirements_tools.txt
 ```
@@ -234,7 +235,7 @@ python3 -m http.server 8000 -d site
 
 1. リポジトリ（例: `image-coding-map`）を作成して push する．
 2. Settings → Pages の Source を **GitHub Actions** にする．
-3. `main` への push で `.github/workflows/pages.yml` が書誌情報の照合，データ検証，`graph.json` の生成，テストを行い，`site/` をデプロイする．プルリクエストでは検証とテストのみを行う．
+3. `main` への push で `.github/workflows/pages.yml` が書誌情報の照合，データ検証，`graph.json` の生成，テストを行い，`site/` をデプロイする．プルリクエストでは検証とテストのみを行う．build ジョブは Playwright 公式イメージ（`mcr.microsoft.com/playwright/python:v1.49.1-noble`）のコンテナで実行するため，Chromium の依存パッケージを実行時に apt で取得しない．`requirements_tools.txt` の `playwright` を更新する場合はイメージのタグも同じ版にする．
 
 サイトは相対パスのみを用いるため，リポジトリ名（公開時のサブパス）に依存しない．JS・CSS の参照には，ビルド時に内容のハッシュ（`assets/app.js?v=…`）を付ける（`tools/stamp_assets.py`）．GitHub Pages はファイルを10分間キャッシュさせるため，ハッシュが無いと更新直後の再読み込みで新しい HTML と古い JS が組み合わさり，新しいボタンが反応しないことがある．`site/` の JS・CSS を変更した後は `python tools/build_graph.py` を実行して参照を更新する．
 
