@@ -37,6 +37,9 @@
   "domains": [
     "channel_coding"
   ],
+  "research_fields": [
+    "polar_codes"
+  ],
   "source_representation": "通信路分極により選んだ情報ビット位置",
   "channel_models": [
     "B-DMC",

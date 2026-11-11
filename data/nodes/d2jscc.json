@@ -40,6 +40,10 @@
     "digital_jscc",
     "sscc"
   ],
+  "research_fields": [
+    "digital_deepjscc",
+    "sscc_learned"
+  ],
   "source_representation": "ハイパープライアモデル [25] による深層情報源符号化のビット列を，ブロック符号（実験では Polar 符号）で保護",
   "channel_models": [
     "AWGN",

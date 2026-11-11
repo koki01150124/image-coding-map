@@ -38,6 +38,9 @@
   "domains": [
     "generative"
   ],
+  "research_fields": [
+    "generative_foundations"
+  ],
   "source_representation": "（画像生成モデル）ガウス雑音から段階的に除去する潜在変数モデル",
   "channel_models": [],
   "transmission": "not_applicable",

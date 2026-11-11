@@ -52,7 +52,7 @@ def load_vocab(data_dir=DATA):
     Args:
         data_dir (Path): data ディレクトリのパス．
     Returns:
-        dict: {"domains": list[dict], "edge_types": list[dict], "vocab": dict, "rules": list[dict], "patterns": dict}
+        dict: {"domains": list[dict], "edge_types": list[dict], "vocab": dict, "rules": list[dict], "patterns": dict, "taxonomy": dict}
     """
     data_dir = Path(data_dir)
     return {
@@ -61,6 +61,7 @@ def load_vocab(data_dir=DATA):
         "vocab": read_json(data_dir / "vocab.json"),
         "rules": read_json(data_dir / "classification_rules.json"),
         "patterns": read_json(data_dir / "patterns.json"),
+        "taxonomy": read_json(data_dir / "research_taxonomy.json"),
     }
 
 

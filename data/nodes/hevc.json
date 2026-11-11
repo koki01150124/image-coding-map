@@ -40,6 +40,9 @@
   "domains": [
     "traditional"
   ],
+  "research_fields": [
+    "video_coding_based"
+  ],
   "source_representation": "ブロック単位の予測残差の変換係数",
   "channel_models": [],
   "transmission": "not_applicable",

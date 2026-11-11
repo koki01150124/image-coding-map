@@ -37,6 +37,9 @@
   "domains": [
     "channel_coding"
   ],
+  "research_fields": [
+    "learned_physical_layer"
+  ],
   "tags": [
     "End-to-end学習"
   ],

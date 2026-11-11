@@ -37,6 +37,9 @@
   "domains": [
     "traditional"
   ],
+  "research_fields": [
+    "still_image_standards"
+  ],
   "source_representation": "8×8 ブロックの離散コサイン変換（DCT）係数",
   "channel_models": [],
   "transmission": "not_applicable",

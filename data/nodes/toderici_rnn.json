@@ -43,6 +43,9 @@
   "domains": [
     "lic"
   ],
+  "research_fields": [
+    "learned_transform_coding"
+  ],
   "source_representation": "畳み込み LSTM による反復的な二値符号",
   "channel_models": [],
   "transmission": "not_applicable",

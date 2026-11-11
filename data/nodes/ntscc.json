@@ -42,6 +42,10 @@
     "analog_jscc",
     "lic"
   ],
+  "research_fields": [
+    "analog_deepjscc",
+    "learned_compression"
+  ],
   "source_representation": "非線形解析変換の潜在表現（ハイパープライアをサイド情報とする）",
   "channel_models": [
     "AWGN"

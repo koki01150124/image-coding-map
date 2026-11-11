@@ -52,6 +52,7 @@ def build_graph(nodes, vocab):
         "edge_types": sorted(vocab["edge_types"], key=lambda t: t["order"]),
         "vocab": vocab["vocab"],
         "patterns": vocab["patterns"],
+        "taxonomy": vocab["taxonomy"],
         "nodes": public_nodes,
         "edges": build_edges(nodes, vocab["edge_types"]),
     }

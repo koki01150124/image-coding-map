@@ -11,6 +11,7 @@
     8. プレプリントと正式掲載版などの重複（arXiv ID，DOI，タイトル）
     9. 分類の規則（data/classification_rules.json）
     10. 改良パターン・採用技術の定義（data/patterns.json）とノードの参照の整合
+    11. 研究分野樹形図の分類体系（data/research_taxonomy.json）と，ノードの research_fields の整合
 
 使い方:
     python tools/validate_data.py   # エラーがあれば終了コード1
@@ -20,6 +21,7 @@ from collections import defaultdict
 
 from common import DATA, load_library, load_node_files, load_vocab, read_json
 from patterns import condition_matches
+from taxonomy import membership_errors, taxonomy_errors
 from sync_bibliography import diff_bibliography
 
 
@@ -410,7 +412,12 @@ def validate(nodes, vocab, schema, library):
     errors += duplicate_errors(nodes)
     r_errors, r_warnings = rule_errors(nodes, vocab["rules"])
     p_errors, p_warnings = pattern_errors(nodes, vocab["patterns"], vocab["edge_types"]) if "patterns" in vocab else ([], [])
-    return errors + r_errors + p_errors, warnings + r_warnings + p_warnings
+    t_errors, t_warnings = [], []
+    if "taxonomy" in vocab:
+        t_errors = taxonomy_errors(vocab["taxonomy"], domain_ids)
+        m_errors, t_warnings = membership_errors(nodes, vocab["taxonomy"])
+        t_errors += m_errors
+    return errors + r_errors + p_errors + t_errors, warnings + r_warnings + p_warnings + t_warnings
 
 
 def main():

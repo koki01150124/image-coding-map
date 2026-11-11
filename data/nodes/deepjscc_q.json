@@ -38,6 +38,9 @@
   "domains": [
     "digital_jscc"
   ],
+  "research_fields": [
+    "deepjscc_constellation"
+  ],
   "source_representation": "有限の変調シンボル集合（デジタル変調の信号点）",
   "channel_models": [
     "AWGN"

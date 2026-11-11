@@ -29,6 +29,9 @@
     "lic",
     "channel_coding"
   ],
+  "research_fields": [
+    "sscc_learned"
+  ],
   "source_representation": "学習型圧縮（VAE 等）の量子化した潜在表現を LDPC 符号で保護",
   "channel_models": null,
   "transmission": "digital",

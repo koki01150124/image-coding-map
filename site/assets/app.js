@@ -4,6 +4,7 @@
 // 論文を追加する場合に本ファイルを変更する必要は無い．
 import { computeLayout, regionPath, edgePath, LAYOUT } from "./layout.js?v=de27881eab";
 import { patternStatus, countTable, heatLevel } from "./patterns.js?v=8d51b283bf";
+import { createTreeView } from "./tree.js?v=84977a1789";
 
 const d3 = window.d3;
 const MAX_COMPARE = 3;
@@ -40,6 +41,7 @@ const els = {
   play: $("btn-play"), focusNote: $("focus-note"), list: $("list-view"), compare: $("compare-view"),
   btnList: $("btn-list"), btnCompare: $("btn-compare"), btnTheme: $("btn-theme"),
   patterns: $("pattern-view"), btnPatterns: $("btn-patterns"),
+  tree: $("tree-view"), btnTree: $("btn-tree"),
 };
 
 // ---------------------------------------------------------------- 汎用
@@ -303,6 +305,7 @@ function renderAll() {
   renderNodes();
   applyFocus();
   if (els.patterns && !els.patterns.hidden) renderPatterns();
+  if (els.tree && !els.tree.hidden && treeView) treeView.render();
 }
 
 // ---------------------------------------------------------------- 強調・選択
@@ -543,6 +546,7 @@ function relationSections(n) {
 function renderPanel() {
   const n = state.selected ? state.byId.get(state.selected) : null;
   els.panel.hidden = !n;
+  els.tree?.classList.toggle("with-panel", !!n);
   if (!n) return;
   const b = n.bibliography;
   const inCompare = state.compare.includes(n.id);
@@ -720,13 +724,20 @@ function setupSearch() {
   els.searchList.replaceChildren(...state.graph.nodes.map((n) => el("option", { value: n.short_name }, n.bibliography.title ?? "")));
   const run = () => {
     const q = els.search.value.trim().toLowerCase();
-    if (!q) { state.matches = null; els.searchCount.textContent = ""; applyFocus(); return; }
+    if (!q) { state.matches = null; els.searchCount.textContent = ""; applyFocus(); if (treeView && !els.tree.hidden) treeView.setMatches(null); return; }
     const exact = state.graph.nodes.find((n) => n.short_name.toLowerCase() === q);
-    if (exact) { state.matches = null; els.searchCount.textContent = ""; select(exact.id, { zoomTo: true }); return; }
+    if (exact) {
+      state.matches = null;
+      els.searchCount.textContent = "";
+      select(exact.id, { zoomTo: true });
+      if (treeView && !els.tree.hidden) treeView.setMatches(new Set([exact.id]));
+      return;
+    }
     const terms = q.split(/\s+/);
     state.matches = new Set(state.graph.nodes.filter((n) => terms.every((t) => searchText(n).includes(t))).map((n) => n.id));
     state.matchLabel = null;
     els.searchCount.textContent = `${state.matches.size} 件`;
+    if (treeView && !els.tree.hidden) treeView.setMatches(state.matches);
     state.selected = null;
     state.path = null;
     renderPanel();
@@ -971,6 +982,8 @@ function renderList() {
  * @returns {void}
  */
 function setView(view) {
+  els.tree.hidden = view !== "tree";
+  els.btnTree.setAttribute("aria-pressed", String(view === "tree"));
   els.list.hidden = view !== "list";
   els.compare.hidden = view !== "compare";
   els.patterns.hidden = view !== "patterns";
@@ -980,6 +993,41 @@ function setView(view) {
   if (view === "list") renderList();
   if (view === "compare") renderCompare();
   if (view === "patterns") renderPatterns();
+  if (view === "tree") renderTree();
+}
+
+// ---------------------------------------------------------------- 研究分野樹形図
+
+let treeView = null;
+
+/**
+ * 樹形図のラベルの描画幅を実測する．
+ * @param {string} s - ラベル．
+ * @param {boolean} bold - 太字か．
+ * @returns {number} 幅（px）．
+ */
+function measureTreeLabel(s, bold) {
+  measureCtx.font = `${bold ? "700 " : ""}12.5px ${getComputedStyle(document.body).fontFamily}`;
+  return measureCtx.measureText(s).width;
+}
+
+/**
+ * 研究分野樹形図を描く（初回に作成する）．
+ * @returns {void}
+ */
+function renderTree() {
+  if (!treeView) {
+    treeView = createTreeView({
+      container: $("tree-canvas"), detail: $("tree-detail"), graph: state.graph, d3, el,
+      isNodeVisible, domainColor, yearLabel, textWidth: measureTreeLabel,
+      onSelectPaper: (id) => select(id),
+      onShowOnMap: (id) => { setView(null); select(id, { zoomTo: true }); },
+      onHighlight: (ids, label) => highlightPattern(ids, label),
+    });
+    window.ICM.tree = treeView;
+  }
+  treeView.render();
+  if (state.matches && !state.matchLabel) treeView.setMatches(state.matches);
 }
 
 // ---------------------------------------------------------------- パターン表
@@ -1284,6 +1332,7 @@ async function main() {
   els.btnList.addEventListener("click", () => setView(els.list.hidden ? "list" : null));
   els.btnCompare.addEventListener("click", () => setView(els.compare.hidden ? "compare" : null));
   els.btnPatterns.addEventListener("click", () => setView(els.patterns.hidden ? "patterns" : null));
+  els.btnTree.addEventListener("click", () => setView(els.tree.hidden ? "tree" : null));
   $("btn-svg").addEventListener("click", exportSvg);
   $("btn-png").addEventListener("click", exportPng);
   $("panel-close").addEventListener("click", () => select(null));

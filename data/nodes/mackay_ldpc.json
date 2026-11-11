@@ -37,6 +37,9 @@
   "domains": [
     "channel_coding"
   ],
+  "research_fields": [
+    "ldpc_codes"
+  ],
   "source_representation": "非常に疎な行列で定義される符号",
   "channel_models": [
     "BSC",

@@ -37,6 +37,9 @@
   "domains": [
     "channel_coding"
   ],
+  "research_fields": [
+    "ldpc_codes"
+  ],
   "source_representation": "疎なパリティ検査行列で定義される線形ブロック符号",
   "channel_models": [
     "BSC"

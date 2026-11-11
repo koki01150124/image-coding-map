@@ -492,3 +492,156 @@ def test_pattern_table_mobile(page, base_url):
     pg.click("button[data-pattern=code_construction][data-domain=channel_coding]")
     assert "該当 4 件" in pg.inner_text("#pattern-detail")
     assert errors == []
+
+
+# ---------------------------------------------------------------- 研究分野樹形図
+
+from taxonomy import members as taxonomy_members  # noqa: E402
+
+
+def open_tree(pg, url):
+    """研究分野樹形図を開く．@param pg ページ．@param url URL．@return None"""
+    open_map(pg, url)
+    pg.click("#btn-tree")
+    pg.wait_for_selector("#tree-view:not([hidden]) .tree-node")
+
+
+def click_category(pg, cid):
+    """分類のノードを選択する（展開・折りたたみも行う）．@param pg ページ．@param cid 分類 ID．@return None"""
+    pg.locator(f".tree-node.category[data-id={cid}]").dispatch_event("click")
+
+
+def test_tree_initial_view(page, base_url, graph):
+    """初期表示は根・3領域・その直下の分類のみで，論文は表示しない．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    tax = graph["taxonomy"]["categories"]
+    root = next(c for c in tax if c["parent"] is None)
+    expected = 1 + len(root["children"]) + sum(len(next(c for c in tax if c["id"] == a)["children"]) for a in root["children"])
+    assert pg.locator(".tree-node.category").count() == expected
+    assert pg.locator(".tree-node.paper").count() == 0
+    for area in root["children"]:
+        assert pg.locator(f".tree-node.category[data-id={area}]").count() == 1
+    assert errors == []
+
+
+def test_tree_expand_collapse(page, base_url):
+    """分類の展開で子の分類と所属する論文が現れ，折りたたみで消える．"""
+    pg, _ = page
+    open_tree(pg, base_url)
+    click_category(pg, "learned_compression")
+    assert pg.locator(".tree-node.category[data-id=learned_entropy_models]").count() == 1
+    assert pg.locator(".tree-node.paper[data-id=hific]").count() == 1  # LIC に直接所属
+    click_category(pg, "learned_entropy_models")
+    assert pg.locator(".tree-node.paper[data-id=minnen_joint]").count() == 1
+    click_category(pg, "learned_compression")
+    assert pg.locator(".tree-node.category[data-id=learned_entropy_models]").count() == 0
+    assert pg.locator(".tree-node.paper[data-id=minnen_joint]").count() == 0
+
+
+def test_tree_category_list_and_multi_membership(page, base_url, graph):
+    """分類の選択で所属論文の一覧（下位の分類を含む）を表示し，複数所属を明示する．"""
+    pg, _ = page
+    open_tree(pg, base_url)
+    click_category(pg, "joint_source_channel_coding")
+    click_category(pg, "analog_deepjscc")
+    expected = taxonomy_members(graph["taxonomy"], graph["nodes"])["analog_deepjscc"]
+    items = pg.eval_on_selector_all(".tree-list li", "els => els.map(e => e.dataset.id)")
+    assert sorted(items) == sorted(expected)
+    assert "他の所属: 学習型画像圧縮（LIC）" in pg.inner_text(".tree-list li[data-id=ntscc]")
+    assert pg.locator(".tree-node.paper.multi[data-id=ntscc]").count() == 1
+
+
+def test_tree_expand_all_counts(page, base_url, graph):
+    """すべて展開すると，論文は所属の数だけ現れ（複数所属），異なる論文は44件である．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    pg.click("#tree-expand-all")
+    leaves = pg.eval_on_selector_all(".tree-node.paper", "els => els.map(e => e.dataset.id)")
+    assert len(leaves) == sum(len(n["research_fields"]) for n in graph["nodes"])
+    assert len(set(leaves)) == len(graph["nodes"])
+    assert pg.locator(".tree-node.category").count() == len(graph["taxonomy"]["categories"])
+    assert errors == []
+
+
+def test_tree_paper_detail_and_map(page, base_url):
+    """論文の選択で既存の詳細パネルを表示し，「系譜図で表示」で研究系譜図へ移動する．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    click_category(pg, "joint_source_channel_coding")
+    click_category(pg, "digital_deepjscc")
+    click_category(pg, "deepjscc_binary_bsc")
+    pg.locator(".tree-node.paper[data-id=necst]").dispatch_event("click")
+    pg.wait_for_selector("#panel:not([hidden])")
+    assert "NECST" in pg.inner_text("#panel-body")
+    pg.locator(".tree-list li[data-id=necst] .tree-to-map").click()
+    assert pg.locator("#tree-view").is_hidden()
+    assert pg.locator("g.node.selected[data-id=necst]").count() == 1
+    assert pg.evaluate("location.hash") == "#necst"
+    assert errors == []
+
+
+def test_tree_highlight_on_map(page, base_url, graph):
+    """分類の所属論文を研究系譜図で強調する．"""
+    pg, _ = page
+    open_tree(pg, base_url)
+    click_category(pg, "generative_compression")
+    pg.click("#tree-highlight")
+    expected = taxonomy_members(graph["taxonomy"], graph["nodes"])["generative_compression"]
+    assert pg.locator("g.node.match").count() == len(expected)
+    assert "生成・拡散型画像圧縮" in pg.inner_text("#focus-note")
+
+
+def test_tree_search_and_filter(page, base_url, graph):
+    """検索で一致した論文を展開して強調し，表示期間の絞り込みを件数に反映する．"""
+    pg, _ = page
+    open_tree(pg, base_url)
+    pg.fill("#search-input", "BlindSC")
+    assert pg.locator(".tree-node.paper.match[data-id=blindsc]").count() == 1
+    pg.fill("#search-input", "")
+    pg.select_option("#period-select", "2020")
+    n = sum(1 for x in graph["nodes"] if x["year"] >= 2020)
+    assert f"（{n}）" in pg.text_content(".tree-node.category[data-id=image_coding] .tree-label")
+
+
+@pytest.mark.parametrize("scheme", ["light", "dark"])
+def test_tree_no_overlap_and_contrast(page, base_url, scheme):
+    """すべて展開した樹形図でラベルとノードが重ならず，ラベルの文字と背景の対比が十分である．"""
+    pg, errors = page
+    pg.emulate_media(color_scheme=scheme)
+    open_tree(pg, base_url)
+    pg.click("#tree-expand-all")
+    res = pg.evaluate(r"""() => {
+      const boxes = [];
+      for (const g of document.querySelectorAll('.tree-node')) {
+        const m = g.getAttribute('transform').match(/translate\(([-\d.e]+),([-\d.e]+)\)/); const x = +m[1], y = +m[2];
+        const t = g.querySelector('text').getBBox();
+        boxes.push({ id: g.dataset.id + '@' + y, x0: x - 7, y0: y - 7, x1: x + t.x + t.width, y1: y + 7 });
+      }
+      const hits = [];
+      for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+        const a = boxes[i], b = boxes[j];
+        if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) hits.push([a.id, b.id]);
+      }
+      const lum = (c) => { const v = c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((x) => x / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
+        return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]; };
+      const fg = getComputedStyle(document.querySelector('.tree-node.paper .tree-label')).fill;
+      const bg = getComputedStyle(document.querySelector('#tree-view')).backgroundColor;
+      const [l1, l2] = [lum(fg), lum(bg)].sort((x, y) => y - x);
+      return { hits, contrast: (l1 + 0.05) / (l2 + 0.05) };
+    }""")
+    assert res["hits"] == []
+    assert res["contrast"] >= 4.5
+    assert errors == []
+
+
+def test_tree_mobile(page, base_url):
+    """スマートフォンの幅で樹形図と説明欄を表示し，分類を選択できる．"""
+    pg, errors = page
+    pg.set_viewport_size({"width": 390, "height": 844})
+    open_tree(pg, base_url)
+    canvas = pg.eval_on_selector("#tree-canvas", "e => e.getBoundingClientRect().width")
+    assert canvas <= 390
+    click_category(pg, "channel_coding")
+    assert "通信路符号化" in pg.inner_text("#tree-detail")
+    assert errors == []

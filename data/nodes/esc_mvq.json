@@ -39,6 +39,9 @@
   "domains": [
     "digital_jscc"
   ],
+  "research_fields": [
+    "deepjscc_binary_bsc"
+  ],
   "source_representation": "複数の VQ 符号帳のインデックス（並列 BSC で伝送）",
   "channel_models": [
     "BSC",

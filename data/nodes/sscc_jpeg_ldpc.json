@@ -29,6 +29,9 @@
     "traditional",
     "channel_coding"
   ],
+  "research_fields": [
+    "sscc_conventional"
+  ],
   "source_representation": "JPEG のビット列を LDPC 符号で保護",
   "channel_models": null,
   "transmission": "digital",

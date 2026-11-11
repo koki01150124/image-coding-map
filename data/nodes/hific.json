@@ -40,6 +40,10 @@
     "generative",
     "lic"
   ],
+  "research_fields": [
+    "gan_compression",
+    "learned_compression"
+  ],
   "source_representation": "ハイパープライアを持つ学習型圧縮の潜在表現（GAN で復号）",
   "channel_models": [],
   "transmission": "not_applicable",

@@ -15,6 +15,7 @@
     "year_basis",
     "publication",
     "domains",
+    "research_fields",
     "source_representation",
     "channel_models",
     "transmission",
@@ -223,6 +224,16 @@
         ]
       },
       "description": "研究分野．先頭が主分野"
+    },
+    "research_fields": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "description": "研究分野樹形図の所属分類（data/research_taxonomy.json の ID）．複数可"
     },
     "tags": {
       "type": "array",

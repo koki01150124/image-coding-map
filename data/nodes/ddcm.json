@@ -38,6 +38,9 @@
   "domains": [
     "generative"
   ],
+  "research_fields": [
+    "zero_shot_diffusion_compression"
+  ],
   "source_representation": "各拡散ステップで符号帳から選んだ雑音ベクトルのインデックス列",
   "channel_models": [],
   "transmission": "not_applicable",

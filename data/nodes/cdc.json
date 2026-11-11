@@ -38,6 +38,10 @@
     "generative",
     "lic"
   ],
+  "research_fields": [
+    "diffusion_decoder_compression",
+    "learned_compression"
+  ],
   "source_representation": "エントロピー符号化される content 潜在変数（復号は条件付き拡散モデル）",
   "channel_models": [],
   "transmission": "not_applicable",

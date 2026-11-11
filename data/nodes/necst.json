@@ -39,6 +39,9 @@
   "domains": [
     "digital_jscc"
   ],
+  "research_fields": [
+    "deepjscc_binary_bsc"
+  ],
   "source_representation": "離散 VAE の二値の潜在符号",
   "channel_models": [
     "BSC",

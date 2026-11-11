@@ -38,6 +38,9 @@
   "domains": [
     "digital_jscc"
   ],
+  "research_fields": [
+    "deepjscc_constellation"
+  ],
   "source_representation": "離散的な信号点への遷移確率",
   "channel_models": [
     "AWGN"

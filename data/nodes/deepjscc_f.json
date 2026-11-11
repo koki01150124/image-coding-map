@@ -36,6 +36,9 @@
   "domains": [
     "analog_jscc"
   ],
+  "research_fields": [
+    "analog_deepjscc"
+  ],
   "source_representation": "連続値の通信路シンボル（フィードバックに応じて追加送信）",
   "channel_models": [
     "AWGN",

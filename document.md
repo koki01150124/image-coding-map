@@ -12,6 +12,9 @@
 | `data/edge_types.json` | エッジ種別の定義（向き，系譜かどうか） |
 | `data/vocab.json` | 種別・通信路モデル・根拠・確認範囲・年の基準の表示名 |
 | `data/patterns.json` | 改良パターン（13種）・採用技術（16種）の定義（ID，表示名，定義，判断基準，非該当の条件） |
+| `data/research_taxonomy.json` | 研究分野樹形図の分類（31件．ID，日本語名，英語名，説明，親，子，分類基準，表示順序，対応する分野，所属の条件） |
+| `docs/research_taxonomy.md` | 樹形図の分類体系の設計（全体像，定義と判断基準，重複の扱い，注意事項） |
+| `tools/taxonomy.py`，`site/assets/tree.js` | 分類体系の検証・集計と，樹形図の描画（d3.tree） |
 | `docs/pattern_taxonomy.md` | パターンの分類体系の設計（検討した案，採用案，判断基準，点検） |
 | `tools/patterns.py`，`site/assets/patterns.js` | パターンの判定（該当／非該当／未判定）と集計．同じ規則を Python と JavaScript で実装し，テストで照合する |
 | `data/classification_rules.json` | 分類の規則（DeepJSCC の条件，アナログ／デジタル，構成例，年の基準）．`validate_data.py` が用いる |
@@ -108,7 +111,7 @@ uv pip install -p .venv_tools -r requirements_tools.txt
 .venv_tools/bin/python tools/sync_bibliography.py          # 書誌情報の転記（--check で照合のみ）
 .venv_tools/bin/python tools/validate_data.py              # データ検証
 .venv_tools/bin/python tools/build_graph.py                # site/data/graph.json の生成
-.venv_tools/bin/python -m pytest -q tests                  # テスト（63件）
+.venv_tools/bin/python -m pytest -q tests                  # テスト（87件）
 python3 -m http.server 8000 -d site                        # http://localhost:8000/ で確認
 ```
 

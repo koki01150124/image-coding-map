@@ -39,6 +39,9 @@
   "domains": [
     "lic"
   ],
+  "research_fields": [
+    "learned_entropy_models"
+  ],
   "source_representation": "ハイパー潜在と自己回帰コンテキストで条件付けた潜在表現",
   "channel_models": [],
   "transmission": "not_applicable",

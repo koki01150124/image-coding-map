@@ -40,6 +40,9 @@
   "domains": [
     "analog_jscc"
   ],
+  "research_fields": [
+    "analog_deepjscc"
+  ],
   "source_representation": "Swin Transformer による連続値の潜在表現",
   "channel_models": [
     "AWGN",

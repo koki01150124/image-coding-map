@@ -256,5 +256,5 @@ def test_assets_are_stamped():
     app = (ROOT / "site" / "assets" / "app.js").read_text(encoding="utf-8")
     for name in ("app.js", "style.css"):
         assert f'assets/{name}?v={stamp_assets.short_hash(ROOT / "site" / "assets" / name)}"' in html
-    for name in ("layout.js", "patterns.js"):
+    for name in ("layout.js", "patterns.js", "tree.js"):
         assert f'"./{name}?v={stamp_assets.short_hash(ROOT / "site" / "assets" / name)}"' in app

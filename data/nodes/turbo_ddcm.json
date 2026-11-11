@@ -36,6 +36,9 @@
   "domains": [
     "generative"
   ],
+  "research_fields": [
+    "zero_shot_diffusion_compression"
+  ],
   "source_representation": "各拡散ステップで多数の符号帳ベクトルを組み合わせる疎な表現",
   "channel_models": [],
   "transmission": "not_applicable",

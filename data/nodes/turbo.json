@@ -39,6 +39,9 @@
   "domains": [
     "channel_coding"
   ],
+  "research_fields": [
+    "turbo_codes"
+  ],
   "source_representation": "2つの再帰的組織畳み込み符号の並列連接",
   "channel_models": null,
   "transmission": "digital",

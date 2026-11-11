@@ -39,6 +39,9 @@
   "domains": [
     "lic"
   ],
+  "research_fields": [
+    "learned_transform_coding"
+  ],
   "source_representation": "量子化した潜在表現（サブピクセル構造の自己符号化器）",
   "channel_models": [],
   "transmission": "not_applicable",

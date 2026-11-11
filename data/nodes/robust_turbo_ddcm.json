@@ -34,6 +34,10 @@
   "domains": [
     "generative"
   ],
+  "research_fields": [
+    "zero_shot_diffusion_compression",
+    "error_resilient_compression"
+  ],
   "tags": [
     "ビット誤り耐性"
   ],

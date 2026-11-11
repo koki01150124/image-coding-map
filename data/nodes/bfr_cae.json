@@ -27,6 +27,10 @@
     "digital_jscc",
     "lic"
   ],
+  "research_fields": [
+    "deepjscc_binary_bsc",
+    "learned_compression"
+  ],
   "tags": [
     "ビット誤り耐性"
   ],

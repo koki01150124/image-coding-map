@@ -38,6 +38,9 @@
   "domains": [
     "analog_jscc"
   ],
+  "research_fields": [
+    "analog_deepjscc"
+  ],
   "source_representation": "層ごとに送る連続値の通信路シンボル",
   "channel_models": [
     "AWGN",

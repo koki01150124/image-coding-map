@@ -40,6 +40,9 @@
   "domains": [
     "digital_jscc"
   ],
+  "research_fields": [
+    "deepjscc_binary_bsc"
+  ],
   "tags": [
     "ビット誤り耐性"
   ],

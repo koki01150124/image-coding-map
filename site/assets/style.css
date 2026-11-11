@@ -266,3 +266,38 @@ button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px 
   .pt-label { font-size: 12px; }
   .pattern-table td { min-width: 52px; }
 }
+
+/* 研究分野樹形図 */
+.overlay-view.tree-view { display: flex; gap: 0; padding: 0; overflow: hidden; }
+.overlay-view.tree-view[hidden] { display: none; }
+.tree-canvas { flex: 1 1 auto; min-width: 0; position: relative; overflow: hidden; }
+.tree-svg { width: 100%; height: 100%; display: block; cursor: grab; }
+.tree-svg:active { cursor: grabbing; }
+.tree-detail { flex: 0 0 380px; overflow-y: auto; padding: 12px 14px; border-left: 1px solid var(--border); background: var(--surface-2); line-height: 1.6; }
+.tree-detail h2 { font-size: 16px; margin: 4px 0 0; }
+.tree-controls { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 6px; font-size: 13px; }
+.tree-link { fill: none; stroke: var(--edge-related); stroke-width: 1.4; }
+.tree-link.paper { stroke-dasharray: 3 3; stroke-width: 1; opacity: 0.8; }
+.tree-node { cursor: pointer; }
+.tree-node circle { stroke-width: 2.2; }
+.tree-node.selected circle { stroke-width: 4; }
+.tree-node.empty .tree-label { fill: var(--text-muted); font-style: italic; }
+.tree-label { font-size: 12.5px; fill: var(--text-primary); paint-order: stroke; stroke: var(--surface-1); stroke-width: 3px; stroke-linejoin: round; }
+.tree-node.category[data-id] .tree-label { font-weight: 600; }
+.tree-node.paper .tree-label { font-weight: 400; fill: var(--text-secondary); }
+.tree-node.paper.multi .tree-label { fill: var(--text-primary); }
+.tree-node.paper.same .tree-label, .tree-node.paper.match .tree-label { fill: var(--accent); font-weight: 700; }
+.tree-node.paper.match rect { stroke: var(--accent); stroke-width: 2; }
+.tree-node:focus-visible { outline: none; }
+.tree-node:focus-visible .tree-label { text-decoration: underline; }
+.tree-list .tree-multi { margin-left: 6px; }
+.tree-paper-link { color: var(--accent); cursor: pointer; }
+.tree-to-map { font-size: 11.5px; padding: 0 6px; }
+/* 詳細パネル（右に固定）を開いている間は，樹形図の表示領域をパネルの幅だけ詰める */
+.overlay-view.tree-view.with-panel { right: min(464px, calc(100vw - 24px)); }
+@media (max-width: 760px) {
+  .overlay-view.tree-view.with-panel { right: 0; bottom: 55vh; }
+  .overlay-view.tree-view { flex-direction: column; }
+  .tree-canvas { flex: 0 0 52%; }
+  .tree-detail { flex: 1 1 auto; border-left: none; border-top: 1px solid var(--border); }
+}

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Image Coding Map</title>
   <meta name="description" content="従来型・学習型・生成型の画像圧縮，情報源・通信路分離符号化，アナログ型・デジタル型 DeepJSCC，通信路符号の研究系譜を可視化したマップ">
-  <link rel="stylesheet" href="assets/style.css?v=dda5261b10">
+  <link rel="stylesheet" href="assets/style.css?v=3bbd56e7fe">
 </head>
 <body>
   <div class="app">
@@ -20,6 +20,7 @@
       <div class="toolbar-buttons">
         <button type="button" id="btn-fit" title="全体を表示">全体表示</button>
         <button type="button" id="btn-list" aria-pressed="false" title="表示中の論文を一覧表で表示">一覧表</button>
+        <button type="button" id="btn-tree" aria-pressed="false" title="研究分野の分類を階層で表示">研究分野樹形図</button>
         <button type="button" id="btn-patterns" aria-pressed="false" title="改良パターン・採用技術 × 研究分野の対応表">パターン表</button>
         <button type="button" id="btn-compare" aria-pressed="false" title="選んだ論文（最大3件）の比較と系譜の経路">比較（0）</button>
         <details class="menu" id="export-menu">
@@ -59,6 +60,10 @@
       <div id="graph" class="graph" aria-label="研究系譜マップ"></div>
       <div id="list-view" class="overlay-view" hidden></div>
       <div id="pattern-view" class="overlay-view" hidden></div>
+      <div id="tree-view" class="overlay-view tree-view" hidden>
+        <div id="tree-canvas" class="tree-canvas" aria-label="研究分野樹形図"></div>
+        <aside id="tree-detail" class="tree-detail" aria-live="polite"></aside>
+      </div>
       <div id="compare-view" class="overlay-view" hidden></div>
       <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
       <div class="shape-legend" aria-label="ノードの形">
@@ -79,6 +84,6 @@
   </div>
 
   <script src="vendor/d3.v7.9.0.min.js"></script>
-  <script type="module" src="assets/app.js?v=20eb4590ad"></script>
+  <script type="module" src="assets/app.js?v=fe6cb94fa3"></script>
 </body>
 </html>

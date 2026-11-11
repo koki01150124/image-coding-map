@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "description": "研究分野樹形図の分類体系．分類は論文ノードと独立に定義し，論文ノードの research_fields から参照する．domain は data/domains.json の分野との対応（上位・横断的な分類は null）．",
+  "categories": [
+    {
+      "id": "image_coding",
+      "name_ja": "画像の符号化と伝送",
+      "name_en": "Image Coding and Transmission",
+      "parent": null,
+      "children": [
+        "image_compression",
+        "channel_coding",
+        "image_transmission"
+      ],
+      "domain": null,
+      "order": 0,
+      "description": "本マップの対象全体．画像の情報源符号化（圧縮），通信路符号化，両者を組み合わせた画像伝送からなる．",
+      "criteria": "樹形図の根であり，論文は直接所属しない．"
+    },
+    {
+      "id": "image_compression",
+      "name_ja": "画像圧縮",
+      "name_en": "Image Compression",
+      "parent": "image_coding",
+      "children": [
+        "traditional_compression",
+        "learned_compression",
+        "generative_compression"
+      ],
+      "domain": null,
+      "order": 1,
+      "description": "画像を少ないビット数で表現する情報源符号化．通信路の誤りは扱わない．",
+      "criteria": "主要な貢献が画像の圧縮方式（変換・量子化・エントロピー符号化・復号）である．"
+    },
+    {
+      "id": "traditional_compression",
+      "name_ja": "従来型画像圧縮",
+      "name_en": "Conventional Image Compression",
+      "parent": "image_compression",
+      "children": [
+        "still_image_standards",
+        "video_coding_based"
+      ],
+      "domain": "traditional",
+      "order": 1,
+      "description": "手設計の変換・予測・エントロピー符号化による圧縮方式と標準規格．",
+      "criteria": "学習を用いない圧縮方式である（training が「学習なし」）．",
+      "member_conditions": [
+        {
+          "field": "training",
+          "prefix": "学習なし"
+        }
+      ]
+    },
+    {
+      "id": "still_image_standards",
+      "name_ja": "静止画像の符号化規格",
+      "name_en": "Still Image Coding Standards",
+      "parent": "traditional_compression",
+      "children": [],
+      "domain": "traditional",
+      "order": 1,
+      "description": "JPEG・JPEG 2000 など，静止画像を対象とする符号化規格．",
+      "criteria": "静止画像の符号化規格（の解説論文）である．"
+    },
+    {
+      "id": "video_coding_based",
+      "name_ja": "映像符号化規格とその静止画像への応用",
+      "name_en": "Video Coding Standards and Their Intra Coding",
+      "parent": "traditional_compression",
+      "children": [],
+      "domain": "traditional",
+      "order": 2,
+      "description": "HEVC・VVC などの映像符号化規格と，そのイントラ符号化を静止画像に用いる形式（BPG）．",
+      "criteria": "映像符号化規格，または映像符号化規格に基づく画像形式である．"
+    },
+    {
+      "id": "learned_compression",
+      "name_ja": "学習型画像圧縮（LIC）",
+      "name_en": "Learned Image Compression (LIC)",
+      "parent": "image_compression",
+      "children": [
+        "learned_transform_coding",
+        "learned_entropy_models"
+      ],
+      "domain": "lic",
+      "order": 2,
+      "description": "ニューラルネットワークの変換とエントロピーモデルをレート・歪みで学習する圧縮．生成型・JSCC と重複する論文は，この分類にも所属させる．",
+      "criteria": "符号化器・復号器を学習し，レート（符号長）と歪みを目的とする圧縮を扱う．下位の分類に当てはまらない論文は，この分類に直接所属させる．"
+    },
+    {
+      "id": "learned_transform_coding",
+      "name_ja": "学習型の変換符号化の枠組み",
+      "name_en": "Learned Transform Coding Frameworks",
+      "parent": "learned_compression",
+      "children": [],
+      "domain": "lic",
+      "order": 1,
+      "description": "変換符号化の全体を学習可能にした初期の枠組み（量子化の扱い，可変レート）．",
+      "criteria": "改良パターン「変換符号化の学習化」に該当する論文．"
+    },
+    {
+      "id": "learned_entropy_models",
+      "name_ja": "エントロピーモデルとコンテキストの改良",
+      "name_en": "Entropy Models and Context Modeling",
+      "parent": "learned_compression",
+      "children": [],
+      "domain": "lic",
+      "order": 2,
+      "description": "ハイパープライア，自己回帰・チャネル方向のコンテキスト，混合分布など，潜在表現の確率モデルとその復号の効率化．",
+      "criteria": "主要な貢献がエントロピーモデル（確率モデル）の構造，またはその逐次処理の削減である LIC の論文．"
+    },
+    {
+      "id": "generative_compression",
+      "name_ja": "生成・拡散型画像圧縮",
+      "name_en": "Generative and Diffusion-Based Image Compression",
+      "parent": "image_compression",
+      "children": [
+        "gan_compression",
+        "diffusion_decoder_compression",
+        "zero_shot_diffusion_compression",
+        "generative_foundations"
+      ],
+      "domain": "generative",
+      "order": 3,
+      "description": "GAN・拡散モデルなどの生成モデルを復号や符号化に用いる圧縮．学習型圧縮と重複する論文は LIC にも所属する．DeepJSCC の下位分類ではない．",
+      "criteria": "生成モデルを圧縮の復号器または符号化の手段として用いる．"
+    },
+    {
+      "id": "gan_compression",
+      "name_ja": "GAN を用いる圧縮",
+      "name_en": "GAN-Based Compression",
+      "parent": "generative_compression",
+      "children": [],
+      "domain": "generative",
+      "order": 1,
+      "description": "敵対的学習による生成的な復号器を持つ学習型圧縮．",
+      "criteria": "採用技術「敵対的学習」を復号器の学習に用いる圧縮方式．"
+    },
+    {
+      "id": "diffusion_decoder_compression",
+      "name_ja": "拡散モデルを復号器とする学習型圧縮",
+      "name_en": "Learned Compression with Diffusion Decoders",
+      "parent": "generative_compression",
+      "children": [],
+      "domain": "generative",
+      "order": 2,
+      "description": "変換符号化の潜在表現を条件として，拡散モデルで画像を復号する方式．符号化器を学習する．",
+      "criteria": "拡散モデルを復号器とし，符号化器・復号器を学習する．"
+    },
+    {
+      "id": "zero_shot_diffusion_compression",
+      "name_ja": "事前学習済み拡散モデルによるゼロショット圧縮",
+      "name_en": "Zero-Shot Compression with Pretrained Diffusion Models",
+      "parent": "generative_compression",
+      "children": [],
+      "domain": "generative",
+      "order": 3,
+      "description": "追加学習を行わず，事前学習済みの拡散モデルの雑音の選択（符号帳）で画像を表す方式（DDCM 系）．通信路を含む学習を行わないため DeepJSCC には含めない．",
+      "criteria": "採用技術「事前学習済みモデルのゼロショット利用」と「拡散モデル」に該当する圧縮方式．",
+      "member_conditions": [
+        {
+          "field": "training",
+          "prefix": "事前学習済み"
+        }
+      ]
+    },
+    {
+      "id": "generative_foundations",
+      "name_ja": "生成モデルの基盤",
+      "name_en": "Generative Model Foundations",
+      "parent": "generative_compression",
+      "children": [],
+      "domain": "generative",
+      "order": 4,
+      "description": "生成・拡散型圧縮の基盤となる生成モデル．それ自体は圧縮方式ではない．",
+      "criteria": "画像生成モデルの基礎研究であり，生成・拡散型圧縮の論文が部品として用いる（builds_on）．"
+    },
+    {
+      "id": "channel_coding",
+      "name_ja": "通信路符号化",
+      "name_en": "Channel Coding",
+      "parent": "image_coding",
+      "children": [
+        "information_theory",
+        "error_correcting_codes",
+        "learned_physical_layer"
+      ],
+      "domain": "channel_coding",
+      "order": 2,
+      "description": "雑音のある通信路で誤りを訂正・抑制する符号化と，その理論・関連技術．画像に固有ではない．",
+      "criteria": "主要な貢献が通信路の符号・復号・通信路容量の理論，または送受信機の設計である．"
+    },
+    {
+      "id": "information_theory",
+      "name_ja": "情報理論の基礎",
+      "name_en": "Information Theory Foundations",
+      "parent": "channel_coding",
+      "children": [],
+      "domain": "channel_coding",
+      "order": 1,
+      "description": "情報量・通信路容量・符号化定理など，情報源符号化と通信路符号化の理論的な基礎．特定の分離設計の実装方式ではない．",
+      "criteria": "符号化定理や通信路容量を示す理論研究．"
+    },
+    {
+      "id": "error_correcting_codes",
+      "name_ja": "誤り訂正符号",
+      "name_en": "Error-Correcting Codes",
+      "parent": "channel_coding",
+      "children": [
+        "ldpc_codes",
+        "turbo_codes",
+        "polar_codes"
+      ],
+      "domain": "channel_coding",
+      "order": 2,
+      "description": "通信路容量に近い性能を目指す誤り訂正符号の族と復号法．",
+      "criteria": "改良パターン「通信路符号の構成・復号の改良」に該当する論文．"
+    },
+    {
+      "id": "ldpc_codes",
+      "name_ja": "LDPC 符号",
+      "name_en": "Low-Density Parity-Check Codes",
+      "parent": "error_correcting_codes",
+      "children": [],
+      "domain": "channel_coding",
+      "order": 1,
+      "description": "疎なパリティ検査行列で定義される符号と，その確率伝播による復号．",
+      "criteria": "LDPC 符号（Gallager 符号）の構成・復号・性能を扱う．"
+    },
+    {
+      "id": "turbo_codes",
+      "name_ja": "ターボ符号",
+      "name_en": "Turbo Codes",
+      "parent": "error_correcting_codes",
+      "children": [],
+      "domain": "channel_coding",
+      "order": 2,
+      "description": "再帰的組織畳み込み符号の並列連接と反復復号．",
+      "criteria": "ターボ符号の構成・復号を扱う．"
+    },
+    {
+      "id": "polar_codes",
+      "name_ja": "Polar 符号",
+      "name_en": "Polar Codes",
+      "parent": "error_correcting_codes",
+      "children": [],
+      "domain": "channel_coding",
+      "order": 3,
+      "description": "通信路分極により容量を達成する符号と逐次除去復号．",
+      "criteria": "Polar 符号の構成・復号を扱う．"
+    },
+    {
+      "id": "learned_physical_layer",
+      "name_ja": "学習型の物理層",
+      "name_en": "Learned Physical Layer",
+      "parent": "channel_coding",
+      "children": [],
+      "domain": "channel_coding",
+      "order": 3,
+      "description": "送信機・受信機をニューラルネットワークで構成し，通信システムを自己符号化器として学習する考え方．",
+      "criteria": "画像に限らない通信システム全体のエンドツーエンド学習を扱う．"
+    },
+    {
+      "id": "image_transmission",
+      "name_ja": "画像伝送・情報源通信路符号化",
+      "name_en": "Image Transmission and Source-Channel Coding",
+      "parent": "image_coding",
+      "children": [
+        "separate_source_channel_coding",
+        "joint_source_channel_coding",
+        "error_resilient_compression"
+      ],
+      "domain": null,
+      "order": 3,
+      "description": "画像を雑音のある通信路で伝送する方式．情報源符号と通信路符号を分ける分離型と，結合して設計する結合型がある．",
+      "criteria": "画像の伝送（通信路の雑音・誤りを受ける状況での再構成）を主要な対象とする．"
+    },
+    {
+      "id": "separate_source_channel_coding",
+      "name_ja": "分離型（SSCC）",
+      "name_en": "Separate Source-Channel Coding (SSCC)",
+      "parent": "image_transmission",
+      "children": [
+        "sscc_conventional",
+        "sscc_learned"
+      ],
+      "domain": "sscc",
+      "order": 1,
+      "description": "情報源符号化と通信路符号化を独立に設計して連結する構成．JPEG＋LDPC はその具体例である．",
+      "criteria": "画像の圧縮方式と通信路符号を連結して伝送する構成である．",
+      "member_conditions": [
+        {
+          "field": "transmission",
+          "equals": "digital"
+        }
+      ]
+    },
+    {
+      "id": "sscc_conventional",
+      "name_ja": "従来型コーデック＋通信路符号",
+      "name_en": "Conventional Codec with Channel Code",
+      "parent": "separate_source_channel_coding",
+      "children": [],
+      "domain": "sscc",
+      "order": 1,
+      "description": "JPEG・BPG などの従来型コーデックと LDPC 符号等を連結する構成例．",
+      "criteria": "情報源符号化が従来型（学習なし）である分離型の構成．"
+    },
+    {
+      "id": "sscc_learned",
+      "name_ja": "学習型コーデック＋通信路符号",
+      "name_en": "Learned Codec with Channel Code",
+      "parent": "separate_source_channel_coding",
+      "children": [],
+      "domain": "sscc",
+      "order": 2,
+      "description": "学習型の情報源符号化と通信路符号を連結する構成．情報源と通信路のレートを共同で最適化する方式を含む．",
+      "criteria": "情報源符号化が学習型であり，通信路符号を別に用いる構成．"
+    },
+    {
+      "id": "joint_source_channel_coding",
+      "name_ja": "結合型（JSCC）",
+      "name_en": "Joint Source-Channel Coding (JSCC)",
+      "parent": "image_transmission",
+      "children": [
+        "analog_deepjscc",
+        "digital_deepjscc",
+        "generative_deepjscc"
+      ],
+      "domain": null,
+      "order": 2,
+      "description": "情報源符号化と通信路符号化を結合して設計する方式．本マップでは主に，通信路を含めて符号化器・復号器を共同学習する DeepJSCC を扱う．",
+      "criteria": "通信路（雑音・ビット反転）を含めた符号化器・復号器の共同学習を行う（joint_channel_training が true）．",
+      "member_conditions": [
+        {
+          "field": "joint_channel_training",
+          "in": [
+            true,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analog_deepjscc",
+      "name_ja": "アナログ型 DeepJSCC",
+      "name_en": "Analog DeepJSCC",
+      "parent": "joint_source_channel_coding",
+      "children": [],
+      "domain": "analog_jscc",
+      "order": 1,
+      "description": "画像を連続値の通信路シンボルへ直接写像する DeepJSCC．",
+      "criteria": "transmission が analog の DeepJSCC．",
+      "member_conditions": [
+        {
+          "field": "transmission",
+          "equals": "analog"
+        }
+      ]
+    },
+    {
+      "id": "digital_deepjscc",
+      "name_ja": "デジタル型 DeepJSCC",
+      "name_en": "Digital DeepJSCC",
+      "parent": "joint_source_channel_coding",
+      "children": [
+        "deepjscc_binary_bsc",
+        "deepjscc_constellation"
+      ],
+      "domain": "digital_jscc",
+      "order": 2,
+      "description": "ビット列・有限の信号点など離散的な通信路入力を用いる DeepJSCC．下位の分類に当てはまらない論文は，この分類に直接所属させる．",
+      "criteria": "transmission が digital の DeepJSCC．",
+      "member_conditions": [
+        {
+          "field": "transmission",
+          "equals": "digital"
+        }
+      ]
+    },
+    {
+      "id": "deepjscc_binary_bsc",
+      "name_ja": "ビット列と BSC を用いる方式",
+      "name_en": "Binary Latents over BSC",
+      "parent": "digital_deepjscc",
+      "children": [],
+      "domain": "digital_jscc",
+      "order": 1,
+      "description": "二値の潜在符号・符号帳のインデックスを，二元対称通信路（BSC）を学習に含めて伝送する方式．",
+      "criteria": "channel_models に BSC を含み，BSC を含めて共同学習する．",
+      "member_conditions": [
+        {
+          "field": "channel_models",
+          "contains": "BSC"
+        }
+      ]
+    },
+    {
+      "id": "deepjscc_constellation",
+      "name_ja": "有限の信号点を用いる方式",
+      "name_en": "Finite Constellation Methods",
+      "parent": "digital_deepjscc",
+      "children": [],
+      "domain": "digital_jscc",
+      "order": 2,
+      "description": "QAM 等の有限の変調の信号点への写像を学習する方式．",
+      "criteria": "通信路入力が有限の信号点（デジタル変調）であり，AWGN 等の通信路で共同学習する．"
+    },
+    {
+      "id": "generative_deepjscc",
+      "name_ja": "生成モデルを用いる DeepJSCC",
+      "name_en": "Generative DeepJSCC",
+      "parent": "joint_source_channel_coding",
+      "children": [],
+      "domain": null,
+      "order": 3,
+      "allow_empty": true,
+      "description": "GAN・拡散モデルなどの生成モデルを DeepJSCC の復号・雑音除去に用いる方式．",
+      "criteria": "DeepJSCC（通信路を含む共同学習）であり，かつ生成モデルを用いる．現在は収録論文が無い（order_004 の監査で CDDM，DiffJSCC，SGD-JSCC，Generative JSCC の実在を確認済み．収録は未実施）．"
+    },
+    {
+      "id": "error_resilient_compression",
+      "name_ja": "誤りに頑健な画像圧縮",
+      "name_en": "Error-Resilient Image Compression",
+      "parent": "image_transmission",
+      "children": [],
+      "domain": null,
+      "order": 3,
+      "description": "圧縮したビット列が通信路の誤りを受ける状況での頑健性を，通信路を含む共同学習を行わずに扱う研究．DeepJSCC とは区別する．",
+      "criteria": "ビット誤り・通信路誤りへの頑健性を主要な課題とし，joint_channel_training が false の圧縮方式．",
+      "member_conditions": [
+        {
+          "field": "joint_channel_training",
+          "equals": false
+        }
+      ]
+    }
+  ],
+  "member_conditions_syntax": "member_conditions は所属する論文が満たすべき条件の配列であり（全て満たす），下位の分類にも適用される．条件は field と，prefix（前方一致），equals（一致），in（いずれかに一致），contains（配列が値を含む）のいずれか1つからなる．"
+}

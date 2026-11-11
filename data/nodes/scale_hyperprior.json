@@ -41,6 +41,9 @@
   "domains": [
     "lic"
   ],
+  "research_fields": [
+    "learned_entropy_models"
+  ],
   "source_representation": "量子化した潜在表現と，そのスケールを表すハイパー潜在（サイド情報）",
   "channel_models": [],
   "transmission": "not_applicable",

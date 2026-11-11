@@ -5,7 +5,7 @@ app.js が古いまま読み込まれることがある（例: 新しいボタ�
 参照に `?v=<内容のハッシュ>` を付けると，内容が変わったファイルは別の URL となり，必ず取り直される．
 
 処理の順序（同じ内容なら何度実行しても結果は変わらない）:
-    1. app.js の import（./layout.js，./patterns.js）に，各ファイルのハッシュを付ける
+    1. app.js の import（./layout.js，./patterns.js，./tree.js）に，各ファイルのハッシュを付ける
     2. index.html の style.css と app.js の参照に，各ファイルのハッシュを付ける
 
 使い方:
@@ -55,7 +55,7 @@ def main():
     """
     app = ASSETS / "app.js"
     text = app.read_text(encoding="utf-8")
-    for module in ("layout.js", "patterns.js"):
+    for module in ("layout.js", "patterns.js", "tree.js"):
         text, n = stamp(text, module, short_hash(ASSETS / module), "./")
         if n == 0:
             print(f"[stamp] app.js に ./{module} の import が無い")

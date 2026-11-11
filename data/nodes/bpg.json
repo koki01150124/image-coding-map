@@ -32,6 +32,9 @@
   "domains": [
     "traditional"
   ],
+  "research_fields": [
+    "video_coding_based"
+  ],
   "source_representation": "HEVC のイントラ符号化（変換係数）",
   "channel_models": [],
   "transmission": "not_applicable",

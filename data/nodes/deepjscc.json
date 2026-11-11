@@ -38,6 +38,9 @@
   "domains": [
     "analog_jscc"
   ],
+  "research_fields": [
+    "analog_deepjscc"
+  ],
   "source_representation": "画素から直接写像した複素数値の通信路シンボル",
   "channel_models": [
     "AWGN",
