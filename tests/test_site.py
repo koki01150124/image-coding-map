@@ -604,34 +604,47 @@ def test_tree_search_and_filter(page, base_url, graph):
     assert f"（{n}）" in pg.text_content(".tree-node.category[data-id=image_coding] .tree-label")
 
 
+# ノード（円・菱形とラベル）が描画上で占める矩形（樹形図の座標）．回転したラベルも含む．
+TREE_BOXES_JS = r"""() => [...document.querySelectorAll('.tree-node')].map((g) => {
+  const m = g.getAttribute('transform').match(/translate\(([-\d.e]+),([-\d.e]+)\)/); const x = +m[1], y = +m[2];
+  const b = g.getBBox();
+  return { id: g.dataset.id + '@' + x.toFixed(1) + ',' + y.toFixed(1), x0: x + b.x, y0: y + b.y, x1: x + b.x + b.width, y1: y + b.y + b.height };
+})"""
+
+
+def overlaps(boxes):
+    """矩形の重なりの組を返す．@param boxes 矩形（x0, y0, x1, y1）．@return list[tuple[str, str]]"""
+    hits = []
+    for i, a in enumerate(boxes):
+        for b in boxes[i + 1:]:
+            if a["x0"] < b["x1"] and b["x0"] < a["x1"] and a["y0"] < b["y1"] and b["y0"] < a["y1"]:
+                hits.append((a["id"], b["id"]))
+    return hits
+
+
+@pytest.mark.parametrize("orientation", ["vertical", "horizontal"])
 @pytest.mark.parametrize("scheme", ["light", "dark"])
-def test_tree_no_overlap_and_contrast(page, base_url, scheme):
-    """すべて展開した樹形図でラベルとノードが重ならず，ラベルの文字と背景の対比が十分である．"""
+def test_tree_no_overlap_and_contrast(page, base_url, scheme, orientation):
+    """すべて展開した樹形図で，両方向ともラベルとノードが重ならず，ラベルの文字と背景の対比が十分である．"""
     pg, errors = page
     pg.emulate_media(color_scheme=scheme)
     open_tree(pg, base_url)
+    pg.click(f"#tree-orient-{orientation}")
     pg.click("#tree-expand-all")
-    res = pg.evaluate(r"""() => {
-      const boxes = [];
-      for (const g of document.querySelectorAll('.tree-node')) {
-        const m = g.getAttribute('transform').match(/translate\(([-\d.e]+),([-\d.e]+)\)/); const x = +m[1], y = +m[2];
-        const t = g.querySelector('text').getBBox();
-        boxes.push({ id: g.dataset.id + '@' + y, x0: x - 7, y0: y - 7, x1: x + t.x + t.width, y1: y + 7 });
-      }
-      const hits = [];
-      for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
-        const a = boxes[i], b = boxes[j];
-        if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) hits.push([a.id, b.id]);
-      }
+    assert pg.get_attribute(".tree-svg", "data-orientation") == orientation
+    assert overlaps(pg.evaluate(TREE_BOXES_JS)) == []
+    contrast = pg.evaluate(r"""() => {
       const lum = (c) => { const v = c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number).map((x) => x / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
         return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]; };
-      const fg = getComputedStyle(document.querySelector('.tree-node.paper .tree-label')).fill;
       const bg = getComputedStyle(document.querySelector('#tree-view')).backgroundColor;
-      const [l1, l2] = [lum(fg), lum(bg)].sort((x, y) => y - x);
-      return { hits, contrast: (l1 + 0.05) / (l2 + 0.05) };
+      return ['.tree-node.paper .tree-label', '.tree-node.category .tree-label', '.tree-orient-option[aria-checked=true]'].map((s) => {
+        const e = document.querySelector(s), st = getComputedStyle(e);
+        const fg = s.startsWith('.tree-orient') ? st.color : st.fill, back = s.startsWith('.tree-orient') ? st.backgroundColor : bg;
+        const [l1, l2] = [lum(fg), lum(back)].sort((x, y) => y - x);
+        return (l1 + 0.05) / (l2 + 0.05);
+      });
     }""")
-    assert res["hits"] == []
-    assert res["contrast"] >= 4.5
+    assert min(contrast) >= 4.5, contrast
     assert errors == []
 
 
@@ -644,4 +657,171 @@ def test_tree_mobile(page, base_url):
     assert canvas <= 390
     click_category(pg, "channel_coding")
     assert "通信路符号化" in pg.inner_text("#tree-detail")
+    assert errors == []
+
+
+# ---------------------------------------------------------------- 研究分野樹形図の表示方向
+
+# 親子の組ごとの表示座標（d3 がノードの要素に設定する __data__ から読む）
+TREE_PAIRS_JS = r"""() => [...document.querySelectorAll('.tree-node')].filter((g) => g.__data__.parent).map((g) => {
+  const d = g.__data__, p = d.parent;
+  return { id: g.dataset.id, parent: p.data.id, dx: d.px - p.px, dy: d.py - p.py };
+})"""
+
+
+def tree_state(pg):
+    """樹形図の状態（方向，展開・選択している分類，倍率）を返す．@param pg ページ．@return dict"""
+    return pg.evaluate("""() => { const s = window.ICM.tree.state;
+      return { orientation: s.orientation, expanded: [...s.expanded].sort(), selected: s.selected, k: s.transform && s.transform.k,
+               x: s.transform && s.transform.x, y: s.transform && s.transform.y }; }""")
+
+
+def tree_in_canvas(pg):
+    """表示中の樹形図の全体が描画領域に収まっているか．@param pg ページ．@return bool"""
+    return pg.evaluate("""() => { const a = document.querySelector('.tree-root').getBoundingClientRect(), c = document.querySelector('#tree-canvas').getBoundingClientRect();
+      return a.left >= c.left - 1 && a.right <= c.right + 1 && a.top >= c.top - 1 && a.bottom <= c.bottom + 1; }""")
+
+
+def test_tree_initial_orientation_is_vertical(page, base_url):
+    """初期表示は縦方向で，親より子が下にあり，切り替えの「縦方向」が選択状態である．再読み込みでも縦方向に戻る．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    assert pg.get_attribute(".tree-svg", "data-orientation") == "vertical"
+    assert pg.get_attribute("#tree-orient-vertical", "aria-checked") == "true"
+    assert pg.get_attribute("#tree-orient-horizontal", "aria-checked") == "false"
+    assert pg.get_attribute("#tree-orientation", "role") == "radiogroup"
+    assert "表示方向" in pg.inner_text("#tree-orientation")
+    pairs = pg.evaluate(TREE_PAIRS_JS)
+    assert pairs and all(p["dy"] > 0 for p in pairs)
+    assert tree_in_canvas(pg)
+    pg.click("#tree-orient-horizontal")
+    pg.reload()
+    pg.wait_for_selector("g.node")
+    pg.click("#btn-tree")
+    pg.wait_for_selector(".tree-node")
+    assert pg.get_attribute(".tree-svg", "data-orientation") == "vertical"
+    assert errors == []
+
+
+def test_tree_horizontal_places_children_right(page, base_url):
+    """横方向では親より子が右にあり，同じ階層は縦に並ぶ．すべて展開した状態でも成り立つ．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    pg.click("#tree-orient-horizontal")
+    pg.click("#tree-expand-all")
+    pairs = pg.evaluate(TREE_PAIRS_JS)
+    assert pairs and all(p["dx"] > 0 for p in pairs)
+    pg.click("#tree-orient-vertical")
+    pairs = pg.evaluate(TREE_PAIRS_JS)
+    assert all(p["dy"] > 0 for p in pairs)
+    assert errors == []
+
+
+def test_tree_switch_keeps_expansion_and_selection(page, base_url):
+    """方向を往復しても，展開・折りたたみ，選択中の分類と論文が保たれ，切り替え後は全体が収まる．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    click_category(pg, "image_compression")  # 折りたたむ
+    for cid in ("joint_source_channel_coding", "digital_deepjscc", "deepjscc_binary_bsc"):
+        click_category(pg, cid)
+    pg.locator(".tree-node.paper[data-id=necst]").dispatch_event("click")
+    pg.wait_for_selector("#panel:not([hidden])")
+    before = tree_state(pg)
+    nodes_before = sorted(pg.eval_on_selector_all(".tree-node", "els => els.map(e => e.dataset.id)"))
+    for orientation in ("horizontal", "vertical"):
+        pg.click(f"#tree-orient-{orientation}")
+        after = tree_state(pg)
+        assert after["orientation"] == orientation
+        assert after["expanded"] == before["expanded"] and after["selected"] == "deepjscc_binary_bsc"
+        assert sorted(pg.eval_on_selector_all(".tree-node", "els => els.map(e => e.dataset.id)")) == nodes_before
+        assert pg.locator(".tree-node.category.selected[data-id=deepjscc_binary_bsc]").count() == 1
+        assert pg.locator(".tree-node.paper.selected[data-id=necst]").count() == 1
+        assert pg.locator(".tree-node.category[data-id=traditional_compression]").count() == 0  # 折りたたみも保つ
+        assert "NECST" in pg.inner_text("#panel-body") and pg.evaluate("location.hash") == "#necst"
+        assert pg.locator("#tree-detail .tree-category[data-category=deepjscc_binary_bsc]").count() == 1
+        assert tree_in_canvas(pg)
+    assert errors == []
+
+
+@pytest.mark.parametrize("orientation", ["vertical", "horizontal"])
+def test_tree_zoom_pan_fit(page, base_url, orientation):
+    """両方向で，ホイールによる拡大，ドラッグによる移動，全体表示が機能する．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    if orientation == "horizontal":
+        pg.click("#tree-orient-horizontal")
+    pg.click("#tree-expand-all")
+    fitted = tree_state(pg)
+    assert tree_in_canvas(pg)
+    box = pg.locator("#tree-canvas").bounding_box()
+    cx, cy = box["x"] + box["width"] / 2, box["y"] + box["height"] / 2
+    pg.mouse.move(cx, cy)
+    pg.mouse.wheel(0, -400)
+    pg.wait_for_timeout(300)
+    assert tree_state(pg)["k"] > fitted["k"] * 1.2
+    zoomed = tree_state(pg)
+    pg.mouse.move(cx, cy)
+    pg.mouse.down()
+    pg.mouse.move(cx + 120, cy + 80, steps=5)
+    pg.mouse.up()
+    moved = tree_state(pg)
+    assert abs(moved["x"] - zoomed["x"] - 120) < 2 and abs(moved["y"] - zoomed["y"] - 80) < 2
+    pg.click("#tree-fit")
+    # ポインタの下の論文が強調（太字）されてラベルの幅がわずかに変わるため，倍率は近似で比べる
+    assert tree_state(pg)["k"] == pytest.approx(fitted["k"], rel=0.02)
+    assert tree_in_canvas(pg)
+    assert errors == []
+
+
+def test_tree_orientation_keyboard(page, base_url):
+    """表示方向の切り替えはキーボード（Tab で移動，矢印キー・Enter・Space で選択）で操作できる．"""
+    pg, errors = page
+    open_tree(pg, base_url)
+    pg.focus("#tree-orient-vertical")
+    assert pg.get_attribute("#tree-orient-horizontal", "tabindex") == "-1"
+    pg.keyboard.press("ArrowRight")
+    assert tree_state(pg)["orientation"] == "horizontal"
+    assert pg.evaluate("document.activeElement.id") == "tree-orient-horizontal"
+    pg.keyboard.press("ArrowLeft")
+    assert tree_state(pg)["orientation"] == "vertical"
+    assert pg.evaluate("document.activeElement.id") == "tree-orient-vertical"
+    pg.focus("#tree-orient-horizontal")
+    pg.keyboard.press("Enter")
+    assert tree_state(pg)["orientation"] == "horizontal"
+    pg.focus("#tree-orient-vertical")
+    pg.keyboard.press("Space")
+    assert tree_state(pg)["orientation"] == "vertical"
+    assert errors == []
+
+
+def test_tree_orientation_only_in_tree_view(page, base_url):
+    """表示方向の切り替えは樹形図の画面にのみ表示し，他の画面の配置は変えない．"""
+    pg, errors = page
+    open_map(pg, base_url)
+    assert not pg.locator("#tree-orientation").is_visible()
+    pg.click("#btn-patterns")
+    assert not pg.locator("#tree-orientation").is_visible()
+    pg.click("#btn-tree")
+    assert pg.locator("#tree-orientation").is_visible()
+    pg.click("#tree-orient-horizontal")
+    pg.click("#btn-tree")  # 樹形図を閉じる
+    assert not pg.locator("#tree-orientation").is_visible()
+    assert pg.locator("g.node").count() > 0
+    assert errors == []
+
+
+@pytest.mark.parametrize("orientation", ["vertical", "horizontal"])
+def test_tree_mobile_orientation(page, base_url, orientation):
+    """スマートフォンの幅で，方向を切り替えて分類の展開と論文の選択ができる．"""
+    pg, errors = page
+    pg.set_viewport_size({"width": 390, "height": 844})
+    open_tree(pg, base_url)
+    pg.locator(f"#tree-orient-{orientation}").click()
+    assert pg.get_attribute(".tree-svg", "data-orientation") == orientation
+    pg.locator(".tree-node.category[data-id=joint_source_channel_coding]").click()
+    pg.locator(".tree-node.category[data-id=analog_deepjscc]").click()
+    pg.locator(".tree-node.paper[data-id=ntscc]").click()
+    pg.wait_for_selector("#panel:not([hidden])")
+    assert "NTSCC" in pg.inner_text("#panel-body")
+    assert tree_state(pg)["expanded"].count("analog_deepjscc") == 1
     assert errors == []

@@ -288,6 +288,15 @@ button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px 
 .tree-node.paper.multi .tree-label { fill: var(--text-primary); }
 .tree-node.paper.same .tree-label, .tree-node.paper.match .tree-label { fill: var(--accent); font-weight: 700; }
 .tree-node.paper.match rect { stroke: var(--accent); stroke-width: 2; }
+.tree-node.paper.selected rect { stroke: var(--text-primary); stroke-width: 2.5; }
+.tree-node.paper.selected .tree-label { fill: var(--text-primary); font-weight: 700; }
+.tree-orient { display: inline-flex; align-items: center; flex-wrap: nowrap; margin-right: 6px; }
+.tree-orient-title { margin-right: 4px; }
+.tree-orient-option { border-radius: 0; margin: 0; }
+.tree-orient-option:first-of-type { border-radius: 6px 0 0 6px; }
+.tree-orient-option:last-of-type { border-radius: 0 6px 6px 0; border-left: none; }
+/* 選択中の方向は白文字との対比が 4.5 以上となる濃い青で示す（ライト・ダーク共通） */
+.tree-orient-option[aria-checked="true"] { background: #1f63b8; color: #fff; border-color: #1f63b8; font-weight: 600; }
 .tree-node:focus-visible { outline: none; }
 .tree-node:focus-visible .tree-label { text-decoration: underline; }
 .tree-list .tree-multi { margin-left: 6px; }

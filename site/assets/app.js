@@ -4,7 +4,7 @@
 // 論文を追加する場合に本ファイルを変更する必要は無い．
 import { computeLayout, regionPath, edgePath, LAYOUT } from "./layout.js?v=de27881eab";
 import { patternStatus, countTable, heatLevel } from "./patterns.js?v=8d51b283bf";
-import { createTreeView } from "./tree.js?v=84977a1789";
+import { createTreeView } from "./tree.js?v=a5b015d837";
 
 const d3 = window.d3;
 const MAX_COMPARE = 3;
@@ -547,6 +547,7 @@ function renderPanel() {
   const n = state.selected ? state.byId.get(state.selected) : null;
   els.panel.hidden = !n;
   els.tree?.classList.toggle("with-panel", !!n);
+  treeView?.markSelectedPaper();
   if (!n) return;
   const b = n.bibliography;
   const inCompare = state.compare.includes(n.id);
@@ -1023,6 +1024,7 @@ function renderTree() {
       onSelectPaper: (id) => select(id),
       onShowOnMap: (id) => { setView(null); select(id, { zoomTo: true }); },
       onHighlight: (ids, label) => highlightPattern(ids, label),
+      selectedPaper: () => state.selected,
     });
     window.ICM.tree = treeView;
   }

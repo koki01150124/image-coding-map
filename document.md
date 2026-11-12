@@ -14,7 +14,7 @@
 | `data/patterns.json` | 改良パターン（13種）・採用技術（16種）の定義（ID，表示名，定義，判断基準，非該当の条件） |
 | `data/research_taxonomy.json` | 研究分野樹形図の分類（31件．ID，日本語名，英語名，説明，親，子，分類基準，表示順序，対応する分野，所属の条件） |
 | `docs/research_taxonomy.md` | 樹形図の分類体系の設計（全体像，定義と判断基準，重複の扱い，注意事項） |
-| `tools/taxonomy.py`，`site/assets/tree.js` | 分類体系の検証・集計と，樹形図の描画（d3.tree） |
+| `tools/taxonomy.py`，`site/assets/tree.js` | 分類体系の検証・集計と，樹形図の描画（d3.tree）．表示方向（縦方向・横方向）ごとの配置は `tree.js` の `ORIENTATIONS` に定義し，描画処理は共通である |
 | `docs/pattern_taxonomy.md` | パターンの分類体系の設計（検討した案，採用案，判断基準，点検） |
 | `tools/patterns.py`，`site/assets/patterns.js` | パターンの判定（該当／非該当／未判定）と集計．同じ規則を Python と JavaScript で実装し，テストで照合する |
 | `data/classification_rules.json` | 分類の規則（DeepJSCC の条件，アナログ／デジタル，構成例，年の基準）．`validate_data.py` が用いる |
@@ -33,6 +33,7 @@
 | `tests/test_workflow.py` | ワークフローの構成のテスト（Playwright 公式イメージの版と `requirements_tools.txt` の一致，実行時に apt を用いないこと，ブラウザテストを省略しないこと） |
 | `.github/workflows/pages.yml` | 検証 → 生成 → テスト → GitHub Pages へのデプロイ．build ジョブは Playwright 公式イメージ（`mcr.microsoft.com/playwright/python:v1.49.1-noble`）のコンテナで実行する |
 | `requirements_tools.txt` | ツール・テスト用の Python ライブラリ |
+| `programs/screenshots/tree_orientation.py` | 研究分野樹形図の縦方向・横方向の表示を撮影する（`.reports/figures/report_009_*.png`） |
 | `programs/audit_coverage/collect.py` | 収録範囲の監査の文献収集（既存ノードの台帳，横断検索，スノーボーリング，優先確認論文・本文の参考文献の照合） |
 | `programs/audit_coverage/build_candidates.py` | 収集結果の重複排除・関連性の一次判定・優先度付けと，`audit/decisions.json` の人手の判断の反映 |
 | `audit/` | 監査の成果物（`coverage_report.md`，`candidates.json`／`.csv`，`decisions.json`，`search_log.json`，`search_tables.md`，`dedup_log.json`，`priority_check.json`，`existing_inventory.csv`，`raw/` は API の応答を正規化したもの）．本番データ（`data/nodes/`）には反映していない |
@@ -92,6 +93,25 @@ flowchart TD
     readHash --> renderCompare
 ```
 
+研究分野樹形図（`tree.js`）の主要な関数の関係を以下に示す．`render` は表示方向によらず共通であり，座標・線・ラベルの位置のみを `ORIENTATIONS` の定義（縦方向・横方向）から得る．展開・選択の状態は `state` に保持し，方向の切り替え（`setOrientation`）では `state.orientation` のみを変えて再描画する．
+
+```mermaid
+flowchart TD
+    renderTree["app.js: renderTree"] --> createTreeView
+    createTreeView --> render
+    render --> buildTree["buildTree<br/>展開した分類の子と所属論文"]
+    render --> categoryMembers["categoryMembers<br/>分類ごとの所属（重複なし）"]
+    render --> wrapLabel["wrapLabel<br/>縦方向で分類名を折り返す"]
+    render --> layout["ORIENTATIONS[方向].layout<br/>d3.tree と階層ごとの幅・高さ"]
+    render --> linkPath["ORIENTATIONS[方向].linkPath / label"]
+    render --> renderDetail["renderDetail<br/>操作・表示方向の切り替え・説明・一覧"]
+    renderDetail --> orientationControl --> setOrientation
+    setOrientation --> render
+    setOrientation --> fit["fit<br/>全体を収める"]
+    activate["activate<br/>分類の展開・折りたたみ／論文の選択"] --> render
+    activate --> reveal["reveal → shiftAxis<br/>展開した分類を画面内へ移動"]
+```
+
 ## Python 環境の構築
 
 ツールと表示テストの環境は `.venv_tools`（Python 3.12）である．GPU は使用しない．
@@ -112,11 +132,13 @@ uv pip install -p .venv_tools -r requirements_tools.txt
 .venv_tools/bin/python tools/sync_bibliography.py          # 書誌情報の転記（--check で照合のみ）
 .venv_tools/bin/python tools/validate_data.py              # データ検証
 .venv_tools/bin/python tools/build_graph.py                # site/data/graph.json の生成
-.venv_tools/bin/python -m pytest -q tests                  # テスト（91件）
+.venv_tools/bin/python -m pytest -q tests                  # テスト（102件）
 python3 -m http.server 8000 -d site                        # http://localhost:8000/ で確認
 ```
 
 書誌情報を追加する場合は `python3 .ai/ai-survey-kit/scripts/surveykit.py add --title "..."` を用いる．
+
+研究分野樹形図の縦方向・横方向の表示は `.venv_tools/bin/python programs/screenshots/tree_orientation.py` で撮影できる（事前に `build_graph.py` を実行する）．
 
 監査の実行方法は以下の通りである（API の待機を含むため数十分を要する）．
 
